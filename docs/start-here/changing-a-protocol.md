@@ -1,9 +1,9 @@
 ---
-title: Changing a protocol
+title: Changing a protocol to post-quantum
 sidebar_label: Changing a protocol
 sidebar_position: 6
 displayed_sidebar: startHereSidebar
-description: Which job is changing, which option an authority defends, and how you roll back.
+description: Which job is changing, key establishment or signatures, which option an authority defends, and how you roll back.
 ---
 
 ## The decisions

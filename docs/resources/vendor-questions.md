@@ -1,9 +1,9 @@
 ---
-title: Vendor questions
+title: Questions to ask a vendor
 sidebar_label: Vendor questions
 sidebar_position: 4
 displayed_sidebar: resourcesSidebar
-description: Questions to ask before a renewal or a purchase, and a sheet to store the answer.
+description: Questions to ask before a renewal or a purchase about post-quantum migration, and a sheet for the vendor, the answer, the date, and the source.
 ---
 
 Use this before a renewal or a purchase. The questions come from the [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf), as of 17 August 2023, and from the [UK NCSC](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) split between commodity IT and systems you choose an approach for.

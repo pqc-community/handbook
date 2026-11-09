@@ -1,9 +1,9 @@
 ---
-title: The migration plan
+title: The post-quantum migration plan
 sidebar_label: The migration plan
 sidebar_position: 2
 displayed_sidebar: startHereSidebar
-description: What has to move, what is first, and what the one-page plan says.
+description: What cryptography has to move, what is first, and what the one-page post-quantum migration plan records.
 ---
 
 ## The decisions

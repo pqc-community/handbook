@@ -1,5 +1,5 @@
 ---
-title: Choosing an option
+title: Choosing a post-quantum option
 sidebar_label: Choosing an option
 sidebar_position: 2
 displayed_sidebar: algorithmProtocolOptionsSidebar

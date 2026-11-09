@@ -1,9 +1,9 @@
 ---
-title: Migration guides
+title: Post-quantum migration guides
 sidebar_label: Migration guides
 sidebar_position: 3
 displayed_sidebar: standardsTimelinesSidebar
-description: The short reading list for a migration programme. The Dutch handbook is listed and is not rewritten.
+description: The short reading list for a post-quantum migration programme. The Dutch handbook is listed and is not rewritten.
 ---
 
 Use this page when you need the programme guide, not another summary of it.

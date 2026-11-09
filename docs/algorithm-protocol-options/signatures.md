@@ -1,9 +1,9 @@
 ---
-title: Signatures
+title: Post-quantum signatures
 sidebar_label: Signatures
 sidebar_position: 4
 displayed_sidebar: algorithmProtocolOptionsSidebar
-description: Signatures are a different migration from key establishment. The urgency is coordination, not harvest-now, decrypt-later.
+description: Signatures are a different migration from key establishment. The urgency is coordinating the parties, not harvest-now, decrypt-later.
 ---
 
 Signatures are a different migration from key establishment.

@@ -1,9 +1,9 @@
 ---
-title: Start here
+title: Start a post-quantum migration
 sidebar_label: Start here
 sidebar_position: 1
 displayed_sidebar: startHereSidebar
-description: Five responsibilities, each using the same pages, plus the page for a regular adopter whose software picks up the change in an update.
+description: Five responsibilities for a post-quantum migration, each using the same pages, plus a page for regular adopters whose software picks up the change in an update.
 ---
 
 The five responsibilities use the same pages. Each one names the decisions, the reading order, and the outcome.

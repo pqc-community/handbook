@@ -1,9 +1,9 @@
 ---
-title: Curated references
+title: Works this edition cites
 sidebar_label: Curated references
 sidebar_position: 7
 displayed_sidebar: resourcesSidebar
-description: The works this edition cites. A page's own Sources list is the subset that page used.
+description: The works this edition cites, including the UK, NIST, and Dutch post-quantum guides. A page's Sources list is the subset that page used.
 ---
 
 These are the works this edition cites. A page's own Sources list is the subset that page used.

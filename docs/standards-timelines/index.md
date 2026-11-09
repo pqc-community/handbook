@@ -1,9 +1,9 @@
 ---
-title: Standards and timelines
+title: Post-quantum standards and timelines
 sidebar_label: Standards and timelines
 sidebar_position: 1
 displayed_sidebar: standardsTimelinesSidebar
-description: Why there is a date, whose date it is, and which migration guides to read next.
+description: Why a post-quantum migration has a date, whose date it is, and which migration guides to read next.
 ---
 
 Use this section when you have a government date, a customer question, or a vendor claim, and you need to know whose clock it is.

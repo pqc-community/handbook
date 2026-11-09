@@ -1,9 +1,9 @@
 ---
-title: Inventory
+title: Inventory the cryptography
 sidebar_label: Inventory
 sidebar_position: 3
 displayed_sidebar: migrationPracticesSidebar
-description: List the cryptography before anyone claims it has moved.
+description: List the cryptography, including what a scanner cannot see, before anyone claims it has moved to post-quantum algorithms.
 ---
 
 List the cryptography before anyone claims it has moved.

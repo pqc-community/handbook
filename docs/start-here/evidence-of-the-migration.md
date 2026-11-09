@@ -1,9 +1,9 @@
 ---
-title: Evidence of the migration
+title: Evidence of a post-quantum migration
 sidebar_label: Evidence of the migration
 sidebar_position: 5
 displayed_sidebar: startHereSidebar
-description: Which records would let someone else check the inventory, the priority, the vendor answer, and what shipped.
+description: Which records let someone else check the inventory, the priority, the vendor answer, and what shipped.
 ---
 
 ## The decisions

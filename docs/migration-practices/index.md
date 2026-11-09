@@ -1,9 +1,9 @@
 ---
-title: Migration practices
+title: Post-quantum migration practices
 sidebar_label: Migration practices
 sidebar_position: 1
 displayed_sidebar: migrationPracticesSidebar
-description: "How you run the programme: the inventory, the priority, the vendor plan, changing algorithms again, and the next pass."
+description: "How to run a post-quantum migration: the inventory, the priority, the vendor plan, changing algorithms again, and the next pass."
 ---
 
 Use this section to run the programme: the inventory, the priority, the vendor plan, the ability to change algorithms again, and the next pass.

@@ -1,9 +1,9 @@
 ---
-title: Questions for a vendor
+title: Post-quantum questions for a vendor
 sidebar_label: Questions for a vendor
 sidebar_position: 4
 displayed_sidebar: startHereSidebar
-description: What you will ask, and where the answer will be stored.
+description: What to ask a vendor about post-quantum algorithms, products, and dates, and where the written answer is stored.
 ---
 
 ## The decisions

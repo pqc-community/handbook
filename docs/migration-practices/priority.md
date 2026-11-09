@@ -1,9 +1,9 @@
 ---
-title: Priority
+title: What to migrate first
 sidebar_label: Priority
 sidebar_position: 4
 displayed_sidebar: migrationPracticesSidebar
-description: Order the work by how long the data or the key must stay good, and split key establishment from signatures.
+description: Order a post-quantum migration by how long the data or the key must stay good, and split key establishment from signatures.
 ---
 
 Order the work by how long the data or the key must stay good, and split key establishment from signatures.

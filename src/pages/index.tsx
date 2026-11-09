@@ -50,7 +50,10 @@ const featured = [
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+    <Layout
+      title="Post-quantum cryptography migration"
+      description="A practical handbook for organisations that have to migrate public-key cryptography to post-quantum algorithms without a cryptographer to do the deciding."
+    >
       <HomepageHeader />
       <main>
         <section className={styles.choosePath}>

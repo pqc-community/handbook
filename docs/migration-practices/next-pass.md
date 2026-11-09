@@ -1,9 +1,9 @@
 ---
-title: The next pass
+title: The next pass of the migration
 sidebar_label: The next pass
 sidebar_position: 7
 displayed_sidebar: migrationPracticesSidebar
-description: When this estate will be looked at again.
+description: Decide when this estate will be reviewed again. One post-quantum cutover does not finish the migration.
 ---
 
 Decide when this estate will be looked at again.

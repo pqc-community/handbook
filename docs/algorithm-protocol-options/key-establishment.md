@@ -1,9 +1,9 @@
 ---
-title: Key establishment
+title: Post-quantum key establishment
 sidebar_label: Key establishment
 sidebar_position: 3
 displayed_sidebar: algorithmProtocolOptionsSidebar
-description: The confidentiality job. Harvest-now, decrypt-later applies here, not to authentication.
+description: The confidentiality part of a post-quantum migration. Harvest-now, decrypt-later applies here, not to authentication.
 ---
 
 This is the confidentiality job.

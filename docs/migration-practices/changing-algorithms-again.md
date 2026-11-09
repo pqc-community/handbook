@@ -1,9 +1,9 @@
 ---
-title: Changing algorithms again
+title: Change algorithm again after this pass
 sidebar_label: Changing algorithms again
 sidebar_position: 6
 displayed_sidebar: migrationPracticesSidebar
-description: Can you change algorithm again after this pass?
+description: Whether you can change algorithm again after this post-quantum pass, and who owns the next change.
 ---
 
 Can you change algorithm again after this pass?

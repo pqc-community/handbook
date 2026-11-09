@@ -1,9 +1,9 @@
 ---
-title: Where to start
+title: Where to start a post-quantum migration
 sidebar_label: Where to start
 sidebar_position: 2
 displayed_sidebar: migrationPracticesSidebar
-description: Do not claim a migration before you can list what has to move.
+description: Do not claim a post-quantum migration before you can list the cryptography that has to move.
 ---
 
 Do not claim a migration before you can list what has to move.

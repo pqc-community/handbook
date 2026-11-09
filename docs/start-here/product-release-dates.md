@@ -1,9 +1,9 @@
 ---
-title: Product release dates
+title: Post-quantum product release dates
 sidebar_label: Product release dates
 sidebar_position: 3
 displayed_sidebar: startHereSidebar
-description: Which release has to carry a post-quantum signature or a root of trust, and what waits for a vendor.
+description: Which release has to carry a post-quantum signature or a root of trust, and which of those dates still waits for a vendor.
 ---
 
 ## The decisions

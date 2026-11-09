@@ -1,9 +1,9 @@
 ---
-title: Inventory questions
+title: Questions for a cryptography inventory
 sidebar_label: Inventory questions
 sidebar_position: 2
 displayed_sidebar: resourcesSidebar
-description: Questions for the first pass, including a small staff. Each question is tied to a filed source.
+description: Questions for the first pass over the cryptography, including a small staff. Each question is tied to a filed source.
 ---
 
 Use this list on the first pass, including a small staff. Each question is tied to a filed source. The answers belong on the inventory, next to the system they describe.

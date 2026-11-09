@@ -1,9 +1,9 @@
 ---
-title: Dates
+title: Post-quantum migration dates
 sidebar_label: Dates
 sidebar_position: 2
 displayed_sidebar: standardsTimelinesSidebar
-description: The UK, EU, and NIST clocks for post-quantum migration, and whose clocks they are.
+description: The UK, EU, and NIST clocks for post-quantum migration, and whose clock each date belongs to.
 ---
 
 Use this page when you need two or three dates you can remember, and you need to know whose dates they are.

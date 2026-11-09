@@ -1,9 +1,9 @@
 ---
-title: Prioritisation checklist
+title: Prioritise the post-quantum work
 sidebar_label: Prioritisation checklist
 sidebar_position: 3
 displayed_sidebar: resourcesSidebar
-description: Yes or no questions after a first inventory and before a budget.
+description: Yes or no questions after a first inventory and before a budget, covering long-lived secrecy, signatures, roots of trust, and vendor updates.
 ---
 
 Use this after a first inventory, before a budget. Each item is a yes or no with a note.

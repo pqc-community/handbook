@@ -1,9 +1,9 @@
 ---
-title: Resources
+title: Post-quantum migration resources
 sidebar_label: Resources
 sidebar_position: 1
 displayed_sidebar: resourcesSidebar
-description: Questions, a checklist, a tracking sheet, one worked example, a glossary, and the works this edition cites.
+description: Questions, a checklist, a vendor tracking sheet, one worked example, a glossary, and the works this edition cites.
 ---
 
 These pages help a decision. They are questions, a checklist, a tracking sheet, one worked example, a glossary, and the works this edition cites.

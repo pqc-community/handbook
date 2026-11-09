@@ -1,9 +1,9 @@
 ---
-title: Algorithm and protocol options
+title: Post-quantum algorithm and protocol options
 sidebar_label: Algorithm and protocol options
 sidebar_position: 1
 displayed_sidebar: algorithmProtocolOptionsSidebar
-description: Options after the inventory and the priority. None is mandatory unless a cited authority requires it for that reader.
+description: Post-quantum options after the inventory and the priority. None is mandatory unless a cited authority requires it for that reader.
 ---
 
 Use these pages after the inventory and the priority. No option is mandatory unless a cited authority requires it for that reader's situation.

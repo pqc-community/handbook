@@ -1,9 +1,9 @@
 ---
-title: Long-lived roots
+title: Long-lived roots of trust
 sidebar_label: Long-lived roots
 sidebar_position: 5
 displayed_sidebar: algorithmProtocolOptionsSidebar
-description: A firmware or trust root that cannot update its signature check later has to be designed for a post-quantum signature now, if it will still be in use.
+description: A firmware or trust root needs a post-quantum signature now if it cannot update that check later and will still be in use when a cryptanalytically relevant quantum computer exists.
 ---
 
 A firmware or trust root that cannot update its signature check later has to be designed for a post-quantum signature now, if it will still be in use when a cryptanalytically relevant quantum computer exists.

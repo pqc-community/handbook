@@ -99,4 +99,4 @@ An unsourced date, percentage, or claim that an authority requires something **d
 
 ## Front matter
 
-Each doc needs `title`, `description`, and `displayed_sidebar` matching [navigation-structure.md](./navigation-structure.md).
+Each doc needs `title`, `description`, `sidebar_label`, and `displayed_sidebar`. `sidebar_label` is the short name in the sidebar and matches the book map in [navigation-structure.md](./navigation-structure.md). `title` is the page heading and the search-result title. `description` is the search snippet.

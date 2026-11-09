@@ -1,9 +1,9 @@
 ---
-title: Keep software updated
+title: Keep commodity software updated
 sidebar_label: Keep software updated
 sidebar_position: 7
 displayed_sidebar: startHereSidebar
-description: For commodity IT, migration arrives as a vendor update. Long-lived sensitive data or a fixed signature check belongs on The migration plan.
+description: For commodity software, post-quantum migration arrives as a vendor update. Long-lived sensitive data or a fixed signature check belongs on the migration plan.
 ---
 
 The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, say that for organisations using mainly commodity IT, migration should happen as vendors update browsers, operating systems, and mobile devices.

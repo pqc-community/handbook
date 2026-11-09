@@ -1,9 +1,9 @@
 ---
-title: Protect this first
+title: Protect long-lived records first
 sidebar_label: Protect this first
 sidebar_position: 5
 displayed_sidebar: resourcesSidebar
-description: A labelled illustration of a clinic with long-lived health records and a firmware root that cannot be updated in the field.
+description: A labelled illustration, not a real organisation. A clinic with long-lived health records and a firmware root that cannot be updated in the field.
 ---
 
 This page is a labelled illustration, not a real organisation.

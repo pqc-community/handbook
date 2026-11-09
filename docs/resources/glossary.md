@@ -1,9 +1,9 @@
 ---
-title: Glossary
+title: Post-quantum glossary
 sidebar_label: Glossary
 sidebar_position: 6
 displayed_sidebar: resourcesSidebar
-description: Short forms used in this handbook. Handbook wording is labelled as handbook wording.
+description: Short forms used in this handbook, from PQC and hybrid to harvest-now, decrypt-later. Handbook wording is labelled as handbook wording.
 ---
 
 Each entry is the handbook's wording unless it cites a source.
