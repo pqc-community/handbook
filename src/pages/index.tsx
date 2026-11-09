@@ -51,7 +51,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Post-quantum cryptography migration"
+      title="Post-quantum cryptography handbook"
       description="A practical handbook for organisations that have to migrate public-key cryptography to post-quantum algorithms without a cryptographer to do the deciding."
     >
       <HomepageHeader />

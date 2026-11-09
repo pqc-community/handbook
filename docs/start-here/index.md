@@ -1,5 +1,5 @@
 ---
-title: Start a post-quantum migration
+title: Five responsibilities for a post-quantum migration
 sidebar_label: Start here
 sidebar_position: 1
 displayed_sidebar: startHereSidebar

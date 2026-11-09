@@ -1,9 +1,9 @@
 ---
-title: Post-quantum questions for a vendor
+title: The reading order for vendor questions
 sidebar_label: Questions for a vendor
 sidebar_position: 4
 displayed_sidebar: startHereSidebar
-description: What to ask a vendor about post-quantum algorithms, products, and dates, and where the written answer is stored.
+description: Which pages to read when someone else owns the stack, and where the written answer is stored.
 ---
 
 ## The decisions

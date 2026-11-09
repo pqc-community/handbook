@@ -3,7 +3,7 @@ title: The vendor's migration plan
 sidebar_label: Vendor plan
 sidebar_position: 5
 displayed_sidebar: migrationPracticesSidebar
-description: What to ask the organisation that owns the stack about post-quantum migration, and how to keep the written answer.
+description: How to keep the written post-quantum answer from the organisation that owns the stack.
 ---
 
 Decide what to ask the organisation that owns the stack, and how to keep the answer.
