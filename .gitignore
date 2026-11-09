@@ -1,0 +1,4 @@
+.ai-helper-files/
+node_modules/
+build/
+.docusaurus/

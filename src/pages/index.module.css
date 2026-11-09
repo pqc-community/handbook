@@ -1,0 +1,105 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.choosePath,
+.featuredResources,
+.community {
+  padding: 3rem 0;
+}
+
+.roleGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.resourceGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.roleCard,
+.resourceCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  color: inherit;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.roleCard:hover,
+.resourceCard:hover {
+  border-color: var(--ifm-color-primary);
+  color: inherit;
+  text-decoration: none;
+}
+
+.roleCard h3,
+.resourceCard h3 {
+  font-size: 1.05rem;
+}
+
+.model {
+  padding: 3rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.modelFlow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.modelFlowItem {
+  font-weight: 600;
+}
+
+.modelArrow {
+  margin-left: 0.5rem;
+}
+
+.modelSummary {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.communityLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons,
+  .communityLinks {
+    flex-direction: column;
+  }
+
+  .roleGrid,
+  .resourceGrid {
+    grid-template-columns: 1fr;
+  }
+}
