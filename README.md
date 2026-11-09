@@ -2,7 +2,7 @@
 
 **A practical handbook for organisations that have to migrate public-key cryptography and do not have a cryptographer to do the deciding.**
 
-This repository is the site source for the public [PQC Handbook](https://pqchandbook.com): a Docusaurus 3 static site. It builds and runs locally. **This repository does not contain a deploy workflow** — no GitHub Actions, GitHub Pages automation, or DNS setup for the domain.
+This repository is the site source for the public [PQC Handbook](https://pqchandbook.com): a Docusaurus 3 static site. It builds and runs locally. A push to `main` publishes it with the same GitHub Pages workflow as the sister handbooks. DNS for the domain stays at the registrar.
 
 ## Requirements
 
@@ -36,6 +36,17 @@ npm run build
 | `npm run build` | Production static build (broken links and anchors fail the build) |
 
 Optional: `npm run serve` serves the build output after `npm run build`.
+
+## Deployment
+
+The site is deployed to GitHub Pages using GitHub Actions.
+
+- **Live Site**: [https://pqchandbook.com](https://pqchandbook.com)
+- **Trigger**: Any push to the `main` branch automatically triggers deployment
+- **Workflow**: See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for the deployment configuration
+- **Process**: Build -> Deploy to GitHub Pages -> Live in a few minutes
+
+`static/CNAME` contains `pqchandbook.com`. The workflow runs typecheck and the production build. Run `npm run test:sources` and `npm run check:sources` locally before you merge; those checks are not steps in the workflow.
 
 ## Maintainer notes
 

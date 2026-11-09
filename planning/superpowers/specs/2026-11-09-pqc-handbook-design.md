@@ -2,7 +2,7 @@
 
 Date: 2026-11-09
 
-The public site is the PQC Handbook at `https://pqchandbook.com`. It is a sister site to the Secure-by-Design Handbook and the Supply Chain Security Handbook. This edition is the site source. It builds and runs locally. It does not include a deploy workflow, a blog, or DNS.
+The public site is the PQC Handbook at `https://pqchandbook.com`. It is a sister site to the Secure-by-Design Handbook and the Supply Chain Security Handbook. This edition is the site source. It builds and runs locally, and a push to `main` publishes it with the same GitHub Pages workflow as the sister handbooks. It does not include a blog. DNS for the domain stays at the registrar.
 
 The reader is the person who must decide what the organisation migrates, in what order, and how anyone will know it happened, without being a cryptographer. Migration is the main path through a wider post-quantum cryptography handbook.
 
@@ -244,9 +244,12 @@ Completion checks, in order:
 3. `npm run build`
 4. Read locally: the homepage, `/start-here/own-the-plan/`, `/migration-practices/priority/`, and `/resources/vendor-questions/`. Confirm the navbar, the trailing-slash URLs, and a visible Sources list on the three handbook pages.
 
+## Deployment
+
+A push to `main` runs `.github/workflows/deploy.yml`: Node 20, `npm ci`, typecheck, production build, then GitHub Pages. `static/CNAME` contains `pqchandbook.com`. The sources checks stay local. DNS records stay at the registrar.
+
 ## Out of scope
 
-- GitHub Actions, GitHub Pages, and DNS for `pqchandbook.com`
 - A blog or news stream
 - A new logo
 - A page per algorithm

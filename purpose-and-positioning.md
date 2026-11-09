@@ -41,7 +41,6 @@ This edition does **not** publish or centre:
 - Quantum random-number generators
 - A blog or news stream
 - A page per algorithm (hybrid, ML-KEM, ML-DSA, SLH-DSA, and stateful hash-based signatures are choices on the four option pages)
-- Deploy automation, DNS for `pqchandbook.com`, or GitHub Pages wiring in this repo
 
 ### Claims this edition does not state
 
