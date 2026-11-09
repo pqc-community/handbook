@@ -1,6 +1,6 @@
 ---
-title: I have to ask a vendor
-sidebar_label: I have to ask a vendor
+title: Questions for a vendor
+sidebar_label: Questions for a vendor
 sidebar_position: 4
 displayed_sidebar: startHereSidebar
 description: What you will ask, and where the answer will be stored.
@@ -20,7 +20,7 @@ What you will ask, and where the answer will be stored.
 
 The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf), as of 17 August 2023, urges organisations to ask vendors for a quantum-readiness roadmap that describes how they will migrate, including timelines for testing and integration, for both on-premises and cloud products.
 
-## What you leave with
+## Outcome
 
 Written questions and a tracking sheet.
 

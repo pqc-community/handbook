@@ -3,11 +3,11 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   startHereSidebar: [
     'start-here/index',
-    'start-here/own-the-plan',
-    'start-here/own-the-product-dates',
-    'start-here/ask-a-vendor',
-    'start-here/show-evidence',
-    'start-here/change-a-protocol',
+    'start-here/the-migration-plan',
+    'start-here/product-release-dates',
+    'start-here/questions-for-a-vendor',
+    'start-here/evidence-of-the-migration',
+    'start-here/changing-a-protocol',
     'start-here/keep-software-updated',
   ],
   standardsTimelinesSidebar: [

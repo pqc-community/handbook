@@ -6,7 +6,7 @@ displayed_sidebar: resourcesSidebar
 description: Questions, a checklist, a tracking sheet, one worked example, a glossary, and the works this edition cites.
 ---
 
-The kit earns its place by helping a decision. The pages here are questions, a checklist, a tracking sheet, one worked example, a glossary, and the works this edition cites.
+These pages help a decision. They are questions, a checklist, a tracking sheet, one worked example, a glossary, and the works this edition cites.
 
 - [Inventory questions](./inventory-questions.md) for the first pass, including a small staff.
 - [Prioritisation checklist](./prioritisation-checklist.md) after a first inventory and before a budget.

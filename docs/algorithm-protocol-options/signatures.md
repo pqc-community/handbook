@@ -55,4 +55,4 @@ ML-DSA and SLH-DSA are the two NIST signature algorithms named here. The choice 
 - [Long-lived roots](./long-lived-roots.md)
 - [Key establishment](./key-establishment.md)
 - [Priority](../migration-practices/priority.md)
-- [I own the product dates](../start-here/own-the-product-dates.md)
+- [Product release dates](../start-here/product-release-dates.md)

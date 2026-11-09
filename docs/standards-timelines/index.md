@@ -6,7 +6,7 @@ displayed_sidebar: standardsTimelinesSidebar
 description: Why there is a date, whose date it is, and which migration guides to read next.
 ---
 
-Use this section when a government date, a customer question, or a vendor claim has landed on your desk and you need to know whose clock it is.
+Use this section when you have a government date, a customer question, or a vendor claim, and you need to know whose clock it is.
 
 The pages here do not tell you how to configure a protocol. [Dates](./dates.md) carries the UK, EU, and NIST clocks that this edition can cite. [Migration guides](./migration-guides.md) is the reading list, including the Dutch handbook, which this book does not rewrite. Country names and agency names stay on those pages. They are not the navigation of the site.
 

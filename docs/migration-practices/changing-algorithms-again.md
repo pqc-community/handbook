@@ -34,15 +34,15 @@ A named owner and a place where the algorithm in use is written down.
 
 ## A stronger answer
 
-"This pass turns on the construction our authority defends. The inventory names the algorithm. The next pass has a date."
+"This pass uses the construction our authority defends. The inventory names the algorithm. The next pass has a date."
 
 ## Which pass
 
-This page is the capability. [The next pass](./next-pass.md) is the rhythm.
+This page is the capability to change algorithms again. [The next pass](./next-pass.md) is the later review of the same estate.
 
 ## Options
 
-The construction this pass turns on is chosen on [Choosing an option](../algorithm-protocol-options/choosing.md). Hybrid use, where an authority defends it, is a temporary measure on the way to a later change, not the end of the programme.
+The construction this pass uses is chosen on [Choosing an option](../algorithm-protocol-options/choosing.md). Hybrid use, where an authority defends it, is a temporary measure on the way to a later change, not the end of the programme.
 
 ## Sources
 

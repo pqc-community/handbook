@@ -27,11 +27,11 @@ function HomepageHeader() {
 }
 
 const roles = [
-  {title: 'I own the plan', to: '/start-here/own-the-plan/', text: 'Leave with an inventory, a priority, and a one-page plan.'},
-  {title: 'I own the product dates', to: '/start-here/own-the-product-dates/', text: 'Leave with a release date tied to one asset, and a vendor question if someone else owns the stack.'},
-  {title: 'I have to ask a vendor', to: '/start-here/ask-a-vendor/', text: 'Leave with written questions and a tracking sheet.'},
-  {title: 'I have to show evidence', to: '/start-here/show-evidence/', text: 'Leave with the records that show the inventory, the priority, the vendor answer, and what shipped.'},
-  {title: 'I have to change a protocol', to: '/start-here/change-a-protocol/', text: 'Leave knowing which job is changing, which option an authority defends, and how to roll back.'},
+  {title: 'The migration plan', to: '/start-here/the-migration-plan/', text: 'An inventory, a priority, and a one-page plan.'},
+  {title: 'Product release dates', to: '/start-here/product-release-dates/', text: 'A release date tied to one asset, and a vendor question if someone else owns the stack.'},
+  {title: 'Questions for a vendor', to: '/start-here/questions-for-a-vendor/', text: 'Written questions and a tracking sheet.'},
+  {title: 'Evidence of the migration', to: '/start-here/evidence-of-the-migration/', text: 'The records that show the inventory, the priority, the vendor answer, and what shipped.'},
+  {title: 'Changing a protocol', to: '/start-here/changing-a-protocol/', text: 'Which job is changing, which option an authority defends, and how to roll back.'},
 ];
 
 const steps = [
@@ -56,8 +56,8 @@ export default function Home(): ReactNode {
         <section className={styles.choosePath}>
           <div className="container">
             <div className="text--center margin-bottom--lg">
-              <Heading as="h2">Choose your path</Heading>
-              <p>Each path opens the same handbook. Keep software updated is linked from Start here.</p>
+              <Heading as="h2">Five responsibilities</Heading>
+              <p>Each responsibility uses the same handbook. Keep software updated is linked from Start here.</p>
             </div>
             <div className={styles.roleGrid}>
               {roles.map((role) => (
@@ -81,7 +81,7 @@ export default function Home(): ReactNode {
                   </span>
                 ))}
               </div>
-              <p className={styles.modelSummary}>Dates and duties, then the inventory and the priority, then the options, then a small kit.</p>
+              <p className={styles.modelSummary}>Dates and duties, then the inventory and the priority, then the options, then the resources.</p>
             </div>
           </div>
         </section>
@@ -102,7 +102,7 @@ export default function Home(): ReactNode {
         </section>
         <section className={styles.community}>
           <div className="container">
-            <Heading as="h2">Guidance you can check</Heading>
+            <Heading as="h2">Named sources</Heading>
             <p>Dates, duties, and options on this site name the authority and the date of the source.</p>
             <div className={styles.communityLinks}>
               <Link className="button button--outline button--primary" to="/algorithm-protocol-options/">Algorithm and protocol options</Link>

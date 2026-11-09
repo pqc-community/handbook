@@ -22,11 +22,11 @@ Start here routes into the sections below; it does not add a second set of topic
 ```text
 /
 /start-here/
-/start-here/own-the-plan/
-/start-here/own-the-product-dates/
-/start-here/ask-a-vendor/
-/start-here/show-evidence/
-/start-here/change-a-protocol/
+/start-here/the-migration-plan/
+/start-here/product-release-dates/
+/start-here/questions-for-a-vendor/
+/start-here/evidence-of-the-migration/
+/start-here/changing-a-protocol/
 /start-here/keep-software-updated/
 
 /standards-timelines/
@@ -67,16 +67,16 @@ The **slugs in the book map and in the Start here table below are the ones the s
 
 ## Start here seats
 
-Each Start here page names that seat's decisions, the reading order, what the reader leaves with, and a weak answer beside a stronger one.
+Each Start here page names that responsibility's decisions, the reading order, the outcome, and a weak answer beside a stronger one.
 
-| Seat | Path | Read in order | Leave with |
+| Seat | Path | Read in order | Outcome |
 | --- | --- | --- | --- |
-| I own the plan | `/start-here/own-the-plan/` | Where to start, inventory, priority, dates, the next pass, inventory questions, prioritisation checklist | An inventory, a priority, and a one-page plan |
-| I own the product dates | `/start-here/own-the-product-dates/` | Where to start, dates, priority, signatures, long-lived roots, vendor plan, protect this first | A release date tied to one asset, and a vendor question if someone else owns the stack |
-| I have to ask a vendor | `/start-here/ask-a-vendor/` | Vendor plan, vendor questions, key establishment, signatures, changing algorithms again | Written questions and a tracking sheet |
-| I have to show evidence | `/start-here/show-evidence/` | Where to start, inventory, priority, vendor plan, key establishment, signatures | The records that show the inventory, the priority, the vendor answer, and what shipped |
-| I have to change a protocol | `/start-here/change-a-protocol/` | Choosing, key establishment, signatures, changing algorithms again, vendor plan | Which job is changing, which option an authority defends, and a way to roll back |
-| Keep software updated | `/start-here/keep-software-updated/` | This page, then dates, then inventory questions if the reader is not sure they are a regular adopter | A reason to keep browsers, operating systems, and cloud services updated, and a route into "I own the plan" if the data or the keys are long-lived |
+| The migration plan | `/start-here/the-migration-plan/` | Where to start, inventory, priority, dates, the next pass, inventory questions, prioritisation checklist | An inventory, a priority, and a one-page plan |
+| Product release dates | `/start-here/product-release-dates/` | Where to start, dates, priority, signatures, long-lived roots, vendor plan, protect this first | A release date tied to one asset, and a vendor question if someone else owns the stack |
+| Questions for a vendor | `/start-here/questions-for-a-vendor/` | Vendor plan, vendor questions, key establishment, signatures, changing algorithms again | Written questions and a tracking sheet |
+| Evidence of the migration | `/start-here/evidence-of-the-migration/` | Where to start, inventory, priority, vendor plan, key establishment, signatures | The records that show the inventory, the priority, the vendor answer, and what shipped |
+| Changing a protocol | `/start-here/changing-a-protocol/` | Choosing, key establishment, signatures, changing algorithms again, vendor plan | Which job is changing, which option an authority defends, and a way to roll back |
+| Keep software updated | `/start-here/keep-software-updated/` | This page, then dates, then inventory questions if the reader is not sure they are a regular adopter | A reason to keep browsers, operating systems, and cloud services updated, and a route into "The migration plan" if the data or the keys are long-lived |
 
 **Keep software updated** is linked from Start here and from Where to start. It is not a homepage role card.
 

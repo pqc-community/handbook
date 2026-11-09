@@ -11,7 +11,9 @@
     "serve": "docusaurus serve",
     "typecheck": "tsc",
     "test:sources": "node --test scripts/check-sources.test.mjs",
-    "check:sources": "node scripts/check-sources.mjs"
+    "check:sources": "node scripts/check-sources.mjs",
+    "test:voice": "node --test scripts/check-voice.test.mjs",
+    "check:voice": "node scripts/check-voice.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",

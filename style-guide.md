@@ -2,6 +2,17 @@
 
 Rules for public handbook pages in `docs/`. The design spec is [planning/superpowers/specs/2026-11-09-pqc-handbook-design.md](./planning/superpowers/specs/2026-11-09-pqc-handbook-design.md).
 
+## Voice
+
+Practical, neutral, and decision-oriented. Plain enough that the reader can use the page without a cryptographer in the room.
+
+This applies to every visitor-facing string: handbook pages, the homepage, the navbar, and the footer.
+
+- The handbook's own voice is a briefing: plain British English, and complete sentences in body prose. A homepage card may be a noun phrase.
+- Open on the reader's decision, the date, or the threat. Algorithm names come after that, with a plain gloss.
+- Keep key establishment and signatures as separate jobs where that split changes the action. Record which authority defends hybrid or pure post-quantum. Do not choose for the reader.
+- Campaign lines, pep, cute metaphors, hype, and a single-vendor recommendation fail. Quoted weak answers stay casual on purpose.
+
 ## Spelling
 
 Use the research notes' spelling consistently:

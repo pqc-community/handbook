@@ -1,6 +1,6 @@
 ---
-title: I have to change a protocol
-sidebar_label: I have to change a protocol
+title: Changing a protocol
+sidebar_label: Changing a protocol
 sidebar_position: 6
 displayed_sidebar: startHereSidebar
 description: Which job is changing, which option an authority defends, and how you roll back.
@@ -18,7 +18,7 @@ Which job is changing, which option an authority defends, and how you roll back.
 4. [Changing algorithms again](../migration-practices/changing-algorithms-again.md)
 5. [Vendor plan](../migration-practices/vendor-plan.md)
 
-## What you leave with
+## Outcome
 
 Which job is changing, which option an authority defends, and a way to roll back.
 

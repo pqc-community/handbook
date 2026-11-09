@@ -10,7 +10,7 @@ A firmware or trust root that cannot update its signature check later has to be 
 
 ## What can go wrong
 
-A general-purpose stateful scheme without a state-control story, or a root of trust left on a signature the device can never replace.
+A general-purpose stateful scheme without a way to control the state, or a root of trust left on a signature the device can never replace.
 
 ## A stronger practice
 
@@ -54,5 +54,5 @@ NIST IR 8547 allows stateful hash-based schemes, LMS and XMSS, for software and 
 ## Related pages
 
 - [Signatures](./signatures.md)
-- [I own the product dates](../start-here/own-the-product-dates.md)
+- [Product release dates](../start-here/product-release-dates.md)
 - [Vendor plan](../migration-practices/vendor-plan.md)

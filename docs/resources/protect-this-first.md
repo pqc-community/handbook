@@ -18,7 +18,7 @@ The firmware root is first for a different reason. The [UK NCSC timelines](https
 
 The clinic's browsers and laptops stay on the keep-updated path. The NCSC timelines say that for organisations that rely on commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen as vendors update those services.
 
-## What you leave with
+## Outcome
 
 One page: the two assets, why each is first, the vendor question, and the date of the next pass.
 
@@ -37,4 +37,4 @@ One page: the two assets, why each is first, the vendor question, and the date o
 
 - [Priority](../migration-practices/priority.md)
 - [Vendor questions](./vendor-questions.md)
-- [I own the product dates](../start-here/own-the-product-dates.md)
+- [Product release dates](../start-here/product-release-dates.md)

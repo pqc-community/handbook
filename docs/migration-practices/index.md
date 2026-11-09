@@ -3,10 +3,10 @@ title: Migration practices
 sidebar_label: Migration practices
 sidebar_position: 1
 displayed_sidebar: migrationPracticesSidebar
-description: "The operating layer for a migration programme: inventory, priority, the vendor plan, changing algorithms again, and the next pass."
+description: "How you run the programme: the inventory, the priority, the vendor plan, changing algorithms again, and the next pass."
 ---
 
-Use this section to run the programme. This is the operating layer: the inventory, the priority, the vendor plan, the ability to change algorithms again, and the next pass.
+Use this section to run the programme: the inventory, the priority, the vendor plan, the ability to change algorithms again, and the next pass.
 
 The first page is [Where to start](./where-to-start.md). The pages after it are [Inventory](./inventory.md), [Priority](./priority.md), [Vendor plan](./vendor-plan.md), [Changing algorithms again](./changing-algorithms-again.md), and [The next pass](./next-pass.md).
 

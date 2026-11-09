@@ -1,6 +1,6 @@
 ---
-title: I have to show evidence
-sidebar_label: I have to show evidence
+title: Evidence of the migration
+sidebar_label: Evidence of the migration
 sidebar_position: 5
 displayed_sidebar: startHereSidebar
 description: Which records would let someone else check the inventory, the priority, the vendor answer, and what shipped.
@@ -23,7 +23,7 @@ The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/fi
 
 Supplier evidence packages are onward reading in the [Supply Chain Security Handbook](https://supplychainsecurityhandbook.com/practices-controls/supplier-assurance-procurement/). That link is not the authority for a post-quantum date.
 
-## What you leave with
+## Outcome
 
 The list of records: the inventory, the priority, the vendor answer, and what shipped.
 

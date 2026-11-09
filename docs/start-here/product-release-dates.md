@@ -1,6 +1,6 @@
 ---
-title: I own the product dates
-sidebar_label: I own the product dates
+title: Product release dates
+sidebar_label: Product release dates
 sidebar_position: 3
 displayed_sidebar: startHereSidebar
 description: Which release has to carry a post-quantum signature or a root of trust, and what waits for a vendor.
@@ -22,7 +22,7 @@ Which release has to carry a post-quantum signature or a root of trust, and what
 
 The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, include long-lived hardware roots of trust in the 2028 plan row, and say commodity IT such as browsers, operating systems, and mobile devices picks up migration as vendors update those services. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says that where a device cannot update its signature check later, and it will still be in use when a cryptanalytically relevant quantum computer exists, the device should be designed to require quantum-resistant signatures on the executable code.
 
-## What you leave with
+## Outcome
 
 A release date tied to one asset, and a vendor question if someone else owns the stack.
 

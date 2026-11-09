@@ -1,6 +1,6 @@
 ---
-title: I own the plan
-sidebar_label: I own the plan
+title: The migration plan
+sidebar_label: The migration plan
 sidebar_position: 2
 displayed_sidebar: startHereSidebar
 description: What has to move, what is first, and what the one-page plan says.
@@ -22,7 +22,7 @@ What has to move, what is first, and what the one-page plan says.
 
 The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf), as of 17 August 2023, is the short official start: inventory, vendors, and supply chain. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, are the clock to name on the plan if that is the clock you are following.
 
-## What you leave with
+## Outcome
 
 An inventory, a priority, and a one-page plan.
 
