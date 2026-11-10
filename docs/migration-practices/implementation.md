@@ -19,6 +19,8 @@ An option and an authority are already recorded for one system.
 5. Write how the deployed state will be checked.
 6. Write the [change record](/resources/change-record/) and the [evidence record](/resources/evidence-record/).
 
+A result of `unknown` means the change is not closed.
+
 ## Keep this evidence
 
 The [change record](/resources/change-record/).
@@ -27,7 +29,9 @@ The [change record](/resources/change-record/).
 
 An insufficient record is "We enabled PQC."
 
-A decision-ready record names one channel, the authority, the rollback owner, and the check that the deployed configuration matches the record.
+A decision-ready record for health records on the vendor system names system health records on the vendor system, change Adopt the supplier's key-establishment construction, option ML-KEM-768, authority NIST IR 8547, October 2026, pilot scope one clinic site, tests key establishment on the health-records channel, rollback trigger clients cannot connect after the change, who can roll back the clinic operations lead, deployed-state check the deployed configuration matches the supplier letter, result Pilot passed, and date 2026-08-14.
+
+A blocked record is the clinic field device firmware signature check row: option and construction `unknown`, result `unknown`, with implementation blocked while the option is unknown.
 
 ## Limits and next page
 

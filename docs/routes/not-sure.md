@@ -12,7 +12,7 @@ If the organisation mostly uses supplier-updated browsers, operating systems, an
 
 If a record needs to stay confidential for years, use the [long-lived confidentiality route](/routes/long-lived-confidentiality/). If the organisation ships or operates a product whose signature check cannot be updated later, use the [hard-to-change systems route](/routes/hard-to-change-systems/).
 
-If someone is coordinating many of these assets, use the [organisation-wide route](/routes/organisation-wide/). An unknown stays written down with an owner. This page does not assess risk. When you still cannot choose, the risk owner or the sector authority chooses. A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as the organisation-wide route.
+If someone is coordinating many of these assets, use the [organisation-wide route](/routes/organisation-wide/) to coordinate the programme, and follow the asset route for each system as well. Coordinating many assets is not a reason to leave the asset route. An unknown stays written down with an owner. This page does not assess risk. When you still cannot choose, the risk owner or the sector authority chooses. A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as the organisation-wide route.
 
 The output is a named route, or a list of unknowns and the person who will close them.
 

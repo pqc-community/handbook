@@ -16,11 +16,13 @@ date, what was reviewed, unresolved items, owner, next review
 
 A cell you cannot fill is the word `unknown`.
 
+**Handbook practice:** Where the row has a dependencies cell, every dependency goes in that cell, separated by a semicolon. A shared component does not get its own system row. Where the row records a timeline or a source, more than one may be named in that cell, separated by a semicolon. Keys, secrets, and personal data stay out of the file. Name the system.
+
 ## Filled example
 
 | date | what was reviewed | unresolved items | owner | next review |
 | --- | --- | --- | --- | --- |
-| unknown | priority record and vendor response log for health records | supplier date for key-establishment release | the clinic operations lead | 2026-12-01 |
+| unknown | priority record and vendor response log for health records | blocked firmware option | the clinic operations lead | 2026-12-01 |
 
 ## Blank template
 

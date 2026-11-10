@@ -25,8 +25,8 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Health records on the vendor system | the clinic operations lead | unknown | unknown | the vendor | more than 10 years | unknown | unknown | unknown | unknown | known |
-| Firmware signature check that cannot be updated in the field | the clinic operations lead | unknown | unknown | unknown | unknown | unknown | unknown | unknown | firmware trust anchor | known |
+| Health records on the vendor system | the clinic operations lead | unknown | unknown | the vendor | more than 10 years | unknown | unknown | unknown | unknown | unknown |
+| Firmware signature check that cannot be updated in the field | the clinic operations lead | unknown | unknown | unknown | unknown | unknown | unknown | unknown | firmware trust anchor | unknown |
 
 ## Priority decision
 
@@ -34,7 +34,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 | asset | confidentiality period | job | impact | lead time | dependencies | supplier readiness | decision | reason | source | subsequent review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Health records on the vendor system | more than 10 years | key establishment | unknown | unknown | unknown | unknown | first for key establishment | confidentiality period longer than 10 years | NIST IR 8547, October 2026 | 2026-12-01 |
+| Health records on the vendor system | more than 10 years | key establishment | unknown | unknown | unknown | unknown | first for key establishment | confidentiality period longer than 10 years | EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025 | 2026-12-01 |
 | Firmware signature check that cannot be updated in the field | unknown | non-updatable verifier | unknown | unknown | unknown | unknown | first for non-updatable verifier | verifier cannot be updated in the field | UK NCSC timelines, modified 3 August 2026 | 2026-12-01 |
 
 ## Supplier answer
@@ -43,7 +43,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Clinic software supplier | named in the supplier letter | What key-establishment construction and release date apply to the health-records platform? | The letter names the product and version, the key-establishment construction, and a date, and states that signatures are not in that release. | unknown | supplier letter | complete | none | record key-establishment date and open signatures follow-up |
+| Clinic software supplier | named in the supplier letter | What key-establishment construction and release date apply to the health-records platform? | The letter names the product and version, names ML-KEM-768, names the release date, and states that signatures are not in that release. | 2026-08-14 | supplier letter | complete | none | record the key-establishment date and open a signatures follow-up |
 
 ## Option and authority
 
@@ -53,19 +53,25 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 ## Change record and deployed-state check
 
-**Handbook practice:** The firmware root moves on the [change record](/resources/change-record/). The row that matters for verification is the deployed-state check.
+**Handbook practice:** The clinic records two changes on the [change record](/resources/change-record/): the health-records change is closed, and the firmware change is blocked. The row that matters for verification is the deployed-state check.
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Clinic field device firmware signature check | replace trust anchor before next deployment | unknown | UK NCSC timelines, modified 3 August 2026 | one spare device in the workshop | signature verification on sample firmware | failed verification on pilot device | the clinic operations lead | compare flashed firmware hash to signed manifest | unknown | unknown |
+| Health records on the vendor system | Adopt the supplier's key-establishment construction | ML-KEM-768 | NIST IR 8547, October 2026 | One clinic site | Key establishment on the health-records channel | Clients cannot connect after the change | the clinic operations lead | The deployed configuration matches the supplier letter | Pilot passed | 2026-08-14 |
+
+The firmware row is blocked: implementation does not start while the option is unknown.
+
+| system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Clinic field device firmware signature check | replace trust anchor before next deployment | unknown | unknown | one spare device in the workshop | signature verification on sample firmware | failed verification on pilot device | the clinic operations lead | compare flashed firmware hash to signed manifest | unknown | unknown |
 
 ## Subsequent review
 
-**Handbook practice:** The clinic sets **Requirement:** subsequent review on **2026-12-01** in the priority record, and opens the [review log](/resources/review-log/) when that date arrives. The agenda follows [subsequent review](/migration-practices/subsequent-review/).
+**Example:** The clinic sets the subsequent review to 2026-12-01 in the priority record, and opens the [review log](/resources/review-log/) when that date arrives. The agenda follows [subsequent review](/migration-practices/subsequent-review/).
 
 | date | what was reviewed | unresolved items | owner | next review |
 | --- | --- | --- | --- | --- |
-| unknown | priority record and vendor response log for health records | supplier date for key-establishment release | the clinic operations lead | 2026-12-01 |
+| unknown | priority record and vendor response log for health records | blocked firmware option | the clinic operations lead | 2026-12-01 |
 
 ## Rejected alternative
 
@@ -75,6 +81,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 ## Sources
 
+- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
 - UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 

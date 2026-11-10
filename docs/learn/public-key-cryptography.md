@@ -6,7 +6,7 @@ displayed_sidebar: learnSidebar
 last_reviewed: 2026-11-10
 ---
 
-Public-key cryptography gives each party a matched pair of keys. The public key can be shared openly. The private key stays secret. What one key in the pair does, only the other key can undo or check.
+Public-key cryptography gives each party a matched pair of keys. The public key can be shared openly. The private key stays secret. The two keys do different jobs. For key establishment, the public key is used to create a shared secret and the private key recovers it. For a signature, the private key creates the signature and the public key checks it. Checking a signature does not reverse it.
 
 Key establishment lets two parties agree on a shared secret across an open network, even when they have never met before. That secret is often turned into symmetric keys that encrypt the actual messages. The public-key step is usually short; the symmetric step carries the bulk of the traffic.
 

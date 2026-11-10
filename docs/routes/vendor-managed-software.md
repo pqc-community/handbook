@@ -8,16 +8,16 @@ last_reviewed: 2026-11-10
 
 This route is for an organisation that relies on standard browsers, operating systems, and mobile devices.
 
-Before you follow the reading order, check whether another route applies. Long-lived confidential data belongs on the [long-lived confidentiality route](/routes/long-lived-confidentiality/). A bespoke system, or a product whose signature check cannot be updated later, belongs on the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets belongs on the [organisation-wide route](/routes/organisation-wide/).
+The reader stays on this route only when all of these hold: the software is supplier-updated browsers, operating systems, or mobile devices; no record needs to stay confidential for years; there is no bespoke system; no verifier that cannot be updated later; and the product is in support and has a written supplier plan. A product that is out of support, or has no written supplier plan, uses the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets also opens the [organisation-wide route](/routes/organisation-wide/).
 
-If none of those exceptions applies, read in this order:
+When all of those stay-conditions hold, read in this order:
 
 1. [Commodity software](/migration-practices/commodity-software/)
 2. [Dates](/standards-timelines/dates/)
 3. [Vendor response log](/resources/vendor-response-log/)
 4. [Subsequent review](/migration-practices/subsequent-review/)
 
-The output is a [vendor response log](/resources/vendor-response-log/), and either a written note that no exception applies or the name of the route you moved to.
+The output is a [vendor response log](/resources/vendor-response-log/), and either a written note that all five stay-conditions hold or the name of the route you moved to.
 
 **Primary next page:** [Commodity software](/migration-practices/commodity-software/).
 

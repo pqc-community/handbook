@@ -31,7 +31,7 @@ The [change record](/resources/change-record/) fields for compatibility, perform
 
 An insufficient record is "TLS is done organisation-wide."
 
-A decision-ready record names the VPN that carries the clinic health records as the first key-establishment channel, records the supplier and component, names NIST IR 8547, October 2026, as the authority for ML-KEM-768 as the default parameter set, and leaves the clinic firmware signature check on the signatures page.
+A decision-ready record names the VPN that carries the clinic health records as the first key-establishment channel, records the supplier and component, names NIST IR 8547, October 2026, as the authority for ML-KEM-768 as the default parameter set, notes that the firmware check is blocked until an option is known, and notes that long-lived roots comes before a signature choice.
 
 ## Limits and next page
 

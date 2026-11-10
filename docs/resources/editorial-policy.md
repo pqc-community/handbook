@@ -21,6 +21,16 @@ When pages cite external work, they follow this order:
 
 **Handbook practice:** Record the timeline for the place the organisation operates or sells into, and do not copy another jurisdiction's milestone as a universal deadline.
 
+## Labels
+
+- **Requirement** is a binding obligation inside the audience named by that authority.
+- **Authority recommendation** is the source advising an action.
+- **Authority statement** is the source describing a fact.
+- **Handbook practice** is what this handbook tells the reader to do.
+- **Example** is an illustration, including the clinic.
+
+A date or an obligation records the authority, the date of the source, the jurisdiction, the audience, and the status when those change the meaning.
+
 ## Owner
 
 The maintainers of the [pqc-community/handbook](https://github.com/pqc-community/handbook) repository own the pages in this edition.

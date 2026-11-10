@@ -10,7 +10,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "typecheck": "tsc",
-    "test": "node --test scripts/check-voice.test.mjs scripts/check-sources.test.mjs scripts/check-records.test.mjs",
+    "test": "node --test scripts/check-voice.test.mjs scripts/check-sources.test.mjs scripts/check-records.test.mjs scripts/check-clinic.test.mjs",
     "test:sources": "node --test scripts/check-sources.test.mjs",
     "check:sources": "node scripts/check-sources.mjs",
     "test:voice": "node --test scripts/check-voice.test.mjs",

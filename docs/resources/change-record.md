@@ -16,11 +16,19 @@ system, change, option, authority, pilot scope, tests, rollback trigger, who can
 
 A cell you cannot fill is the word `unknown`.
 
+**Handbook practice:** Where the row has a dependencies cell, every dependency goes in that cell, separated by a semicolon. A shared component does not get its own system row. Where the row records a timeline or a source, more than one may be named in that cell, separated by a semicolon. Keys, secrets, and personal data stay out of the file. Name the system.
+
 ## Filled example
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Clinic field device firmware signature check | replace trust anchor before next deployment | unknown | UK NCSC timelines, modified 3 August 2026 | one spare device in the workshop | signature verification on sample firmware | failed verification on pilot device | the clinic operations lead | compare flashed firmware hash to signed manifest | unknown | unknown |
+| Health records on the vendor system | Adopt the supplier's key-establishment construction | ML-KEM-768 | NIST IR 8547, October 2026 | One clinic site | Key establishment on the health-records channel | Clients cannot connect after the change | the clinic operations lead | The deployed configuration matches the supplier letter | Pilot passed | 2026-08-14 |
+
+The firmware row is blocked: implementation does not start while the option is unknown.
+
+| system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Clinic field device firmware signature check | replace trust anchor before next deployment | unknown | unknown | one spare device in the workshop | signature verification on sample firmware | failed verification on pilot device | the clinic operations lead | compare flashed firmware hash to signed manifest | unknown | unknown |
 
 ## Blank template
 
@@ -33,7 +41,7 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 

@@ -6,7 +6,7 @@ displayed_sidebar: routesSidebar
 last_reviewed: 2026-11-10
 ---
 
-This route is for a migration lead who is coordinating many assets across the organisation.
+This route is for a migration lead who is coordinating many assets across the organisation. Use this route to coordinate the programme, and follow the asset route for each system as well. Coordinating many assets is not a reason to leave the asset route.
 
 **Handbook practice:** Each role supplies one input to the plan.
 
@@ -29,7 +29,7 @@ Read in this order for the handbook's six steps:
 5. Engage suppliers and migrate.
 6. Verify what changed and set the subsequent review.
 
-**Handbook practice**, citing ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) publication: name an owner is the handbook's step before LATICE; find dependencies is Locate; assess the confidentiality period and constraints is Assess; prioritise is Triage; engage suppliers and migrate is Implement; verify the change, communicate it, and set the subsequent review is Communicate and educate. The handbook's six-step list and LATICE do not have the same number of steps.
+**Handbook practice:** The five phase names come from ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) publication. The alignment is handbook practice. Name an owner is the step before LATICE. Find dependencies is Locate. Assess confidentiality and constraints is Assess. Prioritise is Triage. Engage suppliers and migrate is Implement. Handbook step 6 verifies the change, records it on the evidence record and the change record, and sets the subsequent review. LATICE's Communicate and educate is the communication of that result. The learn sequence is the education material. The two lists still differ in length.
 
 A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as this route.
 

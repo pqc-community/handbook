@@ -19,6 +19,8 @@ You have asked a supplier for a written post-quantum migration answer, or you ar
 4. **Handbook practice:** For a `missing` answer, record judgement `missing` and a follow-up date.
 5. **Handbook practice:** For a `concerning` answer, escalate to procurement and the contract owner.
 
+**Handbook practice:** A `complete` answer names the product, the version, the construction, and a date, and the source can be kept. If no commitment has arrived by the follow-up date, procurement records the gap and the system is not treated as migrated.
+
 **Authority recommendation:** The CISA, NSA, and NIST Quantum-Readiness fact sheet, as of 17 August 2023, United States, urges organisations to ask vendors for a quantum-readiness roadmap that describes how they will migrate, including timelines for testing and integration, and to plan contract changes so new products arrive with post-quantum cryptography and older products can be upgraded.
 
 **Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, United Kingdom, say that where you rely entirely on commodity platforms, the provider delivers the upgrade, and your work is the timely refresh. Where you do not, you choose an approach per system.
@@ -31,7 +33,7 @@ The vendor response log, with judgement, follow-up date, and source for each row
 
 An insufficient record is "They told us on a call that they are quantum safe."
 
-A decision-ready record stores judgement `complete`, the roadmap PDF, the answer date 14 August 2026, product version 4.2, and the URL shown.
+A decision-ready record stores judgement `complete`, the product and version named in the supplier letter, construction ML-KEM-768, the answer date 14 August 2026, and source the supplier letter.
 
 A `vague` answer that names a year but not a construction gets a written follow-up asking for the product line, the algorithm construction, and the test date.
 

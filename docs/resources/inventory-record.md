@@ -14,13 +14,15 @@ Use this record when you finish a first pass over systems that handle sensitive 
 
 system, owner, key-establishment algorithm, signature algorithm, software control, confidentiality period, renewal, version, dependencies, not visible to a scan, confidence
 
-A cell you cannot fill is the word `unknown`. **Handbook practice:** `confidence` is `known` or `unknown`.
+A cell you cannot fill is the word `unknown`. **Handbook practice:** `confidence` is `known` only when both the key-establishment algorithm and the signature algorithm name a construction. Otherwise it is `unknown`.
+
+**Handbook practice:** Where the row has a dependencies cell, every dependency goes in that cell, separated by a semicolon. A shared component does not get its own system row. Where the row records a timeline or a source, more than one may be named in that cell, separated by a semicolon. Keys, secrets, and personal data stay out of the file. Name the system.
 
 ## Filled example
 
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Health records on the vendor system | the clinic operations lead | unknown | unknown | the vendor | more than 10 years | unknown | unknown | unknown | unknown | known |
+| Health records on the vendor system | the clinic operations lead | unknown | unknown | the vendor | more than 10 years | unknown | unknown | unknown | unknown | unknown |
 
 ## Blank template
 

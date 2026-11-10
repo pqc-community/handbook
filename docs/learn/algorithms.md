@@ -10,6 +10,8 @@ Three NIST standards name the post-quantum algorithms most organisations meet fi
 
 [ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), in FIPS 203, is for key establishment. [ML-DSA](https://csrc.nist.gov/pubs/fips/204/final), in FIPS 204, is for digital signatures. [SLH-DSA](https://csrc.nist.gov/pubs/fips/205/final), in FIPS 205, is also for digital signatures, using a hash-based design with a different profile from ML-DSA.
 
+Where the three standards sit among drafts, protocol profiles, and products is covered on [Standardisation](/learn/standardisation/).
+
 A key-encapsulation mechanism, or KEM, is a way for two parties to establish a shared secret across an open network. One party runs encapsulation with the other's public key and produces ciphertext plus that shared secret; the other party decapsulates with the private key and recovers the same secret. Protocols such as TLS often use that secret to derive symmetric keys that protect the bulk of the traffic, in the same pattern as earlier public-key key establishment.
 
 Post-quantum public keys and signatures are often larger than those from RSA or elliptic-curve cryptography. Processing can cost more CPU time or memory on constrained devices. Certificates, handshake messages, and firmware images therefore need more space and more testing before deployment. Those qualitative size and performance trade-offs are why teams treat deployment as an engineering exercise rather than a drop-in library swap.

@@ -13,6 +13,8 @@ A system is already on the inventory and the priority record, and the reader is 
 
 ## Do this
 
+The reader records the system type, the confidentiality period, whether it can be updated, and who controls the software. The authority decides the timeline, and any hybrid rule, for its own audience. Where a supplier controls the software, the supplier decides the construction and the release date.
+
 Work through these branches in order. None of them chooses the option for the reader; each branch narrows what to record before implementation.
 
 ### System type
@@ -20,8 +22,6 @@ Work through these branches in order. None of them chooses the option for the re
 **Handbook practice:** Classify whether the system is commodity information technology, custom software, embedded cryptography, or a mixed estate.
 
 **Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path: migration happens as vendors update those services. Custom software does not sit on that path by default.
-
-Open the [implementation check](/migration-practices/implementation/) and note the [subsequent-review condition](/migration-practices/subsequent-review/).
 
 ### Lifetime
 
@@ -31,7 +31,7 @@ Open the [implementation check](/migration-practices/implementation/) and note t
 
 **Authority recommendation:** The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) distinguishes urgent adopters from regular adopters. Long-lived sensitive data sits with urgent adopters. Regular adopters do not need to react yet; an organisation on the boundary between urgent and regular follows Section 3.2 of that handbook for when to start particular assets.
 
-Open the [implementation check](/migration-practices/implementation/) and note the [subsequent-review condition](/migration-practices/subsequent-review/).
+These are policy notes to record, and this page does not choose among them.
 
 ### Jurisdiction
 
@@ -41,15 +41,11 @@ Open the [implementation check](/migration-practices/implementation/) and note t
 
 **Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, is the United States standards timeline for users of NIST standards; it is not a universal deadline for every organisation.
 
-Open the [implementation check](/migration-practices/implementation/) and note the [subsequent-review condition](/migration-practices/subsequent-review/).
-
 ### Updateability
 
 **Handbook practice:** Record whether configuration, trust stores, firmware verifiers, or supplier releases can change after the first deployment.
 
 **Handbook practice:** If the verifier cannot be updated later, send that row to [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) before you treat it as a general signature migration.
-
-Open the [implementation check](/migration-practices/implementation/) and note the [subsequent-review condition](/migration-practices/subsequent-review/).
 
 ### Supplier control
 
@@ -57,11 +53,13 @@ Open the [implementation check](/migration-practices/implementation/) and note t
 
 **Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, describe the commodity path where the supplier delivers the post-quantum change. Where the organisation configures the channel itself, the option and the test plan are recorded on the organisation's change record.
 
-Open the [implementation check](/migration-practices/implementation/) and note the [subsequent-review condition](/migration-practices/subsequent-review/).
-
 ### Compatibility
 
 **Handbook practice:** Record whether the construction in use is hybrid, post-quantum-only, or awaiting a supplier release, and which authority defends that choice.
+
+**Handbook practice:** Ask whether the protocol, the certificate, and the hardware can carry the larger values, and whether every verifier can be updated together.
+
+These are policy notes to record, and this page does not choose among them.
 
 **Authority recommendation:** The EU NIS Cooperation Group roadmap, 11 June 2025, recommends standardised and tested hybrid solutions whenever feasible and suitable, and states that for high-risk use cases quantum-vulnerable public-key mechanisms shall not be used stand-alone after the end of 2030.
 
@@ -73,11 +71,15 @@ Open the [implementation check](/migration-practices/implementation/) and note t
 
 **Handbook practice:** Record which authority is being followed. Do not treat one authority's sentence as a product requirement for every reader.
 
-Open the [implementation check](/migration-practices/implementation/) and note the [subsequent-review condition](/migration-practices/subsequent-review/).
-
 **Handbook practice:** Quantum key distribution is set aside for the time being by the PQC Migration Handbook, December 2024, and by [ETSI TR 103 619](https://www.etsi.org/deliver/etsi_tr/103600_103699/103619/01.01.01_60/tr_103619v010101p.pdf). Quantum random-number generators are outside this handbook.
 
 **Handbook practice:** [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) names ML-KEM, [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) names ML-DSA, and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) names SLH-DSA. This page does not reprint parameters.
+
+| Job | What the reader records next | Evidence |
+| --- | --- | --- |
+| Key establishment | The supplier's construction, or the authority's stated default, and the confidentiality period | The inventory row and the authority citation |
+| Signatures | Who has to change together | The priority row |
+| Non-updatable verifier | Open long-lived roots before choosing a signature | The change record, closed or blocked |
 
 ## Keep this evidence
 

@@ -43,11 +43,15 @@ supplier, product and version, question, answer, date, source, judgement, follow
 
 A cell you cannot fill is the word `unknown`. **Handbook practice:** `judgement` is `complete`, `vague`, `missing`, or `concerning`.
 
+**Handbook practice:** Where the row has a dependencies cell, every dependency goes in that cell, separated by a semicolon. A shared component does not get its own system row. Where the row records a timeline or a source, more than one may be named in that cell, separated by a semicolon. Keys, secrets, and personal data stay out of the file. Name the system.
+
+**Handbook practice:** Use a separate row for each product, version, and cryptographic job.
+
 ## Filled example
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Clinic software supplier | named in the supplier letter | What key-establishment construction and release date apply to the health-records platform? | The letter names the product and version, the key-establishment construction, and a date, and states that signatures are not in that release. | unknown | supplier letter | complete | none | record key-establishment date and open signatures follow-up |
+| Clinic software supplier | named in the supplier letter | What key-establishment construction and release date apply to the health-records platform? | The letter names the product and version, names ML-KEM-768, names the release date, and states that signatures are not in that release. | 2026-08-14 | supplier letter | complete | none | record the key-establishment date and open a signatures follow-up |
 
 ## Blank template
 
