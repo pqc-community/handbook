@@ -8,23 +8,11 @@
 
 The reader is the person who must decide what the organisation migrates, in what order, and how anyone will know it happened — without being a cryptographer. Migration is the main path through a wider post-quantum cryptography handbook.
 
-## Four questions the book answers
+## Chooser purpose
 
-1. **What has to move, and by when?** — Authority timelines and duties the reader can check (Standards and timelines, especially dates).
-2. **What to protect first?** — Inventory and priority before migration claims (Migration practices and the kit pages).
-3. **What to ask a vendor?** — Questions and tracking when someone else owns the stack (vendor plan, vendor questions).
-4. **How will anyone know?** — Evidence: inventory, priority, vendor answers, and what shipped (Start here seats and practice pages).
+The homepage is one situation chooser: one promise, one limit, and six choices that send the reader into a route. Learn the basics is a separate path for a reader who is not yet planning a migration; it sits apart from the six choices.
 
-## Four layers
-
-The handbook body is four sections (navbar sidebars). **Start here** sits above them and sends each seat into a reading order through these layers.
-
-1. **Standards and timelines** — Dates (one page) and migration guides (reading list).
-2. **Migration practices** — Where to start, inventory, priority, vendor plan, changing algorithms again, the next pass.
-3. **Algorithm and protocol options** — Choosing, key establishment, signatures, long-lived roots.
-4. **Resources** — Kit artifacts (questions, checklists, Protect this first), glossary, curated references.
-
-Start here routes into these sections; it does not duplicate a second topic tree.
+Behind the routes, the handbook keeps four reference sections: **Standards and timelines**, **Migration practices**, **Algorithm and protocol options**, and **Resources**. The navbar lists Learn the basics and those four sections; the six routes are reached from the chooser, the footer, and the route sidebar, not as top-level navbar items.
 
 ## Sister sites
 
@@ -44,9 +32,9 @@ This edition does **not** publish or centre:
 
 ### Claims this edition does not state
 
-Some landscape notes mention material without a filed public dump or URL (for example, certain vendor deployment details, Ponemon percentages, or Canada CCCS milestone years). **This edition does not state them.** The dates page uses the UK, EU, and NIST clocks from the allowed source set. Canada appears through the CFDIR reading-list entry. FIPS 203, 204, and 205 are named as standards this book does not rewrite; this edition does not link them when the research set has no URL. Parameter tables stay out.
+Some landscape notes mention material without a filed public dump or URL (for example, certain vendor deployment details, Ponemon percentages, or Canada CCCS milestone years). **This edition does not state them.** The dates page uses the UK, EU, and NIST clocks from the allowed source set. Canada appears through the CFDIR reading-list entry. Parameter tables stay out.
 
-Filed works that exist locally but are **not** cited in this edition include NSA CNSA 2.0, BSI TR-02102-1, Executive Order 14412, OMB M-26-15, the Singapore CSA advisory, and the Palo Alto harvest-now page. Citations follow the dump and reading-list tables in the design spec and [style-guide.md](./style-guide.md).
+Filed works that exist locally but are **not** cited in this edition include NSA CNSA 2.0, BSI TR-02102-1, Executive Order 14412, OMB M-26-15, the Singapore CSA advisory, and the Palo Alto harvest-now page. Citations follow the dump and reading-list tables in the edition spec and [style-guide.md](./style-guide.md).
 
 ## Local reference material
 
@@ -54,4 +42,4 @@ Writers may use gitignored material under `.ai-helper-files/` while drafting. Th
 
 ## Authority
 
-For structure, page jobs, and citations, follow [planning/superpowers/specs/2026-11-09-pqc-handbook-design.md](./planning/superpowers/specs/2026-11-09-pqc-handbook-design.md).
+For structure, page jobs, and citations, follow [planning/superpowers/specs/2026-11-10-site-revision-design.md](./planning/superpowers/specs/2026-11-10-site-revision-design.md).

@@ -3,53 +3,56 @@ title: What to migrate first
 sidebar_label: Priority
 sidebar_position: 4
 displayed_sidebar: migrationPracticesSidebar
-description: Order a post-quantum migration by how long the data or the key must stay good, and split key establishment from signatures.
+last_reviewed: 2026-11-10
+description: Order a post-quantum migration with a qualitative rubric, and split key establishment from signatures and from non-updatable verifiers.
 ---
 
-Order the work by how long the data or the key must stay good, and split key establishment from signatures.
+## When this applies
 
-## What can go wrong
+A first-pass or maintained inventory exists.
 
-One programme called "migrate to PQC" spends the year on signatures while recorded traffic waits. The two jobs are not the same clock.
+## Do this
 
-## A stronger practice
+Apply this qualitative rubric to each inventory row. Assign no numeric score. Consider each branch:
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes harvest-now, decrypt-later: adversaries collect encrypted data now and decrypt it when a cryptanalytically relevant quantum computer exists. It says signatures are not vulnerable to that attack. It also says transitioning signatures is urgent for a different reason: the work takes longer, more parties have to coordinate, and some devices cannot update the code that checks a signature later.
+- Data confidentiality period
+- Signatures that many parties change together
+- A verifier that cannot be updated later
+- Impact
+- Lead time
+- Dependencies
+- Supplier readiness
 
-The [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf), version 1.1, 11 June 2025, treats a use case as high-risk, where confidentiality is protected by public-key cryptography, if a compromise after 10 years or more would still cause significant damage.
+**Authority recommendation:** NIST IR 8547, October 2026, United States, describes harvest-now, decrypt-later and states that digital signatures are not vulnerable to that attack.
 
-## What to ask
+**Authority recommendation:** The EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025, European Union Member States, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage.
 
-Which datasets must still be secret in 2030, and which products cannot change their signature check later?
+## Keep this evidence
 
-## Evidence
+The priority record.
 
-A priority record that names the asset, the lifetime, and whether the job is key establishment or signatures.
+## Example
 
-## A weak answer
+An insufficient record is "We will migrate all cryptography in one programme."
 
-"We will do all cryptography in one project."
+A decision-ready record places the clinic health records first for key establishment because the data confidentiality period extends well past 2030, places the clinic firmware signature check first for a non-updatable verifier because the field devices cannot accept a new trust root later, and leaves commodity laptops on the supplier-update path.
 
-## A stronger answer
+One tied case: the clinic's health records and its firmware check are both first, for different jobs (`key establishment` and `non-updatable verifier`).
 
-"The health records are first because they must stay confidential well past 2030. The firmware root is first for a different reason: we cannot update the check later. The office laptops wait for the vendor update."
+One uncertain case: a row whose algorithm confidence is `unknown` stays on the priority list with an owner and is not dropped.
 
-## Which pass
+## Limits and next page
 
-This is how the first pass chooses its scope.
-
-## Options
-
-Key establishment and signatures are different options for different assets. Read [Key establishment](../algorithm-protocol-options/key-establishment.md) and [Signatures](../algorithm-protocol-options/signatures.md). The clocks those choices sit on are on [Dates](../standards-timelines/dates.md).
+This page does not select a post-quantum algorithm. The next page is the [priority record](/resources/priority-record/).
 
 ## Sources
 
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- EU NIS Cooperation Group, Coordinated Implementation Roadmap, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
+- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
 
 ## Related pages
 
-- [Dates](../standards-timelines/dates.md)
+- [Inventory](./inventory.md)
 - [Key establishment](../algorithm-protocol-options/key-establishment.md)
 - [Signatures](../algorithm-protocol-options/signatures.md)
 - [Protect this first](../resources/protect-this-first.md)

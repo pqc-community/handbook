@@ -3,23 +3,28 @@ title: Post-quantum algorithm and protocol options
 sidebar_label: Algorithm and protocol options
 sidebar_position: 1
 displayed_sidebar: algorithmProtocolOptionsSidebar
-description: Post-quantum options after the inventory and the priority. None is mandatory unless a cited authority requires it for that reader.
+last_reviewed: 2026-11-10
+description: Use-case map from confidentiality, many-party signatures, and non-updatable verifiers to the option pages and the evidence each job produces.
 ---
 
-Use these pages after the inventory and the priority. No option is mandatory unless a cited authority requires it for that reader's situation.
+Use this map after the inventory and the priority record. Pick the situation, open the page, record the authority, and carry the evidence onto the work product named in the table.
 
-Handbook gloss: ML-KEM is the NIST key-establishment algorithm. ML-DSA and SLH-DSA are the two NIST signature algorithms. The pages here say who defends which use. They do not reprint parameters.
+| Situation | Page | Authority | Evidence to record |
+| --- | --- | --- | --- |
+| Confidentiality with a long data protection period | [Key establishment](/algorithm-protocol-options/key-establishment/) | NIST IR 8547, October 2026 | The [change record](/resources/change-record/) |
+| Signatures that many parties change together | [Signatures](/algorithm-protocol-options/signatures/) | NIST IR 8547, October 2026 | The dependency list |
+| A verifier that cannot be updated later | [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) | UK NCSC timelines, 2028 plan row | The procurement checklist |
 
-- [Choosing an option](./choosing.md) is the four-way choice: hybrid, pure post-quantum, wait for a vendor update, or do nothing yet.
-- [Key establishment](./key-establishment.md) is the confidentiality job.
-- [Signatures](./signatures.md) is a different migration.
-- [Long-lived roots](./long-lived-roots.md) is the firmware or trust root that cannot update its signature check later.
+**Handbook practice:** [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) (ML-KEM), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) (ML-DSA), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) (SLH-DSA) are the NIST algorithm standards linked from this section. Parameter tables stay off this site; NIST IR 8547, October 2026, recommends ML-KEM-768 as the default parameter set for key establishment.
+
+The next page is [Choosing an option](/algorithm-protocol-options/choosing/).
 
 ## Sources
 
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 
 - [Choosing an option](./choosing.md)
-- [Where to start](../migration-practices/where-to-start.md)
+- [Priority](../migration-practices/priority.md)
+- [Implementation](../migration-practices/implementation.md)

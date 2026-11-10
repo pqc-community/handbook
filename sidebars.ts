@@ -1,14 +1,22 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
-  startHereSidebar: [
-    'start-here/index',
-    'start-here/the-migration-plan',
-    'start-here/product-release-dates',
-    'start-here/questions-for-a-vendor',
-    'start-here/evidence-of-the-migration',
-    'start-here/changing-a-protocol',
-    'start-here/keep-software-updated',
+  learnSidebar: [
+    'learn/index',
+    'learn/public-key-cryptography',
+    'learn/quantum-threat',
+    'learn/what-post-quantum-means',
+    'learn/algorithms',
+    'learn/in-real-systems',
+    'learn/standardisation',
+  ],
+  routesSidebar: [
+    'routes/vendor-managed-software',
+    'routes/long-lived-confidentiality',
+    'routes/hard-to-change-systems',
+    'routes/organisation-wide',
+    'routes/ask-a-supplier',
+    'routes/not-sure',
   ],
   standardsTimelinesSidebar: [
     'standards-timelines/index',
@@ -17,12 +25,15 @@ const sidebars: SidebarsConfig = {
   ],
   migrationPracticesSidebar: [
     'migration-practices/index',
-    'migration-practices/where-to-start',
+    'migration-practices/diagnose',
+    'migration-practices/commodity-software',
     'migration-practices/inventory',
     'migration-practices/priority',
+    'migration-practices/release-dates',
     'migration-practices/vendor-plan',
+    'migration-practices/implementation',
     'migration-practices/changing-algorithms-again',
-    'migration-practices/next-pass',
+    'migration-practices/subsequent-review',
   ],
   algorithmProtocolOptionsSidebar: [
     'algorithm-protocol-options/index',
@@ -33,12 +44,17 @@ const sidebars: SidebarsConfig = {
   ],
   resourcesSidebar: [
     'resources/index',
-    'resources/inventory-questions',
-    'resources/prioritisation-checklist',
-    'resources/vendor-questions',
+    'resources/inventory-record',
+    'resources/priority-record',
+    'resources/vendor-response-log',
+    'resources/migration-plan',
+    'resources/change-record',
+    'resources/evidence-record',
+    'resources/review-log',
     'resources/protect-this-first',
     'resources/glossary',
     'resources/curated-references',
+    'resources/editorial-policy',
   ],
 };
 

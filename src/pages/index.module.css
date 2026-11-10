@@ -1,21 +1,28 @@
 .heroBanner {
-  padding: 4rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.heroLead {
+  margin: 0.5rem auto;
+  max-width: 760px;
+}
+
+.choiceGrid {
+  display: grid;
   gap: 1rem;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.learnApart {
+  margin-top: 1.5rem;
 }
 
 .choosePath,
-.featuredResources,
-.community {
+.clinicPreview,
+.referenceLibrary {
   padding: 3rem 0;
 }
 
@@ -28,7 +35,7 @@
 .resourceGrid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .roleCard,
@@ -53,52 +60,26 @@
   font-size: 1.05rem;
 }
 
-.model {
-  padding: 3rem 0;
+.priorityTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.priorityTable th,
+.priorityTable td {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.priorityTable th {
   background-color: var(--ifm-color-emphasis-100);
-}
-
-.modelFlow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.modelFlowItem {
   font-weight: 600;
 }
 
-.modelArrow {
-  margin-left: 0.5rem;
-}
-
-.modelSummary {
-  margin: 0 auto;
-  max-width: 760px;
-}
-
-.communityLinks {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .buttons,
-  .communityLinks {
-    flex-direction: column;
-  }
-
-  .roleGrid,
+  .choiceGrid,
   .resourceGrid {
     grid-template-columns: 1fr;
   }

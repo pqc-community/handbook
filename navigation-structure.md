@@ -4,42 +4,53 @@ Handbook URLs use a **trailing slash** (for example `/migration-practices/invent
 
 ## Navbar and sidebars
 
-The navbar shows the site title (links home), four section sidebars, and GitHub:
+The navbar shows the site title (links home), **Learn the basics**, four reference section sidebars, and GitHub:
 
-1. Standards and timelines
-2. Migration practices
-3. Algorithm and protocol options
-4. Resources
+1. Learn the basics
+2. Standards and timelines
+3. Migration practices
+4. Algorithm and protocol options
+5. Resources
 
-**Start here** has its own sidebar. It is reached from the homepage and the footer. It is **not** a navbar item. Each page sets `displayed_sidebar` to the sidebar that contains it.
+**Routes** (`routesSidebar`) are reached from the homepage situation chooser and the footer. They are **not** navbar items. Each page sets `displayed_sidebar` to the sidebar that contains it.
 
-`sidebars.ts` defines five hand-written sidebars: `startHereSidebar`, `standardsTimelinesSidebar`, `migrationPracticesSidebar`, `algorithmProtocolOptionsSidebar`, and `resourcesSidebar`.
+`sidebars.ts` defines six hand-written sidebars: `learnSidebar`, `routesSidebar`, `standardsTimelinesSidebar`, `migrationPracticesSidebar`, `algorithmProtocolOptionsSidebar`, and `resourcesSidebar`.
 
 ## Book map
 
-Start here routes into the sections below; it does not add a second set of topics.
+The homepage is the situation chooser. Learn the basics is a separate path. Reference sections hold practices, options, standards, and work products.
 
 ```text
 /
-/start-here/
-/start-here/the-migration-plan/
-/start-here/product-release-dates/
-/start-here/questions-for-a-vendor/
-/start-here/evidence-of-the-migration/
-/start-here/changing-a-protocol/
-/start-here/keep-software-updated/
+/learn/
+/learn/public-key-cryptography/
+/learn/quantum-threat/
+/learn/what-post-quantum-means/
+/learn/algorithms/
+/learn/in-real-systems/
+/learn/standardisation/
+
+/routes/vendor-managed-software/
+/routes/long-lived-confidentiality/
+/routes/hard-to-change-systems/
+/routes/organisation-wide/
+/routes/ask-a-supplier/
+/routes/not-sure/
 
 /standards-timelines/
 /standards-timelines/dates/
 /standards-timelines/migration-guides/
 
 /migration-practices/
-/migration-practices/where-to-start/
+/migration-practices/diagnose/
+/migration-practices/commodity-software/
 /migration-practices/inventory/
 /migration-practices/priority/
+/migration-practices/release-dates/
 /migration-practices/vendor-plan/
+/migration-practices/implementation/
 /migration-practices/changing-algorithms-again/
-/migration-practices/next-pass/
+/migration-practices/subsequent-review/
 
 /algorithm-protocol-options/
 /algorithm-protocol-options/choosing/
@@ -48,12 +59,17 @@ Start here routes into the sections below; it does not add a second set of topic
 /algorithm-protocol-options/long-lived-roots/
 
 /resources/
-/resources/inventory-questions/
-/resources/prioritisation-checklist/
-/resources/vendor-questions/
+/resources/inventory-record/
+/resources/priority-record/
+/resources/vendor-response-log/
+/resources/migration-plan/
+/resources/change-record/
+/resources/evidence-record/
+/resources/review-log/
 /resources/protect-this-first/
 /resources/glossary/
 /resources/curated-references/
+/resources/editorial-policy/
 ```
 
 **Structural rules**
@@ -62,30 +78,29 @@ Start here routes into the sections below; it does not add a second set of topic
 - Migration guides are one reading list. The Dutch handbook is on that list and is not rewritten.
 - Option pages stay at four: choosing, key establishment, signatures, long-lived roots.
 - Changing algorithms again is its own practice page.
+- The learn landing lists six lessons; the glossary on the resources sidebar is the seventh step in the sequence.
 
-The **slugs in the book map and in the Start here table below are the ones the site uses** (folder names under `docs/` map to these paths).
+The **slugs in the book map are the ones the site uses** (folder names under `docs/` map to these paths).
 
-## Start here seats
+## Route pages
 
-Each Start here page names that responsibility's decisions, the reading order, the outcome, and a weak answer beside a stronger one.
+Each route page names who it is for, an ordered reading list, the work product output, and one primary next page.
 
-| Seat | Path | Read in order | Outcome |
-| --- | --- | --- | --- |
-| The migration plan | `/start-here/the-migration-plan/` | Where to start, inventory, priority, dates, the next pass, inventory questions, prioritisation checklist | An inventory, a priority, and a one-page plan |
-| Product release dates | `/start-here/product-release-dates/` | Where to start, dates, priority, signatures, long-lived roots, vendor plan, protect this first | A release date tied to one asset, and a vendor question if someone else owns the stack |
-| Questions for a vendor | `/start-here/questions-for-a-vendor/` | Vendor plan, vendor questions, key establishment, signatures, changing algorithms again | Written questions and a tracking sheet |
-| Evidence of the migration | `/start-here/evidence-of-the-migration/` | Where to start, inventory, priority, vendor plan, key establishment, signatures | The records that show the inventory, the priority, the vendor answer, and what shipped |
-| Changing a protocol | `/start-here/changing-a-protocol/` | Choosing, key establishment, signatures, changing algorithms again, vendor plan | Which job is changing, which option an authority defends, and a way to roll back |
-| Keep software updated | `/start-here/keep-software-updated/` | This page, then dates, then inventory questions if the reader is not sure they are a regular adopter | A reason to keep browsers, operating systems, and cloud services updated, and a route into "The migration plan" if the data or the keys are long-lived |
+| Route | Path | Role |
+| --- | --- | --- |
+| Vendor-managed software | `/routes/vendor-managed-software/` | Commodity IT updated by suppliers |
+| Long-lived confidentiality | `/routes/long-lived-confidentiality/` | Data with a long confidentiality period |
+| Hard to change | `/routes/hard-to-change-systems/` | Products or systems that are costly to change later |
+| Organisation-wide | `/routes/organisation-wide/` | Coordinated programme across the estate |
+| Ask a supplier | `/routes/ask-a-supplier/` | Procurement and supplier follow-up |
+| Not sure | `/routes/not-sure/` | Chooser when the situation is unclear |
 
-**Keep software updated** is linked from Start here and from Where to start. It is not a homepage role card.
-
-Reading-order links on Start here pages use these same slugs (for example `/migration-practices/where-to-start/`, `/standards-timelines/dates/`).
+Reading-order links on route pages use these same slugs (for example `/migration-practices/diagnose/`, `/standards-timelines/dates/`).
 
 ## Homepage (orientation)
 
-The homepage (`src/pages/index.tsx`) has five regions: hero with tagline and buttons to Where to start and Start here; five role cards in seat order (excluding Keep software updated); one line on how the handbook works; three featured resources; a closing band to options and curated references. Details are in the design spec.
+The homepage (`src/pages/index.tsx`) is the situation chooser: hero with tagline and limit statement; six situation links; a learn-the-basics link; one clinic row pointing at protect this first; a closing band to options and curated references. There is no hero button to a single practice page and no separate orientation hub.
 
 ## Broken links
 
-`docusaurus.config.ts` sets `onBrokenLinks`, `onBrokenAnchors`, and `onBrokenMarkdownLinks` to `throw`. Any new path must match this map and exist under `docs/`.
+`docusaurus.config.ts` sets `onBrokenLinks`, `onBrokenAnchors`, and `onBrokenMarkdownLinks` to `throw`. Any new path matches this map and exists under `docs/`.

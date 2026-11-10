@@ -31,6 +31,18 @@ const config: Config = {
   stylesheets: [
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro:wght@500&display=swap',
   ],
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        indexDocs: true,
+        indexBlog: false,
+        docsRouteBasePath: '/',
+      },
+    ],
+  ],
   themeConfig: {
     image: 'img/social-card.svg',
     colorMode: {respectPrefersColorScheme: true},
@@ -39,6 +51,7 @@ const config: Config = {
       logo: {alt: 'PQC Handbook', src: 'img/logo.svg'},
       style: 'dark',
       items: [
+        {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn the basics'},
         {type: 'docSidebar', sidebarId: 'standardsTimelinesSidebar', position: 'left', label: 'Standards and timelines'},
         {type: 'docSidebar', sidebarId: 'migrationPracticesSidebar', position: 'left', label: 'Migration practices'},
         {type: 'docSidebar', sidebarId: 'algorithmProtocolOptionsSidebar', position: 'left', label: 'Algorithm and protocol options'},
@@ -50,52 +63,27 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Start here',
+          title: 'Routes',
           items: [
-            {label: 'Start here', to: '/start-here/'},
-            {label: 'The migration plan', to: '/start-here/the-migration-plan/'},
-            {label: 'Product release dates', to: '/start-here/product-release-dates/'},
-            {label: 'Questions for a vendor', to: '/start-here/questions-for-a-vendor/'},
-            {label: 'Evidence of the migration', to: '/start-here/evidence-of-the-migration/'},
-            {label: 'Changing a protocol', to: '/start-here/changing-a-protocol/'},
-            {label: 'Keep software updated', to: '/start-here/keep-software-updated/'},
+            {label: 'We mostly use standard, vendor-managed software', to: '/routes/vendor-managed-software/'},
+            {label: 'We handle data that stays confidential for years', to: '/routes/long-lived-confidentiality/'},
+            {label: 'We own products or systems that may be hard to change', to: '/routes/hard-to-change-systems/'},
+            {label: 'I am coordinating a migration across the organisation', to: '/routes/organisation-wide/'},
+            {label: 'Ask a supplier', to: '/routes/ask-a-supplier/'},
+            {label: 'I am not sure', to: '/routes/not-sure/'},
           ],
         },
         {
-          title: 'Migration practices',
-          items: [
-            {label: 'Migration practices', to: '/migration-practices/'},
-            {label: 'Where to start', to: '/migration-practices/where-to-start/'},
-            {label: 'Inventory', to: '/migration-practices/inventory/'},
-            {label: 'Priority', to: '/migration-practices/priority/'},
-            {label: 'Vendor plan', to: '/migration-practices/vendor-plan/'},
-            {label: 'Changing algorithms again', to: '/migration-practices/changing-algorithms-again/'},
-            {label: 'The next pass', to: '/migration-practices/next-pass/'},
-          ],
+          title: 'Learn',
+          items: [{label: 'Learn the basics', to: '/learn/'}],
         },
         {
-          title: 'Standards and options',
+          title: 'Reference',
           items: [
             {label: 'Standards and timelines', to: '/standards-timelines/'},
-            {label: 'Dates', to: '/standards-timelines/dates/'},
-            {label: 'Migration guides', to: '/standards-timelines/migration-guides/'},
+            {label: 'Migration practices', to: '/migration-practices/'},
             {label: 'Algorithm and protocol options', to: '/algorithm-protocol-options/'},
-            {label: 'Choosing an option', to: '/algorithm-protocol-options/choosing/'},
-            {label: 'Key establishment', to: '/algorithm-protocol-options/key-establishment/'},
-            {label: 'Signatures', to: '/algorithm-protocol-options/signatures/'},
-            {label: 'Long-lived roots', to: '/algorithm-protocol-options/long-lived-roots/'},
-          ],
-        },
-        {
-          title: 'Resources',
-          items: [
             {label: 'Resources', to: '/resources/'},
-            {label: 'Inventory questions', to: '/resources/inventory-questions/'},
-            {label: 'Prioritisation checklist', to: '/resources/prioritisation-checklist/'},
-            {label: 'Vendor questions', to: '/resources/vendor-questions/'},
-            {label: 'Protect this first', to: '/resources/protect-this-first/'},
-            {label: 'Glossary', to: '/resources/glossary/'},
-            {label: 'Curated references', to: '/resources/curated-references/'},
           ],
         },
       ],

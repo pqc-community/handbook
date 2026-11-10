@@ -3,46 +3,41 @@ title: The vendor's migration plan
 sidebar_label: Vendor plan
 sidebar_position: 5
 displayed_sidebar: migrationPracticesSidebar
-description: How to keep the written post-quantum answer from the organisation that owns the stack.
+last_reviewed: 2026-11-10
+description: How to record a complete, vague, missing, or concerning supplier answer, and when to escalate to procurement.
 ---
 
-Decide what to ask the organisation that owns the stack, and how to keep the answer.
+## When this applies
 
-## What can go wrong
+You have asked a supplier for a written post-quantum migration answer, or you are following up on an earlier question.
 
-A sales sentence with no date, no algorithm, and no scope is not a plan. A call you did not write down cannot be checked later.
+## Do this
 
-## A stronger practice
+1. Record a judgement for each answer: `complete`, `vague`, `missing`, or `concerning`.
+2. **Handbook practice:** For a `complete` answer, store the page, the date, and the product version in the vendor response log.
+3. **Handbook practice:** For a `vague` answer, ask in writing for the product, the construction, and the date.
+4. **Handbook practice:** For a `missing` answer, record judgement `missing` and a follow-up date.
+5. **Handbook practice:** For a `concerning` answer, escalate to procurement and the contract owner.
 
-The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf), as of 17 August 2023, urges organisations to ask vendors for a quantum-readiness roadmap that describes how they will migrate, including timelines for testing and integration, for both on-premises and cloud products, and to plan contract changes so new products arrive with PQC and older products can be upgraded.
+**Authority recommendation:** The CISA, NSA, and NIST Quantum-Readiness fact sheet, as of 17 August 2023, United States, urges organisations to ask vendors for a quantum-readiness roadmap that describes how they will migrate, including timelines for testing and integration, and to plan contract changes so new products arrive with post-quantum cryptography and older products can be upgraded.
 
-The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, say that where you rely entirely on commodity platforms, the provider delivers the upgrade, and your work is the timely refresh. Where you do not, you choose an approach per system.
+**Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, United Kingdom, say that where you rely entirely on commodity platforms, the provider delivers the upgrade, and your work is the timely refresh. Where you do not, you choose an approach per system.
 
-Supplier evidence packages are onward reading in the [Supply Chain Security Handbook](https://supplychainsecurityhandbook.com/practices-controls/supplier-assurance-procurement/). That link is not the authority for a post-quantum date.
+## Keep this evidence
 
-## What to ask
+The vendor response log, with judgement, follow-up date, and source for each row.
 
-Ask, in writing: which products, which algorithms, which date, and what happens to hardware that cannot be updated?
+## Example
 
-## Evidence
+An insufficient record is "They told us on a call that they are quantum safe."
 
-The tracking sheet on [Vendor questions](../resources/vendor-questions.md): vendor, question, answer, date, and source.
+A decision-ready record stores judgement `complete`, the roadmap PDF, the answer date 14 August 2026, product version 4.2, and the URL shown.
 
-## A weak answer
+A `vague` answer that names a year but not a construction gets a written follow-up asking for the product line, the algorithm construction, and the test date.
 
-"They told us on a call that they are quantum safe."
+## Limits and next page
 
-## A stronger answer
-
-"The vendor's roadmap, dated, says hybrid key establishment in this product line in this year, and says signatures are not in that release. We stored the page we were shown."
-
-## Which pass
-
-This pass can run beside the inventory.
-
-## Options
-
-The option for a system stays on [Choosing an option](../algorithm-protocol-options/choosing.md). A vendor answer is evidence for that choice. It is not a substitute for naming the authority you are following.
+This page does not choose the algorithm construction. The next page is the [vendor response log](/resources/vendor-response-log/).
 
 ## Sources
 
@@ -51,6 +46,7 @@ The option for a system stays on [Choosing an option](../algorithm-protocol-opti
 
 ## Related pages
 
-- [Vendor questions](../resources/vendor-questions.md)
+- [Vendor response log](/resources/vendor-response-log/)
+- [Release dates](./release-dates.md)
 - [Choosing an option](../algorithm-protocol-options/choosing.md)
 - [Changing algorithms again](./changing-algorithms-again.md)

@@ -3,58 +3,54 @@ title: Inventory the cryptography
 sidebar_label: Inventory
 sidebar_position: 3
 displayed_sidebar: migrationPracticesSidebar
+last_reviewed: 2026-11-10
 description: List the cryptography, including what a scanner cannot see, before anyone claims it has moved to post-quantum algorithms.
 ---
 
-List the cryptography before anyone claims it has moved.
+## When this applies
 
-## What can go wrong
+You are ready to list the cryptography and no one has yet claimed it has moved to post-quantum algorithms.
 
-A TLS scan treated as the whole estate misses what the scanner cannot see. The list then looks finished when it is not.
+## Do this
 
-## A stronger practice
+1. List each system that handles sensitive data or has an external connection.
+2. For each system, record the key-establishment algorithm and the signature algorithm.
+3. Record who controls the software, the data confidentiality period, the renewal, the version where known, and the dependencies.
+4. Mark what a scan cannot see, including embedded and hardware-bound cryptography.
+5. Set confidence to `known` or `unknown`.
 
-The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf), as of 17 August 2023, says discovery tools may not identify embedded cryptography inside products, and tells organisations to ask vendors for those lists. It also says the inventory should cover network protocols, assets on end-user systems and servers (including firmware and software updates), and cryptographic dependencies in the build pipeline, and should estimate how long the most sensitive datasets need protection.
+A **first-pass inventory** is that list. A **maintained inventory** is the same list with an owner and a subsequent-review date.
 
-The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, say the early list is not a formal asset register: understand the nature of each system, quantify the scale, capture version and patch level where you have it, and identify dependencies.
+**Authority recommendation:** The CISA, NSA, and NIST Quantum-Readiness fact sheet, as of 17 August 2023, United States, says discovery tools may not identify embedded cryptography and tells organisations to ask vendors for those details.
 
-[NIST SP 1800-38](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf) is still a 2023 preliminary draft. Volume B is the discovery practice in that draft, not a finished standard.
+**Authority recommendation:** The ASD, ACSC, and CISA vendor guide, updated 5 November 2026, Australia and United States, lists embedded and hardware-bound cryptography among the common concerns to raise with suppliers.
 
-[Vista Security](https://vistasecurity.io/pqc-roadmap-small-midsize-businesses/), a vendor blog of 13 October 2026, sizes a small-staff inventory to four questions for each system that handles sensitive data or an external connection: what key-establishment and signature algorithms it uses, who controls the software, how long the data must stay confidential, and when the platform or contract renews. That blog is a sizing, not an authority.
+**Handbook practice:** Growth beyond the first-pass inventory is described in NIST SP 1800-38B, December 2023, a preliminary draft; a cryptographic bill of materials (CBOM) in that draft is a developing model and is not a requirement of this handbook. The NCCoE FAQ, last updated 5 November 2026, states that those drafts are not planned to become finals.
 
-## What to ask
+## Keep this evidence
 
-For each system that handles sensitive data or an external connection: what key-establishment algorithm and what signature algorithm are in use, who controls the software, how long the data must stay confidential, and when the platform or contract renews? What can a scan not see, and which vendor will you ask?
+The inventory record.
 
-## Evidence
+## Example
 
-The list itself: the systems, the algorithms, the owner, the secrecy life, the renewal, and a mark on what a scan cannot see. The questions are written out on [Inventory questions](../resources/inventory-questions.md).
+An insufficient record is "Our TLS scan found no issues."
 
-## A weak answer
+A decision-ready record lists the clinic health-record system on the vendor platform, records confidence `unknown` for the key-establishment algorithm, names an asset owner, and sets a subsequent-review date.
 
-"Our scanner found no issues."
+## Limits and next page
 
-## A stronger answer
-
-"We listed the systems, the algorithms, the owner, the secrecy life, and the renewal, and we marked what a scan cannot see."
-
-## Which pass
-
-This is the first pass.
-
-## Options
-
-No algorithm is chosen on the inventory. [Priority](./priority.md) orders the list. [Vendor plan](./vendor-plan.md) is how you ask for what a scan cannot see.
+This page does not choose algorithms or set priority. The next page is the [inventory record](/resources/inventory-record/).
 
 ## Sources
 
 - CISA, NSA, and NIST, Quantum-Readiness fact sheet, as of 17 August 2023. [Fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
-- NIST SP 1800-38B preliminary draft, December 2023. [Volume B](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf)
-- Vista Security, a vendor blog, 13 October 2026. [Vendor blog](https://vistasecurity.io/pqc-roadmap-small-midsize-businesses/)
+- ASD and ACSC, Post-quantum cryptography: questions to ask your vendors, updated 5 November 2026. [Vendor guide](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- NIST, Migration to post-quantum cryptography (NIST SP 1800-38B preliminary draft), December 2023. [Preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf)
+- NIST NCCoE, Migration to post-quantum cryptography FAQ, last updated 5 November 2026. [FAQ](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
 
 ## Related pages
 
-- [Inventory questions](../resources/inventory-questions.md)
+- [Diagnose](./diagnose.md)
 - [Priority](./priority.md)
 - [Vendor plan](./vendor-plan.md)
+- [Inventory record](/resources/inventory-record/)

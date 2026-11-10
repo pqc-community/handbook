@@ -1,56 +1,50 @@
 ---
-title: Change algorithm again after this pass
+title: Change algorithm again after this migration
 sidebar_label: Changing algorithms again
 sidebar_position: 6
 displayed_sidebar: migrationPracticesSidebar
-description: Whether you can change algorithm again after this post-quantum pass, and who owns the next change.
+last_reviewed: 2026-11-10
+description: Check six capabilities that show whether the estate can change algorithm again after the current migration.
 ---
 
-Can you change algorithm again after this pass?
+## When this applies
 
-## What can go wrong
+You have chosen an option for at least one system, or you are recording whether a later algorithm change remains possible.
 
-A one-time swap that assumes the algorithm names will not move leaves the next change with no owner and no record of what is in use now.
+## Do this
 
-## A stronger practice
+Confirm each capability before you treat the current migration as finished for that system:
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) says stakeholders should remain cryptographically agile so they can adapt to new developments.
+1. The configuration can be changed without replacing the whole product.
+2. An owner is named for the next algorithm change.
+3. Dependencies are recorded in the inventory.
+4. Tests exist that would show whether a new construction works in your environment.
+5. A change window exists, with a named approver.
+6. A deprecation path is written for the construction in use now.
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says hybrid solutions, when used, are typically expected to be temporary measures that lead to a second transition to tools that use only post-quantum algorithms, and that quantum-vulnerable and quantum-resistant algorithms will be used side by side during the transition.
+**Authority recommendation:** The PQC Migration Handbook (AIVD, CWI, and TNO, December 2024, Netherlands) says stakeholders should remain cryptographically agile so they can adapt to new developments.
 
-Handbook guidance: crypto-agility here means that operating capability. It is not a product.
+## Keep this evidence
 
-## What to ask
+A named owner, the inventory rows for dependencies, the written deprecation path, and the test plan.
 
-Who can change the algorithm in this system, and what record shows the current one?
+## Example
 
-## Evidence
+An insufficient record is "We picked an algorithm, so the programme is closed."
 
-A named owner and a place where the algorithm in use is written down.
+A decision-ready record names the application owner, lists the TLS terminator and the HSM as dependencies, points to the regression test pack, records the quarterly change window, and states that hybrid key establishment is temporary until ML-KEM-only is deployed.
 
-## A weak answer
+## Limits and next page
 
-"We picked an algorithm, so we are done."
-
-## A stronger answer
-
-"This pass uses the construction our authority defends. The inventory names the algorithm. The next pass has a date."
-
-## Which pass
-
-This page is the capability to change algorithms again. [The next pass](./next-pass.md) is the later review of the same estate.
-
-## Options
-
-The construction this pass uses is chosen on [Choosing an option](../algorithm-protocol-options/choosing.md). Hybrid use, where an authority defends it, is a temporary measure on the way to a later change, not the end of the programme.
+This page does not set the subsequent-review date. The next page is [Subsequent review](/migration-practices/subsequent-review/).
 
 ## Sources
 
 - AIVD, CWI, and TNO, The PQC Migration Handbook, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 
-- [The next pass](./next-pass.md)
-- [Vendor plan](./vendor-plan.md)
+- [Subsequent review](./subsequent-review.md)
+- [Implementation](./implementation.md)
+- [Inventory](./inventory.md)
 - [Choosing an option](../algorithm-protocol-options/choosing.md)
