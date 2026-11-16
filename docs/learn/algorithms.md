@@ -18,6 +18,8 @@ Post-quantum public keys and signatures are often larger than those from RSA or 
 
 Next: [In real systems](/learn/in-real-systems/).
 
+For why a KEM is not bulk encryption, read [What a KEM is](/learn/explainers/kem/).
+
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)

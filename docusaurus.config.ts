@@ -15,7 +15,10 @@ const config: Config = {
   projectName: 'handbook',
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
-  markdown: {hooks: {onBrokenMarkdownLinks: 'throw'}},
+  markdown: {
+    mermaid: true,
+    hooks: {onBrokenMarkdownLinks: 'throw'},
+  },
   i18n: {defaultLocale: 'en', locales: ['en']},
   presets: [
     [
@@ -32,6 +35,7 @@ const config: Config = {
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro:wght@500&display=swap',
   ],
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
@@ -89,7 +93,12 @@ const config: Config = {
       ],
     },
     prism: {theme: prismThemes.github, darkTheme: prismThemes.dracula},
-  } satisfies Preset.ThemeConfig,
+    mermaid: {
+      theme: {light: 'neutral', dark: 'dark'},
+    },
+  } satisfies Preset.ThemeConfig & {
+    mermaid: {theme: {light: 'neutral'; dark: 'dark'}};
+  },
 };
 
 export default config;

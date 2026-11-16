@@ -18,6 +18,8 @@ RSA and elliptic-curve cryptography are the familiar public-key families in use 
 
 Next: [The quantum threat](/learn/quantum-threat/).
 
+For how the two keys differ by job, read [What the keys actually do](/learn/explainers/keys/).
+
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)

@@ -16,6 +16,8 @@ During that transition, not every change is a local setting. Protocol stacks, ce
 
 Next: [Standardisation](/learn/standardisation/).
 
+For where the shared secret sits in a connection, read [What changes in a TLS connection](/learn/explainers/tls/).
+
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)

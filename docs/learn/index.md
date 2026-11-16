@@ -20,6 +20,15 @@ Read in this order:
 
 This path does not give a migration procedure.
 
+## Go deeper
+
+These pages are optional.
+
+1. [What the keys actually do](/learn/explainers/keys/)
+2. [What a quantum computer changes](/learn/explainers/quantum-computers/)
+3. [What a KEM is](/learn/explainers/kem/)
+4. [What changes in a TLS connection](/learn/explainers/tls/)
+
 When you are ready to plan, return to the [homepage](/) or browse [curated references](/resources/curated-references/).
 
 ## Sources

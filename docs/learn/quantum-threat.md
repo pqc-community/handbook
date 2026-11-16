@@ -16,6 +16,8 @@ This page does not say that a cryptographically relevant quantum computer alread
 
 Next: [What post-quantum means](/learn/what-post-quantum-means/).
 
+For which quantum effect applies to confidentiality, read [What a quantum computer changes](/learn/explainers/quantum-computers/).
+
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)

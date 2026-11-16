@@ -29,6 +29,10 @@ The homepage is the situation chooser. Learn the basics is a separate path. Refe
 /learn/algorithms/
 /learn/in-real-systems/
 /learn/standardisation/
+/learn/explainers/keys/
+/learn/explainers/quantum-computers/
+/learn/explainers/kem/
+/learn/explainers/tls/
 
 /routes/vendor-managed-software/
 /routes/long-lived-confidentiality/
@@ -78,7 +82,7 @@ The homepage is the situation chooser. Learn the basics is a separate path. Refe
 - Migration guides are one reading list. The Dutch handbook is on that list and is not rewritten.
 - Option pages stay at four: choosing, key establishment, signatures, long-lived roots.
 - Changing algorithms again is its own practice page.
-- The learn landing lists six lessons; the glossary on the resources sidebar is the seventh step in the sequence.
+- The learn landing lists six lessons; the glossary on the resources sidebar is the seventh step in the sequence. Go deeper is an optional list of four explainers on the Learn landing page and in `learnSidebar`.
 
 The **slugs in the book map are the ones the site uses** (folder names under `docs/` map to these paths).
 

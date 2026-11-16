@@ -9,6 +9,17 @@ const sidebars: SidebarsConfig = {
     'learn/algorithms',
     'learn/in-real-systems',
     'learn/standardisation',
+    {
+      type: 'category',
+      label: 'Go deeper',
+      collapsed: false,
+      items: [
+        'learn/explainers/keys',
+        'learn/explainers/quantum-computers',
+        'learn/explainers/kem',
+        'learn/explainers/tls',
+      ],
+    },
   ],
   routesSidebar: [
     'routes/vendor-managed-software',
