@@ -12,7 +12,7 @@ Quantum cryptography is a different idea. It builds security claims on quantum p
 
 **Authority recommendation:** The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) advises against relying on the security of quantum key distribution for the time being.
 
-Next: [Algorithms](/learn/algorithms/).
+Continue with [Algorithms](/learn/algorithms/).
 
 ## Sources
 

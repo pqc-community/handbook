@@ -39,7 +39,7 @@ A `vague` answer that names a year but not a construction gets a written follow-
 
 ## Limits and next page
 
-Leave the algorithm construction for the supplier's answer. Next: the [vendor response log](/resources/vendor-response-log/).
+Leave the algorithm construction for the supplier's answer. The next record is the [vendor response log](/resources/vendor-response-log/).
 
 ## Sources
 

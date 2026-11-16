@@ -14,7 +14,7 @@ Key establishment appears in TLS sessions that protect web traffic, in VPN tunne
 
 During that transition, not every change is a local setting. Protocol stacks, certificate profiles, devices, and software often need a supplier release before post-quantum algorithms appear in production. Configuration can enable what the product already ships; it cannot add support that is not in the build.
 
-Next: [Standardisation](/learn/standardisation/).
+Continue with [Standardisation](/learn/standardisation/).
 
 For where the shared secret sits in a connection, read [What changes in a TLS connection](/learn/explainers/tls/).
 

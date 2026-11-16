@@ -93,7 +93,7 @@ A decision-ready record states that a high-risk confidentiality system follows t
 
 ## Limits and next page
 
-Leave protocol configuration for the implementation check. Next: the [implementation check](/migration-practices/implementation/).
+Leave protocol configuration for the implementation check. The next page is the [implementation check](/migration-practices/implementation/).
 
 ## Sources
 

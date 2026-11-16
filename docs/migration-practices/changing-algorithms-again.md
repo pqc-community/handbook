@@ -38,7 +38,7 @@ A decision-ready record names the application owner, lists the TLS terminator an
 
 ## Limits and next page
 
-Leave the subsequent-review date for the next record. Next: [Subsequent review](/migration-practices/subsequent-review/).
+Leave the subsequent-review date for the next record. The next page is [Subsequent review](/migration-practices/subsequent-review/).
 
 ## Sources
 

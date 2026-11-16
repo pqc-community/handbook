@@ -55,6 +55,8 @@ test('flags an edition phrase and a modal verb without an authority', () => {
       ...extras,
       'docs/dates.md': 'Use the clock for this organisation.\n',
       'docs/note.md': 'This page is for a reader who is waiting.\n',
+      'docs/onward.md': 'Next: the inventory record.\n',
+      'docs/route.md': '**Primary next page:** Diagnose.\n',
       'docs/modal.md': 'Record the owner; you must name them.\n',
       'docs/requirement.md': 'Requirement. NIST IR 8547 says agencies must support TLS 1.3.\n',
     },
@@ -63,6 +65,8 @@ test('flags an edition phrase and a modal verb without an authority', () => {
   assert.ok(violations.some((hit) => hit.includes('docs/dates.md:1: the clock')));
   assert.ok(violations.some((hit) => hit.includes('docs/note.md:1: this page')));
   assert.ok(violations.some((hit) => hit.includes('docs/note.md:1: a reader')));
+  assert.ok(violations.some((hit) => hit.includes('docs/onward.md:1: next:')));
+  assert.ok(violations.some((hit) => hit.includes('docs/route.md:1: primary next page:')));
   assert.ok(violations.some((hit) => hit.includes('docs/modal.md:1: must or shall')));
   assert.equal(violations.some((hit) => hit.includes('docs/requirement.md')), false);
 });

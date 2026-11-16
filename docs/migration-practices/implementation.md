@@ -35,7 +35,7 @@ A blocked record is the clinic field device firmware signature check row: option
 
 ## Limits and next page
 
-Leave protocol configuration for the product documentation. Further technical material is the [NCCoE migration project FAQ](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html). Next: the [change record](/resources/change-record/).
+Leave protocol configuration for the product documentation. Further technical material is the [NCCoE migration project FAQ](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html). The next record is the [change record](/resources/change-record/).
 
 ## Sources
 

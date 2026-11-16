@@ -44,7 +44,7 @@ An organisation that sells into the United Kingdom and holds health records reco
 
 ## Limits and next page
 
-Leave asset priority for the priority page. Next: [Priority](/migration-practices/priority/).
+Leave asset priority for the priority page. The next page is [Priority](/migration-practices/priority/).
 
 ## Sources
 

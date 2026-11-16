@@ -19,7 +19,7 @@ When all of those stay-conditions hold, read in this order:
 
 The output is a [vendor response log](/resources/vendor-response-log/), and either a written note that all five stay-conditions hold or the name of the route you moved to.
 
-**Primary next page:** [Commodity software](/migration-practices/commodity-software/).
+The primary next page is [Commodity software](/migration-practices/commodity-software/).
 
 For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 

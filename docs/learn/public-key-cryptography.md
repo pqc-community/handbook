@@ -16,7 +16,7 @@ A digital signature shows that someone who holds the private key approved a mess
 
 RSA and elliptic-curve cryptography are the familiar public-key families in use today. They carry key establishment in TLS on the web and in VPN sessions. They back signatures in mail when the message uses modern protections. They sign software updates so devices and operating systems can check that an update came from the expected publisher.
 
-Next: [The quantum threat](/learn/quantum-threat/).
+Continue with [The quantum threat](/learn/quantum-threat/).
 
 For how the two keys differ by job, read [What the keys actually do](/learn/explainers/keys/).
 

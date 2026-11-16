@@ -47,7 +47,7 @@ One uncertain case: a row whose algorithm confidence is `unknown` stays on the p
 
 ## Limits and next page
 
-Leave the post-quantum algorithm for a later record. Next: the [priority record](/resources/priority-record/).
+Leave the post-quantum algorithm for a later record. The next record is the [priority record](/resources/priority-record/).
 
 ## Sources
 

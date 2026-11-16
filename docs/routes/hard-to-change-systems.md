@@ -23,7 +23,7 @@ Stop when the release dates are recorded and the change record exists. A blocked
 
 The output is one asset's vendor-release, test, production-deployment, and end-of-support dates, plus a [change record](/resources/change-record/).
 
-**Primary next page:** [Inventory](/migration-practices/inventory/).
+The primary next page is [Inventory](/migration-practices/inventory/).
 
 For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 

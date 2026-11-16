@@ -35,7 +35,7 @@ A decision-ready record names the VPN that carries the clinic health records as 
 
 ## Limits and next page
 
-Leave protocol configuration for the product documentation. Next: the [change record](/resources/change-record/).
+Leave protocol configuration for the product documentation. The next record is the [change record](/resources/change-record/).
 
 ## Sources
 

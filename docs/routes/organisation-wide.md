@@ -44,7 +44,7 @@ Then read these pages in order:
 
 The output is a one-page [migration plan](/resources/migration-plan/) with an owner for each asset and a subsequent-review date.
 
-**Primary next page:** [Migration plan](/resources/migration-plan/).
+The primary next page is [Migration plan](/resources/migration-plan/).
 
 ## Sources
 

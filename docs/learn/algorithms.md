@@ -16,7 +16,7 @@ A key-encapsulation mechanism, or KEM, is a way for two parties to establish a s
 
 Post-quantum public keys and signatures are often larger than those from RSA or elliptic-curve cryptography. Processing can cost more CPU time or memory on constrained devices. Certificates, handshake messages, and firmware images therefore need more space and more testing before deployment. Those qualitative size and performance trade-offs are why teams treat deployment as an engineering exercise rather than a drop-in library swap.
 
-Next: [In real systems](/learn/in-real-systems/).
+Continue with [In real systems](/learn/in-real-systems/).
 
 For why a KEM is not bulk encryption, read [What a KEM is](/learn/explainers/kem/).
 

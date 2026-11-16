@@ -34,7 +34,7 @@ The priority record or migration plan row with all four dates, the supplier sour
 
 ## Limits and next page
 
-Leave the supplier answer for the vendor plan. Next: [Vendor plan](/migration-practices/vendor-plan/).
+Leave the supplier answer for the vendor plan. The next page is [Vendor plan](/migration-practices/vendor-plan/).
 
 ## Sources
 

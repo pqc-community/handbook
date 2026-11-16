@@ -21,7 +21,7 @@ Read in this order:
 
 The output is one row per product, version, and cryptographic job. A route-specific plan is still required when the organisation has to change configuration or a verifier, rather than only wait for a release.
 
-**Primary next page:** [Vendor plan](/migration-practices/vendor-plan/).
+The primary next page is [Vendor plan](/migration-practices/vendor-plan/).
 
 ## Sources
 

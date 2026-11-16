@@ -41,7 +41,7 @@ A decision-ready record opens the review log on 10 November 2026, notes that the
 
 ## Limits and next page
 
-Use the cadence your records and authorities already require. Next: the [review log](/resources/review-log/).
+Use the cadence your records and authorities already require. The next record is the [review log](/resources/review-log/).
 
 ## Sources
 

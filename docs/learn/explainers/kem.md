@@ -30,7 +30,7 @@ Encapsulation produces a ciphertext and a shared secret. Decapsulation recovers 
 
 This distinction continues from [Algorithms](/learn/algorithms/).
 
-Next: [What changes in a TLS connection](/learn/explainers/tls/).
+Continue with [What changes in a TLS connection](/learn/explainers/tls/).
 
 ## Sources
 

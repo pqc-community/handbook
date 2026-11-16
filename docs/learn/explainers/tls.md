@@ -37,7 +37,7 @@ Key establishment produces the shared secret. Checking the server is a separate 
 
 This distinction continues from [In real systems](/learn/in-real-systems/).
 
-Next: [Learn the basics](/learn/).
+Continue with [Learn the basics](/learn/).
 
 ## Sources
 

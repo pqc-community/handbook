@@ -68,7 +68,7 @@ test('tls explainer separates the shared secret from the server check', () => {
   assert.match(page, /modified 3 August 2026/);
   assert.match(page, /Key establishment produces the shared secret\. Checking the server is a separate signature check\. That split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange\./);
   assert.match(page, /This distinction continues from \[In real systems\]\(\/learn\/in-real-systems\/\)\./);
-  assert.match(page, /Next: \[Learn the basics\]\(\/learn\/\)\./);
+  assert.match(page, /Continue with \[Learn the basics\]\(\/learn\/\)\./);
   assert.equal(page.toLowerCase().includes('handshake'), false);
   assert.equal(page.includes('ML-KEM-768'), false);
   assert.equal(page.toLowerCase().includes('clinic'), false);
@@ -88,7 +88,7 @@ test('kem explainer stops at the shared secret', () => {
   });
   assert.match(page, /Encapsulation produces a ciphertext and a shared secret\. Decapsulation recovers that secret\. The KEM does not carry the page, the file, or the health record\./);
   assert.match(page, /This distinction continues from \[Algorithms\]\(\/learn\/algorithms\/\)\./);
-  assert.match(page, /Next: \[What changes in a TLS connection\]\(\/learn\/explainers\/tls\/\)\./);
+  assert.match(page, /Continue with \[What changes in a TLS connection\]\(\/learn\/explainers\/tls\/\)\./);
   assert.match(page, /https:\/\/csrc\.nist\.gov\/pubs\/fips\/203\/final/);
   assert.match(page, /for ML-KEM/);
   assert.equal(page.includes('ML-KEM-768'), false);
@@ -114,7 +114,7 @@ test('quantum explainer keeps the contrast inside NIST IR 8547', () => {
   assert.match(page, /The right-hand column is an \*\*Authority statement\*\*, cited to NIST IR 8547, October 2026\./);
   assert.match(page, /Shor's algorithm applies to today's public-key key establishment and digital signatures\. Grover's algorithm does not by itself retire symmetric cryptography on the same timetable\. Harvest-now, decrypt-later is a confidentiality risk, and a signature checked at the time of use is not that risk\./);
   assert.match(page, /This distinction continues from \[The quantum threat\]\(\/learn\/quantum-threat\/\)\./);
-  assert.match(page, /Next: \[What a KEM is\]\(\/learn\/explainers\/kem\/\)\./);
+  assert.match(page, /Continue with \[What a KEM is\]\(\/learn\/explainers\/kem\/\)\./);
   assert.match(page, /https:\/\/doi\.org\/10\.6028\/NIST\.IR\.8547/);
   assert.equal(page.includes('mermaid'), false);
   assert.equal(page.includes('sequenceDiagram'), false);
@@ -143,7 +143,7 @@ test('keys explainer assigns each job to a key', () => {
   });
   assert.match(page, /The public key is used to create a shared secret, and the private key recovers it\. The private key creates a signature, and the public key checks it\. Checking a signature does not reverse it\./);
   assert.match(page, /This distinction continues from \[Public-key cryptography\]\(\/learn\/public-key-cryptography\/\)\./);
-  assert.match(page, /Next: \[What a quantum computer changes\]\(\/learn\/explainers\/quantum-computers\/\)\./);
+  assert.match(page, /Continue with \[What a quantum computer changes\]\(\/learn\/explainers\/quantum-computers\/\)\./);
   assert.match(page, /https:\/\/doi\.org\/10\.6028\/NIST\.IR\.8547/);
   assert.match(page, /https:\/\/csrc\.nist\.gov\/pubs\/fips\/203\/final/);
   assert.match(page, /https:\/\/csrc\.nist\.gov\/pubs\/fips\/204\/final/);
@@ -175,13 +175,13 @@ test('go deeper lists the four explainers without changing the core path', () =>
   assert.match(deeper, /4\. \[What changes in a TLS connection\]\(\/learn\/explainers\/tls\/\)/);
 
   const publicKey = read('docs/learn/public-key-cryptography.md');
-  assert.match(publicKey, /Next: \[The quantum threat\]\(\/learn\/quantum-threat\/\)\.\n\nFor how the two keys differ by job, read \[What the keys actually do\]\(\/learn\/explainers\/keys\/\)\./);
+  assert.match(publicKey, /Continue with \[The quantum threat\]\(\/learn\/quantum-threat\/\)\.\n\nFor how the two keys differ by job, read \[What the keys actually do\]\(\/learn\/explainers\/keys\/\)\./);
   const quantum = read('docs/learn/quantum-threat.md');
-  assert.match(quantum, /Next: \[What post-quantum means\]\(\/learn\/what-post-quantum-means\/\)\.\n\nFor which quantum effect applies to confidentiality, read \[What a quantum computer changes\]\(\/learn\/explainers\/quantum-computers\/\)\./);
+  assert.match(quantum, /Continue with \[What post-quantum means\]\(\/learn\/what-post-quantum-means\/\)\.\n\nFor which quantum effect applies to confidentiality, read \[What a quantum computer changes\]\(\/learn\/explainers\/quantum-computers\/\)\./);
   const algorithms = read('docs/learn/algorithms.md');
-  assert.match(algorithms, /Next: \[In real systems\]\(\/learn\/in-real-systems\/\)\.\n\nFor why a KEM is not bulk encryption, read \[What a KEM is\]\(\/learn\/explainers\/kem\/\)\./);
+  assert.match(algorithms, /Continue with \[In real systems\]\(\/learn\/in-real-systems\/\)\.\n\nFor why a KEM is not bulk encryption, read \[What a KEM is\]\(\/learn\/explainers\/kem\/\)\./);
   const systems = read('docs/learn/in-real-systems.md');
-  assert.match(systems, /Next: \[Standardisation\]\(\/learn\/standardisation\/\)\.\n\nFor where the shared secret sits in a connection, read \[What changes in a TLS connection\]\(\/learn\/explainers\/tls\/\)\./);
+  assert.match(systems, /Continue with \[Standardisation\]\(\/learn\/standardisation\/\)\.\n\nFor where the shared secret sits in a connection, read \[What changes in a TLS connection\]\(\/learn\/explainers\/tls\/\)\./);
 
   const sidebars = read('sidebars.ts');
   const categoryAt = sidebars.indexOf("label: 'Go deeper'");

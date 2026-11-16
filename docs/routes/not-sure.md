@@ -16,7 +16,7 @@ If someone is coordinating many of these assets, use the [organisation-wide rout
 
 The output is a named route, or a list of unknowns and the person who will close them.
 
-**Primary next page:** [Diagnose](/migration-practices/diagnose/).
+The primary next page is [Diagnose](/migration-practices/diagnose/).
 
 ## Sources
 

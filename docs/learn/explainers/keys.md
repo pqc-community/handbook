@@ -38,7 +38,7 @@ The public key is used to create a shared secret, and the private key recovers i
 
 This distinction continues from [Public-key cryptography](/learn/public-key-cryptography/).
 
-Next: [What a quantum computer changes](/learn/explainers/quantum-computers/).
+Continue with [What a quantum computer changes](/learn/explainers/quantum-computers/).
 
 ## Sources
 

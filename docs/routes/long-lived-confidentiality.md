@@ -20,7 +20,7 @@ Read in this order:
 
 The output is a [priority record](/resources/priority-record/) for the assets with a long confidentiality period.
 
-**Primary next page:** [Diagnose](/migration-practices/diagnose/).
+The primary next page is [Diagnose](/migration-practices/diagnose/).
 
 For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 

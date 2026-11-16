@@ -33,7 +33,7 @@ A decision-ready record lists clinic laptops on the supplier-update path, record
 
 ## Limits and next page
 
-Record applicable national milestones on the dates page. Next: [Post-quantum migration dates](/standards-timelines/dates/).
+Record applicable national milestones on the dates page. The next page is [Post-quantum migration dates](/standards-timelines/dates/).
 
 ## Sources
 

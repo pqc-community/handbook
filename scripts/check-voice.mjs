@@ -29,6 +29,8 @@ export const EDITION_PHRASES = [
   'this page',
   'the reader',
   'a reader',
+  'next:',
+  'primary next page:',
 ];
 
 export const AUTHORITY_PATTERN = /\b(NCSC|NIST|FIPS|EU|NIS|ASD|ACSC|CISA|NSA|AIVD|ETSI|CFDIR)\b/;

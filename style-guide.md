@@ -8,7 +8,7 @@ These maintainer notes are not scanned by the voice checks.
 
 Plain British English: organisation, programme, labelled.
 
-Body prose is complete sentences. A homepage choice may be a short clause.
+Body prose is complete sentences. A homepage choice may be a short clause. Front matter, headings, tables, fenced diagrams, source lists, the minimum-fields line, a glossary entry, and a label that only introduces a table or a list are outside body prose. A glossary entry may be a noun phrase. An onward link is a sentence, including the primary next page on a route: "Continue with Public-key cryptography." and "The primary next page is Commodity software." The voice check rejects `next:` and `primary next page:` anywhere in a scanned line.
 
 An insufficient record may be casual, because it is the record the page is warning against. It appears only inside Example.
 
@@ -37,7 +37,7 @@ A sentence that states a date, a duty, or a technical choice begins with one of 
 
 The edition scan rejects these phrases anywhere in that file set:
 
-`the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`, `this page`, `the reader`, `a reader`
+`the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`, `this page`, `the reader`, `a reader`, `next:`, `primary next page:`
 
 A line that contains `must` or `shall` fails the edition scan unless it also contains one of: NCSC, NIST, FIPS, EU, NIS, ASD, ACSC, CISA, NSA, AIVD, ETSI, CFDIR.
 
@@ -56,7 +56,7 @@ Six shapes appear in this edition:
 | Shape | Contract |
 | --- | --- |
 | **Chooser** | The homepage only. Promise, limit, six choices, the separate learn link, one clinic row, then the library. |
-| **Route page** | Who it is for. The ordered pages and why each one is in the order. The output, linked to its work product. One primary next page, which is the first page in the order. A route page holds the decision aid named in the route section of the spec. It does not repeat the practice pages. |
+| **Route page** | Who it is for. The ordered pages and why each one is in the order. The output, linked to its work product. One primary next page, written as a sentence, which is the first page in the order. A route page holds the decision aid named in the route section of the spec. It does not repeat the practice pages. |
 | **Learn page** | One idea, in ordinary sentences, then one onward link. A learn page does not give a migration procedure and does not include a parameter table. |
 | **Practice page** | Headings in the order below; no others before Sources. |
 | **Work-product page** | When to use it. The minimum fields. One filled example. One blank table with the same columns as the CSV. The CSV link. How to protect a record that contains a real inventory. How to record Unknown. Sources. Related pages. |

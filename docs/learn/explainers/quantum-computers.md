@@ -29,7 +29,7 @@ Shor's algorithm applies to today's public-key key establishment and digital sig
 
 This distinction continues from [The quantum threat](/learn/quantum-threat/).
 
-Next: [What a KEM is](/learn/explainers/kem/).
+Continue with [What a KEM is](/learn/explainers/kem/).
 
 ## Sources
 
