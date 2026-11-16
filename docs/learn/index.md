@@ -6,7 +6,7 @@ displayed_sidebar: learnSidebar
 last_reviewed: 2026-11-10
 ---
 
-Read this when you want background before choosing a migration route on the homepage.
+Read this for background before you choose a migration route on the homepage.
 
 Read in this order:
 
@@ -18,7 +18,7 @@ Read in this order:
 6. [Standardisation](/learn/standardisation/)
 7. [Glossary](/resources/glossary/)
 
-The sequence is background. A migration procedure starts from the homepage.
+Treat the sequence as background. A migration procedure starts from the homepage.
 
 ## Go deeper
 

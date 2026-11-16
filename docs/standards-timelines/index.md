@@ -9,7 +9,7 @@ description: Why a post-quantum migration has a date, whose date it is, and whic
 
 Use this section when a government publication, a customer question, or a supplier claim mentions a migration date and you need to know which authority's timeline applies to your organisation.
 
-[Dates](./dates.md) compares the milestones this edition records. [Migration guides](./migration-guides.md) lists programme-scale guides. Country and agency names stay on those pages; they are not the site navigation.
+[Dates](./dates.md) compares the milestones recorded here. [Migration guides](./migration-guides.md) lists the programme-scale guides. Open Dates or Migration guides when you need the country and the agency; this index only tells you which of those pages applies.
 
 **Handbook practice:** A timeline applies when the organisation operates or sells in that jurisdiction. The next page is [Dates](/standards-timelines/dates/).
 

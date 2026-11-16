@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 Which quantum effect applies to confidentiality, and which does not?
 
-You have read [The quantum threat](/learn/quantum-threat/). That lesson covers a cryptographically relevant quantum computer, if one is built. The further distinction is which effect applies to confidentiality, and which does not.
+[The quantum threat](/learn/quantum-threat/) covers a cryptographically relevant quantum computer, if one is built, and names the effects below. The distinction is which of them is a confidentiality risk.
 
 **Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures.
 
@@ -18,18 +18,16 @@ You have read [The quantum threat](/learn/quantum-threat/). That lesson covers a
 
 **Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, states that a signature checked at the time of use is not that confidentiality risk.
 
-**Handbook explanation:** the rows below set the confidentiality risk beside a signature checked at the time of use. The right-hand column is an **Authority statement**, cited to NIST IR 8547, October 2026.
+**Handbook explanation:** The rows below set the confidentiality risk beside a signature checked at the time of use. The right-hand column is an **Authority statement**, cited to NIST IR 8547, October 2026.
 
 | What is under consideration | What applies |
 | --- | --- |
 | Information protected now and still sensitive later | Harvest-now, decrypt-later, a confidentiality risk |
 | A signature checked at the time of use | Not that confidentiality risk |
 
-Shor's algorithm applies to today's public-key key establishment and digital signatures, and Grover's algorithm does not by itself retire symmetric cryptography on the same timetable. Harvest-now, decrypt-later is a confidentiality risk, and a signature checked at the time of use is not that risk.
+Shor's algorithm applies to today's public-key key establishment and digital signatures. Grover's algorithm does not, by itself, retire symmetric cryptography on the same timetable. Harvest-now, decrypt-later is the confidentiality risk, and a signature checked at the time of use is not that risk.
 
-This distinction continues from [The quantum threat](/learn/quantum-threat/).
-
-Continue with [What a KEM is](/learn/explainers/kem/).
+That is the same distinction as [The quantum threat](/learn/quantum-threat/). From here, read [What a KEM is](/learn/explainers/kem/).
 
 ## Sources
 

@@ -51,12 +51,12 @@ const situations: SituationChoice[] = [
   {
     title: 'Ask a supplier',
     to: '/routes/ask-a-supplier/',
-    text: 'A shortcut across the four situations.',
+    text: 'This is a shortcut across the four situations.',
   },
   {
     title: 'I am not sure',
     to: '/routes/not-sure/',
-    text: 'A way to choose a situation without a risk assessment.',
+    text: 'Choose a situation here without making a risk assessment.',
   },
 ];
 
@@ -90,7 +90,7 @@ export default function Home(): ReactNode {
             </div>
             <Link className={clsx(styles.roleCard, styles.learnApart)} to="/learn/">
               <Heading as="h3">Learn the basics</Heading>
-              <p>Background, before you choose a route.</p>
+              <p>Read this for background before you choose a route.</p>
             </Link>
           </div>
         </section>

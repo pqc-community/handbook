@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 Which job does the public key do, and which job does the private key do?
 
-You have read [Public-key cryptography](/learn/public-key-cryptography/). The further distinction is which key does which job.
+[Public-key cryptography](/learn/public-key-cryptography/) says the two keys do different jobs. The table puts those jobs side by side.
 
 **Handbook explanation:**
 
@@ -19,11 +19,11 @@ You have read [Public-key cryptography](/learn/public-key-cryptography/). The fu
 | Signing | Checks the signature | Creates the signature |
 | Verification | The check itself | Does not reverse the signature |
 
-The encryption row describes that classical job, and FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption.
+The encryption row describes that classical job. FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption.
 
-An unnamed web session uses key establishment, and an unnamed software update uses signing and verification. The jobs above do not depend on a named algorithm.
+A web session uses key establishment, and a software update uses signing and verification. The jobs above do not depend on a named algorithm.
 
-The figure shows that software update. The publisher signs it with the private key, and the device checks it with the public key.
+The figure follows that software update. The publisher signs it with the private key, and the device checks it with the public key.
 
 ```mermaid
 sequenceDiagram
@@ -34,11 +34,9 @@ sequenceDiagram
     Note over Device: The check does not reverse the signature
 ```
 
-The public key is used to create a shared secret, and the private key recovers it. The private key creates a signature, and the public key checks it, and checking a signature does not reverse it.
+In key establishment the public key creates a shared secret and the private key recovers it. In signing, the private key creates the signature and the public key checks it, and that check does not reverse the signature.
 
-This distinction continues from [Public-key cryptography](/learn/public-key-cryptography/).
-
-Continue with [What a quantum computer changes](/learn/explainers/quantum-computers/).
+That is the same distinction as [Public-key cryptography](/learn/public-key-cryptography/). From here, read [What a quantum computer changes](/learn/explainers/quantum-computers/).
 
 ## Sources
 

@@ -20,7 +20,7 @@ This route is for a migration lead who is coordinating many assets across the or
 | Operations | The change window and the rollback owner |
 | Suppliers | The product, version, and the answer |
 
-Read in this order for the handbook's six steps:
+Work through the six steps in this order:
 
 1. Decide whether the handbook applies and name an owner.
 2. Find cryptographic dependencies and record unknowns.
@@ -29,7 +29,7 @@ Read in this order for the handbook's six steps:
 5. Engage suppliers and migrate.
 6. Verify what changed and set the subsequent review.
 
-**Handbook practice:** Use the six steps above. ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) names five phases: Locate, Assess, Triage, Implement, and Communicate and educate. Name an owner before Locate. Finding dependencies is Locate, assessing confidentiality and constraints is Assess, and prioritising is Triage. Engaging suppliers and migrating is Implement. Step 6 verifies the change, records it on the evidence record and the change record, and sets the subsequent review. LATICE's Communicate and educate is the communication of that result. The learn sequence is the education material.
+**Handbook practice:** Use the six steps above. ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) names five phases: Locate, Assess, Triage, Implement, and Communicate and educate. Name an owner before Locate. Finding dependencies corresponds to Locate, assessing confidentiality and constraints corresponds to Assess, and prioritising corresponds to Triage. Engaging suppliers and migrating corresponds to Implement. Step 6 verifies the change, records it on the evidence record and the change record, and sets the subsequent review. Communicate and educate is how that result is passed on, and the learn sequence is the education material.
 
 A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as this route.
 

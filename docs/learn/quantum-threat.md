@@ -6,7 +6,7 @@ displayed_sidebar: learnSidebar
 last_reviewed: 2026-11-10
 ---
 
-A cryptographically relevant quantum computer, if one is built, would change the maths problems that protect today's public-key cryptography. This lesson names the main quantum algorithms involved and one confidentiality risk that does not wait for that machine to exist.
+A cryptographically relevant quantum computer, if one is built, would change the maths problems that protect today's public-key cryptography. Two quantum algorithms matter here, and one confidentiality risk does not wait for that machine to exist.
 
 **Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures. It names Grover's algorithm as the more limited threat, which does not by itself retire symmetric cryptography on the same timetable.
 
