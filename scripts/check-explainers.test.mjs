@@ -66,7 +66,7 @@ test('tls explainer separates the shared secret from the server check', () => {
   assert.match(page, /https:\/\/www\.ncsc\.gov\.uk\/guidance\/pqc-migration-timelines/);
   assert.match(page, /an exact industry-wide mechanism was not yet standardised at publication/);
   assert.match(page, /modified 3 August 2026/);
-  assert.match(page, /Key establishment produces the shared secret\. Checking the server is a separate signature check\. That split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange\./);
+  assert.match(page, /Key establishment produces the shared secret, and checking the server is a separate signature check\. That split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange\./);
   assert.match(page, /This distinction continues from \[In real systems\]\(\/learn\/in-real-systems\/\)\./);
   assert.match(page, /Continue with \[Learn the basics\]\(\/learn\/\)\./);
   assert.equal(page.toLowerCase().includes('handshake'), false);
@@ -86,7 +86,7 @@ test('kem explainer stops at the shared secret', () => {
   assertSingleSequenceDiagram(page, (body) => {
     assert.match(body, /participant Sender[\s\S]*participant Recipient[\s\S]*Encapsulate with the recipient's public key[\s\S]*Decapsulate with the private key/);
   });
-  assert.match(page, /Encapsulation produces a ciphertext and a shared secret\. Decapsulation recovers that secret\. The KEM does not carry the page, the file, or the health record\./);
+  assert.match(page, /Encapsulation produces a ciphertext and a shared secret, and decapsulation recovers that secret\. The KEM does not carry the page, the file, or the health record\./);
   assert.match(page, /This distinction continues from \[Algorithms\]\(\/learn\/algorithms\/\)\./);
   assert.match(page, /Continue with \[What changes in a TLS connection\]\(\/learn\/explainers\/tls\/\)\./);
   assert.match(page, /https:\/\/csrc\.nist\.gov\/pubs\/fips\/203\/final/);
@@ -112,7 +112,7 @@ test('quantum explainer keeps the contrast inside NIST IR 8547', () => {
   assert.match(page, /\| Information protected now and still sensitive later \| Harvest-now, decrypt-later, a confidentiality risk \|/);
   assert.match(page, /\| A signature checked at the time of use \| Not that confidentiality risk \|/);
   assert.match(page, /The right-hand column is an \*\*Authority statement\*\*, cited to NIST IR 8547, October 2026\./);
-  assert.match(page, /Shor's algorithm applies to today's public-key key establishment and digital signatures\. Grover's algorithm does not by itself retire symmetric cryptography on the same timetable\. Harvest-now, decrypt-later is a confidentiality risk, and a signature checked at the time of use is not that risk\./);
+  assert.match(page, /Shor's algorithm applies to today's public-key key establishment and digital signatures, and Grover's algorithm does not by itself retire symmetric cryptography on the same timetable\. Harvest-now, decrypt-later is a confidentiality risk, and a signature checked at the time of use is not that risk\./);
   assert.match(page, /This distinction continues from \[The quantum threat\]\(\/learn\/quantum-threat\/\)\./);
   assert.match(page, /Continue with \[What a KEM is\]\(\/learn\/explainers\/kem\/\)\./);
   assert.match(page, /https:\/\/doi\.org\/10\.6028\/NIST\.IR\.8547/);
@@ -134,14 +134,14 @@ test('keys explainer assigns each job to a key', () => {
   assert.match(page, /\| Encryption \| Encrypts \| Decrypts \|/);
   assert.match(page, /\| Signing \| Checks the signature \| Creates the signature \|/);
   assert.match(page, /\| Verification \| The check itself \| Does not reverse the signature \|/);
-  assert.match(page, /The encryption row describes that classical job\./);
+  assert.match(page, /The encryption row describes that classical job/);
   assert.match(page, /FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption/);
-  assert.match(page, /An unnamed web session uses key establishment\./);
-  assert.match(page, /An unnamed software update uses signing and verification\./);
+  assert.match(page, /An unnamed web session uses key establishment/);
+  assert.match(page, /an unnamed software update uses signing and verification/);
   assertSingleSequenceDiagram(page, (body) => {
     assert.match(body, /participant Publisher[\s\S]*participant Device[\s\S]*The check does not reverse the signature/);
   });
-  assert.match(page, /The public key is used to create a shared secret, and the private key recovers it\. The private key creates a signature, and the public key checks it\. Checking a signature does not reverse it\./);
+  assert.match(page, /The public key is used to create a shared secret, and the private key recovers it\. The private key creates a signature, and the public key checks it, and checking a signature does not reverse it\./);
   assert.match(page, /This distinction continues from \[Public-key cryptography\]\(\/learn\/public-key-cryptography\/\)\./);
   assert.match(page, /Continue with \[What a quantum computer changes\]\(\/learn\/explainers\/quantum-computers\/\)\./);
   assert.match(page, /https:\/\/doi\.org\/10\.6028\/NIST\.IR\.8547/);

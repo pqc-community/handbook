@@ -13,7 +13,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 ## Initial facts
 
-**Example:** Health records sit on a vendor-managed platform. **Authority recommendation:** The EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage, so confidentiality on those records still matters after 10 years. The inventory owner is the clinic operations lead. Software control sits with the vendor. The priority job for that row is `key establishment`.
+**Example:** Health records sit on a vendor-managed platform. **Authority recommendation:** The EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage, so confidentiality on those records still matters after 10 years. The inventory owner is the clinic operations lead, software control sits with the vendor, and the priority job for that row is `key establishment`.
 
 **Example:** A firmware signature check on clinic field devices cannot be updated in the field. The priority job for that row is `non-updatable verifier`.
 

@@ -10,6 +10,8 @@ Plain British English: organisation, programme, labelled.
 
 Body prose is complete sentences. A homepage choice may be a short clause. Front matter, headings, tables, fenced diagrams, source lists, the minimum-fields line, a glossary entry, and a label that only introduces a table or a list are outside body prose. A glossary entry may be a noun phrase. An onward link is a sentence, including the primary next page on a route: "Continue with Public-key cryptography." and "The primary next page is Commodity software." The voice check rejects `next:` and `primary next page:` anywhere in a scanned line.
 
+A short sentence is fine when the next sentence answers it. A paragraph that gives each new term its own sentence is a definition list: state the contrast in the lesson, and leave the definitions in the glossary. Numbered steps stay short. A reference entry's labelled fields, such as Covers, Assumes, and Leaves out, are outside body prose. A spec states the claim to keep and may show one example sentence. The page writes the paragraph. A test locks the claim, not the full stop.
+
 An insufficient record may be casual, because it is the record the page is warning against. It appears only inside Example.
 
 Second person is used for a procedure the reader carries out. A responsibility that belongs to a role names the role: executive sponsor, migration lead, asset owner, procurement, legal or risk, operations, supplier.

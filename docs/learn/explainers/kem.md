@@ -10,7 +10,8 @@ What does a key-encapsulation mechanism produce, and why is that not bulk encryp
 
 You have read [Algorithms](/learn/algorithms/). The further distinction is that a KEM produces a shared secret and does not carry the page, the file, or the health record.
 
-One party encapsulates with the other's public key and produces a ciphertext and a shared secret. The other decapsulates with the private key and recovers the same secret. A protocol such as TLS then derives symmetric keys from that secret, and those keys protect the bulk of the traffic. The KEM does not carry the page, the file, or the health record.
+One party encapsulates with the other's public key and produces a ciphertext and a shared secret. The other decapsulates with the private key and recovers the same secret. A protocol such as TLS then derives symmetric keys from that secret, and those keys protect the bulk of the traffic.
+
 The figure shows encapsulation and decapsulation between two parties.
 
 ```mermaid
@@ -26,7 +27,7 @@ sequenceDiagram
 
 The KEM does not carry the page, the file, or the health record.
 
-Encapsulation produces a ciphertext and a shared secret. Decapsulation recovers that secret. The KEM does not carry the page, the file, or the health record.
+Encapsulation produces a ciphertext and a shared secret, and decapsulation recovers that secret. The KEM does not carry the page, the file, or the health record.
 
 This distinction continues from [Algorithms](/learn/algorithms/).
 

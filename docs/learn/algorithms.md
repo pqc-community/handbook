@@ -6,9 +6,9 @@ displayed_sidebar: learnSidebar
 last_reviewed: 2026-11-10
 ---
 
-Three NIST standards name the post-quantum algorithms most organisations meet first. Each standard has a different job in real systems.
+Three NIST standards name the post-quantum algorithms most organisations meet first, and each has a different job in real systems.
 
-[ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), in FIPS 203, is for key establishment. [ML-DSA](https://csrc.nist.gov/pubs/fips/204/final), in FIPS 204, is for digital signatures. [SLH-DSA](https://csrc.nist.gov/pubs/fips/205/final), in FIPS 205, is also for digital signatures, using a hash-based design with a different profile from ML-DSA.
+[ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), in FIPS 203, is for key establishment. [ML-DSA](https://csrc.nist.gov/pubs/fips/204/final), in FIPS 204, is for digital signatures, and [SLH-DSA](https://csrc.nist.gov/pubs/fips/205/final), in FIPS 205, is also for digital signatures, with a hash-based design distinct from ML-DSA.
 
 Where the three standards sit among drafts, protocol profiles, and products is covered on [Standardisation](/learn/standardisation/).
 

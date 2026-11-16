@@ -10,7 +10,7 @@ Where is the shared secret established in a TLS connection, and how is that diff
 
 You have read [In real systems](/learn/in-real-systems/). The further distinction is where the shared secret is established, and how that differs from checking who the server is.
 
-The figure shows one connection. Key establishment produces the shared secret. Checking the server is a separate signature check.
+The figure shows one connection. Key establishment produces the shared secret, and checking the server is a separate signature check.
 
 ```mermaid
 sequenceDiagram
@@ -33,7 +33,7 @@ sequenceDiagram
 
 **Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that popular browsers can agree a post-quantum key using a hybrid of traditional key exchange and ML-KEM, and that an exact industry-wide mechanism was not yet standardised at publication, so further updates can be expected.
 
-Key establishment produces the shared secret. Checking the server is a separate signature check. That split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange.
+Key establishment produces the shared secret, and checking the server is a separate signature check. That split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange.
 
 This distinction continues from [In real systems](/learn/in-real-systems/).
 

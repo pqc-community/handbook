@@ -29,7 +29,7 @@ Read in this order for the handbook's six steps:
 5. Engage suppliers and migrate.
 6. Verify what changed and set the subsequent review.
 
-**Handbook practice:** Use the six steps above. ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) names five phases: Locate, Assess, Triage, Implement, and Communicate and educate. Name an owner is the step before Locate. Find dependencies is Locate. Assess confidentiality and constraints is Assess. Prioritise is Triage. Engage suppliers and migrate is Implement. Step 6 verifies the change, records it on the evidence record and the change record, and sets the subsequent review. LATICE's Communicate and educate is the communication of that result. The learn sequence is the education material.
+**Handbook practice:** Use the six steps above. ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) names five phases: Locate, Assess, Triage, Implement, and Communicate and educate. Name an owner before Locate. Finding dependencies is Locate, assessing confidentiality and constraints is Assess, and prioritising is Triage. Engaging suppliers and migrating is Implement. Step 6 verifies the change, records it on the evidence record and the change record, and sets the subsequent review. LATICE's Communicate and educate is the communication of that result. The learn sequence is the education material.
 
 A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as this route.
 

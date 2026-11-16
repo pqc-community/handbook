@@ -19,9 +19,9 @@ You have read [Public-key cryptography](/learn/public-key-cryptography/). The fu
 | Signing | Checks the signature | Creates the signature |
 | Verification | The check itself | Does not reverse the signature |
 
-The encryption row describes that classical job. FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption.
+The encryption row describes that classical job, and FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption.
 
-An unnamed web session uses key establishment. An unnamed software update uses signing and verification. The jobs above do not depend on a named algorithm.
+An unnamed web session uses key establishment, and an unnamed software update uses signing and verification. The jobs above do not depend on a named algorithm.
 
 The figure shows that software update. The publisher signs it with the private key, and the device checks it with the public key.
 
@@ -34,7 +34,7 @@ sequenceDiagram
     Note over Device: The check does not reverse the signature
 ```
 
-The public key is used to create a shared secret, and the private key recovers it. The private key creates a signature, and the public key checks it. Checking a signature does not reverse it.
+The public key is used to create a shared secret, and the private key recovers it. The private key creates a signature, and the public key checks it, and checking a signature does not reverse it.
 
 This distinction continues from [Public-key cryptography](/learn/public-key-cryptography/).
 

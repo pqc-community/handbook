@@ -19,7 +19,7 @@ You are ready to list the cryptography and no one has yet claimed it has moved t
 4. Mark what a scan cannot see, including embedded and hardware-bound cryptography.
 5. Set confidence to `known` or `unknown`.
 
-**Handbook practice:** List systems that hold sensitive data or have an external connection, then add supplier-controlled and hardware items a scan cannot see. One row per system. A shared library or service is named in `dependencies`, not given a second system row. `confidence` is `known` only when both algorithm cells name a construction. Otherwise it is `unknown`.
+**Handbook practice:** List systems that hold sensitive data or have an external connection, then add supplier-controlled and hardware items a scan cannot see. Use one row per system. A shared library or service is named in `dependencies`, not given a second system row. `confidence` is `known` only when both algorithm cells name a construction; otherwise it is `unknown`.
 
 A **first-pass inventory** is that list. A **maintained inventory** is the same list with an owner and a subsequent-review date.
 

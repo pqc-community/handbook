@@ -132,7 +132,9 @@ test('learn lessons match the critique-v2 spec', () => {
   assert.match(algorithms, /\/learn\/standardisation\//);
   assert.match(systems, /leaf certificate for the site, through an intermediate, to a trust anchor/);
   assert.equal(systems.toLowerCase().includes('handshake'), false);
-  assert.match(standards, /A published FIPS is a standard/);
+  assert.match(standards, /draft can still change/);
+  assert.match(standards, /published FIPS is the standard/);
+  assert.match(standards, /protocol profile/);
   assert.match(standards, /vendor implementation is the product release/);
 });
 
