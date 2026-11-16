@@ -1,12 +1,12 @@
 ---
 title: Learn the basics
 sidebar_label: Learn the basics
-description: A short sequence for a reader who is not yet planning a migration.
+description: Background before you choose a migration route.
 displayed_sidebar: learnSidebar
 last_reviewed: 2026-11-10
 ---
 
-This path is for a reader who wants background before choosing a migration route on the homepage.
+Read this when you want background before choosing a migration route on the homepage.
 
 Read in this order:
 
@@ -18,7 +18,7 @@ Read in this order:
 6. [Standardisation](/learn/standardisation/)
 7. [Glossary](/resources/glossary/)
 
-This path does not give a migration procedure.
+The sequence is background. A migration procedure starts from the homepage.
 
 ## Go deeper
 

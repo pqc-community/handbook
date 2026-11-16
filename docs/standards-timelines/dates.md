@@ -9,11 +9,11 @@ description: Whose migration timeline applies, and which date belongs to which a
 
 ## When this applies
 
-The reader needs to know which timeline to record.
+You need to know which timeline to record.
 
 ## Do this
 
-Identify where the organisation operates and where it sells. Record one row of the table for each timeline that applies. A reader who cannot tell which timeline applies is sent to the risk owner or the sector authority.
+Identify where the organisation operates and where it sells. Record one row of the table for each timeline that applies. If you cannot tell which timeline applies, ask the risk owner or the sector authority.
 
 | authority | audience | milestone | status | asset scope | last checked |
 | --- | --- | --- | --- | --- | --- |
@@ -44,7 +44,7 @@ An organisation that sells into the United Kingdom and holds health records reco
 
 ## Limits and next page
 
-This page does not prioritise assets. The next page is [Priority](/migration-practices/priority/).
+Leave asset priority for the priority page. Next: [Priority](/migration-practices/priority/).
 
 ## Sources
 

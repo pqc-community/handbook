@@ -19,7 +19,7 @@ The priority record marks signatures, or a verifier that can still be updated, a
 
 **Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says digital signatures are not vulnerable to harvest-now, decrypt-later. It says the transition is still urgent because it takes longer and more parties coordinate. It says an authentication system remains secure until the algorithm can be broken at the time of authentication, and that supporting a quantum-resistant algorithm means upgrading the systems that perform and accept the authentication, including the PKI.
 
-**Handbook practice:** [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA. This page does not reprint parameters.
+**Handbook practice:** [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA. Parameter tables stay in the FIPS publications.
 
 ## Keep this evidence
 

@@ -55,8 +55,7 @@ test('tls explainer separates the shared secret from the server check', () => {
   assert.match(page, /displayed_sidebar: learnSidebar/);
   assert.match(page, /last_reviewed: 2026-11-10/);
   assert.match(page, /Where is the shared secret established in a TLS connection, and how is that different from checking who the server is\?/);
-  assert.match(page, /reader who has read \[In real systems\]\(\/learn\/in-real-systems\/\)/);
-  assert.match(page, /It gives no client setting, no cipher list, and no byte-level exchange\./);
+  assert.match(page, /You have read \[In real systems\]\(\/learn\/in-real-systems\/\)/);
   assertSingleSequenceDiagram(page, (body) => {
     assert.match(body, /participant Client[\s\S]*participant Server[\s\S]*Key establishment[\s\S]*Check the server with a signature/);
   });
@@ -82,9 +81,8 @@ test('kem explainer stops at the shared secret', () => {
   assert.match(page, /displayed_sidebar: learnSidebar/);
   assert.match(page, /last_reviewed: 2026-11-10/);
   assert.match(page, /What does a key-encapsulation mechanism produce, and why is that not bulk encryption\?/);
-  assert.match(page, /reader who has read \[Algorithms\]\(\/learn\/algorithms\/\)/);
+  assert.match(page, /You have read \[Algorithms\]\(\/learn\/algorithms\/\)/);
   assert.match(page, /The KEM does not carry the page, the file, or the health record\./);
-  assert.match(page, /unnamed example of bulk data/);
   assertSingleSequenceDiagram(page, (body) => {
     assert.match(body, /participant Sender[\s\S]*participant Recipient[\s\S]*Encapsulate with the recipient's public key[\s\S]*Decapsulate with the private key/);
   });
@@ -104,12 +102,13 @@ test('quantum explainer keeps the contrast inside NIST IR 8547', () => {
   assert.match(page, /displayed_sidebar: learnSidebar/);
   assert.match(page, /last_reviewed: 2026-11-10/);
   assert.match(page, /Which quantum effect applies to confidentiality, and which does not\?/);
-  assert.match(page, /reader who has read \[The quantum threat\]\(\/learn\/quantum-threat\/\)/);
+  assert.match(page, /You have read \[The quantum threat\]\(\/learn\/quantum-threat\/\)/);
   assert.match(page, /names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures/);
   assert.match(page, /names Grover's algorithm as the more limited effect, which does not by itself retire symmetric cryptography on the same timetable/);
   assert.match(page, /confidentiality risk for information protected now and still sensitive later/);
   assert.match(page, /a signature checked at the time of use is not that confidentiality risk/);
-  assert.match(page, /This page does not say that a cryptographically relevant quantum computer already exists\./);
+  assert.match(page, /if one is built/);
+  assert.equal(page.includes('This page does not say'), false);
   assert.match(page, /\| Information protected now and still sensitive later \| Harvest-now, decrypt-later, a confidentiality risk \|/);
   assert.match(page, /\| A signature checked at the time of use \| Not that confidentiality risk \|/);
   assert.match(page, /The right-hand column is an \*\*Authority statement\*\*, cited to NIST IR 8547, October 2026\./);
@@ -130,13 +129,13 @@ test('keys explainer assigns each job to a key', () => {
   assert.match(page, /displayed_sidebar: learnSidebar/);
   assert.match(page, /last_reviewed: 2026-11-10/);
   assert.match(page, /Which job does the public key do, and which job does the private key do\?/);
-  assert.match(page, /reader who has read \[Public-key cryptography\]\(\/learn\/public-key-cryptography\/\)/);
+  assert.match(page, /You have read \[Public-key cryptography\]\(\/learn\/public-key-cryptography\/\)/);
   assert.match(page, /\| Key establishment \| Used to create a shared secret \| Recovers that secret \|/);
   assert.match(page, /\| Encryption \| Encrypts \| Decrypts \|/);
   assert.match(page, /\| Signing \| Checks the signature \| Creates the signature \|/);
   assert.match(page, /\| Verification \| The check itself \| Does not reverse the signature \|/);
-  assert.match(page, /The encryption row is a handbook explanation of that classical job\./);
-  assert.match(page, /does not claim that FIPS 203, FIPS 204, or FIPS 205 standardises public-key encryption/);
+  assert.match(page, /The encryption row describes that classical job\./);
+  assert.match(page, /FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption/);
   assert.match(page, /An unnamed web session uses key establishment\./);
   assert.match(page, /An unnamed software update uses signing and verification\./);
   assertSingleSequenceDiagram(page, (body) => {
@@ -164,7 +163,7 @@ test('go deeper lists the four explainers without changing the core path', () =>
   assert.match(landing, /5\. \[In real systems\]\(\/learn\/in-real-systems\/\)/);
   assert.match(landing, /6\. \[Standardisation\]\(\/learn\/standardisation\/\)/);
   assert.match(landing, /7\. \[Glossary\]\(\/resources\/glossary\/\)/);
-  assert.match(landing, /This path does not give a migration procedure\./);
+  assert.match(landing, /The sequence is background\. A migration procedure starts from the homepage\./);
   const deeperAt = landing.indexOf('## Go deeper');
   const planAt = landing.indexOf('When you are ready to plan');
   assert.ok(deeperAt > -1 && planAt > deeperAt);

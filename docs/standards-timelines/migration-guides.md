@@ -7,7 +7,7 @@ last_reviewed: 2026-11-10
 description: The short reading list for a post-quantum migration programme. The Dutch handbook is listed and is not rewritten.
 ---
 
-Use this page when you need the programme-scale guide, not another summary of it.
+Open this list when you need the programme-scale guide, not another summary of it.
 
 This book does not replace these works. Each entry states what the work covers, what it assumes, what it leaves out, whether it is current or preliminary, and when it was last checked. Follow the link for the full text.
 

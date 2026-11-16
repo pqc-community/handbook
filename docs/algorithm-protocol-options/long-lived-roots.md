@@ -27,7 +27,7 @@ Run the applicability test, then complete the procurement checklist.
 
 **Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, list LMS and XMSS as algorithms with a more limited set of uses, and the 2028 plan row includes long-lived hardware roots of trust.
 
-**Handbook practice:** SLH-DSA in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) is the stateless hash-based signature named on this page when a stateful scheme is not appropriate. Record which authority defends the construction next to the product decision.
+**Handbook practice:** SLH-DSA in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) is the stateless hash-based signature to record when a stateful scheme is not appropriate. Record which authority defends the construction next to the product decision.
 
 ## Keep this evidence
 

@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 This route is for an organisation that relies on standard browsers, operating systems, and mobile devices.
 
-The reader stays on this route only when all of these hold: the software is supplier-updated browsers, operating systems, or mobile devices; no record needs to stay confidential for years; there is no bespoke system; no verifier that cannot be updated later; and the product is in support and has a written supplier plan. A product that is out of support, or has no written supplier plan, uses the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets also opens the [organisation-wide route](/routes/organisation-wide/).
+Stay on this route only when all of these hold: the software is supplier-updated browsers, operating systems, or mobile devices; no record needs to stay confidential for years; there is no bespoke system; no verifier that cannot be updated later; and the product is in support and has a written supplier plan. A product that is out of support, or has no written supplier plan, uses the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets also opens the [organisation-wide route](/routes/organisation-wide/).
 
 When all of those stay-conditions hold, read in this order:
 
@@ -21,7 +21,7 @@ The output is a [vendor response log](/resources/vendor-response-log/), and eith
 
 **Primary next page:** [Commodity software](/migration-practices/commodity-software/).
 
-For a labelled illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
+For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 
 ## Sources
 

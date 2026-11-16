@@ -90,7 +90,7 @@ export default function Home(): ReactNode {
             </div>
             <Link className={clsx(styles.roleCard, styles.learnApart)} to="/learn/">
               <Heading as="h3">Learn the basics</Heading>
-              <p>For a reader who is not yet planning a migration.</p>
+              <p>Background, before you choose a route.</p>
             </Link>
           </div>
         </section>

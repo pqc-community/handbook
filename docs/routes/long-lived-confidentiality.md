@@ -22,7 +22,7 @@ The output is a [priority record](/resources/priority-record/) for the assets wi
 
 **Primary next page:** [Diagnose](/migration-practices/diagnose/).
 
-For a labelled illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
+For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 
 ## Sources
 

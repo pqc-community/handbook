@@ -6,7 +6,7 @@ displayed_sidebar: resourcesSidebar
 last_reviewed: 2026-11-10
 ---
 
-This page states how the handbook chooses sources, records jurisdictions, and is maintained.
+These rules are how sources are chosen, how jurisdictions are recorded, and how the handbook is maintained.
 
 ## Source order
 
@@ -26,7 +26,7 @@ When pages cite external work, they follow this order:
 - **Requirement** is a binding obligation inside the audience named by that authority.
 - **Authority recommendation** is the source advising an action.
 - **Authority statement** is the source describing a fact.
-- **Handbook practice** is what this handbook tells the reader to do.
+- **Handbook practice** is what these pages tell you to do.
 - **Example** is an illustration, including the clinic.
 
 A date or an obligation records the authority, the date of the source, the jurisdiction, the audience, and the status when those change the meaning.

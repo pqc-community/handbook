@@ -14,6 +14,8 @@ An insufficient record may be casual, because it is the record the page is warni
 
 Second person is used for a procedure the reader carries out. A responsibility that belongs to a role names the role: executive sponsor, migration lead, asset owner, procurement, legal or risk, operations, supplier.
 
+A public sentence speaks to the person doing the work. If the subject is the page, the handbook, the reader, the edition, or the build, rewrite it so the action is the subject. Limits stay; they name what to leave for a later record. These notes may still say "the reader", because they are written for the person editing the handbook.
+
 ### Replacement terms
 
 | Term | Use it for |
@@ -31,11 +33,11 @@ A sentence that states a date, a duty, or a technical choice begins with one of 
 
 ### Automated voice checks
 
-`findVoiceViolations` enforces the legacy retired phrases on `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md`. The finish plan joins `findEditionVoiceViolations` into that function. Until then, `npm run check:voice` runs only the legacy scan.
+`npm run check:voice` runs the retired-phrase scan and the edition scan on `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md`. `style-guide.md` and `purpose-and-positioning.md` are not scanned.
 
-The edition scan rejects these phrases anywhere in the same file set:
+The edition scan rejects these phrases anywhere in that file set:
 
-`the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`
+`the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`, `this page`, `the reader`, `a reader`
 
 A line that contains `must` or `shall` fails the edition scan unless it also contains one of: NCSC, NIST, FIPS, EU, NIS, ASD, ACSC, CISA, NSA, AIVD, ETSI, CFDIR.
 

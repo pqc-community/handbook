@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 Which quantum effect applies to confidentiality, and which does not?
 
-This page is for a reader who has read [The quantum threat](/learn/quantum-threat/) and wants one further distinction. That lesson names the quantum algorithms and the confidentiality risk. This page separates that risk from a signature checked at the time of use.
+You have read [The quantum threat](/learn/quantum-threat/). That lesson covers a cryptographically relevant quantum computer, if one is built. The further distinction is which effect applies to confidentiality, and which does not.
 
 **Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures.
 
@@ -17,8 +17,6 @@ This page is for a reader who has read [The quantum threat](/learn/quantum-threa
 **Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes harvest-now, decrypt-later as a confidentiality risk for information protected now and still sensitive later.
 
 **Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, states that a signature checked at the time of use is not that confidentiality risk.
-
-This page does not say that a cryptographically relevant quantum computer already exists.
 
 **Handbook explanation:** the rows below set the confidentiality risk beside a signature checked at the time of use. The right-hand column is an **Authority statement**, cited to NIST IR 8547, October 2026.
 

@@ -41,7 +41,7 @@ A decision-ready record lists the clinic health-record system on the vendor plat
 
 ## Limits and next page
 
-This page does not choose algorithms or set priority. The next page is the [inventory record](/resources/inventory-record/).
+Leave the algorithm and the priority for a later record. Next: the [inventory record](/resources/inventory-record/).
 
 ## Sources
 

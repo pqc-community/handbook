@@ -54,12 +54,15 @@ test('flags an edition phrase and a modal verb without an authority', () => {
     {
       ...extras,
       'docs/dates.md': 'Use the clock for this organisation.\n',
-      'docs/modal.md': 'The reader must record the owner.\n',
+      'docs/note.md': 'This page is for a reader who is waiting.\n',
+      'docs/modal.md': 'Record the owner; you must name them.\n',
       'docs/requirement.md': 'Requirement. NIST IR 8547 says agencies must support TLS 1.3.\n',
     },
     (root) => findEditionVoiceViolations(root),
   );
   assert.ok(violations.some((hit) => hit.includes('docs/dates.md:1: the clock')));
+  assert.ok(violations.some((hit) => hit.includes('docs/note.md:1: this page')));
+  assert.ok(violations.some((hit) => hit.includes('docs/note.md:1: a reader')));
   assert.ok(violations.some((hit) => hit.includes('docs/modal.md:1: must or shall')));
   assert.equal(violations.some((hit) => hit.includes('docs/requirement.md')), false);
 });

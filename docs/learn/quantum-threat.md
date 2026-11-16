@@ -12,8 +12,6 @@ A cryptographically relevant quantum computer, if one is built, would change the
 
 Harvest-now, decrypt-later means collecting ciphertext now and decrypting it later, when a breakthrough makes that possible. The risk applies to confidentiality: information that was meant to stay secret for years could be read later if the public-key cryptography that protected it is broken. Long-lived secrets therefore matter even before such a computer exists.
 
-This page does not say that a cryptographically relevant quantum computer already exists.
-
 Next: [What post-quantum means](/learn/what-post-quantum-means/).
 
 For which quantum effect applies to confidentiality, read [What a quantum computer changes](/learn/explainers/quantum-computers/).

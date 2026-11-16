@@ -9,13 +9,13 @@ description: Branch on system type, lifetime, jurisdiction, updateability, suppl
 
 ## When this applies
 
-A system is already on the inventory and the priority record, and the reader is ready to name a post-quantum option and the authority that defends it.
+A system is already on the inventory and the priority record, and you are ready to name a post-quantum option and the authority that defends it.
 
 ## Do this
 
-The reader records the system type, the confidentiality period, whether it can be updated, and who controls the software. The authority decides the timeline, and any hybrid rule, for its own audience. Where a supplier controls the software, the supplier decides the construction and the release date.
+Record the system type, the confidentiality period, whether it can be updated, and who controls the software. The authority decides the timeline, and any hybrid rule, for its own audience. Where a supplier controls the software, the supplier decides the construction and the release date.
 
-Work through these branches in order. None of them chooses the option for the reader; each branch narrows what to record before implementation.
+Work through these branches in order. None of them chooses the option for you; each branch narrows what to record before implementation.
 
 ### System type
 
@@ -31,7 +31,7 @@ Work through these branches in order. None of them chooses the option for the re
 
 **Authority recommendation:** The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) distinguishes urgent adopters from regular adopters. Long-lived sensitive data sits with urgent adopters. Regular adopters do not need to react yet; an organisation on the boundary between urgent and regular follows Section 3.2 of that handbook for when to start particular assets.
 
-These are policy notes to record, and this page does not choose among them.
+These are policy notes to record. Record which authority you are following.
 
 ### Jurisdiction
 
@@ -59,7 +59,7 @@ These are policy notes to record, and this page does not choose among them.
 
 **Handbook practice:** Ask whether the protocol, the certificate, and the hardware can carry the larger values, and whether every verifier can be updated together.
 
-These are policy notes to record, and this page does not choose among them.
+These are policy notes to record. Record which authority you are following.
 
 **Authority recommendation:** The EU NIS Cooperation Group roadmap, 11 June 2025, recommends standardised and tested hybrid solutions whenever feasible and suitable, and states that for high-risk use cases quantum-vulnerable public-key mechanisms shall not be used stand-alone after the end of 2030.
 
@@ -73,9 +73,9 @@ These are policy notes to record, and this page does not choose among them.
 
 **Handbook practice:** Quantum key distribution is set aside for the time being by the PQC Migration Handbook, December 2024, and by [ETSI TR 103 619](https://www.etsi.org/deliver/etsi_tr/103600_103699/103619/01.01.01_60/tr_103619v010101p.pdf). Quantum random-number generators are outside this handbook.
 
-**Handbook practice:** [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) names ML-KEM, [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) names ML-DSA, and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) names SLH-DSA. This page does not reprint parameters.
+**Handbook practice:** [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) names ML-KEM, [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) names ML-DSA, and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) names SLH-DSA. Parameter tables stay in the FIPS publications.
 
-| Job | What the reader records next | Evidence |
+| Job | What you record next | Evidence |
 | --- | --- | --- |
 | Key establishment | The supplier's construction, or the authority's stated default, and the confidentiality period | The inventory row and the authority citation |
 | Signatures | Who has to change together | The priority row |
@@ -89,11 +89,11 @@ The option, the authority, and the date of that authority, written on the system
 
 An insufficient record is "Hybrid is required for everyone."
 
-A decision-ready record states that a high-risk confidentiality system follows the EU NIS Cooperation Group roadmap hybrid guidance dated 11 June 2025, that commodity laptops follow the UK NCSC timelines supplier-update path modified 3 August 2026, and that the reader opened the implementation check before cutover.
+A decision-ready record states that a high-risk confidentiality system follows the EU NIS Cooperation Group roadmap hybrid guidance dated 11 June 2025, that commodity laptops follow the UK NCSC timelines supplier-update path modified 3 August 2026, and that you opened the implementation check before cutover.
 
 ## Limits and next page
 
-This page does not configure a protocol. The next page is the [implementation check](/migration-practices/implementation/).
+Leave protocol configuration for the implementation check. Next: the [implementation check](/migration-practices/implementation/).
 
 ## Sources
 

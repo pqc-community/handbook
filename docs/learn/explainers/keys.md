@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 Which job does the public key do, and which job does the private key do?
 
-This page is for a reader who has read [Public-key cryptography](/learn/public-key-cryptography/) and wants one further distinction. That lesson says the two keys do different jobs. This page sets the jobs side by side.
+You have read [Public-key cryptography](/learn/public-key-cryptography/). The further distinction is which key does which job.
 
 **Handbook explanation:**
 
@@ -19,9 +19,9 @@ This page is for a reader who has read [Public-key cryptography](/learn/public-k
 | Signing | Checks the signature | Creates the signature |
 | Verification | The check itself | Does not reverse the signature |
 
-The encryption row is a handbook explanation of that classical job. This page does not claim that FIPS 203, FIPS 204, or FIPS 205 standardises public-key encryption.
+The encryption row describes that classical job. FIPS 203, FIPS 204, and FIPS 205 do not standardise public-key encryption.
 
-An unnamed web session uses key establishment. An unnamed software update uses signing and verification. This page names no algorithm.
+An unnamed web session uses key establishment. An unnamed software update uses signing and verification. The jobs above do not depend on a named algorithm.
 
 The figure shows that software update. The publisher signs it with the private key, and the device checks it with the public key.
 

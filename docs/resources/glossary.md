@@ -7,7 +7,7 @@ last_reviewed: 2026-11-10
 description: Short forms used in this handbook, from PQC and hybrid to harvest-now, decrypt-later. Handbook wording is labelled as handbook wording.
 ---
 
-This page is step 7 of [Learn the basics](/learn/). Each entry is handbook wording unless it cites a source. When you are ready to plan, return to the [homepage](/).
+The glossary is step 7 of [Learn the basics](/learn/). Each entry is handbook wording unless it cites a source. When you are ready to plan, return to the [homepage](/).
 
 ### CBOM (cryptography bill of materials)
 

@@ -34,7 +34,7 @@ A decision-ready record names the migration lead as owner, records the first inv
 
 ## Limits and next page
 
-This page does not choose algorithms or applicable migration timelines. The next page is the [inventory record](/resources/inventory-record/).
+Leave the algorithm and the applicable timeline for a later record. Next: the [inventory record](/resources/inventory-record/).
 
 ## Sources
 

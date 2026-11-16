@@ -95,7 +95,7 @@ test('routes state the critique-v2 rules', () => {
   assert.match(org, /LATICE's Communicate and educate is the communication of that result/);
   assert.equal(org.includes('verify the change, communicate it, and set the subsequent review is Communicate and educate'), false);
   assert.match(vendor, /in support and has a written supplier plan/);
-  assert.match(hard, /Long-lived roots is read only when the verifier cannot be updated later/);
+  assert.match(hard, /Open long-lived roots only when the verifier cannot be updated later/);
   assert.match(hard, /A blocked row counts as that change record/);
   assert.match(ask, /one row per product, version, and cryptographic job/);
 });

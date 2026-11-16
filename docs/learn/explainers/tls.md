@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 Where is the shared secret established in a TLS connection, and how is that different from checking who the server is?
 
-This page is for a reader who has read [In real systems](/learn/in-real-systems/) and wants one further distinction. That lesson places key establishment in TLS sessions. This page separates the shared secret from the check of who the server is. It gives no client setting, no cipher list, and no byte-level exchange.
+You have read [In real systems](/learn/in-real-systems/). The further distinction is where the shared secret is established, and how that differs from checking who the server is.
 
 The figure shows one connection. Key establishment produces the shared secret. Checking the server is a separate signature check.
 

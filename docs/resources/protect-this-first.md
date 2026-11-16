@@ -4,10 +4,10 @@ sidebar_label: Protect this first
 sidebar_position: 5
 displayed_sidebar: resourcesSidebar
 last_reviewed: 2026-11-10
-description: A labelled illustration, not a real organisation. The clinic walks inventory, priority, supplier answers, options, change, and review in order.
+description: An illustration, not a real organisation. The clinic walks inventory, priority, supplier answers, options, change, and review in order.
 ---
 
-**Example:** This page is an illustration, not a real organisation.
+**Example:** The clinic is an illustration, not a real organisation.
 
 The fictional clinic runs health records on a vendor system and field devices whose firmware signature check cannot be updated in the field. Office laptops stay on the commodity path. The sections below follow one organisation through the work products in order.
 
@@ -49,7 +49,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 **Handbook practice:** Before implementation, the clinic records the option and its authority on [Choosing an option](/algorithm-protocol-options/choosing/).
 
-**Example:** For the health-records key-establishment channel, the clinic matches the supplier's named construction to the default key-establishment option in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, and records that publication as the authority. This page does not reproduce a parameter table.
+**Example:** For the health-records key-establishment channel, the clinic matches the supplier's named construction to the default key-establishment option in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, and records that publication as the authority. The parameter table stays in NIST IR 8547.
 
 ## Change record and deployed-state check
 

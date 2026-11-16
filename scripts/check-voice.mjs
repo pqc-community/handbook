@@ -26,6 +26,9 @@ export const EDITION_PHRASES = [
   'five responsibilities',
   'where to start',
   'start here',
+  'this page',
+  'the reader',
+  'a reader',
 ];
 
 export const AUTHORITY_PATTERN = /\b(NCSC|NIST|FIPS|EU|NIS|ASD|ACSC|CISA|NSA|AIVD|ETSI|CFDIR)\b/;
