@@ -16,7 +16,8 @@ Read in this order:
 4. [Algorithms](/learn/algorithms/)
 5. [In real systems](/learn/in-real-systems/)
 6. [Standardisation](/learn/standardisation/)
-7. [Glossary](/resources/glossary/)
+7. [Timelines](/learn/timelines/)
+8. [Glossary](/resources/glossary/)
 
 Treat the sequence as background. A migration procedure starts from the homepage.
 

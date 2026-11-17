@@ -8,7 +8,7 @@ These maintainer notes are not scanned by the voice checks.
 
 Plain British English: organisation, programme, labelled.
 
-Body prose is complete sentences. A homepage choice may be a short clause. Front matter, headings, tables, fenced diagrams, source lists, the minimum-fields line, a glossary entry, and a label that only introduces a table or a list are outside body prose. A glossary entry may be a noun phrase. An onward link is a sentence, including the primary next page on a route: "Continue with Public-key cryptography." and "The primary next page is Commodity software." The voice check rejects `next:` and `primary next page:` anywhere in a scanned line.
+Body prose is complete sentences. A homepage choice may be a short clause. Front matter, headings, tables, fenced diagrams, source lists, the minimum-fields line, a glossary entry, and a label that only introduces a table or a list are outside body prose. A glossary entry may open with a noun phrase. The glossary section says how an entry is shaped. An onward link is a sentence, including the primary next page on a route: "Continue with Public-key cryptography." and "The primary next page is Commodity software." The voice check rejects `next:` and `primary next page:` anywhere in a scanned line.
 
 A short sentence is fine when the next sentence answers it. A paragraph that gives each new term its own sentence is a definition list: state the contrast in the lesson, and leave the definitions in the glossary. Numbered steps stay short. A reference entry's labelled fields, such as Covers, Assumes, and Leaves out, are outside body prose. A spec states the claim to keep and may show one example sentence. The page writes the paragraph. A test locks the facts and the forbidden mistake. It does not include a full stop.
 
@@ -79,6 +79,18 @@ In this order, and no others before Sources:
 7. Related pages
 
 Do this is a numbered procedure. Example is one heading. Inside it, one insufficient record and one decision-ready record. Limits and next page names one primary next page. Related pages is a secondary list.
+
+## Glossary entries
+
+The glossary is a reference index. Entries stay in alphabetical order by the heading.
+
+The heading is the term a person will look up. Write an abbreviation as `Short form (expansion)`, as in `CBOM (cryptography bill of materials)`. Write a full name as `Full name (short form)` when the short form is the one used in the lessons, as in `Post-quantum cryptography (PQC)`. Leave the parentheses out when the words in them are already the term.
+
+Each entry is a short paragraph, long enough to use the term. Say what it is, and say what it is not or how it differs from the neighbouring term. The last sentence may name the page that uses the term, as `See [Public-key cryptography](/learn/public-key-cryptography/).` A noun phrase may open the paragraph.
+
+Start the paragraph with **Handbook wording:** when the gloss is the handbook's own, or **Authority recommendation:** when the sentence states what a source says. An algorithm named by a FIPS names NIST and links that FIPS, without either label. The rest of that paragraph says which job the algorithm does and which neighbouring algorithm does not.
+
+Do not paste the lesson, and do not add a parameter table. A date or a duty appears only when the entry takes it from the source line it cites.
 
 ## Citations
 

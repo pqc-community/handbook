@@ -16,9 +16,7 @@ Further algorithms, protocol details, and deployment profiles remain in developm
 
 For the current transition, read the NIST CSRC publication pages for [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final), and [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, Transition to Post-Quantum Cryptography Standards.
 
-Continue with [Glossary](/resources/glossary/).
-
-After the glossary, continue with the [home page](/) or [Curated references](/resources/curated-references/) for deeper reading.
+Continue with [Timelines](/learn/timelines/).
 
 ## Sources
 
@@ -31,3 +29,4 @@ After the glossary, continue with the [home page](/) or [Curated references](/re
 
 - [Learn the basics](/learn/)
 - [In real systems](/learn/in-real-systems/)
+- [Timelines](/learn/timelines/)

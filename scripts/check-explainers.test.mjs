@@ -176,6 +176,7 @@ test('go deeper lists the four explainers without changing the core path', () =>
     '/learn/algorithms/',
     '/learn/in-real-systems/',
     '/learn/standardisation/',
+    '/learn/timelines/',
     '/resources/glossary/',
   ]);
   assert.match(landing, /background/);

@@ -1,0 +1,35 @@
+---
+title: Timelines
+sidebar_label: Timelines
+description: A finished standard is not a migration date, and a date belongs to one authority and one audience.
+displayed_sidebar: learnSidebar
+last_reviewed: 2026-11-10
+---
+
+A published standard names an algorithm. A timeline says when an audience is expected to move. Those are different claims.
+
+[FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) are final standards. Final does not give every organisation the same date, and it does not put key establishment and signatures on one date.
+
+**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says harvest-now, decrypt-later applies where a public-key scheme establishes symmetric keys that protect confidentiality. It says an authentication system remains secure until the algorithm can be broken at the time of authentication. The two jobs are not the same moment in the transition.
+
+**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path. Custom or specialised software does not sit on that path by default.
+
+Record the timeline that applies where the organisation operates and where it sells. A date in one report is that report's date for its audience. The rows, including who each date is for, are on [Dates](/standards-timelines/dates/).
+
+Continue with [Glossary](/resources/glossary/).
+
+After the glossary, continue with the [home page](/) or [Curated references](/resources/curated-references/) for deeper reading.
+
+## Sources
+
+- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- NIST, FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- NIST, FIPS 204, Module-Lattice-Based Digital Signature Algorithm. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
+- NIST, FIPS 205, Stateless Hash-Based Digital Signature Algorithm. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
+
+## Related pages
+
+- [Learn the basics](/learn/)
+- [Standardisation](/learn/standardisation/)
+- [Dates](/standards-timelines/dates/)

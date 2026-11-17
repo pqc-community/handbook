@@ -9,6 +9,7 @@ const sidebars: SidebarsConfig = {
     'learn/algorithms',
     'learn/in-real-systems',
     'learn/standardisation',
+    'learn/timelines',
     {
       type: 'category',
       label: 'Go deeper',
