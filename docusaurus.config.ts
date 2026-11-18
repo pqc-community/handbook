@@ -56,7 +56,7 @@ const config: Config = {
       style: 'dark',
       items: [
         {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn the basics'},
-        {type: 'docSidebar', sidebarId: 'standardsGuidesSidebar', position: 'left', label: 'Standards and guides'},
+        {type: 'docSidebar', sidebarId: 'standardsSidebar', position: 'left', label: 'Standards'},
         {type: 'docSidebar', sidebarId: 'migrationPracticesSidebar', position: 'left', label: 'Migration practices'},
         {type: 'docSidebar', sidebarId: 'algorithmProtocolOptionsSidebar', position: 'left', label: 'Algorithm and protocol options'},
         {type: 'docSidebar', sidebarId: 'resourcesSidebar', position: 'left', label: 'Resources'},
@@ -84,7 +84,7 @@ const config: Config = {
         {
           title: 'Reference',
           items: [
-            {label: 'Standards and guides', to: '/standards-guides/'},
+            {label: 'Standards', to: '/standards/'},
             {label: 'Migration practices', to: '/migration-practices/'},
             {label: 'Algorithm and protocol options', to: '/algorithm-protocol-options/'},
             {label: 'Resources', to: '/resources/'},

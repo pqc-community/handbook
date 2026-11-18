@@ -31,9 +31,176 @@ const sidebars: SidebarsConfig = {
     'routes/ask-a-supplier',
     'routes/not-sure',
   ],
-  standardsGuidesSidebar: [
-    'standards-guides/index',
-    'standards-guides/migration-guides',
+  standardsSidebar: [
+    'standards/index',
+    {
+      type: 'category',
+      label: 'Post-quantum cryptography',
+      link: {type: 'doc', id: 'standards/post-quantum/index'},
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'Key establishment and KEMs',
+          collapsed: false,
+          items: [
+            'standards/post-quantum/fips-203',
+            'standards/post-quantum/sp-800-227',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Digital signatures',
+          collapsed: false,
+          items: [
+            'standards/post-quantum/fips-204',
+            'standards/post-quantum/fips-205',
+            'standards/post-quantum/sp-800-208',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Standardisation status reports',
+          collapsed: true,
+          items: [
+            'standards/post-quantum/nist-ir-8528',
+            'standards/post-quantum/nist-ir-8545',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Transition and key management',
+      link: {type: 'doc', id: 'standards/transition-and-key-management/index'},
+      collapsed: true,
+      items: [
+        'standards/transition-and-key-management/nist-ir-8547',
+        'standards/transition-and-key-management/sp-800-131a',
+        'standards/transition-and-key-management/sp-800-57-part-1',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Classical public-key (transitioning)',
+      link: {type: 'doc', id: 'standards/classical-public-key/index'},
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Signatures and curves',
+          collapsed: false,
+          items: [
+            'standards/classical-public-key/fips-186-5',
+            'standards/classical-public-key/sp-800-186',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Pair-wise key establishment',
+          collapsed: false,
+          items: [
+            'standards/classical-public-key/sp-800-56a',
+            'standards/classical-public-key/sp-800-56b',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Symmetric, hash, and KDF primitives',
+      link: {type: 'doc', id: 'standards/symmetric-and-primitives/index'},
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Encryption and lightweight cryptography',
+          collapsed: false,
+          items: [
+            'standards/symmetric-and-primitives/fips-197',
+            'standards/symmetric-and-primitives/sp-800-232',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Hash functions, XOFs, and MACs',
+          collapsed: false,
+          items: [
+            'standards/symmetric-and-primitives/fips-180-4',
+            'standards/symmetric-and-primitives/fips-202',
+            'standards/symmetric-and-primitives/sp-800-185',
+            'standards/symmetric-and-primitives/fips-198-1',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Key derivation and random bit generation',
+          collapsed: false,
+          items: [
+            'standards/symmetric-and-primitives/sp-800-56c',
+            'standards/symmetric-and-primitives/sp-800-108',
+            'standards/symmetric-and-primitives/sp-800-132',
+            'standards/symmetric-and-primitives/sp-800-90a',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Modules, protocols, and identity',
+      link: {type: 'doc', id: 'standards/modules-protocols-identity/index'},
+      collapsed: true,
+      items: [
+        'standards/modules-protocols-identity/fips-140-3',
+        'standards/modules-protocols-identity/sp-800-52',
+        'standards/modules-protocols-identity/fips-201-3',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'US federal directives',
+      link: {type: 'doc', id: 'standards/us-federal-directives/index'},
+      collapsed: true,
+      items: [
+        'standards/us-federal-directives/nsm-10',
+        'standards/us-federal-directives/eo-14306',
+        'standards/us-federal-directives/eo-14412',
+        'standards/us-federal-directives/omb-m-26-15',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Migration guides',
+      link: {type: 'doc', id: 'standards/migration-guides/index'},
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Programme and strategy guides',
+          collapsed: false,
+          items: [
+            'standards/migration-guides/dutch-pqc-handbook',
+            'standards/migration-guides/uk-ncsc-pqc-guidance',
+            'standards/migration-guides/eu-nis-roadmap',
+            'standards/migration-guides/asd-planning',
+            'standards/migration-guides/canadian-cfdir-guide',
+            'standards/migration-guides/etsi-tr-103-619',
+            'standards/migration-guides/etsi-tr-104-016',
+            'standards/migration-guides/pqcc-roadmap',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Discovery, readiness, and supplier guides',
+          collapsed: false,
+          items: [
+            'standards/migration-guides/cisa-nsa-nist-fact-sheet',
+            'standards/migration-guides/nccoe-migration-to-pqc',
+            'standards/migration-guides/vendor-questions',
+          ],
+        },
+      ],
+    },
   ],
   migrationPracticesSidebar: [
     'migration-practices/index',

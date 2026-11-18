@@ -61,7 +61,7 @@ const situations: SituationChoice[] = [
 ];
 
 const referenceSections = [
-  {title: 'Standards and guides', to: '/standards-guides/'},
+  {title: 'Standards', to: '/standards/'},
   {title: 'Migration practices', to: '/migration-practices/'},
   {title: 'Algorithm and protocol options', to: '/algorithm-protocol-options/'},
   {title: 'Resources', to: '/resources/'},
