@@ -167,7 +167,7 @@ test('keys explainer assigns each job to a key', () => {
   assert.equal(page.includes('!['), false);
 });
 
-test('go deeper lists the four explainers without changing the core path', () => {
+test('go deeper lists the explainers without changing the core path', () => {
   const landing = read('docs/learn/index.md');
   assertInOrder(landing, [
     '/learn/public-key-cryptography/',
@@ -192,6 +192,7 @@ test('go deeper lists the four explainers without changing the core path', () =>
     '/learn/explainers/quantum-computers/',
     '/learn/explainers/kem/',
     '/learn/explainers/tls/',
+    '/learn/explainers/timelines/',
   ]);
 
   const linked = [
@@ -217,13 +218,15 @@ test('go deeper lists the four explainers without changing the core path', () =>
   const quantumAt = category.indexOf("'learn/explainers/quantum-computers'");
   const kemAt = category.indexOf("'learn/explainers/kem'");
   const tlsAt = category.indexOf("'learn/explainers/tls'");
-  assert.ok(keysAt > -1 && keysAt < quantumAt && quantumAt < kemAt && kemAt < tlsAt);
+  const timelinesAt = category.indexOf("'learn/explainers/timelines'");
+  assert.ok(keysAt > -1 && keysAt < quantumAt && quantumAt < kemAt && kemAt < tlsAt && tlsAt < timelinesAt);
 
   const nav = read('navigation-structure.md');
   assert.match(nav, /\/learn\/explainers\/keys\//);
   assert.match(nav, /\/learn\/explainers\/quantum-computers\//);
   assert.match(nav, /\/learn\/explainers\/kem\//);
   assert.match(nav, /\/learn\/explainers\/tls\//);
+  assert.match(nav, /\/learn\/explainers\/timelines\//);
 });
 
 test('explainer links stay on the learn path', () => {
@@ -237,6 +240,8 @@ test('explainer links stay on the learn path', () => {
     'docs/learn/explainers/quantum-computers.md',
     'docs/learn/explainers/kem.md',
     'docs/learn/explainers/tls.md',
+    'docs/learn/timelines.md',
+    'docs/learn/explainers/timelines.md',
   ]);
   const leaks = walk('docs')
     .map((file) => file.split(path.sep).join('/'))

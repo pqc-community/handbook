@@ -14,7 +14,7 @@ A published standard names an algorithm. A timeline says when an audience is exp
 
 **Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path. Custom or specialised software does not sit on that path by default.
 
-Record the timeline that applies where the organisation operates and where it sells. A date in one report is that report's date for its audience. The rows, including who each date is for, are on [Dates](/standards-timelines/dates/).
+Record the timeline that applies where the organisation operates and where it sells. A date in one report is that report's date for its audience. The rows, including who each date is for, are on [Whose date applies](/learn/explainers/timelines/).
 
 Continue with [Glossary](/resources/glossary/).
 
@@ -32,4 +32,4 @@ After the glossary, continue with the [home page](/) or [Curated references](/re
 
 - [Learn the basics](/learn/)
 - [Standardisation](/learn/standardisation/)
-- [Dates](/standards-timelines/dates/)
+- [Whose date applies](/learn/explainers/timelines/)

@@ -13,7 +13,7 @@ Stay on this route only when all of these hold: the software is supplier-updated
 When all of those conditions hold, read in this order:
 
 1. [Commodity software](/migration-practices/commodity-software/)
-2. [Dates](/standards-timelines/dates/)
+2. [Timelines](/learn/timelines/)
 3. [Vendor response log](/resources/vendor-response-log/)
 4. [Subsequent review](/migration-practices/subsequent-review/)
 

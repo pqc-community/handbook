@@ -1,8 +1,8 @@
 ---
 title: Post-quantum migration guides
 sidebar_label: Migration guides
-sidebar_position: 3
-displayed_sidebar: standardsTimelinesSidebar
+sidebar_position: 2
+displayed_sidebar: standardsGuidesSidebar
 last_reviewed: 2026-11-10
 description: The short reading list for a post-quantum migration programme. The Dutch handbook is listed and is not rewritten.
 ---
@@ -10,20 +10,6 @@ description: The short reading list for a post-quantum migration programme. The 
 Open this list when you need the programme-scale guide, not another summary of it.
 
 This book does not replace these works. Each entry states what the work covers, what it assumes, what it leaves out, whether it is current or preliminary, and when it was last checked. Follow the link for the full text.
-
-### Recording applicable migration timelines
-
-**Audience:** Risk owners and programme leads choosing which dated milestone to record.
-
-**[UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)**, modified 3 August 2026. **Covers:** Milestones for 2028, 2031, and 2035, audience scope, and commodity IT updated by suppliers. **Assumes:** United Kingdom jurisdiction or sales into the United Kingdom. **Leaves out:** Enterprise inventories and vendor questionnaires. **Status:** Current guidance. **Last checked:** 10 November 2026.
-
-**[EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)**, version 1.1, 11 June 2025. **Covers:** Member State coordination milestones and risk bands for public-key confidentiality. **Assumes:** National coordinators. **Leaves out:** Single-organisation priority methods. **Status:** Current government plan. **Last checked:** 10 November 2026.
-
-**[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)**, October 2026. **Covers:** Standards deprecation and disallowance dates, federal asset directions, and migration concepts for NIST users. **Assumes:** Engagement with NIST standards or US federal systems named in the report. **Leaves out:** Procurement law outside the United States. **Status:** Current report. **Last checked:** 10 November 2026.
-
-**[ASD planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)**. **Covers:** Planning framing for Australian organisations and a planning milestone at the end of 2030. **Assumes:** ASD's stated audience. **Leaves out:** Supplier question templates. **Status:** Current publication. **Last checked:** 10 November 2026. **Handbook practice:** End of 2030 is ASD's planning milestone for its audience, not a universal deadline.
-
-**[Canadian CFDIR quantum-readiness guide](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf)**, 10 July 2024. **Covers:** Leadership actions for critical-infrastructure readiness. **Assumes:** Canadian critical-infrastructure owners and operators, or adapters elsewhere. **Leaves out:** Algorithm parameter tables. **Status:** Current guide. **Last checked:** 10 November 2026.
 
 ### Opening a programme
 
@@ -59,7 +45,7 @@ This book does not replace these works. Each entry states what the work covers, 
 
 **Audience:** Procurement, legal or risk, and asset owners preparing supplier engagement.
 
-**[Post-quantum questions to ask your vendors](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)** (ASD and ACSC, with CISA and NSA), updated 5 November 2026. **Covers:** Structured supplier questions, including embedded and hardware-bound cryptography among common concerns, and ASD's planning milestone at the end of 2030 for its audience. **Assumes:** Contract renewals and new purchases. **Leaves out:** Protocol-level test vectors. **Status:** Current guide. **Last checked:** 5 November 2026. **Handbook practice:** End of 2030 is ASD's planning milestone for its audience, not a universal deadline.
+**[Post-quantum questions to ask your vendors](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)** (ASD and ACSC, with CISA and NSA), updated 5 November 2026. **Covers:** Structured supplier questions, including embedded and hardware-bound cryptography among common concerns. **Assumes:** Contract renewals and new purchases. **Leaves out:** Protocol-level test vectors. **Status:** Current guide. **Last checked:** 5 November 2026.
 
 ### National resource lists
 
@@ -69,11 +55,6 @@ This book does not replace these works. Each entry states what the work covers, 
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
-- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
-- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- ASD, Planning for post-quantum cryptography. [Planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
-- Canadian Forum for Digital Infrastructure Resilience, Quantum-Readiness Best Practices, 10 July 2024. [CFDIR guide](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf)
 - CISA, NSA, and NIST, Quantum-Readiness fact sheet, as of 17 August 2023. [Fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 - NIST NCCoE, Frequently asked questions about post-quantum cryptography, last updated 5 November 2026. [FAQ](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
 - NIST, Migration to Post-Quantum Cryptography (NIST SP 1800-38A preliminary draft), April 2023. [Volume A](https://www.nccoe.nist.gov/sites/default/files/2023-04/pqc-migration-nist-sp-1800-38a-preliminary-draft.pdf)
@@ -88,6 +69,6 @@ This book does not replace these works. Each entry states what the work covers, 
 
 ## Related pages
 
-- [Dates](./dates.md)
+- [Standards and guides](./index.md)
 - [Diagnose](../migration-practices/diagnose.md)
 - [Curated references](../resources/curated-references.md)

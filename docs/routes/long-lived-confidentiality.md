@@ -16,7 +16,7 @@ Read in this order:
 4. [Priority](/migration-practices/priority/)
 5. [Priority record](/resources/priority-record/)
 6. [Key establishment](/algorithm-protocol-options/key-establishment/)
-7. [Dates](/standards-timelines/dates/)
+7. [Timelines](/learn/timelines/)
 
 The output is a [priority record](/resources/priority-record/) for the assets with a long confidentiality period.
 

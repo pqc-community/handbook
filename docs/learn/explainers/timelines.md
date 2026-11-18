@@ -1,11 +1,14 @@
 ---
-title: Post-quantum migration dates
-sidebar_label: Dates
-sidebar_position: 2
-displayed_sidebar: standardsTimelinesSidebar
+title: Whose date applies
+sidebar_label: Whose date applies
+description: Which migration date belongs to which authority, and which audience that date is for.
+displayed_sidebar: learnSidebar
 last_reviewed: 2026-11-10
-description: Whose migration timeline applies, and which date belongs to which audience.
 ---
+
+Which migration date belongs to which authority, and which audience is that date for?
+
+[Timelines](/learn/timelines/) says a finished standard is not a migration date, and that a date belongs to one authority and one audience. The table records those dates.
 
 ## When this applies
 
@@ -42,9 +45,9 @@ The timeline adopted, the source and date, and the assets placed on the nearer m
 
 An organisation that sells into the United Kingdom and holds health records records the UK NCSC dates for that market and does not drop a second timeline that applies where it operates. The health records are placed on the nearer milestone because of a long confidentiality period.
 
-## Limits and next page
+Leave asset priority for the [priority page](/migration-practices/priority/).
 
-Leave asset priority for the priority page. The next page is [Priority](/migration-practices/priority/).
+That is the same distinction as [Timelines](/learn/timelines/). From here, read [Learn the basics](/learn/).
 
 ## Sources
 
@@ -56,6 +59,6 @@ Leave asset priority for the priority page. The next page is [Priority](/migrati
 
 ## Related pages
 
-- [Migration guides](./migration-guides.md)
-- [Priority](../migration-practices/priority.md)
-- [Diagnose](../migration-practices/diagnose.md)
+- [Timelines](/learn/timelines/)
+- [Learn the basics](/learn/)
+- [Priority](/migration-practices/priority/)

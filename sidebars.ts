@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
         'learn/explainers/quantum-computers',
         'learn/explainers/kem',
         'learn/explainers/tls',
+        'learn/explainers/timelines',
       ],
     },
   ],
@@ -30,10 +31,9 @@ const sidebars: SidebarsConfig = {
     'routes/ask-a-supplier',
     'routes/not-sure',
   ],
-  standardsTimelinesSidebar: [
-    'standards-timelines/index',
-    'standards-timelines/dates',
-    'standards-timelines/migration-guides',
+  standardsGuidesSidebar: [
+    'standards-guides/index',
+    'standards-guides/migration-guides',
   ],
   migrationPracticesSidebar: [
     'migration-practices/index',

@@ -7,14 +7,14 @@ Handbook URLs use a **trailing slash** (for example `/migration-practices/invent
 The navbar shows the site title (links home), **Learn the basics**, four reference section sidebars, and GitHub:
 
 1. Learn the basics
-2. Standards and timelines
+2. Standards and guides
 3. Migration practices
 4. Algorithm and protocol options
 5. Resources
 
 **Routes** (`routesSidebar`) are reached from the homepage situation chooser and the footer. They are **not** navbar items. Each page sets `displayed_sidebar` to the sidebar that contains it.
 
-`sidebars.ts` defines six hand-written sidebars: `learnSidebar`, `routesSidebar`, `standardsTimelinesSidebar`, `migrationPracticesSidebar`, `algorithmProtocolOptionsSidebar`, and `resourcesSidebar`.
+`sidebars.ts` defines six hand-written sidebars: `learnSidebar`, `routesSidebar`, `standardsGuidesSidebar`, `migrationPracticesSidebar`, `algorithmProtocolOptionsSidebar`, and `resourcesSidebar`.
 
 ## Book map
 
@@ -34,6 +34,7 @@ The homepage is the situation chooser. Learn the basics is a separate path. Refe
 /learn/explainers/quantum-computers/
 /learn/explainers/kem/
 /learn/explainers/tls/
+/learn/explainers/timelines/
 
 /routes/vendor-managed-software/
 /routes/long-lived-confidentiality/
@@ -42,9 +43,8 @@ The homepage is the situation chooser. Learn the basics is a separate path. Refe
 /routes/ask-a-supplier/
 /routes/not-sure/
 
-/standards-timelines/
-/standards-timelines/dates/
-/standards-timelines/migration-guides/
+/standards-guides/
+/standards-guides/migration-guides/
 
 /migration-practices/
 /migration-practices/diagnose/
@@ -79,11 +79,11 @@ The homepage is the situation chooser. Learn the basics is a separate path. Refe
 
 **Structural rules**
 
-- Dates are one page. A duty that belongs to one authority stays a link to that authority.
+- A migration date is recorded on the timelines deep dive. A duty that belongs to one authority stays a link to that authority.
 - Migration guides are one reading list. The Dutch handbook is on that list and is not rewritten.
 - Option pages stay at four: choosing, key establishment, signatures, long-lived roots.
 - Changing algorithms again is its own practice page.
-- The learn landing lists seven lessons; the glossary on the resources sidebar is the eighth step in the sequence. Go deeper is an optional list of four explainers on the Learn landing page and in `learnSidebar`.
+- The learn landing lists seven lessons; the glossary on the resources sidebar is the eighth step in the sequence. Go deeper is an optional list of five explainers on the Learn landing page and in `learnSidebar`.
 
 The **slugs in the book map are the ones the site uses** (folder names under `docs/` map to these paths).
 
@@ -100,7 +100,7 @@ Each route page names who it is for, an ordered reading list, the work product o
 | Ask a supplier | `/routes/ask-a-supplier/` | Procurement and supplier follow-up |
 | Not sure | `/routes/not-sure/` | Chooser when the situation is unclear |
 
-Reading-order links on route pages use these same slugs (for example `/migration-practices/diagnose/`, `/standards-timelines/dates/`).
+Reading-order links on route pages use these same slugs (for example `/migration-practices/diagnose/`, `/standards-guides/`).
 
 ## Homepage (orientation)
 

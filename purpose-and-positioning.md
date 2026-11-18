@@ -12,7 +12,7 @@ The reader is the person who must decide what the organisation migrates, in what
 
 The homepage is one situation chooser: one promise, one limit, and six choices that send the reader into a route. Learn the basics is a separate path for a reader who is not yet planning a migration; it sits apart from the six choices.
 
-Behind the routes, the handbook keeps four reference sections: **Standards and timelines**, **Migration practices**, **Algorithm and protocol options**, and **Resources**. The navbar lists Learn the basics and those four sections; the six routes are reached from the chooser, the footer, and the route sidebar, not as top-level navbar items.
+Behind the routes, the handbook keeps four reference sections: **Standards and guides**, **Migration practices**, **Algorithm and protocol options**, and **Resources**. The navbar lists Learn the basics and those four sections; the six routes are reached from the chooser, the footer, and the route sidebar, not as top-level navbar items.
 
 ## Sister sites
 
