@@ -30,8 +30,8 @@ npm run build
 
 | Command | What it does |
 | --- | --- |
-| `npm test` | Runs page validation tests (`scripts/check-pages.test.mjs`) |
-| `npm run check` | Checks `docs/**/*.md` page front matter (currently page title length bounds) |
+| `npm test` | Runs page and navigation validation tests (`scripts/check-pages.test.mjs`) |
+| `npm run check` | Checks `docs/**/*.md` title lengths and navbar, footer, and sidebar label bounds |
 | `npm run typecheck` | TypeScript check |
 | `npm run build` | Production static build (broken links and anchors fail the build) |
 

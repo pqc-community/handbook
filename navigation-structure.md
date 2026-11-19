@@ -203,7 +203,7 @@ Isolation rules:
 ## Homepage, Footer, and Search
 
 - **Homepage (`src/pages/index.tsx`)**: Hero promise and limit; six situation cards (`/routes/*`) with **Learn the basics** (`/learn/`) visually apart below them; single-row clinic preview linking to `/resources/protect-this-first/`; and four reference section cards (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`). No hero button points to a single practice hub.
-- **Footer (`docusaurus.config.ts`)**: Three columns — **Routes** (all six `/routes/*` paths), **Learn** (`/learn/`), and **Reference** (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`).
+- **Footer (`docusaurus.config.ts`)**: Three columns — **Routes** (all six `/routes/*` paths using concise route labels `≤ 32` characters so mobile viewports do not overflow), **Learn** (`/learn/`), and **Reference** (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`).
 - **Search and indexing**: Navbar search uses `@easyops-cn/docusaurus-search-local` built at compile time; `sitemap.xml` is generated on build and referenced from `static/robots.txt`.
 
 ## Structural Guardrails

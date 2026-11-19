@@ -69,12 +69,12 @@ const config: Config = {
         {
           title: 'Routes',
           items: [
-            {label: 'We mostly use standard, vendor-managed software', to: '/routes/vendor-managed-software/'},
-            {label: 'We handle data that stays confidential for years', to: '/routes/long-lived-confidentiality/'},
-            {label: 'We own products or systems that may be hard to change', to: '/routes/hard-to-change-systems/'},
-            {label: 'I am coordinating a migration across the organisation', to: '/routes/organisation-wide/'},
+            {label: 'Vendor-managed software', to: '/routes/vendor-managed-software/'},
+            {label: 'Long-lived confidentiality', to: '/routes/long-lived-confidentiality/'},
+            {label: 'Hard to change', to: '/routes/hard-to-change-systems/'},
+            {label: 'Organisation-wide', to: '/routes/organisation-wide/'},
             {label: 'Ask a supplier', to: '/routes/ask-a-supplier/'},
-            {label: 'I am not sure', to: '/routes/not-sure/'},
+            {label: 'Not sure', to: '/routes/not-sure/'},
           ],
         },
         {

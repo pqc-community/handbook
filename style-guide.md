@@ -204,7 +204,11 @@ last_reviewed: 2026-11-10
 ---
 ```
 
-- **Page title length**: Every doc `title` is between `3` and `160` characters (`npm run check` / `scripts/check-pages.mjs`). Keep narrative, route, practice, option, and resource titles concise (`≤ 60` characters where practical); `/standards/` pages may carry full official publication titles up to `160` characters.
+- **Title and navigation length budgets** (`npm run check` / `scripts/check-pages.mjs`): Docusaurus separates page titles, sidebar labels, navbar items, and footer links so each UI surface has an appropriate length bound without constraining the others:
+  - Page `title` (`docs/**/*.md`): `3–160` characters (concise `≤ 60` where practical; `/standards/` pages carry full official publication titles).
+  - Sidebar labels (`sidebar_label` in `docs/**/*.md` and category `label` in `sidebars.ts`): `2–50` characters (sidebars wrap naturally across lines; setting `sidebar_label` prevents long `/standards/` titles from falling back into the sidebar).
+  - Navbar items (`themeConfig.navbar.items` in `docusaurus.config.ts`): `2–32` characters.
+  - Footer column titles (`2–24` characters) and footer links (`2–32` characters) in `themeConfig.footer.links` (`docusaurus.config.ts`), keeping mobile footer columns crisp alongside `max-width: 100%` on `.footer__link-item`.
 - **Edition review date**: Every doc carries `last_reviewed` (currently `2026-11-10`), rendered above the article by `src/theme/DocItem/Content/index.tsx`. Update `last_reviewed` and the changelog in `docs/resources/editorial-policy.md` when pages are reviewed.
 - **Search-intent deduplication**: A doc's `title` is both its visible `<h1>` and its `<title>` tag (`<title> | PQC Handbook`), and `description` is its search snippet. Ensure two pages never compete for the same search query: keep the primary head term on the canonical page that fulfils it, and phrase routing or companion pages around their specific operational role. The homepage is the sole exception where `Layout` `title` (`Post-quantum cryptography handbook`) differs from the hero `<h1>` (`PQC Handbook`).
 
@@ -217,6 +221,6 @@ Run the verification suite locally before merging (`.github/workflows/deploy.yml
 | Command | Purpose |
 | --- | --- |
 | `npm test` | Runs the `node:test` suite (`scripts/check-pages.test.mjs`). |
-| `npm run check` | Runs `scripts/check-pages.mjs` across `docs/**/*.md` (currently checks that every page has a `title` between `3` and `160` characters, serving as the entry point for future page checks). |
+| `npm run check` | Runs `scripts/check-pages.mjs` to validate page `title` lengths (`3–160`) and surface-specific navigation bounds (`navbar` `≤ 32`, `footer` titles `≤ 24`, `footer` links `≤ 32`, `sidebar` items and categories `≤ 50`). |
 | `npm run typecheck` | Runs `tsc` against `docusaurus.config.ts`, `sidebars.ts`, and `src/`. |
 | `npm run build` | Builds static HTML and the local search index in `build/`, throwing on any broken link, anchor, or relative Markdown link. |

@@ -67,7 +67,7 @@ Syntax highlighting uses `prismThemes.github` in light mode and `prismThemes.dra
 | Component | Implementation & guidance |
 | --- | --- |
 | Navbar | Dark style (`style: 'dark'`), Deep Teal in light mode and Darker Teal in dark mode. Shows logo, **PQC Handbook**, five doc sidebars (**Learn the basics**, **Standards**, **Migration practices**, **Algorithm and protocol options**, **Resources**), local search bar, theme toggle, and GitHub link. |
-| Footer | Dark style (`style: 'dark'`, `.footer--dark` in `#013B4E` with `#F5FCFD` links) organised into three columns: **Routes**, **Learn**, and **Reference**. |
+| Footer | Dark style (`style: 'dark'`, `.footer--dark` in `#013B4E` with `#F5FCFD` links) organised into three columns: **Routes**, **Learn**, and **Reference**. `.footer__link-item` sets `max-width: 100%` in `src/css/custom.css` so Infima's mobile `width: max-content` rule never overflows narrow viewports. |
 | Cards | Outlined surface cards (`.roleCard` and `.resourceCard` in `src/pages/index.module.css`) with `1px` emphasis border, `1.05rem` `<h3>` titles, and `#00C5D8` hover border. Two-column grids collapse to a single column at `≤ 768px`. |
 | Review stamp | `src/theme/DocItem/Content/index.tsx` wraps Docusaurus doc content and renders `Last reviewed <D Month YYYY>` (`en-GB` UTC formatting) from each page's `last_reviewed` front matter. |
 | Tables & CSV kits | Structured Markdown tables for authority comparisons, option branches, and work-product templates, paired with header-only CSV files in `static/downloads/`. Keep cell phrasing concise so tables remain readable on narrow viewports. |
