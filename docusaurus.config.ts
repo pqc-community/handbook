@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'PQC Handbook',
   tagline:
-    'A practical handbook for organisations that have to migrate public-key cryptography and do not have a cryptographer to do the deciding.',
+    'Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration',
   favicon: 'img/favicon.svg',
   future: {v4: true},
   url: 'https://pqchandbook.com',

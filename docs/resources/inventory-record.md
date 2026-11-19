@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 ## When to use it
 
-Use this record when you finish a first pass over systems that handle sensitive data or an external connection, before anyone claims the cryptography has moved.
+Use this record when completing a first-pass inventory of systems that handle sensitive data or external connections, before claiming any system has migrated.
 
 ## Minimum fields
 

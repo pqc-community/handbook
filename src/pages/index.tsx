@@ -15,10 +15,10 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className={styles.heroLead}>
-          The handbook helps an organisation decide what to migrate, in what order, and how it will know.
+          Practical, source-backed guidance for deciding what public-key cryptography to migrate, in what order, and how to evidence the transition.
         </p>
         <p className={styles.heroLead}>
-          It is not a risk assessment and not a substitute for a specialist on a large bespoke estate, critical national infrastructure, or a regulated system.
+          Not a formal risk assessment, and not a substitute for specialist cryptography advice on large bespoke estates, critical national infrastructure, or regulated systems.
         </p>
       </div>
     </header>
@@ -71,7 +71,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Post-quantum cryptography handbook"
-      description="A practical handbook for organisations that have to migrate public-key cryptography to post-quantum algorithms without a cryptographer to do the deciding."
+      description="Practical, source-backed guidance for organisations planning, prioritising, and evidencing a migration to post-quantum cryptography without specialist cryptography staff."
     >
       <HomepageHeader />
       <main>

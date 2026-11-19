@@ -9,7 +9,7 @@ These guidelines define the visual identity, UI conventions, and naming standard
 | Name | **PQC Handbook** |
 | Domain | `https://pqchandbook.com` |
 | Repository | `pqc-community/handbook` (`https://github.com/pqc-community/handbook`) |
-| Tagline | A practical handbook for organisations that have to migrate public-key cryptography and do not have a cryptographer to do the deciding. |
+| Tagline | Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration |
 | Core proposition | Source-backed decision paths, practices, technical options, standards summaries, and record templates for planning and evidencing a post-quantum cryptography migration. |
 | Personality | Practical, neutral, standards-aware, evidence-led, and jurisdiction-explicit. |
 | Voice | Briefing register in plain British English: calm, concrete, and decision-oriented, without hype, vendor promotion, or cryptographer-only jargon. |
@@ -85,7 +85,7 @@ The homepage (`src/pages/index.tsx`) is a single-purpose **situation chooser** r
 Homepage search metadata:
 
 - Browser `<title>` (`Layout` `title` prop): `Post-quantum cryptography handbook` (rendered as `Post-quantum cryptography handbook | PQC Handbook`), keeping the visible `<h1>` as **PQC Handbook**.
-- Meta `description`: `A practical handbook for organisations that have to migrate public-key cryptography to post-quantum algorithms without a cryptographer to do the deciding.`
+- Meta `description`: `Practical, source-backed guidance for organisations planning, prioritising, and evidencing a migration to post-quantum cryptography without specialist cryptography staff.`
 
 ## Naming, URLs, and Site Configuration
 

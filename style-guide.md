@@ -6,9 +6,14 @@ Editorial, structural, data-schema, and citation standards for public pages in `
 
 ## 1. Voice, Register, and Language
 
-Write in a calm, neutral **briefing register** for an accountable decision-maker who does not have a cryptographer in the room:
+Write in a calm, authoritative **professional briefing register** for experienced security, engineering, product, procurement, and risk practitioners who do not have specialist cryptography staff in-house:
 
-- **Plain British English**: Use British spelling consistently — **organisation** (not *organization*), **programme** (not *program*, when referring to a planned set of activities), **labelled** (not *labeled*).
+- **Accessible ≠ Basic English (never write like a primer)**: "Accessible without a cryptographer" means explaining *cryptographic* concepts (such as KEMs vs signatures, hybrid constructions, or trust anchors) clearly without assuming lattice or number-theory background. It does **not** mean stripping out normal adult technical and business vocabulary, avoiding subordinate clauses, or substituting child-like circumlocutions:
+  - *Avoid*: `"organisations that have to migrate … and do not have a cryptographer to do the deciding"` → *Prefer*: `"organisations planning a post-quantum migration without specialist cryptography staff"`
+  - *Avoid*: `"decide what to migrate, in what order, and how it will know"` → *Prefer*: `"decide what to migrate, in what order, and how to evidence the transition"`
+  - *Avoid*: `"before anyone claims the cryptography has moved"` → *Prefer*: `"before claiming systems have migrated"`
+  - *Avoid*: `"signatures in mail when the message uses modern protections"` → *Prefer*: `"email signing and authentication"`
+- **Plain British English**: Use British spelling consistently — **organisation** (not *organization*), **programme** (not *program*, when referring to a planned set of activities), **prioritising** (not *prioritizing*), **labelled** (not *labeled*).
 - **Complete sentences in body prose**: Body paragraphs, numbered steps, and onward navigation links are complete sentences. Structural elements outside body prose — YAML front matter, headings, table cells, Mermaid fences, `Sources` and `Related pages` bullet lists, the comma-separated `Minimum fields` line on work products, glossary openings, and bold field prefixes (`**Assumes:**`, `**Leaves out:**`) — may use concise phrases. Homepage situation cards may use short clauses.
 - **Action-first subjects**: Address the person doing the work directly. Avoid meta-subjects such as *this page*, *the handbook*, *the reader*, *a reader*, *this edition*, or *the build*. Put the operational action, system, or decision in the grammatical subject.
 - **Second person vs named roles**: Use second person (*you*) for procedures carried out directly by the person using the page. When a duty belongs to an organisational function, name one of the seven standard roles: **executive sponsor**, **migration lead**, **asset owner**, **procurement**, **legal or risk**, **operations**, or **supplier**.
@@ -198,7 +203,7 @@ Every Markdown file under `docs/` requires these five front-matter fields (order
 ---
 title: Inventory the cryptography
 sidebar_label: Inventory
-description: List the cryptography, including what a scanner cannot see, before anyone claims it has moved to post-quantum algorithms.
+description: List public-key cryptography across the estate, including embedded and supplier-controlled components a scanner cannot see, before claiming systems have migrated.
 displayed_sidebar: migrationPracticesSidebar
 last_reviewed: 2026-11-10
 ---

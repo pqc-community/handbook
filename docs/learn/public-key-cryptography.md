@@ -14,7 +14,7 @@ Encryption in everyday systems works this way. Symmetric cryptography is fast fo
 
 A digital signature shows that someone who holds the private key approved a message or file. Anyone with the signer's public key can verify the signature without learning the private key. Signatures support trust in software, documents, and network identities.
 
-RSA and elliptic-curve cryptography are the familiar public-key families in use today. They carry key establishment in TLS on the web and in VPN sessions, and they back signatures in mail when the message uses modern protections. They also sign software updates, so a device or an operating system can check that an update came from the expected publisher.
+RSA and elliptic-curve cryptography are the familiar public-key families in use today. They handle key establishment in web TLS and VPN sessions, support email signing and authentication, and sign software updates so a device or operating system can verify that an update came from the expected publisher.
 
 Continue with [The quantum threat](/learn/quantum-threat/).
 

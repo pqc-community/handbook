@@ -2,18 +2,18 @@
 
 ## What We Are Building
 
-**A practical handbook for organisations that have to migrate public-key cryptography and do not have a cryptographer to do the deciding.**
+**Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration.**
 
-The PQC Handbook (`https://pqchandbook.com`) is a vendor-neutral, source-backed static handbook that helps organisations decide **what** to migrate to post-quantum cryptography (PQC), **in what order**, and **what written evidence** shows the decision and outcome.
+The PQC Handbook (`https://pqchandbook.com`) is a vendor-neutral, source-backed static handbook for security, engineering, product, procurement, and risk professionals who are responsible for transitioning public-key cryptography to post-quantum standards without in-house cryptographers.
 
 ## Promise and Explicit Boundary
 
-- **Promise**: Give non-cryptographer decision-makers clear situation routes, repeatable practices, sourced authority positions, and downloadable record templates so they can run and evidence a post-quantum migration.
-- **Limit**: The handbook is **not** a formal risk assessment and **not** a substitute for a specialist on a large bespoke estate, critical national infrastructure (CNI), or a regulated system. Pages surface this boundary directly and route complex or ambiguous cases to the organisation's risk owner, sector authority, or cryptographic specialist.
+- **Promise**: Give accountable technical and operational leads clear situation routes, repeatable practices, sourced authority positions, and downloadable record templates so they can plan, prioritise, and evidence a post-quantum migration.
+- **Limit**: The handbook is **not** a formal risk assessment and **not** a substitute for specialist cryptography advice on large bespoke estates, critical national infrastructure (CNI), or regulated systems. Pages surface this boundary directly and route complex or ambiguous cases to the organisation's risk owner, sector authority, or cryptographic specialist.
 
 ## Primary Audience and Named Roles
 
-The primary reader is the person accountable for moving an organisation's migration forward — translating external timelines, supplier dependencies, and data-confidentiality horizons into concrete inventories, priorities, supplier follow-ups, pilots, and review dates without needing to evaluate lattice or hash-based mathematics.
+The primary reader is an experienced professional — in security leadership, architecture, product engineering, IT operations, procurement, or governance — accountable for moving an organisation's migration forward. They understand systems, suppliers, certificates, and change control, and need clear cryptographic distinctions without evaluating lattice or hash-based mathematics from scratch (they do *not* need simplified layperson English).
 
 When assigning operational responsibilities across an organisation, handbook pages name seven distinct roles rather than generic "teams":
 

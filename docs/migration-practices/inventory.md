@@ -3,12 +3,12 @@ title: Inventory the cryptography
 sidebar_label: Inventory
 displayed_sidebar: migrationPracticesSidebar
 last_reviewed: 2026-11-10
-description: List the cryptography, including what a scanner cannot see, before anyone claims it has moved to post-quantum algorithms.
+description: List public-key cryptography across the estate, including embedded and supplier-controlled components a scanner cannot see, before claiming systems have migrated.
 ---
 
 ## When this applies
 
-You are ready to list the cryptography and no one has yet claimed it has moved to post-quantum algorithms.
+You are compiling an initial cryptographic inventory before claiming any system has migrated to post-quantum algorithms.
 
 ## Do this
 

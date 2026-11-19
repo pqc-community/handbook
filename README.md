@@ -1,8 +1,8 @@
 # PQC Handbook
 
-**A practical handbook for organisations that have to migrate public-key cryptography and do not have a cryptographer to do the deciding.**
+**Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration.**
 
-This repository contains the source for [pqchandbook.com](https://pqchandbook.com), a vendor-neutral, source-backed handbook that helps organisations decide what public-key cryptography to migrate to post-quantum algorithms, in what order, and what written records demonstrate the decision and outcome.
+This repository contains the source for [pqchandbook.com](https://pqchandbook.com), a vendor-neutral handbook for security, engineering, product, procurement, and risk teams transitioning public-key cryptography to post-quantum standards without specialist cryptography staff in-house.
 
 The PQC Handbook is built with [Docusaurus 3](https://docusaurus.io/) and is a sister site to the **Secure-by-Design Handbook** and the **Supply Chain Security Handbook**.
 
