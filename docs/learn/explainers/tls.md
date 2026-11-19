@@ -30,8 +30,6 @@ Across all three deployment patterns, server authentication remains a separate s
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) treats hybrid constructions as a temporary hedge during transition. Similarly, the [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (published and reviewed 20 March 2025) note that popular browsers already agree post-quantum keys using a hybrid of classical key exchange and ML-KEM, while an exact industry-wide profile was still being finalised at publication.
 
-The same split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange.
-
 That is the same distinction as [In real systems](/learn/in-real-systems/). From here, read [Learn the basics](/learn/).
 
 ## Sources

@@ -37,11 +37,11 @@ Linking guidance:
 ```text
 Homepage Situation Chooser (/)
   ├── Situation Routes (/routes/*) ──► Migration Practices, Options, Standards, and Resources
-  └── Learn the Basics (/learn/*)  ──► Plain-English sequence + optional Go deeper explainers
+  └── Learn the Basics (/learn/*)  ──► Plain-English sequence + optional Further explanations
 ```
 
 - **Situation Chooser (`/`) and Routes (`/routes/*`)**: Route visitors by operational context (*vendor-managed software*, *long-lived confidentiality*, *hard-to-change systems*, *organisation-wide coordination*, *ask a supplier*, or *not sure*) into an ordered sequence of reference pages without duplicating those pages into separate silos.
-- **Learn the Basics (`/learn/*`)**: An introductory track for visitors who want conceptual grounding before planning a migration, ending at `/resources/glossary/`, with optional **Go deeper** explainers under `/learn/explainers/*`.
+- **Learn the Basics (`/learn/*`)**: An introductory track for visitors who want conceptual grounding before planning a migration, ending at `/resources/glossary/`, with optional **Further explanations** under `/learn/explainers/*`.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, directives, and external migration guides, grouped by their role in the transition.
   - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.

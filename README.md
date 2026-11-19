@@ -19,7 +19,7 @@ Read these four root documents before changing structure, prose, or styling:
 
 ### Handbook Content (`docs/`)
 
-- [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional **Go deeper** explainers
+- [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
 - [Situation Routes](./docs/routes/not-sure.md) (`docs/routes/`) — Six operational routes entered from the homepage situation chooser
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews

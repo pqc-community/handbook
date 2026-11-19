@@ -45,7 +45,7 @@ Structure pages around the reader's job rather than forcing every topic into ide
 
 | Page type | Reader job & structural guidance |
 | --- | --- |
-| **Learn lessons & explainers** (`/learn/`) | Build conceptual understanding in plain prose before planning begins. Keep lessons focused on one core distinction without mixing in migration checklists or parameter tables; use optional explainers (and diagrams where helpful) to unpack a deeper contrast. |
+| **Learn lessons & explainers** (`/learn/`) | Build conceptual understanding in plain prose before planning begins. Keep lessons focused on one core distinction without mixing in migration checklists or parameter tables; use optional explainers (and diagrams where helpful) to explain a related distinction in more detail. |
 | **Situation routes** (`/routes/`) | Help readers confirm whether a route fits their estate (calling out exceptions clearly), follow a short ordered reading path into the reference sections, and see which work product they will produce. |
 | **Practice & option guides** (`/migration-practices/`, `/technology-options/`) | Walk through when the step applies, what to do or evaluate, what evidence to retain, a concrete contrast between an insufficient and a decision-ready record, and what remains for the next step. |
 | **Work-product templates** (`/resources/`) | Explain when to use the record, list its fields, show a realistic filled example alongside a blank template and downloadable CSV (`/downloads/*.csv`), and state handling rules (`unknown` for unverified cells rather than guesses; no keys, secrets, or personal data; access controls matching the sensitivity of an asset register). |

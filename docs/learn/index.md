@@ -5,30 +5,33 @@ description: Background before you choose a migration route.
 displayed_sidebar: learnSidebar
 ---
 
-Read this for background before you choose a migration route on the homepage.
+This section is for security, engineering, product, procurement, and risk professionals who understand systems and change control but want a shared model of the cryptography affected by a post-quantum migration. It provides conceptual grounding before you choose a route; it is not a migration procedure.
 
-Read in this order:
+After the core lessons, you should be able to distinguish key establishment from signatures, explain what a quantum computer threatens, identify the jobs of the first NIST post-quantum algorithms, and tell a published standard from a deployed product or an applicable migration date.
 
-1. [Public key cryptography](/learn/public-key-cryptography/)
-2. [Quantum threat](/learn/quantum-threat/)
-3. [What post-quantum means](/learn/what-post-quantum-means/)
-4. [Algorithms](/learn/algorithms/)
-5. [In real systems](/learn/in-real-systems/)
-6. [Standardisation](/learn/standardisation/)
-7. [Timelines](/learn/timelines/)
-8. [Glossary](/resources/glossary/)
+## Core lessons
 
-Treat the sequence as background. A migration procedure starts from the homepage.
+Read these in order:
 
-## Go deeper
+1. [Public-key cryptography](/learn/public-key-cryptography/) — distinguish key establishment, encryption, and signatures.
+2. [Quantum threat](/learn/quantum-threat/) — understand the threat to today's public-key schemes and the confidentiality risk from collected data.
+3. [What post-quantum means](/learn/what-post-quantum-means/) — distinguish post-quantum cryptography from quantum cryptography.
+4. [Algorithms](/learn/algorithms/) — recognise what ML-KEM, ML-DSA, and SLH-DSA do.
+5. [In real systems](/learn/in-real-systems/) — locate these cryptographic jobs in products and services.
+6. [Standardisation](/learn/standardisation/) — distinguish a standard from a protocol profile and a product release.
+7. [Timelines](/learn/timelines/) — understand why standards and migration dates are different.
 
-These pages are optional.
+Use the [glossary](/resources/glossary/) when you need a definition while reading. For a migration procedure, start from the homepage.
 
-1. [What the keys actually do](/learn/explainers/keys/)
-2. [What a quantum computer changes](/learn/explainers/quantum-computers/)
-3. [What a KEM is](/learn/explainers/kem/)
-4. [What changes in a TLS connection](/learn/explainers/tls/)
-5. [Whose date applies](/learn/explainers/timelines/)
+## Further explanations
+
+These pages expand a particular distinction; read them when you want a more detailed model.
+
+- [What the keys actually do](/learn/explainers/keys/) — compare the public and private key roles in different schemes.
+- [What a quantum computer changes](/learn/explainers/quantum-computers/) — compare the effects on confidentiality and signatures.
+- [What a KEM is](/learn/explainers/kem/) — follow encapsulation and decapsulation, and see why they are not bulk encryption.
+- [What changes in a TLS connection](/learn/explainers/tls/) — trace key establishment and server authentication as separate jobs.
+- [Why timelines differ](/learn/explainers/timelines/) — compare dates set for different audiences and milestones.
 
 When you are ready to plan, return to the [homepage](/) or browse [curated references](/resources/curated-references/).
 
