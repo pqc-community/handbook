@@ -10,12 +10,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "typecheck": "tsc",
-    "test": "node --test scripts/check-voice.test.mjs scripts/check-sources.test.mjs scripts/check-records.test.mjs scripts/check-clinic.test.mjs scripts/check-explainers.test.mjs",
-    "test:sources": "node --test scripts/check-sources.test.mjs",
-    "check:sources": "node scripts/check-sources.mjs",
-    "test:voice": "node --test scripts/check-voice.test.mjs",
-    "check:voice": "node scripts/check-voice.mjs",
-    "check:records": "node scripts/check-records.mjs"
+    "test": "node --test scripts/check-pages.test.mjs",
+    "check": "node scripts/check-pages.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",

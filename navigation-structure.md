@@ -2,8 +2,6 @@
 
 Public navigation, URL routing, and sidebar structure for `https://pqchandbook.com`. Keep this map aligned with `docusaurus.config.ts`, `sidebars.ts`, `src/pages/index.tsx`, and the Markdown tree under `docs/`.
 
-Note: `npm run check:voice` and `npm test` scan `navigation-structure.md` alongside public site files.
-
 ## Route and URL Policy
 
 Docs live under `docs/` with `routeBasePath: '/'` and `trailingSlash: true`, so folder paths under `docs/` map directly to root URLs ending in `/` (for example, `docs/migration-practices/inventory.md` serves `/migration-practices/inventory/`).
@@ -185,7 +183,7 @@ Below the numbered sequence, `/learn/` and `learnSidebar` expose an open (`colla
 4. `/learn/explainers/tls/`
 5. `/learn/explainers/timelines/`
 
-Isolation rules (enforced by `scripts/check-explainers.test.mjs`):
+Isolation rules:
 
 - Links to `/learn/explainers/*` appear only on `/learn/`, the paired short lessons (`public-key-cryptography`, `quantum-threat`, `algorithms`, `in-real-systems`, `timelines`), and the five explainers themselves. Practice, route, option, standard, and resource pages do not link to `/learn/explainers/*`.
 - Learn lessons are never inserted into `/routes/*` reading orders.

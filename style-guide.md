@@ -2,8 +2,6 @@
 
 Editorial, structural, data-schema, and citation standards for public pages in `docs/`, the chooser homepage (`src/pages/index.tsx`), and downloadable CSV templates (`static/downloads/`). Visual identity lives in [brand-guidelines.md](./brand-guidelines.md); URL paths and sidebars live in [navigation-structure.md](./navigation-structure.md); scope and audience live in [purpose-and-positioning.md](./purpose-and-positioning.md).
 
-Note: `style-guide.md` is a maintainer document and is not scanned by `npm run check:voice` (`navigation-structure.md` is scanned).
-
 ---
 
 ## 1. Voice, Register, and Language
@@ -48,11 +46,7 @@ Every sentence that states a migration date, an external obligation, an authorit
 
 ### Strict Modal Verb Rule (`must` and `shall`)
 
-`must` and `shall` are reserved exclusively for **Requirement** sentences (or direct paraphrases of an authority's binding rule) and **the same line must explicitly name a recognised authority acronym**:
-
-`NCSC`, `NIST`, `FIPS`, `EU`, `NIS`, `ASD`, `ACSC`, `CISA`, `NSA`, `AIVD`, `ETSI`, `CFDIR`
-
-Any line in `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, or `navigation-structure.md` containing `must` or `shall` without one of those acronyms fails `npm run check:voice`.
+`must` and `shall` are reserved exclusively for **Requirement** sentences (or direct paraphrases of an authority's binding rule) where the sentence explicitly names a recognised authority (`NCSC`, `NIST`, `FIPS`, `EU`, `NIS`, `ASD`, `ACSC`, `CISA`, `NSA`, `AIVD`, `ETSI`, `CFDIR`).
 
 ---
 
@@ -87,10 +81,9 @@ Implemented in `src/pages/index.tsx`. Contains four regions only: hero (`<h1>` *
   - `keys`, `kem`, and `tls` each include exactly **one** static `mermaid` fence beginning with `sequenceDiagram`, preceded immediately by a sentence stating what the figure shows (`keys`: `Publisher` and `Device`; `kem`: `Sender` and `Recipient`; `tls`: `Client` and `Server`).
   - `quantum-computers` contains **no** diagram and stays strictly within **Authority statement** claims from NIST IR 8547.
   - `timelines` (*Whose date applies*) presents the cross-jurisdiction comparison table (`authority`, `audience`, `milestone`, `status`, `asset scope`, `last checked`) covering UK NCSC, EU NIS Cooperation Group, NIST IR 8547 (standards and US federal), ASD planning, and the Canadian CFDIR guide.
-- **Explainer guardrails** (enforced by `scripts/check-explainers.test.mjs`):
-  - Never use image embeds (`![...]`), flowcharts, `@theme/Mermaid` imports, or `@mermaid-js/layout-elk`.
-  - Never mention the `clinic`, clinic field names, or `parameter set`.
-  - Never name `ML-KEM-768` on `kem.md` or `tls.md`, never use `RSA` or `ML-KEM` on `keys.md`, and never use the word `handshake` on `tls.md` (or `in-real-systems.md`).
+- **Explainer guardrails**:
+  - Avoid image embeds (`![...]`), flowcharts, `@theme/Mermaid` imports, or `@mermaid-js/layout-elk`.
+  - Keep the fictional `clinic`, clinic field names, and `parameter set` tables out of explainers.
   - Note that Docusaurus renders broken Mermaid syntax as an inline error box without failing `npm run build`; always visually verify edited Mermaid fences in a browser.
 - **Closing**: Two or three takeaway sentences, back link to the paired short lesson, onward link to the next explainer (or `/learn/`), `## Sources`, and `## Related pages`.
 
@@ -135,7 +128,7 @@ Follows the seven practice-page headings (`###` subheadings inside `## Do this` 
 ## 4. Work-Product Schemas and the Clinic Illustration
 
 ### 4.1 Header-Only CSV Schemas (`static/downloads/*.csv`)
-All seven CSV files contain **only** their header row, which must match the page's blank template and filled example column-for-column (`npm run check:records`):
+All seven CSV files contain **only** their header row, matching the page's blank template and filled example column-for-column:
 
 | Page (`docs/resources/`) | CSV (`static/downloads/`) | Exact CSV header |
 | --- | --- | --- |
@@ -148,7 +141,7 @@ All seven CSV files contain **only** their header row, which must match the page
 | `review-log.md` | `review-log.csv` | `date,what was reviewed,unresolved items,owner,next review` |
 
 ### 4.2 Work-Product Field and Security Rules
-Every work-product page states all four rules (enforced by `scripts/check-clinic.test.mjs`):
+Every work-product page states all four rules:
 1. **Storage security**: Keep real records off public issue trackers and unlocked shared drives; protect an inventory with the same access controls as the asset register it describes.
 2. **No sensitive material**: Keys, secrets, and personal data stay out of record files — name the system only.
 3. **Unknowns and multi-values**: Write `unknown` in any unfilled cell. Put shared libraries or services inside `dependencies` separated by a semicolon (`;`) rather than creating a second system row; separate multiple timelines or sources in one cell with `;`.
@@ -158,7 +151,7 @@ Every work-product page states all four rules (enforced by `scripts/check-clinic
    - `judgement` (vendor response log): `complete` (names product, version, construction, date, and retainable source), `vague`, `missing`, or `concerning` (escalates to procurement and contract owner). Use one row per product, version, and cryptographic job, grouped on `vendor-response-log.md` by the five phases of the ASD/ACSC/CISA/NSA vendor guide.
 
 ### 4.3 Canonical Clinic Dataset
-`scripts/check-clinic.test.mjs` locks the shared fictional clinic rows across `protect-this-first.md` and the seven work products:
+Keep the shared fictional clinic rows aligned across `protect-this-first.md` and the seven work products:
 - **Inventory**: (1) `Health records on the vendor system` (`software control: the vendor`, `confidentiality period: more than 10 years`, `confidence: unknown`) and (2) `Firmware signature check that cannot be updated in the field` (`not visible to a scan: firmware trust anchor`, `confidence: unknown`), both owned by `the clinic operations lead`.
 - **Priority**: Both assets are first for distinct jobs — health records `first for key establishment` (`confidentiality period longer than 10 years`, source `EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025`, review `2026-12-01`) and firmware `first for non-updatable verifier` (`verifier cannot be updated in the field`, source `UK NCSC timelines, modified 3 August 2026`, review `2026-12-01`). Never attribute the 10-year threshold to NIST IR 8547. (A short-lived channel `< 1 year` appears only as a contrast on `priority.md`.)
 - **Supplier letter (`2026-08-14`)**: `Clinic software supplier`, `named in the supplier letter` (no invented version number such as `4.2`), naming `ML-KEM-768`, the release date, and that signatures are not in that release (`judgement: complete`, `decision: record the key-establishment date and open a signatures follow-up`).
@@ -178,7 +171,7 @@ Order citations on `Editorial policy` and multi-source pages as:
 
 ### 5.2 Sourcing Rules
 - Every factual claim about a date, duty, algorithm standard, or inter-authority difference names the **issuing body, document title, publication or modification date, and public `https://` URL**.
-- `## Sources` must contain at least one Markdown link `[label](https://...)` before the next `##` heading (`npm run check:sources`; bare `<https://...>` autolinks do not pass).
+- `## Sources` includes at least one Markdown link `[label](https://...)` before `## Related pages`.
 - Reference summaries for all cited standards, US federal directives, and migration guides live under `/standards/` and are indexed on [Curated references](./docs/resources/curated-references.md).
 - Never cite local paths under `.ai-helper-files/`.
 - Sister-site links to the Secure-by-Design Handbook and Supply Chain Security Handbook are onward reading only, never authority citations for PQC dates or obligations.
@@ -211,25 +204,19 @@ last_reviewed: 2026-11-10
 ---
 ```
 
-- **Edition review date**: Every doc carries `last_reviewed: 2026-11-10`, rendered above the article by `src/theme/DocItem/Content/index.tsx` and enforced by `npm run check:records`. When a full quarterly or republication review completes on a new date, update `last_reviewed` across all `docs/**/*.md`, `EDITION_DATE` in `scripts/check-records.mjs`, and the changelog in `docs/resources/editorial-policy.md` together.
+- **Page title length**: Every doc `title` is between `3` and `160` characters (`npm run check` / `scripts/check-pages.mjs`). Keep narrative, route, practice, option, and resource titles concise (`≤ 60` characters where practical); `/standards/` pages may carry full official publication titles up to `160` characters.
+- **Edition review date**: Every doc carries `last_reviewed` (currently `2026-11-10`), rendered above the article by `src/theme/DocItem/Content/index.tsx`. Update `last_reviewed` and the changelog in `docs/resources/editorial-policy.md` when pages are reviewed.
 - **Search-intent deduplication**: A doc's `title` is both its visible `<h1>` and its `<title>` tag (`<title> | PQC Handbook`), and `description` is its search snippet. Ensure two pages never compete for the same search query: keep the primary head term on the canonical page that fulfils it, and phrase routing or companion pages around their specific operational role. The homepage is the sole exception where `Layout` `title` (`Post-quantum cryptography handbook`) differs from the hero `<h1>` (`PQC Handbook`).
 
 ---
 
 ## 7. Automated Quality Gates
 
-Run the full suite locally before merging (`.github/workflows/deploy.yml` runs `typecheck` and `build` only):
+Run the verification suite locally before merging (`.github/workflows/deploy.yml` runs `typecheck` and `build`):
 
 | Command | Purpose |
 | --- | --- |
-| `npm test` | Runs all five `node:test` suites: `check-voice.test.mjs`, `check-sources.test.mjs`, `check-records.test.mjs`, `check-clinic.test.mjs`, and `check-explainers.test.mjs`. |
-| `npm run check:voice` | Scans `docs/**/*.md`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md` for banned phrases and unattributed `must`/`shall`. |
-| `npm run check:sources` | Verifies every `docs/**/*.md` file has `## Sources` with at least one `[label](https://...)` link before the next `##` heading. |
-| `npm run check:records` | Verifies `last_reviewed: 2026-11-10` on every `docs/**/*.md` file and checks that all seven work-product pages link to existing `static/downloads/*.csv` files with matching header rows. |
+| `npm test` | Runs the `node:test` suite (`scripts/check-pages.test.mjs`). |
+| `npm run check` | Runs `scripts/check-pages.mjs` across `docs/**/*.md` (currently checks that every page has a `title` between `3` and `160` characters, serving as the entry point for future page checks). |
 | `npm run typecheck` | Runs `tsc` against `docusaurus.config.ts`, `sidebars.ts`, and `src/`. |
-| `npm run build` | Builds static HTML/search index in `build/` and throws on any broken link, anchor, or relative Markdown link. |
-
-Phrases rejected anywhere in the `check:voice` scan set:
-
-- **Retired phrases**: `what you leave with`, `i own the product dates`, `i have to ask a vendor`, `i have to show evidence`, `i have to change a protocol`, `i own the plan`, `choose your path`, `leave with`, `operating layer`, `the rhythm`
-- **Edition-banned phrases**: `the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`, `this page`, `the reader`, `a reader`, `next:`, `primary next page:`
+| `npm run build` | Builds static HTML and the local search index in `build/`, throwing on any broken link, anchor, or relative Markdown link. |

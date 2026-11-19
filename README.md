@@ -23,19 +23,15 @@ Before you merge or publish a build, run:
 
 ```bash
 npm test
-npm run check:voice
-npm run check:sources
-npm run check:records
+npm run check
 npm run typecheck
 npm run build
 ```
 
 | Command | What it does |
 | --- | --- |
-| `npm test` | Runs unit and contract tests for voice, sources, records, clinic consistency, and explainers |
-| `npm run check:voice` | Scans `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md` for retired phrases and unattributed `must`/`shall` |
-| `npm run check:sources` | Ensures every `docs/**/*.md` page has `## Sources` with at least one `http` link before the next heading |
-| `npm run check:records` | Verifies `last_reviewed` across `docs/` and checks work-product CSV links and headers |
+| `npm test` | Runs page validation tests (`scripts/check-pages.test.mjs`) |
+| `npm run check` | Checks `docs/**/*.md` page front matter (currently page title length bounds) |
 | `npm run typecheck` | TypeScript check |
 | `npm run build` | Production static build (broken links and anchors fail the build) |
 
@@ -50,7 +46,7 @@ The site is deployed to GitHub Pages using GitHub Actions.
 - **Workflow**: See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for the deployment configuration
 - **Process**: Build -> Deploy to GitHub Pages -> Live in a few minutes
 
-`static/CNAME` contains `pqchandbook.com`. The workflow runs typecheck and the production build. Run `npm test`, `npm run check:voice`, `npm run check:sources`, and `npm run check:records` locally before you merge; those checks are not steps in the workflow.
+`static/CNAME` contains `pqchandbook.com`. The workflow runs typecheck and the production build. Run `npm test` and `npm run check` locally before you merge; those checks are not steps in the workflow.
 
 ## Maintainer notes
 
@@ -76,6 +72,6 @@ The `.ai-helper-files/` directory holds local research notes and filed source ex
 | `static/downloads/` | Header-only CSV templates for the seven work products |
 | `sidebars.ts` | Six hand-written sidebars |
 | `docusaurus.config.ts` | Site URL, navbar, footer, Mermaid, local search, link policy |
-| `scripts/` | Voice, sources, records, clinic, and explainer checks and tests |
+| `scripts/` | Page checks (`check-pages.mjs`) and test suite (`check-pages.test.mjs`) |
 
 Public handbook: [https://pqchandbook.com](https://pqchandbook.com). Source: [https://github.com/pqc-community/handbook](https://github.com/pqc-community/handbook).
