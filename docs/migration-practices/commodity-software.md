@@ -12,11 +12,11 @@ You are on the vendor-managed route and no exception has moved you to another ro
 
 ## Do this
 
-1. **Handbook practice:** Confirm the supplier update that carries post-quantum cryptography is installed on each commodity device you listed in the inventory.
-2. **Handbook practice:** If the product is out of support or the supplier has no written migration plan, move to the [hard-to-change systems route](/routes/hard-to-change-systems/).
-3. **Handbook practice:** Run the same exception check as the vendor-managed route. Long-lived confidential data belongs on the [long-lived confidentiality route](/routes/long-lived-confidentiality/). A bespoke system, or a product whose signature check cannot be updated later, belongs on the [hard-to-change systems route](/routes/hard-to-change-systems/).
+1. Confirm that the supplier update carrying post-quantum support is installed on each commodity device listed in your inventory.
+2. If a product is out of support or its supplier has no written migration plan, move it to the [hard-to-change systems route](/routes/hard-to-change-systems/).
+3. Re-check for exceptions: long-lived confidential data belongs on the [long-lived confidentiality route](/routes/long-lived-confidentiality/), and bespoke systems or devices whose signature check cannot be updated later belong on the [hard-to-change systems route](/routes/hard-to-change-systems/).
 
-**Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, United Kingdom, say migration for standard browsers, operating systems, and mobile devices happens as vendors update those services.
+The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that migration for standard browsers, operating systems, and mobile devices happens as vendors update those platforms.
 
 ## Keep this evidence
 
@@ -26,9 +26,7 @@ The inventory row showing installed version and date checked, or a written note 
 
 An insufficient record is "The platform will handle it."
 
-A decision-ready record lists clinic laptops on the supplier-update path, records browser and operating-system versions checked on 1 November 2026, and notes that no exception applies.
-
-**Example:** The clinic health records stay on the long-lived confidentiality route; only the laptops remain on this route.
+A decision-ready record lists the clinic's office laptops on the supplier-update path, records browser and operating-system versions checked on 1 November 2026, and notes that while health records remain on the long-lived confidentiality route, no exception applies to the laptops themselves.
 
 ## Limits and next page
 

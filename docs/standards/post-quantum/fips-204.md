@@ -19,7 +19,7 @@ FIPS 204 specifies the Module-Lattice-Based Digital Signature Algorithm (ML-DSA)
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, identifies FIPS 204 as NIST's primary general-purpose post-quantum digital signature standard replacing quantum-vulnerable schemes in [FIPS 186-5](/standards/classical-public-key/fips-186-5/). It sits alongside [FIPS 205](/standards/post-quantum/fips-205/), which provides a stateless hash-based alternative built on different mathematical assumptions.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, identifies FIPS 204 as NIST's primary general-purpose post-quantum digital signature standard replacing quantum-vulnerable schemes in [FIPS 186-5](/standards/classical-public-key/fips-186-5/). It sits alongside [FIPS 205](/standards/post-quantum/fips-205/), which provides a stateless hash-based alternative built on different mathematical assumptions.
 
 ## Sources
 

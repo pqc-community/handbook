@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 This route is for a migration lead who is coordinating many assets across the organisation. Use this route to coordinate the programme, and follow the asset route for each system as well. Coordinating many assets is not a reason to leave the asset route.
 
-**Handbook practice:** Each role supplies one input to the plan.
+Each role supplies one input to the plan:
 
 | Role | Input |
 | --- | --- |
@@ -29,7 +29,7 @@ Work through the six steps in this order:
 5. Engage suppliers and migrate.
 6. Verify what changed and set the subsequent review.
 
-**Handbook practice:** Use the six steps above. ASD's [planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) names five phases: Locate, Assess, Triage, Implement, and Communicate and educate. Name an owner before Locate. Finding dependencies corresponds to Locate, assessing confidentiality and constraints corresponds to Assess, and prioritising corresponds to Triage. Engaging suppliers and migrating corresponds to Implement. Step 6 verifies the change, records it on the evidence record and the change record, and sets the subsequent review. Communicate and educate is how that result is passed on, and the learn sequence is the education material.
+These six steps align with the five phases in ASD's [Planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) — Locate, Assess, Triage, Implement, and Communicate and educate — with owner assignment added upfront: finding dependencies maps to Locate, assessing confidentiality and constraints maps to Assess, prioritising maps to Triage, and engaging suppliers and migrating maps to Implement. Step 6 verifies the change, records it on the evidence record and change record, and schedules the subsequent review, while Communicate and educate passes that outcome on and [Learn the basics](/learn/) provides background material.
 
 A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as this route.
 

@@ -233,7 +233,6 @@ const sidebars: SidebarsConfig = {
     'resources/protect-this-first',
     'resources/glossary',
     'resources/curated-references',
-    'resources/editorial-policy',
   ],
 };
 

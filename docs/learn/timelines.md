@@ -10,9 +10,7 @@ A published standard names an algorithm. A timeline says when an audience is exp
 
 [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) are final standards. Final does not give every organisation the same date, and it does not put key establishment and signatures on one date.
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says harvest-now, decrypt-later applies where a public-key scheme establishes symmetric keys that protect confidentiality. It says an authentication system remains secure until the algorithm can be broken at the time of authentication. The two jobs are not the same moment in the transition.
-
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path. Custom or specialised software does not sit on that path by default.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, explains that harvest-now, decrypt-later applies where a public-key scheme establishes symmetric keys that protect confidentiality, whereas an authentication system remains secure until the signature algorithm can be broken at the time of verification — placing the two jobs at different points in a transition. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, likewise separate standard browsers, operating systems, and mobile devices onto a supplier-update path, while custom or specialised software requires active planning.
 
 Record the timeline that applies where the organisation operates and where it sells. A date in one report is that report's date for its audience. The rows, including who each date is for, are on [Whose date applies](/learn/explainers/timelines/).
 

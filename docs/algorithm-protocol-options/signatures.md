@@ -16,9 +16,7 @@ The priority record marks signatures, or a verifier that can still be updated, a
 2. Write the dependency and test checklist: who moves in which order, what interoperability tests run before cutover, and what rollback looks like if a party cannot move on the same date.
 3. If the verifier cannot be updated later, stop this checklist and open [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) instead.
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says digital signatures are not vulnerable to harvest-now, decrypt-later. It says the transition is still urgent because it takes longer and more parties coordinate. It says an authentication system remains secure until the algorithm can be broken at the time of authentication, and that supporting a quantum-resistant algorithm means upgrading the systems that perform and accept the authentication, including the PKI.
-
-**Handbook practice:** [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA. Parameter tables stay in the FIPS publications.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, notes that while digital signatures are not vulnerable to harvest-now, decrypt-later, planning remains urgent because signature transitions take longer and require coordination across relying parties and PKI; an authentication system remains secure until the signature algorithm can be broken at the time of verification. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA, where full parameter tables are published.
 
 ## Keep this evidence
 
@@ -28,7 +26,7 @@ The dependency and test checklist, with owners and target dates for each party.
 
 An insufficient record is "Signatures can wait until a quantum computer exists."
 
-**Example:** One coordinated rollout covers the clinic firmware signature check: the firmware build pipeline, the trust anchor in field devices, the workshop test harness, and the operations lead who signs release manifests. The checklist records which party moves first, the pilot device result, and the date the spare device in the workshop is due to pass verification before the next deployment.
+A decision-ready rollout checklist for the clinic's field-device firmware covers the firmware build pipeline, the trust anchor in field devices, the workshop test harness, and the operations lead who signs release manifests — recording which party moves first, the pilot device result, and the date the spare workshop device is due to pass verification before deployment.
 
 ## Limits and next page
 

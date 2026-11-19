@@ -16,11 +16,11 @@ The priority record marks key establishment for a system whose data confidential
 2. For each channel, name the component that negotiates keys and the supplier that ships or hosts it.
 3. On the [change record](/resources/change-record/), record compatibility, performance, testing, and deployment for the construction you will run in production.
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says harvest-now, decrypt-later applies where a public-key scheme establishes symmetric keys that protect confidentiality, including recorded network sessions and encrypted email. It says authentication is not that problem. It names ML-KEM in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) as the approved post-quantum key-establishment scheme based on public-key cryptography at the time of the report, and recommends ML-KEM-768 as the default parameter set. Other parameter sets stay in NIST IR 8547.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, explains that harvest-now, decrypt-later applies where a public-key scheme establishes symmetric keys that protect confidentiality — including recorded network sessions and encrypted email — rather than authentication. At the time of that report, NIST names ML-KEM in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) as the approved post-quantum public-key key-establishment scheme and recommends ML-KEM-768 as the default parameter set (other parameter sets remain in FIPS 203 and NIST IR 8547).
 
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that popular browsers can agree a post-quantum key using a hybrid of traditional key exchange and ML-KEM, and that an exact industry-wide mechanism was not yet standardised at publication, so further updates can be expected.
+The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that popular browsers already negotiate post-quantum keys using a hybrid of classical key exchange and ML-KEM, while an exact industry-wide profile was still maturing at publication.
 
-**Handbook practice:** The option and authority recorded on [Choosing an option](/algorithm-protocol-options/choosing/) govern whether the construction is hybrid or post-quantum-only for this channel. Signatures on the same product stay on the [signatures](/algorithm-protocol-options/signatures/) page.
+The option and authority recorded on [Choosing an option](/algorithm-protocol-options/choosing/) govern whether this channel uses a hybrid or post-quantum-only construction. Signatures on the same product are tracked separately on [Signatures](/algorithm-protocol-options/signatures/).
 
 ## Keep this evidence
 

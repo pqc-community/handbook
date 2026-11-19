@@ -145,7 +145,6 @@ Homepage Situation Chooser (/)
 /resources/protect-this-first/
 /resources/glossary/
 /resources/curated-references/
-/resources/editorial-policy/
 ```
 
 Static CSV downloads served alongside `/resources/*`:
@@ -211,4 +210,4 @@ Isolation rules:
 - Migration timelines across authorities live on `/learn/timelines/` and `/learn/explainers/timelines/`; audience-specific duties stay attributed and linked to their issuing authority.
 - Algorithm and protocol option pages stay at four (`choosing`, `key-establishment`, `signatures`, `long-lived-roots`); individual NIST standards live under `/standards/post-quantum/`.
 - `changing-algorithms-again` remains a dedicated practice under `/migration-practices/`, separate from `implementation` and `subsequent-review`.
-- Resources stay focused on actionable records, the single worked clinic illustration (`protect-this-first`), `glossary`, `curated-references`, and `editorial-policy`.
+- Resources stay focused on actionable records, the single worked clinic illustration (`protect-this-first`), `glossary`, and `curated-references`.

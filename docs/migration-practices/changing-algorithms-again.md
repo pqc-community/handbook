@@ -21,9 +21,7 @@ Confirm each capability before you treat the current migration as finished for t
 5. A change window exists, with a named approver.
 6. A deprecation path is written for the construction in use now.
 
-**Handbook practice:** A capability counts only when its evidence exists: a configuration change that has been shown, a named owner, a dependency row in the inventory, a test that has been run, a change window with a named approver, and a written deprecation path for the construction in use now.
-
-**Authority recommendation:** The PQC Migration Handbook (AIVD, CWI, and TNO, December 2024, Netherlands) says stakeholders should remain cryptographically agile so they can adapt to new developments.
+Count each capability only when verifiable evidence exists — a demonstrated configuration change, a named owner, a dependency entry in the inventory, an executed test, a change window with a named approver, and a written deprecation path. As [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024, Netherlands) emphasises, organisations should remain cryptographically agile so they can adapt as algorithms and standards evolve.
 
 ## Keep this evidence
 

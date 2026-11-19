@@ -12,16 +12,14 @@ You are planning or tracking one asset whose migration depends on a supplier rel
 
 ## Do this
 
-**Handbook practice:** Record four dates for one asset:
+Track four separate dates for each asset:
 
-1. Vendor release — when the supplier says post-quantum capability ships.
-2. Testing — when your interoperability and performance tests finish.
-3. Production deployment — when the construction is live for users.
-4. End of support — when the supplier stops security fixes for the release line you rely on.
+1. **Vendor release** — when the supplier ships post-quantum support.
+2. **Testing** — when your interoperability and performance checks complete.
+3. **Production deployment** — when the post-quantum construction goes live in your environment.
+4. **End of support** — when the supplier stops security fixes for the release line you currently run.
 
-**Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, United Kingdom, include milestone rows that depend on when suppliers deliver updates, including long-lived hardware roots of trust in the 2028 plan row.
-
-**Authority recommendation:** NIST IR 8547, October 2026, United States, states that where a device cannot update its signature check later, and it will still be in use when a cryptanalytically relevant quantum computer exists, the device should be designed to require quantum-resistant signatures on the executable code.
+The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026, United Kingdom) note that downstream milestones depend on supplier update availability, highlighting long-lived hardware roots of trust in the 2028 planning phase. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, United States) likewise advises that devices unable to update their signature verification in the field — if expected to remain in service once a cryptanalytically relevant quantum computer exists — should be designed upfront to verify quantum-resistant code signatures.
 
 ## Keep this evidence
 
@@ -29,7 +27,9 @@ The priority record or migration plan row with all four dates, the supplier sour
 
 ## Example
 
-**Example:** The supplier moves key-establishment release from June 2027 to October 2027. The production deployment date moves to November 2027. The end-of-support date for the current release line stays December 2028. The priority record is updated with the new production date rather than left on the old release date.
+An insufficient record records only a vendor target year with no testing or deployment window.
+
+In a decision-ready record, when a supplier slips its key-establishment release from June 2027 to October 2027 while end of support for the current release line remains December 2028, the asset owner updates the testing window and moves production deployment to November 2027 on the priority record rather than leaving the superseded date in place.
 
 ## Limits and next page
 

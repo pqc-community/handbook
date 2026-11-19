@@ -6,7 +6,7 @@ last_reviewed: 2026-11-10
 description: NIST symmetric encryption, lightweight cryptography, hash, XOF, MAC, key-derivation, and random bit generator standards cited in IR 8547.
 ---
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, states that NIST's existing symmetric standards — block ciphers, authenticated encryption, hash functions, extendable-output functions, MACs, key-derivation functions, and deterministic random bit generators providing at least 128 bits of classical security — are significantly less vulnerable to known quantum attacks than public-key standards, and NIST does not expect to transition away from them as part of the post-quantum migration (aside from retiring legacy 112-bit variants and SHA-1).
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, states that NIST's existing symmetric standards — block ciphers, authenticated encryption, hash functions, extendable-output functions, MACs, key-derivation functions, and deterministic random bit generators providing at least 128 bits of classical security — are significantly less vulnerable to known quantum attacks than public-key standards, and NIST does not expect to transition away from them as part of the post-quantum migration (aside from retiring legacy 112-bit variants and SHA-1).
 
 ### Encryption and lightweight cryptography
 

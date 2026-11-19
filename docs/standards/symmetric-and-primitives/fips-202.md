@@ -19,7 +19,7 @@ FIPS 202 specifies the Keccak sponge-based SHA-3 family: four fixed-length hash 
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, lists SHA3-256, SHA3-384, SHA3-512, SHAKE128, and SHAKE256 as continuing approved symmetric standards (noting SHA3-224 has 112-bit classical collision strength). SHAKE128 and SHAKE256 are also internal building blocks inside ML-KEM ([FIPS 203](/standards/post-quantum/fips-203/)), ML-DSA ([FIPS 204](/standards/post-quantum/fips-204/)), and the SHAKE parameter sets of SLH-DSA ([FIPS 205](/standards/post-quantum/fips-205/)).
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, lists SHA3-256, SHA3-384, SHA3-512, SHAKE128, and SHAKE256 as continuing approved symmetric standards (noting SHA3-224 has 112-bit classical collision strength). SHAKE128 and SHAKE256 are also internal building blocks inside ML-KEM ([FIPS 203](/standards/post-quantum/fips-203/)), ML-DSA ([FIPS 204](/standards/post-quantum/fips-204/)), and the SHAKE parameter sets of SLH-DSA ([FIPS 205](/standards/post-quantum/fips-205/)).
 
 ## Sources
 

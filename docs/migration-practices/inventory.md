@@ -18,15 +18,9 @@ You are compiling an initial cryptographic inventory before claiming any system 
 4. Mark what a scan cannot see, including embedded and hardware-bound cryptography.
 5. Set confidence to `known` or `unknown`.
 
-**Handbook practice:** List systems that hold sensitive data or have an external connection, then add supplier-controlled and hardware items a scan cannot see. Use one row per system. A shared library or service is named in `dependencies`, not given a second system row. `confidence` is `known` only when both algorithm cells name a construction; otherwise it is `unknown`.
+Start with systems that hold sensitive data or expose an external connection, then add supplier-controlled and hardware items a network scan cannot see. Keep one row per system, listing shared libraries or services inside `dependencies` rather than creating separate system rows, and set `confidence` to `known` only when both algorithm cells name a construction. That initial list is a **first-pass inventory**; adding a named owner and a subsequent-review date turns it into a **maintained inventory**.
 
-A **first-pass inventory** is that list. A **maintained inventory** is the same list with an owner and a subsequent-review date.
-
-**Authority recommendation:** The CISA, NSA, and NIST Quantum-Readiness fact sheet, as of 17 August 2023, United States, says discovery tools may not identify embedded cryptography and tells organisations to ask vendors for those details.
-
-**Authority recommendation:** The ASD, ACSC, and CISA vendor guide, updated 5 November 2026, Australia and United States, lists embedded and hardware-bound cryptography among the common concerns to raise with suppliers.
-
-**Handbook practice:** Growth beyond the first-pass inventory is described in NIST SP 1800-38B, December 2023, a preliminary draft; a cryptographic bill of materials (CBOM) in that draft is a developing model and is not a requirement of this handbook. The NCCoE FAQ, last updated 5 November 2026, states that those drafts are not planned to become finals.
+Both the CISA, NSA, and NIST [Quantum-Readiness fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf) (17 August 2023, United States) and the ASD, ACSC, CISA, and NSA [vendor guide](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors) (updated 5 November 2026, Australia and United States) warn that automated discovery tools miss embedded and hardware-bound cryptography and advise asking vendors directly for those details. Deeper enterprise discovery is explored in [NIST SP 1800-38B](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf) (December 2023 preliminary draft, which the [NCCoE FAQ](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html) updated 5 November 2026 notes is not planned to become a final publication); a cryptography bill of materials (CBOM) in that draft is a developing model rather than a requirement of this handbook.
 
 ## Keep this evidence
 

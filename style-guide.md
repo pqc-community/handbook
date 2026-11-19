@@ -32,17 +32,12 @@ Use clear, literal domain terms consistently across guides and templates:
 | **subsequent review** | A scheduled date or trigger to reopen and update migration records |
 | **insufficient record** / **decision-ready record** | Contrasting examples showing an unverifiable assertion (such as *"We are quantum safe"*) alongside an actionable, auditable record |
 
-## 3. Authority Language and Attribution Labels
+## 3. Authority Language and Attribution
 
-Overstating obligations is one of the most common failure modes in PQC guidance. Keep legal mandates, standards timelines, advisory recommendations, and handbook guidance clearly separated:
+Overstating obligations is one of the most common failure modes in PQC guidance. Keep legal mandates, standards timelines, advisory recommendations, and handbook guidance clearly separated through natural prose attribution:
 
+- **Attribute in prose, not with bold sentence-prefix tags**: Do **not** prefix paragraphs or sentences with ledger labels such as `**Handbook practice:**`, `**Authority recommendation:**`, `**Authority statement:**`, `**Handbook wording:**`, `**Requirement:**`, or `**Example:**`. Unattributed operational guidance in this handbook is already handbook practice. When citing an external position, name the authority, document, date, governed audience, and an accurate verb directly in the sentence (*"OMB M-26-15 requires US federal agencies to…"*, *"The EU NIS Cooperation Group roadmap recommends…"*, *"NIST IR 8547 notes that…"*).
 - **Calibrate modal verbs**: Reserve `must` and `shall` for genuine binding obligations where the sentence names the issuing authority and governed audience. For handbook guidance and non-binding options, use direct instructional verbs (*record*, *verify*, *ask*, *escalate*) or measured phrasing (*can support*, *is recommended by*, *helps demonstrate*). Avoid claiming that an option *"is required"* or *"proves compliance"* without a specific source and scope.
-- **Attribution labels**: Public pages use bold lead-in labels (defined for readers on [Editorial policy](./docs/resources/editorial-policy.md)) when distinguishing external claims from handbook synthesis. Use them where they clarify provenance — especially on contested choices, milestones, or obligations — rather than forcing a bold prefix onto every sentence of prose:
-  - **Requirement:** A binding obligation within the jurisdiction and audience governed by that authority.
-  - **Authority recommendation:** An external authority advising an action, milestone, or construction.
-  - **Authority statement:** An external authority stating a technical or transition fact.
-  - **Handbook practice:** Operational guidance synthesised by this handbook from cited sources.
-  - **Example:** An illustrative scenario (including the fictional clinic), never a real organisation or binding rule.
 
 ## 4. Page Patterns
 
@@ -55,14 +50,14 @@ Structure pages around the reader's job rather than forcing every topic into ide
 | **Practice & option guides** (`/migration-practices/`, `/algorithm-protocol-options/`) | Walk through when the step applies, what to do or evaluate, what evidence to retain, a concrete contrast between an insufficient and a decision-ready record, and what remains for the next step. |
 | **Work-product templates** (`/resources/`) | Explain when to use the record, list its fields, show a realistic filled example alongside a blank template and downloadable CSV (`/downloads/*.csv`), and state handling rules (`unknown` for unverified cells rather than guesses; no keys, secrets, or personal data; access controls matching the sensitivity of an asset register). |
 | **Standards & guidance summaries** (`/standards/`) | Provide a compact metadata block (authority, publication, status, official link), a concise summary of what the document covers, and how it fits into a post-quantum transition. |
-| **Reference indexes & glossary** (`index.md`, `glossary.md`, `curated-references.md`) | Route readers cleanly without duplicating full guides. Keep glossary entries alphabetical, concise, and clear about whether a definition is **Handbook wording** or drawn from a cited standard. |
+| **Reference indexes & glossary** (`index.md`, `glossary.md`, `curated-references.md`) | Route readers cleanly without duplicating full guides. Keep glossary entries alphabetical and concise, naming the standard directly in prose where a formal definition is cited. |
 
 Where pages use a worked organisational example, align with the shared fictional clinic in [Protect this first](./docs/resources/protect-this-first.md) and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
 
 ## 5. Sourcing and Citations
 
 - **Cite primary public sources**: Attribute dates, duties, algorithm properties, and inter-authority differences to primary publications — naming the issuing body, document title, publication or modification date, and official `https://` URL. Every doc page ends with `## Sources` (containing Markdown links to the works used) followed by curated `## Related pages`.
-- **Source hierarchy**: When ordering multi-source lists (and on [Editorial policy](./docs/resources/editorial-policy.md)), list sources from most authoritative downward:
+- **Source hierarchy**: When ordering multi-source lists, list sources from most authoritative downward:
   1. Standards and legal requirements
   2. National cyber guidance
   3. Sector guidance

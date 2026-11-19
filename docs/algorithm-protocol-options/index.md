@@ -14,7 +14,7 @@ Use this map after the inventory and the priority record. Pick the situation, op
 | Signatures that many parties change together | [Signatures](/algorithm-protocol-options/signatures/) | NIST IR 8547, October 2026 | The dependency list |
 | A verifier that cannot be updated later | [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) | UK NCSC timelines, 2028 plan row | The procurement checklist |
 
-**Handbook practice:** [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) (ML-KEM), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) (ML-DSA), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) (SLH-DSA) are the NIST algorithm standards linked from this section. Parameter tables stay off this site; NIST IR 8547, October 2026, recommends ML-KEM-768 as the default parameter set for key establishment.
+[FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) (ML-KEM), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) (ML-DSA), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) (SLH-DSA) are the NIST post-quantum algorithm standards referenced in this section. Parameter tables remain in those publications; NIST IR 8547 (October 2026) recommends ML-KEM-768 as the default parameter set for key establishment.
 
 The next page is [Choosing an option](/algorithm-protocol-options/choosing/).
 

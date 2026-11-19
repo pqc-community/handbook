@@ -19,7 +19,7 @@ You have opened a route and have not yet listed the cryptography in the system e
 
 The owner is the person who can name the systems and accept the subsequent-review date. Before writing the inventory, answer the questions on [Not sure](/routes/not-sure/): supplier-updated commodity software, data that stays confidential for years, a verifier that cannot be updated, and whether someone is coordinating many assets. An estate that fits none of those is written down as unclassified.
 
-**Authority recommendation:** The PQC Migration Handbook (AIVD, CWI, and TNO, December 2024, Netherlands) distinguishes urgent adopters, which need to start because they cannot afford to delay, from regular adopters, which do not need to react yet. Record which description fits your organisation before you deepen the inventory.
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024, Netherlands) distinguishes urgent adopters, which need to start now because they cannot afford to delay, from regular adopters, which do not need to react yet. Record which category fits your organisation before deepening the inventory.
 
 ## Keep this evidence
 

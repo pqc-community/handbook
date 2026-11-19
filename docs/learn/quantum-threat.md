@@ -8,7 +8,7 @@ last_reviewed: 2026-11-10
 
 A cryptographically relevant quantum computer, if one is built, would change the maths problems that protect today's public-key cryptography. Two quantum algorithms matter here, and one confidentiality risk does not wait for that machine to exist.
 
-**Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures. It names Grover's algorithm as the more limited threat, which does not by itself retire symmetric cryptography on the same timetable.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures, and names Grover's algorithm as the more limited threat that does not by itself retire symmetric cryptography on the same timetable.
 
 Harvest-now, decrypt-later means collecting ciphertext now and decrypting it later, when a breakthrough makes that possible. The risk applies to confidentiality: information that was meant to stay secret for years could be read later if the public-key cryptography that protected it is broken. Long-lived secrets therefore matter even before such a computer exists.
 

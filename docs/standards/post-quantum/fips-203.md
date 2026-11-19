@@ -19,7 +19,7 @@ FIPS 203 specifies the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names FIPS 203 as one of the foundational post-quantum cryptography standards and notes that ML-KEM is the only approved post-quantum key-establishment scheme based on public-key cryptography at the time of that report. Its output is a shared secret key that can be used directly as a symmetric key or combined with another secret in a hybrid construction.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names FIPS 203 as one of the foundational post-quantum cryptography standards and notes that ML-KEM is the only approved post-quantum key-establishment scheme based on public-key cryptography at the time of that report. Its output is a shared secret key that can be used directly as a symmetric key or combined with another secret in a hybrid construction.
 
 ## Sources
 

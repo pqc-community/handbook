@@ -3,24 +3,20 @@ title: Protect this first
 sidebar_label: Protect this first
 displayed_sidebar: resourcesSidebar
 last_reviewed: 2026-11-10
-description: An illustration, not a real organisation. The clinic walks inventory, priority, supplier answers, options, change, and review in order.
+description: End-to-end worked example tracing a fictional clinic across inventory, priority, supplier response, option selection, change verification, and review.
 ---
 
-**Example:** The clinic is an illustration, not a real organisation.
-
-The fictional clinic runs health records on a vendor system and field devices whose firmware signature check cannot be updated in the field. Office laptops stay on the commodity path. The sections below follow one organisation through the work products in order.
+The clinic below is a worked illustration rather than a real organisation. It operates patient health records on a vendor-managed platform, field devices whose firmware signature verifier cannot be updated in the field, and standard office laptops. The sections below trace that single estate across the handbook's work products in order.
 
 ## Initial facts
 
-**Example:** Health records sit on a vendor-managed platform. **Authority recommendation:** The EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage, so confidentiality on those records still matters after 10 years. The inventory owner is the clinic operations lead, software control sits with the vendor, and the priority job for that row is `key establishment`.
-
-**Example:** A firmware signature check on clinic field devices cannot be updated in the field. The priority job for that row is `non-updatable verifier`.
-
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path. **Handbook practice:** The clinic's office laptops stay on that path rather than on the redesign list for the health-records platform or the firmware root.
+- **Health-records platform**: Hosted on a vendor-managed system owned internally by the clinic operations lead, with software controlled by the supplier. Because the [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf) (version 1.1, 11 June 2025) classifies public-key-protected confidentiality as high-risk when compromise after 10 years or more would still cause significant damage, this system enters prioritisation under `key establishment`.
+- **Field-device firmware check**: Uses a hardware-anchored signature check that cannot be updated in the field, entering prioritisation under `non-updatable verifier`.
+- **Office laptops**: Under the [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026), standard browsers, operating systems, and mobile devices follow a supplier-update path, so laptops remain on routine vendor patching rather than joining the bespoke redesign queue.
 
 ## Inventory records
 
-**Handbook practice:** The clinic keeps one row per system on the [inventory record](/resources/inventory-record/). Unfilled cells are the word `unknown`.
+The clinic records one row per system on the [inventory record](/resources/inventory-record/), marking unverified fields as `unknown`:
 
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -29,7 +25,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 ## Priority decision
 
-**Example:** Both assets are `first`, for different jobs. Record them on the [priority record](/resources/priority-record/).
+Both assets rank first on the [priority record](/resources/priority-record/) because they address distinct cryptographic jobs:
 
 | asset | confidentiality period | job | impact | lead time | dependencies | supplier readiness | decision | reason | source | subsequent review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -38,7 +34,7 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 ## Supplier answer
 
-**Handbook practice:** One complete supplier letter is logged on the [vendor response log](/resources/vendor-response-log/).
+A written commitment from the platform vendor is logged on the [vendor response log](/resources/vendor-response-log/):
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,19 +42,17 @@ The fictional clinic runs health records on a vendor system and field devices wh
 
 ## Option and authority
 
-**Handbook practice:** Before implementation, the clinic records the option and its authority on [Choosing an option](/algorithm-protocol-options/choosing/).
-
-**Example:** For the health-records key-establishment channel, the clinic matches the supplier's named construction to the default key-establishment option in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, and records that publication as the authority. The parameter table stays in NIST IR 8547.
+Before deployment, the clinic records the chosen option and supporting standard using [Choosing an option](/algorithm-protocol-options/choosing/). For the health-records key-establishment channel, the supplier's ML-KEM-768 release aligns with the default key-establishment recommendation in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026), which is cited as the technical authority.
 
 ## Change record and deployed-state check
 
-**Handbook practice:** The clinic records two changes on the [change record](/resources/change-record/): the health-records change is closed, and the firmware change is blocked. The row that matters for verification is the deployed-state check.
+Two entries sit on the [change record](/resources/change-record/) — a completed pilot for the health-records channel verified against the deployed configuration, and a blocked entry for the field-device firmware:
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Health records on the vendor system | Adopt the supplier's key-establishment construction | ML-KEM-768 | NIST IR 8547, October 2026 | One clinic site | Key establishment on the health-records channel | Clients cannot connect after the change | the clinic operations lead | The deployed configuration matches the supplier letter | Pilot passed | 2026-08-14 |
 
-The firmware row is blocked: implementation does not start while the option is unknown.
+The firmware row remains blocked because implementation does not start while the replacement option is `unknown`:
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -66,7 +60,7 @@ The firmware row is blocked: implementation does not start while the option is u
 
 ## Subsequent review
 
-**Example:** The clinic sets the subsequent review to 2026-12-01 in the priority record, and opens the [review log](/resources/review-log/) when that date arrives. The agenda follows [subsequent review](/migration-practices/subsequent-review/).
+The clinic schedules a subsequent review for `2026-12-01` and tracks the open firmware blocker on the [review log](/resources/review-log/) using the [subsequent review](/migration-practices/subsequent-review/) agenda:
 
 | date | what was reviewed | unresolved items | owner | next review |
 | --- | --- | --- | --- | --- |
@@ -74,9 +68,7 @@ The firmware row is blocked: implementation does not start while the option is u
 
 ## Rejected alternative
 
-**Example:** The clinic considered treating office laptops as a full redesign alongside the health-records platform.
-
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, place standard laptops on the commodity path: those devices wait for the supplier update. The clinic records laptops on the [vendor-managed software route](/routes/vendor-managed-software/) and the [commodity software](/migration-practices/commodity-software/) practice instead of opening a redesign programme for them.
+The clinic initially considered running a bespoke migration project for office laptops alongside the health-records platform. Because the [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026) place standard client devices on the commodity supplier-update path, the clinic instead tracks laptop updates under the [vendor-managed software route](/routes/vendor-managed-software/) and [Commodity software](/migration-practices/commodity-software/).
 
 ## Sources
 

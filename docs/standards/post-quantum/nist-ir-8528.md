@@ -19,7 +19,7 @@ NIST IR 8528 documents the first round of NIST's on-ramp call for additional pos
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NIST IR 8528 to note that further post-quantum signature algorithms remain under evaluation for future standardisation alongside the already final [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) standards. Candidates in that track are not yet FIPS-approved standards.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NIST IR 8528 to note that further post-quantum signature algorithms remain under evaluation for future standardisation alongside the already final [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) standards. Candidates in that track are not yet FIPS-approved standards.
 
 ## Sources
 

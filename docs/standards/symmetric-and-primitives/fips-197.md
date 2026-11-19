@@ -19,7 +19,7 @@ FIPS 197 specifies the Advanced Encryption Standard (AES), a symmetric block cip
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, places AES-128, AES-192, and AES-256 in NIST post-quantum security categories 1, 3, and 5 respectively, and states that NIST does not expect to transition away from AES as part of the post-quantum migration. In real protocols, post-quantum key establishment ([FIPS 203](/standards/post-quantum/fips-203/)) replaces how the session key is agreed, while AES continues to encrypt the bulk payload.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, places AES-128, AES-192, and AES-256 in NIST post-quantum security categories 1, 3, and 5 respectively, and states that NIST does not expect to transition away from AES as part of the post-quantum migration. In real protocols, post-quantum key establishment ([FIPS 203](/standards/post-quantum/fips-203/)) replaces how the session key is agreed, while AES continues to encrypt the bulk payload.
 
 ## Sources
 

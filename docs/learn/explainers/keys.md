@@ -8,9 +8,7 @@ last_reviewed: 2026-11-10
 
 Which job does the public key do, and which job does the private key do?
 
-[Public-key cryptography](/learn/public-key-cryptography/) says the two keys do different jobs. The table puts those jobs side by side.
-
-**Handbook explanation:**
+[Public-key cryptography](/learn/public-key-cryptography/) explains that the public and private keys perform distinct jobs. The table below sets those jobs side by side:
 
 | Job | What the public key does | What the private key does |
 | --- | --- | --- |

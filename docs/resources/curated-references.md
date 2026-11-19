@@ -18,6 +18,8 @@ Browse by category:
 - **[US federal directives](/standards/us-federal-directives/)**: NSM-10, EO 14306, EO 14412, and OMB M-26-15.
 - **[Migration guides](/standards/migration-guides/)**: Dutch PQC Migration Handbook, UK NCSC guidance, EU NIS Cooperation Group roadmap, ASD planning, Canadian CFDIR guide, ETSI TR 103 619, ETSI TR 104 016, PQCC roadmap, CISA/NSA/NIST fact sheet, NCCoE Migration to PQC, and the ASD/ACSC/CISA/NSA vendor questions guide.
 
+References across the handbook prioritise primary technical standards and official national cyber guidance, keeping each authority's milestones scoped to its stated jurisdiction and audience rather than treating one jurisdiction's date as a universal deadline. Sources are reviewed quarterly and when cited publications are updated; report a stale link or superseded edition on the [GitHub issue tracker](https://github.com/pqc-community/handbook/issues).
+
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://csrc.nist.gov/pubs/ir/8547/final)
@@ -28,4 +30,4 @@ Browse by category:
 - [Standards](/standards/)
 - [Migration guides](/standards/migration-guides/)
 - [Timelines](/learn/timelines/)
-- [Editorial policy](./editorial-policy.md)
+- [Resources index](./index.md)

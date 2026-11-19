@@ -19,7 +19,7 @@ NIST IR 8545 summarises the fourth-round evaluation of candidate key-encapsulati
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NIST IR 8545 when explaining that NIST selected HQC as an alternative to ML-KEM and that a FIPS specifying HQC-KEM is under development. Until that FIPS is published as final, [FIPS 203](/standards/post-quantum/fips-203/) remains the sole approved post-quantum public-key key-establishment standard.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NIST IR 8545 when explaining that NIST selected HQC as an alternative to ML-KEM and that a FIPS specifying HQC-KEM is under development. Until that FIPS is published as final, [FIPS 203](/standards/post-quantum/fips-203/) remains the sole approved post-quantum public-key key-establishment standard.
 
 ## Sources
 

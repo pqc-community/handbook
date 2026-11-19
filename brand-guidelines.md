@@ -88,4 +88,4 @@ Visual changes should be reviewed alongside `src/css/custom.css` and `static/img
 
 - [purpose-and-positioning.md](./purpose-and-positioning.md) — mission, audience, scope, and sister-site boundaries
 - [navigation-structure.md](./navigation-structure.md) — URL structure, sidebars, and user journeys
-- [style-guide.md](./style-guide.md) — editorial voice, terminology, attribution labels, page patterns, and sourcing
+- [style-guide.md](./style-guide.md) — editorial voice, terminology, prose attribution, page patterns, and sourcing

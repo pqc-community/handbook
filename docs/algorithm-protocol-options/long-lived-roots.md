@@ -16,17 +16,13 @@ Run the applicability test, then complete the procurement checklist.
 
 **Applicability test**
 
-**Handbook practice:** Confirm both conditions: the verifier cannot be updated later in the field, and the device will remain in use while the organisation still cares about the integrity of the signed code.
+Confirm both conditions: the verifier cannot be updated later in the field, and the device will remain in service while the integrity of signed code still matters.
 
 **Procurement checklist**
 
-**Handbook practice:** Record verifier updateability, device lifetime, signing chain, replacement options, stateful-key controls, and supplier commitments before the product is locked for production.
+Before locking the product for production, record verifier updateability, device service life, signing chain, replacement options, stateful-key controls, and supplier commitments.
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says that in those cases the devices should be designed to require quantum-resistant signatures on the executable code. It says stateful hash-based schemes, LMS and XMSS in SP 800-208, are not for general use because, per NIST, the signer must never use a one-time key twice, and that they may be useful for software and firmware signing.
-
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, list LMS and XMSS as algorithms with a more limited set of uses, and the 2028 plan row includes long-lived hardware roots of trust.
-
-**Handbook practice:** SLH-DSA in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) is the stateless hash-based signature to record when a stateful scheme is not appropriate. Record which authority defends the construction next to the product decision.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, advises designing such devices to require quantum-resistant signatures on executable code. It notes that stateful hash-based schemes — LMS and XMSS in [NIST SP 800-208](/standards/post-quantum/sp-800-208/) — are unsuitable for general use because the signer must never reuse a one-time key, though they can suit tightly controlled software and firmware signing. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, likewise classify LMS and XMSS as specialist options and include long-lived hardware roots of trust in the 2028 planning milestone. Where stateful key management is impractical, SLH-DSA in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) provides a stateless hash-based alternative; record the supporting authority alongside the product decision.
 
 ## Keep this evidence
 

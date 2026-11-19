@@ -14,9 +14,7 @@ Use this record when you plan, test, and verify one change after an option has b
 
 system, change, option, authority, pilot scope, tests, rollback trigger, who can roll back, deployed-state check, result, date
 
-A cell you cannot fill is the word `unknown`.
-
-**Handbook practice:** Where the row records a timeline or a source, more than one may be named in that cell, separated by a semicolon. Keys, secrets, and personal data stay out of the file. Name the system.
+Record `unknown` in any cell you cannot verify yet. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
 
 ## Filled example
 

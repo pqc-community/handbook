@@ -37,7 +37,7 @@ The site separates **orientation**, **background learning**, and **reusable refe
    - **Standards (`/standards/`)**: Structured reference summaries of the NIST post-quantum, transition, classical, symmetric, and module/protocol standards, US federal directives, and national/international migration guides cited across the handbook.
    - **Migration practices (`/migration-practices/`)**: Actionable, seven-part procedures covering diagnosis, commodity software updates, inventory, qualitative prioritisation, product release dates, vendor plans, pilot implementation, cryptographic agility (*changing algorithms again*), and subsequent reviews.
    - **Algorithm and protocol options (`/algorithm-protocol-options/`)**: Decision branches and operational checks across four functional jobs — *choosing an option*, *key establishment*, *signatures*, and *long-lived roots* — recording which authority supports hybrid, post-quantum-only, or supplier-update paths without choosing on the reader's behalf.
-   - **Resources (`/resources/`)**: Seven CSV-backed work-product templates (*inventory record*, *priority record*, *vendor response log*, *migration plan*, *change record*, *evidence record*, *review log*), one end-to-end worked example (*Protect this first*), the *Glossary*, *Curated references*, and the *Editorial policy*.
+   - **Resources (`/resources/`)**: Seven CSV-backed work-product templates (*inventory record*, *priority record*, *vendor response log*, *migration plan*, *change record*, *evidence record*, *review log*), one end-to-end worked example (*Protect this first*), the *Glossary*, and *Curated references*.
 
 ### Shared Worked Illustration (The Clinic)
 
@@ -82,5 +82,5 @@ Maintainer governance is split across four root documents:
 
 - [purpose-and-positioning.md](./purpose-and-positioning.md) — mission, audience, content model, sister-site boundaries, and non-goals
 - [navigation-structure.md](./navigation-structure.md) — URL policy, navbar/sidebars, complete sitemap, and route journeys
-- [style-guide.md](./style-guide.md) — editorial voice, terminology, attribution labels, page patterns, sourcing principles, and review checklist
+- [style-guide.md](./style-guide.md) — editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
 - [brand-guidelines.md](./brand-guidelines.md) — visual identity, logo assets, colour palette, typography, UI styling, and illustration guidance

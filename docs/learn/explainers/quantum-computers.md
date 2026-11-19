@@ -8,19 +8,16 @@ last_reviewed: 2026-11-10
 
 Which quantum effect applies to confidentiality, and which does not?
 
-[The quantum threat](/learn/quantum-threat/) covers a cryptographically relevant quantum computer, if one is built, and names the effects below. The distinction is which of them is a confidentiality risk.
+[The quantum threat](/learn/quantum-threat/) introduces how a cryptographically relevant quantum computer would affect existing cryptography. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) separates those effects into four points:
 
-**Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Shor's algorithm as the quantum algorithm that threatens today's public-key key establishment and digital signatures.
+- **Shor's algorithm** threatens today's public-key key establishment and digital signatures.
+- **Grover's algorithm** has a more limited impact and does not by itself retire symmetric cryptography on the same timetable.
+- **Harvest-now, decrypt-later** is an immediate confidentiality risk for encrypted traffic or stored data recorded today that will still be sensitive later.
+- **Signatures verified at the time of use** are not exposed to that retroactive confidentiality risk.
 
-**Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Grover's algorithm as the more limited effect, which does not by itself retire symmetric cryptography on the same timetable.
+The table contrasts those last two cases directly:
 
-**Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes harvest-now, decrypt-later as a confidentiality risk for information protected now and still sensitive later.
-
-**Authority statement:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, states that a signature checked at the time of use is not that confidentiality risk.
-
-**Handbook explanation:** The rows below set the confidentiality risk beside a signature checked at the time of use. The right-hand column is an **Authority statement**, cited to NIST IR 8547, October 2026.
-
-| What is under consideration | What applies |
+| What is under consideration | What applies (NIST IR 8547, October 2026) |
 | --- | --- |
 | Information protected now and still sensitive later | Harvest-now, decrypt-later, a confidentiality risk |
 | A signature checked at the time of use | Not that confidentiality risk |

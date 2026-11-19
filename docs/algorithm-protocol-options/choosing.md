@@ -18,61 +18,35 @@ Work through these branches in order. None of them chooses the option for you; e
 
 ### System type
 
-**Handbook practice:** Classify whether the system is commodity information technology, custom software, embedded cryptography, or a mixed estate.
-
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path: migration happens as vendors update those services. Custom software does not sit on that path by default.
+Classify whether the system is commodity information technology, custom software, embedded cryptography, or a mixed estate. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path where migration arrives through vendor releases; custom software does not sit on that path by default.
 
 ### Lifetime
 
-**Handbook practice:** Record the data confidentiality period and whether the asset will still matter after public timelines in your jurisdiction.
+Record the data confidentiality period and whether the asset will still matter after public milestones in your jurisdiction. The [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf), version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage. Similarly, [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) distinguishes urgent adopters — including organisations holding long-lived sensitive data — from regular adopters that do not need to react yet, directing boundary cases to Section 3.2 of that handbook.
 
-**Authority recommendation:** The [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf), version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage.
-
-**Authority recommendation:** The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) distinguishes urgent adopters from regular adopters. Long-lived sensitive data sits with urgent adopters. Regular adopters do not need to react yet; an organisation on the boundary between urgent and regular follows Section 3.2 of that handbook for when to start particular assets.
-
-These are policy notes to record. Record which authority you are following.
+Record which authority's framing applies to the asset.
 
 ### Jurisdiction
 
-**Handbook practice:** Record which timeline and which hybrid or post-quantum guidance applies where the organisation operates and where it sells.
-
-**Authority recommendation:** The EU NIS Cooperation Group roadmap, 11 June 2025, is the European Union government plan for coordinated implementation.
-
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, is the United States standards timeline for users of NIST standards; it is not a universal deadline for every organisation.
+Record which timeline and hybrid or post-quantum guidance applies where the organisation operates and where it sells. In the European Union, the EU NIS Cooperation Group roadmap (11 June 2025) sets out the Member State plan for coordinated implementation. In the United States, [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) defines the standards deprecation and disallowance schedule for users of NIST standards rather than a universal deadline for every organisation.
 
 ### Updateability
 
-**Handbook practice:** Record whether configuration, trust stores, firmware verifiers, or supplier releases can change after the first deployment.
-
-**Handbook practice:** If the verifier cannot be updated later, send that row to [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) before you treat it as a general signature migration.
+Record whether configuration, trust stores, firmware verifiers, or supplier releases can change after initial deployment. If a signature verifier cannot be updated later in the field, route that row to [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) before treating it as a general signature migration.
 
 ### Supplier control
 
-**Handbook practice:** Record who controls the software version, the protocol settings, and the migration date.
-
-**Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, describe the commodity path where the supplier delivers the post-quantum change. Where the organisation configures the channel itself, the option and the test plan are recorded on the organisation's change record.
+Record who controls the software version, protocol settings, and migration date. Where a supplier delivers the update on commodity platforms (as described in the UK NCSC timelines, modified 3 August 2026), track supplier delivery; where your organisation configures the channel directly, record the chosen option and test plan on your change record.
 
 ### Compatibility
 
-**Handbook practice:** Record whether the construction in use is hybrid, post-quantum-only, or awaiting a supplier release, and which authority defends that choice.
+Record whether the construction is hybrid, post-quantum-only, or awaiting a supplier release, check whether protocols, certificates, and hardware can carry larger keys or signatures and whether all verifiers can be updated together, and record which authority supports that choice:
 
-**Handbook practice:** Ask whether the protocol, the certificate, and the hardware can carry the larger values, and whether every verifier can be updated together.
+- The EU NIS Cooperation Group roadmap (11 June 2025) recommends standardised, tested hybrid solutions wherever feasible and suitable, and states that quantum-vulnerable public-key mechanisms shall not be used stand-alone for high-risk use cases after the end of 2030.
+- The PQC Migration Handbook (December 2024) notes that Germany, France, and the Netherlands advocate deploying post-quantum cryptography in hybrid combinations with established algorithms, whereas the United Kingdom recommends hybridisation only where necessary.
+- NIST IR 8547 (October 2026) describes hybrid solutions as a temporary hedge that adds complexity on the way toward post-quantum-only deployments, while accommodating dual signatures (provided at least one component signature algorithm is NIST-approved) and FIPS 140 validation for composite key establishment (provided at least one input comes from an approved scheme).
 
-These are policy notes to record. Record which authority you are following.
-
-**Authority recommendation:** The EU NIS Cooperation Group roadmap, 11 June 2025, recommends standardised and tested hybrid solutions whenever feasible and suitable, and states that for high-risk use cases quantum-vulnerable public-key mechanisms shall not be used stand-alone after the end of 2030.
-
-**Authority recommendation:** The PQC Migration Handbook, December 2024, reports that Germany, France, and the Netherlands advocate deployment of post-quantum cryptography in hybrid combinations with established cryptography, and that the United Kingdom recommends hybridisation only when absolutely necessary.
-
-**Authority recommendation:** NIST IR 8547, October 2026, says hybrid solutions are often a hedge, add complexity, and are typically a temporary measure on the way to post-quantum-only tools. NIST intends to accommodate hybrid techniques where their use is desired. For dual signatures, existing NIST standards and guidelines accommodate their use provided that at least one component digital signature algorithm is NIST-approved. For a composite key-establishment technique, the combination can be FIPS 140-validated when at least one input comes from an approved key-establishment scheme, even if other inputs are disallowed.
-
-**Authority recommendation:** NIST IR 8547, October 2026, describes post-quantum-only tools as the direction hybrid deployments typically move toward over time.
-
-**Handbook practice:** Record which authority is being followed. Do not treat one authority's sentence as a product requirement for every reader.
-
-**Handbook practice:** Quantum key distribution is set aside for the time being by the PQC Migration Handbook, December 2024, and by [ETSI TR 103 619](https://www.etsi.org/deliver/etsi_tr/103600_103699/103619/01.01.01_60/tr_103619v010101p.pdf). Quantum random-number generators are outside this handbook.
-
-**Handbook practice:** [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) names ML-KEM, [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) names ML-DSA, and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) names SLH-DSA. Parameter tables stay in the FIPS publications.
+Do not treat one authority's position as a universal product requirement outside its scope. Quantum key distribution is set aside for the time being by both the PQC Migration Handbook (December 2024) and [ETSI TR 103 619](https://www.etsi.org/deliver/etsi_tr/103600_103699/103619/01.01.01_60/tr_103619v010101p.pdf), and quantum random-number generators are outside this handbook. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) specifies ML-KEM, [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA, and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA; parameter tables remain in those FIPS publications.
 
 | Job | What you record next | Evidence |
 | --- | --- | --- |

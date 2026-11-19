@@ -27,15 +27,11 @@ Identify where the organisation operates and where it sells. Record one row of t
 | ASD, Planning for post-quantum cryptography | The audience of that publication | End of 2030 | recommendation | The systems the publication addresses; not a universal deadline | 10 November 2026 |
 | Canadian Forum for Digital Infrastructure Resilience, Quantum-Readiness Best Practices, 10 July 2024 | Canadian critical-infrastructure owners and operators, and others who adapt the guide | The guide | recommendation | Critical-infrastructure systems and dependencies the guide covers | 10 November 2026 |
 
-**Authority recommendation:** The EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025, says data that needs to remain confidential for at least 10 years should be protected from quantum-computer attacks no later than the end of 2030.
+Keep three scope boundaries clear when recording rows from the table above:
 
-**Handbook practice:** The NIST IR 8547 standards timeline is not a deadline for every organisation.
-
-**Requirement:** NIST IR 8547, October 2026, says agencies must support TLS 1.3 no later than 2 January 2030.
-
-**Authority recommendation:** The end of 2030 in ASD's planning publication is ASD's planning milestone for the audience of that publication.
-
-**Handbook practice:** Do not copy ASD's end of 2030 as a universal deadline.
+- Under the EU NIS Cooperation Group roadmap (version 1.1, 11 June 2025), data that needs to remain confidential for at least 10 years should be protected against quantum attacks no later than the end of 2030.
+- In NIST IR 8547 (October 2026), the 2030 deprecation and 2035 disallowance horizons govern NIST cryptographic standards rather than setting a legal deadline for every private organisation, whereas the 2030/2031 asset dates and the requirement to support TLS 1.3 no later than 2 January 2030 apply specifically to covered US federal agencies.
+- ASD's end-of-2030 date is a planning milestone for the Australian audience of that publication and should not be copied as a universal deadline elsewhere.
 
 ## Keep this evidence
 

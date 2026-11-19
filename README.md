@@ -14,7 +14,7 @@ Read these four root documents before changing structure, prose, or styling:
 
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, target audience and roles, content model, sister-site boundaries, and non-goals
 - [Navigation Structure](./navigation-structure.md) — URL policy, navbar and six sidebars, complete sitemap, and situation-route journeys
-- [Style Guide](./style-guide.md) — Editorial voice, terminology, attribution labels, page patterns, sourcing principles, and review checklist
+- [Style Guide](./style-guide.md) — Editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
 - [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
 
 ### Handbook Content (`docs/`)
@@ -24,7 +24,7 @@ Read these four root documents before changing structure, prose, or styling:
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
 - [Algorithm & Protocol Options](./docs/algorithm-protocol-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
-- [Resources](./docs/resources/index.md) — Seven CSV-backed work-product templates, the [Protect this first](./docs/resources/protect-this-first.md) worked example, [Glossary](./docs/resources/glossary.md), [Curated references](./docs/resources/curated-references.md), and [Editorial policy](./docs/resources/editorial-policy.md)
+- [Resources](./docs/resources/index.md) — Seven CSV-backed work-product templates, the [Protect this first](./docs/resources/protect-this-first.md) worked example, [Glossary](./docs/resources/glossary.md), and [Curated references](./docs/resources/curated-references.md)
 
 ## Getting Started
 

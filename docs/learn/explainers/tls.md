@@ -21,7 +21,7 @@ sequenceDiagram
     Client->>Client: Check the server with a signature
 ```
 
-**Handbook explanation:**
+Across all three deployment patterns, server authentication remains a separate signature check:
 
 | Exchange | What establishes the shared secret | What still authenticates the server |
 | --- | --- | --- |
@@ -29,9 +29,7 @@ sequenceDiagram
 | Hybrid | A classical key establishment and a post-quantum key establishment used together | A separate signature check |
 | Post-quantum-only | Post-quantum key establishment alone | A separate signature check |
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, treats a hybrid construction as a temporary hedge.
-
-**Authority recommendation:** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that popular browsers can agree a post-quantum key using a hybrid of traditional key exchange and ML-KEM, and that an exact industry-wide mechanism was not yet standardised at publication, so further updates can be expected.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) treats hybrid constructions as a temporary hedge during transition. Similarly, the [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026) note that popular browsers already agree post-quantum keys using a hybrid of classical key exchange and ML-KEM, while an exact industry-wide profile was still being finalised at publication.
 
 The same split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange.
 

@@ -14,9 +14,9 @@ Use this record when completing a first-pass inventory of systems that handle se
 
 system, owner, key-establishment algorithm, signature algorithm, software control, confidentiality period, renewal, version, dependencies, not visible to a scan, confidence
 
-A cell you cannot fill is the word `unknown`. **Handbook practice:** `confidence` is `known` only when both the key-establishment algorithm and the signature algorithm name a construction. Otherwise it is `unknown`.
+Record `unknown` in any cell you cannot verify yet. Set `confidence` to `known` only when both the key-establishment algorithm and the signature algorithm name a construction; otherwise leave it as `unknown`.
 
-**Handbook practice:** Every dependency goes in the dependencies cell, separated by a semicolon. A shared component does not get its own system row. Where the row records a timeline or a source, more than one may be named in that cell, separated by a semicolon. Keys, secrets, and personal data stay out of the file. Name the system.
+List every dependency inside the `dependencies` cell separated by a semicolon rather than giving a shared component its own system row. Separate multiple timelines or sources in a single cell with a semicolon. Keep keys, secrets, and personal data out of the file — name the system only.
 
 ## Filled example
 

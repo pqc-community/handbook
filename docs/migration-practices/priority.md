@@ -22,11 +22,7 @@ Apply this qualitative rubric to each inventory row. Assign no numeric score. Co
 - Dependencies
 - Supplier readiness
 
-**Handbook practice:** Two assets may both be first when their jobs differ. Within key establishment, the longer confidentiality period comes first, then the longer lead time. A non-updatable verifier comes before a verifier that can be changed on a long cycle, then the longer lead time. Signatures are ordered by how many parties have to change together, then the longer lead time. An unknown factor keeps the row. The inventory owner accepts the order.
-
-**Authority recommendation:** NIST IR 8547, October 2026, United States, describes harvest-now, decrypt-later and states that digital signatures are not vulnerable to that attack.
-
-**Authority recommendation:** The EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025, European Union Member States, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage.
+Two assets can both rank first when their cryptographic jobs differ. Within key establishment, order by longer data confidentiality period first and longer lead time second; [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, United States) notes that harvest-now, decrypt-later threatens confidentiality rather than digital signatures, and the [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf) (version 1.1, 11 June 2025, European Union) classifies public-key-protected confidentiality as high-risk when compromise after 10 years or more would still cause significant damage. Place non-updatable verifiers ahead of verifiers that can be updated on a long cycle, and order general signature migrations by how many relying parties must coordinate and by lead time. Keep rows with `unknown` factors on the list under their inventory owner until resolved.
 
 ## Keep this evidence
 

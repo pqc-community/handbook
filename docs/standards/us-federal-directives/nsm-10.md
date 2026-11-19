@@ -19,7 +19,7 @@ National Security Memorandum 10 sets US government policy both to sustain quantu
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NSM-10 as having established the overarching completion horizon for the US federal migration to post-quantum cryptography, while noting that subsequent directives — [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) — direct federal agencies to migrate their most sensitive systems earlier on a risk-prioritised basis. For audience scope, see [Timelines](/learn/timelines/).
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NSM-10 as having established the overarching completion horizon for the US federal migration to post-quantum cryptography, while noting that subsequent directives — [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) — direct federal agencies to migrate their most sensitive systems earlier on a risk-prioritised basis. For audience scope, see [Timelines](/learn/timelines/).
 
 ## Sources
 

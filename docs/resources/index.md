@@ -55,8 +55,7 @@ These pages sit on the resources sidebar for every reader.
 
 - [Protect this first](/resources/protect-this-first/) — **Reader:** anyone who wants an illustration across the records. **Output:** a walkthrough of one clinic's rows, not a template for a real organisation.
 - [Glossary](/resources/glossary/) — **Reader:** someone encountering a short form in a lesson or practice page. **Output:** plain-language definitions linked to the page that uses each term.
-- [Editorial policy](/resources/editorial-policy/) — **Reader:** someone who needs source order, jurisdiction handling, or the edition changelog. **Output:** how this edition is owned, reviewed, and cited.
-- [Curated references](/resources/curated-references/) — **Reader:** someone choosing a longer authority document. **Output:** a grouped list of external works with scope, assumptions, gaps, and last-checked dates.
+- [Curated references](/resources/curated-references/) — **Reader:** someone choosing a longer authority document. **Output:** a grouped index of cited standards, directives, and migration guides.
 
 ## Sources
 
@@ -64,6 +63,6 @@ These pages sit on the resources sidebar for every reader.
 
 ## Related pages
 
-- [Editorial policy](./editorial-policy.md)
+- [Curated references](./curated-references.md)
 - [Glossary](./glossary.md)
 - [Homepage](/)

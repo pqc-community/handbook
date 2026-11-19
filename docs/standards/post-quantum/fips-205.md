@@ -19,7 +19,7 @@ FIPS 205 specifies the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA
 
 ## Role in the post-quantum transition
 
-**Authority recommendation:** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names FIPS 205 as one of the three core post-quantum standards. Because its security rests on hash-function properties rather than structured lattices, it offers an approved signature option distinct from ML-DSA in [FIPS 204](/standards/post-quantum/fips-204/), and avoids the state-management burden of [NIST SP 800-208](/standards/post-quantum/sp-800-208/).
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names FIPS 205 as one of the three core post-quantum standards. Because its security rests on hash-function properties rather than structured lattices, it offers an approved signature option distinct from ML-DSA in [FIPS 204](/standards/post-quantum/fips-204/), and avoids the state-management burden of [NIST SP 800-208](/standards/post-quantum/sp-800-208/).
 
 ## Sources
 

@@ -10,7 +10,7 @@ Post-quantum cryptography is public-key cryptography intended to stay secure aga
 
 Quantum cryptography is a different idea. It builds security claims on quantum physical effects rather than on computational hardness in software running on conventional hardware. Quantum key distribution is one form of quantum cryptography. It tries to deliver keys through specialised quantum channels rather than through public-key cryptography on ordinary networks.
 
-**Authority recommendation:** The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) advises against relying on the security of quantum key distribution for the time being.
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) advises against relying on the security of quantum key distribution for the time being.
 
 Continue with [Algorithms](/learn/algorithms/).
 

@@ -12,17 +12,13 @@ You have asked a supplier for a written post-quantum migration answer, or you ar
 
 ## Do this
 
-1. Record a judgement for each answer: `complete`, `vague`, `missing`, or `concerning`.
-2. **Handbook practice:** For a `complete` answer, store the page, the date, and the product version in the vendor response log.
-3. **Handbook practice:** For a `vague` answer, ask in writing for the product, the construction, and the date.
-4. **Handbook practice:** For a `missing` answer, record judgement `missing` and a follow-up date.
-5. **Handbook practice:** For a `concerning` answer, escalate to procurement and the contract owner.
+1. Assign a judgement to each supplier response: `complete`, `vague`, `missing`, or `concerning`.
+2. For a `complete` answer — one that names the product, version, cryptographic construction, and release date in a retainable source — log those details in the vendor response log.
+3. For a `vague` answer, follow up in writing to request the specific product line, construction, and release date.
+4. For a `missing` answer, record `missing` with a firm follow-up date; if no commitment arrives by that date, procurement logs the gap and the system is not counted as migrated.
+5. For a `concerning` answer, escalate to procurement and the contract owner.
 
-**Handbook practice:** A `complete` answer names the product, the version, the construction, and a date, and the source can be kept. If no commitment has arrived by the follow-up date, procurement records the gap and the system is not treated as migrated.
-
-**Authority recommendation:** The CISA, NSA, and NIST Quantum-Readiness fact sheet, as of 17 August 2023, United States, urges organisations to ask vendors for a quantum-readiness roadmap that describes how they will migrate, including timelines for testing and integration, and to plan contract changes so new products arrive with post-quantum cryptography and older products can be upgraded.
-
-**Authority recommendation:** The UK NCSC timelines, modified 3 August 2026, United Kingdom, say that where you rely entirely on commodity platforms, the provider delivers the upgrade, and your work is the timely refresh. Where you do not, you choose an approach per system.
+The CISA, NSA, and NIST [Quantum-Readiness fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf) (17 August 2023, United States) recommends requesting vendor quantum-readiness roadmaps — including testing and integration timelines — and updating contract language so new purchases deliver post-quantum support and existing products have an upgrade path. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026, United Kingdom) note that while commodity platform providers deliver upgrades through routine refreshes, custom or mixed environments require per-system decisions.
 
 ## Keep this evidence
 

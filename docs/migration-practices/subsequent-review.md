@@ -12,21 +12,21 @@ A subsequent-review date has arrived, or a trigger suggests the records are no l
 
 ## Do this
 
-**Handbook practice:** Bring the review forward when any of these triggers applies:
+Bring a scheduled review forward whenever any of these triggers occurs:
 
-- A new supplier release changes the algorithm or the date you recorded.
-- A cited migration timeline you rely on is republished or amended.
-- An inventory row marked `unknown` is now `known`.
-- A deployed-state check fails after implementation.
+- A supplier release changes the algorithm or delivery date you recorded.
+- A migration timeline you rely on is republished or amended.
+- An inventory row previously marked `unknown` is resolved to `known`.
+- A deployed-state check fails after cutover.
 
-**Handbook practice:** Run this agenda at each review:
+At each review:
 
 1. Open the review log.
-2. Update confidence on inventory and vendor rows.
-3. Carry unresolved items forward with an owner.
-4. Write the next review date on the review log and on any record still open.
+2. Update confidence on inventory and supplier response rows.
+3. Carry unresolved items forward with a named owner.
+4. Set the next review date on the review log and on every open record.
 
-**Authority recommendation:** NIST IR 8547, October 2026, United States, describes a multi-year transition in which quantum-vulnerable and quantum-resistant algorithms may run side by side, and hybrid constructions, when used, are typically expected to be temporary measures that lead to a further transition.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, United States) describes post-quantum migration as a multi-year transition in which quantum-vulnerable and quantum-resistant algorithms coexist and hybrid constructions often serve as temporary steps toward a subsequent cutover.
 
 ## Keep this evidence
 
