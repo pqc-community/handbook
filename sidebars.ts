@@ -214,12 +214,12 @@ const sidebars: SidebarsConfig = {
     'migration-practices/changing-algorithms-again',
     'migration-practices/subsequent-review',
   ],
-  algorithmProtocolOptionsSidebar: [
-    'algorithm-protocol-options/index',
-    'algorithm-protocol-options/choosing',
-    'algorithm-protocol-options/key-establishment',
-    'algorithm-protocol-options/signatures',
-    'algorithm-protocol-options/long-lived-roots',
+  technologyOptionsSidebar: [
+    'technology-options/index',
+    'technology-options/choosing',
+    'technology-options/key-establishment',
+    'technology-options/signatures',
+    'technology-options/long-lived-roots',
   ],
   resourcesSidebar: [
     'resources/index',

@@ -58,7 +58,7 @@ const config: Config = {
         {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn the basics'},
         {type: 'docSidebar', sidebarId: 'standardsSidebar', position: 'left', label: 'Standards'},
         {type: 'docSidebar', sidebarId: 'migrationPracticesSidebar', position: 'left', label: 'Migration practices'},
-        {type: 'docSidebar', sidebarId: 'algorithmProtocolOptionsSidebar', position: 'left', label: 'Algorithm and protocol options'},
+        {type: 'docSidebar', sidebarId: 'technologyOptionsSidebar', position: 'left', label: 'Technology options'},
         {type: 'docSidebar', sidebarId: 'resourcesSidebar', position: 'left', label: 'Resources'},
         {href: 'https://github.com/pqc-community/handbook', label: 'GitHub', position: 'right'},
       ],
@@ -86,7 +86,7 @@ const config: Config = {
           items: [
             {label: 'Standards', to: '/standards/'},
             {label: 'Migration practices', to: '/migration-practices/'},
-            {label: 'Algorithm and protocol options', to: '/algorithm-protocol-options/'},
+            {label: 'Technology options', to: '/technology-options/'},
             {label: 'Resources', to: '/resources/'},
           ],
         },

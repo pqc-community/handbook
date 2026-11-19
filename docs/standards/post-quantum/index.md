@@ -37,5 +37,5 @@ These publications specify NIST-approved quantum-resistant public-key algorithms
 ## Related pages
 
 - [Standards](/standards/)
-- [Choosing options](/algorithm-protocol-options/choosing/)
+- [Choosing options](/technology-options/choosing/)
 - [Standardisation](/learn/standardisation/)

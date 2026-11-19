@@ -23,7 +23,7 @@ Read these four root documents before changing structure, prose, or styling:
 - [Situation Routes](./docs/routes/not-sure.md) (`docs/routes/`) — Six operational routes entered from the homepage situation chooser
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
-- [Algorithm & Protocol Options](./docs/algorithm-protocol-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
+- [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
 - [Resources](./docs/resources/index.md) — Seven CSV-backed work-product templates, the [Protect this first](./docs/resources/protect-this-first.md) worked example, [Glossary](./docs/resources/glossary.md), and [Curated references](./docs/resources/curated-references.md)
 
 ## Getting Started

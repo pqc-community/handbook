@@ -31,4 +31,4 @@ FIPS 205 specifies the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [FIPS 204](/standards/post-quantum/fips-204/)
 - [NIST SP 800-208](/standards/post-quantum/sp-800-208/)
-- [Signatures](/algorithm-protocol-options/signatures/)
+- [Signatures](/technology-options/signatures/)

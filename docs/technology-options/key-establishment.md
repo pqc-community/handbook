@@ -1,7 +1,7 @@
 ---
 title: Post-quantum key establishment
 sidebar_label: Key establishment
-displayed_sidebar: algorithmProtocolOptionsSidebar
+displayed_sidebar: technologyOptionsSidebar
 last_reviewed: 2026-11-10
 description: The confidentiality job where harvest-now, decrypt-later applies. List channels, record the construction, and carry the fields onto the change record.
 ---
@@ -20,7 +20,7 @@ The priority record marks key establishment for a system whose data confidential
 
 The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that popular browsers already negotiate post-quantum keys using a hybrid of classical key exchange and ML-KEM, while an exact industry-wide profile was still maturing at publication.
 
-The option and authority recorded on [Choosing an option](/algorithm-protocol-options/choosing/) govern whether this channel uses a hybrid or post-quantum-only construction. Signatures on the same product are tracked separately on [Signatures](/algorithm-protocol-options/signatures/).
+The option and authority recorded on [Choosing an option](/technology-options/choosing/) govern whether this channel uses a hybrid or post-quantum-only construction. Signatures on the same product are tracked separately on [Signatures](/technology-options/signatures/).
 
 ## Keep this evidence
 

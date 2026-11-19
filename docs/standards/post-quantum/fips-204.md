@@ -30,5 +30,5 @@ FIPS 204 specifies the Module-Lattice-Based Digital Signature Algorithm (ML-DSA)
 
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [FIPS 205](/standards/post-quantum/fips-205/)
-- [Signatures](/algorithm-protocol-options/signatures/)
+- [Signatures](/technology-options/signatures/)
 - [Glossary](/resources/glossary/)

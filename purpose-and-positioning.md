@@ -36,7 +36,7 @@ The site separates **orientation**, **background learning**, and **reusable refe
 3. **Four Reference Sections**:
    - **Standards (`/standards/`)**: Structured reference summaries of the NIST post-quantum, transition, classical, symmetric, and module/protocol standards, US federal directives, and national/international migration guides cited across the handbook.
    - **Migration practices (`/migration-practices/`)**: Actionable, seven-part procedures covering diagnosis, commodity software updates, inventory, qualitative prioritisation, product release dates, vendor plans, pilot implementation, cryptographic agility (*changing algorithms again*), and subsequent reviews.
-   - **Algorithm and protocol options (`/algorithm-protocol-options/`)**: Decision branches and operational checks across four functional jobs — *choosing an option*, *key establishment*, *signatures*, and *long-lived roots* — recording which authority supports hybrid, post-quantum-only, or supplier-update paths without choosing on the reader's behalf.
+   - **Technology options (`/technology-options/`)**: Decision branches and operational checks across four functional jobs — *choosing an option*, *key establishment*, *signatures*, and *long-lived roots* — recording which authority supports hybrid, post-quantum-only, or supplier-update paths without choosing on the reader's behalf.
    - **Resources (`/resources/`)**: Seven CSV-backed work-product templates (*inventory record*, *priority record*, *vendor response log*, *migration plan*, *change record*, *evidence record*, *review log*), one end-to-end worked example (*Protect this first*), the *Glossary*, and *Curated references*.
 
 ### Shared Worked Illustration (The Clinic)

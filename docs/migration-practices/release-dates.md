@@ -45,4 +45,4 @@ Leave the supplier answer for the vendor plan. The next page is [Vendor plan](/m
 - [Vendor plan](./vendor-plan.md)
 - [Priority](./priority.md)
 - [Timelines](../learn/timelines.md)
-- [Long-lived roots](../algorithm-protocol-options/long-lived-roots.md)
+- [Long-lived roots](../technology-options/long-lived-roots.md)

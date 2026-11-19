@@ -24,11 +24,11 @@ A list of the cryptographic components in a product, on the same idea as a softw
 
 ### Certificate
 
-A signed binding between a name and a public key. The issuer signs that binding, and a verifier checks the signature before it trusts the key for the named site, device, or organisation. The certificate does not contain the private key, and one certificate is not the whole chain. The leaf certificate is the one for the site or the device. The [certificate chain](#certificate-chain) runs from that leaf, through an intermediate, to a trust anchor the verifier already holds. A new signature algorithm has to be accepted by the issuer and by the verifiers, not only written onto the leaf. See [Signatures](/algorithm-protocol-options/signatures/) and [In real systems](/learn/in-real-systems/).
+A signed binding between a name and a public key. The issuer signs that binding, and a verifier checks the signature before it trusts the key for the named site, device, or organisation. The certificate does not contain the private key, and one certificate is not the whole chain. The leaf certificate is the one for the site or the device. The [certificate chain](#certificate-chain) runs from that leaf, through an intermediate, to a trust anchor the verifier already holds. A new signature algorithm has to be accepted by the issuer and by the verifiers, not only written onto the leaf. See [Signatures](/technology-options/signatures/) and [In real systems](/learn/in-real-systems/).
 
 ### Certificate chain
 
-The linked certificates from the leaf certificate for a site or a device, through an intermediate, to a trust anchor the verifier already holds. Checking the leaf is not enough when the verifier does not already trust the issuer. A new signature algorithm on the leaf still has to chain to an anchor that verifier accepts, so the signers, the intermediates, and the trust stores move together. See [Signatures](/algorithm-protocol-options/signatures/) and [In real systems](/learn/in-real-systems/).
+The linked certificates from the leaf certificate for a site or a device, through an intermediate, to a trust anchor the verifier already holds. Checking the leaf is not enough when the verifier does not already trust the issuer. A new signature algorithm on the leaf still has to chain to an anchor that verifier accepts, so the signers, the intermediates, and the trust stores move together. See [Signatures](/technology-options/signatures/) and [In real systems](/learn/in-real-systems/).
 
 ### Crypto-agility
 
@@ -38,11 +38,11 @@ The ability to change algorithms again after this migration. Choosing a construc
 
 The [Cryptographic Module Validation Program](https://csrc.nist.gov/projects/cryptographic-module-validation-program) (CMVP), a joint programme of NIST and the Canadian Centre for Cyber Security, validates modules to [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final), March 2019. The [NIST glossary](https://csrc.nist.gov/glossary/term/cryptographic_module), citing that standard, defines a cryptographic module as the set of hardware, software, and/or firmware that implements approved security functions, including cryptographic algorithms and key generation, and is contained within the cryptographic boundary.
 
-The module is that implementation, not the name of an algorithm. ML-KEM is not a cryptographic module. A library, a chip, or a firmware image can be one when those functions sit inside its cryptographic boundary. A claim that a product is FIPS 140 validated names that module. It does not say the product has moved to a post-quantum algorithm. See [Algorithms](/learn/algorithms/) and [Choosing an option](/algorithm-protocol-options/choosing/).
+The module is that implementation, not the name of an algorithm. ML-KEM is not a cryptographic module. A library, a chip, or a firmware image can be one when those functions sit inside its cryptographic boundary. A claim that a product is FIPS 140 validated names that module. It does not say the product has moved to a post-quantum algorithm. See [Algorithms](/learn/algorithms/) and [Choosing an option](/technology-options/choosing/).
 
 ### Digital signature
 
-A value created with a private key so that anyone with the matching public key can check that the holder of the private key approved a message or a file. Checking the signature does not reverse it, and it does not recover the private key. A signature is not encryption. Encryption hides the message, and a signature shows who approved it. The signature is often computed on a digest from a [hash function](#hash-function), or on output from an [extendable-output function](#extendable-output-function-xof), so a long message can be signed. That digest is not the signature. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA, the two post-quantum signature algorithms these lessons name. See [Public-key cryptography](/learn/public-key-cryptography/) and [Signatures](/algorithm-protocol-options/signatures/).
+A value created with a private key so that anyone with the matching public key can check that the holder of the private key approved a message or a file. Checking the signature does not reverse it, and it does not recover the private key. A signature is not encryption. Encryption hides the message, and a signature shows who approved it. The signature is often computed on a digest from a [hash function](#hash-function), or on output from an [extendable-output function](#extendable-output-function-xof), so a long message can be signed. That digest is not the signature. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA, the two post-quantum signature algorithms these lessons name. See [Public-key cryptography](/learn/public-key-cryptography/) and [Signatures](/technology-options/signatures/).
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines a digital signature as the result of a cryptographic transformation of data that, when properly implemented, provides a mechanism to verify origin authenticity and data integrity and to enforce signatory non-repudiation. The same report says signature algorithms provide support for non-repudiation, and that they are used with hash functions or extendable-output functions to sign messages of arbitrary length. It also says digital signatures are not vulnerable to harvest-now, decrypt-later. The transition is still urgent because it takes longer and more parties coordinate. An authentication system remains secure until the algorithm can be broken at the time of authentication. See [The quantum threat](/learn/quantum-threat/).
 
@@ -66,7 +66,7 @@ A [hash function](#hash-function) such as SHA3-256 produces one fixed-length dig
 
 [NIST SP 800-52 Rev. 2](https://csrc.nist.gov/pubs/sp/800/52/r2/final), August 2019, describes perfect forward secrecy as the condition in which the compromise of a long-term private key, after it has been used to establish a session key, does not cause the compromise of that session key. Cipher suites that use ephemeral Diffie-Hellman provide that property.
 
-The long-term private key is the one a certificate holds. The session key is a fresh secret for one connection, established with an ephemeral private key that is then discarded. A later theft of the long-term private key does not recover those session keys. A static key pair reused across connections does not give that property. Forward secrecy is not a defence against [harvest-now, decrypt-later](#harvest-now-decrypt-later): an attacker who recorded the handshake can still recover the session key later if the ephemeral key-establishment algorithm itself is broken. See [The quantum threat](/learn/quantum-threat/) and [Key establishment](/algorithm-protocol-options/key-establishment/).
+The long-term private key is the one a certificate holds. The session key is a fresh secret for one connection, established with an ephemeral private key that is then discarded. A later theft of the long-term private key does not recover those session keys. A static key pair reused across connections does not give that property. Forward secrecy is not a defence against [harvest-now, decrypt-later](#harvest-now-decrypt-later): an attacker who recorded the handshake can still recover the session key later if the ephemeral key-establishment algorithm itself is broken. See [The quantum threat](/learn/quantum-threat/) and [Key establishment](/technology-options/key-establishment/).
 
 ### Harvest-now, decrypt-later
 
@@ -90,31 +90,31 @@ The hybrid construction is the key-establishment half of a connection. Checking 
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines key agreement as a pair-wise key-establishment procedure in which the shared secret is a function of information contributed by both parties, so that neither party can set that secret independently of the other. It contrasts this with [key transport](#key-transport), in which one party selects the secret and sends it to the other. The same report places Diffie-Hellman and MQV among the discrete-logarithm schemes in SP 800-56A, and says SP 800-56B includes approved methods for both key agreement and key transport. It says the key-establishment algorithms in both of those publications are vulnerable to Shor's algorithm. It describes a key-encapsulation mechanism as a particular type of key-establishment scheme, and names ML-KEM in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) for that scheme.
 
-Both parties contribute, and neither can choose the secret alone. That is the difference from [key transport](#key-transport). A [KEM](#key-encapsulation-mechanism-kem) also produces a shared secret, which is the job these lessons call [key establishment](#key-establishment), and ML-KEM is specified as a KEM rather than as Diffie-Hellman key agreement. The shared secret is not the message, and the exchange is not a signature. A later [key derivation](#key-derivation) can turn that secret into the keys that protect traffic. See [Key establishment](/algorithm-protocol-options/key-establishment/) and [Algorithms](/learn/algorithms/).
+Both parties contribute, and neither can choose the secret alone. That is the difference from [key transport](#key-transport). A [KEM](#key-encapsulation-mechanism-kem) also produces a shared secret, which is the job these lessons call [key establishment](#key-establishment), and ML-KEM is specified as a KEM rather than as Diffie-Hellman key agreement. The shared secret is not the message, and the exchange is not a signature. A later [key derivation](#key-derivation) can turn that secret into the keys that protect traffic. See [Key establishment](/technology-options/key-establishment/) and [Algorithms](/learn/algorithms/).
 
 ### Key derivation
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines key derivation as the process of deriving a key in a non-reversible manner from shared information, some of which is secret. It defines a shared secret as a value computed during [key establishment](#key-establishment) and used as input to a key-derivation method. It defines a shared secret key as a shared secret that can be used directly as a symmetric key and does not require further derivation. The output of [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) is a shared secret key. The same report includes key-derivation functions, in SP 800-56C, SP 800-132, and SP 800-108, among the symmetric standards that are significantly less vulnerable to known quantum attacks than the public-key standards in SP 800-56A, SP 800-56B, and FIPS 186.
 
-[Key agreement](#key-agreement) and a [KEM](#key-encapsulation-mechanism-kem) establish a shared secret. Key derivation starts from a secret that already exists and produces keys for a later use, such as the symmetric keys that protect the bulk of a TLS session. The step does not recover the secret it started from. It is not encryption, and it is not a signature. ML-KEM's output may be used directly as a symmetric key, and a protocol may still derive separate keys from it. See [Key establishment](/algorithm-protocol-options/key-establishment/) and [In real systems](/learn/in-real-systems/).
+[Key agreement](#key-agreement) and a [KEM](#key-encapsulation-mechanism-kem) establish a shared secret. Key derivation starts from a secret that already exists and produces keys for a later use, such as the symmetric keys that protect the bulk of a TLS session. The step does not recover the secret it started from. It is not encryption, and it is not a signature. ML-KEM's output may be used directly as a symmetric key, and a protocol may still derive separate keys from it. See [Key establishment](/technology-options/key-establishment/) and [In real systems](/learn/in-real-systems/).
 
 ### Key-encapsulation mechanism (KEM)
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines a key-encapsulation mechanism as a set of three algorithms, KeyGen, Encaps, and Decaps, that two parties can use to establish a shared secret key over a public channel. It describes a KEM as a particular type of [key establishment](#key-establishment), and names ML-KEM in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) for that scheme.
 
-One party uses the other's public key to produce a ciphertext and a shared secret, and the other party uses the private key to recover that same secret. The mechanism does not carry the message, the file, or the record. A protocol such as TLS then uses [key derivation](#key-derivation) to produce symmetric keys from the shared secret, and those keys protect the bulk of the traffic. ML-KEM is the post-quantum mechanism these lessons name for that job. A [key agreement](#key-agreement) is a different pattern: both parties contribute, and neither sets the secret alone. See [Algorithms](/learn/algorithms/) and [Key establishment](/algorithm-protocol-options/key-establishment/).
+One party uses the other's public key to produce a ciphertext and a shared secret, and the other party uses the private key to recover that same secret. The mechanism does not carry the message, the file, or the record. A protocol such as TLS then uses [key derivation](#key-derivation) to produce symmetric keys from the shared secret, and those keys protect the bulk of the traffic. ML-KEM is the post-quantum mechanism these lessons name for that job. A [key agreement](#key-agreement) is a different pattern: both parties contribute, and neither sets the secret alone. See [Algorithms](/learn/algorithms/) and [Key establishment](/technology-options/key-establishment/).
 
 ### Key establishment
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines key establishment as a procedure that results in secret keying material shared among different parties. [Key agreement](#key-agreement) and [key transport](#key-transport) are pair-wise procedures of that kind. A [key-encapsulation mechanism](#key-encapsulation-mechanism-kem) is a particular type of key-establishment scheme, and the report names ML-KEM in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) as the only approved post-quantum key-establishment scheme based on public-key cryptography at the time of the report. It says that because symmetric keys established through key establishment provide confidentiality, harvest-now, decrypt-later needs to be considered when setting the migration timeline for that scheme.
 
-This is the shared-secret job these lessons record separately from signatures. Key agreement, [key transport](#key-transport), and a KEM are ways to do it. [Key derivation](#key-derivation) starts from a secret that this step has already produced. The secret is not the message, and the exchange is not a [digital signature](#digital-signature). See [Key establishment](/algorithm-protocol-options/key-establishment/) and [The quantum threat](/learn/quantum-threat/).
+This is the shared-secret job these lessons record separately from signatures. Key agreement, [key transport](#key-transport), and a KEM are ways to do it. [Key derivation](#key-derivation) starts from a secret that this step has already produced. The secret is not the message, and the exchange is not a [digital signature](#digital-signature). See [Key establishment](/technology-options/key-establishment/) and [The quantum threat](/learn/quantum-threat/).
 
 ### Key transport
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines key transport as a pair-wise [key-establishment](#key-establishment) procedure in which one party, the sender, selects the secret and then securely distributes that value to the other party, the receiver. It contrasts this with [key agreement](#key-agreement). The same report says SP 800-56B includes approved methods for both key agreement and key transport, and that the key-establishment algorithms in SP 800-56A and SP 800-56B are vulnerable to Shor's algorithm.
 
-The sender chooses the secret and sends it. In [key agreement](#key-agreement), both parties contribute and neither sets the secret alone. A [KEM](#key-encapsulation-mechanism-kem) also establishes a shared secret. ML-KEM is not key transport: the sender does not choose a key and then encrypt that key to the receiver. When the receiver's private key is kept, a later theft of that key can recover the secrets it carried. An ephemeral key agreement whose private key is discarded gives [forward secrecy](#forward-secrecy). The transported secret is not the message. See [Key establishment](/algorithm-protocol-options/key-establishment/).
+The sender chooses the secret and sends it. In [key agreement](#key-agreement), both parties contribute and neither sets the secret alone. A [KEM](#key-encapsulation-mechanism-kem) also establishes a shared secret. ML-KEM is not key transport: the sender does not choose a key and then encrypt that key to the receiver. When the receiver's private key is kept, a later theft of that key can recover the secrets it carried. An ephemeral key agreement whose private key is discarded gives [forward secrecy](#forward-secrecy). The transported secret is not the message. See [Key establishment](/technology-options/key-establishment/).
 
 ### Key wrapping
 
@@ -140,7 +140,7 @@ NIST's key-establishment algorithm in [FIPS 203](https://csrc.nist.gov/pubs/fips
 
 The public-key infrastructure that issues and checks certificates. A certificate binds a name to a public key and takes its place in a chain to a trust anchor.
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says supporting a [quantum-resistant algorithm](#quantum-resistant-algorithm) means upgrading the systems that perform and accept the authentication, including the PKI. See [Signatures](/algorithm-protocol-options/signatures/).
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says supporting a [quantum-resistant algorithm](#quantum-resistant-algorithm) means upgrading the systems that perform and accept the authentication, including the PKI. See [Signatures](/technology-options/signatures/).
 
 ### Post-quantum cryptography (PQC)
 
@@ -166,15 +166,15 @@ RSA and elliptic-curve public-key schemes are the familiar examples. A [block ci
 
 ### Regular adopter
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Choosing an option](/algorithm-protocol-options/choosing/).
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Choosing an option](/technology-options/choosing/).
 
 ### Root of trust
 
-A check the device cannot replace later. The case that matters is a verifier that cannot be updated in the field, on a device that will stay in use. A new signature algorithm cannot be introduced there after deployment, so the root is recorded before the product is locked, and long-lived roots come before the signature choice. See [Long-lived roots of trust](/algorithm-protocol-options/long-lived-roots/).
+A check the device cannot replace later. The case that matters is a verifier that cannot be updated in the field, on a device that will stay in use. A new signature algorithm cannot be introduced there after deployment, so the root is recorded before the product is locked, and long-lived roots come before the signature choice. See [Long-lived roots of trust](/technology-options/long-lived-roots/).
 
 ### SLH-DSA (Stateless Hash-Based Digital Signature Algorithm)
 
-NIST's stateless hash-based digital signature algorithm in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final). It signs, as ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) does, and the hash-based design is the difference. It is the stateless scheme to record when a stateful hash-based scheme is not appropriate, and it does not establish a shared secret. See [Algorithms](/learn/algorithms/) and [Long-lived roots of trust](/algorithm-protocol-options/long-lived-roots/).
+NIST's stateless hash-based digital signature algorithm in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final). It signs, as ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) does, and the hash-based design is the difference. It is the stateless scheme to record when a stateful hash-based scheme is not appropriate, and it does not establish a shared secret. See [Algorithms](/learn/algorithms/) and [Long-lived roots of trust](/technology-options/long-lived-roots/).
 
 ### Symmetric cryptography
 
@@ -184,11 +184,11 @@ One shared secret does both jobs. The same key encrypts and decrypts, and the sa
 
 ### Urgent adopter
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Choosing an option](/algorithm-protocol-options/choosing/).
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Choosing an option](/technology-options/choosing/).
 
 ### Verifier
 
-The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, stop the signature checklist and open long-lived roots instead. A blocked row still counts as the change record. See [Signatures](/algorithm-protocol-options/signatures/) and [Long-lived roots of trust](/algorithm-protocol-options/long-lived-roots/).
+The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, stop the signature checklist and open long-lived roots instead. A blocked row still counts as the change record. See [Signatures](/technology-options/signatures/) and [Long-lived roots of trust](/technology-options/long-lived-roots/).
 
 ## Sources
 
@@ -206,10 +206,10 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Homepage](/)
 - [Changing algorithms again](/migration-practices/changing-algorithms-again/)
 - [Curated references](/resources/curated-references/)
-- [Choosing an option](/algorithm-protocol-options/choosing/)
-- [Key establishment](/algorithm-protocol-options/key-establishment/)
-- [Signatures](/algorithm-protocol-options/signatures/)
-- [Long-lived roots of trust](/algorithm-protocol-options/long-lived-roots/)
+- [Choosing an option](/technology-options/choosing/)
+- [Key establishment](/technology-options/key-establishment/)
+- [Signatures](/technology-options/signatures/)
+- [Long-lived roots of trust](/technology-options/long-lived-roots/)
 - [Inventory the cryptography](/migration-practices/inventory/)
 - [Priority](/migration-practices/priority/)
 - [Diagnose](/migration-practices/diagnose/)

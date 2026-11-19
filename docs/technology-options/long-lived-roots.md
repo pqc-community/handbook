@@ -1,7 +1,7 @@
 ---
 title: Long-lived roots of trust
 sidebar_label: Long-lived roots
-displayed_sidebar: algorithmProtocolOptionsSidebar
+displayed_sidebar: technologyOptionsSidebar
 last_reviewed: 2026-11-10
 description: When a verifier cannot be updated later and the device will remain in use, record the procurement checklist and the authority for the root-of-trust work.
 ---
@@ -36,7 +36,7 @@ A decision-ready record states that the field device cannot update the verifier,
 
 ## Limits and next page
 
-General signature coordination stays on [Signatures](/algorithm-protocol-options/signatures/). The next page is [Release dates](/migration-practices/release-dates/).
+General signature coordination stays on [Signatures](/technology-options/signatures/). The next page is [Release dates](/migration-practices/release-dates/).
 
 ## Sources
 

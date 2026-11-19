@@ -52,6 +52,6 @@ Leave the post-quantum algorithm for a later record. The next record is the [pri
 ## Related pages
 
 - [Inventory](./inventory.md)
-- [Key establishment](../algorithm-protocol-options/key-establishment.md)
-- [Signatures](../algorithm-protocol-options/signatures.md)
+- [Key establishment](../technology-options/key-establishment.md)
+- [Signatures](../technology-options/signatures.md)
 - [Protect this first](../resources/protect-this-first.md)

@@ -45,5 +45,5 @@ Leave the algorithm construction for the supplier's answer. The next record is t
 
 - [Vendor response log](/resources/vendor-response-log/)
 - [Release dates](./release-dates.md)
-- [Choosing an option](../algorithm-protocol-options/choosing.md)
+- [Choosing an option](../technology-options/choosing.md)
 - [Changing algorithms again](./changing-algorithms-again.md)

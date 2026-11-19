@@ -9,7 +9,7 @@ Top navigation stays restrained. The logo and **PQC Handbook** title link to `/`
 1. **Learn the basics** (`learnSidebar`)
 2. **Standards** (`standardsSidebar`)
 3. **Migration practices** (`migrationPracticesSidebar`)
-4. **Algorithm and protocol options** (`algorithmProtocolOptionsSidebar`)
+4. **Technology options** (`technologyOptionsSidebar`)
 5. **Resources** (`resourcesSidebar`)
 6. **GitHub**
 
@@ -45,7 +45,7 @@ Homepage Situation Chooser (/)
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, directives, and external migration guides, grouped by their role in the transition.
   - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.
-  - **Algorithm and protocol options (`/algorithm-protocol-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
+  - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
   - **Resources (`/resources/`)** — Practical work-product templates, the worked clinic example, glossary, and curated references.
 
 ## Sitemap
@@ -136,11 +136,11 @@ Homepage Situation Chooser (/)
 /migration-practices/changing-algorithms-again/
 /migration-practices/subsequent-review/
 
-/algorithm-protocol-options/
-/algorithm-protocol-options/choosing/
-/algorithm-protocol-options/key-establishment/
-/algorithm-protocol-options/signatures/
-/algorithm-protocol-options/long-lived-roots/
+/technology-options/
+/technology-options/choosing/
+/technology-options/key-establishment/
+/technology-options/signatures/
+/technology-options/long-lived-roots/
 
 /resources/
 /resources/inventory-record/
@@ -168,5 +168,5 @@ Add new pages only when there is enough distinct, decision-useful material that 
 - **Reader entry paths for a distinct operational situation** belong in `/routes/` and should point into existing practice, option, and resource pages rather than duplicating procedures.
 - **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules and protocols*, *directives*, *migration guides*) rather than by issuing organisation.
 - **Lifecycle operating activities** belong in `/migration-practices/`.
-- **Mechanism and deployment trade-offs** belong in `/algorithm-protocol-options/`, organised around the cryptographic job being solved rather than one narrative page per algorithm.
+- **Mechanism and deployment trade-offs** belong in `/technology-options/`, organised around the cryptographic job being solved rather than one narrative page per algorithm.
 - **Reusable templates and reference tools** belong in `/resources/`; keep `/resources/` a focused practical toolkit rather than a catch-all archive.

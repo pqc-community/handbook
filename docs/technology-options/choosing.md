@@ -1,7 +1,7 @@
 ---
 title: Choosing a post-quantum option
 sidebar_label: Choosing an option
-displayed_sidebar: algorithmProtocolOptionsSidebar
+displayed_sidebar: technologyOptionsSidebar
 last_reviewed: 2026-11-10
 description: Branch on system type, lifetime, jurisdiction, updateability, supplier control, and compatibility, then record the authority before implementation.
 ---
@@ -32,7 +32,7 @@ Record which timeline and hybrid or post-quantum guidance applies where the orga
 
 ### Updateability
 
-Record whether configuration, trust stores, firmware verifiers, or supplier releases can change after initial deployment. If a signature verifier cannot be updated later in the field, route that row to [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) before treating it as a general signature migration.
+Record whether configuration, trust stores, firmware verifiers, or supplier releases can change after initial deployment. If a signature verifier cannot be updated later in the field, route that row to [Long-lived roots](/technology-options/long-lived-roots/) before treating it as a general signature migration.
 
 ### Supplier control
 

@@ -46,4 +46,4 @@ Leave the subsequent-review date for the next record. The next page is [Subseque
 - [Subsequent review](./subsequent-review.md)
 - [Implementation](./implementation.md)
 - [Inventory](./inventory.md)
-- [Choosing an option](../algorithm-protocol-options/choosing.md)
+- [Choosing an option](../technology-options/choosing.md)

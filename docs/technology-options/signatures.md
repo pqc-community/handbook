@@ -1,7 +1,7 @@
 ---
 title: Post-quantum signatures
 sidebar_label: Signatures
-displayed_sidebar: algorithmProtocolOptionsSidebar
+displayed_sidebar: technologyOptionsSidebar
 last_reviewed: 2026-11-10
 description: A many-party migration coordinated across signers, verifiers, PKI, trust stores, clients, firmware, and relying parties.
 ---
@@ -14,7 +14,7 @@ The priority record marks signatures, or a verifier that can still be updated, a
 
 1. List the signers, verifiers, the PKI (the public-key infrastructure that issues and checks certificates), trust stores, clients, firmware, and relying parties that depend on the current signature algorithm or trust anchor.
 2. Write the dependency and test checklist: who moves in which order, what interoperability tests run before cutover, and what rollback looks like if a party cannot move on the same date.
-3. If the verifier cannot be updated later, stop this checklist and open [Long-lived roots](/algorithm-protocol-options/long-lived-roots/) instead.
+3. If the verifier cannot be updated later, stop this checklist and open [Long-lived roots](/technology-options/long-lived-roots/) instead.
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, notes that while digital signatures are not vulnerable to harvest-now, decrypt-later, planning remains urgent because signature transitions take longer and require coordination across relying parties and PKI; an authentication system remains secure until the signature algorithm can be broken at the time of verification. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA, where full parameter tables are published.
 
@@ -30,7 +30,7 @@ A decision-ready rollout checklist for the clinic's field-device firmware covers
 
 ## Limits and next page
 
-Recorded-traffic confidentiality stays on [Key establishment](/algorithm-protocol-options/key-establishment/). The next page is [Long-lived roots](/algorithm-protocol-options/long-lived-roots/).
+Recorded-traffic confidentiality stays on [Key establishment](/technology-options/key-establishment/). The next page is [Long-lived roots](/technology-options/long-lived-roots/).
 
 ## Sources
 

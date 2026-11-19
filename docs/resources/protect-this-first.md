@@ -42,7 +42,7 @@ A written commitment from the platform vendor is logged on the [vendor response 
 
 ## Option and authority
 
-Before deployment, the clinic records the chosen option and supporting standard using [Choosing an option](/algorithm-protocol-options/choosing/). For the health-records key-establishment channel, the supplier's ML-KEM-768 release aligns with the default key-establishment recommendation in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026), which is cited as the technical authority.
+Before deployment, the clinic records the chosen option and supporting standard using [Choosing an option](/technology-options/choosing/). For the health-records key-establishment channel, the supplier's ML-KEM-768 release aligns with the default key-establishment recommendation in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026), which is cited as the technical authority.
 
 ## Change record and deployed-state check
 
@@ -84,9 +84,9 @@ The clinic initially considered running a bespoke migration project for office l
 - [Priority record](/resources/priority-record/)
 - [Vendor plan](/migration-practices/vendor-plan/)
 - [Vendor response log](/resources/vendor-response-log/)
-- [Choosing an option](/algorithm-protocol-options/choosing/)
-- [Key establishment](/algorithm-protocol-options/key-establishment/)
-- [Long-lived roots](/algorithm-protocol-options/long-lived-roots/)
+- [Choosing an option](/technology-options/choosing/)
+- [Key establishment](/technology-options/key-establishment/)
+- [Long-lived roots](/technology-options/long-lived-roots/)
 - [Implementation](/migration-practices/implementation/)
 - [Change record](/resources/change-record/)
 - [Subsequent review](/migration-practices/subsequent-review/)

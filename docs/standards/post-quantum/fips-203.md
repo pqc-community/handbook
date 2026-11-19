@@ -30,5 +30,5 @@ FIPS 203 specifies the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
 
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [NIST SP 800-227](/standards/post-quantum/sp-800-227/)
-- [Key establishment](/algorithm-protocol-options/key-establishment/)
+- [Key establishment](/technology-options/key-establishment/)
 - [Glossary](/resources/glossary/)
