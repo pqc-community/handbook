@@ -49,5 +49,9 @@
   },
   "overrides": {
     "mermaid": "11.17.2"
+  },
+  "allowScripts": {
+    "@swc/core@1.16.22": true,
+    "core-js": false
   }
 }
