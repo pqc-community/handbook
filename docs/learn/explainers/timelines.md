@@ -3,7 +3,7 @@ title: Whose date applies
 sidebar_label: Whose date applies
 description: Which migration date belongs to which authority, and which audience that date is for.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 Which migration date belongs to which authority, and which audience is that date for?
@@ -20,7 +20,7 @@ Identify where the organisation operates and where it sells. Record one row of t
 
 | authority | audience | milestone | status | asset scope | last checked |
 | --- | --- | --- | --- | --- | --- |
-| UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026 | Primarily technical decision-makers and risk owners of large organisations, operators of critical national infrastructure, and companies with bespoke IT. Commodity IT (standard browsers, operating systems, and mobile devices) follows the supplier update; custom or specialised software follows the same timetable as larger organisations. | By 2028, define migration goals, carry out discovery, and build an initial plan (including telling suppliers what you need, and migrating long-lived hardware roots of trust). By 2031, carry out the early, highest-priority migration activities and refine the roadmap. By 2035, complete migration of systems, services, and products. | recommendation | Systems, services, and products in scope of the guidance; commodity IT on the supplier-update path | 10 November 2026 |
+| UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025 | Primarily technical decision-makers and risk owners of large organisations, operators of critical national infrastructure, and companies with bespoke IT. Commodity IT (standard browsers, operating systems, and mobile devices) follows the supplier update; custom or specialised software follows the same timetable as larger organisations. | By 2028, define migration goals, carry out discovery, and build an initial plan (including telling suppliers what you need, and migrating long-lived hardware roots of trust). By 2031, carry out the early, highest-priority migration activities and refine the roadmap. By 2035, complete migration of systems, services, and products. | recommendation | Systems, services, and products in scope of the guidance; commodity IT on the supplier-update path | 19 November 2026 |
 | EU NIS Cooperation Group, Coordinated Implementation Roadmap, version 1.1, 11 June 2025 | Member States | By 31 December 2026, initial national PQC transition roadmaps have been established, and planning and pilots for high- and medium-risk use cases have been initiated. By 31 December 2030, the PQC transition for high-risk use cases has been completed. By 31 December 2035, the transition for medium-risk use cases has been completed, and the transition for low-risk use cases has been completed as much as feasible. High-risk, where confidentiality is protected with public-key cryptography, includes a compromise after 10 years or more that would still cause significant damage. | government plan | High-, medium-, and low-risk use cases under the roadmap's public-key confidentiality test | 10 November 2026 |
 | NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026 (standards timeline) | Users of NIST standards | Deprecation of quantum-vulnerable public-key cryptography after 2030 and disallowance after 2035 under NIST standards and guidelines. | standard | Implementations and products governed by NIST standards and guidelines | 10 November 2026 |
 | NIST IR 8547, October 2026 (US federal direction in the same report) | US federal high-value assets, high-impact systems, and systems that protect data expected to remain mission-sensitive in 2030 | Key establishment by 31 December 2030; digital signatures by 31 December 2031; TLS 1.3 no later than 2 January 2030. | government plan | Named federal asset classes and mission-sensitive data held through 2030 | 10 November 2026 |
@@ -39,7 +39,7 @@ The timeline adopted, the source and date, and the assets placed on the nearer m
 
 ## Example
 
-An organisation that sells into the United Kingdom and holds health records records the UK NCSC dates for that market and does not drop a second timeline that applies where it operates. The health records are placed on the nearer milestone because of a long confidentiality period.
+A manufacturer that operates in more than one jurisdiction records each timeline that applies to its product-design archive, including the UK NCSC dates where relevant. It keeps the source audience with each date and uses the archive's 15-year confidentiality requirement to assess priority without treating one jurisdiction's milestone as universal.
 
 Leave asset priority for the [priority page](/migration-practices/priority/).
 
@@ -47,7 +47,7 @@ That is the same distinction as [Timelines](/learn/timelines/). From here, read 
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
 - NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - ASD, Planning for post-quantum cryptography. [Planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)

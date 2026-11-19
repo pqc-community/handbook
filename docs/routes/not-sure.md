@@ -3,7 +3,7 @@ title: Not sure which route applies
 sidebar_label: Not sure
 description: Questions that choose a route, or name the person who will choose.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 Use these three questions when you are not sure which route applies.
@@ -22,7 +22,7 @@ The primary next page is [Diagnose](/migration-practices/diagnose/).
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages

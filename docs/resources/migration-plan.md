@@ -3,7 +3,7 @@ title: One-page migration plan
 sidebar_label: Migration plan
 description: One row per asset with an owner, an applicable timeline, and a subsequent-review date.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When to use it
@@ -20,7 +20,9 @@ Record `unknown` in any cell you cannot verify yet. List every dependency inside
 
 | asset | owner | why it is included | applicable timeline | authority | milestone | dependency | next action | subsequent review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Health records on the vendor system | the clinic operations lead | long data confidentiality period | end of 2030 | EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025 | end of 2030 | supplier release named in the letter of 14 August 2026 | signatures follow-up | 2026-12-01 |
+| Product-design archive in supplier-hosted workspace | product engineering lead | designs must remain confidential for 15 years | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | complete highest-priority migration activities by 2031; complete migration by 2035 | fictional supplier's Workspace 4.2 release | complete production interoperability checks; track signature support separately | 2026-12-01 |
+| Firmware verifier for product sensor | product security lead | verifier cannot accept a new trust anchor after shipment | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | include the long-lived hardware root in the initial plan by 2028; plan highest-priority work by 2031 | boot ROM and product design freeze | obtain a supported signature and trust-root option before production design freeze | 2026-12-01 |
+| Office laptops | IT lead | commodity platforms receive supplier updates | UK NCSC target dates; supplier-update path | UK NCSC, published and reviewed 20 March 2025 | track supplier delivery and include the fleet in the 2035 completion view | browser and operating-system suppliers | confirm support status and record installed versions; route exceptions for review | 2026-12-01 |
 
 ## Blank template
 
@@ -33,8 +35,7 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
-- ASD, Planning for post-quantum cryptography. [Planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

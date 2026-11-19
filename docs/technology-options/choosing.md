@@ -2,7 +2,7 @@
 title: Choosing a post-quantum option
 sidebar_label: Choosing an option
 displayed_sidebar: technologyOptionsSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: Branch on system type, lifetime, jurisdiction, updateability, supplier control, and compatibility, then record the authority before implementation.
 ---
 
@@ -18,7 +18,7 @@ Work through these branches in order. None of them chooses the option for you; e
 
 ### System type
 
-Classify whether the system is commodity information technology, custom software, embedded cryptography, or a mixed estate. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, treat standard browsers, operating systems, and mobile devices as a supplier-update path where migration arrives through vendor releases; custom software does not sit on that path by default.
+Classify whether the system is commodity information technology, custom software, embedded cryptography, or a mixed estate. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), published and reviewed 20 March 2025, treat standard browsers, operating systems, and mobile devices as a supplier-update path where migration arrives through vendor releases; custom software does not sit on that path by default.
 
 ### Lifetime
 
@@ -36,7 +36,7 @@ Record whether configuration, trust stores, firmware verifiers, or supplier rele
 
 ### Supplier control
 
-Record who controls the software version, protocol settings, and migration date. Where a supplier delivers the update on commodity platforms (as described in the UK NCSC timelines, modified 3 August 2026), track supplier delivery; where your organisation configures the channel directly, record the chosen option and test plan on your change record.
+Record who controls the software version, protocol settings, and migration date. Where a supplier delivers the update on commodity platforms (as described in the UK NCSC timelines, published and reviewed 20 March 2025), track supplier delivery; where your organisation configures the channel directly, record the chosen option and test plan on your change record.
 
 ### Compatibility
 
@@ -62,7 +62,7 @@ The option, the authority, and the date of that authority, written on the system
 
 An insufficient record is "Hybrid is required for everyone."
 
-A decision-ready record states that a high-risk confidentiality system follows the EU NIS Cooperation Group roadmap hybrid guidance dated 11 June 2025, that commodity laptops follow the UK NCSC timelines supplier-update path modified 3 August 2026, and that you opened the implementation check before cutover.
+A decision-ready record states that a high-risk confidentiality system follows the EU NIS Cooperation Group roadmap hybrid guidance dated 11 June 2025, that commodity laptops follow the UK NCSC timelines supplier-update path published and reviewed 20 March 2025, and that you opened the implementation check before cutover.
 
 ## Limits and next page
 
@@ -73,7 +73,7 @@ Leave protocol configuration for the implementation check. The next page is the 
 - EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 - NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - ETSI, TR 103 619. [Report](https://www.etsi.org/deliver/etsi_tr/103600_103699/103619/01.01.01_60/tr_103619v010101p.pdf)
 
 ## Related pages

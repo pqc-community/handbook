@@ -2,7 +2,7 @@
 title: What to migrate first
 sidebar_label: Priority
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: Order a post-quantum migration with a qualitative rubric, and split key establishment from signatures and from non-updatable verifiers.
 ---
 
@@ -32,11 +32,11 @@ The priority record.
 
 An insufficient record is "We will migrate all cryptography in one programme."
 
-A decision-ready record places the clinic health records first for key establishment because the data confidentiality period extends well past 2030, places the clinic firmware signature check first for a non-updatable verifier because the field devices cannot accept a new trust root later, and leaves commodity laptops on the supplier-update path.
+A decision-ready record places the manufacturer's product-design archive first for key establishment because its own retention policy requires 15 years of confidentiality, places the product sensor first for a non-updatable verifier because its boot-ROM trust anchor cannot change after shipment, and leaves office laptops on the supplier-update path.
 
-One tied case: the clinic's health records and its firmware check are both first, for different jobs (`key establishment` and `non-updatable verifier`).
+One tied case: the design archive and product sensor are both first, for different jobs (`key establishment` and `non-updatable verifier`).
 
-A short-lived channel with a confidentiality period under one year comes after the health records for key establishment.
+A short-lived channel with a confidentiality period under one year comes after the design archive for key establishment.
 
 One uncertain case: a row whose algorithm confidence is `unknown` stays on the priority list with an owner and is not dropped.
 

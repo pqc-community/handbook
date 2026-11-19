@@ -2,7 +2,7 @@
 title: Inventory the cryptography
 sidebar_label: Inventory
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: List public-key cryptography across the estate, including embedded and supplier-controlled components a scanner cannot see, before claiming systems have migrated.
 ---
 
@@ -30,7 +30,7 @@ The inventory record.
 
 An insufficient record is "Our TLS scan found no issues."
 
-A decision-ready record lists the clinic health-record system on the vendor platform, records confidence `unknown` for the key-establishment algorithm, names an asset owner, and sets a subsequent-review date.
+A decision-ready record lists the manufacturer's product-design archive and pre-production sensor, marks unverified algorithms and the sensor's boot-ROM trust anchor as `unknown`, names each asset owner, and sets a subsequent-review date.
 
 ## Limits and next page
 

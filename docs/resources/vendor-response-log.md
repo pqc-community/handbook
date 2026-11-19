@@ -3,7 +3,7 @@ title: Vendor response log
 sidebar_label: Vendor response log
 description: One row per supplier answer, with judgement, follow-up, and the decision it supports.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When to use it
@@ -47,7 +47,7 @@ Record `unknown` in any cell you cannot verify yet. Set `judgement` to `complete
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Clinic software supplier | named in the supplier letter | What key-establishment construction and release date apply to the health-records platform? | The letter names the product and version, names ML-KEM-768, names the release date, and states that signatures are not in that release. | 2026-08-14 | supplier letter | complete | none | record the key-establishment date and open a signatures follow-up |
+| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment construction and release date apply to the hosted archive, and does the release include signatures? | The letter says Workspace 4.2 is scheduled for 2026-10-01, uses ML-KEM-768 for the hosted key-establishment service, and does not include post-quantum signing changes. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete for key establishment | written signature-support plan due 2026-12-01 | pilot Workspace 4.2 for archive key establishment; track signatures separately |
 
 ## Blank template
 

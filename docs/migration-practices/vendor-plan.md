@@ -2,7 +2,7 @@
 title: The vendor's migration plan
 sidebar_label: Vendor plan
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: How to record a complete, vague, missing, or concerning supplier answer, and when to escalate to procurement.
 ---
 
@@ -18,7 +18,7 @@ You have asked a supplier for a written post-quantum migration answer, or you ar
 4. For a `missing` answer, record `missing` with a firm follow-up date; if no commitment arrives by that date, procurement logs the gap and the system is not counted as migrated.
 5. For a `concerning` answer, escalate to procurement and the contract owner.
 
-The CISA, NSA, and NIST [Quantum-Readiness fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf) (17 August 2023, United States) recommends requesting vendor quantum-readiness roadmaps — including testing and integration timelines — and updating contract language so new purchases deliver post-quantum support and existing products have an upgrade path. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026, United Kingdom) note that while commodity platform providers deliver upgrades through routine refreshes, custom or mixed environments require per-system decisions.
+The CISA, NSA, and NIST [Quantum-Readiness fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf) (17 August 2023, United States) recommends requesting vendor quantum-readiness roadmaps — including testing and integration timelines — and updating contract language so new purchases deliver post-quantum support and existing products have an upgrade path. The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (published and reviewed 20 March 2025, United Kingdom) note that while commodity platform providers deliver upgrades through routine refreshes, custom or mixed environments require per-system decisions.
 
 ## Keep this evidence
 
@@ -39,7 +39,7 @@ Leave the algorithm construction for the supplier's answer. The next record is t
 ## Sources
 
 - CISA, NSA, and NIST, Quantum-Readiness fact sheet, as of 17 August 2023. [Fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

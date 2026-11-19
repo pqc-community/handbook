@@ -3,7 +3,7 @@ title: First-pass inventory record
 sidebar_label: Inventory record
 description: A one-row template for the first pass over systems that use public-key cryptography.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When to use it
@@ -22,7 +22,7 @@ List every dependency inside the `dependencies` cell separated by a semicolon ra
 
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Health records on the vendor system | the clinic operations lead | unknown | unknown | the vendor | more than 10 years | unknown | unknown | unknown | unknown | unknown |
+| Product-design archive in supplier-hosted workspace | product engineering lead | unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.1 (fictional) | unknown | unknown | unknown |
 
 ## Blank template
 

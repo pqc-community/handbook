@@ -2,7 +2,7 @@
 title: Post-quantum migration resources
 sidebar_label: Resources
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: Work products and reference pages grouped by route, with who uses each one and the record it produces.
 ---
 
@@ -53,7 +53,7 @@ This route's output is a named situation route or a list of unknowns and the per
 
 These pages sit on the resources sidebar for every reader.
 
-- [Protect this first](/resources/protect-this-first/) — **Reader:** anyone who wants an illustration across the records. **Output:** a walkthrough of one clinic's rows, not a template for a real organisation.
+- [Protect this first](/resources/protect-this-first/) — **Reader:** anyone who wants an illustration across selected records. **Output:** a walkthrough of one fictional UK manufacturer's rows, not a template or sector guide for a real organisation.
 - [Glossary](/resources/glossary/) — **Reader:** someone encountering a short form in a lesson or practice page. **Output:** plain-language definitions linked to the page that uses each term.
 - [Curated references](/resources/curated-references/) — **Reader:** someone choosing a longer authority document. **Output:** a grouped index of cited standards, directives, and migration guides.
 

@@ -3,7 +3,7 @@ title: Subsequent review log
 sidebar_label: Review log
 description: A dated line when a record is opened again and what stayed unresolved.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When to use it
@@ -20,7 +20,7 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 | date | what was reviewed | unresolved items | owner | next review |
 | --- | --- | --- | --- | --- |
-| unknown | priority record and vendor response log for health records | blocked firmware option | the clinic operations lead | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence, supplier response, and product-sensor priority | supported firmware-signing option and supplier plan; archive signature-support date | product security lead | 2026-12-01 |
 
 ## Blank template
 
@@ -33,7 +33,7 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

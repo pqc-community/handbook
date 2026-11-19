@@ -3,7 +3,7 @@ title: Evidence record
 sidebar_label: Evidence record
 description: Links a claim about the migration to the record and source that support it.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When to use it
@@ -20,7 +20,7 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 | claim | record | source | date | owner | subsequent review |
 | --- | --- | --- | --- | --- | --- |
-| The health-records key-establishment pilot passed | change record for health records | supplier letter of 14 August 2026; NIST IR 8547, October 2026 | 2026-08-14 | the clinic operations lead | 2026-12-01 |
+| The Workspace 4.2 staging pilot passed; production rollout remains pending | change record for the product-design archive | fictional supplier letter, 2026-09-04; FIPS 203, 13 August 2024 | 2026-10-21 | product engineering lead | 2026-12-01 |
 
 ## Blank template
 
@@ -33,7 +33,7 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, published 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
 
 ## Related pages
 

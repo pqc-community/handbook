@@ -2,7 +2,7 @@
 title: Post-quantum product release dates
 sidebar_label: Release dates
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: Record vendor release, testing, production deployment, and end of support as four dates for one asset.
 ---
 
@@ -19,7 +19,7 @@ Track four separate dates for each asset:
 3. **Production deployment** — when the post-quantum construction goes live in your environment.
 4. **End of support** — when the supplier stops security fixes for the release line you currently run.
 
-The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026, United Kingdom) note that downstream milestones depend on supplier update availability, highlighting long-lived hardware roots of trust in the 2028 planning phase. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, United States) likewise advises that devices unable to update their signature verification in the field — if expected to remain in service once a cryptanalytically relevant quantum computer exists — should be designed upfront to verify quantum-resistant code signatures.
+The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (published and reviewed 20 March 2025, United Kingdom) note that downstream milestones depend on supplier update availability, highlighting long-lived hardware roots of trust in the 2028 planning phase. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, United States) likewise advises that devices unable to update their signature verification in the field — if expected to remain in service once a cryptanalytically relevant quantum computer exists — should be designed upfront to verify quantum-resistant code signatures.
 
 ## Keep this evidence
 
@@ -37,7 +37,7 @@ Leave the supplier answer for the vendor plan. The next page is [Vendor plan](/m
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages

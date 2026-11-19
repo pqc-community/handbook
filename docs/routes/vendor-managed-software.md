@@ -3,7 +3,7 @@ title: Mostly standard, vendor-managed software
 sidebar_label: Vendor-managed software
 description: For an organisation whose software is updated by its suppliers, with a check for the cases that need a different route.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 This route is for an organisation that relies on standard browsers, operating systems, and mobile devices.
@@ -25,7 +25,7 @@ For an illustration, not a real organisation, see [Protect this first](/resource
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

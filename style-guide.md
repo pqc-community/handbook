@@ -52,7 +52,7 @@ Structure pages around the reader's job rather than forcing every topic into ide
 | **Standards & guidance summaries** (`/standards/`) | Provide a compact metadata block (authority, publication, status, official link), a concise summary of what the document covers, and how it fits into a post-quantum transition. |
 | **Reference indexes & glossary** (`index.md`, `glossary.md`, `curated-references.md`) | Route readers cleanly without duplicating full guides. Keep glossary entries alphabetical and concise, naming the standard directly in prose where a formal definition is cited. |
 
-Where pages use a worked organisational example, align with the shared fictional clinic in [Protect this first](./docs/resources/protect-this-first.md) and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
+Where pages use a worked organisational example, align with the shared fictional UK manufacturer in [Protect this first](./docs/resources/protect-this-first.md), keep its invented facts and event dates explicit, and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
 
 ## 5. Sourcing and Citations
 

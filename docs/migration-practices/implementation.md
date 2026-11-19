@@ -3,7 +3,7 @@ title: Plan, test, and verify one change
 sidebar_label: Implementation
 description: Pilot, test, roll out, roll back, and verify one system after an option has been chosen.
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When this applies
@@ -29,9 +29,9 @@ The [change record](/resources/change-record/).
 
 An insufficient record is "We enabled PQC."
 
-A decision-ready record for health records on the vendor system names system health records on the vendor system, change Adopt the supplier's key-establishment construction, option ML-KEM-768, authority NIST IR 8547, October 2026, pilot scope one clinic site, tests key establishment on the health-records channel, rollback trigger clients cannot connect after the change, who can roll back the clinic operations lead, deployed-state check the deployed configuration matches the supplier letter, result Pilot passed, and date 2026-08-14.
+A decision-ready record for the manufacturer's product-design archive names ML-KEM-768 as the supplier's option, cites FIPS 203 as the technical standard, records a staging pilot that tests authorised access to sample files, defines failed file retrieval as the rollback trigger, checks the supplier's deployed release record, and records the pilot result and date. It does not claim production migration is complete.
 
-A blocked record is the clinic field device firmware signature check row: option and construction `unknown`, result `unknown`, with implementation blocked while the option is unknown.
+A blocked record is the product sensor's firmware verifier row: the signature and trust-root option are `unknown`, the result is `unknown`, and implementation remains blocked until the manufacturer has a supported option and can test it before design freeze.
 
 ## Limits and next page
 

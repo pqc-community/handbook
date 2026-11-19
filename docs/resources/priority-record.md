@@ -3,7 +3,7 @@ title: Priority record
 sidebar_label: Priority record
 description: One row per asset that records why it is first and when it will be reviewed again.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 ## When to use it
@@ -22,7 +22,9 @@ List every dependency inside the `dependencies` cell separated by a semicolon ra
 
 | asset | confidentiality period | job | impact | lead time | dependencies | supplier readiness | decision | reason | source | subsequent review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Health records on the vendor system | more than 10 years | key establishment | unknown | unknown | unknown | unknown | first for key establishment | confidentiality period longer than 10 years | EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025 | 2026-12-01 |
+| Product-design archive in supplier-hosted workspace | 15 years (company policy) | key establishment | unknown | unknown | unknown | planned supplier release | first for key establishment | the company's design files must remain confidential for 15 years | manufacturer retention policy (fictional) | 2026-12-01 |
+| Firmware verifier for product sensor | unknown | non-updatable verifier | unknown | long product life; exact period unknown | boot ROM trust anchor | unknown | first for non-updatable verifier | the trust anchor cannot be changed after shipment | UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
+| Office laptops | unknown | key establishment | unknown | routine refresh | browser and operating-system suppliers | supplier-update path | follow supplier updates; no bespoke pilot | no unsupported product or other exception is identified | UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
 
 ## Blank template
 
@@ -35,8 +37,7 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
-- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

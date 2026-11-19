@@ -94,7 +94,7 @@ export default function Home(): ReactNode {
             </Link>
           </div>
         </section>
-        <section className={styles.clinicPreview}>
+        <section className={styles.workedExamplePreview}>
           <div className="container">
             <table className={styles.priorityTable}>
               <thead>
@@ -106,14 +106,14 @@ export default function Home(): ReactNode {
               </thead>
               <tbody>
                 <tr>
-                  <td>Health records on the vendor system</td>
-                  <td>Confidentiality still matters after 10 years</td>
+                  <td>Product-design archive</td>
+                  <td>Company policy requires 15 years of confidentiality</td>
                   <td>Priority record</td>
                 </tr>
               </tbody>
             </table>
             <p>
-              <Link to="/resources/protect-this-first/">The clinic example</Link>
+              <Link to="/resources/protect-this-first/">The manufacturer example</Link>
             </p>
           </div>
         </section>

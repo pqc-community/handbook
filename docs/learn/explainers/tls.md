@@ -3,7 +3,7 @@ title: What changes in a TLS connection
 sidebar_label: What changes in a TLS connection
 description: Where the shared secret is established in a TLS connection, and how that differs from checking who the server is.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 Where is the shared secret established in a TLS connection, and how is that different from checking who the server is?
@@ -29,7 +29,7 @@ Across all three deployment patterns, server authentication remains a separate s
 | Hybrid | A classical key establishment and a post-quantum key establishment used together | A separate signature check |
 | Post-quantum-only | Post-quantum key establishment alone | A separate signature check |
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) treats hybrid constructions as a temporary hedge during transition. Similarly, the [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (modified 3 August 2026) note that popular browsers already agree post-quantum keys using a hybrid of classical key exchange and ML-KEM, while an exact industry-wide profile was still being finalised at publication.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) treats hybrid constructions as a temporary hedge during transition. Similarly, the [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (published and reviewed 20 March 2025) note that popular browsers already agree post-quantum keys using a hybrid of classical key exchange and ML-KEM, while an exact industry-wide profile was still being finalised at publication.
 
 The same split holds for a classical exchange, a hybrid exchange, and a post-quantum-only exchange.
 
@@ -38,4 +38,4 @@ That is the same distinction as [In real systems](/learn/in-real-systems/). From
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK NCSC, Post-quantum cryptography migration timelines, modified 3 August 2026. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Post-quantum cryptography migration timelines, published and reviewed 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)

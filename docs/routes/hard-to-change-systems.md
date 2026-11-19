@@ -3,7 +3,7 @@ title: Products or systems that may be hard to change
 sidebar_label: Hard to change
 description: The route for a product whose verifier, firmware, or release cycle cannot be changed quickly.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 ---
 
 This route is for a product whose verifier, firmware, or release cycle cannot be changed quickly.
@@ -30,7 +30,7 @@ For an illustration, not a real organisation, see [Protect this first](/resource
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

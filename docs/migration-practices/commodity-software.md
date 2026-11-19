@@ -2,7 +2,7 @@
 title: Keep commodity software updated
 sidebar_label: Commodity software
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: Confirm supplier updates on standard browsers, operating systems, and mobile devices, and use the hard-to-change route when an exception applies.
 ---
 
@@ -16,7 +16,7 @@ You are on the vendor-managed route and no exception has moved you to another ro
 2. If a product is out of support or its supplier has no written migration plan, move it to the [hard-to-change systems route](/routes/hard-to-change-systems/).
 3. Re-check for exceptions: long-lived confidential data belongs on the [long-lived confidentiality route](/routes/long-lived-confidentiality/), and bespoke systems or devices whose signature check cannot be updated later belong on the [hard-to-change systems route](/routes/hard-to-change-systems/).
 
-The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), modified 3 August 2026, note that migration for standard browsers, operating systems, and mobile devices happens as vendors update those platforms.
+The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines), published and reviewed 20 March 2025, note that migration for standard browsers, operating systems, and mobile devices happens as vendors update those platforms.
 
 ## Keep this evidence
 
@@ -26,7 +26,7 @@ The inventory row showing installed version and date checked, or a written note 
 
 An insufficient record is "The platform will handle it."
 
-A decision-ready record lists the clinic's office laptops on the supplier-update path, records browser and operating-system versions checked on 1 November 2026, and notes that while health records remain on the long-lived confidentiality route, no exception applies to the laptops themselves.
+A decision-ready record lists the manufacturer's supported office laptops on the supplier-update path, records the browser and operating-system versions checked on 10 November 2026, and notes that the product-design archive and firmware verifier are tracked separately because their confidentiality period and update constraints differ.
 
 ## Limits and next page
 
@@ -34,7 +34,7 @@ Record applicable national milestones on [Timelines](/learn/timelines/). The nex
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

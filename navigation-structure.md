@@ -46,7 +46,7 @@ Homepage Situation Chooser (/)
   - **Standards (`/standards/`)** — Reference summaries of standards, directives, and external migration guides, grouped by their role in the transition.
   - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.
   - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
-  - **Resources (`/resources/`)** — Practical work-product templates, the worked clinic example, glossary, and curated references.
+  - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
 
 ## Sitemap
 

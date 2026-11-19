@@ -2,7 +2,7 @@
 title: Post-quantum signatures
 sidebar_label: Signatures
 displayed_sidebar: technologyOptionsSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: A many-party migration coordinated across signers, verifiers, PKI, trust stores, clients, firmware, and relying parties.
 ---
 
@@ -26,7 +26,7 @@ The dependency and test checklist, with owners and target dates for each party.
 
 An insufficient record is "Signatures can wait until a quantum computer exists."
 
-A decision-ready rollout checklist for the clinic's field-device firmware covers the firmware build pipeline, the trust anchor in field devices, the workshop test harness, and the operations lead who signs release manifests — recording which party moves first, the pilot device result, and the date the spare workshop device is due to pass verification before deployment.
+A decision-ready checklist for the manufacturer's product sensor names the firmware build pipeline, the boot-ROM trust anchor, the pre-production test unit, and the product security lead. It records that the verifier cannot change after shipment and leaves the replacement signature and pilot result `unknown` until the supplier and product team confirm a supported option.
 
 ## Limits and next page
 

@@ -2,15 +2,15 @@
 title: "UK NCSC: Timelines for Migration to Post-Quantum Cryptography"
 sidebar_label: UK NCSC guidance
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
+last_reviewed: 2026-11-19
 description: UK National Cyber Security Centre guidance on scoping PQC migration for critical infrastructure, bespoke IT, and supplier-updated commodity IT.
 ---
 
 | Field | Detail |
 | --- | --- |
 | Authority | UK National Cyber Security Centre (NCSC) |
-| Publication | Timelines for migration to post-quantum cryptography (modified 3 August 2026) |
-| Status | Current guidance (last checked 10 November 2026) |
+| Publication | Timelines for migration to post-quantum cryptography (published and reviewed 20 March 2025) |
+| Status | Current guidance (last checked 19 November 2026) |
 | Official source | [UK NCSC guidance page (HTML)](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) |
 
 ## What it covers
@@ -23,7 +23,7 @@ The UK NCSC guidance frames how large organisations, operators of critical natio
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, modified 3 August 2026. [UK NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [UK NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 
