@@ -10,9 +10,9 @@ description: May 2022 US National Security Memorandum establishing the overarchi
 National Security Memorandum 10 sets US government policy both to sustain quantum-computing research and to prepare federal information systems for the cryptographic risk posed by a cryptanalytically relevant quantum computer, launching federal cryptographic inventory, agency coordination, and industry outreach through NIST's NCCoE project.
 
 :::info[Official texts]
-
-- [NSM-10: National Security Memorandum on Promoting US Leadership in Quantum Computing While Mitigating Risks to Vulnerable Cryptographic Systems](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/)
-
+- [White House archived full text (HTML)](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/)
+- [GovInfo full text (HTML)](https://www.govinfo.gov/content/pkg/DCPD-202200355/html/DCPD-202200355.htm)
+- [GovInfo publication record (HTML)](https://www.govinfo.gov/app/details/DCPD-202200355)
 :::
 
 ## Timeline of key dates
@@ -23,12 +23,12 @@ National Security Memorandum 10 sets US government policy both to sustain quantu
 
 ## Relationship with other standards
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NSM-10 as having established the overarching completion horizon for the US federal migration to post-quantum cryptography, while noting that subsequent directives — [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) — direct federal agencies to migrate their most sensitive systems earlier on a risk-prioritised basis. For audience scope, see [Timelines](/learn/timelines/).
+[NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NSM-10 as having established the overarching completion horizon for the US federal migration to post-quantum cryptography, while noting that subsequent directives — [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) — direct federal agencies to migrate their most sensitive systems earlier on a risk-prioritised basis. For audience scope, see [Timelines](/learn/timelines/).
 
 ## Sources
 
 - The White House, National Security Memorandum on Promoting United States Leadership in Quantum Computing While Mitigating Risks to Vulnerable Cryptographic Systems, NSM-10, 4 May 2022. [NSM-10](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/)
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 

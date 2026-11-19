@@ -10,8 +10,8 @@ description: Australian Signals Directorate planning publication on preparing or
 ASD's planning publication introduces practical preparation steps for Australian organisations — identifying where public-key cryptography protects long-lived sensitive information, engaging technology vendors, avoiding untested or proprietary cryptography, and building cryptographic agility into procurement and system refreshes.
 
 :::info[Official texts]
-
-- [ASD: Planning for Post-Quantum Cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
+- [ASD publication page (HTML)](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
+- [Full guidance (September 2025) (PDF)](https://www.cyber.gov.au/sites/default/files/2026-10/Planning%20for%20post-quantum%20cryptography%20%28September%202025%29.pdf)
 
 :::
 

@@ -124,6 +124,25 @@ function findStandardsLayoutViolations(standardsDir) {
   });
 }
 
+function findPdfLinkLabelViolations(standardsDir) {
+  return walkMarkdown(standardsDir).flatMap((file) => {
+    const relative = path.relative(standardsDir, file).split(path.sep).join('/');
+    const content = fs.readFileSync(file, 'utf8');
+    const problems = [];
+    const markdownLink = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+    const isPdfUrl = (url) =>
+      /\.pdf(?:[?#]|$)/i.test(url) ||
+      /^https:\/\/doi\.org\/10\.6028\/NIST\.(?:FIPS|SP|IR)\./i.test(url);
+
+    for (const [, label, url] of content.matchAll(markdownLink)) {
+      if (isPdfUrl(url) && !/\(PDF\)/i.test(label)) {
+        problems.push(`${relative}: PDF link text must include (PDF)`);
+      }
+    }
+    return problems;
+  });
+}
+
 const validSummary = `
 ## What it covers
 
@@ -204,6 +223,30 @@ test('keeps authority, publication, and status metadata out of the official text
   assert.match(problems[0], /repeats document metadata/);
 });
 
+test('requires PDF links to identify the format in their link text', () => {
+  const problems = withRoot(
+    {
+      'fips/labelled.md': validSummary.replace(
+        '[official publication](https://example.org/standard)',
+        '[official publication (PDF)](https://example.org/standard.pdf)',
+      ),
+      'fips/unlabelled.md': validSummary.replace(
+        '[official publication](https://example.org/standard)',
+        '[read the standard](https://example.org/standard.pdf)',
+      ),
+      'fips/nist-doi.md': validSummary.replace(
+        '[official publication](https://example.org/standard)',
+        '[FIPS 999](https://doi.org/10.6028/NIST.FIPS.999)',
+      ),
+    },
+    (root) => findPdfLinkLabelViolations(path.join(root, 'fips')),
+  );
+  assert.deepEqual(problems, [
+    'nist-doi.md: PDF link text must include (PDF)',
+    'unlabelled.md: PDF link text must include (PDF)',
+  ]);
+});
+
 test('all non-index standards pages follow the preferred structure', () => {
   const standardsDir = path.resolve(process.cwd(), 'docs/standards');
   const violations = findStandardsLayoutViolations(standardsDir);
@@ -211,5 +254,15 @@ test('all non-index standards pages follow the preferred structure', () => {
     violations.length,
     0,
     `${violations.length} standards page(s) need the preferred structure:\n${violations.join('\n')}`,
+  );
+});
+
+test('all standards PDF links identify the format in their link text', () => {
+  const standardsDir = path.resolve(process.cwd(), 'docs/standards');
+  const violations = findPdfLinkLabelViolations(standardsDir);
+  assert.equal(
+    violations.length,
+    0,
+    `${violations.length} standards PDF link(s) need a (PDF) label:\n${violations.join('\n')}`,
   );
 });

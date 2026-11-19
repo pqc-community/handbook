@@ -10,9 +10,8 @@ description: Post-Quantum Cryptography Coalition four-category roadmap for enter
 The PQCC migration roadmap groups enterprise transition work into four categories: preparation, baseline understanding, planning and execution, and ongoing monitoring and evaluation.
 
 :::info[Official texts]
-
 - [PQCC roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
-
+- [MITRE publication announcement (HTML)](https://www.mitre.org/news-insights/news-release/post-quantum-cryptography-coalition-unveils-pqc-migration-roadmap)
 :::
 
 ## Timeline of key dates

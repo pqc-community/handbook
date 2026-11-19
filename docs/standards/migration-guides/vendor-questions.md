@@ -10,8 +10,8 @@ description: Joint Australian and US procurement guide listing structured post-q
 This joint publication provides structured questions for buyers to ask software, hardware, and cloud vendors during contract renewals and procurement: which public-key cryptography a product uses, how standards-based post-quantum updates will be delivered and validated, whether cryptographic agility is supported, and whether embedded or hardware-bound keys restrict field updates.
 
 :::info[Official texts]
-
-- [ASD, ACSC, CISA, and NSA: Post-Quantum Cryptography — Questions to Ask Your Vendors](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- [ASD publication page (HTML)](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- [Full guide (November 2026) (PDF)](https://www.cyber.gov.au/sites/default/files/2026-11/Post-quantum%20questions%20to%20ask%20your%20vendors%20%28November-2026%29.pdf)
 
 :::
 

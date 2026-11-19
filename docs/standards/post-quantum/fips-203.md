@@ -11,7 +11,7 @@ Federal Information Processing Standards Publication 203 (FIPS 203), issued by t
 
 :::info[Official texts]
 
-- **FIPS 203** — final standard, published 13 August 2024. Read the [NIST CSRC publication page](https://csrc.nist.gov/pubs/fips/203/final).
+- **FIPS 203 full text (PDF)** — [read the standard (PDF)](https://doi.org/10.6028/NIST.FIPS.203) or visit its [NIST CSRC publication page (HTML)](https://csrc.nist.gov/pubs/fips/203/final).
 - **Potential updates** — consult NIST's [FIPS 203 errata spreadsheet](https://csrc.nist.gov/files/pubs/fips/203/final/docs/fips-203-potential-updates.xlsx) when assessing an implementation.
 
 :::
@@ -25,14 +25,14 @@ Federal Information Processing Standards Publication 203 (FIPS 203), issued by t
 
 ## Relationship with other standards
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), published in October 2026, identifies FIPS 203 as a foundational post-quantum cryptography standard and states that ML-KEM is the only approved post-quantum key-establishment scheme based on public-key cryptography at the time of that report. ML-KEM establishes a shared secret that can be used by a symmetric algorithm or combined with another secret in a hybrid construction.
+[NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547), published in October 2026, identifies FIPS 203 as a foundational post-quantum cryptography standard and states that ML-KEM is the only approved post-quantum key-establishment scheme based on public-key cryptography at the time of that report. ML-KEM establishes a shared secret that can be used by a symmetric algorithm or combined with another secret in a hybrid construction.
 
 [NIST SP 800-227](/standards/post-quantum/sp-800-227/) gives recommendations for using key-encapsulation mechanisms and combining shared secrets. Digital signatures are a separate cryptographic job covered by [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/). For the handbook's practical decision path, see [Key establishment](/technology-options/key-establishment/).
 
 ## Sources
 
 - NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, published 13 August 2024; and potential-updates errata spreadsheet. [FIPS 203 publication page](https://csrc.nist.gov/pubs/fips/203/final), [errata spreadsheet](https://csrc.nist.gov/files/pubs/fips/203/final/docs/fips-203-potential-updates.xlsx)
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 

@@ -10,9 +10,8 @@ description: Joint CISA, NSA, and NIST executive fact sheet on starting cryptogr
 The joint CISA, NSA, and NIST fact sheet makes a brief official case for building a quantum-readiness roadmap now: assembling an inventory of quantum-vulnerable cryptography, assessing which data has long confidentiality requirements, and asking technology vendors how they plan to deliver NIST-standardised post-quantum cryptography.
 
 :::info[Official texts]
-
 - [Joint fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
-
+- [NCCoE publication page (HTML)](https://www.nccoe.nist.gov/publications/fact-sheet/quantum-readiness-migration-post-quantum-cryptography-fact-sheet)
 :::
 
 ## Timeline of key dates

@@ -15,7 +15,6 @@ Cited directly in [NIST IR 8547](/standards/transition-and-key-management/nist-i
 - **[NIST SP 1800-38C preliminary draft (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38c-preliminary-draft.pdf)** (December 2023): laboratory interoperability and performance testing of candidate schemes.
 
 :::info[Official texts]
-
 - [NCCoE project page (HTML)](https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc)
 - [NCCoE FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
 
@@ -37,7 +36,7 @@ The NCCoE FAQ (last updated 5 November 2026) states that there are no current pl
 - NIST NCCoE, Migration to Post-Quantum Cryptography. [Project hub (HTML)](https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc)
 - NIST NCCoE, Frequently asked questions about post-quantum cryptography, last updated 5 November 2026. [FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
 - NIST SP 1800-38A preliminary draft (April 2023), [Volume A (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-04/pqc-migration-nist-sp-1800-38a-preliminary-draft.pdf); SP 1800-38B preliminary draft (December 2023), [Volume B (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf); SP 1800-38C preliminary draft (December 2023), [Volume C (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38c-preliminary-draft.pdf)
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 

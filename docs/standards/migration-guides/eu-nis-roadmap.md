@@ -10,9 +10,8 @@ description: Coordinated EU Member State roadmap framing national PQC transition
 The EU NIS Cooperation Group roadmap coordinates national PQC transition roadmaps across EU Member States, sets out pilots and phased transition expectations across high-, medium-, and low-risk use cases, and frames a long-lived confidentiality test for data protected by public-key cryptography.
 
 :::info[Official texts]
-
 - [Coordinated roadmap (PDF)](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
-
+- [European Commission publication page (HTML)](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
 :::
 
 ## Timeline of key dates
