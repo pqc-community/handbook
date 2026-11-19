@@ -83,4 +83,4 @@ Maintainer governance is split across four root documents:
 - [purpose-and-positioning.md](./purpose-and-positioning.md) — mission, audience, content model, sister-site boundaries, and non-goals
 - [navigation-structure.md](./navigation-structure.md) — URL policy, navbar/sidebars, complete sitemap, and route journeys
 - [style-guide.md](./style-guide.md) — voice, epistemic labels, page contracts, work-product/clinic schemas, citations, and automated checks
-- [brand-guidelines.md](./brand-guidelines.md) — visual identity, colour palette, typography, components, and homepage layout
+- [brand-guidelines.md](./brand-guidelines.md) — visual identity, logo assets, colour palette, typography, UI styling, and illustration guidance

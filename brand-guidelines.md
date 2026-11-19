@@ -1,104 +1,91 @@
 # PQC Handbook - Brand Guidelines
 
-These guidelines define the visual identity, UI conventions, and naming standards for the PQC Handbook across the public website, social previews, diagrams, and downloadable materials. Implementation lives in `src/css/custom.css`, `src/pages/index.tsx`, `src/pages/index.module.css`, `src/theme/DocItem/Content/index.tsx`, `static/img/`, and `docusaurus.config.ts`.
+These guidelines define the visual identity, brand assets, colour palette, typography, and presentation standards for the PQC Handbook across the website, social previews, diagrams, and external materials. CSS tokens and assets live in `src/css/custom.css` and `static/img/`.
 
 ## Brand Essence
 
 | Element | Guidance |
 | --- | --- |
 | Name | **PQC Handbook** |
-| Domain | `https://pqchandbook.com` |
-| Repository | `pqc-community/handbook` (`https://github.com/pqc-community/handbook`) |
+| Domain | `pqchandbook.com` |
 | Tagline | Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration |
-| Core proposition | Source-backed decision paths, practices, technical options, standards summaries, and record templates for planning and evidencing a post-quantum cryptography migration. |
-| Personality | Practical, neutral, standards-aware, evidence-led, and jurisdiction-explicit. |
-| Voice | Briefing register in plain British English: calm, concrete, and decision-oriented, without hype, vendor promotion, or cryptographer-only jargon. |
+| Personality | Practical, neutral, standards-aware, and evidence-led |
+| Visual tone | Calm, utilitarian, and readable — an engineering and governance reference, not a marketing site |
 
-The PQC Handbook belongs to the same handbook family as the **Secure-by-Design Handbook** and the **Supply Chain Security Handbook**. It shares their teal-and-cyan visual system and shield mark while occupying a distinct editorial scope: migrating public-key cryptography and keeping auditable migration records.
+The PQC Handbook is part of the same open handbook family as the **Secure-by-Design Handbook** and the **Supply Chain Security Handbook**. It shares their teal-and-cyan visual system and shield mark so readers recognise the family immediately, while keeping an independent editorial identity focused on post-quantum cryptography transition.
+
+## Naming
+
+- Always refer to the publication as **PQC Handbook** (capitalised, no "The" inside titles or lockups).
+- Use **post-quantum cryptography** (or **PQC** after first mention) for the discipline itself.
+- Keep naming vendor-neutral and jurisdiction-neutral: avoid phrasing or sub-brands that imply endorsement by a government agency, standards body, or commercial supplier.
+- For editorial tone and prose mechanics, follow [style-guide.md](./style-guide.md).
 
 ## Logo and Asset Suite
 
-| Asset | Path | Dimensions / Format | Usage |
+| Asset | File | Format / Size | Usage |
 | --- | --- | --- | --- |
-| Header logo | `static/img/logo.svg` | Vector SVG | Site navbar mark and small brand lockups (`alt="PQC Handbook"`). |
-| Favicon | `static/img/favicon.svg` | Vector SVG | Browser tab and bookmark icon. |
-| Social preview card | `static/img/social-card.svg` | `1200 × 630` SVG | OpenGraph and social link preview in Deep Teal (`#013B4E`) with Primary Cyan (`#00C5D8`) rule and Surface Light (`#F5FCFD`) typography. |
+| Header logo | `static/img/logo.svg` | Vector SVG | Site navbar mark, slide headers, and compact brand lockups (`alt="PQC Handbook"`). |
+| Favicon | `static/img/favicon.svg` | Vector SVG | Browser tab and bookmark icon (export `32 × 32` PNG only where an external platform requires raster icons). |
+| Social preview card | `static/img/social-card.svg` | `1200 × 630` SVG | OpenGraph and link-preview card on Deep Teal (`#013B4E`) with Primary Cyan (`#00C5D8`) accent bar and Surface Light (`#F5FCFD`) Inter type (export PNG if a platform does not render SVG previews). |
 
-Logo rules:
+Logo usage rules:
 
-- Reuse the shared family shield (`static/img/logo.svg` and `static/img/favicon.svg`, derived from the shared `tech_shield_padlock_v5.svg` mark); do not introduce a separate logo mark.
-- Maintain clear space of at least half the mark's height on all sides and keep stroke legibility at small sizes (`≥ 24 px`).
-- Do not skew, stretch, outline, recolour arbitrarily, or alter stroke weights.
+- Use the approved shared family shield in `static/img/`; do not create a separate mark or redraw strokes.
+- Keep clear space of at least `0.5×` the logo height on all sides and maintain legibility down to `24 px` height.
+- Do not stretch, skew, outline, add drop shadows, recolour arbitrarily, or alter stroke weights.
 
 ## Colour Palette
 
-Colours are implemented as Infima custom properties in `src/css/custom.css` with automatic `prefers-color-scheme` support (`colorMode.respectPrefersColorScheme: true`).
+The site uses the handbook-family teal-and-cyan palette across light and dark modes (`prefers-color-scheme` aware).
 
-| Role | Hex | CSS variable / selector | Usage |
-| --- | --- | --- | --- |
-| Primary Cyan | `#00C5D8` | `--ifm-color-primary` (shades `#008996` to `#1FFFFD`) | Interactive accents, links, card hover borders, social-card accent bar. |
-| Deep Teal | `#013B4E` | `[data-theme='light'] --ifm-navbar-background-color`, `[data-theme='dark'] --ifm-background-color`, `.footer--dark` | Light-mode navbar, dark-mode page canvas, dark footer, hero banner, social card background. |
-| Darker Teal | `#012A38` | `[data-theme='dark'] --ifm-navbar-background-color` | Dark-mode navbar depth separation against the Deep Teal page canvas. |
-| Surface Light | `#F5FCFD` | `[data-theme='light'] --ifm-background-color`, `[data-theme='dark'] --ifm-font-color-base` | Light-mode page background and dark-mode primary foreground text. |
-| Mid Grey | `#5E6E75` | `[data-theme='light'] --ifm-font-color-base` | Light-mode body text on Surface Light. |
-| Code Surface (Light / Dark) | `#EEF9FB` / `#024C63` | `--ifm-code-background` | Inline code and fenced block backgrounds in light and dark modes. |
-| Highlight Orange | `#FF9F45` | `--ifm-color-warning` | Rare warning or emphasis states only. |
+| Role | Hex | Usage |
+| --- | --- | --- |
+| Primary Cyan | `#00C5D8` | Interactive accents, links, active states, card hover borders, and focal highlights (`--ifm-color-primary`). |
+| Deep Teal | `#013B4E` | Light-mode navbar, dark footer, hero background, social card canvas, and dark-mode page background. |
+| Darker Teal | `#012A38` | Dark-mode navbar background for subtle elevation against Deep Teal pages. |
+| Surface Light | `#F5FCFD` | Light-mode page background and dark-mode primary foreground text. |
+| Mid Grey | `#5E6E75` | Light-mode body copy on Surface Light. |
+| Code Surface | `#EEF9FB` / `#024C63` | Inline code and code-block backgrounds in light mode (`#EEF9FB`) and dark mode (`#024C63`). |
+| Highlight Orange | `#FF9F45` | Warnings or rare emphasis only (`--ifm-color-warning`). |
 
-Accessibility rules:
+Colour and accessibility rules:
 
-- Never rely on colour alone to convey status, priority, or authority requirements; pair visual styling with explicit labels or table columns.
-- Preserve AA contrast ratios (`#5E6E75` on `#F5FCFD` in light mode; `#F5FCFD` on `#013B4E` in dark mode).
-- Extend styling via existing `--ifm-*` variables in `src/css/custom.css` rather than hardcoding ad-hoc hex values in components.
+- Never convey meaning, priority, or status by colour alone; always pair colour with clear text or structural labels.
+- Maintain WCAG AA contrast (`#5E6E75` on `#F5FCFD` in light mode; `#F5FCFD` on `#013B4E` in dark mode).
+- Reference Infima variables in `src/css/custom.css` rather than hardcoding hex values inside components.
 
 ## Typography
 
-Fonts are loaded via Google Fonts in `docusaurus.config.ts` with system sans-serif and monospace fallbacks.
+| Role | Typeface | Weight | CSS reference |
+| --- | --- | --- | --- |
+| Headings | **Inter** | `700` | `--ifm-font-family-base: 'Inter', sans-serif; --ifm-heading-font-weight: 700;` |
+| Body and UI | **Inter** | `400` (`700` strong) | `--ifm-font-family-base: 'Inter', sans-serif;` |
+| Code and identifiers | **Source Code Pro** | `500` | `--ifm-font-family-monospace: 'Source Code Pro', monospace; --ifm-code-font-size: 95%;` |
 
-| Role | Family and weight | CSS definition |
-| --- | --- | --- |
-| Headings | **Inter**, `700` | `--ifm-font-family-base: 'Inter', sans-serif; --ifm-heading-font-weight: 700;` |
-| Body copy and UI | **Inter**, `400` (`700` semibold) | `--ifm-font-family-base: 'Inter', sans-serif; --ifm-font-weight-semibold: 700;` |
-| Code and CSV identifiers | **Source Code Pro**, `500` | `--ifm-font-family-monospace: 'Source Code Pro', monospace; --ifm-code-font-size: 95%;` |
+Always retain system sans-serif and monospace fallbacks. Code blocks use high-contrast syntax themes (`github` in light mode, `dracula` in dark mode).
 
-Syntax highlighting uses `prismThemes.github` in light mode and `prismThemes.dracula` in dark mode.
+## UI Visual Style
 
-## UI Components and Diagrams
-
-| Component | Implementation & guidance |
+| Element | Visual guidance |
 | --- | --- |
-| Navbar | Dark style (`style: 'dark'`), Deep Teal in light mode and Darker Teal in dark mode. Shows logo, **PQC Handbook**, five doc sidebars (**Learn the basics**, **Standards**, **Migration practices**, **Algorithm and protocol options**, **Resources**), local search bar, theme toggle, and GitHub link. |
-| Footer | Dark style (`style: 'dark'`, `.footer--dark` in `#013B4E` with `#F5FCFD` links) organised into three columns: **Routes**, **Learn**, and **Reference**. `.footer__link-item` sets `max-width: 100%` in `src/css/custom.css` so Infima's mobile `width: max-content` rule never overflows narrow viewports. |
-| Cards | Outlined surface cards (`.roleCard` and `.resourceCard` in `src/pages/index.module.css`) with `1px` emphasis border, `1.05rem` `<h3>` titles, and `#00C5D8` hover border. Two-column grids collapse to a single column at `≤ 768px`. |
-| Review stamp | `src/theme/DocItem/Content/index.tsx` wraps Docusaurus doc content and renders `Last reviewed <D Month YYYY>` (`en-GB` UTC formatting) from each page's `last_reviewed` front matter. |
-| Tables & CSV kits | Structured Markdown tables for authority comparisons, option branches, and work-product templates, paired with header-only CSV files in `static/downloads/`. Keep cell phrasing concise so tables remain readable on narrow viewports. |
-| Diagrams | Rendered with `@docusaurus/theme-mermaid` (pinned to `3.10.1` alongside `@docusaurus/core`) using the built-in `dagre` layout and `themeConfig.mermaid.theme` set to `{light: 'neutral', dark: 'dark'}`. Only static `sequenceDiagram` fences are used on Learn explainers — no raster/SVG diagram images, no flowcharts, and no `@mermaid-js/layout-elk`. |
+| Navbar | Deep Teal (`#013B4E` in light mode, `#012A38` in dark mode) with light text and restrained top-level items. |
+| Footer | Deep Teal (`#013B4E`) with Surface Light (`#F5FCFD`) links and safe wrapping on narrow mobile viewports (`.footer__link-item { max-width: 100%; }`). |
+| Cards | Outlined surface cards with subtle `1px` borders that highlight in Primary Cyan (`#00C5D8`) on hover and stack cleanly to one column on mobile (`≤ 768px`). |
+| Homepage | Calm, utilitarian entry point: a concise Deep Teal hero header followed by clean card grids and structured reference tables rather than promotional banners or decorative splash graphics. |
+| Tables | Clean borders, subtle header shading, and scannable cell density suitable for both desktop and mobile screens. |
 
-## Homepage Visual Pattern
+## Diagrams and Illustrations
 
-The homepage (`src/pages/index.tsx`) is a single-purpose **situation chooser** rather than a marketing landing page:
-
-1. **Hero banner (`.heroBanner`)**: Displays `<h1>` **PQC Handbook** followed by two centred lead sentences (`max-width: 760px`) — one stating the handbook's promise and one stating its specialist/risk-assessment boundary. There are no hero buttons.
-2. **Situation chooser (`.choosePath`)**: Heading **Choose the situation** over a two-column grid (`.choiceGrid`) of six situation cards linking to `/routes/*`, followed by a full-width **Learn the basics** card (`.learnApart`) visually separated below the six choices.
-3. **Worked example preview (`.clinicPreview`)**: A compact three-column priority table (`Asset`, `Why it is first`, `Next record`) showing the clinic health-records row and linking to [Protect this first](./docs/resources/protect-this-first.md).
-4. **Reference library (`.referenceLibrary`)**: A two-column grid (`.resourceGrid`) of the four reference sections (**Standards**, **Migration practices**, **Algorithm and protocol options**, **Resources**).
-
-Homepage search metadata:
-
-- Browser `<title>` (`Layout` `title` prop): `Post-quantum cryptography handbook` (rendered as `Post-quantum cryptography handbook | PQC Handbook`), keeping the visible `<h1>` as **PQC Handbook**.
-- Meta `description`: `Practical, source-backed guidance for organisations planning, prioritising, and evidencing a migration to post-quantum cryptography without specialist cryptography staff.`
-
-## Naming, URLs, and Site Configuration
-
-- **Project name**: Always write **PQC Handbook** for the site title and **post-quantum cryptography (PQC)** in prose (expanded on first use per [style-guide.md](./style-guide.md)).
-- **Canonical URLs**: Docs are served from root (`routeBasePath: '/'`) with `trailingSlash: true` (for example, `/migration-practices/inventory/`), never under `/docs/`.
-- **Search and indexing**: Compile-time local search is provided by `@easyops-cn/docusaurus-search-local` (`indexDocs: true`, `indexBlog: false`, `docsRouteBasePath: '/'`) with no external Algolia dependency. `docusaurus.config.ts` emits a weekly `sitemap.xml`, `static/robots.txt` allows all crawlers and points to `https://pqchandbook.com/sitemap.xml`, and `static/CNAME` sets `pqchandbook.com`.
-- **Link integrity**: `onBrokenLinks`, `onBrokenAnchors`, and `markdown.hooks.onBrokenMarkdownLinks` are all set to `'throw'`. Blog is disabled (`blog: false`).
+- Keep diagrams and illustrations functional, clean, and low-noise — every visual should clarify a technical relationship, workflow, or decision boundary.
+- Mermaid diagrams use the `neutral` theme in light mode and `dark` theme in dark mode so diagrams stay legible in both colour schemes.
+- When introducing vector illustrations or icons, prefer flat-vector or consistent `~2 px` stroke line work, using Primary Cyan (`#00C5D8`) selectively as an accent rather than filling entire graphics.
+- Avoid decorative stock art, glowing "quantum" clichés, or seal/badge motifs that suggest certification, legal authority, or compliance approval.
 
 ## Governance
 
-Treat these four root documents as the maintainer specification for the repository:
+Visual changes should be reviewed alongside `src/css/custom.css` and `static/img/`. Related maintainer guides cover the non-visual domains of the handbook:
 
-- [purpose-and-positioning.md](./purpose-and-positioning.md) — audience, promise and limits, content model, sister-site boundaries, and non-goals
-- [navigation-structure.md](./navigation-structure.md) — navbar, sidebars, URL book map, and route journeys
-- [style-guide.md](./style-guide.md) — voice, epistemic labels, page contracts, CSV/clinic schemas, citations, and automated checks
-- [brand-guidelines.md](./brand-guidelines.md) — visual identity, palette, typography, components, and homepage pattern
+- [purpose-and-positioning.md](./purpose-and-positioning.md) — mission, audience, scope, and sister-site boundaries
+- [navigation-structure.md](./navigation-structure.md) — URL structure, sidebars, and user journeys
+- [style-guide.md](./style-guide.md) — editorial voice, page structures, schemas, and citations

@@ -15,7 +15,7 @@ Read these four root documents before changing structure, prose, or styling:
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, target audience and roles, content model, sister-site boundaries, and non-goals
 - [Navigation Structure](./navigation-structure.md) — URL policy, navbar and six sidebars, complete sitemap, and situation-route journeys
 - [Style Guide](./style-guide.md) — Voice, epistemic labels, page contracts, work-product CSV and clinic schemas, sourcing rules, and quality gates
-- [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, Mermaid configuration, and homepage layout
+- [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
 
 ### Handbook Content (`docs/`)
 
