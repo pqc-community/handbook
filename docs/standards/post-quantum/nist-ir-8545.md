@@ -5,18 +5,26 @@ displayed_sidebar: standardsSidebar
 description: NIST status report concluding the fourth round and selecting HQC for standardisation as an additional KEM.
 ---
 
-| Field | Detail |
-| --- | --- |
-| Authority | National Institute of Standards and Technology (NIST) |
-| Publication | NIST Internal Report 8545 (2025) |
-| Status | Final Internal Report |
-| Official source | [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.IR.8545) |
-
 ## What it covers
 
 NIST IR 8545 summarises the fourth-round evaluation of candidate key-encapsulation mechanisms built on mathematical problems distinct from structured lattices. It records NIST's decision to select Hamming Quasi-Cyclic (HQC), a code-based KEM, for standardisation as a backup to ML-KEM.
 
-## Role in the post-quantum transition
+:::info[Official texts]
+
+- **Authority:** National Institute of Standards and Technology (NIST)
+- **Publication:** NIST Internal Report 8545 (2025)
+- **Status:** Final Internal Report
+- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.IR.8545)
+
+:::
+
+## Timeline of key dates
+
+| Date | Event |
+| --- | --- |
+| <time datetime="2025">2025</time> | Publication or revision: NIST Internal Report 8545 (2025). |
+
+## Relationship with other standards
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NIST IR 8545 when explaining that NIST selected HQC as an alternative to ML-KEM and that a FIPS specifying HQC-KEM is under development. Until that FIPS is published as final, [FIPS 203](/standards/post-quantum/fips-203/) remains the sole approved post-quantum public-key key-establishment standard.
 

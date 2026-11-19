@@ -5,18 +5,26 @@ displayed_sidebar: standardsSidebar
 description: Canadian Forum for Digital Infrastructure Resilience leadership actions for critical-infrastructure quantum readiness.
 ---
 
-| Field | Detail |
-| --- | --- |
-| Authority | Canadian Forum for Digital Infrastructure Resilience (CFDIR) |
-| Publication | Quantum-Readiness Best Practices, v04 (10 July 2024) |
-| Status | Current guide (last checked 10 November 2026) |
-| Official source | [CFDIR best-practices guide (PDF)](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf) |
-
 ## What it covers
 
 The CFDIR guide sets out leadership, governance, inventory, and supply-chain readiness steps that critical-infrastructure owners and operators can start before engaging specialist cryptographers.
 
-## Scope and handbook use
+:::info[Official texts]
+
+- **Authority:** Canadian Forum for Digital Infrastructure Resilience (CFDIR)
+- **Publication:** Quantum-Readiness Best Practices, v04 (10 July 2024)
+- **Status:** Current guide
+- **Official text:** [CFDIR best-practices guide (PDF)](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf)
+
+:::
+
+## Timeline of key dates
+
+| Date | Event |
+| --- | --- |
+| <time datetime="2024-07-10">2024&#8209;07&#8209;10</time> | Publication or revision: Quantum-Readiness Best Practices, v04 (10 July 2024). |
+
+## Relationship with other standards
 
 **Assumes:** Canadian critical-infrastructure operators or organisations adapting a sector-resilience checklist elsewhere. **Leaves out:** Algorithm parameter tables and statutory government milestones. Pair with [Diagnose](/migration-practices/diagnose/) and [Organisation-wide route](/routes/organisation-wide/).
 

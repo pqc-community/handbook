@@ -5,13 +5,6 @@ displayed_sidebar: standardsSidebar
 description: NIST National Cybersecurity Center of Excellence applied-cryptography project, six-phase FAQ, and SP 1800-38A/B/C preliminary drafts.
 ---
 
-| Field | Detail |
-| --- | --- |
-| Authority | NIST National Cybersecurity Center of Excellence (NCCoE) |
-| Publication | Migration to Post-Quantum Cryptography project hub; FAQ (updated 5 November 2026); NIST SP 1800-38A/B/C preliminary drafts (2023) |
-| Status | Active project and current FAQ; SP 1800-38A/B/C remain 2023 preliminary drafts |
-| Official source | [NCCoE project page (HTML)](https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc) / [NCCoE FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html) |
-
 ## What it covers
 
 Cited directly in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/), the NCCoE Migration to PQC project publishes practical guidance, interoperability demonstrations, and discovery tooling insights to help organisations manage cryptographic transition:
@@ -21,7 +14,23 @@ Cited directly in [NIST IR 8547](/standards/transition-and-key-management/nist-i
 - **[NIST SP 1800-38B preliminary draft (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf)** (December 2023): automated cryptographic discovery and cryptography bill of materials (CBOM) field concepts.
 - **[NIST SP 1800-38C preliminary draft (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38c-preliminary-draft.pdf)** (December 2023): laboratory interoperability and performance testing of candidate schemes.
 
-## Scope and status note
+:::info[Official texts]
+
+- **Authority:** NIST National Cybersecurity Center of Excellence (NCCoE)
+- **Publication:** Migration to Post-Quantum Cryptography project hub; FAQ (updated 5 November 2026); NIST SP 1800-38A/B/C preliminary drafts (2023)
+- **Status:** Active project and current FAQ; SP 1800-38A/B/C remain 2023 preliminary drafts
+- **Official text:** [NCCoE project page (HTML)](https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc) / [NCCoE FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
+
+:::
+
+## Timeline of key dates
+
+| Date | Event |
+| --- | --- |
+| <time datetime="2023">2023</time> | Publication or revision: Migration to Post-Quantum Cryptography project hub; FAQ (updated 5 November 2026); NIST SP 1800-38A/B/C preliminary drafts (2023). |
+| <time datetime="2026-11-05">2026&#8209;11&#8209;05</time> | Publication or revision: Migration to Post-Quantum Cryptography project hub; FAQ (updated 5 November 2026); NIST SP 1800-38A/B/C preliminary drafts (2023). |
+
+## Relationship with other standards
 
 The NCCoE FAQ (last updated 5 November 2026) states that there are no current plans to issue second drafts or final versions of the 2023 SP 1800-38A, 1800-38B, and 1800-38C preliminary drafts; treat those volumes as historical discovery and lab notes rather than final NIST standards.
 

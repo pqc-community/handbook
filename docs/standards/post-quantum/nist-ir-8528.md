@@ -5,18 +5,26 @@ displayed_sidebar: standardsSidebar
 description: NIST status report on the first round of the additional post-quantum digital signature standardisation track.
 ---
 
-| Field | Detail |
-| --- | --- |
-| Authority | National Institute of Standards and Technology (NIST) |
-| Publication | NIST Internal Report 8528 (2024) |
-| Status | Final Internal Report |
-| Official source | [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.IR.8528) |
-
 ## What it covers
 
 NIST IR 8528 documents the first round of NIST's on-ramp call for additional post-quantum digital signature schemes. The call sought general-purpose signature candidates not based on structured lattices, particularly schemes offering short signatures and fast verification, and records which candidates advanced to the second round.
 
-## Role in the post-quantum transition
+:::info[Official texts]
+
+- **Authority:** National Institute of Standards and Technology (NIST)
+- **Publication:** NIST Internal Report 8528 (2024)
+- **Status:** Final Internal Report
+- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.IR.8528)
+
+:::
+
+## Timeline of key dates
+
+| Date | Event |
+| --- | --- |
+| <time datetime="2024">2024</time> | Publication or revision: NIST Internal Report 8528 (2024). |
+
+## Relationship with other standards
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, cites NIST IR 8528 to note that further post-quantum signature algorithms remain under evaluation for future standardisation alongside the already final [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) standards. Candidates in that track are not yet FIPS-approved standards.
 

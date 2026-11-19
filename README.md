@@ -54,7 +54,7 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`) |
+| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`, `scripts/check-standards.test.mjs`) |
 | `npm run check` | Validates page `title` lengths (`docs/**/*.md`) and surface-specific navigation bounds across navbar, footer, and sidebars (`scripts/check-pages.mjs`) |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
