@@ -26,12 +26,6 @@
   padding: 3rem 0;
 }
 
-.roleGrid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .resourceGrid {
   display: grid;
   gap: 1rem;

@@ -1,7 +1,6 @@
 ---
 title: Diagnose a post-quantum migration
 sidebar_label: Diagnose
-sidebar_position: 2
 displayed_sidebar: migrationPracticesSidebar
 last_reviewed: 2026-11-10
 description: Name an owner, separate the estate types, write the first inventory, and set a subsequent review before anyone claims the cryptography has moved.

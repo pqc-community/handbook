@@ -1,7 +1,6 @@
 ---
 title: Post-quantum algorithm and protocol options
 sidebar_label: Algorithm and protocol options
-sidebar_position: 1
 displayed_sidebar: algorithmProtocolOptionsSidebar
 last_reviewed: 2026-11-10
 description: Use-case map from confidentiality, many-party signatures, and non-updatable verifiers to the option pages and the evidence each job produces.

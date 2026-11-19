@@ -192,7 +192,7 @@ Order citations on `Editorial policy` and multi-source pages as:
 
 ## 6. Front Matter, Review Dates, and SEO Metadata
 
-Every Markdown file under `docs/` requires these five front-matter fields (`sidebar_position` is optional where ordering is not fixed solely by `sidebars.ts`):
+Every Markdown file under `docs/` requires these five front-matter fields (ordering is defined explicitly in `sidebars.ts`, so `sidebar_position` is not used):
 
 ```yaml
 ---

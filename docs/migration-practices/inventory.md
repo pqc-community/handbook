@@ -1,7 +1,6 @@
 ---
 title: Inventory the cryptography
 sidebar_label: Inventory
-sidebar_position: 3
 displayed_sidebar: migrationPracticesSidebar
 last_reviewed: 2026-11-10
 description: List the cryptography, including what a scanner cannot see, before anyone claims it has moved to post-quantum algorithms.

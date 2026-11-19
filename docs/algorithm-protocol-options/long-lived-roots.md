@@ -1,7 +1,6 @@
 ---
 title: Long-lived roots of trust
 sidebar_label: Long-lived roots
-sidebar_position: 5
 displayed_sidebar: algorithmProtocolOptionsSidebar
 last_reviewed: 2026-11-10
 description: When a verifier cannot be updated later and the device will remain in use, record the procurement checklist and the authority for the root-of-trust work.

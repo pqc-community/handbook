@@ -1,7 +1,6 @@
 ---
 title: Post-quantum glossary
 sidebar_label: Glossary
-sidebar_position: 6
 displayed_sidebar: resourcesSidebar
 last_reviewed: 2026-11-10
 description: Terms used in this handbook, from asymmetric cryptography and PQC to hybrid and harvest-now, decrypt-later. Handbook wording is labelled as handbook wording.

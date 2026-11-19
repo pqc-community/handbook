@@ -1,7 +1,6 @@
 ---
 title: Change algorithm again after this migration
 sidebar_label: Changing algorithms again
-sidebar_position: 6
 displayed_sidebar: migrationPracticesSidebar
 last_reviewed: 2026-11-10
 description: Check six capabilities that show whether the estate can change algorithm again after the current migration.

@@ -1,7 +1,6 @@
 ---
 title: Post-quantum migration resources
 sidebar_label: Resources
-sidebar_position: 1
 displayed_sidebar: resourcesSidebar
 last_reviewed: 2026-11-10
 description: Work products and reference pages grouped by route, with who uses each one and the record it produces.

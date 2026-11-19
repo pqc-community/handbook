@@ -1,7 +1,6 @@
 ---
 title: Protect this first
 sidebar_label: Protect this first
-sidebar_position: 5
 displayed_sidebar: resourcesSidebar
 last_reviewed: 2026-11-10
 description: An illustration, not a real organisation. The clinic walks inventory, priority, supplier answers, options, change, and review in order.
