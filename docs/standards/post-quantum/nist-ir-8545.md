@@ -11,10 +11,7 @@ NIST IR 8545 summarises the fourth-round evaluation of candidate key-encapsulati
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** NIST Internal Report 8545 (2025)
-- **Status:** Final Internal Report
-- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.IR.8545)
+- [NIST IR 8545: Fourth-Round Status Report of the NIST PQC Standardisation Process](https://doi.org/10.6028/NIST.IR.8545)
 
 :::
 

@@ -11,10 +11,7 @@ FIPS 204 specifies the Module-Lattice-Based Digital Signature Algorithm (ML-DSA)
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** Federal Information Processing Standards Publication 204 (2024)
-- **Status:** Final standard
-- **Official text:** [CSRC publication page (HTML)](https://csrc.nist.gov/pubs/fips/204/final)
+- [FIPS 204: Module-Lattice-Based Digital Signature Standard](https://csrc.nist.gov/pubs/fips/204/final)
 
 :::
 

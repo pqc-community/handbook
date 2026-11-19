@@ -11,10 +11,7 @@ The CFDIR guide sets out leadership, governance, inventory, and supply-chain rea
 
 :::info[Official texts]
 
-- **Authority:** Canadian Forum for Digital Infrastructure Resilience (CFDIR)
-- **Publication:** Quantum-Readiness Best Practices, v04 (10 July 2024)
-- **Status:** Current guide
-- **Official text:** [CFDIR best-practices guide (PDF)](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf)
+- [CFDIR best-practices guide (PDF)](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf)
 
 :::
 

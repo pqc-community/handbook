@@ -11,10 +11,7 @@ This joint publication provides structured questions for buyers to ask software,
 
 :::info[Official texts]
 
-- **Authority:** Australian Signals Directorate (ASD) and Australian Cyber Security Centre (ACSC), with CISA and NSA
-- **Publication:** Post-quantum cryptography: questions to ask your vendors (updated 5 November 2026)
-- **Status:** Current guide
-- **Official text:** [ASD publication page (HTML)](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- [ASD, ACSC, CISA, and NSA: Post-Quantum Cryptography — Questions to Ask Your Vendors](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
 
 :::
 

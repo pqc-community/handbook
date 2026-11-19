@@ -11,10 +11,7 @@ FIPS 205 specifies the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** Federal Information Processing Standards Publication 205 (2024)
-- **Status:** Final standard
-- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.FIPS.205)
+- [FIPS 205: Stateless Hash-Based Digital Signature Standard](https://doi.org/10.6028/NIST.FIPS.205)
 
 :::
 

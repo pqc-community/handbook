@@ -7,14 +7,11 @@ description: Programme-scale diagnose, plan, and execute handbook from AIVD, CWI
 
 ## What it covers
 
-The Dutch PQC Migration Handbook organises transition work into three stages — diagnose, plan, and execute — and distinguishes urgent adopters, regular adopters, and cryptography suppliers so organisations match programme effort to their risk profile. A companion Dutch government web page curates pointers to national and international quantum-safe resources.
+The Dutch PQC Migration Handbook organises transition work into three stages — diagnose, plan, and execute — and distinguishes urgent adopters, regular adopters, and cryptography suppliers so organisations match programme effort to their risk profile. A [companion Dutch government resource list](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/) curates pointers to national and international quantum-safe resources.
 
 :::info[Official texts]
 
-- **Authority:** General Intelligence and Security Service of the Netherlands (AIVD), CWI, and TNO
-- **Publication:** The PQC Migration Handbook (December 2024)
-- **Status:** Current handbook
-- **Official text:** [Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) / [Dutch government useful resources (HTML)](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/)
+- [The PQC Migration Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 :::
 

@@ -11,10 +11,7 @@ FIPS 202 specifies the Keccak sponge-based SHA-3 family: four fixed-length hash 
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** Federal Information Processing Standards Publication 202 (2015)
-- **Status:** Final standard
-- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.FIPS.202)
+- [FIPS 202: SHA-3 Standard — Permutation-Based Hash and Extendable-Output Functions](https://doi.org/10.6028/NIST.FIPS.202)
 
 :::
 

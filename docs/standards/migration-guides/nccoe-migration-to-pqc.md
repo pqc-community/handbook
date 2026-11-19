@@ -16,10 +16,8 @@ Cited directly in [NIST IR 8547](/standards/transition-and-key-management/nist-i
 
 :::info[Official texts]
 
-- **Authority:** NIST National Cybersecurity Center of Excellence (NCCoE)
-- **Publication:** Migration to Post-Quantum Cryptography project hub; FAQ (updated 5 November 2026); NIST SP 1800-38A/B/C preliminary drafts (2023)
-- **Status:** Active project and current FAQ; SP 1800-38A/B/C remain 2023 preliminary drafts
-- **Official text:** [NCCoE project page (HTML)](https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc) / [NCCoE FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
+- [NCCoE project page (HTML)](https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc)
+- [NCCoE FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
 
 :::
 

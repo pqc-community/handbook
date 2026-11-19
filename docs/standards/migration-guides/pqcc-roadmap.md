@@ -11,10 +11,7 @@ The PQCC migration roadmap groups enterprise transition work into four categorie
 
 :::info[Official texts]
 
-- **Authority:** Post-Quantum Cryptography Coalition (PQCC)
-- **Publication:** PQC Migration Roadmap (May 2025)
-- **Status:** Current industry consortium roadmap
-- **Official text:** [PQCC roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
+- [PQCC roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
 
 :::
 

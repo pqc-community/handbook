@@ -11,10 +11,7 @@ The EU NIS Cooperation Group roadmap coordinates national PQC transition roadmap
 
 :::info[Official texts]
 
-- **Authority:** EU NIS Cooperation Group
-- **Publication:** A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, Version 1.1 (11 June 2025)
-- **Status:** Current government plan
-- **Official text:** [Coordinated roadmap (PDF)](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
+- [Coordinated roadmap (PDF)](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
 
 :::
 

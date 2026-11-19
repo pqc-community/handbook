@@ -11,10 +11,7 @@ NIST IR 8528 documents the first round of NIST's on-ramp call for additional pos
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** NIST Internal Report 8528 (2024)
-- **Status:** Final Internal Report
-- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.IR.8528)
+- [NIST IR 8528: Additional Digital Signature Schemes (First-Round Status Report)](https://doi.org/10.6028/NIST.IR.8528)
 
 :::
 

@@ -11,10 +11,7 @@ FIPS 197 specifies the Advanced Encryption Standard (AES), a symmetric block cip
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** Federal Information Processing Standards Publication 197 (2001; updated 2023)
-- **Status:** Final standard
-- **Official text:** [NIST publication page via DOI (HTML)](https://doi.org/10.6028/NIST.FIPS.197)
+- [FIPS 197: Advanced Encryption Standard (AES)](https://doi.org/10.6028/NIST.FIPS.197)
 
 :::
 

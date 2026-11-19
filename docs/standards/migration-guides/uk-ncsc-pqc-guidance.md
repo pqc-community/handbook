@@ -11,10 +11,7 @@ The UK NCSC guidance frames how large organisations, operators of critical natio
 
 :::info[Official texts]
 
-- **Authority:** UK National Cyber Security Centre (NCSC)
-- **Publication:** Timelines for migration to post-quantum cryptography (published and reviewed 20 March 2025)
-- **Status:** Current guidance
-- **Official text:** [UK NCSC guidance page (HTML)](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- [UK NCSC guidance page (HTML)](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 :::
 

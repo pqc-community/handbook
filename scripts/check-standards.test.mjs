@@ -83,6 +83,8 @@ function findLayoutProblems(relative, content) {
       problems.push('Official texts callout is not closed');
     } else if (!/\[[^\]]+\]\(https?:\/\/[^)]+\)/.test(lines.slice(openingLine + 1, closingLine).join('\n'))) {
       problems.push('Official texts callout has no source link');
+    } else if (/\*\*(?:Authority|Publication|Status):\*\*/i.test(lines.slice(openingLine + 1, closingLine).join('\n'))) {
+      problems.push('Official texts callout repeats document metadata');
     }
   }
 
@@ -187,6 +189,19 @@ test('flags full ISO dates that can wrap in the timeline', () => {
   );
   assert.equal(problems.length, 1);
   assert.match(problems[0], /full ISO dates must use nonbreaking hyphens/);
+});
+
+test('keeps authority, publication, and status metadata out of the official texts callout', () => {
+  const metadataCard = validSummary.replace(
+    ':::info[Official texts]\n\nRead',
+    ':::info[Official texts]\n\n- **Authority:** Example authority\n\nRead',
+  );
+  const problems = withRoot(
+    {'fips/example.md': metadataCard},
+    (root) => findStandardsLayoutViolations(path.join(root, 'fips')),
+  );
+  assert.equal(problems.length, 1);
+  assert.match(problems[0], /repeats document metadata/);
 });
 
 test('all non-index standards pages follow the preferred structure', () => {

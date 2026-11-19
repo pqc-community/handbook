@@ -11,10 +11,7 @@ ASD's planning publication introduces practical preparation steps for Australian
 
 :::info[Official texts]
 
-- **Authority:** Australian Signals Directorate (ASD)
-- **Publication:** Planning for post-quantum cryptography
-- **Status:** Current publication
-- **Official text:** [ASD publication page (HTML)](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
+- [ASD: Planning for Post-Quantum Cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
 
 :::
 

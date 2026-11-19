@@ -11,10 +11,7 @@ NIST IR 8547 explains the vulnerability of classical public-key cryptography to 
 
 :::info[Official texts]
 
-- **Authority:** National Institute of Standards and Technology (NIST)
-- **Publication:** NIST Internal Report 8547 (October 2026)
-- **Status:** Final Internal Report
-- **Official text:** [CSRC publication page (HTML)](https://csrc.nist.gov/pubs/ir/8547/final)
+- [NIST IR 8547: Transition to Post-Quantum Cryptography Standards](https://csrc.nist.gov/pubs/ir/8547/final)
 
 :::
 

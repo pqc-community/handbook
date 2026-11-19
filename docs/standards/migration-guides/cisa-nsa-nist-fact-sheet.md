@@ -11,10 +11,7 @@ The joint CISA, NSA, and NIST fact sheet makes a brief official case for buildin
 
 :::info[Official texts]
 
-- **Authority:** Cybersecurity and Infrastructure Security Agency (CISA), National Security Agency (NSA), and NIST
-- **Publication:** Quantum-Readiness: Migration to Post-Quantum Cryptography (as of 17 August 2023)
-- **Status:** Current fact sheet as dated
-- **Official text:** [Joint fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
+- [Joint fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 
 :::
 

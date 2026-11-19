@@ -11,10 +11,7 @@ National Security Memorandum 10 sets US government policy both to sustain quantu
 
 :::info[Official texts]
 
-- **Authority:** The White House
-- **Publication:** National Security Memorandum 10 (4 May 2022)
-- **Status:** Presidential memorandum (US federal policy)
-- **Official text:** [White House archive page (HTML)](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/)
+- [NSM-10: National Security Memorandum on Promoting US Leadership in Quantum Computing While Mitigating Risks to Vulnerable Cryptographic Systems](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/)
 
 :::
 
