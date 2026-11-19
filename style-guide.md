@@ -1,208 +1,235 @@
-# Style guide
+# PQC Handbook - Style Guide
 
-Rules for public handbook pages in `docs/`, homepage copy in `src/pages/index.tsx`, and downloadable templates in `static/downloads/`. See also [purpose-and-positioning.md](./purpose-and-positioning.md), [navigation-structure.md](./navigation-structure.md), and [brand-guidelines.md](./brand-guidelines.md).
+Editorial, structural, data-schema, and citation standards for public pages in `docs/`, the chooser homepage (`src/pages/index.tsx`), and downloadable CSV templates (`static/downloads/`). Visual identity lives in [brand-guidelines.md](./brand-guidelines.md); URL paths and sidebars live in [navigation-structure.md](./navigation-structure.md); scope and audience live in [purpose-and-positioning.md](./purpose-and-positioning.md).
 
-These maintainer notes are not scanned by the voice checks (`navigation-structure.md` is scanned).
+Note: `style-guide.md` is a maintainer document and is not scanned by `npm run check:voice` (`navigation-structure.md` is scanned).
 
-## Voice
+---
 
-Plain British English: organisation, programme, labelled.
+## 1. Voice, Register, and Language
 
-Body prose is complete sentences. A homepage choice may be a short clause. Front matter, headings, tables, fenced diagrams, source lists, the minimum-fields line, a glossary entry, and a label that only introduces a table or a list are outside body prose. A glossary entry may open with a noun phrase. The glossary section says how an entry is shaped. An onward link is a sentence, including the primary next page on a route: "Continue with Public-key cryptography." and "The primary next page is Commodity software." The voice check rejects `next:` and `primary next page:` anywhere in a scanned line.
+Write in a calm, neutral **briefing register** for an accountable decision-maker who does not have a cryptographer in the room:
 
-A short sentence is fine when the next sentence answers it. A paragraph that gives each new term its own sentence is a definition list: state the contrast in the lesson, and leave the definitions in the glossary. Numbered steps stay short. A reference entry's labelled fields, such as Covers, Assumes, and Leaves out, are outside body prose. A spec states the claim to keep and may show one example sentence. The page writes the paragraph. A test locks the facts and the forbidden mistake. It does not include a full stop.
+- **Plain British English**: Use British spelling consistently — **organisation** (not *organization*), **programme** (not *program*, when referring to a planned set of activities), **labelled** (not *labeled*).
+- **Complete sentences in body prose**: Body paragraphs, numbered steps, and onward navigation links are complete sentences. Structural elements outside body prose — YAML front matter, headings, table cells, Mermaid fences, `Sources` and `Related pages` bullet lists, the comma-separated `Minimum fields` line on work products, glossary openings, and bold field prefixes (`**Assumes:**`, `**Leaves out:**`) — may use concise phrases. Homepage situation cards may use short clauses.
+- **Action-first subjects**: Address the person doing the work directly. Avoid meta-subjects such as *this page*, *the handbook*, *the reader*, *a reader*, *this edition*, or *the build*. Put the operational action, system, or decision in the grammatical subject.
+- **Second person vs named roles**: Use second person (*you*) for procedures carried out directly by the person using the page. When a duty belongs to an organisational function, name one of the seven standard roles: **executive sponsor**, **migration lead**, **asset owner**, **procurement**, **legal or risk**, **operations**, or **supplier**.
+- **Sentence-form onward links**: Write primary onward links as complete sentences — for example, `Continue with [Public-key cryptography](/learn/public-key-cryptography/).` or `The primary next page is [Commodity software](/migration-practices/commodity-software/).` Never use bare prefixes such as `Next:` or `Primary next page:`.
+- **Contrast over inline definition lists**: Do not turn lesson paragraphs into strings of single-sentence definitions. State the operational contrast in prose and leave term definitions to the [Glossary](./docs/resources/glossary.md).
+- **Abbreviations and punctuation**: Expand abbreviations at first use on each page. Use straight apostrophes (`supplier's`) and ISO dates (`YYYY-MM-DD`, such as `2026-08-14` and `2026-12-01`) inside Markdown tables.
+- **Casual phrasing inside `Example` only**: An insufficient record quoted inside an `Example` section (such as `"Our TLS scan found no issues."`) may use casual speech because it illustrates the failure mode to avoid.
 
-An insufficient record may be casual, because it is the record the page is warning against. It appears only inside Example.
+### Standard Handbook Terms
 
-Second person is used for a procedure the reader carries out. A responsibility that belongs to a role names the role: executive sponsor, migration lead, asset owner, procurement, legal or risk, operations, supplier.
+Prefer these exact phrases over retired shorthand metaphors:
 
-A public sentence speaks to the person doing the work. If the subject is the page, the handbook, the reader, the edition, or the build, rewrite it so the action is the subject. Limits stay; they name what to leave for a later record. These notes may still say "the reader", because they are written for the person editing the handbook.
-
-### Replacement terms
-
-| Term | Use it for |
-| --- | --- |
-| applicable migration timeline | The dated milestones of the authority the organisation recorded |
-| system environment | The product, service, and operating organisation being discussed |
-| data confidentiality period | How long the data must remain confidential |
-| subsequent review | The planned date when the record is opened again |
-
-### Labels
-
-A sentence that states a date, a duty, a sourced fact, or a technical choice begins with one of these labels (defined publicly on [Editorial policy](./docs/resources/editorial-policy.md)):
-
-- **Requirement** — a binding obligation inside the audience named by that authority.
-- **Authority recommendation** — the source advising an action.
-- **Authority statement** — the source describing a fact.
-- **Handbook practice** — the handbook's own instruction, followed by the sources it rests on.
-- **Handbook explanation** — a comparison table or sequence diagram drawn on a Learn explainer page.
-- **Example** — an illustration, including the clinic.
-
-Except under **Example**, a date or obligation names the source, the publication or update date, the jurisdiction, the audience, and the status when those change the meaning.
-
-`must` and `shall` appear only in a **Requirement** sentence, and that sentence names the authority. **Handbook practice** uses "record", "use", "ask", and "leave".
-
-### Automated checks
-
-| Command | Script | What it enforces |
+| Standard term | Meaning | Avoid |
 | --- | --- | --- |
-| `npm run check:voice` | `scripts/check-voice.mjs` | Scans `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md` for retired phrases, edition-banned phrases, and unattributed `must`/`shall`. |
-| `npm run check:sources` | `scripts/check-sources.mjs` | Requires every `docs/**/*.md` file to have `## Sources` with at least one `[label](https://...)` link before the next heading. |
-| `npm run check:records` | `scripts/check-records.mjs` | Requires `last_reviewed: 2026-11-10` on every `docs/**/*.md` file and verifies that all seven work-product pages link to their CSVs with matching header rows. |
-| `npm test` | `scripts/*.test.mjs` | Runs unit tests for the three checkers above plus `check-clinic.test.mjs` (clinic consistency and page contracts) and `check-explainers.test.mjs` (Mermaid pin, sequence diagrams, and explainer link isolation). |
+| **applicable migration timeline** | The dated milestones of the authority recorded for the organisation | *the clock*, *clocks* |
+| **system environment** | The product, service, and operating organisation under discussion | *the stack*, *operating layer* |
+| **data confidentiality period** | How long protected data needs to remain confidential | *secrecy life* |
+| **subsequent review** | The scheduled date when a migration record is reopened | *the next pass*, *the rhythm* |
+| **insufficient record** / **decision-ready record** | Contrasting example pair on practice and option pages | *weak answer*, *stronger answer* |
 
-The voice check rejects these retired and edition phrases anywhere in its scanned file set:
+---
 
-- Retired phrases: `what you leave with`, `i own the product dates`, `i have to ask a vendor`, `i have to show evidence`, `i have to change a protocol`, `i own the plan`, `choose your path`, `leave with`, `operating layer`, `the rhythm`
-- Edition phrases: `the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`, `this page`, `the reader`, `a reader`, `next:`, `primary next page:`
+## 2. Epistemic Labels and Modal Verbs
 
-A line that contains `must` or `shall` fails the edition scan unless it also contains one of: `NCSC`, `NIST`, `FIPS`, `EU`, `NIS`, `ASD`, `ACSC`, `CISA`, `NSA`, `AIVD`, `ETSI`, `CFDIR`.
+Every sentence that states a migration date, an external obligation, an authority's factual finding, or a technical recommendation opens with a bold epistemic label (defined publicly on [Editorial policy](./docs/resources/editorial-policy.md)):
 
-## Spelling and abbreviations
-
-Use consistently:
-
-- **organisation** (not organization)
-- **programme** (not program, when meaning a planned set of activities)
-- **labelled** (not labeled)
-
-Expand an abbreviation at first use on every page. Use straight apostrophes (`supplier's`) in Markdown tables so string assertions match.
-
-## Page shapes
-
-| Shape | Contract |
-| --- | --- |
-| **Chooser** | The homepage (`src/pages/index.tsx`) only. Promise, limit, six situation choices, the separate Learn the basics link, one clinic priority row linking to `/resources/protect-this-first/`, then the four reference section cards. |
-| **Route page** | Who it is for; the ordered reading list and why each step is in that order; the work-product output; one primary onward sentence naming the first page in the order; and that route's decision aid (exception check on `vendor-managed-software`; verifier updateability check on `hard-to-change-systems`; role inputs and LATICE correspondence labelled as **Handbook practice** on `organisation-wide`; preparation, vague/missing/concerning follow-up, and per-product/version/job recording on `ask-a-supplier`; classification questions without risk assessment on `not-sure`). Does not repeat practice-page procedures. |
-| **Learn lesson** | One idea in ordinary sentences, then one onward link (plus one optional pointer sentence to the paired explainer on `public-key-cryptography`, `quantum-threat`, `algorithms`, and `in-real-systems`). No migration procedure, no parameter table, and no diagram. |
-| **Learn explainer** | Optional concept pages under `/learn/explainers/`. Title is a question, repeated as the opening sentence; names the paired short lesson; develops one worked contrast (with a small table or static `sequenceDiagram` where applicable, or the authority-comparison table on `timelines`); states 2–3 takeaway sentences; ends with `Sources`, a back link to the short lesson, and an onward link to the next explainer or `/learn/`. |
-| **Practice page** | Exact seven headings in the order below, and no others before `Sources`. |
-| **Option page** | Decision branches and operational checks (`choosing`, `key-establishment`, `signatures`, `long-lived-roots`) using the seven practice headings; records which authority is followed without choosing for the organisation or printing parameter tables (`ML-KEM-768` may be named only as the default stated by NIST IR 8547). |
-| **Work-product page** | When to use it; minimum fields; one filled clinic example; one blank table with the exact CSV columns; the `/downloads/<file>.csv` link; storage/protection rules and `unknown`/semicolon field rules; `Sources`; `Related pages`. |
-| **Standards summary** | Reference pages under `/standards/<category>/<slug>/`: metadata table (`Authority`, `Publication`, `Status`, `Official source`), `## What it covers`, `## Role in the post-quantum transition`, `## Sources`, and `## Related pages`. |
-| **Reference index** | Section and category landings, curated references, the glossary, and the editorial policy. Concise routing and scope notes ending with `## Sources` and `## Related pages`. |
-
-Every page displays `Last reviewed` from front matter `last_reviewed: 2026-11-10`. If an edition review finishes on a later date, every page, `scripts/check-records.mjs`, and the changelog on [Editorial policy](./docs/resources/editorial-policy.md) move to that single date together.
-
-### Practice page headings
-
-In this order, and no others before `Sources`:
-
-1. `When this applies`
-2. `Do this`
-3. `Keep this evidence`
-4. `Example`
-5. `Limits and next page`
-6. `Sources`
-7. `Related pages`
-
-`Do this` is a numbered procedure. `Example` is one heading containing one insufficient record and one decision-ready record (or, on `implementation`, one decision-ready closed change and one blocked change). `Limits and next page` names one primary onward page as a sentence. `Related pages` is a secondary list.
-
-### Diagrams
-
-- Diagrams on Learn explainers (`keys`, `kem`, `tls`) are static `mermaid` code fences beginning with `sequenceDiagram`, preceded immediately by a sentence stating what the figure shows.
-- Do **not** add image files (`![...]`), flowcharts, dynamic `@theme/Mermaid` imports, or `@mermaid-js/layout-elk`. `quantum-computers` has no diagram, `tls` does not use the word `handshake`, `kem` does not name `ML-KEM-768` or `parameter set`, and no explainer mentions the clinic.
-- Because Docusaurus renders invalid Mermaid syntax as an inline error box rather than failing `npm run build`, inspect rendered diagrams in the browser whenever Mermaid fences change.
-
-## Work products and the clinic illustration
-
-### CSV templates
-
-CSV files live in `static/downloads/` and stay **header-only**. Each page's blank table and filled example match the CSV header row (checked by `npm run check:records`):
-
-| Work product | CSV file | Columns |
+| Label | When to use it | Attribution requirement |
 | --- | --- | --- |
-| Inventory record | `static/downloads/inventory-record.csv` | `system,owner,key-establishment algorithm,signature algorithm,software control,confidentiality period,renewal,version,dependencies,not visible to a scan,confidence` |
-| Priority record | `static/downloads/priority-record.csv` | `asset,confidentiality period,job,impact,lead time,dependencies,supplier readiness,decision,reason,source,subsequent review` |
-| Vendor response log | `static/downloads/vendor-response-log.csv` | `supplier,product and version,question,answer,date,source,judgement,follow-up,decision` |
-| Migration plan | `static/downloads/migration-plan.csv` | `asset,owner,why it is included,applicable timeline,authority,milestone,dependency,next action,subsequent review` |
-| Change record | `static/downloads/change-record.csv` | `system,change,option,authority,pilot scope,tests,rollback trigger,who can roll back,deployed-state check,result,date` |
-| Evidence record | `static/downloads/evidence-record.csv` | `claim,record,source,date,owner,subsequent review` |
-| Review log | `static/downloads/review-log.csv` | `date,what was reviewed,unresolved items,owner,next review` |
+| **Requirement:** | A binding obligation that applies to the specific audience governed by that authority. | Name the authority, document, publication/update date, jurisdiction, and governed audience. |
+| **Authority recommendation:** | An external authority advising an action, milestone, or construction. | Name the authority, document, publication/update date, jurisdiction, and target audience. |
+| **Authority statement:** | An external authority stating a technical or transition fact (without advising an action). | Name the authority, document, and publication/update date. |
+| **Handbook practice:** | What the handbook instructs you to record, ask, use, or leave for a later step. | Follow with the authority sources the practice rests on where applicable; use verbs such as *record*, *use*, *ask*, and *leave*. |
+| **Handbook explanation:** | A worked comparison table or sequence diagram constructed on a Learn explainer page. | Distinguish handbook structure from any **Authority statement** cells inside the table. |
+| **Example:** | An illustrative scenario, including the shared clinic example. | Never label an example review date or fictional decision as a **Requirement**. |
 
-### Field and protection rules
+### Strict Modal Verb Rule (`must` and `shall`)
 
-Every work-product page states these rules (checked by `scripts/check-clinic.test.mjs`):
+`must` and `shall` are reserved exclusively for **Requirement** sentences (or direct paraphrases of an authority's binding rule) and **the same line must explicitly name a recognised authority acronym**:
 
-- Keep a real record off public tickets and unlocked shared drives, stored with the same care as the asset list it describes.
-- Keys, secrets, and personal data stay out of the file; name the system only.
-- Any unfilled cell uses `unknown`. Table date cells use ISO dates (`YYYY-MM-DD`).
-- Shared libraries or services go in `dependencies` separated by a semicolon (`;`), not in separate system rows. Multiple timelines or sources in one cell are also separated by a semicolon.
-- Allowed controlled values:
-  - `job`: `key establishment`, `signatures`, or `non-updatable verifier`
-  - `judgement`: `complete`, `vague`, `missing`, or `concerning` (`complete` requires product, version, construction, date, and a retainable source)
-  - `confidence` (inventory): `known` only when both algorithm cells name a construction; otherwise `unknown`
-- On the vendor response log, use a separate row for each product, version, and cryptographic job. Question groups follow the five phases of the ASD/ACSC/CISA/NSA vendor guide.
+`NCSC`, `NIST`, `FIPS`, `EU`, `NIS`, `ASD`, `ACSC`, `CISA`, `NSA`, `AIVD`, `ETSI`, `CFDIR`
 
-### Canonical clinic values
+Any line in `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, or `navigation-structure.md` containing `must` or `shall` without one of those acronyms fails `npm run check:voice`.
 
-[Protect this first](./docs/resources/protect-this-first.md) and the seven work products share one fictional clinic illustration (locked by `scripts/check-clinic.test.mjs`):
+---
 
-- **Inventory**: two rows — `Health records on the vendor system` and `Firmware signature check that cannot be updated in the field` (`not visible to a scan: firmware trust anchor`), both owned by `the clinic operations lead` with `confidence: unknown`.
-- **Priority**: both assets are first for different jobs — health records `first for key establishment` (`confidentiality period longer than 10 years`, cited to `EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025`, review `2026-12-01`) and firmware `first for non-updatable verifier` (cited to `UK NCSC timelines, modified 3 August 2026`, review `2026-12-01`). NIST IR 8547 is **not** cited as the source of the 10-year threshold. (A short-lived channel under one year appears only as the worked contrast on `priority.md`.)
-- **Supplier letter** (`2026-08-14`): `Clinic software supplier` names the product and version in the letter (no invented version number like `4.2`), names `ML-KEM-768`, names the release date, and states that signatures are not in that release (`judgement: complete`, `decision: record the key-establishment date and open a signatures follow-up`).
-- **Changes**: health-records pilot row is closed (`option: ML-KEM-768`, `authority: NIST IR 8547, October 2026`, `result: Pilot passed`, `date: 2026-08-14`); field-device firmware row has `option`, `authority`, `result`, and `date` set to `unknown` and is explicitly marked **blocked** (`implementation does not start while the option is unknown`).
-- **Migration plan, evidence, and review log**: health-records plan cites `end of 2030` under the EU NIS Cooperation Group roadmap v1.1 with `next action: signatures follow-up`; evidence record cites the supplier letter of `2026-08-14` and `NIST IR 8547, October 2026`; review log carries `blocked firmware option` as the unresolved item with next review `2026-12-01` (always an **Example**, never a **Requirement**).
+## 3. Page Shapes and Structural Contracts
 
-## Glossary entries
+Every page in the handbook follows one of nine structural contracts and ends (except the React homepage) with `## Sources` followed by `## Related pages`.
 
-The glossary is a reference index. Entries stay in alphabetical order by the heading.
+### 3.1 Situation Chooser (`/`)
+Implemented in `src/pages/index.tsx`. Contains four regions only: hero (`<h1>` **PQC Handbook** + promise sentence + specialist/risk-assessment limit sentence, with no CTA buttons), six situation cards under **Choose the situation** plus the visually separated **Learn the basics** card, the single-row clinic priority preview linking to `/resources/protect-this-first/`, and four reference section cards.
 
-The heading is the term a person will look up. Write an abbreviation as `Short form (expansion)`, as in `CBOM (cryptography bill of materials)`. Write a full name as `Full name (short form)` when the short form is the one used in the lessons, as in `Post-quantum cryptography (PQC)`. Leave the parentheses out when the words in them are already the term.
+### 3.2 Route Page (`/routes/*`)
+1. **Audience & applicability check**: Who the route serves and which conditions send the system to a different route:
+   - `vendor-managed-software`: All five conditions must hold (supplier-updated browsers/OS/mobile, no multi-year confidential data, no bespoke system, no non-updatable verifier, in support with a written supplier plan); out-of-support or plan-less products move to `hard-to-change-systems`.
+   - `hard-to-change-systems`: Checks whether the verifier can be updated in the field (`long-lived-roots` precedes `signatures` when it cannot); stops once release dates and a closed or blocked change record exist.
+   - `organisation-wide`: Lists inputs from the seven roles, presents the correspondence with ASD's **LATICE** phases (*Locate, Assess, Triage, Implement, Communicate and educate*) explicitly labelled as **Handbook practice** (name an owner precedes LATICE; handbook step 6 verifies and records the change while LATICE's *Communicate and educate* communicates the result and `/learn/` provides education), and instructs teams to pair estate coordination with per-system asset routes.
+   - `ask-a-supplier`: Covers preparation, handling `complete`, `vague`, `missing`, or `concerning` answers, and recording one row per product, version, and cryptographic job.
+   - `not-sure`: Diagnostic questions without making a risk assessment; routes unresolved cases to the risk owner or sector authority.
+2. **Ordered reading sequence**: Numbered links explaining why each step sits in that position (never inserting `/learn/*`).
+3. **Output**: Linked to the target work product(s).
+4. **Primary onward link**: Written as a complete sentence naming the first page in the reading order, plus a pointer to `/resources/protect-this-first/` where relevant.
+5. `## Sources` and `## Related pages`.
 
-Each entry is a short paragraph, long enough to use the term. Say what it is, and say what it is not or how it differs from the neighbouring term. The last sentence may name the page that uses the term, as `See [Public-key cryptography](/learn/public-key-cryptography/).` A noun phrase may open the paragraph.
+### 3.3 Learn Lesson (`/learn/*`)
+- Explains **one concept** in plain sentences, ending with a sentence-form onward link to the next step in the eight-step sequence (`/resources/glossary/` is step 8).
+- Four lessons (`public-key-cryptography`, `quantum-threat`, `algorithms`, `in-real-systems`) add one sentence immediately after the onward link pointing to their paired explainer (`timelines` points inline to `/learn/explainers/timelines/`). `what-post-quantum-means` and `standardisation` do not link to explainers.
+- Contains **no** migration procedure, **no** parameter table, and **no** diagram.
 
-Start the paragraph with **Handbook wording:** when the gloss is the handbook's own, or **Authority recommendation:** when the sentence states what a source says. An algorithm named by a FIPS names NIST and links that FIPS, without either label. The rest of that paragraph says which job the algorithm does and which neighbouring algorithm does not.
+### 3.4 Learn Explainer (`/learn/explainers/*`)
+- **Title and lead**: The `title` is a question, repeated verbatim as the opening sentence of the body.
+- **Context**: Names the paired short lesson and develops one worked contrast not present in that lesson.
+- **Visuals and tables**:
+  - `keys`, `kem`, and `tls` each include exactly **one** static `mermaid` fence beginning with `sequenceDiagram`, preceded immediately by a sentence stating what the figure shows (`keys`: `Publisher` and `Device`; `kem`: `Sender` and `Recipient`; `tls`: `Client` and `Server`).
+  - `quantum-computers` contains **no** diagram and stays strictly within **Authority statement** claims from NIST IR 8547.
+  - `timelines` (*Whose date applies*) presents the cross-jurisdiction comparison table (`authority`, `audience`, `milestone`, `status`, `asset scope`, `last checked`) covering UK NCSC, EU NIS Cooperation Group, NIST IR 8547 (standards and US federal), ASD planning, and the Canadian CFDIR guide.
+- **Explainer guardrails** (enforced by `scripts/check-explainers.test.mjs`):
+  - Never use image embeds (`![...]`), flowcharts, `@theme/Mermaid` imports, or `@mermaid-js/layout-elk`.
+  - Never mention the `clinic`, clinic field names, or `parameter set`.
+  - Never name `ML-KEM-768` on `kem.md` or `tls.md`, never use `RSA` or `ML-KEM` on `keys.md`, and never use the word `handshake` on `tls.md` (or `in-real-systems.md`).
+  - Note that Docusaurus renders broken Mermaid syntax as an inline error box without failing `npm run build`; always visually verify edited Mermaid fences in a browser.
+- **Closing**: Two or three takeaway sentences, back link to the paired short lesson, onward link to the next explainer (or `/learn/`), `## Sources`, and `## Related pages`.
 
-Do not paste the lesson, and do not add a parameter table. A date or a duty appears only when the entry takes it from the source line it cites.
+### 3.5 Practice Page (`/migration-practices/*`)
+Uses **exactly these seven `##` headings in this order**, with no extra `##` headings before `Sources`:
 
-## Citations
+1. `## When this applies` — entry condition for the practice.
+2. `## Do this` — numbered operational procedure plus labelled **Handbook practice** / **Authority recommendation** / **Requirement** rules.
+3. `## Keep this evidence` — the work product or record produced.
+4. `## Example` — a single heading containing one **insufficient record** and one **decision-ready record** (on `implementation.md`, one closed decision-ready pilot record and one **blocked** firmware record).
+5. `## Limits and next page` — what this step leaves for later and one sentence naming the primary onward page.
+6. `## Sources`
+7. `## Related pages`
 
-A date, a duty, or a disagreement remains checkable from the sentence: body, document, month and year, and a public URL. Parameter tables stay out. FIPS 203, FIPS 204, and FIPS 205 may be linked on handbook pages when the page cites those standards.
+### 3.6 Algorithm and Protocol Option Page (`/algorithm-protocol-options/*`)
+Follows the seven practice-page headings (`###` subheadings inside `## Do this` are allowed for decision branches on `choosing.md`):
+- Records who controls the software, what the cited authority recommends or permits (hybrid, post-quantum-only, or supplier update), and what operational check precedes cutover — without choosing an option on the organisation's behalf.
+- Does **not** print parameter tables (`ML-KEM-768` is named only where citing NIST IR 8547's stated default; parameter selection links out to FIPS 203, FIPS 204, and FIPS 205).
 
-**Page endings**
+### 3.7 Work-Product Page (`/resources/*-record`, `vendor-response-log`, `migration-plan`, `review-log`)
+1. `## When to use it`
+2. `## Minimum fields` — comma-separated column names matching the CSV header, followed by `unknown`, semicolon, `confidence`/`job`/`judgement`, and data-hygiene rules.
+3. `## Filled example` — Markdown table using the exact CSV columns and canonical clinic values.
+4. `## Blank template` — empty Markdown header table with the exact CSV columns, `/downloads/<slug>.csv` download link, and storage-security warning.
+5. `## Sources` and `## Related pages`.
 
-All handbook pages end with `## Sources` followed by `## Related pages`. `npm run check:sources` requires at least one `[label](https://...)` link under `## Sources` before the next heading (angle-bracket autolinks do not satisfy the checker).
+### 3.8 Standards and Guidance Summary Page (`/standards/<category>/<slug>/`)
+1. Top four-row metadata table: `Authority`, `Publication`, `Status`, `Official source` (with descriptive link text such as `[CSRC publication page (HTML)](...)` or `[White House memorandum (PDF)](...)`).
+2. `## What it covers` — factual scope summary of the standard, directive, or migration guide.
+3. `## Role in the post-quantum transition` (on standards and directives) or `## Scope and handbook use` with `**Assumes:**` and `**Leaves out:**` (on migration guides).
+4. `## Sources` and `## Related pages`.
 
-### Source order
+### 3.9 Reference Index and Glossary (`index.md`, `curated-references.md`, `editorial-policy.md`, `glossary.md`)
+- Section and category `index.md` pages stay concise, routing visitors by role or transition category and ending with `## Sources` and `## Related pages`.
+- **Glossary (`docs/resources/glossary.md`)**:
+  - Alphabetical `##` headings. Format abbreviations used short-first as `CBOM (cryptography bill of materials)`, full terms abbreviated in lessons as `Post-quantum cryptography (PQC)`, and plain terms without redundant parentheses.
+  - Each entry is one short paragraph stating what the term is, how it differs from its neighbour, and optionally `See [Page](/path/).`
+  - Open with `**Handbook wording:**` for handbook definitions or `**Authority recommendation:**` for sourced definitions. Algorithms standardised by a NIST FIPS name NIST and link that FIPS directly without either label. Never include parameter tables.
 
-When a page or the editorial policy orders sources, use:
+---
 
+## 4. Work-Product Schemas and the Clinic Illustration
+
+### 4.1 Header-Only CSV Schemas (`static/downloads/*.csv`)
+All seven CSV files contain **only** their header row, which must match the page's blank template and filled example column-for-column (`npm run check:records`):
+
+| Page (`docs/resources/`) | CSV (`static/downloads/`) | Exact CSV header |
+| --- | --- | --- |
+| `inventory-record.md` | `inventory-record.csv` | `system,owner,key-establishment algorithm,signature algorithm,software control,confidentiality period,renewal,version,dependencies,not visible to a scan,confidence` |
+| `priority-record.md` | `priority-record.csv` | `asset,confidentiality period,job,impact,lead time,dependencies,supplier readiness,decision,reason,source,subsequent review` |
+| `vendor-response-log.md` | `vendor-response-log.csv` | `supplier,product and version,question,answer,date,source,judgement,follow-up,decision` |
+| `migration-plan.md` | `migration-plan.csv` | `asset,owner,why it is included,applicable timeline,authority,milestone,dependency,next action,subsequent review` |
+| `change-record.md` | `change-record.csv` | `system,change,option,authority,pilot scope,tests,rollback trigger,who can roll back,deployed-state check,result,date` |
+| `evidence-record.md` | `evidence-record.csv` | `claim,record,source,date,owner,subsequent review` |
+| `review-log.md` | `review-log.csv` | `date,what was reviewed,unresolved items,owner,next review` |
+
+### 4.2 Work-Product Field and Security Rules
+Every work-product page states all four rules (enforced by `scripts/check-clinic.test.mjs`):
+1. **Storage security**: Keep real records off public issue trackers and unlocked shared drives; protect an inventory with the same access controls as the asset register it describes.
+2. **No sensitive material**: Keys, secrets, and personal data stay out of record files — name the system only.
+3. **Unknowns and multi-values**: Write `unknown` in any unfilled cell. Put shared libraries or services inside `dependencies` separated by a semicolon (`;`) rather than creating a second system row; separate multiple timelines or sources in one cell with `;`.
+4. **Controlled values**:
+   - `confidence` (inventory): `known` **only** when both `key-establishment algorithm` and `signature algorithm` name a construction; otherwise `unknown`.
+   - `job` (priority): `key establishment`, `signatures`, or `non-updatable verifier`.
+   - `judgement` (vendor response log): `complete` (names product, version, construction, date, and retainable source), `vague`, `missing`, or `concerning` (escalates to procurement and contract owner). Use one row per product, version, and cryptographic job, grouped on `vendor-response-log.md` by the five phases of the ASD/ACSC/CISA/NSA vendor guide.
+
+### 4.3 Canonical Clinic Dataset
+`scripts/check-clinic.test.mjs` locks the shared fictional clinic rows across `protect-this-first.md` and the seven work products:
+- **Inventory**: (1) `Health records on the vendor system` (`software control: the vendor`, `confidentiality period: more than 10 years`, `confidence: unknown`) and (2) `Firmware signature check that cannot be updated in the field` (`not visible to a scan: firmware trust anchor`, `confidence: unknown`), both owned by `the clinic operations lead`.
+- **Priority**: Both assets are first for distinct jobs — health records `first for key establishment` (`confidentiality period longer than 10 years`, source `EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025`, review `2026-12-01`) and firmware `first for non-updatable verifier` (`verifier cannot be updated in the field`, source `UK NCSC timelines, modified 3 August 2026`, review `2026-12-01`). Never attribute the 10-year threshold to NIST IR 8547. (A short-lived channel `< 1 year` appears only as a contrast on `priority.md`.)
+- **Supplier letter (`2026-08-14`)**: `Clinic software supplier`, `named in the supplier letter` (no invented version number such as `4.2`), naming `ML-KEM-768`, the release date, and that signatures are not in that release (`judgement: complete`, `decision: record the key-establishment date and open a signatures follow-up`).
+- **Change records**: (1) Closed health-records row (`option: ML-KEM-768`, `authority: NIST IR 8547, October 2026`, `pilot scope: One clinic site`, `result: Pilot passed`, `date: 2026-08-14`) and (2) **Blocked** `Clinic field device firmware signature check` row (`option: unknown`, `authority: unknown`, `result: unknown`, `date: unknown`), preceded by a note stating it is `blocked: implementation does not start while the option is unknown`.
+- **Plan, evidence, and review**: Migration plan cites `end of 2030` under `EU NIS Cooperation Group roadmap, version 1.1, 11 June 2025` with `next action: signatures follow-up`; evidence record cites `supplier letter of 14 August 2026; NIST IR 8547, October 2026`; review log lists `blocked firmware option` as the unresolved item and `2026-12-01` as the next review (**Example**, never **Requirement**).
+
+---
+
+## 5. Citations and Sourcing Gate
+
+### 5.1 Source Hierarchy
+Order citations on `Editorial policy` and multi-source pages as:
 1. Standards and legal requirements
 2. National cyber guidance
 3. Sector guidance
 4. Illustrative practice
 
-Sister-site links to the Secure-by-Design Handbook and the Supply Chain Security Handbook remain onward reading. They are not the authority for a post-quantum date or duty.
+### 5.2 Sourcing Rules
+- Every factual claim about a date, duty, algorithm standard, or inter-authority difference names the **issuing body, document title, publication or modification date, and public `https://` URL**.
+- `## Sources` must contain at least one Markdown link `[label](https://...)` before the next `##` heading (`npm run check:sources`; bare `<https://...>` autolinks do not pass).
+- Reference summaries for all cited standards, US federal directives, and migration guides live under `/standards/` and are indexed on [Curated references](./docs/resources/curated-references.md).
+- Never cite local paths under `.ai-helper-files/`.
+- Sister-site links to the Secure-by-Design Handbook and Supply Chain Security Handbook are onward reading only, never authority citations for PQC dates or obligations.
 
-### Sourcing gate
+### 5.3 Authority-Specific Nuances to Preserve
 
-A sentence ships when the writer can point to a **filed source** or official publication page that contains the claim and links to its public URL. Full reference summaries of cited standards, US federal directives, and migration guides live under `/standards/` and are indexed on [Curated references](./docs/resources/curated-references.md).
+| Authority / Publication | Required nuance |
+| --- | --- |
+| **NIST IR 8547** (final, October 2026 — `https://doi.org/10.6028/NIST.IR.8547` or `https://csrc.nist.gov/pubs/ir/8547/final`) | Always cite the October 2026 final (never the 2024 IPD). Distinguish the **NIST standards timeline** (deprecation after 2030, disallowance after 2035) from **US federal agency dates** inside the same report (aligned with EO 14412 and OMB M-26-15). State that the standards timeline is not a universal deadline for every organisation. |
+| **UK NCSC migration timelines** (modified 3 August 2026 — `https://www.ncsc.gov.uk/guidance/pqc-migration-timelines`) | Note that the 2028 / 2031 / 2035 milestones primarily address large organisations, CNI operators, and bespoke IT, while standard browsers, OSes, and mobile devices follow a supplier-update path. |
+| **EU NIS Cooperation Group roadmap** (v1.1, 11 June 2025) | Member State milestones (2026, 2030, 2035) and the 10-year public-key confidentiality threshold for high-risk use cases. |
+| **ASD / ACSC planning & vendor guides** (`cyber.gov.au`, vendor guide updated 5 November 2026) | Label `end of 2030` as ASD's planning milestone for its audience (never a universal deadline). Use the vendor guide's phrase **common concerns** for supplier questions. |
+| **NIST NCCoE Migration to PQC FAQ** (updated 5 November 2026) & **NIST SP 1800-38A/B/C** (2023) | Label SP 1800-38A/B/C as **2023 preliminary drafts** and note the FAQ's statement that those drafts are not planned to become finals. Describe CBOM in SP 1800-38B as a developing model, not a handbook requirement. |
+| **Canadian CFDIR Quantum-Readiness Best Practices** (10 July 2024) | Cite leadership actions without a cryptographer; never invent Canadian government milestone years. |
+| **Dutch PQC Migration Handbook** (AIVD, CWI, TNO, December 2024) & **ETSI TR 103 619 / TR 104 016** | Link rather than rewrite; cite where QKD and QRNGs are set aside. |
 
-Do **not** treat gitignored local paths as public citations. Material under `.ai-helper-files/` is for drafting only.
+---
 
-**Core public URLs and citation rules:**
+## 6. Front Matter, Review Dates, and SEO Metadata
 
-| Source | Public URL | Citation rule |
-| --- | --- | --- |
-| UK NCSC migration timelines (modified 3 August 2026) | https://www.ncsc.gov.uk/guidance/pqc-migration-timelines | State the primary audience (large organisations, CNI, bespoke IT) alongside the supplier-update path for commodity IT |
-| UK NCSC preparation whitepaper (August 2024) | https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography | UK preparation steps recorded in that paper |
-| EU NIS Cooperation Group roadmap (v1.1, 11 June 2025) | https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf | Member State milestones and the 10-year high-risk confidentiality threshold |
-| NIST IR 8547 (final, October 2026) | https://doi.org/10.6028/NIST.IR.8547 (or https://csrc.nist.gov/pubs/ir/8547/final) | Cite the October 2026 final (never the initial public draft); distinguish the NIST standards timeline from US federal agency dates |
-| CISA, NSA, and NIST Quantum-Readiness fact sheet (August 2023) | https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf | Short official starting point for inventory, embedded/hardware blind spots, suppliers, and supply chain |
-| Dutch PQC Migration Handbook (AIVD, CWI, TNO, December 2024) | https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf | Diagnose, plan, execute; urgent, regular, and cryptography-supplier personas; link rather than rewrite |
-| PQCC migration roadmap (May 2025) | https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf | Supplementary four-part checklist |
-| NCCoE Migration to PQC project & FAQ (updated 5 November 2026) | https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html | Six migration phases; NIST SP 1800-38A/B/C (2023) must be labelled as preliminary drafts not planned to become finals, with CBOM described as a developing model in SP 1800-38B rather than a handbook requirement |
-| ASD, ACSC, CISA, and NSA vendor questions (updated 5 November 2026) | https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors | Benchmark for supplier questions across five phases; use the guide's phrase "common concerns" |
-| ASD and ACSC planning for PQC | https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography | LATICE lifecycle phases; label end of 2030 as ASD's planning milestone for its audience, never a universal deadline |
-| Canadian CFDIR Quantum-Readiness Best Practices (10 July 2024) | https://ised-isde.canada.ca/site/spectrum-management-telecommunications/sites/default/files/documents/Quantum-Readiness%20Best%20Practices%20-%20v04%20-%2010%20July%202024.pdf | Leadership actions without a cryptographer; do not invent Canadian government milestone years |
-| ETSI TR 103 619 & ETSI TR 104 016 | https://www.etsi.org/deliver/etsi_tr/103600_103699/103619/01.01.01_60/tr_103619v010101p.pdf and https://www.etsi.org/deliver/etsi_tr/104000_104099/104016/01.01.01_60/tr_104016v010101p.pdf | Three-stage migration framing (setting QKD and QRNG aside) and eleven-step repeatable programme-office cycle |
-| FIPS 203, FIPS 204, FIPS 205 | https://csrc.nist.gov/pubs/fips/203/final , https://csrc.nist.gov/pubs/fips/204/final , https://csrc.nist.gov/pubs/fips/205/final | Foundational NIST PQC standards for ML-KEM, ML-DSA, and SLH-DSA |
+Every Markdown file under `docs/` requires these five front-matter fields (`sidebar_position` is optional where ordering is not fixed solely by `sidebars.ts`):
 
-An unsourced date, percentage, or claim that an authority requires something **does not go on the page**.
+```yaml
+---
+title: Inventory the cryptography
+sidebar_label: Inventory
+description: List the cryptography, including what a scanner cannot see, before anyone claims it has moved to post-quantum algorithms.
+displayed_sidebar: migrationPracticesSidebar
+last_reviewed: 2026-11-10
+---
+```
 
-## Front matter and SEO titles
+- **Edition review date**: Every doc carries `last_reviewed: 2026-11-10`, rendered above the article by `src/theme/DocItem/Content/index.tsx` and enforced by `npm run check:records`. When a full quarterly or republication review completes on a new date, update `last_reviewed` across all `docs/**/*.md`, `EDITION_DATE` in `scripts/check-records.mjs`, and the changelog in `docs/resources/editorial-policy.md` together.
+- **Search-intent deduplication**: A doc's `title` is both its visible `<h1>` and its `<title>` tag (`<title> | PQC Handbook`), and `description` is its search snippet. Ensure two pages never compete for the same search query: keep the primary head term on the canonical page that fulfils it, and phrase routing or companion pages around their specific operational role. The homepage is the sole exception where `Layout` `title` (`Post-quantum cryptography handbook`) differs from the hero `<h1>` (`PQC Handbook`).
 
-Each doc needs `title`, `description`, `sidebar_label`, `displayed_sidebar`, and `last_reviewed`. `sidebar_label` is the short name in the sidebar and matches [navigation-structure.md](./navigation-structure.md).
+---
 
-`title` is both the visible `<h1>` heading and the search-result `<title>` (Docusaurus appends ` | PQC Handbook`), and `description` is the search snippet. Avoid two pages competing for the same search query: keep the head query on the page that directly answers it, and give routing or supporting pages titles and descriptions that name their distinct job (for example, separating a vendor-response practice or route from the supplier-questions standard summary). The homepage is the sole exception where `Layout` `title` (`Post-quantum cryptography handbook`) differs from the visible hero `<h1>` (`PQC Handbook`).
+## 7. Automated Quality Gates
+
+Run the full suite locally before merging (`.github/workflows/deploy.yml` runs `typecheck` and `build` only):
+
+| Command | Purpose |
+| --- | --- |
+| `npm test` | Runs all five `node:test` suites: `check-voice.test.mjs`, `check-sources.test.mjs`, `check-records.test.mjs`, `check-clinic.test.mjs`, and `check-explainers.test.mjs`. |
+| `npm run check:voice` | Scans `docs/**/*.md`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md` for banned phrases and unattributed `must`/`shall`. |
+| `npm run check:sources` | Verifies every `docs/**/*.md` file has `## Sources` with at least one `[label](https://...)` link before the next `##` heading. |
+| `npm run check:records` | Verifies `last_reviewed: 2026-11-10` on every `docs/**/*.md` file and checks that all seven work-product pages link to existing `static/downloads/*.csv` files with matching header rows. |
+| `npm run typecheck` | Runs `tsc` against `docusaurus.config.ts`, `sidebars.ts`, and `src/`. |
+| `npm run build` | Builds static HTML/search index in `build/` and throws on any broken link, anchor, or relative Markdown link. |
+
+Phrases rejected anywhere in the `check:voice` scan set:
+
+- **Retired phrases**: `what you leave with`, `i own the product dates`, `i have to ask a vendor`, `i have to show evidence`, `i have to change a protocol`, `i own the plan`, `choose your path`, `leave with`, `operating layer`, `the rhythm`
+- **Edition-banned phrases**: `the clock`, `clocks`, `secrecy life`, `the stack`, `the next pass`, `weak answer`, `stronger answer`, `five responsibilities`, `where to start`, `start here`, `this page`, `the reader`, `a reader`, `next:`, `primary next page:`
