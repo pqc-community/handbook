@@ -1,46 +1,54 @@
 # PQC Handbook - Navigation Structure
 
-Public navigation, URL routing, and sidebar structure for `https://pqchandbook.com`. Keep this map aligned with `docusaurus.config.ts`, `sidebars.ts`, `src/pages/index.tsx`, and the Markdown tree under `docs/`.
-
-## Route and URL Policy
-
-Docs live under `docs/` with `routeBasePath: '/'` and `trailingSlash: true`, so folder paths under `docs/` map directly to root URLs ending in `/` (for example, `docs/migration-practices/inventory.md` serves `/migration-practices/inventory/`).
-
-- Canonical base URL: `https://pqchandbook.com/`
-- Never prefix public routes with `/docs/`.
-- `onBrokenLinks`, `onBrokenAnchors`, and `onBrokenMarkdownLinks` are all set to `'throw'` in `docusaurus.config.ts`.
-- Every Markdown file under `docs/` declares `displayed_sidebar` matching the sidebar that owns it in `sidebars.ts`.
-- Downloadable CSV templates live in `static/downloads/*.csv` and resolve at `/downloads/*.csv`.
-- Retired paths are not redirected; every live path appears in the sitemap below.
+Information architecture, URL conventions, and routing model for `https://pqchandbook.com`, aligned with `docusaurus.config.ts`, `sidebars.ts`, and `docs/`.
 
 ## Top-Level Navigation and Sidebars
 
-The navbar stays restrained: the logo and **PQC Handbook** title link to `/`, five doc sidebars appear on the left, and local search, colour-mode toggle, and GitHub appear on the right:
+Top navigation stays restrained. The logo and **PQC Handbook** title link to `/`; the explicit navbar items are the conceptual track, the four reference sections, and GitHub (alongside search and theme toggle):
 
 1. **Learn the basics** (`learnSidebar`)
 2. **Standards** (`standardsSidebar`)
 3. **Migration practices** (`migrationPracticesSidebar`)
 4. **Algorithm and protocol options** (`algorithmProtocolOptionsSidebar`)
 5. **Resources** (`resourcesSidebar`)
+6. **GitHub**
 
-**Routes** (`routesSidebar`) are intentionally omitted from the top navbar. Visitors enter a route from the homepage situation chooser or from the **Routes** column in the footer, and `routesSidebar` keeps all six routes visible once inside `/routes/*`.
+**Situation routes** (`routesSidebar`) are intentionally omitted from the top navbar so top-level navigation stays uncluttered. Visitors enter `/routes/*` from the homepage situation chooser or the footer, and `routesSidebar` keeps all six routes visible once inside a route. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
 
-`sidebars.ts` defines six hand-written sidebars: `learnSidebar`, `routesSidebar`, `standardsSidebar`, `migrationPracticesSidebar`, `algorithmProtocolOptionsSidebar`, and `resourcesSidebar`.
+Do not use standards-body or algorithm names (such as NIST, ETSI, ML-KEM, or FIPS) as top-level navigation labels; organise top-level navigation around reader jobs.
+
+## URL and Linking Conventions
+
+Docs are served at the site root rather than under `/docs/`:
+
+- Canonical domain: `https://pqchandbook.com`
+- `baseUrl`: `/`
+- `docs.routeBasePath`: `/`
+- `trailingSlash`: `true`
+
+Linking guidance:
+
+- In `docusaurus.config.ts`, React pages (`src/pages/`), and cross-section references, use canonical root paths with trailing slashes (for example, `/migration-practices/inventory/` or `/standards/post-quantum/fips-203/`), never `/docs/...`.
+- Within the same `docs/` directory, relative Markdown links (such as `./priority.md`) and canonical root paths both work cleanly; broken links, anchors, and Markdown links fail `npm run build`.
+- Downloadable work-product CSVs live in `static/downloads/` and resolve at `/downloads/*.csv` (for example, `/downloads/inventory-record.csv`).
 
 ## Site Model
 
 ```text
 Homepage Situation Chooser (/)
-  ├── Six Situation Routes (/routes/*) ──► Migration Practices, Options, Standards, and Work Products
-  └── Learn the Basics (/learn/*)      ──► Background lessons + optional Go deeper explainers
+  ├── Situation Routes (/routes/*) ──► Migration Practices, Options, Standards, and Resources
+  └── Learn the Basics (/learn/*)  ──► Plain-English sequence + optional Go deeper explainers
 ```
 
-- **Homepage (`/`)**: Routes organisations by operational situation rather than cryptographic primitive.
-- **Routes (`/routes/*`)**: Short, ordered reading lists tailored to one situation, naming the work-product output and the first onward step.
-- **Learn the basics (`/learn/*`)**: Conceptual background before planning begins, kept separate from migration procedures.
-- **Reference sections (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`)**: Reusable procedures, option trade-offs, authoritative standard/directive/guide summaries, and CSV-backed record templates shared across routes.
+- **Situation Chooser (`/`) and Routes (`/routes/*`)**: Route visitors by operational context (*vendor-managed software*, *long-lived confidentiality*, *hard-to-change systems*, *organisation-wide coordination*, *ask a supplier*, or *not sure*) into an ordered sequence of reference pages without duplicating those pages into separate silos.
+- **Learn the Basics (`/learn/*`)**: An introductory track for visitors who want conceptual grounding before planning a migration, ending at `/resources/glossary/`, with optional **Go deeper** explainers under `/learn/explainers/*`.
+- **Reference Sections**:
+  - **Standards (`/standards/`)** — Reference summaries of standards, directives, and external migration guides, grouped by their role in the transition.
+  - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.
+  - **Algorithm and protocol options (`/algorithm-protocol-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
+  - **Resources (`/resources/`)** — Practical work-product templates, the worked clinic example, glossary, and curated references.
 
-## Complete Book Map
+## Sitemap
 
 ```text
 /
@@ -147,67 +155,18 @@ Homepage Situation Chooser (/)
 /resources/curated-references/
 ```
 
-Static CSV downloads served alongside `/resources/*`:
+## Homepage and Footer Routing
 
-- `/downloads/inventory-record.csv`
-- `/downloads/priority-record.csv`
-- `/downloads/vendor-response-log.csv`
-- `/downloads/migration-plan.csv`
-- `/downloads/change-record.csv`
-- `/downloads/evidence-record.csv`
-- `/downloads/review-log.csv`
+- **Homepage (`src/pages/index.tsx`)**: Introduces the handbook and routes visitors cleanly without competing navigation systems — leading with the six situation routes under `/routes/*`, a distinct entry into `/learn/`, a preview pointing to `/resources/protect-this-first/`, and direct entry cards for the four reference sections.
+- **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Routes**, **Learn**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
 
-## Route Journeys
+## Section Placement and Expansion Rules
 
-Each route page states who the route serves, any exception check, an ordered reading sequence using canonical slugs, the resulting work product, and one sentence naming the first onward step. Coordinating across multiple assets uses `/routes/organisation-wide/` for programme governance while still following the matching asset route per system.
+Add new pages only when there is enough distinct, decision-useful material that cannot be served cleanly on an existing page, and place them by reader job:
 
-| Route | Path | Situation | Reading order | Work-product output |
-| --- | --- | --- | --- | --- |
-| Vendor-managed software | `/routes/vendor-managed-software/` | Standard supplier-updated browsers, operating systems, and mobile devices | Commodity software, Timelines, Vendor response log, Subsequent review | Vendor response log plus a note confirming all five exception checks hold (or the route moved to) |
-| Long-lived confidentiality | `/routes/long-lived-confidentiality/` | Data with a multi-year confidentiality period | Diagnose, Inventory, Inventory record, Priority, Priority record, Key establishment, Timelines | Priority record for assets with a long data confidentiality period |
-| Hard to change | `/routes/hard-to-change-systems/` | Bespoke products, embedded devices, or systems costly to update later | Inventory, Release dates, Long-lived roots (if non-updatable verifier), Signatures (if choosing signatures), Vendor plan, Implementation, Change record, Vendor response log | Vendor-release, test, production-deployment, and end-of-support dates plus a closed or blocked change record |
-| Organisation-wide | `/routes/organisation-wide/` | Coordinated migration across an estate | Migration plan, Diagnose, Inventory, Priority, Evidence record, Subsequent review | One-page migration plan with an owner per asset and a subsequent-review date |
-| Ask a supplier | `/routes/ask-a-supplier/` | Procurement and supplier readiness follow-up across situations | Vendor plan, Vendor response log | Decision-ready row in the vendor response log per product, version, and cryptographic job |
-| Not sure | `/routes/not-sure/` | Unclassified estate or missing facts | Classification checks routing into one of the four situation routes | Named route, or a list of open unknowns with the owner who will close them |
-
-## Learn Sequence and Explainer Isolation
-
-`/learn/` lists an eight-step background sequence: seven lessons on `learnSidebar` (`public-key-cryptography`, `quantum-threat`, `what-post-quantum-means`, `algorithms`, `in-real-systems`, `standardisation`, `timelines`) followed by `/resources/glossary/` as step 8 (`glossary` remains on `resourcesSidebar` only).
-
-Below the numbered sequence, `/learn/` and `learnSidebar` expose an open (`collapsed: false`) **Go deeper** category with five optional explainers in fixed order:
-
-1. `/learn/explainers/keys/`
-2. `/learn/explainers/quantum-computers/`
-3. `/learn/explainers/kem/`
-4. `/learn/explainers/tls/`
-5. `/learn/explainers/timelines/`
-
-Isolation rules:
-
-- Links to `/learn/explainers/*` appear only on `/learn/`, the paired short lessons (`public-key-cryptography`, `quantum-threat`, `algorithms`, `in-real-systems`, `timelines`), and the five explainers themselves. Practice, route, option, standard, and resource pages do not link to `/learn/explainers/*`.
-- Learn lessons are never inserted into `/routes/*` reading orders.
-
-## Standards Hierarchy
-
-`standardsSidebar` groups reference summaries under `/standards/` into seven categories, each with its own index document (`link: {type: 'doc', id: '...'}`):
-
-1. **Post-quantum cryptography** (`collapsed: false`) — nested subcategories for *Key establishment and KEMs*, *Digital signatures*, and *Standardisation status reports*.
-2. **Transition and key management** (`collapsed: true`) — NIST IR 8547, SP 800-131A, SP 800-57 Part 1.
-3. **Classical public-key (transitioning)** (`collapsed: true`) — nested subcategories for *Signatures and curves* and *Pair-wise key establishment*.
-4. **Symmetric, hash, and KDF primitives** (`collapsed: true`) — nested subcategories for *Encryption and lightweight cryptography*, *Hash functions, XOFs, and MACs*, and *Key derivation and random bit generation*.
-5. **Modules, protocols, and identity** (`collapsed: true`) — FIPS 140-3, SP 800-52, FIPS 201-3.
-6. **US federal directives** (`collapsed: true`) — NSM-10, EO 14306, EO 14412, OMB M-26-15.
-7. **Migration guides** (`collapsed: true`) — nested subcategories for *Programme and strategy guides* and *Discovery, readiness, and supplier guides* (linking external guides such as the Dutch PQC Migration Handbook rather than rewriting them).
-
-## Homepage, Footer, and Search
-
-- **Homepage (`src/pages/index.tsx`)**: Hero promise and limit; six situation cards (`/routes/*`) with **Learn the basics** (`/learn/`) visually apart below them; single-row clinic preview linking to `/resources/protect-this-first/`; and four reference section cards (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`). No hero button points to a single practice hub.
-- **Footer (`docusaurus.config.ts`)**: Three columns — **Routes** (all six `/routes/*` paths using concise route labels `≤ 32` characters so mobile viewports do not overflow), **Learn** (`/learn/`), and **Reference** (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`).
-- **Search and indexing**: Navbar search uses `@easyops-cn/docusaurus-search-local` built at compile time; `sitemap.xml` is generated on build and referenced from `static/robots.txt`.
-
-## Structural Guardrails
-
-- Migration timelines across authorities live on `/learn/timelines/` and `/learn/explainers/timelines/`; audience-specific duties stay attributed and linked to their issuing authority.
-- Algorithm and protocol option pages stay at four (`choosing`, `key-establishment`, `signatures`, `long-lived-roots`); individual NIST standards live under `/standards/post-quantum/`.
-- `changing-algorithms-again` remains a dedicated practice under `/migration-practices/`, separate from `implementation` and `subsequent-review`.
-- Resources stay focused on actionable records, the single worked clinic illustration (`protect-this-first`), `glossary`, and `curated-references`.
+- **Conceptual primers or deeper technical distinctions** belong in `/learn/` or `/learn/explainers/`.
+- **Reader entry paths for a distinct operational situation** belong in `/routes/` and should point into existing practice, option, and resource pages rather than duplicating procedures.
+- **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules and protocols*, *directives*, *migration guides*) rather than by issuing organisation.
+- **Lifecycle operating activities** belong in `/migration-practices/`.
+- **Mechanism and deployment trade-offs** belong in `/algorithm-protocol-options/`, organised around the cryptographic job being solved rather than one narrative page per algorithm.
+- **Reusable templates and reference tools** belong in `/resources/`; keep `/resources/` a focused practical toolkit rather than a catch-all archive.
