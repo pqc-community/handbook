@@ -3,7 +3,6 @@ title: Learn the basics
 sidebar_label: Learn the basics
 description: Background before you choose a migration route.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Read this for background before you choose a migration route on the homepage.

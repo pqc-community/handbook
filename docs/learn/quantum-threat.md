@@ -3,7 +3,6 @@ title: The quantum threat
 sidebar_label: Quantum threat
 description: What Shor's algorithm threatens, the more limited effect of Grover's algorithm, and harvest-now, decrypt-later.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 A cryptographically relevant quantum computer, if one is built, would change the maths problems that protect today's public-key cryptography. Two quantum algorithms matter here, and one confidentiality risk does not wait for that machine to exist.

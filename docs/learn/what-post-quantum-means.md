@@ -3,7 +3,6 @@ title: What post-quantum means
 sidebar_label: What post-quantum means
 description: Post-quantum cryptography, and the difference from quantum cryptography and quantum key distribution.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Post-quantum cryptography is public-key cryptography intended to stay secure against a cryptographically relevant quantum computer, if one is built, and the algorithms run on ordinary computers. Parties still use public keys, private keys, key establishment, and signatures, but the hard mathematical problems are chosen so that known quantum attacks against today's RSA and elliptic-curve schemes do not apply on the same terms. The design aims to resist known quantum attacks, and it is not a guarantee against every future attack.

@@ -3,7 +3,6 @@ title: Standardisation
 sidebar_label: Standardisation
 description: Which NIST post-quantum standards are final, what remains in development, and where to read the current transition.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Three NIST standards are final and name the core post-quantum algorithms in these lessons.

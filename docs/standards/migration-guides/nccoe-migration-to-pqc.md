@@ -2,7 +2,6 @@
 title: "NIST NCCoE: Migration to Post-Quantum Cryptography Project"
 sidebar_label: NCCoE Migration to PQC
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST National Cybersecurity Center of Excellence applied-cryptography project, six-phase FAQ, and SP 1800-38A/B/C preliminary drafts.
 ---
 

@@ -3,7 +3,6 @@ title: Evidence record
 sidebar_label: Evidence record
 description: Links a claim about the migration to the record and source that support it.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When to use it

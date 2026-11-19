@@ -3,7 +3,6 @@ title: One-page migration plan
 sidebar_label: Migration plan
 description: One row per asset with an owner, an applicable timeline, and a subsequent-review date.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When to use it

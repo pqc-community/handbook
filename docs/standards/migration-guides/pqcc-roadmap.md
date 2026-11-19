@@ -2,7 +2,6 @@
 title: "PQCC: Post-Quantum Cryptography Migration Roadmap"
 sidebar_label: PQCC roadmap
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Post-Quantum Cryptography Coalition four-category roadmap for enterprise preparation, baseline discovery, execution, and monitoring.
 ---
 

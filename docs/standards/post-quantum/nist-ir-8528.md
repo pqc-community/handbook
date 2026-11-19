@@ -2,7 +2,6 @@
 title: "NIST IR 8528: Additional Digital Signature Schemes (First-Round Status Report)"
 sidebar_label: NIST IR 8528 (Extra signatures)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST status report on the first round of the additional post-quantum digital signature standardisation track.
 ---
 

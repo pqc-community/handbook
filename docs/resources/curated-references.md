@@ -2,7 +2,6 @@
 title: Works this edition cites
 sidebar_label: Curated references
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-10
 description: Index to the standards, policy directives, and migration guides cited across this edition.
 ---
 

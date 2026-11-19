@@ -2,7 +2,6 @@
 title: The vendor's migration plan
 sidebar_label: Vendor plan
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-19
 description: How to record a complete, vague, missing, or concerning supplier answer, and when to escalate to procurement.
 ---
 

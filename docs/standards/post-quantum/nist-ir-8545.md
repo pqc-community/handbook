@@ -2,7 +2,6 @@
 title: "NIST IR 8545: Fourth-Round Status Report of the NIST PQC Standardisation Process"
 sidebar_label: NIST IR 8545 (Round 4 / HQC)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST status report concluding the fourth round and selecting HQC for standardisation as an additional KEM.
 ---
 

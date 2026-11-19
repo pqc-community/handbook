@@ -3,7 +3,6 @@ title: Not sure which route applies
 sidebar_label: Not sure
 description: Questions that choose a route, or name the person who will choose.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-19
 ---
 
 Use these three questions when you are not sure which route applies.

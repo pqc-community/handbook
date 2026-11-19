@@ -3,7 +3,6 @@ title: What a KEM is
 sidebar_label: What a KEM is
 description: What a key-encapsulation mechanism produces, and why that is not bulk encryption.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 What does a key-encapsulation mechanism produce, and why is that not bulk encryption?

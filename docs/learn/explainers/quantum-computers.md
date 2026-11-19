@@ -3,7 +3,6 @@ title: What a quantum computer changes
 sidebar_label: What a quantum computer changes
 description: Which quantum effect applies to confidentiality, and which does not.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Which quantum effect applies to confidentiality, and which does not?

@@ -2,7 +2,6 @@
 title: US federal directives cited in NIST IR 8547
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: White House and Office of Management and Budget directives governing the US federal government transition to post-quantum cryptography.
 ---
 

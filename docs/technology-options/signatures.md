@@ -2,7 +2,6 @@
 title: Post-quantum signatures
 sidebar_label: Signatures
 displayed_sidebar: technologyOptionsSidebar
-last_reviewed: 2026-11-19
 description: A many-party migration coordinated across signers, verifiers, PKI, trust stores, clients, firmware, and relying parties.
 ---
 

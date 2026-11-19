@@ -2,7 +2,6 @@
 title: "FIPS 197: Advanced Encryption Standard (AES)"
 sidebar_label: FIPS 197 (AES)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST symmetric block-cipher standard specifying AES-128, AES-192, and AES-256.
 ---
 

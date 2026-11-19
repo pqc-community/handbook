@@ -66,7 +66,6 @@ npm run build
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
 | `src/pages/` | Situation-chooser homepage (`index.tsx` and `index.module.css`) |
-| `src/theme/` | Swizzled `DocItem/Content` wrapper rendering `Last reviewed` dates |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSV templates for the seven migration work products |
 | `static/img/` | Shared shield logo, favicon, and `1200 × 630` OpenGraph social card |

@@ -2,7 +2,6 @@
 title: What to migrate first
 sidebar_label: Priority
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-19
 description: Order a post-quantum migration with a qualitative rubric, and split key establishment from signatures and from non-updatable verifiers.
 ---
 

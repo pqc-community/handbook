@@ -2,7 +2,6 @@
 title: "EU NIS Cooperation Group: Coordinated Implementation Roadmap on Post-Quantum Cryptography"
 sidebar_label: EU NIS roadmap
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Coordinated EU Member State roadmap framing national PQC transition plans and confidentiality risk bands.
 ---
 

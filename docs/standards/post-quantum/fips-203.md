@@ -2,7 +2,6 @@
 title: "FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard"
 sidebar_label: FIPS 203 (ML-KEM)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-19
 description: NIST standard specifying ML-KEM for post-quantum public-key key establishment.
 ---
 

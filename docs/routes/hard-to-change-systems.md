@@ -3,7 +3,6 @@ title: Products or systems that may be hard to change
 sidebar_label: Hard to change
 description: The route for a product whose verifier, firmware, or release cycle cannot be changed quickly.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-19
 ---
 
 This route is for a product whose verifier, firmware, or release cycle cannot be changed quickly.

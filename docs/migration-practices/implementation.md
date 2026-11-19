@@ -3,7 +3,6 @@ title: Plan, test, and verify one change
 sidebar_label: Implementation
 description: Pilot, test, roll out, roll back, and verify one system after an option has been chosen.
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When this applies

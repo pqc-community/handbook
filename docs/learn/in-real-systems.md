@@ -3,7 +3,6 @@ title: In real systems
 sidebar_label: In real systems
 description: Where post-quantum mechanisms appear in TLS, VPNs, signatures, and certificates, hybrid deployments, and what changes in practice.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Post-quantum public-key mechanisms do not live in isolation. They replace or accompany today's algorithms in the same places organisations already depend on public-key cryptography.

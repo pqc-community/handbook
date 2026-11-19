@@ -3,7 +3,6 @@ title: Timelines
 sidebar_label: Timelines
 description: A finished standard is not a migration date, and a date belongs to one authority and one audience.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-19
 ---
 
 A published standard names an algorithm. A timeline says when an audience is expected to move. Those are different claims.

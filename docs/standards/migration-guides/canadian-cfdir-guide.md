@@ -2,7 +2,6 @@
 title: "Canadian CFDIR: Quantum-Readiness Best Practices"
 sidebar_label: Canadian CFDIR guide
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Canadian Forum for Digital Infrastructure Resilience leadership actions for critical-infrastructure quantum readiness.
 ---
 

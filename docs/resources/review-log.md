@@ -3,7 +3,6 @@ title: Subsequent review log
 sidebar_label: Review log
 description: A dated line when a record is opened again and what stayed unresolved.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When to use it

@@ -2,7 +2,6 @@
 title: "FIPS 202: SHA-3 Standard — Permutation-Based Hash and Extendable-Output Functions"
 sidebar_label: FIPS 202 (SHA-3 / SHAKE)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST standard specifying SHA-3 hash functions and the SHAKE128 and SHAKE256 extendable-output functions.
 ---
 

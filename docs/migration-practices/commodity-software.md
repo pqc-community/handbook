@@ -2,7 +2,6 @@
 title: Keep commodity software updated
 sidebar_label: Commodity software
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-19
 description: Confirm supplier updates on standard browsers, operating systems, and mobile devices, and use the hard-to-change route when an exception applies.
 ---
 

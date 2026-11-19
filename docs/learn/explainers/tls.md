@@ -3,7 +3,6 @@ title: What changes in a TLS connection
 sidebar_label: What changes in a TLS connection
 description: Where the shared secret is established in a TLS connection, and how that differs from checking who the server is.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-19
 ---
 
 Where is the shared secret established in a TLS connection, and how is that different from checking who the server is?

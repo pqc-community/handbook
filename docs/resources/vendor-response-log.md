@@ -3,7 +3,6 @@ title: Vendor response log
 sidebar_label: Vendor response log
 description: One row per supplier answer, with judgement, follow-up, and the decision it supports.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When to use it

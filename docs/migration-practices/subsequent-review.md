@@ -2,7 +2,6 @@
 title: Subsequent review of the migration
 sidebar_label: Subsequent review
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
 description: Decide when to reopen migration records, what triggers an earlier review, and what to carry forward.
 ---
 

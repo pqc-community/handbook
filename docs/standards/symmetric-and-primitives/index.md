@@ -2,7 +2,6 @@
 title: Symmetric, hash, and KDF primitives
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST symmetric encryption, lightweight cryptography, hash, XOF, MAC, key-derivation, and random bit generator standards cited in IR 8547.
 ---
 

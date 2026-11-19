@@ -2,7 +2,6 @@
 title: "CISA, NSA, and NIST: Quantum-Readiness Fact Sheet"
 sidebar_label: Quantum-readiness fact sheet
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Joint CISA, NSA, and NIST executive fact sheet on starting cryptographic inventory, risk assessment, and vendor engagement.
 ---
 

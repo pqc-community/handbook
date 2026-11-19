@@ -3,7 +3,6 @@ title: First-pass inventory record
 sidebar_label: Inventory record
 description: A one-row template for the first pass over systems that use public-key cryptography.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When to use it

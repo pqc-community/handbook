@@ -2,7 +2,6 @@
 title: Transition and key-management publications
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST guidance on transitioning away from quantum-vulnerable cryptography and managing cryptographic keys and security strengths.
 ---
 

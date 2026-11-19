@@ -3,7 +3,6 @@ title: Change and testing record
 sidebar_label: Change record
 description: One change on one system, with tests, rollback, and a deployed-state check.
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 ---
 
 ## When to use it

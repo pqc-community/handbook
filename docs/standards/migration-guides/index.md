@@ -2,7 +2,6 @@
 title: Post-quantum migration guides
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: National, ETSI, and consortium guides for running a post-quantum migration programme, building inventories, and engaging suppliers.
 ---
 

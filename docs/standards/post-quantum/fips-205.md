@@ -2,7 +2,6 @@
 title: "FIPS 205: Stateless Hash-Based Digital Signature Standard"
 sidebar_label: FIPS 205 (SLH-DSA)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST standard specifying SLH-DSA, a stateless post-quantum signature algorithm built from hash functions.
 ---
 

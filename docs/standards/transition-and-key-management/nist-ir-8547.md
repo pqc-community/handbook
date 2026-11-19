@@ -2,7 +2,6 @@
 title: "NIST IR 8547: Transition to Post-Quantum Cryptography Standards"
 sidebar_label: NIST IR 8547 (PQC transition)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST report setting out migration considerations and the transition plan from quantum-vulnerable standards to post-quantum cryptography.
 ---
 

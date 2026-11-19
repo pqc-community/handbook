@@ -3,7 +3,6 @@ title: Ask a supplier
 sidebar_label: Ask a supplier
 description: How to prepare a question, follow up an incomplete answer, and store the decision.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-10
 ---
 
 This route is a shortcut across the four situation routes when the next step is to ask a supplier.

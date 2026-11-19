@@ -2,7 +2,6 @@
 title: Diagnose a post-quantum migration
 sidebar_label: Diagnose
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
 description: Name an owner, classify the estate, compile a first-pass inventory, and schedule a subsequent review before claiming systems have migrated.
 ---
 

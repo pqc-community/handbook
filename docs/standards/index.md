@@ -2,7 +2,6 @@
 title: Standards and official guidance
 sidebar_label: Standards
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Technical standards, policy directives, and programme-scale guidance cited in post-quantum cryptography migration.
 ---
 

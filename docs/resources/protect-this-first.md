@@ -2,7 +2,6 @@
 title: Protect this first
 sidebar_label: Protect this first
 displayed_sidebar: resourcesSidebar
-last_reviewed: 2026-11-19
 description: Follow a fictional UK manufacturer through inventory, prioritisation, supplier planning, implementation evidence, and review.
 ---
 

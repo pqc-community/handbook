@@ -3,7 +3,6 @@ title: Mostly standard, vendor-managed software
 sidebar_label: Vendor-managed software
 description: For an organisation whose software is updated by its suppliers, with a check for the cases that need a different route.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-19
 ---
 
 This route is for an organisation that relies on standard browsers, operating systems, and mobile devices.

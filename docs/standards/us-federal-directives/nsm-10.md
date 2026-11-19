@@ -2,7 +2,6 @@
 title: "NSM-10: National Security Memorandum on Promoting US Leadership in Quantum Computing While Mitigating Risks to Vulnerable Cryptographic Systems"
 sidebar_label: NSM-10 (2022)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: May 2022 US National Security Memorandum establishing the overarching federal goal to mitigate quantum risk to public-key cryptography.
 ---
 

@@ -2,7 +2,6 @@
 title: Modules, protocols, and identity standards
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST standards and guidelines for cryptographic module validation, TLS configuration, and federal personal identity verification.
 ---
 

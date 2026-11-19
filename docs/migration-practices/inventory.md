@@ -2,7 +2,6 @@
 title: Inventory the cryptography
 sidebar_label: Inventory
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-19
 description: List public-key cryptography across the estate, including embedded and supplier-controlled components a scanner cannot see, before claiming systems have migrated.
 ---
 

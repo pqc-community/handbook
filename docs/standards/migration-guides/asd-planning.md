@@ -2,7 +2,6 @@
 title: "ASD: Planning for Post-Quantum Cryptography"
 sidebar_label: ASD planning
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Australian Signals Directorate planning publication on preparing organisations for post-quantum cryptography.
 ---
 

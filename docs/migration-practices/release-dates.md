@@ -2,7 +2,6 @@
 title: Post-quantum product release dates
 sidebar_label: Release dates
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-19
 description: Record vendor release, testing, production deployment, and end of support as four dates for one asset.
 ---
 

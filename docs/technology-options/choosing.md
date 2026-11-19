@@ -2,7 +2,6 @@
 title: Choosing a post-quantum option
 sidebar_label: Choosing an option
 displayed_sidebar: technologyOptionsSidebar
-last_reviewed: 2026-11-19
 description: Branch on system type, lifetime, jurisdiction, updateability, supplier control, and compatibility, then record the authority before implementation.
 ---
 

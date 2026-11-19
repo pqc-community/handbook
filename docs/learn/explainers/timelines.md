@@ -3,7 +3,6 @@ title: Whose date applies
 sidebar_label: Whose date applies
 description: Which migration date belongs to which authority, and which audience that date is for.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-19
 ---
 
 Which migration date belongs to which authority, and which audience is that date for?

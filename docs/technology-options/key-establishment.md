@@ -2,7 +2,6 @@
 title: Post-quantum key establishment
 sidebar_label: Key establishment
 displayed_sidebar: technologyOptionsSidebar
-last_reviewed: 2026-11-19
 description: The confidentiality job where harvest-now, decrypt-later applies. List channels, record the construction, and carry the fields onto the change record.
 ---
 

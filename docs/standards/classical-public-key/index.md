@@ -2,7 +2,6 @@
 title: Classical public-key standards (transitioning)
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST classical signature, elliptic-curve, and pair-wise key-establishment standards that are vulnerable to quantum attack.
 ---
 

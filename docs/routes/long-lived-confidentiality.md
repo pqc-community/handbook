@@ -3,7 +3,6 @@ title: Data that needs to stay confidential for years
 sidebar_label: Long-lived confidentiality
 description: The route for data whose confidentiality period makes harvest-now, decrypt-later the reason to start.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-10
 ---
 
 This route is for data whose confidentiality period makes harvest-now, decrypt-later the reason to start work now.

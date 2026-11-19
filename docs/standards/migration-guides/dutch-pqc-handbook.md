@@ -2,7 +2,6 @@
 title: "Dutch PQC Migration Handbook (AIVD, CWI, and TNO)"
 sidebar_label: Dutch PQC Handbook
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Programme-scale diagnose, plan, and execute handbook from AIVD, CWI, and TNO, plus the Dutch government resource list.
 ---
 

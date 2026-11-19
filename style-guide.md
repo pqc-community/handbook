@@ -71,7 +71,7 @@ Where pages use a worked organisational example, align with the shared fictional
 
 ## 6. Metadata and Naming Lengths
 
-Every Markdown file under `docs/` includes five front-matter fields (sidebar ordering is controlled explicitly in `sidebars.ts`):
+Every Markdown file under `docs/` includes the four front-matter fields below (sidebar ordering is controlled explicitly in `sidebars.ts`):
 
 ```yaml
 ---
@@ -79,7 +79,6 @@ title: Inventory the cryptography
 sidebar_label: Inventory
 description: List public-key cryptography across the estate, including embedded and supplier-controlled components a scanner cannot see, before claiming systems have migrated.
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
 ---
 ```
 

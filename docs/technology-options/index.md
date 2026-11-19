@@ -2,7 +2,6 @@
 title: Post-quantum technology options
 sidebar_label: Technology options
 displayed_sidebar: technologyOptionsSidebar
-last_reviewed: 2026-11-10
 description: Use-case map from confidentiality, many-party signatures, and non-updatable verifiers to the option pages and the evidence each job produces.
 ---
 

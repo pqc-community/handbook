@@ -2,7 +2,6 @@
 title: "FIPS 204: Module-Lattice-Based Digital Signature Standard"
 sidebar_label: FIPS 204 (ML-DSA)
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST standard specifying ML-DSA for general-purpose post-quantum digital signatures.
 ---
 

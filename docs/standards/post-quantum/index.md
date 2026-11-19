@@ -2,7 +2,6 @@
 title: Post-quantum cryptography standards
 sidebar_label: Overview
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: NIST post-quantum key-establishment and signature standards, stateful hash-based schemes, KEM recommendations, and standardisation reports.
 ---
 

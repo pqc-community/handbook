@@ -2,7 +2,6 @@
 title: Post-quantum migration practices
 sidebar_label: Migration practices
 displayed_sidebar: migrationPracticesSidebar
-last_reviewed: 2026-11-10
 description: "Reference index for migration practice pages: lifecycle order, reader, and output for each step."
 ---
 

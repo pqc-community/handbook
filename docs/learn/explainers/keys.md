@@ -3,7 +3,6 @@ title: What the keys actually do
 sidebar_label: What the keys actually do
 description: Which job the public key does, and which job the private key does.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Which job does the public key do, and which job does the private key do?

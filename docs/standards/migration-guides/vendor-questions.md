@@ -2,7 +2,6 @@
 title: "ASD, ACSC, CISA, and NSA: Post-Quantum Cryptography — Questions to Ask Your Vendors"
 sidebar_label: Vendor questions
 displayed_sidebar: standardsSidebar
-last_reviewed: 2026-11-10
 description: Joint Australian and US procurement guide listing structured post-quantum readiness questions for software, cloud, and hardware suppliers.
 ---
 

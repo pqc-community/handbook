@@ -3,7 +3,6 @@ title: Coordinating a migration across the organisation
 sidebar_label: Organisation-wide
 description: Roles, inputs, and the order for a migration lead.
 displayed_sidebar: routesSidebar
-last_reviewed: 2026-11-10
 ---
 
 This route is for a migration lead who is coordinating many assets across the organisation. Use this route to coordinate the programme, and follow the asset route for each system as well. Coordinating many assets is not a reason to leave the asset route.

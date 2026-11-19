@@ -3,7 +3,6 @@ title: Public-key cryptography
 sidebar_label: Public-key cryptography
 description: Public and private keys, key establishment, encryption, and digital signatures, including where RSA and elliptic-curve cryptography are used.
 displayed_sidebar: learnSidebar
-last_reviewed: 2026-11-10
 ---
 
 Public-key cryptography gives each party a matched pair of keys. The public key can be shared openly, and the private key stays secret, because the two keys do different jobs. For key establishment, the public key is used to create a shared secret and the private key recovers it. For a signature, the private key creates the signature and the public key checks it. Checking a signature does not reverse it.
