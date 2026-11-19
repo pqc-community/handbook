@@ -15,6 +15,10 @@ Key establishment and digital signatures can also have different migration timel
 
 The [timeline comparison](/learn/explainers/timelines/) shows how these differences appear in NIST, US federal, UK, EU, and Australian guidance. For the distinction between a published algorithm standard and a product or protocol ready to use it, see [Standardisation](/learn/standardisation/).
 
+## Bring the ideas together
+
+The lessons describe three connected but separate layers: the cryptographic job a system performs, the algorithms and products that implement it, and the authority and milestone that shape when a change applies. A change at one layer does not automatically complete the others.
+
 Continue with the [Glossary](/resources/glossary/).
 
 ## Sources

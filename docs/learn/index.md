@@ -7,11 +7,11 @@ displayed_sidebar: learnSidebar
 
 This section is for security, engineering, product, procurement, and risk professionals who understand systems and change control but want a shared model of the cryptography affected by a post-quantum migration. It provides conceptual grounding before you choose a route; it is not a migration procedure.
 
-After the core lessons, you should be able to distinguish key establishment from signatures, explain what a quantum computer threatens, identify the jobs of the first NIST post-quantum algorithms, and tell a published standard from a deployed product or an applicable migration date.
+After the core lessons, you should be able to distinguish key establishment from signatures, explain what a quantum computer threatens, identify the jobs of the first NIST post-quantum algorithms, and connect an algorithm standard to its use in a product and to an applicable migration date.
 
 ## Core lessons
 
-Read these in order:
+Read these in order. The path starts with the jobs public-key cryptography performs and the quantum threat to those jobs. It then introduces post-quantum algorithms, shows where they fit in products, and ends by separating algorithm standards, product support, and migration dates.
 
 1. [Public-key cryptography](/learn/public-key-cryptography/) — distinguish key establishment, encryption, and signatures.
 2. [Quantum threat](/learn/quantum-threat/) — understand the threat to today's public-key schemes and the confidentiality risk from collected data.
@@ -21,7 +21,7 @@ Read these in order:
 6. [Standardisation](/learn/standardisation/) — distinguish a standard from a protocol profile and a product release.
 7. [Timelines](/learn/timelines/) — understand why standards and migration dates are different.
 
-Use the [glossary](/resources/glossary/) when you need a definition while reading. For a migration procedure, start from the homepage.
+Use the [glossary](/resources/glossary/) when you need a definition while reading. To choose a migration route, start with the [homepage situation chooser](/) or [Not sure which route applies](/routes/not-sure/).
 
 ## Further explanations
 

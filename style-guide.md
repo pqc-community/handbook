@@ -96,5 +96,6 @@ Before merging new or revised content, check that the page passes these tests:
 - **Decision clarity**: Does the page open on a real migration decision, constraint, or timeline rather than a detached algorithm lecture?
 - **Job separation**: Are key establishment, digital signatures, and non-updatable verifiers kept distinct where their urgency or rollout differs?
 - **Honest sourcing**: Is every date, requirement, and authority recommendation attributed with its source, date, and target audience?
+- **Freshness**: Could a publication status, protocol profile, product capability, or recommendation have changed? If so, is the claim tied to a dated primary source and clearly framed as current at that date?
 - **Actionable evidence**: Does the page show what concrete record or artifact demonstrates the work (rather than vague claims of being *"quantum safe"*)?
 - **Clean checks**: Do `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass?

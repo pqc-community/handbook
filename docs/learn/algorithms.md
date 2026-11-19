@@ -5,11 +5,11 @@ description: The purpose of ML-KEM, ML-DSA, and SLH-DSA, and the size and perfor
 displayed_sidebar: learnSidebar
 ---
 
-Three NIST standards name the post-quantum algorithms most organisations meet first, and each has a different job in real systems.
+Three final NIST standards define the post-quantum algorithms introduced in this lesson, and each has a different job in real systems.
 
 [ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), in FIPS 203, is for key establishment. [ML-DSA](https://csrc.nist.gov/pubs/fips/204/final), in FIPS 204, is for digital signatures, and [SLH-DSA](https://csrc.nist.gov/pubs/fips/205/final), in FIPS 205, is also for digital signatures, with a hash-based design distinct from ML-DSA.
 
-How a draft, a protocol profile, and a product differ is set out on [Standardisation](/learn/standardisation/).
+The standards specify algorithms, while protocols and products determine how people can use them. [Standardisation](/learn/standardisation/) explains those layers.
 
 ML-KEM establishes a shared secret; it does not encrypt application data. Read [What a KEM is](/learn/explainers/kem/) for how encapsulation and decapsulation work.
 

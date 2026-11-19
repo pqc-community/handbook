@@ -5,17 +5,17 @@ description: Public and private keys, key establishment, encryption, and digital
 displayed_sidebar: learnSidebar
 ---
 
-Public-key cryptography uses a public key that can be shared and a corresponding private key that is kept secret. The job of each key depends on the scheme. In Diffie–Hellman key establishment, both parties exchange public values and combine the other party's public value with their own private value to derive the same secret. With a key-encapsulation mechanism (KEM), one party uses the recipient's public key to create a ciphertext and shared secret; the recipient uses the matching private key to derive that same secret from the ciphertext.
+Public-key cryptography uses related public and private keys, but what each key does depends on the scheme. In key establishment, parties use public-key operations to agree a secret; symmetric cryptography then protects the bulk data. A key-encapsulation mechanism (KEM) is one way to establish that secret. Its steps are explained in [What a KEM is](/learn/explainers/kem/).
 
-In some classical public-key encryption schemes, the public key encrypts data and the private key decrypts it. This is a different job from establishing a shared secret. In modern secure communications, key establishment usually creates a secret from which symmetric keys are derived; symmetric cryptography protects the bulk of the data.
+In some classical public-key encryption schemes, the public key encrypts data and the private key decrypts it. This is a different job from establishing a shared secret.
 
-For a digital signature, the private key creates a signature and the public key verifies it against the message. Verification does not reverse the signature or reveal the private key. Signatures help detect changes and verify that a message was signed by the holder of the corresponding private key; they do not, by themselves, establish who controls that key.
+For a digital signature, the private key creates a signature and the public key checks it against the message. A valid check shows that the signature matches that message and public key. By itself, it does not establish the identity of the person or organisation that controls the key; that association depends on certificates and trust decisions.
 
-RSA and elliptic-curve cryptography are familiar public-key families in current systems. A TLS or VPN session may use public-key cryptography for key establishment or authentication; software and firmware updates use signatures. In each case, the public-key operation has a distinct job from the symmetric cryptography that protects bulk data.
+RSA and elliptic-curve cryptography are familiar public-key families in current systems. A TLS or VPN session may use public-key cryptography for key establishment and authentication; software and firmware updates use signatures. In each case, the public-key operation has a distinct job from the symmetric cryptography that protects bulk data.
 
 Continue with [The quantum threat](/learn/quantum-threat/).
 
-For how the two keys differ by job, read [What the keys actually do](/learn/explainers/keys/).
+For a comparison of what the key pairs permit—and how a signature becomes associated with a publisher—read [What the keys actually do](/learn/explainers/keys/).
 
 ## Sources
 
