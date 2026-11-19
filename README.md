@@ -22,17 +22,21 @@ The dev server opens the site locally. Handbook pages live under `docs/` and are
 Before you merge or publish a build, run:
 
 ```bash
-npm run typecheck
-npm run test:sources
+npm test
+npm run check:voice
 npm run check:sources
+npm run check:records
+npm run typecheck
 npm run build
 ```
 
 | Command | What it does |
 | --- | --- |
-| `npm run typecheck` | TypeScript check |
-| `npm run test:sources` | Unit tests for the sources checker |
+| `npm test` | Runs unit and contract tests for voice, sources, records, clinic consistency, and explainers |
+| `npm run check:voice` | Scans `docs/`, `src/pages/index.tsx`, `docusaurus.config.ts`, and `navigation-structure.md` for retired phrases and unattributed `must`/`shall` |
 | `npm run check:sources` | Ensures every `docs/**/*.md` page has `## Sources` with at least one `http` link before the next heading |
+| `npm run check:records` | Verifies `last_reviewed` across `docs/` and checks work-product CSV links and headers |
+| `npm run typecheck` | TypeScript check |
 | `npm run build` | Production static build (broken links and anchors fail the build) |
 
 Optional: `npm run serve` serves the build output after `npm run build`.
@@ -46,7 +50,7 @@ The site is deployed to GitHub Pages using GitHub Actions.
 - **Workflow**: See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for the deployment configuration
 - **Process**: Build -> Deploy to GitHub Pages -> Live in a few minutes
 
-`static/CNAME` contains `pqchandbook.com`. The workflow runs typecheck and the production build. Run `npm run test:sources` and `npm run check:sources` locally before you merge; those checks are not steps in the workflow.
+`static/CNAME` contains `pqchandbook.com`. The workflow runs typecheck and the production build. Run `npm test`, `npm run check:voice`, `npm run check:sources`, and `npm run check:records` locally before you merge; those checks are not steps in the workflow.
 
 ## Maintainer notes
 
@@ -54,12 +58,10 @@ Read these before editing content or structure:
 
 | File | Topic |
 | --- | --- |
-| [purpose-and-positioning.md](./purpose-and-positioning.md) | Reader, four questions, layers, non-goals |
-| [navigation-structure.md](./navigation-structure.md) | Book map, Start here seats, slugs |
-| [style-guide.md](./style-guide.md) | Page shapes, citations, sourcing gate, spelling |
-| [brand-guidelines.md](./brand-guidelines.md) | Name, domain, palette, type, logo |
-
-The full design spec lives in [planning/superpowers/specs/2026-11-09-pqc-handbook-design.md](./planning/superpowers/specs/2026-11-09-pqc-handbook-design.md). That directory is outside `docs/`, so the spec is not a public site page.
+| [purpose-and-positioning.md](./purpose-and-positioning.md) | Reader, promise and limit, chooser purpose, sister-site boundary, non-goals |
+| [navigation-structure.md](./navigation-structure.md) | Book map, six sidebars, route table, homepage regions, slugs |
+| [style-guide.md](./style-guide.md) | Voice, labels, page shapes, CSV/clinic contracts, citations, SEO titles |
+| [brand-guidelines.md](./brand-guidelines.md) | Name, domain, palette, typography, Mermaid theme, logo |
 
 ## Local reference material
 
@@ -70,9 +72,10 @@ The `.ai-helper-files/` directory holds local research notes and filed source ex
 | Path | Role |
 | --- | --- |
 | `docs/` | Public handbook Markdown |
-| `src/pages/` | Homepage (`index.tsx`) |
-| `sidebars.ts` | Five hand-written sidebars |
-| `docusaurus.config.ts` | Site URL, navbar, footer, link policy |
-| `scripts/check-sources.mjs` | Sources section checker |
+| `src/pages/` | Situation-chooser homepage (`index.tsx`) |
+| `static/downloads/` | Header-only CSV templates for the seven work products |
+| `sidebars.ts` | Six hand-written sidebars |
+| `docusaurus.config.ts` | Site URL, navbar, footer, Mermaid, local search, link policy |
+| `scripts/` | Voice, sources, records, clinic, and explainer checks and tests |
 
 Public handbook: [https://pqchandbook.com](https://pqchandbook.com). Source: [https://github.com/pqc-community/handbook](https://github.com/pqc-community/handbook).

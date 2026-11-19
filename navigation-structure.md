@@ -127,33 +127,37 @@ The homepage is the situation chooser. Learn the basics is a separate path. Refe
 
 **Structural rules**
 
-- A migration date is recorded on the timelines deep dive. A duty that belongs to one authority stays a link to that authority.
+- A migration date is recorded on the timelines deep dive (`/learn/explainers/timelines/`). A duty that belongs to one authority stays a link to that authority.
 - Standards, policy directives, and migration guides have reference summaries under `/standards/`. The Dutch handbook is linked there and is not rewritten.
 - Option pages stay at four: choosing, key establishment, signatures, long-lived roots.
 - Changing algorithms again is its own practice page.
-- The learn landing lists seven lessons; the glossary on the resources sidebar is the eighth step in the sequence. Go deeper is an optional list of five explainers on the Learn landing page and in `learnSidebar`.
+- The learn landing lists seven lessons; the glossary on the resources sidebar is the eighth step in the sequence. Go deeper is an optional list of five explainers on the Learn landing page and in `learnSidebar`. Explainer links (`/learn/explainers/*`) stay on `/learn/` and its lessons and explainers only.
+- Learn the basics is not inserted into route reading orders.
+- Work-product CSV downloads live under `static/downloads/*.csv` and are served at `/downloads/*.csv`.
 
 The **slugs in the book map are the ones the site uses** (folder names under `docs/` map to these paths).
 
 ## Route pages
 
-Each route page names who it is for, an ordered reading list, the work product output, and one primary next page.
+Each route page names who it is for, an ordered reading list, the work product output, and one primary onward link written as a sentence. Coordinating across many assets uses `/routes/organisation-wide/` alongside the matching asset route for each system.
 
-| Route | Path | Role |
-| --- | --- | --- |
-| Vendor-managed software | `/routes/vendor-managed-software/` | Commodity IT updated by suppliers |
-| Long-lived confidentiality | `/routes/long-lived-confidentiality/` | Data with a long confidentiality period |
-| Hard to change | `/routes/hard-to-change-systems/` | Products or systems that are costly to change later |
-| Organisation-wide | `/routes/organisation-wide/` | Coordinated programme across the estate |
-| Ask a supplier | `/routes/ask-a-supplier/` | Procurement and supplier follow-up |
-| Not sure | `/routes/not-sure/` | Chooser when the situation is unclear |
+| Route | Path | Role | Output |
+| --- | --- | --- | --- |
+| Vendor-managed software | `/routes/vendor-managed-software/` | Commodity IT updated by suppliers | Vendor response log, plus either a note that no exception applies or the named exception route |
+| Long-lived confidentiality | `/routes/long-lived-confidentiality/` | Data with a long confidentiality period | Priority record for assets with a long data confidentiality period |
+| Hard to change | `/routes/hard-to-change-systems/` | Products or systems that are costly to change later | Release, test, deployment, and end-of-support dates plus a closed or blocked change record |
+| Organisation-wide | `/routes/organisation-wide/` | Coordinated programme across the estate | One-page migration plan with an owner per asset and a subsequent-review date |
+| Ask a supplier | `/routes/ask-a-supplier/` | Procurement and supplier follow-up | Decision-ready row in the vendor response log per product, version, and cryptographic job |
+| Not sure | `/routes/not-sure/` | Chooser when the situation is unclear | Named route, or a list of unknowns with the owner who will close them |
 
 Reading-order links on route pages use these same slugs (for example `/migration-practices/diagnose/`, `/standards/`).
 
 ## Homepage (orientation)
 
-The homepage (`src/pages/index.tsx`) is the situation chooser: hero with tagline and limit statement; six situation links; a learn-the-basics link; one clinic row pointing at protect this first; a closing band to options and curated references. There is no hero button to a single practice page and no separate orientation hub.
+The homepage (`src/pages/index.tsx`) is the situation chooser: hero with promise and limit statements; six situation links; a learn-the-basics link set apart below them; one clinic row pointing at `/resources/protect-this-first/`; and four reference section cards (`/standards/`, `/migration-practices/`, `/algorithm-protocol-options/`, `/resources/`). There is no hero button to a single practice page and no separate orientation hub.
 
-## Broken links
+## Search, sitemap, and broken links
 
-`docusaurus.config.ts` sets `onBrokenLinks`, `onBrokenAnchors`, and `onBrokenMarkdownLinks` to `throw`. Any new path matches this map and exists under `docs/`.
+- Local search is built at compile time with `@easyops-cn/docusaurus-search-local` in the navbar (no external search service).
+- `docusaurus.config.ts` generates `sitemap.xml`, and `static/robots.txt` references `https://pqchandbook.com/sitemap.xml`.
+- `docusaurus.config.ts` sets `onBrokenLinks`, `onBrokenAnchors`, and `onBrokenMarkdownLinks` to `throw`. Any new path matches this map and exists under `docs/`, with no redirects from retired slugs.

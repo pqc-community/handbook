@@ -41,10 +41,17 @@ Navbar and footer use deep teal. The default light background is surface. In dar
 | Body | Inter | 400 |
 | Code | Source Code Pro | 500 |
 
-## Homepage tone
+## Diagrams
 
-The hero shows **PQC Handbook**, the tagline, a primary button to **Where to start** (`/migration-practices/where-to-start/`), and a secondary button to **Start here** (`/start-here/`). Role cards follow the Start here seat order (excluding Keep software updated). See [navigation-structure.md](./navigation-structure.md).
+Concept explainers render diagrams with `@docusaurus/theme-mermaid` (pinned to match `@docusaurus/core` at `3.10.1`), using the built-in `dagre` layout and `themeConfig.mermaid.theme` set to `{light: 'neutral', dark: 'dark'}`. Diagrams are static `mermaid` code fences (`sequenceDiagram`), not raster or SVG image files and not `@mermaid-js/layout-elk`.
+
+## Homepage tone and metadata
+
+- **Browser `<title>`** (`Layout` `title` prop in `src/pages/index.tsx`): `Post-quantum cryptography handbook` (renders as `Post-quantum cryptography handbook | PQC Handbook`).
+- **Hero `<h1>`**: **PQC Handbook**, followed by one sentence of promise ("The handbook helps an organisation decide what to migrate, in what order, and how it will know.") and one sentence of limit ("It is not a risk assessment and not a substitute for a specialist on a large bespoke estate, critical national infrastructure, or a regulated system."). There are no hero call-to-action buttons.
+- **Meta description**: `A practical handbook for organisations that have to migrate public-key cryptography to post-quantum algorithms without a cryptographer to do the deciding.`
+- **Regions below the hero**: six situation cards under **Choose the situation**, **Learn the basics** visually separated below them, a single-row clinic priority preview linking to `/resources/protect-this-first/`, and four reference section cards. See [navigation-structure.md](./navigation-structure.md).
 
 ## Docusaurus settings (reference)
 
-From `docusaurus.config.ts`: `title` PQC Handbook, `url` https://pqchandbook.com, `baseUrl` `/`, `trailingSlash` true, blog disabled.
+From `docusaurus.config.ts`: `title` PQC Handbook, `url` https://pqchandbook.com, `baseUrl` `/`, `trailingSlash` true, `routeBasePath` `/`, blog disabled, broken links/anchors/markdown links set to `throw`, Mermaid enabled, build-time local search via `@easyops-cn/docusaurus-search-local` (no hosted Algolia account), weekly `sitemap.xml`, `static/robots.txt` pointing to `https://pqchandbook.com/sitemap.xml`, and `static/CNAME` set to `pqchandbook.com`.
