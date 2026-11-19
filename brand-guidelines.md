@@ -86,6 +86,6 @@ Always retain system sans-serif and monospace fallbacks. Code blocks use high-co
 
 Visual changes should be reviewed alongside `src/css/custom.css` and `static/img/`. Related maintainer guides cover the non-visual domains of the handbook:
 
-- [purpose-and-positioning.md](./purpose-and-positioning.md) — mission, audience, scope, and sister-site boundaries
+- [purpose-and-positioning.md](./purpose-and-positioning.md) — mission, audience, editorial thesis, sister-site boundaries, and non-goals
 - [navigation-structure.md](./navigation-structure.md) — URL structure, sidebars, and user journeys
 - [style-guide.md](./style-guide.md) — editorial voice, terminology, prose attribution, page patterns, and sourcing

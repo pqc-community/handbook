@@ -1,6 +1,6 @@
 # PQC Handbook - Style Guide
 
-Editorial standards for voice, terminology, attribution, page structure, and sourcing across the PQC Handbook. Visual identity lives in [brand-guidelines.md](./brand-guidelines.md); URL routing and sidebars live in [navigation-structure.md](./navigation-structure.md); mission, audience, and scope live in [purpose-and-positioning.md](./purpose-and-positioning.md).
+Editorial standards for voice, terminology, attribution, page structure, and sourcing across the PQC Handbook. Visual identity lives in [brand-guidelines.md](./brand-guidelines.md); URL routing and sidebars live in [navigation-structure.md](./navigation-structure.md); mission, audience, editorial thesis, and scope live in [purpose-and-positioning.md](./purpose-and-positioning.md).
 
 ## 1. Voice and Tone
 
