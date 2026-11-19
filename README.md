@@ -2,24 +2,48 @@
 
 **A practical handbook for organisations that have to migrate public-key cryptography and do not have a cryptographer to do the deciding.**
 
-This repository is the site source for the public [PQC Handbook](https://pqchandbook.com): a Docusaurus 3 static site. It builds and runs locally. A push to `main` publishes it with the same GitHub Pages workflow as the sister handbooks. DNS for the domain stays at the registrar.
+This repository contains the source for [pqchandbook.com](https://pqchandbook.com), a vendor-neutral, source-backed handbook that helps organisations decide what public-key cryptography to migrate to post-quantum algorithms, in what order, and what written records demonstrate the decision and outcome.
 
-## Requirements
+The PQC Handbook is built with [Docusaurus 3](https://docusaurus.io/) and is a sister site to the **Secure-by-Design Handbook** and the **Supply Chain Security Handbook**.
 
-- [Node.js](https://nodejs.org/) **20** or newer (`package.json` sets `engines.node` to `>=20.0`)
+## Documentation
 
-## Install and run
+### Maintainer Guides
+
+Read these four root documents before changing structure, prose, or styling:
+
+- [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, target audience and roles, content model, sister-site boundaries, and non-goals
+- [Navigation Structure](./navigation-structure.md) — URL policy, navbar and six sidebars, complete sitemap, and situation-route journeys
+- [Style Guide](./style-guide.md) — Voice, epistemic labels, page contracts, work-product CSV and clinic schemas, sourcing rules, and quality gates
+- [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, Mermaid configuration, and homepage layout
+
+### Handbook Content (`docs/`)
+
+- [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional **Go deeper** explainers
+- [Situation Routes](./docs/routes/not-sure.md) (`docs/routes/`) — Six operational routes entered from the homepage situation chooser
+- [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
+- [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
+- [Algorithm & Protocol Options](./docs/algorithm-protocol-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
+- [Resources](./docs/resources/index.md) — Seven CSV-backed work-product templates, the [Protect this first](./docs/resources/protect-this-first.md) worked example, [Glossary](./docs/resources/glossary.md), [Curated references](./docs/resources/curated-references.md), and [Editorial policy](./docs/resources/editorial-policy.md)
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) **20.0** or newer (`engines.node` in `package.json`)
+
+### Install and Run Locally
 
 ```bash
 npm install
 npm start
 ```
 
-The dev server opens the site locally. Handbook pages live under `docs/` and are served from the site root (for example, `/migration-practices/inventory/`).
+Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/migration-practices/inventory/`).
 
-## Verification
+## Verification and Build
 
-Before you merge or publish a build, run:
+Run the full check suite locally before opening a pull request or pushing to `main`:
 
 ```bash
 npm test
@@ -28,50 +52,40 @@ npm run typecheck
 npm run build
 ```
 
-| Command | What it does |
+| Command | Description |
 | --- | --- |
-| `npm test` | Runs page and navigation validation tests (`scripts/check-pages.test.mjs`) |
-| `npm run check` | Checks `docs/**/*.md` title lengths and navbar, footer, and sidebar label bounds |
-| `npm run typecheck` | TypeScript check |
-| `npm run build` | Production static build (broken links and anchors fail the build) |
+| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`) |
+| `npm run check` | Validates page `title` lengths (`docs/**/*.md`) and surface-specific navigation bounds across navbar, footer, and sidebars (`scripts/check-pages.mjs`) |
+| `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
+| `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
+| `npm run serve` | Serves the production `build/` output locally |
 
-Optional: `npm run serve` serves the build output after `npm run build`.
+## Repository Layout
+
+| Path | Purpose |
+| --- | --- |
+| `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
+| `src/pages/` | Situation-chooser homepage (`index.tsx` and `index.module.css`) |
+| `src/theme/` | Swizzled `DocItem/Content` wrapper rendering `Last reviewed` dates |
+| `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
+| `static/downloads/` | Header-only CSV templates for the seven migration work products |
+| `static/img/` | Shared shield logo, favicon, and `1200 × 630` OpenGraph social card |
+| `sidebars.ts` | Six hand-written documentation sidebars |
+| `docusaurus.config.ts` | Site configuration, navbar, footer, Mermaid theme, local search, and link policy |
+| `scripts/` | Page and navigation validation scripts and tests |
+
+*(If present locally, `.ai-helper-files/` holds gitignored private drafting material and must never be linked or cited on public pages.)*
 
 ## Deployment
 
-The site is deployed to GitHub Pages using GitHub Actions.
+Pushes to `main` automatically build and deploy the site to GitHub Pages via [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml):
 
-- **Live Site**: [https://pqchandbook.com](https://pqchandbook.com)
-- **Trigger**: Any push to the `main` branch automatically triggers deployment
-- **Workflow**: See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for the deployment configuration
-- **Process**: Build -> Deploy to GitHub Pages -> Live in a few minutes
+- **Live site**: [https://pqchandbook.com](https://pqchandbook.com) (`static/CNAME`)
+- **CI steps**: Node 20 setup, `npm ci`, `npm run typecheck`, `npm run build`, and GitHub Pages artifact deployment (run `npm test` and `npm run check` locally before merging)
 
-`static/CNAME` contains `pqchandbook.com`. The workflow runs typecheck and the production build. Run `npm test` and `npm run check` locally before you merge; those checks are not steps in the workflow.
+## Contributing and Reporting Issues
 
-## Maintainer notes
+Contributions from migration leads, security practitioners, procurement and risk teams, and standards reviewers are welcome:
 
-Read these before editing content or structure:
-
-| File | Topic |
-| --- | --- |
-| [purpose-and-positioning.md](./purpose-and-positioning.md) | Reader, promise and limit, chooser purpose, sister-site boundary, non-goals |
-| [navigation-structure.md](./navigation-structure.md) | Book map, six sidebars, route table, homepage regions, slugs |
-| [style-guide.md](./style-guide.md) | Voice, labels, page shapes, CSV/clinic contracts, citations, SEO titles |
-| [brand-guidelines.md](./brand-guidelines.md) | Name, domain, palette, typography, Mermaid theme, logo |
-
-## Local reference material
-
-The `.ai-helper-files/` directory holds local research notes and filed source extracts used while writing pages. It is listed in `.gitignore` and is **not** part of the public repository. Do not cite paths under `.ai-helper-files/` as public sources on handbook pages; use the citation and sourcing rules in [style-guide.md](./style-guide.md).
-
-## Repository layout (short)
-
-| Path | Role |
-| --- | --- |
-| `docs/` | Public handbook Markdown |
-| `src/pages/` | Situation-chooser homepage (`index.tsx`) |
-| `static/downloads/` | Header-only CSV templates for the seven work products |
-| `sidebars.ts` | Six hand-written sidebars |
-| `docusaurus.config.ts` | Site URL, navbar, footer, Mermaid, local search, link policy |
-| `scripts/` | Page checks (`check-pages.mjs`) and test suite (`check-pages.test.mjs`) |
-
-Public handbook: [https://pqchandbook.com](https://pqchandbook.com). Source: [https://github.com/pqc-community/handbook](https://github.com/pqc-community/handbook).
+- **Report a stale reference or issue**: Open an issue on [github.com/pqc-community/handbook/issues](https://github.com/pqc-community/handbook/issues)
+- **Propose content or structural changes**: Follow the sourcing, voice, and navigation rules in [style-guide.md](./style-guide.md) and [navigation-structure.md](./navigation-structure.md), and verify `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass locally
