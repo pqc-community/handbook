@@ -27,7 +27,7 @@ Take one signed artefact — a firmware image, a server certificate, or a signed
 ## The usual order
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[1. Libraries and HSMs support the algorithm] --> B[2. Verifiers and trust stores updated]
     B --> C[3. CAs issue post-quantum or dual-signed certificates]
     C --> D[4. Signers switch]

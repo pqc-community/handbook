@@ -30,7 +30,7 @@ An attacker who records encrypted traffic or copies encrypted files today can st
 The risk applies to **confidentiality**, through key establishment and public-key encryption. It does not apply to signatures in the same way: a recorded signature does not reveal a secret later. Forging signatures becomes possible only once a CRQC exists, which is why signature urgency depends on coordination time and device lifetimes rather than on data already collected. The [previous lesson](/learn/signatures-and-trust/) covers that clock.
 
 ```mermaid
-flowchart LR
+flowchart TD
     T1[Today: data encrypted with classical key establishment] --> R[Attacker records ciphertext]
     R --> W[Stored for years]
     W --> Q[CRQC becomes available]

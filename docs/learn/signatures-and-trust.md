@@ -18,7 +18,7 @@ A signature check proves that data matches a public key. Systems need more than 
 Every link in that chain carries a signature. Replacing the signature algorithm therefore means new keys and certificates at the CA, new signing in the publisher's pipeline, and verifiers everywhere that understand the new algorithm. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.2.4) notes that public-key infrastructure (PKI) components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and that infrastructure may need to change *before* the applications that depend on it can migrate.
 
 ```mermaid
-flowchart LR
+flowchart TD
     R[Trust anchor held by the verifier] -->|signs| I[Intermediate CA certificate]
     I -->|signs| L[Server, device, or publisher certificate]
     L -->|its key signs| D[Handshake, document, or firmware image]

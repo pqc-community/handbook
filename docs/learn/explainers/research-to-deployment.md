@@ -12,7 +12,7 @@ Each stage below is real progress, and each is routinely mistaken for the next. 
 ## The stages
 
 ```mermaid
-flowchart LR
+flowchart TD
     C[Candidate] --> S[Selected]
     S --> DR[Draft standard]
     DR --> F[Final standard]

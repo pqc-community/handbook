@@ -18,15 +18,24 @@ The reasoning most authorities use is named after the researcher Michele Mosca. 
 If **X + Y** is greater than **Z**, some data will still need protecting after a quantum computer can read it. Organisations need to start before X + Y exceeds Z. [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) adds that the closer X + Y is to Z, the more urgent the migration.
 
 ```mermaid
+---
+config:
+  gantt:
+    useWidth: 680
+    fontSize: 14
+    sectionFontSize: 14
+    barHeight: 28
+    leftPadding: 110
+---
 gantt
-    title Illustration: X + Y compared with Z (years from now)
+    title Illustration: X + Y compared with Z
     dateFormat YYYY
     axisFormat %Y
-    section Your organisation
-    Y - migration takes 6 years                  :a1, 2026, 2032
-    X - last data protected must stay secret 10 years :a2, 2032, 2042
-    section Planning assumption
-    Z - quantum computer assumed in 14 years     :crit, z1, 2026, 2040
+    section You
+    Y - migrate, 6 years           :a1, 2026, 2032
+    X - keep secret, 10 years      :a2, 2032, 2042
+    section Assumption
+    Z - quantum computer, 14 years :crit, z1, 2026, 2040
 ```
 
 In this illustration, X + Y is 16 years and Z is 14, so the last data protected by classical key establishment would be exposed for its final two years. The sooner migration finishes (a smaller Y), the smaller that gap.

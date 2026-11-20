@@ -28,7 +28,7 @@ NIST describes the first two as separate parts of the transition in [NIST IR 854
 Key establishment is not the same as encrypting the data. The public-key step agrees a secret; symmetric algorithms derived from that secret then protect the traffic or file. The diagram shows that division of labour in a typical secure connection.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Public-key key establishment] -->|shared secret| K[Key derivation]
     K -->|symmetric keys| S[Symmetric encryption and integrity]
     S -->|protects| D[Application data]

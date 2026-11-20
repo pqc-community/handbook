@@ -12,7 +12,7 @@ This section gives security, engineering, product, procurement, and risk profess
 Public-key cryptography does three kinds of work that a quantum computer would affect, and each runs on its own clock.
 
 ```mermaid
-flowchart LR
+flowchart TD
     Q[Cryptographically relevant quantum computer] -->|breaks| PK[RSA, Diffie-Hellman, elliptic curves]
     PK --> KE[Key establishment]
     PK --> SG[Signatures with updatable verifiers]
