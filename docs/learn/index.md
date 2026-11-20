@@ -1,46 +1,88 @@
 ---
-title: Learn the basics
+title: Learn the basics of post-quantum cryptography
 sidebar_label: Learn the basics
-description: Background before you choose a migration route.
+description: A ten-lesson grounding in post-quantum cryptography for security, engineering, product, procurement, and risk professionals, with optional explainers for more depth.
 displayed_sidebar: learnSidebar
 ---
 
-This section is for security, engineering, product, procurement, and risk professionals who understand systems and change control but want a shared model of the cryptography affected by a post-quantum migration. It provides conceptual grounding before you choose a route; it is not a migration procedure.
+This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, the [situation routes](/) take over.
 
-After the core lessons, you should be able to distinguish key establishment from signatures, explain what a quantum computer threatens, identify the jobs of the first NIST post-quantum algorithms, and connect an algorithm standard to its use in a product and to an applicable migration date.
+## The model in one picture
+
+Public-key cryptography does three kinds of work that a quantum computer would affect, and each runs on its own clock.
+
+```mermaid
+flowchart LR
+    Q[Cryptographically relevant quantum computer] -->|breaks| PK[RSA, Diffie-Hellman, elliptic curves]
+    PK --> KE[Key establishment]
+    PK --> SG[Signatures with updatable verifiers]
+    PK --> LL[Verifiers that cannot be updated]
+    KE -->|clock: how long data must stay secret| A1[Confidentiality risk starts now]
+    SG -->|clock: how long parties take to move together| A2[Coordination risk]
+    LL -->|clock: how long devices stay in service| A3[Decided at design and purchase]
+```
+
+## What you will be able to explain
+
+After the core lessons you should be able to:
+
+- separate key establishment from signatures, and say which one harvest-now, decrypt-later threatens;
+- explain why symmetric cryptography such as AES is not being replaced;
+- name ML-KEM, ML-DSA, SLH-DSA, and the stateful hash-based schemes, and say what each is for;
+- say what "hybrid" means and why authorities disagree about it;
+- tell an algorithm standard apart from a protocol specification, a validated module, a product release, and a deployment;
+- read any migration date by asking who set it, for whom, for which job, and for which milestone.
 
 ## Core lessons
 
-Read these in order. The path starts with the jobs public-key cryptography performs and the quantum threat to those jobs. It then introduces post-quantum algorithms, shows where they fit in products, and ends by separating algorithm standards, product support, and migration dates.
+Read these in order. Each takes about five minutes and ends with a short self-check.
 
-1. [Public-key cryptography](/learn/public-key-cryptography/) — distinguish key establishment, encryption, and signatures.
-2. [Quantum threat](/learn/quantum-threat/) — understand the threat to today's public-key schemes and the confidentiality risk from collected data.
-3. [What post-quantum means](/learn/what-post-quantum-means/) — distinguish post-quantum cryptography from quantum cryptography.
-4. [Algorithms](/learn/algorithms/) — recognise what ML-KEM, ML-DSA, and SLH-DSA do.
-5. [In real systems](/learn/in-real-systems/) — locate these cryptographic jobs in products and services.
-6. [Standardisation](/learn/standardisation/) — distinguish a standard from a protocol profile and a product release.
-7. [Timelines](/learn/timelines/) — understand why standards and migration dates are different.
+1. [Public-key cryptography](/learn/public-key-cryptography/) — the jobs public-key cryptography does, and how it differs from symmetric cryptography.
+2. [Signatures, certificates, and trust](/learn/signatures-and-trust/) — certificates, chains, trust anchors, and verifiers that cannot be updated.
+3. [The quantum threat](/learn/quantum-threat/) — what a quantum computer breaks, what it does not, and harvest-now, decrypt-later.
+4. [What post-quantum means](/learn/what-post-quantum-means/) — post-quantum versus quantum cryptography, and what "quantum-resistant" promises.
+5. [Post-quantum algorithms](/learn/algorithms/) — ML-KEM, ML-DSA, SLH-DSA, LMS and XMSS, and what is coming next.
+6. [Hybrid cryptography](/learn/hybrid/) — hybrid key exchange, dual signatures, and differing authority positions.
+7. [Standardisation](/learn/standardisation/) — the five layers between a standard and a protected system, with current status.
+8. [In real systems](/learn/in-real-systems/) — where each job sits in TLS, VPNs, email, code signing, PKI, and hardware.
+9. [Timelines](/learn/timelines/) — four questions for any date, and the three clocks.
+10. [Crypto-agility](/learn/crypto-agility/) — why this is not the last transition, and how to move into planning.
 
-Use the [glossary](/resources/glossary/) when you need a definition while reading. To choose a migration route, start with the [homepage situation chooser](/) or [Not sure which route applies](/routes/not-sure/).
+## Reading by role
 
-## Further explanations
+All ten lessons are short; if you only have time for some, these are the most useful starting points.
 
-These pages expand a particular distinction; read them when you want a more detailed model.
+| Role | Start with | Then |
+| --- | --- | --- |
+| Security or risk lead | 3, 9 | [When to start](/learn/explainers/when-to-start/) |
+| Engineering or product | 1, 5, 8 | [What changes in a TLS connection](/learn/explainers/tls/) |
+| Procurement or supplier management | 7, 2 | [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) |
+| Executive sponsor | 3, 9, 10 | [Why migration timelines differ](/learn/explainers/timelines/) |
 
-- [What the keys actually do](/learn/explainers/keys/) — compare the public and private key roles in different schemes.
-- [What a quantum computer changes](/learn/explainers/quantum-computers/) — compare the effects on confidentiality and signatures.
-- [What a KEM is](/learn/explainers/kem/) — follow encapsulation and decapsulation, and see why they are not bulk encryption.
-- [What changes in a TLS connection](/learn/explainers/tls/) — trace key establishment and server authentication as separate jobs.
-- [Why timelines differ](/learn/explainers/timelines/) — compare dates set for different audiences and milestones.
+## Go deeper
 
-When you are ready to plan, return to the [homepage](/) or browse [curated references](/resources/curated-references/).
+Optional explainers expand one distinction each. Read them when a lesson leaves you wanting the mechanism or the evidence.
+
+- [What the keys actually do](/learn/explainers/keys/) — which key does which job in each scheme.
+- [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/) — everyone who must move together when a signature algorithm changes.
+- [What a quantum computer changes](/learn/explainers/quantum-computers/) — Shor and Grover side by side, and when harm can occur.
+- [When to start: Mosca's inequality](/learn/explainers/when-to-start/) — data lifetime plus migration time against the arrival of a quantum computer.
+- [Forward secrecy and recorded traffic](/learn/explainers/forward-secrecy/) — why ephemeral keys do not stop harvest-now, decrypt-later.
+- [What a KEM is](/learn/explainers/kem/) — encapsulation, decapsulation, and how KEMs differ from Diffie–Hellman.
+- [Hash-based signatures](/learn/explainers/hash-based-signatures/) — stateless and stateful designs, and why state matters for firmware signing.
+- [What changes in a TLS connection](/learn/explainers/tls/) — the handshake step by step, and why authentication lags key exchange.
+- [From research to deployment](/learn/explainers/research-to-deployment/) — the path from candidate algorithm to something running in your estate.
+- [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) — turning a supplier statement into checkable facts.
+- [Why migration timelines differ](/learn/explainers/timelines/) — NIST, US federal, UK, EU, and Australian dates compared.
+
+Use the [glossary](/resources/glossary/) for definitions while reading.
 
 ## Sources
 
-- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 
-- [Homepage](/)
-- [Curated references](/resources/curated-references/)
+- [Homepage situation chooser](/)
 - [Not sure which route applies](/routes/not-sure/)
+- [Curated references](/resources/curated-references/)
