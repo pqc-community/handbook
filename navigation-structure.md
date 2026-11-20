@@ -41,7 +41,7 @@ Homepage Situation Chooser (/)
 ```
 
 - **Situation Chooser (`/`) and Routes (`/routes/*`)**: Route visitors by operational context (*vendor-managed software*, *long-lived confidentiality*, *hard-to-change systems*, *organisation-wide coordination*, *ask a supplier*, or *not sure*) into an ordered sequence of reference pages without duplicating those pages into separate silos.
-- **Learn the Basics (`/learn/*`)**: An introductory track for visitors who want conceptual grounding before planning a migration, ending at `/resources/glossary/`, with optional **Further explanations** under `/learn/explainers/*`.
+- **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/glossary/`. Optional **Go deeper** explainers under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, directives, and external migration guides, grouped by their role in the transition.
   - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.
@@ -55,16 +55,25 @@ Homepage Situation Chooser (/)
 
 /learn/
 /learn/public-key-cryptography/
+/learn/signatures-and-trust/
 /learn/quantum-threat/
 /learn/what-post-quantum-means/
 /learn/algorithms/
-/learn/in-real-systems/
+/learn/hybrid/
 /learn/standardisation/
+/learn/in-real-systems/
 /learn/timelines/
+/learn/crypto-agility/
 /learn/explainers/keys/
+/learn/explainers/signature-dependencies/
 /learn/explainers/quantum-computers/
+/learn/explainers/when-to-start/
+/learn/explainers/forward-secrecy/
 /learn/explainers/kem/
+/learn/explainers/hash-based-signatures/
 /learn/explainers/tls/
+/learn/explainers/research-to-deployment/
+/learn/explainers/quantum-safe-claims/
 /learn/explainers/timelines/
 
 /routes/vendor-managed-software/

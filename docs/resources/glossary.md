@@ -5,7 +5,7 @@ displayed_sidebar: resourcesSidebar
 description: Terms used across this handbook, from asymmetric cryptography and key encapsulation to hybrid constructions and harvest-now, decrypt-later.
 ---
 
-The glossary is step 8 of [Learn the basics](/learn/), with formal definitions attributed to their defining standards where cited. When you are ready to plan, return to the [homepage](/).
+Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, return to the [homepage](/).
 
 ### Asymmetric cryptography
 
@@ -39,9 +39,13 @@ The [Cryptographic Module Validation Program](https://csrc.nist.gov/projects/cry
 
 The module is that implementation, not the name of an algorithm. ML-KEM is not a cryptographic module. A library, a chip, or a firmware image can be one when those functions sit inside its cryptographic boundary. A claim that a product is FIPS 140 validated names that module. It does not say the product has moved to a post-quantum algorithm. See [Algorithms](/learn/algorithms/) and [Choosing an option](/technology-options/choosing/).
 
+### Cryptographically relevant quantum computer (CRQC)
+
+A quantum computer large and reliable enough to break today's public-key cryptography using Shor's algorithm. The UK NCSC's [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) (August 2024) uses this term; [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says *cryptanalytically* relevant, and states that none exists today. Nobody can say reliably when one will. See [The quantum threat](/learn/quantum-threat/) and [When to start](/learn/explainers/when-to-start/).
+
 ### Digital signature
 
-A value created with a private key so that anyone with the matching public key can check that the holder of the private key approved a message or a file. Checking the signature does not reverse it, and it does not recover the private key. A signature is not encryption. Encryption hides the message, and a signature shows who approved it. The signature is often computed on a digest from a [hash function](#hash-function), or on output from an [extendable-output function](#extendable-output-function-xof), so a long message can be signed. That digest is not the signature. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA, the two post-quantum signature algorithms these lessons name. See [Public-key cryptography](/learn/public-key-cryptography/) and [Signatures](/technology-options/signatures/).
+A value created with a private key so that anyone with the matching public key can check that the holder of the private key approved a message or a file. Checking the signature does not reverse it, and it does not recover the private key. A signature is not encryption. Encryption hides the message, and a signature shows who approved it. The signature is often computed on a digest from a [hash function](#hash-function), or on output from an [extendable-output function](#extendable-output-function-xof), so a long message can be signed. That digest is not the signature. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) specifies ML-DSA and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) specifies SLH-DSA, the two general-purpose post-quantum signature standards; [stateful hash-based signatures](#stateful-hash-based-signature) serve narrower uses. See [Public-key cryptography](/learn/public-key-cryptography/) and [Signatures](/technology-options/signatures/).
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines a digital signature as the result of a cryptographic transformation of data that, when properly implemented, provides a mechanism to verify origin authenticity and data integrity and to enforce signatory non-repudiation. The same report says signature algorithms provide support for non-repudiation, and that they are used with hash functions or extendable-output functions to sign messages of arbitrary length. It also says digital signatures are not vulnerable to harvest-now, decrypt-later. The transition is still urgent because it takes longer and more parties coordinate. An authentication system remains secure until the algorithm can be broken at the time of authentication. See [The quantum threat](/learn/quantum-threat/).
 
@@ -50,6 +54,10 @@ Origin authenticity means the check shows that the holder of the private key app
 ### Discovery
 
 Finding where cryptography is used, including what a scan cannot see. A scan of libraries and configurations finds some of it and misses embedded and hardware-bound cryptography, and cryptography inside a supplier's product. Those gaps stay on the inventory as unknown until both algorithm cells name a construction. See [Inventory the cryptography](/migration-practices/inventory/).
+
+### Dual signature
+
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes dual signatures as two or more signatures on a common message, all of which must verify; they are also called hybrid or composite signatures. NIST's standards accommodate them provided at least one component algorithm is NIST-approved. They are the signature form of a [hybrid](#hybrid) construction. See [Hybrid cryptography](/learn/hybrid/).
 
 ### Encryption
 
@@ -79,11 +87,15 @@ The same message always produces the same digest, and the digest does not recove
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says NIST's existing standards in symmetric cryptography, including hash functions, are significantly less vulnerable to known quantum attacks than the public-key standards in SP 800-56A, SP 800-56B, and FIPS 186. See [The quantum threat](/learn/quantum-threat/) and [Algorithms](/learn/algorithms/).
 
+### HQC
+
+A key-encapsulation mechanism that NIST selected in [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final) (March 2025) as an alternative to ML-KEM. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says a FIPS specifying it is under development and that it will become an approved scheme once published. Until then it is selected, not standardised. See [Post-quantum algorithms](/learn/algorithms/).
+
 ### Hybrid
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes a classical algorithm and a post-quantum algorithm used together so the exchange or the signature still holds if either one fails. The construction is secure if at least one component is secure. The same report treats that combination as a temporary hedge while products and trust stores catch up.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes a classical algorithm and a post-quantum algorithm used together so the exchange or the signature still holds if either one fails. The construction is secure if at least one component is secure. The same report says hybrid solutions add complexity and, when used, are typically temporary measures leading to a second transition to post-quantum-only cryptography.
 
-The hybrid construction is the key-establishment half of a connection. Checking who the server is remains a separate signature check. See [In real systems](/learn/in-real-systems/).
+Hybrid key establishment combines a classical and a post-quantum exchange into one shared secret; the signature form is a [dual signature](#dual-signature). Supporting two algorithms and negotiating one per session is not hybrid. Authorities differ on when hybrid is appropriate. See [Hybrid cryptography](/learn/hybrid/).
 
 ### Key agreement
 
@@ -135,6 +147,10 @@ NIST's lattice-based digital signature algorithm in [FIPS 204](https://csrc.nist
 
 NIST's key-establishment algorithm in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final). It is a [key-encapsulation mechanism](#key-encapsulation-mechanism-kem): two parties establish a shared secret, and that secret is not the message. ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) and SLH-DSA in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) are the signature algorithms, and they do not do this job. See [Algorithms](/learn/algorithms/).
 
+### Mosca's inequality
+
+A way to decide when to start protecting confidential data. If X is how long data must stay secure, Y how long migration takes, and Z how long until a cryptanalytically relevant quantum computer exists, migration needs to start before X + Y exceeds Z. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, and [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) both describe it. See [When to start: Mosca's inequality](/learn/explainers/when-to-start/).
+
 ### PKI (public-key infrastructure)
 
 The public-key infrastructure that issues and checks certificates. A certificate binds a name to a public key and takes its place in a chain to a trust anchor.
@@ -167,6 +183,10 @@ RSA and elliptic-curve public-key schemes are the familiar examples. A [block ci
 
 The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Choosing an option](/technology-options/choosing/).
 
+### Relying party
+
+The person, service, or device that acts on the result of a signature or certificate check — for example, a browser deciding to trust a website, or a device deciding to install firmware. Changing a signature algorithm is useful only once relying parties accept the new algorithm. See [Signatures, certificates, and trust](/learn/signatures-and-trust/).
+
 ### Root of trust
 
 A check the device cannot replace later. The case that matters is a verifier that cannot be updated in the field, on a device that will stay in use. A new signature algorithm cannot be introduced there after deployment, so the root is recorded before the product is locked, and long-lived roots come before the signature choice. See [Long-lived roots of trust](/technology-options/long-lived-roots/).
@@ -175,11 +195,19 @@ A check the device cannot replace later. The case that matters is a verifier tha
 
 NIST's stateless hash-based digital signature algorithm in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final). It signs, as ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) does, and the hash-based design is the difference. It is the stateless scheme to record when a stateful hash-based scheme is not appropriate, and it does not establish a shared secret. See [Algorithms](/learn/algorithms/) and [Long-lived roots of trust](/technology-options/long-lived-roots/).
 
+### Stateful hash-based signature
+
+A hash-based signature scheme in which the signer must track which one-time keys have been used and never reuse one. LMS, HSS, XMSS, and XMSS^MT in [NIST SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final) are the approved examples. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says they are not intended for general use but may suit software and firmware signing. Compare [SLH-DSA](#slh-dsa-stateless-hash-based-digital-signature-algorithm), which is stateless. See [Hash-based signatures](/learn/explainers/hash-based-signatures/).
+
 ### Symmetric cryptography
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines symmetric-key cryptography as an algorithm that uses the same secret key for its operation and, if applicable, for reversing that operation. An AES key used to encrypt and decrypt is the report's example. It also calls these secret-key algorithms: the same key applies the protection and removes or checks it. The report says the existing standards in symmetric cryptography, including hash functions, extendable-output functions, block ciphers, and key-derivation functions, are significantly less vulnerable to known quantum attacks than the public-key standards in SP 800-56A, SP 800-56B, and FIPS 186. NIST does not expect to need to transition away from these standards as part of the post-quantum migration.
 
 One shared secret does both jobs. The same key encrypts and decrypts, and the same key creates and checks a [message authentication code](#message-authentication-code-mac). A [block cipher](#block-cipher) such as AES is the familiar encryption example. [Key derivation](#key-derivation) and [key wrapping](#key-wrapping) are other uses of a key the parties already share. [Public-key cryptography](#public-key-cryptography) uses a matched pair instead. [Key establishment](#key-establishment) produces a shared secret, and symmetric cryptography then protects the bulk of the traffic. It is not a [digital signature](#digital-signature). See [Public-key cryptography](/learn/public-key-cryptography/) and [The quantum threat](/learn/quantum-threat/).
+
+### Trust anchor
+
+A public key or certificate that a verifier trusts without further proof, and from which it checks every other certificate in a [certificate chain](#certificate-chain). Browsers and operating systems hold many in trust stores; an embedded device may hold one publisher key in its boot code. A new signature algorithm usually needs new trust anchors. See [Signatures, certificates, and trust](/learn/signatures-and-trust/).
 
 ### Urgent adopter
 
@@ -192,6 +220,10 @@ The component that checks a signature. When every verifier can be updated, the s
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
+- NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages
 
@@ -201,6 +233,8 @@ The component that checks a signature. When every verifier can be updated, the s
 - [What post-quantum means](/learn/what-post-quantum-means/)
 - [Algorithms](/learn/algorithms/)
 - [In real systems](/learn/in-real-systems/)
+- [Hybrid cryptography](/learn/hybrid/)
+- [Signatures, certificates, and trust](/learn/signatures-and-trust/)
 - [Standardisation](/learn/standardisation/)
 - [Homepage](/)
 - [Changing algorithms again](/migration-practices/changing-algorithms-again/)

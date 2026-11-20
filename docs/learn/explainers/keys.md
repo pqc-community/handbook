@@ -33,7 +33,7 @@ sequenceDiagram
     Publisher->>Publisher: Sign the update with the private key
     Publisher->>Device: Update and signature
     Device->>Device: Verify with the trusted public key
-    Note over Device: Result is accept or reject; nothing is decrypted
+    Note over Device: Result is accept or reject, and nothing is decrypted
 ```
 
 ## A valid signature does not tell you who signed
