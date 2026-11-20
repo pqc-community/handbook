@@ -1,24 +1,60 @@
 ---
 title: What a quantum computer changes
 sidebar_label: What a quantum computer changes
-description: Which quantum effect applies to confidentiality, and which does not.
+description: Shor's and Grover's algorithms side by side, how NIST's post-quantum security categories are anchored to AES and SHA, and when harm to encrypted data and signatures can actually occur.
 displayed_sidebar: learnSidebar
 ---
 
-The practical difference between a future quantum attack on encryption and one on signatures is when an attacker can cause harm. NIST IR 8547 (October 2026) separates these risks because they affect different cryptographic jobs.
+**Question this answers:** what exactly does a quantum computer break, and when does that become harmful? **Background:** [The quantum threat](/learn/quantum-threat/).
 
-| Case | What an attacker may do | When the harm can occur |
+## Two algorithms, two very different effects
+
+| | Shor's algorithm | Grover's algorithm |
 | --- | --- | --- |
-| Public-key key establishment protects data that must remain confidential | Record encrypted data now and attempt to decrypt it later if a quantum computer can break the key-establishment scheme. | The confidentiality risk can begin when the data is collected, before a quantum computer exists. |
-| A digital signature is checked by a system | If the signature scheme is broken, create a signature that may pass the verifier's checks, depending on that system's trust and acceptance rules. | The risk arises when a verifier accepts a forged signature; it does not retroactively reveal data encrypted in the past. |
+| Problem it speeds up | Factorisation and discrete logarithms | Unstructured search, such as guessing a key |
+| Size of the speed-up | Turns an infeasible problem into a feasible one | Much smaller; NIST describes its symmetric standards as significantly less vulnerable |
+| Affected cryptography | RSA, finite-field and elliptic-curve Diffie–Hellman, ECDSA, EdDSA | Symmetric ciphers and hash functions, in principle |
+| Fix | Replace the algorithm | None needed for approved primitives of at least 128-bit strength, per NIST and the NCSC |
 
-Grover's algorithm affects symmetric cryptography differently and does not by itself put it on the same transition timetable. These are different risk timelines, even though both relate to future quantum capabilities.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.1) lists the NIST signature and key-establishment standards that are vulnerable to Shor's algorithm on a cryptanalytically relevant quantum computer. Section 4.1.3 states that NIST's symmetric standards are significantly less vulnerable to known quantum attacks. The UK NCSC's [Next steps](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) whitepaper (August 2024) says symmetric algorithms with at least 128-bit keys, such as AES, can continue to be used.
+
+## How post-quantum strength is measured
+
+Because the cost of future quantum attacks is hard to predict, NIST does not describe post-quantum strength in bits alone. NIST IR 8547 (§4.1, Table 1) uses five security categories, each anchored to the cost of attacking a familiar symmetric primitive:
+
+| Category | Anchored to |
+| --- | --- |
+| 1 | Key search on a 128-bit block cipher (AES-128) |
+| 2 | Collision search on a 256-bit hash (SHA-256) |
+| 3 | Key search on a 192-bit block cipher (AES-192) |
+| 4 | Collision search on a 384-bit hash (SHA3-384) |
+| 5 | Key search on a 256-bit block cipher (AES-256) |
+
+This framing is itself a statement of confidence in symmetric cryptography: the yardstick for post-quantum algorithms is "at least as hard to break as AES-128". It also explains parameter-set names: ML-KEM-768, which NIST recommends as the default, is a category 3 parameter set.
+
+## When harm can occur
+
+The practical difference between attacks on encryption and on signatures is *when* an attacker can cause damage.
+
+| Case | What an attacker can do | When the harm occurs |
+| --- | --- | --- |
+| Key establishment protects confidential data in transit or at rest | Record ciphertext now; once a quantum computer can break the key establishment, recover keys and read the data | Exposure is locked in when data is recorded, even if decryption happens years later |
+| A signature is checked by a verifier | Once the signature scheme can be broken, forge signatures that a verifier still accepts | Only from the point a quantum computer exists and only against verifiers still accepting the old algorithm |
+| A device trusts a classical public key it cannot replace | Forge firmware or credentials the device accepts | From the point a quantum computer exists, for the rest of the device's service life |
+
+NIST IR 8547 (§3.1.2) states that an authentication system remains secure as long as its algorithms and keys are secure *when the authentication is performed*, and that systems will need to transition immediately once capable quantum computers become available. That is why signatures carry no historical exposure, but leave no time to react if verifiers are not ready.
+
+## What remains uncertain
+
+No one knows when a cryptographically relevant quantum computer will exist; NIST IR 8547 (§3) states that none exists today. Authorities therefore set migration targets based on how long migration takes rather than on a predicted arrival date. [When to start](/learn/explainers/when-to-start/) shows how.
 
 ## Sources
 
-- NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1, §3, §3.1.2, §4.1). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
 
 ## Related pages
 
 - [The quantum threat](/learn/quantum-threat/)
-- [What a KEM is](/learn/explainers/kem/)
+- [When to start: Mosca's inequality](/learn/explainers/when-to-start/)
+- [Forward secrecy and recorded traffic](/learn/explainers/forward-secrecy/)
