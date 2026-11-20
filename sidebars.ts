@@ -15,7 +15,7 @@ const sidebars: SidebarsConfig = {
     'learn/crypto-agility',
     {
       type: 'category',
-      label: 'Go deeper',
+      label: 'Explainers',
       collapsed: false,
       items: [
         'learn/explainers/keys',

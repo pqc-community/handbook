@@ -59,7 +59,7 @@ All ten lessons are short; if you only have time for some, these are the most us
 | Procurement or supplier management | 7, 2 | [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) |
 | Executive sponsor | 3, 9, 10 | [Why migration timelines differ](/learn/explainers/timelines/) |
 
-## Go deeper
+## Explainers
 
 Optional explainers expand one distinction each. Read them when a lesson leaves you wanting the mechanism or the evidence.
 
