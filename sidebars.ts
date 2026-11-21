@@ -237,11 +237,10 @@ const sidebars: SidebarsConfig = {
     'migration-practices/inventory',
     'migration-practices/priority',
     'migration-practices/plan',
-    'migration-practices/vendor-plan',
-    'migration-practices/procurement',
-    'migration-practices/commodity-software',
+    'migration-practices/suppliers',
     'migration-practices/implementation',
     'migration-practices/changing-algorithms-again',
+    'migration-practices/commodity-software',
     'migration-practices/subsequent-review',
   ],
   technologyOptionsSidebar: [

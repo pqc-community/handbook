@@ -44,7 +44,7 @@ Homepage Situation Chooser (/)
 - **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
-  - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, set up the programme, inventory, prioritise, plan dates, work with existing suppliers, buy post-quantum-ready, keep commodity software updated, make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
+  - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, set up the programme, inventory, prioritise, plan dates, work with suppliers (including purchases and renewals), keep commodity software updated, make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
   - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
   - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
 
@@ -152,11 +152,10 @@ Homepage Situation Chooser (/)
 /migration-practices/inventory/
 /migration-practices/priority/
 /migration-practices/plan/
-/migration-practices/vendor-plan/
-/migration-practices/procurement/
-/migration-practices/commodity-software/
+/migration-practices/suppliers/
 /migration-practices/implementation/
 /migration-practices/changing-algorithms-again/
+/migration-practices/commodity-software/
 /migration-practices/subsequent-review/
 
 /technology-options/

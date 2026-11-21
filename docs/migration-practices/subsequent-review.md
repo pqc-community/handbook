@@ -23,13 +23,15 @@ A subsequent-review date has arrived, or something has happened that may make th
 - an authority republishes or amends a timeline you rely on;
 - a standard you rely on changes status, such as a draft becoming final or an errata notice;
 - an `unknown` inventory row is resolved;
-- a deployed-state check fails after cutover.
+- a deployed-state check fails after cutover, or connections fall back to classical-only cryptography;
+- a new attack or implementation flaw is published for an algorithm or product you use;
+- a product design freeze or a contract renewal on the plan is approaching.
 
 **At each review:**
 
 1. Open the review log and the records due for review.
 2. Update confidence and dates on inventory, priority, plan, and supplier rows.
-3. Carry each unresolved item forward with a named owner and a date.
+3. Carry each unresolved item forward on its own review-log row, with its own owner and date.
 4. Set the next review date on the review log and on every open record.
 5. Report to the sponsor: what moved, what is blocked and why, which decisions or risk acceptances are needed, and the next review date.
 
@@ -43,7 +45,14 @@ The [review log](/resources/review-log/): date, what was reviewed, unresolved it
 
 An insufficient record is "The migration project is closed."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier response, and the product sensor's priority. It carries forward two unresolved items: the supported firmware-signing option and the archive's signature-support date. The product security lead owns them. The next review is set for 2026-12-01. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked before design freeze.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier response, and the product sensor's priority. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging. It then carries four unresolved items, each on its own row:
+
+- **sensor firmware-signing option** before the design freeze on 2027-06-30: product security lead;
+- **archive signature plan and stored-data key wrapping answer:** product engineering lead;
+- **archive production rollout and agility gaps:** product engineering lead;
+- **laptop versions:** IT lead.
+
+The next review is set for 2026-12-01. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked.
 
 ## Limits and next step
 

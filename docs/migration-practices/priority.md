@@ -19,8 +19,8 @@ A first-pass or maintained inventory exists and you need to decide what moves fi
 ## Do this
 
 1. **Split each inventory row by job.** A system can need key establishment, signatures, and a verifier that cannot be updated. Give each job its own priority line, because each has a different clock.
-2. **Consider each factor in words, not scores:** data confidentiality period; how many parties must change signatures together; whether a verifier can be updated later; impact if the protection fails; lead time; dependencies; and supplier readiness.
-3. **Order key establishment by confidentiality period first, then lead time.** Data that must stay confidential for longer is exposed to recording now and decrypting later. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says harvest-now, decrypt-later threatens confidentiality rather than signatures. The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk when compromise after ten years or more would still cause significant damage.
+2. **Consider each factor in words, not scores:** data confidentiality period; how many parties must change signatures together; whether a verifier can be updated later; impact if the protection fails; lead time; dependencies; and supplier readiness — the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`) for the supplier and job concerned.
+3. **Order key establishment by confidentiality period and lead time together.** Data that must stay confidential for longer is exposed to recording now and decrypting later, and a long migration lead time adds to that exposure; [Mosca's inequality](/learn/explainers/when-to-start/) adds the two. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says harvest-now, decrypt-later threatens confidentiality rather than signatures. The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk when compromise after ten years or more would still cause significant damage.
 4. **Put non-updatable verifiers ahead of verifiers that can be updated**, and decide them before a product's design freeze. Order other signature migrations by how many relying parties must coordinate and by lead time.
 5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ.
 6. **Keep `unknown` rows on the list** under their owner; do not drop them to make the order look complete.
@@ -34,7 +34,7 @@ The [priority record](/resources/priority-record/): one line per asset and job, 
 
 An insufficient record is "We will migrate all cryptography in one programme" or a numeric risk score with no reason.
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The office laptops stay on the supplier-update path. Both first places stand because the jobs differ.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The archive's signature line and both laptop lines stay on supplier-led paths, each recorded separately so no job is dropped. Both first places stand because the jobs differ.
 
 ## Limits and next step
 

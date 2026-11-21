@@ -19,24 +19,24 @@ A system has a chosen option or a completed change, and you are deciding whether
 
 Treat the system as finished for this phase only when each capability has verifiable evidence:
 
-1. **Configuration.** The construction can be changed by configuration or a supported update, without replacing the whole product. Evidence: a demonstrated change, or the supplier's written statement.
+1. **Configuration.** The construction can be changed by configuration or a supported update, without replacing the whole product. Evidence: a change demonstrated in your test environment; a supplier's written statement alone is a commitment, not evidence.
 2. **Owner.** Someone is named for the next algorithm change. Evidence: the name on the inventory row.
 3. **Dependencies.** Libraries, hardware modules, certificate authorities, and suppliers that would also have to change are listed. Evidence: the `dependencies` cell on the inventory.
 4. **Tests.** Tests exist that would show whether a new construction works in your environment. Evidence: an executed test plan.
-5. **Change window.** A window and a named approver exist for the next change. Evidence: the window in the change calendar.
+5. **Change window.** A window and a named approver exist for the next change. Evidence: the window and approver in your change calendar or change-management system.
 6. **Deprecation path.** There is a written path away from the construction in use now — for example, from hybrid key establishment to post-quantum only when your authority and interoperability allow. Evidence: the written path.
 
-The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises organisations to remain cryptographically agile so they can adapt as algorithms and standards evolve. NIST's [crypto-agility white paper](/standards/transition-and-key-management/cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters.
+The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises using cryptographic solutions that are crypto-agile, and notes that other bodies encourage organisations to remain cryptographically agile. NIST's [crypto-agility white paper](/standards/transition-and-key-management/cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters.
 
 ## Keep this evidence
 
-The evidence for each of the six capabilities, held in the records you already keep: the inventory row (owner, dependencies), the change record (tests, window), and the written deprecation path. Record any capability without evidence as a gap with an owner.
+The evidence for each of the six capabilities, held in the records you already keep: the inventory row (owner, dependencies), the change record (tests), your change calendar (window), and the written deprecation path. Record any capability without evidence as a gap with an owner.
 
 ## Example
 
 An insufficient record is "We picked an algorithm, so the programme is closed."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), checks the product-design archive after its staging pilot. The owner is named (product engineering lead), the workspace supplier is listed as a dependency, and the sample-file retrieval test is reusable. Whether a later release can change the construction by configuration, the change window, and the deprecation path are recorded as gaps. They are added to the supplier follow-up due on 2026-12-01 and carried to the next review.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), checks the product-design archive after its staging pilot. The owner is named (product engineering lead), the workspace supplier is listed as a dependency, and the sample-file retrieval test is reusable. Whether a later release can change the construction by configuration, the change window, and the deprecation path are recorded as gaps. They are carried as an open item on the review log, owned by the product engineering lead, for the 2026-12-01 review.
 
 ## Limits and next step
 
