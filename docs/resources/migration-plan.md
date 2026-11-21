@@ -17,7 +17,7 @@ Use one row per asset and job, and set `job` to `key establishment`, `signatures
 
 - **order:** the line's place within its job, such as `first for key establishment`, `tracked, not ranked (supplier-update path)` for commodity products, or `tracked, not ranked (supplier-led)` for a line whose work waits on a supplier's plan.
 - **reason and source:** the reason in plain words, with the source in brackets (a policy, a supplier letter, or an authority document).
-- **supplier readiness:** the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`), or `not asked`.
+- **supplier readiness:** the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`), `not asked`, or `not applicable` where no supplier is involved.
 - **the four dates:** keep them separate. A supplier's release is not your testing, your production deployment is not the supplier's release, and end of support is the date security fixes stop for the release you run now.
 
 List every dependency inside the `dependencies` cell separated by a semicolon, rather than giving a shared component its own row. Separate multiple timelines or sources with a semicolon. Keep keys, secrets, and personal data out of the file — name the system only.

@@ -13,7 +13,7 @@ The migration plan has an order and you need to turn it into dated, owned milest
 
 - The **migration lead** keeps the [migration plan](/resources/migration-plan/) and its dependencies.
 - **Legal or risk** confirms which authority timelines apply to the organisation, its sectors, and its customers.
-- **Asset owners** set and update the four dates on their rows.
+- **Asset owners** supply and update the four dates for their rows; the migration lead records them, including the production deployment date from the change record.
 - **Procurement** supplies supplier release dates, renewal dates, and support ends from written answers and contracts.
 
 ## Do this
@@ -35,7 +35,7 @@ The migration plan has an order and you need to turn it into dated, owned milest
 4. **Record dependencies that can move a date**: a supplier release, a certificate authority, a hardware refresh, a contract renewal, or a product design freeze. A design freeze is a hard deadline: record its date and escalate when an option is still missing as it approaches.
 5. **Re-plan when a date moves.** Replace the superseded date, note why, and check whether a later milestone is now at risk.
 
-The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028 that identifies any requirement to migrate long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. The timelines are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations. NIST IR 8547 advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptographically relevant quantum computer exists, should be designed to require quantum-resistant signatures on their executable code.
+The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028 that identifies any requirement to migrate long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. The timelines are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations. NIST IR 8547, addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptographically relevant quantum computer exists, should be designed to require quantum-resistant signatures on their executable code.
 
 ## Keep this evidence
 
