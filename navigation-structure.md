@@ -141,6 +141,7 @@ Homepage Situation Chooser (/)
 /standards/migration-guides/canadian-cfdir-guide/
 /standards/migration-guides/etsi-tr-103-619/
 /standards/migration-guides/etsi-tr-104-016/
+/standards/migration-guides/pqcc-roadmap/
 /standards/migration-guides/cisa-nsa-nist-fact-sheet/
 /standards/migration-guides/nccoe-migration-to-pqc/
 /standards/migration-guides/vendor-questions/

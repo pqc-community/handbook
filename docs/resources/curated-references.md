@@ -16,7 +16,7 @@ Browse by category:
 - **[Modules, protocols, and certificates](/standards/modules-protocols-identity/)**: FIPS 140-3, NIST SP 800-52, RFC 10024, RFC 9881, RFC 10073, and FIPS 201-3, plus a list of further post-quantum RFCs.
 - **[US government requirements](/standards/us-federal-directives/)**: the Quantum Computing Cybersecurity Preparedness Act, NSM-10, EO 14306, EO 14412, OMB M-26-15, and CISA's post-quantum product categories.
 - **[National algorithm positions](/standards/national-algorithm-positions/)**: NSA CNSA 2.0, BSI TR-02102-1, and ANSSI's position paper.
-- **[Migration guides](/standards/migration-guides/)**: Dutch PQC Migration Handbook, UK NCSC guidance, EU NIS Cooperation Group roadmap, ASD planning, Canada ITSM.40.001 roadmap, Canadian CFDIR guide, ETSI TR 103 619, ETSI TR 104 016, CISA/NSA/NIST fact sheet, NCCoE Migration to PQC, and the ASD/ACSC/CISA/NSA vendor questions guide.
+- **[Migration guides](/standards/migration-guides/)**: Dutch PQC Migration Handbook, UK NCSC guidance, EU NIS Cooperation Group roadmap, ASD planning, Canada ITSM.40.001 roadmap, Canadian CFDIR guide, ETSI TR 103 619, ETSI TR 104 016, PQCC roadmap, CISA/NSA/NIST fact sheet, NCCoE Migration to PQC, and the ASD/ACSC/CISA/NSA vendor questions guide.
 
 References across the handbook prioritise primary technical standards and official national cyber guidance, keeping each authority's milestones scoped to its stated jurisdiction and audience rather than treating one jurisdiction's date as a universal deadline. Sources are reviewed quarterly and when cited publications are updated; report a stale link or superseded edition on the [GitHub issue tracker](https://github.com/pqc-community/handbook/issues).
 

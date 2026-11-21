@@ -214,6 +214,7 @@ const sidebars: SidebarsConfig = {
             'standards/migration-guides/canadian-cfdir-guide',
             'standards/migration-guides/etsi-tr-103-619',
             'standards/migration-guides/etsi-tr-104-016',
+            'standards/migration-guides/pqcc-roadmap',
           ],
         },
         {
