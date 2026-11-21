@@ -7,7 +7,7 @@ displayed_sidebar: migrationPracticesSidebar
 
 ## When this applies
 
-You rely on supported commodity software — standard browsers, operating systems, mobile devices, and similar platforms — whose suppliers deliver post-quantum support through normal updates, and no exception moves a system to another route.
+You rely on supported commodity software — standard browsers, operating systems, mobile devices, and similar platforms — whose suppliers deliver post-quantum support through normal updates, and no exception moves a system to another route. This is the short path from [Decide whether to act](/migration-practices/diagnose/). On the full path, it still applies to the commodity part of the estate alongside the other practices.
 
 ## Who does what
 

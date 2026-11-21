@@ -233,6 +233,7 @@ const sidebars: SidebarsConfig = {
   migrationPracticesSidebar: [
     'migration-practices/index',
     'migration-practices/diagnose',
+    'migration-practices/commodity-software',
     'migration-practices/programme',
     'migration-practices/inventory',
     'migration-practices/priority',
@@ -240,7 +241,6 @@ const sidebars: SidebarsConfig = {
     'migration-practices/suppliers',
     'migration-practices/implementation',
     'migration-practices/changing-algorithms-again',
-    'migration-practices/commodity-software',
     'migration-practices/subsequent-review',
   ],
   technologyOptionsSidebar: [

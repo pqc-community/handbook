@@ -1,7 +1,7 @@
 ---
 title: Decide what to migrate first
 sidebar_label: Decide what to migrate first
-description: Rank inventory rows by cryptographic job, data confidentiality period, verifier constraints, impact, lead time, dependencies, and supplier readiness, without numeric scores.
+description: Rank inventory rows within each cryptographic job using one plain rule per job and fixed tiebreakers, without numeric scores.
 displayed_sidebar: migrationPracticesSidebar
 ---
 
@@ -19,10 +19,13 @@ A first-pass or maintained inventory exists and you need to decide what moves fi
 ## Do this
 
 1. **Split each inventory row by job.** A system can need key establishment, signatures, and a verifier that cannot be updated. Give each job its own priority line, because each has a different clock.
-2. **Consider each factor in words, not scores:** data confidentiality period; how many parties must change signatures together; whether a verifier can be updated later; impact if the protection fails; lead time; dependencies; and supplier readiness — the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`) for the supplier and job concerned, or `not asked` for commodity products on the supplier-update path and suppliers not yet approached.
-3. **Order key establishment by confidentiality period and lead time together.** Data that must stay confidential for longer is exposed to recording now and decrypting later, and a long migration lead time adds to that exposure; [Mosca's inequality](/learn/explainers/when-to-start/) adds the two. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says harvest-now, decrypt-later threatens confidentiality rather than signatures. The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk, for the Member States it addresses, when compromise after ten years or more would still cause significant damage.
-4. **Put non-updatable verifiers ahead of verifiers that can be updated**, and decide them before a product's design freeze. Order other signature migrations by how many relying parties must coordinate and by lead time.
-5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ.
+2. **Take rows on the supplier-update path out of the ranking.** Commodity products that will receive post-quantum support through normal updates are tracked, not ranked: record the decision "follow supplier updates" and move on (see [Keep commodity software updated](/migration-practices/commodity-software/)).
+3. **Order the remaining lines within each job**, using one rule per job:
+   - **Key establishment:** longest data confidentiality period first; treat an `unknown` period as long until the data owner confirms it. Data that must stay confidential for longer is exposed to recording now and decrypting later, and a long migration lead time adds to that exposure; [Mosca's inequality](/learn/explainers/when-to-start/) adds the two. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says harvest-now, decrypt-later threatens confidentiality rather than signatures. The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk, for the Member States it addresses, when compromise after ten years or more would still cause significant damage.
+   - **Verifiers that cannot be updated:** earliest design freeze or production date first. Decide each one before that date.
+   - **Other signatures:** most relying parties that must change together first, because coordination sets the lead time.
+4. **Break ties within a job in this order:** the earliest fixed date (design freeze, contract renewal, or end of support); then the longest lead time; then the greater impact if the protection fails; then systems exposed to other organisations or the internet before internal ones. These tiebreakers are this handbook's rule of thumb; replace them with your sector authority's method where one exists.
+5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ. Supplier readiness — the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`) — does not change the order; it changes when work can start. A lower-ranked line with a `complete` answer can start in parallel, and a higher-ranked line with a `missing` answer goes to [Work with suppliers](/migration-practices/suppliers/) for escalation.
 6. **Keep `unknown` rows on the list** under their owner; do not drop them to make the order look complete.
 7. **Write the reason and the source for each decision**, and a date to review it.
 

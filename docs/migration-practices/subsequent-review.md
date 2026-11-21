@@ -17,12 +17,14 @@ A subsequent-review date has arrived, or something has happened that may make th
 
 ## Do this
 
+**Set a cadence.** Use the cadence your sector or authorities require. Where nothing sets one, this handbook suggests reviewing at least every six months, and every three months while any line is first in its job's order or a design freeze, contract renewal, or end of support on the plan falls within the next year. This is the handbook's suggestion, not an authority's requirement.
+
 **Bring the review forward** when any of these happens:
 
 - a supplier changes the construction or date you recorded;
 - an authority republishes or amends a timeline you rely on;
 - a standard you rely on changes status, such as a draft becoming final or an errata notice;
-- an `unknown` inventory row is resolved;
+- an `unknown` that affects the order is resolved, such as a data confidentiality period or whether a verifier can be updated;
 - a deployed-state check fails after cutover, or connections fall back to classical-only cryptography;
 - a new attack or implementation flaw is published for an algorithm or product you use;
 - a product design freeze or a contract renewal on the plan is approaching.
@@ -58,7 +60,7 @@ The next review is set for 2026-12-01. The operations director reports to the ma
 
 ## Limits and next step
 
-Use the cadence your own records, sector, and authorities require; this page does not set one. The review reopens earlier practices, starting with [Inventory the cryptography](/migration-practices/inventory/).
+The suggested cadence is a starting point, not an obligation; regulated organisations should follow their sector authority. The review reopens earlier practices, starting with [Inventory the cryptography](/migration-practices/inventory/).
 
 ## Sources
 
