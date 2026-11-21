@@ -33,27 +33,27 @@ This is the handbook's single question set; ask about a named product and versio
 
 ## Minimum fields
 
-supplier, product and version, question, answer, date, source, judgement, follow-up, decision
+supplier, product and version, job, question, asked, answer due, answer, answered, source, judgement, follow-up, decision
 
-Record `unknown` in any cell you cannot verify yet. Set `judgement` to `complete`, `vague`, `missing`, or `concerning`, and use a separate row for each product, version, and cryptographic job. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
+Record `unknown` in any cell you cannot verify yet. Set `job` to `key establishment`, `signatures`, or `non-updatable verifier`, and use a separate row for each product, version, and job. Put the date you sent the question in `asked`, the date you asked for an answer by in `answer due`, and the date of the answer in `answered`, or `not answered`. Set `judgement` to `complete`, `vague`, `missing`, or `concerning`; an answer is `missing` when nothing arrives by `answer due`. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
 
 ## Filled example
 
-| supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment algorithm or scheme, and which release date, apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
-| Fictional design-platform supplier | Workspace 4.2 (fictional) | When will the hosted archive sign or verify with a post-quantum algorithm? | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate plan line |
-| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which algorithm or scheme protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
-| Fictional microcontroller supplier | next microcontroller family (fictional) | Does the boot verifier support a NIST-approved post-quantum signature, and how is the trust anchor provisioned? | The reply says a post-quantum boot verifier is planned for the next family, without naming the scheme, a date, or how the trust anchor is provisioned. | 2026-10-30 | Fictional supplier email, 2026-10-30 | vague | written answer naming the scheme, trust-anchor provisioning, and sample date, due 2026-12-15 | do not select; the sensor verifier stays blocked |
+| supplier | product and version | job | question | asked | answer due | answer | answered | source | judgement | follow-up | decision |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fictional design-platform supplier | Workspace 4.2 (fictional) | key establishment | Which key-establishment algorithm or scheme, and which release date, apply to connections to the hosted archive? | 2026-08-14 | 2026-09-14 | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
+| Fictional design-platform supplier | Workspace 4.2 (fictional) | signatures | When will the hosted archive sign or verify with a post-quantum algorithm? | 2026-08-14 | 2026-09-14 | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate plan line |
+| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | key establishment (stored data) | Which algorithm or scheme protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | 2026-08-14 | 2026-09-14 | The letter of 2026-09-04 does not answer either question. | not answered | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
+| Fictional microcontroller supplier | next microcontroller family (fictional) | non-updatable verifier | Does the boot verifier support a NIST-approved post-quantum signature, and how is the trust anchor provisioned? | 2026-10-05 | 2026-11-02 | The reply says a post-quantum boot verifier is planned for the next family, without naming the scheme, a date, or how the trust anchor is provisioned. | 2026-10-30 | Fictional supplier email, 2026-10-30 | vague | written answer naming the scheme, trust-anchor provisioning, and sample date, due 2026-12-15 | do not select; the sensor verifier stays blocked |
 
 ## Blank template
 
-| supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| supplier | product and version | job | question | asked | answer due | answer | answered | source | judgement | follow-up | decision |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Download a blank CSV: [vendor-response-log.csv](/downloads/vendor-response-log.csv).
 
-Keep a real inventory off a public ticket and off an unlocked shared drive, and store it with the same care as the asset list it describes.
+Keep a real log off a public ticket and off an unlocked shared drive: supplier answers can reveal weaknesses in systems you rely on.
 
 ## Sources
 

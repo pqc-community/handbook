@@ -38,7 +38,7 @@ Use the handbook's single question set on the [vendor response log](/resources/v
 
 - `complete`: names the product, version, algorithm or scheme, and date in a document you can keep.
 - `vague`: gives a year or a promise without the algorithm or scheme, or without the product line.
-- `missing`: no answer by the date you asked for.
+- `missing`: no answer by the answer-due date you set.
 - `concerning`: for example, a proprietary algorithm, no plan for an in-support product, or a refusal to say.
 
 A supplier can be `complete` for key establishment and `vague` for signatures; record two rows.
@@ -68,7 +68,7 @@ If you supply products, your customers will send you the same questions. Answer 
 
 ## Keep this evidence
 
-The [vendor response log](/resources/vendor-response-log/) — one row per supplier, product, version, and job, with the question, answer, date, source document, judgement, follow-up, and decision — plus the requirement text used in each purchase or renewal and the contract commitment agreed.
+The [vendor response log](/resources/vendor-response-log/) — one row per supplier, product, version, and job, with the question, the dates asked, due, and answered, the answer, source document, judgement, follow-up, and decision — plus the requirement text used in each purchase or renewal and the contract commitment agreed.
 
 ## Example
 

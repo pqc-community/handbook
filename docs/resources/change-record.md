@@ -36,7 +36,7 @@ The firmware row is blocked: implementation does not start while the option is u
 
 Download a blank CSV: [change-record.csv](/downloads/change-record.csv).
 
-Keep a real inventory off a public ticket and off an unlocked shared drive, and store it with the same care as the asset list it describes.
+Keep real change records off a public ticket and off an unlocked shared drive: test results and rollback triggers describe how your systems are protected.
 
 ## Sources
 

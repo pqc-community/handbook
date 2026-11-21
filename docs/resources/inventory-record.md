@@ -1,7 +1,7 @@
 ---
-title: First-pass inventory record
+title: Inventory record
 sidebar_label: Inventory record
-description: A one-row template for the first pass over systems that use public-key cryptography.
+description: One row per system that uses public-key cryptography, for the first pass and for the maintained inventory that follows.
 displayed_sidebar: resourcesSidebar
 ---
 

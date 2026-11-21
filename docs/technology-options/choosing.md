@@ -49,13 +49,13 @@ Do not treat one authority's position as a universal product requirement outside
 
 | Job | What you record next | Evidence |
 | --- | --- | --- |
-| Key establishment | The supplier's construction, or the authority's stated default, and the confidentiality period | The inventory row and the authority citation |
-| Signatures | Who has to change together | The priority row |
+| Key establishment | The supplier's algorithm or scheme, or the authority's stated default, and the confidentiality period | The change record's option and authority |
+| Signatures | Who has to change together | The signatures line on the migration plan |
 | Non-updatable verifier | Open long-lived roots before choosing a signature | The change record, closed or blocked |
 
 ## Keep this evidence
 
-The option, the authority, and the date of that authority, written on the system in the inventory and carried into the change record.
+The option, the authority, and the date of that authority, in the `option` and `authority` cells of the system's [change record](/resources/change-record/). Update the inventory row's algorithm cells once the change is deployed and checked.
 
 ## Example
 

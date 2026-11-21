@@ -36,7 +36,7 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 Download a blank CSV: [review-log.csv](/downloads/review-log.csv).
 
-Keep a real inventory off a public ticket and off an unlocked shared drive, and store it with the same care as the asset list it describes.
+Keep a real review log off a public ticket and off an unlocked shared drive, and store it with the same care as the records it reviews.
 
 ## Sources
 
