@@ -1,36 +1,45 @@
 ---
-title: "Dutch PQC Migration Handbook (AIVD, CWI, and TNO)"
+title: "The PQC Migration Handbook (AIVD, CWI and TNO)"
 sidebar_label: Dutch PQC Handbook
 displayed_sidebar: standardsSidebar
-description: Programme-scale diagnose, plan, and execute handbook from AIVD, CWI, and TNO, plus the Dutch government resource list.
+description: Dutch guidelines for migrating to post-quantum cryptography from AIVD, CWI and TNO, organised as diagnose, plan and execute.
 ---
 
 ## What it covers
 
-The Dutch PQC Migration Handbook organises transition work into three stages — diagnose, plan, and execute — and distinguishes urgent adopters, regular adopters, and cryptography suppliers so organisations match programme effort to their risk profile. A [companion Dutch government resource list](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/) curates pointers to national and international quantum-safe resources.
+The PQC Migration Handbook (Guidelines for migrating to post-quantum cryptography) organises transition work into three stages — diagnose, plan and execute — and distinguishes urgent adopters, regular adopters and cryptography suppliers so organisations can match programme effort to their risk profile. A [companion Dutch government resource list](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/) points to national and international quantum-safe resources.
+
+The Netherlands General Intelligence and Security Service (AIVD) published the extended second edition with the research institutes CWI and TNO; its document page is dated 29 November 2024 and the accompanying news release 3 December 2024. It is guidance for organisations planning a migration, not a legal requirement.
 
 :::info[Official texts]
+
+- [AIVD document page (HTML)](https://english.aivd.nl/documents/2024/12/3/the-pqc-migration-handbook)
 - [The PQC Migration Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
-- [AIVD publication page (HTML)](https://english.aivd.nl/documents/2024/12/3/the-pqc-migration-handbook)
+
 :::
 
 ## Timeline of key dates
 
 | Date | Event |
 | --- | --- |
-| <time datetime="2024-12">2024&#8209;12</time> | Publication or revision: The PQC Migration Handbook (December 2024). |
+| <time dateTime="2024-11-29">2024&#8209;11&#8209;29</time> | AIVD dated the document page for the extended second edition. |
+| <time dateTime="2024-12-03">2024&#8209;12&#8209;03</time> | AIVD, CWI and TNO announced the renewed handbook in a news release. |
 
 ## Relationship with other standards
 
-**Assumes:** A national-strategy audience in the Netherlands or an organisation adopting the same three-stage programme model elsewhere. **Leaves out:** Jurisdiction-specific legal obligations outside the Netherlands. Rather than rewriting its programme methodology, this handbook points to it directly alongside [Diagnose](/migration-practices/diagnose/).
+The handbook is a programme methodology rather than an algorithm specification; for the standards it points migration teams towards, see [Post-quantum standards](/standards/post-quantum/), and for national positions on algorithms and hybrids, see [National algorithm positions](/standards/national-algorithm-positions/). It does not set legal obligations; EU Member State planning milestones come from the [EU NIS Cooperation Group roadmap](/standards/migration-guides/eu-nis-roadmap/).
+
+Rather than rewriting its methodology, this handbook links to it alongside its own [Diagnose](/migration-practices/diagnose/) and [Inventory](/migration-practices/inventory/) practices.
 
 ## Sources
 
-- AIVD, CWI, and TNO, The PQC Migration Handbook, December 2024. [Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
+- AIVD, CWI and TNO, The PQC Migration Handbook, extended second edition, document page 29 November 2024. [AIVD document page (HTML)](https://english.aivd.nl/documents/2024/12/3/the-pqc-migration-handbook), [Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
+- AIVD, news release announcing the renewed handbook with CWI and TNO, 3 December 2024. [News release (HTML)](https://english.aivd.nl/latest/news/2024/12/03/aivd-cwi-and-tno-publish-renewed-handbook-for-quantum-safe-cryptography)
 - Dutch government, Quantum-safe cryptography: useful resources. [Resource list (HTML)](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/)
 
 ## Related pages
 
 - [Post-quantum migration guides](/standards/migration-guides/)
+- [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/)
 - [Diagnose](/migration-practices/diagnose/)
 - [Glossary](/resources/glossary/)

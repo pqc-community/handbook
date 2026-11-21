@@ -1,17 +1,20 @@
 ---
-title: "ASD, ACSC, CISA, and NSA: Post-Quantum Cryptography — Questions to Ask Your Vendors"
+title: "ASD's ACSC, CISA and NSA: Post-Quantum Questions to Ask Your Vendors"
 sidebar_label: Vendor questions
 displayed_sidebar: standardsSidebar
-description: Joint Australian and US procurement guide listing structured post-quantum readiness questions for software, cloud, and hardware suppliers.
+description: Joint Australian and US guidance giving buyers practical questions to assess a vendor's post-quantum cryptography readiness.
 ---
 
 ## What it covers
 
-This joint publication provides structured questions for buyers to ask software, hardware, and cloud vendors during contract renewals and procurement: which public-key cryptography a product uses, how standards-based post-quantum updates will be delivered and validated, whether cryptographic agility is supported, and whether embedded or hardware-bound keys restrict field updates.
+This publication gives buyers practical questions for assessing a vendor's post-quantum cryptography readiness during procurement and contract renewal: which public-key cryptography a product uses, how standards-based post-quantum updates will be delivered and validated, whether cryptographic agility is supported, and whether embedded or hardware-bound keys restrict field updates.
+
+It was authored by the Australian Signals Directorate's Australian Cyber Security Centre (ASD's ACSC) in partnership with the US Cybersecurity and Infrastructure Security Agency (CISA) and National Security Agency (NSA). ASD published it on 16 July 2026 and last reviewed it on 5 November 2026. Its stated audience is small and medium businesses, large organisations and critical infrastructure, and government. It is advisory guidance, not a contractual or regulatory requirement.
 
 :::info[Official texts]
+
 - [ASD publication page (HTML)](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
-- [Full guide (November 2026) (PDF)](https://www.cyber.gov.au/sites/default/files/2026-11/Post-quantum%20questions%20to%20ask%20your%20vendors%20%28November-2026%29.pdf)
+- [Downloadable version (PDF)](https://www.cyber.gov.au/sites/default/files/2026-11/Post-quantum%20questions%20to%20ask%20your%20vendors%20%28November-2026%29.pdf)
 
 :::
 
@@ -19,15 +22,18 @@ This joint publication provides structured questions for buyers to ask software,
 
 | Date | Event |
 | --- | --- |
-| <time datetime="2026-11-05">2026&#8209;11&#8209;05</time> | Publication or revision: Post-quantum cryptography: questions to ask your vendors (updated 5 November 2026). |
+| <time dateTime="2026-07-16">2026&#8209;07&#8209;16</time> | ASD's ACSC, with CISA and NSA, published Post-quantum questions to ask your vendors. |
+| <time dateTime="2026-11-05">2026&#8209;11&#8209;05</time> | ASD last reviewed the publication. |
 
 ## Relationship with other standards
 
-**Assumes:** Procurement, risk, and asset owners engaging external suppliers. **Leaves out:** Protocol-level cryptographic test vectors. Pair directly with [Ask a supplier](/routes/ask-a-supplier/), [Vendor plan](/migration-practices/vendor-plan/), and [Vendor response log](/resources/vendor-response-log/).
+The questions are for procurement, risk and asset owners engaging external suppliers; they do not specify algorithms, test vectors or protocol detail. Answers are easier to judge against the standards they reference: [FIPS 203](/standards/post-quantum/fips-203/) for key establishment, [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures. Ask separately about long-lived verifiers such as firmware and hardware roots of trust, which may not be updatable in the field; see [Long-lived roots](/technology-options/long-lived-roots/).
+
+The guide complements ASD's [planning publication](/standards/migration-guides/asd-planning/). Pair it with the handbook's [Ask a supplier](/routes/ask-a-supplier/) route, [Vendor plan](/migration-practices/vendor-plan/) practice and [Vendor response log](/resources/vendor-response-log/).
 
 ## Sources
 
-- ASD and ACSC, with CISA and NSA, Post-quantum cryptography: questions to ask your vendors, updated 5 November 2026. [Vendor guide (HTML)](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- ASD's ACSC, in partnership with CISA and NSA, Post-quantum questions to ask your vendors, published 16 July 2026, last reviewed 5 November 2026. [ASD publication page (HTML)](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
 
 ## Related pages
 
