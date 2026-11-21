@@ -39,7 +39,7 @@ The second record names the job, the algorithm and its standard, the version, th
 
 ## Where this goes next
 
-Record the answers in the [vendor response log](/resources/vendor-response-log/) and judge them with [Get each supplier's plan](/migration-practices/vendor-plan/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
+Record the answers in the [vendor response log](/resources/vendor-response-log/) and judge them with [Work with suppliers](/migration-practices/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
 
 ## Sources
 
@@ -49,6 +49,6 @@ Record the answers in the [vendor response log](/resources/vendor-response-log/)
 
 ## Related pages
 
-- [Get each supplier's plan](/migration-practices/vendor-plan/)
+- [Work with suppliers](/migration-practices/suppliers/)
 - [Vendor response log](/resources/vendor-response-log/)
 - [From research to deployment](/learn/explainers/research-to-deployment/)

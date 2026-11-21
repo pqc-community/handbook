@@ -43,7 +43,7 @@ flowchart TD
 
 ## How to use this
 
-When a supplier, colleague, or article says something "supports" or "is compliant with" post-quantum cryptography, place the claim on the table above. Then ask for the evidence for the next stage along. [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) turns this into a set of questions, and [Get each supplier's plan](/migration-practices/vendor-plan/) shows how to record the answers.
+When a supplier, colleague, or article says something "supports" or "is compliant with" post-quantum cryptography, place the claim on the table above. Then ask for the evidence for the next stage along. [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) turns this into a set of questions, and [Work with suppliers](/migration-practices/suppliers/) shows how to record the answers.
 
 ## Sources
 
@@ -61,4 +61,4 @@ When a supplier, colleague, or article says something "supports" or "is complian
 
 - [Standardisation](/learn/standardisation/)
 - [Post-quantum cryptography standards](/standards/post-quantum/)
-- [Get each supplier's plan](/migration-practices/vendor-plan/)
+- [Work with suppliers](/migration-practices/suppliers/)

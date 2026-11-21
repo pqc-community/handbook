@@ -21,7 +21,7 @@ Classify whether the system is commodity information technology, custom software
 
 ### Lifetime
 
-Record the data confidentiality period and whether the asset will still matter after public milestones in your jurisdiction. The [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf), version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage. Similarly, [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) distinguishes urgent adopters — including organisations holding long-lived sensitive data — from regular adopters that do not need to react yet, directing boundary cases to Section 3.2 of that handbook.
+Record the data confidentiality period and whether the asset will still matter after public milestones in your jurisdiction. The [EU NIS Cooperation Group roadmap](https://ec.europa.eu/newsroom/dae/redirection/document/117507), version 1.1, 11 June 2025, treats confidentiality protected by public-key cryptography as high-risk when a compromise after 10 years or more would still cause significant damage. Similarly, [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) distinguishes urgent adopters — including organisations holding long-lived sensitive data — from regular adopters that do not need to react yet, directing boundary cases to Section 3.2 of that handbook.
 
 Record which authority's framing applies to the asset.
 
@@ -69,7 +69,7 @@ Leave protocol configuration for the implementation check. The next page is the 
 
 ## Sources
 
-- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
+- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://ec.europa.eu/newsroom/dae/redirection/document/117507)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 - NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)

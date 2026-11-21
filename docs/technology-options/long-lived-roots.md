@@ -46,5 +46,5 @@ General signature coordination stays on [Signatures](/technology-options/signatu
 
 - [Signatures](./signatures.md)
 - [Plan the migration](/migration-practices/plan/)
-- [Get each supplier's plan](../migration-practices/vendor-plan.md)
+- [Work with suppliers](/migration-practices/suppliers/)
 - [Protect this first](../resources/protect-this-first.md)

@@ -13,11 +13,10 @@ Read in this order:
 2. [Plan the migration](/migration-practices/plan/), required.
 3. [Long-lived roots](/technology-options/long-lived-roots/). Open long-lived roots only when the verifier cannot be updated later.
 4. [Signatures](/technology-options/signatures/). Open signatures only when a signature construction is being chosen.
-5. [Get each supplier's plan](/migration-practices/vendor-plan/). Open the vendor plan only when a supplier is involved.
-6. [Buy post-quantum-ready](/migration-practices/procurement/). Open it when you are selecting a component or renewing a product, especially before a design freeze.
-7. [Make and verify one change](/migration-practices/implementation/). Open the implementation check when the product will change, including when the change is intended and the option is still unknown.
-8. [Change record](/resources/change-record/). Open the change record in that same case.
-9. [Vendor response log](/resources/vendor-response-log/). Open the vendor response log only when a supplier is involved.
+5. [Work with suppliers](/migration-practices/suppliers/). Open it when a supplier is involved, or when you are selecting a component or renewing a product, especially before a design freeze.
+6. [Make and verify one change](/migration-practices/implementation/). Open the implementation check when the product will change, including when the change is intended and the option is still unknown.
+7. [Change record](/resources/change-record/). Open the change record in that same case.
+8. [Vendor response log](/resources/vendor-response-log/). Open the vendor response log only when a supplier is involved.
 
 Stop when the release dates are recorded and the change record exists. A blocked row counts as that change record.
 
