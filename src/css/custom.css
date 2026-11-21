@@ -42,3 +42,14 @@
   max-width: 100%;
   overflow-wrap: break-word;
 }
+
+/* Let narrow tables fit phone screens: tighter cell padding, and hyphenation of long words only */
+@media (max-width: 576px) {
+  .markdown table th,
+  .markdown table td {
+    padding: 0.5rem;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 10 5 5;
+  }
+}
