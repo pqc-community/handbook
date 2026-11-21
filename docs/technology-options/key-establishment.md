@@ -44,5 +44,5 @@ Leave protocol configuration for the product documentation. The next record is t
 
 - [Choosing an option](./choosing.md)
 - [Signatures](./signatures.md)
-- [Priority](../migration-practices/priority.md)
-- [Implementation](../migration-practices/implementation.md)
+- [Decide what to migrate first](../migration-practices/priority.md)
+- [Make and verify one change](../migration-practices/implementation.md)

@@ -11,14 +11,14 @@ Stay on this route only when all of these hold: the software is supplier-updated
 
 When all of those conditions hold, read in this order:
 
-1. [Commodity software](/migration-practices/commodity-software/)
+1. [Keep commodity software updated](/migration-practices/commodity-software/)
 2. [Timelines](/learn/timelines/)
 3. [Vendor response log](/resources/vendor-response-log/)
-4. [Subsequent review](/migration-practices/subsequent-review/)
+4. [Review and report](/migration-practices/subsequent-review/)
 
 The output is a [vendor response log](/resources/vendor-response-log/), and either a written note that all five conditions hold or the name of the route you moved to.
 
-The primary next page is [Commodity software](/migration-practices/commodity-software/).
+The primary next page is [Keep commodity software updated](/migration-practices/commodity-software/).
 
 For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 
@@ -28,6 +28,6 @@ For an illustration, not a real organisation, see [Protect this first](/resource
 
 ## Related pages
 
-- [Commodity software](/migration-practices/commodity-software/)
+- [Keep commodity software updated](/migration-practices/commodity-software/)
 - [Ask a supplier](/routes/ask-a-supplier/)
 - [Not sure which route applies](/routes/not-sure/)

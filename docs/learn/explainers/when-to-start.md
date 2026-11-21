@@ -44,7 +44,7 @@ In this illustration, X + Y is 16 years and Z is 14, so the last data protected 
 
 **X is yours to determine.** It comes from the data, not the technology: legal retention periods, contract terms, the life of a design or a medical record, or how long a negotiating position stays sensitive. The EU NIS Cooperation Group [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk if a compromise after ten years or more would still cause significant damage, and recommends that such data be protected against quantum attack by the end of 2030.
 
-**Y is usually longer than expected.** NIST IR 8547 (§1) observes that moving from algorithm standardisation to full integration has historically taken 10 to 20 years; the EU roadmap estimates 5 to 10 years to migrate all relevant systems. Your Y depends on supplier release dates, hardware refresh cycles, and change windows — the subject of [Release dates](/migration-practices/release-dates/).
+**Y is usually longer than expected.** NIST IR 8547 (§1) observes that moving from algorithm standardisation to full integration has historically taken 10 to 20 years; the EU roadmap estimates 5 to 10 years to migrate all relevant systems. Your Y depends on supplier release dates, hardware refresh cycles, and change windows — the subject of [Plan the migration](/migration-practices/plan/).
 
 **Z is not knowable, so use a range.** The EU roadmap reports a BSI-commissioned study judging a capable machine likely within at most 16 years of 2024 (by 2040 or earlier), and possibly within 10. The Dutch handbook reports expert-survey estimates, with a conservative reading of 2040. These are inputs from named studies, not handbook predictions. A sensible approach is to test whether your conclusion changes across a plausible range of Z rather than pick a single year.
 
@@ -67,5 +67,5 @@ The fictional manufacturer in [Protect this first](/resources/protect-this-first
 ## Related pages
 
 - [The quantum threat](/learn/quantum-threat/)
-- [Priority](/migration-practices/priority/)
+- [Decide what to migrate first](/migration-practices/priority/)
 - [Post-quantum key establishment](/technology-options/key-establishment/)

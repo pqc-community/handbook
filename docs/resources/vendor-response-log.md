@@ -64,6 +64,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Related pages
 
-- [Vendor plan](/migration-practices/vendor-plan/)
+- [Get each supplier's plan](/migration-practices/vendor-plan/)
 - [Ask a supplier](/routes/ask-a-supplier/)
 - [Protect this first](/resources/protect-this-first/)

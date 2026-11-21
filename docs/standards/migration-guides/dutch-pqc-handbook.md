@@ -29,7 +29,7 @@ The Netherlands General Intelligence and Security Service (AIVD) published the e
 
 The handbook is a programme methodology rather than an algorithm specification; for the standards it points migration teams towards, see [Post-quantum standards](/standards/post-quantum/), and for national positions on algorithms and hybrids, see [National algorithm positions](/standards/national-algorithm-positions/). It does not set legal obligations; EU Member State planning milestones come from the [EU NIS Cooperation Group roadmap](/standards/migration-guides/eu-nis-roadmap/).
 
-Rather than rewriting its methodology, this handbook links to it alongside its own [Diagnose](/migration-practices/diagnose/) and [Inventory](/migration-practices/inventory/) practices.
+Rather than rewriting its methodology, this handbook links to it alongside its own [Decide whether to act](/migration-practices/diagnose/) and [Inventory the cryptography](/migration-practices/inventory/) practices.
 
 ## Sources
 
@@ -41,5 +41,5 @@ Rather than rewriting its methodology, this handbook links to it alongside its o
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/)
-- [Diagnose](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/diagnose/)
 - [Glossary](/resources/glossary/)

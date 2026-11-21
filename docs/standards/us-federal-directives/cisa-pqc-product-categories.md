@@ -29,7 +29,7 @@ CISA published the list on 23 January 2026 in response to [EO 14306](/standards/
 
 The list tells buyers where to expect post-quantum support; the algorithms behind that support are defined in NIST standards such as [FIPS 203](/standards/post-quantum/fips-203/) for key establishment. Because the widely available support is mostly for key establishment, a product in a "widely available" category may still rely on classical signatures, certificates and firmware signing. Ask separately about signature support and about long-lived verifiers such as roots of trust, which follow a different timetable; see [Post-quantum signatures](/technology-options/signatures/) and [Long-lived roots of trust](/technology-options/long-lived-roots/).
 
-For turning the list into supplier conversations, see [The vendor's migration plan](/migration-practices/vendor-plan/), [Ask a supplier](/routes/ask-a-supplier/) and the ASD, CISA and NSA [questions to ask your vendors](/standards/migration-guides/vendor-questions/).
+For turning the list into supplier conversations, see [Get each supplier's plan](/migration-practices/vendor-plan/), [Ask a supplier](/routes/ask-a-supplier/) and the ASD, CISA and NSA [questions to ask your vendors](/standards/migration-guides/vendor-questions/).
 
 ## Sources
 
@@ -40,7 +40,7 @@ For turning the list into supplier conversations, see [The vendor's migration pl
 ## Related pages
 
 - [US government requirements](/standards/us-federal-directives/)
-- [The vendor's migration plan](/migration-practices/vendor-plan/)
+- [Get each supplier's plan](/migration-practices/vendor-plan/)
 - [Ask a supplier](/routes/ask-a-supplier/)
 - [ASD's ACSC, CISA and NSA: questions to ask your vendors](/standards/migration-guides/vendor-questions/)
 - [EO 14306](/standards/us-federal-directives/eo-14306/)

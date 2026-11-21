@@ -31,7 +31,7 @@ NIST published the paper, written by NIST staff with co-authors from outside NIS
 
 CSWP 39 addresses the capability behind the schedules in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/): IR 8547 says a smooth transition requires building long-term cryptographic agility into organisational infrastructure so that updates can follow as post-quantum standards evolve. Where IR 8547 and [SP 800-131A](/standards/transition-and-key-management/sp-800-131a/) say which algorithms are deprecated or disallowed and when, CSWP 39 is about being able to make such changes in practice, now and in later transitions. The NIST National Cybersecurity Center of Excellence (NCCoE) says in its Migration to PQC FAQ (updated 18 November 2026) that the project is now using NIST Cybersecurity White Papers, including CSWP 39 and CSWP 48, to share progress.
 
-Agility needs to be planned separately for key establishment, for digital signatures and for long-lived verifiers such as roots of trust, because each changes on a different path. For the handbook's practical treatment, see [Crypto-agility and the next transition](/learn/crypto-agility/) and [Change algorithm again after this migration](/migration-practices/changing-algorithms-again/).
+Agility needs to be planned separately for key establishment, for digital signatures and for long-lived verifiers such as roots of trust, because each changes on a different path. For the handbook's practical treatment, see [Crypto-agility and the next transition](/learn/crypto-agility/) and [Keep the ability to change again](/migration-practices/changing-algorithms-again/).
 
 ## Sources
 
@@ -44,5 +44,5 @@ Agility needs to be planned separately for key establishment, for digital signat
 
 - [Transition and key-management publications](/standards/transition-and-key-management/)
 - [Crypto-agility and the next transition](/learn/crypto-agility/)
-- [Change algorithm again after this migration](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)

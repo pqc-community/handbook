@@ -40,6 +40,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Related pages
 
-- [Priority](/migration-practices/priority/)
+- [Decide what to migrate first](/migration-practices/priority/)
 - [Inventory record](/resources/inventory-record/)
 - [Protect this first](/resources/protect-this-first/)

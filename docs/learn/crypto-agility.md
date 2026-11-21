@@ -31,7 +31,7 @@ In practice, an agile estate tends to have:
 | Supplier commitments | Contracts and roadmaps that cover future algorithm changes, not just the current one |
 | Practised change | A tested process to roll out, monitor, and roll back an algorithm change |
 
-These are properties of an estate. [Changing algorithms again](/migration-practices/changing-algorithms-again/) turns them into six capabilities you can evidence for each system, from a demonstrated configuration change to a written deprecation path. The fastest way to lose agility is a verifier that cannot be updated, which is why the [lifetime clock](/learn/timelines/) matters at procurement.
+These are properties of an estate. [Keep the ability to change again](/migration-practices/changing-algorithms-again/) turns them into six capabilities you can evidence for each system, from a demonstrated configuration change to a written deprecation path. The fastest way to lose agility is a verifier that cannot be updated, which is why the [lifetime clock](/learn/timelines/) matters at procurement.
 
 ## From learning to planning
 
@@ -59,5 +59,5 @@ To act on it, choose the situation that fits your organisation on the [homepage]
 ## Related pages
 
 - [Learn the basics](/learn/)
-- [Changing algorithms again](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
 - [Glossary](/resources/glossary/)

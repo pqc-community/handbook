@@ -19,27 +19,31 @@ Each role supplies one input to the plan:
 | Operations | The change window and the rollback owner |
 | Suppliers | The product, version, and the answer |
 
-Work through the six steps in this order:
+Work through the eight steps in this order:
 
-1. Decide whether the handbook applies and name an owner.
-2. Find cryptographic dependencies and record unknowns.
-3. Assess confidentiality period, importance, and constraints.
-4. Prioritise and choose a source-backed path.
-5. Engage suppliers and migrate.
-6. Verify what changed and set the subsequent review.
+1. Decide whether to act, and name a sponsor and migration lead.
+2. Set up the programme: roles, scope, first budget line, and reporting.
+3. Find cryptographic dependencies and record unknowns.
+4. Prioritise by job, confidentiality period, verifier constraints, and lead time.
+5. Plan dates against the timelines that apply to you.
+6. Work with existing suppliers and buy post-quantum-ready products.
+7. Make and verify each change, and keep the ability to change again.
+8. Review, report to the sponsor, and reopen records on triggers.
 
-These six steps align with the five phases in ASD's [Planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) — Locate, Assess, Triage, Implement, and Communicate and educate — with owner assignment added upfront: finding dependencies maps to Locate, assessing confidentiality and constraints maps to Assess, prioritising maps to Triage, and engaging suppliers and migrating maps to Implement. Step 6 verifies the change, records it on the evidence record and change record, and schedules the subsequent review, while Communicate and educate passes that outcome on and [Learn the basics](/learn/) provides background material.
+These steps align with the five phases in ASD's [Planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) — Locate, Assess, Triage, Implement, and Communicate and educate: finding dependencies maps to Locate, prioritising maps to Assess and Triage, working with suppliers and making changes map to Implement, and setting up the programme and reporting carry the communication and education work. Programme setup and dated planning are added because they decide who does the work and by when.
 
 A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as this route.
 
 Then read these pages in order:
 
 1. [Migration plan](/resources/migration-plan/)
-2. [Diagnose](/migration-practices/diagnose/)
-3. [Inventory](/migration-practices/inventory/)
-4. [Priority](/migration-practices/priority/)
-5. [Evidence record](/resources/evidence-record/)
-6. [Subsequent review](/migration-practices/subsequent-review/)
+2. [Decide whether to act](/migration-practices/diagnose/)
+3. [Set up the programme](/migration-practices/programme/)
+4. [Inventory the cryptography](/migration-practices/inventory/)
+5. [Decide what to migrate first](/migration-practices/priority/)
+6. [Plan the migration](/migration-practices/plan/)
+7. [Evidence record](/resources/evidence-record/)
+8. [Review and report](/migration-practices/subsequent-review/)
 
 The output is a one-page [migration plan](/resources/migration-plan/) with an owner for each asset and a subsequent-review date.
 

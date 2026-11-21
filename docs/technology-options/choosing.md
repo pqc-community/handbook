@@ -79,5 +79,5 @@ Leave protocol configuration for the implementation check. The next page is the 
 
 - [Key establishment](./key-establishment.md)
 - [Signatures](./signatures.md)
-- [Commodity software](../migration-practices/commodity-software.md)
-- [Changing algorithms again](../migration-practices/changing-algorithms-again.md)
+- [Keep commodity software updated](../migration-practices/commodity-software.md)
+- [Keep the ability to change again](../migration-practices/changing-algorithms-again.md)

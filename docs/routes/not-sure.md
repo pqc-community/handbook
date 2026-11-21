@@ -17,7 +17,7 @@ Choosing a route does not assess risk. When you still cannot choose, the risk ow
 
 The output is a named route, or a list of unknowns and the person who will close them.
 
-The primary next page is [Diagnose](/migration-practices/diagnose/).
+The primary next page is [Decide whether to act](/migration-practices/diagnose/).
 
 ## Sources
 

@@ -24,5 +24,5 @@ The next page is [Choosing an option](/technology-options/choosing/).
 ## Related pages
 
 - [Choosing an option](./choosing.md)
-- [Priority](../migration-practices/priority.md)
-- [Implementation](../migration-practices/implementation.md)
+- [Decide what to migrate first](../migration-practices/priority.md)
+- [Make and verify one change](../migration-practices/implementation.md)

@@ -39,5 +39,5 @@ Recorded-traffic confidentiality stays on [Key establishment](/technology-option
 
 - [Long-lived roots](./long-lived-roots.md)
 - [Key establishment](./key-establishment.md)
-- [Priority](../migration-practices/priority.md)
-- [Release dates](../migration-practices/release-dates.md)
+- [Decide what to migrate first](../migration-practices/priority.md)
+- [Plan the migration](/migration-practices/plan/)

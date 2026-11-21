@@ -35,7 +35,7 @@ A decision-ready record states that the field device cannot update the verifier,
 
 ## Limits and next page
 
-General signature coordination stays on [Signatures](/technology-options/signatures/). The next page is [Release dates](/migration-practices/release-dates/).
+General signature coordination stays on [Signatures](/technology-options/signatures/). The next page is [Plan the migration](/migration-practices/plan/).
 
 ## Sources
 
@@ -45,6 +45,6 @@ General signature coordination stays on [Signatures](/technology-options/signatu
 ## Related pages
 
 - [Signatures](./signatures.md)
-- [Release dates](../migration-practices/release-dates.md)
-- [Vendor plan](../migration-practices/vendor-plan.md)
+- [Plan the migration](/migration-practices/plan/)
+- [Get each supplier's plan](../migration-practices/vendor-plan.md)
 - [Protect this first](../resources/protect-this-first.md)

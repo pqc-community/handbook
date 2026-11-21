@@ -40,4 +40,4 @@ The roadmap does not set jurisdiction-specific legal duties or regulator milesto
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [Dutch PQC Handbook](/standards/migration-guides/dutch-pqc-handbook/)
-- [Diagnose](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/diagnose/)

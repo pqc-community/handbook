@@ -42,6 +42,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Related pages
 
-- [Implementation](/migration-practices/implementation/)
+- [Make and verify one change](/migration-practices/implementation/)
 - [Hard to change systems route](/routes/hard-to-change-systems/)
 - [Protect this first](/resources/protect-this-first/)

@@ -42,4 +42,4 @@ Approved post-quantum signatures today are [FIPS 204](/standards/post-quantum/fi
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [NIST IR 8610](/standards/post-quantum/nist-ir-8610/)
 - [Standardisation](/learn/standardisation/)
-- [Changing algorithms again](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)

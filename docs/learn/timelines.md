@@ -30,7 +30,7 @@ NIST IR 8547 (§4) reflects the first clock directly: systems that protect data 
 
 Meeting a published target does not mean the risk has gone. A date is an authority's planning judgement for its audience. Your own data lifetimes, supplier release dates, and device service lives can make an earlier date necessary — or show that a later one is defensible for low-risk systems. Record the authority and its date alongside your own reasoning.
 
-The [timeline comparison](/learn/explainers/timelines/) sets NIST, US federal, UK, EU, and Australian dates side by side. For recording an applicable timeline against a system, see [Priority](/migration-practices/priority/).
+The [timeline comparison](/learn/explainers/timelines/) sets NIST, US federal, UK, EU, and Australian dates side by side. For recording an applicable timeline against a system, see [Decide what to migrate first](/migration-practices/priority/).
 
 ## Check your understanding
 
@@ -50,4 +50,4 @@ Continue with [Crypto-agility](/learn/crypto-agility/).
 
 - [Learn the basics](/learn/)
 - [Why migration timelines differ](/learn/explainers/timelines/)
-- [Priority](/migration-practices/priority/)
+- [Decide what to migrate first](/migration-practices/priority/)

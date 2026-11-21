@@ -36,6 +36,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Related pages
 
-- [Subsequent review](/migration-practices/subsequent-review/)
+- [Review and report](/migration-practices/subsequent-review/)
 - [Vendor response log](/resources/vendor-response-log/)
 - [Migration plan](/resources/migration-plan/)

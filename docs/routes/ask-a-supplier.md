@@ -15,12 +15,13 @@ The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/fi
 
 Read in this order:
 
-1. [Vendor plan](/migration-practices/vendor-plan/)
-2. [Vendor response log](/resources/vendor-response-log/)
+1. [Get each supplier's plan](/migration-practices/vendor-plan/)
+2. [Buy post-quantum-ready](/migration-practices/procurement/), when the question is part of a new purchase or a renewal.
+3. [Vendor response log](/resources/vendor-response-log/)
 
 The output is one row per product, version, and cryptographic job. A route-specific plan is still required when the organisation has to change configuration or a verifier, rather than only wait for a release.
 
-The primary next page is [Vendor plan](/migration-practices/vendor-plan/).
+The primary next page is [Get each supplier's plan](/migration-practices/vendor-plan/).
 
 ## Sources
 

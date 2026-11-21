@@ -38,6 +38,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Related pages
 
-- [Inventory](/migration-practices/inventory/)
+- [Inventory the cryptography](/migration-practices/inventory/)
 - [Long-lived confidentiality route](/routes/long-lived-confidentiality/)
 - [Protect this first](/resources/protect-this-first/)

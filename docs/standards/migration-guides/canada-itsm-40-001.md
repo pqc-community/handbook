@@ -42,4 +42,4 @@ The roadmap is a programme plan rather than an algorithm specification. For the 
 - [Canadian CFDIR guide](/standards/migration-guides/canadian-cfdir-guide/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Timelines](/learn/explainers/timelines/)
-- [Priority](/migration-practices/priority/)
+- [Decide what to migrate first](/migration-practices/priority/)

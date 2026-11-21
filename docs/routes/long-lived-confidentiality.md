@@ -9,17 +9,18 @@ This route is for data whose confidentiality period makes harvest-now, decrypt-l
 
 Read in this order:
 
-1. [Diagnose](/migration-practices/diagnose/)
-2. [Inventory](/migration-practices/inventory/)
+1. [Decide whether to act](/migration-practices/diagnose/)
+2. [Inventory the cryptography](/migration-practices/inventory/)
 3. [Inventory record](/resources/inventory-record/)
-4. [Priority](/migration-practices/priority/)
+4. [Decide what to migrate first](/migration-practices/priority/)
 5. [Priority record](/resources/priority-record/)
-6. [Key establishment](/technology-options/key-establishment/)
-7. [Timelines](/learn/timelines/)
+6. [Plan the migration](/migration-practices/plan/)
+7. [Key establishment](/technology-options/key-establishment/)
+8. [Timelines](/learn/timelines/)
 
 The output is a [priority record](/resources/priority-record/) for the assets with a long confidentiality period.
 
-The primary next page is [Diagnose](/migration-practices/diagnose/).
+The primary next page is [Decide whether to act](/migration-practices/diagnose/).
 
 For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
 

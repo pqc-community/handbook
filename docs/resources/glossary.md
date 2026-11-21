@@ -39,7 +39,7 @@ A single signature object that combines a post-quantum and a classical signature
 
 ### Crypto-agility
 
-The ability to change algorithms again after this migration. Choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Changing algorithms again](/migration-practices/changing-algorithms-again/).
+The ability to change algorithms again after this migration. Choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/migration-practices/changing-algorithms-again/).
 
 ### Cryptographic module
 
@@ -249,12 +249,12 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
 - [Standardisation](/learn/standardisation/)
 - [Homepage](/)
-- [Changing algorithms again](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
 - [Curated references](/resources/curated-references/)
 - [Choosing an option](/technology-options/choosing/)
 - [Key establishment](/technology-options/key-establishment/)
 - [Signatures](/technology-options/signatures/)
 - [Long-lived roots of trust](/technology-options/long-lived-roots/)
 - [Inventory the cryptography](/migration-practices/inventory/)
-- [Priority](/migration-practices/priority/)
-- [Diagnose](/migration-practices/diagnose/)
+- [Decide what to migrate first](/migration-practices/priority/)
+- [Decide whether to act](/migration-practices/diagnose/)
