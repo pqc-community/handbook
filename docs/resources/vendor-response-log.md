@@ -35,7 +35,7 @@ This is the handbook's single question set; ask about a named product and versio
 
 supplier, product and version, job, question, asked, answer due, answer, answered, source, judgement, follow-up, decision
 
-Record `unknown` in any cell you cannot verify yet. Set `job` to `key establishment`, `signatures`, or `non-updatable verifier`, and use a separate row for each product, version, and job. Put the date you sent the question in `asked`, the date you asked for an answer by in `answer due`, and the date of the answer in `answered`, or `not answered`. Set `judgement` to `complete`, `vague`, `missing`, or `concerning`; an answer is `missing` when nothing arrives by `answer due`. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
+Record `unknown` in any cell you cannot verify yet. Set `job` to `key establishment`, `signatures`, or `non-updatable verifier`, adding a qualifier in brackets where it helps, such as `key establishment (stored data)`, and use a separate row for each product, version, and job. Put the date you sent the question in `asked`, the date you asked for an answer by in `answer due`, and the date of the answer in `answered`, or `not answered`. Set `judgement` to `complete`, `vague`, `missing`, or `concerning`; an answer is `missing` when nothing arrives by `answer due`. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
 
 ## Filled example
 
