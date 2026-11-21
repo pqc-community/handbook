@@ -15,7 +15,7 @@ Both must be true: the verifier cannot be updated in the field, and the device w
 
 ## Post-quantum options and status
 
-The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024) lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
+The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
 
 ## What good looks like
 

@@ -45,7 +45,7 @@ The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-prote
 
 ## Record it fills
 
-The system's [inventory](/resources/inventory-record/) key-establishment cell, updated as the change reaches each environment (for example "in transit: X25519MLKEM768 in staging"), and the [change record](/resources/change-record/), with the option, authority, the client-side check, and the fallback trigger.
+The system's [inventory](/resources/inventory-record/) key-establishment cell, updated as the change reaches each environment (for example "in transit: X25519MLKEM768 in staging"), and the [change record](/resources/change-record/), with the option, authority, the client-side check as the deployed-state check, and a fallback to classical-only key establishment as a rollback trigger.
 
 ## Example
 
