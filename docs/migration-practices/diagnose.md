@@ -1,47 +1,49 @@
 ---
-title: Diagnose a post-quantum migration
-sidebar_label: Diagnose
+title: Decide whether to act
+sidebar_label: Decide whether to act
+description: Decide whether a post-quantum migration applies, how urgently, and which route to follow, and name the person who owns the next step.
 displayed_sidebar: migrationPracticesSidebar
-description: Name an owner, classify the estate, compile a first-pass inventory, and schedule a subsequent review before claiming systems have migrated.
 ---
 
 ## When this applies
 
-You have opened a route and have not yet listed the cryptography in the system environment.
+You have not yet decided whether post-quantum migration is a programme for your organisation or a routine supplier matter, or you have opened a route and have not yet listed any cryptography.
+
+## Who does what
+
+- The **executive sponsor** decides whether a programme is needed and accepts the urgency category.
+- The **migration lead** (or whoever the sponsor asks to look first) answers the questions below and writes the first rows of the inventory.
+- **Asset owners** confirm the facts about their systems.
 
 ## Do this
 
-1. Name an owner for the first inventory and the subsequent review.
-2. Separate three cases in the record: a vendor-managed estate, an estate with a long data confidentiality period, and an estate you cannot yet classify.
-3. Write the first inventory for the case that applies, or list the unknowns that block classification.
-4. Set a subsequent-review date within the first month of opening the route.
-
-The owner is the person who can name the systems and accept the subsequent-review date. Before writing the inventory, answer the questions on [Not sure](/routes/not-sure/): supplier-updated commodity software, data that stays confidential for years, a verifier that cannot be updated, and whether someone is coordinating many assets. An estate that fits none of those is written down as unclassified.
-
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024, Netherlands) distinguishes urgent adopters, which need to start now because they cannot afford to delay, from regular adopters, which do not need to react yet. Record which category fits your organisation before deepening the inventory.
+1. **Check for the three situations that make migration urgent.** Is any data protected by public-key cryptography required to stay confidential for many years? Does any product or device check signatures with a key it cannot replace after shipment? Do you build or run bespoke systems rather than only supplier-updated commodity software? The [Not sure](/routes/not-sure/) route asks the same questions in more detail.
+2. **Record an urgency category.** The Dutch [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, second edition, December 2024) distinguishes urgent adopters, which need to start now because they cannot afford to delay, from regular adopters, which do not need to react yet. Write down which fits you and why, using the answers from step 1.
+3. **Choose the route.** Use [Vendor-managed software](/routes/vendor-managed-software/) when every system is supported commodity software with no exception; [Long-lived confidentiality](/routes/long-lived-confidentiality/) for data that must stay secret for years; [Hard-to-change systems](/routes/hard-to-change-systems/) for bespoke systems and devices whose verifier cannot be updated; and [Organisation-wide](/routes/organisation-wide/) when many assets need coordinating.
+4. **Write the first inventory rows** for the systems that triggered the decision, marking unverified facts as `unknown`. Do not wait for a complete inventory before deciding.
+5. **Name the owner of the next step** and set a date to confirm the decision. For an urgent adopter or the organisation-wide route, the next step is [Set up the programme](/migration-practices/programme/).
 
 ## Keep this evidence
 
-An inventory record, a named owner, and a subsequent-review date.
+A short decision note that the sponsor has accepted: the answers to step 1, the urgency category and its reason, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/inventory-record/).
 
 ## Example
 
-An insufficient record is "We are quantum safe."
+An insufficient record is "We are quantum safe" or "This is an IT matter."
 
-A decision-ready record names the migration lead as owner, records the first inventory as the vendor-managed estate plus one bespoke service still unclassified, and sets the subsequent review for 8 December 2026.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/): the fictional manufacturer records that product designs must stay confidential for 15 years under its own retention policy, and that its product sensor's firmware verifier cannot accept a new trust anchor after shipment. It therefore records itself as an urgent adopter for those two assets. Its office laptops stay on the supplier-update path. The managing director accepts the decision and names the operations director as migration lead, with the programme charter to follow.
 
-## Limits and next page
+## Limits and next step
 
-Leave the algorithm and the applicable timeline for a later record. The next record is the [inventory record](/resources/inventory-record/).
+This decision does not choose algorithms or dates, and it is not a formal risk assessment. Where the answers are unclear for a regulated or critical system, take the decision to the risk owner or sector authority. Next, [set up the programme](/migration-practices/programme/), or for a vendor-managed estate with no exception, [keep commodity software updated](/migration-practices/commodity-software/).
 
 ## Sources
 
-- CISA, NSA, and NIST, Quantum-Readiness fact sheet, as of 17 August 2023. [Fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
-- AIVD, CWI, and TNO, The PQC Migration Handbook, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
+- AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [The PQC Migration Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages
 
-- [Inventory](./inventory.md)
-- [Priority](./priority.md)
-- [Long-lived confidentiality route](/routes/long-lived-confidentiality/)
-- [Protect this first](../resources/protect-this-first.md)
+- [Not sure](/routes/not-sure/)
+- [Set up the programme](/migration-practices/programme/)
+- [Inventory record](/resources/inventory-record/)
+- [When to start: Mosca's inequality](/learn/explainers/when-to-start/)

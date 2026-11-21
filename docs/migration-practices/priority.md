@@ -1,56 +1,53 @@
 ---
-title: What to migrate first
-sidebar_label: Priority
+title: Decide what to migrate first
+sidebar_label: Decide what to migrate first
+description: Rank inventory rows by cryptographic job, data confidentiality period, verifier constraints, impact, lead time, dependencies, and supplier readiness, without numeric scores.
 displayed_sidebar: migrationPracticesSidebar
-description: Order a post-quantum migration with a qualitative rubric, and split key establishment from signatures and from non-updatable verifiers.
 ---
 
 ## When this applies
 
-A first-pass or maintained inventory exists.
+A first-pass or maintained inventory exists and you need to decide what moves first.
+
+## Who does what
+
+- The **migration lead** proposes the order and keeps the [priority record](/resources/priority-record/).
+- **Asset owners** supply impact, lead time, and dependencies for their rows.
+- **Legal or risk** confirms data confidentiality periods and accepts the decision for rows that stay later in the order.
+- The **executive sponsor** approves the order when it affects budget or other programmes.
 
 ## Do this
 
-Apply this qualitative rubric to each inventory row. Assign no numeric score. Consider each branch:
-
-- Data confidentiality period
-- Signatures that many parties change together
-- A verifier that cannot be updated later
-- Impact
-- Lead time
-- Dependencies
-- Supplier readiness
-
-Two assets can both rank first when their cryptographic jobs differ. Within key establishment, order by longer data confidentiality period first and longer lead time second; [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, United States) notes that harvest-now, decrypt-later threatens confidentiality rather than digital signatures, and the [EU NIS Cooperation Group roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf) (version 1.1, 11 June 2025, European Union) classifies public-key-protected confidentiality as high-risk when compromise after 10 years or more would still cause significant damage. Place non-updatable verifiers ahead of verifiers that can be updated on a long cycle, and order general signature migrations by how many relying parties must coordinate and by lead time. Keep rows with `unknown` factors on the list under their inventory owner until resolved.
+1. **Split each inventory row by job.** A system can need key establishment, signatures, and a verifier that cannot be updated. Give each job its own priority line, because each has a different clock.
+2. **Consider each factor in words, not scores:** data confidentiality period; how many parties must change signatures together; whether a verifier can be updated later; impact if the protection fails; lead time; dependencies; and supplier readiness.
+3. **Order key establishment by confidentiality period first, then lead time.** Data that must stay confidential for longer is exposed to recording now and decrypting later. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says harvest-now, decrypt-later threatens confidentiality rather than signatures. The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk when compromise after ten years or more would still cause significant damage.
+4. **Put non-updatable verifiers ahead of verifiers that can be updated**, and decide them before a product's design freeze. Order other signature migrations by how many relying parties must coordinate and by lead time.
+5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ.
+6. **Keep `unknown` rows on the list** under their owner; do not drop them to make the order look complete.
+7. **Write the reason and the source for each decision**, and a date to review it.
 
 ## Keep this evidence
 
-The priority record.
+The [priority record](/resources/priority-record/): one line per asset and job, the decision, the reason in plain words, the source for any authority date or definition used, and the subsequent-review date.
 
 ## Example
 
-An insufficient record is "We will migrate all cryptography in one programme."
+An insufficient record is "We will migrate all cryptography in one programme" or a numeric risk score with no reason.
 
-A decision-ready record places the manufacturer's product-design archive first for key establishment because its own retention policy requires 15 years of confidentiality, places the product sensor first for a non-updatable verifier because its boot-ROM trust anchor cannot change after shipment, and leaves office laptops on the supplier-update path.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The office laptops stay on the supplier-update path. Both first places stand because the jobs differ.
 
-One tied case: the design archive and product sensor are both first, for different jobs (`key establishment` and `non-updatable verifier`).
+## Limits and next step
 
-A short-lived channel with a confidentiality period under one year comes after the design archive for key establishment.
-
-One uncertain case: a row whose algorithm confidence is `unknown` stays on the priority list with an owner and is not dropped.
-
-## Limits and next page
-
-Leave the post-quantum algorithm for a later record. The next record is the [priority record](/resources/priority-record/).
+This rubric deliberately avoids numeric scoring; it is not a formal risk assessment. Regulated and critical systems may need the sector authority's method. Next, [plan the migration](/migration-practices/plan/).
 
 ## Sources
 
-- NIST, Transition to Post-Quantum Cryptography Standards (NIST IR 8547), October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- EU NIS Cooperation Group, Coordinated Implementation Roadmap on post-quantum cryptography, version 1.1, 11 June 2025. [Roadmap](https://securitydelta.nl/media/com_hsd/report/750/document/Roadmap-on-postquantum-cryptography-PzBJxNUYyeuEdVUacWL696DofZQ-117507.pdf)
+- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
+- EU NIS Cooperation Group, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025. [Roadmap (PDF)](https://ec.europa.eu/newsroom/dae/redirection/document/117507)
 
 ## Related pages
 
-- [Inventory](./inventory.md)
-- [Key establishment](../technology-options/key-establishment.md)
-- [Signatures](../technology-options/signatures.md)
-- [Protect this first](../resources/protect-this-first.md)
+- [Priority record](/resources/priority-record/)
+- [Plan the migration](/migration-practices/plan/)
+- [Long-lived confidentiality](/routes/long-lived-confidentiality/)
+- [When to start: Mosca's inequality](/learn/explainers/when-to-start/)

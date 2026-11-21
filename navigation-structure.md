@@ -44,7 +44,7 @@ Homepage Situation Chooser (/)
 - **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
-  - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.
+  - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, set up the programme, inventory, prioritise, plan dates, work with existing suppliers, buy post-quantum-ready, keep commodity software updated, make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
   - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
   - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
 
@@ -148,11 +148,13 @@ Homepage Situation Chooser (/)
 
 /migration-practices/
 /migration-practices/diagnose/
-/migration-practices/commodity-software/
+/migration-practices/programme/
 /migration-practices/inventory/
 /migration-practices/priority/
-/migration-practices/release-dates/
+/migration-practices/plan/
 /migration-practices/vendor-plan/
+/migration-practices/procurement/
+/migration-practices/commodity-software/
 /migration-practices/implementation/
 /migration-practices/changing-algorithms-again/
 /migration-practices/subsequent-review/
@@ -188,6 +190,6 @@ Add new pages only when there is enough distinct, decision-useful material that 
 - **Conceptual primers or deeper technical distinctions** belong in `/learn/` or `/learn/explainers/`.
 - **Reader entry paths for a distinct operational situation** belong in `/routes/` and should point into existing practice, option, and resource pages rather than duplicating procedures.
 - **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules, protocols, and certificates*, *US government requirements*, *national algorithm positions*, *migration guides*) rather than by issuing organisation.
-- **Lifecycle operating activities** belong in `/migration-practices/`.
+- **Lifecycle operating activities** belong in `/migration-practices/`; each practice owns at least one record in `/resources/` or states its evidence on the page.
 - **Mechanism and deployment trade-offs** belong in `/technology-options/`, organised around the cryptographic job being solved rather than one narrative page per algorithm.
 - **Reusable templates and reference tools** belong in `/resources/`; keep `/resources/` a focused practical toolkit rather than a catch-all archive.
