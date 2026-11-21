@@ -19,6 +19,8 @@ List every dependency inside the `dependencies` cell separated by a semicolon ra
 
 ## Filled example
 
+The archive row as first recorded, before the review on 2026-11-10 updated it; [Protect this first](/resources/protect-this-first/) shows how it changes.
+
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product-design archive in supplier-hosted workspace | product engineering lead | unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.1 (fictional) | workspace supplier's hosting service | supplier-hosted cryptography | asset owner; supplier questions sent | unknown |

@@ -15,7 +15,7 @@ asset, job, owner, order, reason and source, supplier readiness, timeline and au
 
 Use one row per asset and job, and set `job` to `key establishment`, `signatures`, or `non-updatable verifier`. Where one job needs separate pieces of work with their own owner or dates, such as re-wrapping data already stored, add a row with a qualifier in brackets, such as `key establishment (stored data)`. Combine jobs in one row only when they share every date, owner, and milestone. Record `unknown` in any cell you cannot verify yet.
 
-- **order:** the line's place within its job, such as `first for key establishment`, or `tracked, not ranked (supplier-update path)` for commodity products.
+- **order:** the line's place within its job, such as `first for key establishment`, `tracked, not ranked (supplier-update path)` for commodity products, or `tracked, not ranked (supplier-led)` for a line whose work waits on a supplier's plan.
 - **reason and source:** the reason in plain words, with the source in brackets (a policy, a supplier letter, or an authority document).
 - **supplier readiness:** the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`), or `not asked`.
 - **the four dates:** keep them separate. A supplier's release is not your testing, your production deployment is not the supplier's release, and end of support is the date security fixes stop for the release you run now.
