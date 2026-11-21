@@ -24,7 +24,7 @@ Status as checked on 21 November 2026.
 
 ## Who usually chooses
 
-The supplier of the authentication server and the device operating systems decide which TLS groups and certificate algorithms they support; you run the private certification authority that issues the certificates.
+The suppliers of the authentication server and the device operating systems decide which TLS groups and certificate algorithms they support; you run the private certification authority that issues the certificates.
 
 ## What good looks like
 
@@ -46,7 +46,7 @@ The supplier of the authentication server and the device operating systems decid
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the authentication service and each device class, with the private certification authority in `dependencies`; a key-establishment line on the [migration plan](/resources/migration-plan/) for the EAP-TLS handshake and the PKI's signatures line for certificates; the [change record](/resources/change-record/) for the change, with the negotiated group as the deployed-state check; supplier answers in the [vendor response log](/resources/vendor-response-log/).
+An [inventory](/resources/inventory-record/) row for the authentication service and each device class, with the EAP method as a labelled value in the key-establishment cell (for example "EAP-TLS 1.3: X25519") and the private certification authority in `dependencies`; a key-establishment line on the [migration plan](/resources/migration-plan/) for the EAP-TLS handshake and the PKI's signatures line for certificates; the [change record](/resources/change-record/) for the change, with the negotiated group as the deployed-state check; supplier answers in the [vendor response log](/resources/vendor-response-log/).
 
 ## Example
 

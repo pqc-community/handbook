@@ -41,7 +41,7 @@ The directory and operating-system supplier decides what the domain controllers 
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the directory service, with labelled values in its algorithm cells, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman", and the issuing CA in `dependencies`; the supplier answer in the [vendor response log](/resources/vendor-response-log/); for certificate logon, a key-establishment line and a signatures line on the [migration plan](/resources/migration-plan/).
+An [inventory](/resources/inventory-record/) row for the directory service, with labelled values in its algorithm cells, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman; directory connections: see TLS", and the issuing CA in `dependencies`; the supplier answer in the [vendor response log](/resources/vendor-response-log/); for certificate logon, a key-establishment line and a signatures line on the [migration plan](/resources/migration-plan/).
 
 ## Example
 
