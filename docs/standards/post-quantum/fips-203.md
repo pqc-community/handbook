@@ -33,7 +33,7 @@ FIPS 203 is issued by the National Institute of Standards and Technology (NIST).
 
 [NIST SP 800-227](/standards/post-quantum/sp-800-227/) gives recommendations for using KEMs and for combining ML-KEM with a classical secret in hybrid key establishment. In protocols, [RFC 10024](/standards/modules-protocols-identity/rfc-10024/) defines hybrid ML-KEM groups for TLS 1.3, while [RFC 9935](https://www.rfc-editor.org/info/rfc9935) and [RFC 9936](https://www.rfc-editor.org/info/rfc9936) (both March 2026) specify ML-KEM in X.509 certificates and in CMS. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-KEM-1024.
 
-Digital signatures are a separate migration with different drivers, covered by [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/). For the handbook's decision path, see [Key establishment](/technology-options/key-establishment/).
+Digital signatures are a separate migration with different drivers, covered by [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/). For the handbook's decision path, see [Technology options](/technology-options/).
 
 ## Sources
 
@@ -47,6 +47,6 @@ Digital signatures are a separate migration with different drivers, covered by [
 
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [NIST SP 800-227](/standards/post-quantum/sp-800-227/)
-- [Key establishment](/technology-options/key-establishment/)
+- [Technology options](/technology-options/)
 - [Hybrid approaches](/learn/hybrid/)
 - [Key encapsulation explained](/learn/explainers/kem/)

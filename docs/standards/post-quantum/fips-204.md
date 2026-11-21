@@ -32,7 +32,7 @@ FIPS 204 is issued by the National Institute of Standards and Technology (NIST).
 
 For certificates, [RFC 9881](/standards/modules-protocols-identity/rfc-9881/) (October 2025) specifies ML-DSA in X.509, and [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) (November 2026) specifies composite ML-DSA. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-DSA-87 for signatures in any use case.
 
-Signature migration has different drivers from key establishment under [FIPS 203](/standards/post-quantum/fips-203/): what matters is when verifiers must be able to check new signatures, not whether recorded traffic could later be decrypted. Verifiers that cannot be updated in the field need particular care; see [Long-lived roots](/technology-options/long-lived-roots/).
+Signature migration has different drivers from key establishment under [FIPS 203](/standards/post-quantum/fips-203/): what matters is when verifiers must be able to check new signatures, not whether recorded traffic could later be decrypted. Verifiers that cannot be updated in the field need particular care; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
 ## Sources
 
@@ -46,5 +46,5 @@ Signature migration has different drivers from key establishment under [FIPS 203
 
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [FIPS 205](/standards/post-quantum/fips-205/)
-- [Signatures](/technology-options/signatures/)
-- [Long-lived roots](/technology-options/long-lived-roots/)
+- [PKI and certificates](/technology-options/pki/)
+- [Firmware and secure boot](/technology-options/firmware-secure-boot/)

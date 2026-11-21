@@ -68,4 +68,4 @@ The fictional manufacturer in [Protect this first](/resources/protect-this-first
 
 - [The quantum threat](/learn/quantum-threat/)
 - [Decide what to migrate first](/migration-practices/priority/)
-- [Post-quantum key establishment](/technology-options/key-establishment/)
+- [Technology options](/technology-options/)

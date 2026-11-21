@@ -38,4 +38,4 @@ NIST IR 8547 (§3.1.3) draws the same conclusion in planning terms: because the 
 
 - [The quantum threat](/learn/quantum-threat/)
 - [What changes in a TLS connection](/learn/explainers/tls/)
-- [Post-quantum key establishment](/technology-options/key-establishment/)
+- [TLS and web services](/technology-options/tls/)

@@ -58,7 +58,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 - a support period;
 - the evidence you will receive.
 
-Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Long-lived roots](/technology-options/long-lived-roots/)).
+Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
 CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web browsers and servers, in which products supporting post-quantum standards are widely available, and notes that the support is mostly for key establishment rather than signatures. It shows where such requirements are realistic today. US federal contractors should also watch for the procurement rule that [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to propose. It would bind contractors only once a final rule takes effect; its Standards summary explains.
 

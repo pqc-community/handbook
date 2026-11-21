@@ -60,5 +60,5 @@ Continue with [The quantum threat](/learn/quantum-threat/). For a worked list of
 ## Related pages
 
 - [Learn the basics](/learn/)
-- [Post-quantum signatures](/technology-options/signatures/)
-- [Long-lived roots of trust](/technology-options/long-lived-roots/)
+- [PKI and certificates](/technology-options/pki/)
+- [Firmware and secure boot](/technology-options/firmware-secure-boot/)

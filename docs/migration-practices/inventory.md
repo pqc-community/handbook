@@ -66,5 +66,5 @@ The inventory records what exists; it does not decide order or algorithms. Large
 
 - [Inventory record](/resources/inventory-record/)
 - [Decide what to migrate first](/migration-practices/priority/)
-- [Long-lived roots](/technology-options/long-lived-roots/)
+- [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)

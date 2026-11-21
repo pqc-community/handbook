@@ -30,7 +30,7 @@ NCSC published version 1.0 on 20 March 2025, and the page records the same date 
 
 ## Relationship with other standards
 
-These milestones apply to NCSC's stated audience, not to every organisation everywhere; see [Timelines](/learn/explainers/timelines/). For commodity IT, NCSC expects most organisations to receive post-quantum support through normal supplier updates; see [Keep commodity software updated](/migration-practices/commodity-software/). Bespoke systems and long-lived verifiers, such as hardware roots of trust that cannot be updated in the field, need active planning; see [Long-lived roots](/technology-options/long-lived-roots/).
+These milestones apply to NCSC's stated audience, not to every organisation everywhere; see [Timelines](/learn/explainers/timelines/). For commodity IT, NCSC expects most organisations to receive post-quantum support through normal supplier updates; see [Keep commodity software updated](/migration-practices/commodity-software/). Bespoke systems and long-lived verifiers, such as hardware roots of trust that cannot be updated in the field, need active planning; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
 The companion whitepaper, version 2.0 of 14 August 2024, covers NCSC's broader position on preparing for post-quantum cryptography. NCSC's [Using TLS to protect data](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) guidance (15 October 2026) covers protocol configuration. For how NCSC's algorithm and hybrid positions compare with other authorities, see [National algorithm positions](/standards/national-algorithm-positions/).
 
@@ -44,5 +44,5 @@ The companion whitepaper, version 2.0 of 14 August 2024, covers NCSC's broader p
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [Keep commodity software updated](/migration-practices/commodity-software/)
-- [Long-lived roots](/technology-options/long-lived-roots/)
+- [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [Timelines](/learn/explainers/timelines/)

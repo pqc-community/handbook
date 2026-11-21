@@ -51,5 +51,5 @@ This category explains what does not need replacing. [NIST IR 8547](/standards/t
 - [Standards](/standards/)
 - [Transition and key management](/standards/transition-and-key-management/)
 - [Quantum threat](/learn/quantum-threat/)
-- [Key establishment](/technology-options/key-establishment/)
+- [Technology options](/technology-options/)
 - [Glossary](/resources/glossary/)

@@ -11,8 +11,8 @@ Read in this order:
 
 1. [Inventory the cryptography](/migration-practices/inventory/), required.
 2. [Plan the migration](/migration-practices/plan/), required.
-3. [Long-lived roots](/technology-options/long-lived-roots/). Open long-lived roots only when the verifier cannot be updated later.
-4. [Signatures](/technology-options/signatures/). Open signatures only when a signature construction is being chosen.
+3. [Firmware and secure boot](/technology-options/firmware-secure-boot/). Open it when a verifier cannot be updated later.
+4. [Code and software signing](/technology-options/code-signing/). Open it when the verifiers can be updated and a signature scheme is being chosen.
 5. [Work with suppliers](/migration-practices/suppliers/). Open it when a supplier is involved, or when you are selecting a component or renewing a product, especially before a design freeze.
 6. [Make and verify one change](/migration-practices/implementation/). Open it when the product will change, including when the change is intended and the option is still unknown.
 7. [Change record](/resources/change-record/). Open the change record in that same case.

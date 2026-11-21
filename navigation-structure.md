@@ -45,7 +45,7 @@ Homepage Situation Chooser (/)
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
   - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, keep commodity software updated (the short path for supplier-updated estates), set up the programme, inventory, prioritise, plan dates, work with suppliers (including purchases and renewals), make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
-  - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job: *choosing* (who decides, the hybrid rule, and recording the authority), *key establishment* (data in transit and stored data), *signatures* (certificates, documents, and code signing where verifiers can be updated), and *long-lived roots* (verifiers that cannot be updated). Each page records its decision on an existing record in `/resources/`.
+  - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections (TLS, VPNs and IPsec, SSH), certificates and identity, signing (code, firmware and secure boot, documents and email), stored data, keys and hardware, and bought-in services. Process stays in Migration practices, positions in Standards, and concepts in Learn.
   - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
 
 ## Sitemap
@@ -160,9 +160,18 @@ Homepage Situation Chooser (/)
 
 /technology-options/
 /technology-options/choosing/
-/technology-options/key-establishment/
-/technology-options/signatures/
-/technology-options/long-lived-roots/
+/technology-options/tls/
+/technology-options/vpn-ipsec/
+/technology-options/ssh/
+/technology-options/pki/
+/technology-options/identity/
+/technology-options/code-signing/
+/technology-options/firmware-secure-boot/
+/technology-options/document-signing/
+/technology-options/encrypted-files/
+/technology-options/stored-data/
+/technology-options/hsm-kms/
+/technology-options/cloud-saas/
 
 /resources/
 /resources/decision-note/
@@ -190,5 +199,5 @@ Add new pages only when there is enough distinct, decision-useful material that 
 - **Reader entry paths for a distinct operational situation** belong in `/routes/` and should point into existing practice, option, and resource pages rather than duplicating procedures.
 - **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules, protocols, and certificates*, *US government requirements*, *national algorithm positions*, *migration guides*) rather than by issuing organisation.
 - **Lifecycle operating activities** belong in `/migration-practices/`; each practice owns at least one record in `/resources/` or states its evidence on the page.
-- **Mechanism and deployment trade-offs** belong in `/technology-options/`, organised around the cryptographic job being solved rather than one narrative page per algorithm.
+- **What good looks like for a specific technology** belongs in `/technology-options/`, as a short reference card per technology that keeps the cryptographic jobs distinct, rather than one narrative page per algorithm.
 - **Reusable templates and reference tools** belong in `/resources/`; keep `/resources/` a focused practical toolkit rather than a catch-all archive.

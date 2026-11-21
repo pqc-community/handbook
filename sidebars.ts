@@ -246,9 +246,46 @@ const sidebars: SidebarsConfig = {
   technologyOptionsSidebar: [
     'technology-options/index',
     'technology-options/choosing',
-    'technology-options/key-establishment',
-    'technology-options/signatures',
-    'technology-options/long-lived-roots',
+    {
+      type: 'category',
+      label: 'Connections',
+      collapsed: false,
+      items: ['technology-options/tls', 'technology-options/vpn-ipsec', 'technology-options/ssh'],
+    },
+    {
+      type: 'category',
+      label: 'Certificates and identity',
+      collapsed: false,
+      items: ['technology-options/pki', 'technology-options/identity'],
+    },
+    {
+      type: 'category',
+      label: 'Signing',
+      collapsed: false,
+      items: [
+        'technology-options/code-signing',
+        'technology-options/firmware-secure-boot',
+        'technology-options/document-signing',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Stored data',
+      collapsed: false,
+      items: ['technology-options/encrypted-files', 'technology-options/stored-data'],
+    },
+    {
+      type: 'category',
+      label: 'Keys and hardware',
+      collapsed: false,
+      items: ['technology-options/hsm-kms'],
+    },
+    {
+      type: 'category',
+      label: 'Bought-in services',
+      collapsed: false,
+      items: ['technology-options/cloud-saas'],
+    },
   ],
   resourcesSidebar: [
     'resources/index',

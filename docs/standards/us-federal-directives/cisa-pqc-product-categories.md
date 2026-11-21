@@ -27,7 +27,7 @@ CISA published the list on 23 January 2026 in response to [EO 14306](/standards/
 
 ## Relationship with other standards
 
-The list tells buyers where to expect post-quantum support; the algorithms behind that support are defined in NIST standards such as [FIPS 203](/standards/post-quantum/fips-203/) for key establishment. Because the widely available support is mostly for key establishment, a product in a "widely available" category may still rely on classical signatures, certificates and firmware signing. Ask separately about signature support and about long-lived verifiers such as roots of trust, which follow a different timetable; see [Post-quantum signatures](/technology-options/signatures/) and [Long-lived roots of trust](/technology-options/long-lived-roots/).
+The list tells buyers where to expect post-quantum support; the algorithms behind that support are defined in NIST standards such as [FIPS 203](/standards/post-quantum/fips-203/) for key establishment. Because the widely available support is mostly for key establishment, a product in a "widely available" category may still rely on classical signatures, certificates and firmware signing. Ask separately about signature support and about long-lived verifiers such as roots of trust, which follow a different timetable; see [PKI and certificates](/technology-options/pki/) and [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
 For turning the list into supplier conversations, see [Work with suppliers](/migration-practices/suppliers/), [Ask a supplier](/routes/ask-a-supplier/) and the ASD, CISA and NSA [questions to ask your vendors](/standards/migration-guides/vendor-questions/).
 

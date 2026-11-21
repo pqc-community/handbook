@@ -47,4 +47,4 @@ The draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) would add six 
 - [FIPS 204](/standards/post-quantum/fips-204/)
 - [NIST SP 800-208](/standards/post-quantum/sp-800-208/)
 - [Hash-based signatures explained](/learn/explainers/hash-based-signatures/)
-- [Signatures](/technology-options/signatures/)
+- [Code and software signing](/technology-options/code-signing/)

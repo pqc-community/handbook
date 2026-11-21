@@ -35,7 +35,7 @@ The state is a counter of used one-time keys. Ordinary operational events can co
 - running signing jobs in parallel without a single authority over the counter;
 - a failure between producing a signature and saving the updated state.
 
-Each can cause a one-time key to be reused. This is why the handbook treats "how is state controlled?" as a required field on the [long-lived roots](/technology-options/long-lived-roots/) record when a stateful scheme is chosen.
+Each can cause a one-time key to be reused. This is why the handbook treats "how is state controlled?" as a required question on [Firmware and secure boot](/technology-options/firmware-secure-boot/) and [Code and software signing](/technology-options/code-signing/) when a stateful scheme is chosen.
 
 ## Why firmware signing is the sweet spot
 
@@ -61,5 +61,5 @@ NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (13 April 2
 ## Related pages
 
 - [Post-quantum algorithms](/learn/algorithms/)
-- [Long-lived roots of trust](/technology-options/long-lived-roots/)
+- [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [NIST SP 800-208](/standards/post-quantum/sp-800-208/)
