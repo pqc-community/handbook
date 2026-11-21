@@ -30,7 +30,7 @@ Ask tier 1 first and individually; ask tiers 2 and 3 in batches. Add each suppli
 
 ### 2. Ask the same questions in writing
 
-Use the handbook's single question set on the [vendor response log](/resources/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid construction it will support, from which release and date; when signatures and update verification will change; whether keys or trust anchors are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The ASD, CISA, and NSA [vendor questions guide](/standards/migration-guides/vendor-questions/) (published 16 July 2026) gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
+Use the handbook's single question set on the [vendor response log](/resources/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid construction it will support, from which release and date; when signatures and update verification will change; whether keys or trust anchors are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The Australian Signals Directorate's [vendor questions guide](/standards/migration-guides/vendor-questions/) (published 16 July 2026) gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
 
 ### 3. Judge each answer, one row per job
 
@@ -80,7 +80,7 @@ The log records what suppliers say; it does not validate their products. Validat
 
 ## Sources
 
-- Australian Signals Directorate's ACSC, with CISA and NSA, Post-quantum questions to ask your vendors, published 16 July 2026, last reviewed 5 November 2026. [Vendor questions](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- Australian Signals Directorate, Post-quantum questions to ask your vendors, published 16 July 2026. [Vendor questions](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
 - CISA, NSA, and NIST, Quantum-Readiness: Migration to Post-Quantum Cryptography, as of 17 August 2023. [Fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 - CISA, Product Categories for Technologies That Use Post-Quantum Cryptography Standards, 23 January 2026. [CISA product categories](https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards)
 - The White House, Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks, 22 June 2026. [EO 14412](https://www.govinfo.gov/app/details/DCPD-202600417)
