@@ -14,7 +14,7 @@ Read in this order:
 3. [Long-lived roots](/technology-options/long-lived-roots/). Open long-lived roots only when the verifier cannot be updated later.
 4. [Signatures](/technology-options/signatures/). Open signatures only when a signature construction is being chosen.
 5. [Work with suppliers](/migration-practices/suppliers/). Open it when a supplier is involved, or when you are selecting a component or renewing a product, especially before a design freeze.
-6. [Make and verify one change](/migration-practices/implementation/). Open the implementation check when the product will change, including when the change is intended and the option is still unknown.
+6. [Make and verify one change](/migration-practices/implementation/). Open it when the product will change, including when the change is intended and the option is still unknown.
 7. [Change record](/resources/change-record/). Open the change record in that same case.
 8. [Vendor response log](/resources/vendor-response-log/). Open the vendor response log only when a supplier is involved.
 
