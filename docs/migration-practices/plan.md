@@ -26,7 +26,7 @@ You have a priority record and need to turn it into dated, owned milestones, or 
    - NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) for US national security systems.
 
    [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) schedules quantum-vulnerable public-key algorithms for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines. Record the authority and audience beside every date; see [Why migration timelines differ](/learn/explainers/timelines/).
-2. **Set a milestone for each asset, and for each job the priority record lists for it.** Use one plan row per asset and name the jobs in "why it is included"; split a row when two jobs have different milestones or owners. Highest-priority lines get the earliest applicable milestone. Lines that follow supplier updates get a tracking milestone, not a bespoke project.
+2. **Set a milestone for each asset and job** from the priority record. Use one plan row per asset and job, and name the job at the start of "why it is included"; combine jobs in one row only when they share every date, owner, and milestone. Highest-priority lines get the earliest applicable milestone. Lines that follow supplier updates get a tracking milestone, not a bespoke project.
 3. **Track four separate dates for each asset**, because a supplier's release is not your deployment:
    - **supplier release** — when the supplier ships post-quantum support;
    - **testing** — when your interoperability and performance checks complete;
@@ -45,7 +45,7 @@ The [migration plan](/resources/migration-plan/): per asset, the owner, why it i
 
 An insufficient record is a single target year with no owner, test window, or deployment date.
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), plans the product-design archive against the UK NCSC target dates. It sits in the first group because of its 15-year confidentiality period, so its milestone is the NCSC's 2031 milestone for highest-priority migration activities. The plan records the supplier release as 2026-10-01, from the supplier's letter, and testing as the staging pilot passed on 2026-10-21. Production deployment stays `unknown` until production checks finish, and end of support for the current release is `unknown` and has been asked of the supplier. The sensor's firmware verifier is planned against its production design freeze on 2027-06-30 (fictional), with all four dates `unknown` until a signature option exists.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), plans the product-design archive against the UK NCSC target dates. It sits in the first group because of its 15-year confidentiality period, so its key-establishment line takes the NCSC's 2031 milestone for highest-priority migration activities, within the 2035 completion date; its signature line is a separate row that waits on the supplier's plan. The plan records the supplier release as 2026-10-01, from the supplier's letter, and testing as the staging pilot passed on 2026-10-21. Production deployment stays `unknown` until production checks finish, and end of support for the current release is `unknown`, with a written answer due from the supplier by 2026-12-01. The sensor's firmware verifier takes its production design freeze on 2027-06-30 (fictional) as its milestone, with all four dates `unknown` until a signature option exists.
 
 ## Limits and next step
 

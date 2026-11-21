@@ -18,6 +18,8 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Inventory records
 
+The table shows the rows as first recorded. The review on 2026-11-10 updated the archive row; see [Subsequent review](#subsequent-review).
+
 The manufacturer records one row for each system on the [inventory record](/resources/inventory-record/). It marks facts it has not verified as `unknown`:
 
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
@@ -32,11 +34,11 @@ The [priority record](/resources/priority-record/) keeps the three cryptographic
 
 | asset | confidentiality period | job | impact | lead time | dependencies | supplier readiness | decision | reason | source | subsequent review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | 15 years (company policy) | key establishment | unknown | unknown | unknown | planned supplier release | first for key establishment | the company's designs must remain confidential for 15 years | company retention policy (fictional); UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
-| Product-design archive in supplier-hosted workspace | not applicable | signatures | unknown | unknown | workspace supplier | vague: no signature date given | track with the supplier; no bespoke work yet | the supplier has given no signature date | fictional supplier letter, 2026-09-04 | 2026-12-01 |
-| Firmware verifier for product sensor | not applicable | non-updatable verifier | unknown | before production design freeze on 2027-06-30 (fictional) | boot ROM trust anchor | unknown | first for non-updatable verifier | the trust anchor cannot be changed after shipment | product design documentation (fictional); UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
-| Office laptops | unknown | key establishment | unknown | routine refresh | browser and operating-system suppliers | supplier-update path | follow supplier updates; no bespoke pilot | no unsupported product or other exception is identified | UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
-| Office laptops | not applicable | signatures | unknown | routine refresh | browser and operating-system suppliers | supplier-update path | follow supplier updates | signature changes are expected through supported platform updates; no exception identified | UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
+| Product-design archive in supplier-hosted workspace | 15 years (company policy) | key establishment | unknown | unknown | workspace supplier | complete | first for key establishment | the company's designs must remain confidential for 15 years | company retention policy (fictional) | 2026-12-01 |
+| Product-design archive in supplier-hosted workspace | not applicable | signatures | unknown | unknown | workspace supplier | vague | track with the supplier; no bespoke work yet | the supplier has given no signature date | fictional supplier letter, 2026-09-04 | 2026-12-01 |
+| Firmware verifier for product sensor | not applicable | non-updatable verifier | unknown | unknown; must be resolved before production design freeze on 2027-06-30 (fictional) | boot ROM trust anchor | not asked yet | first for non-updatable verifier | the trust anchor cannot be changed after shipment | product design documentation (fictional); NIST IR 8547 device design advice | 2026-12-01 |
+| Office laptops | unknown | key establishment | unknown | routine refresh | browser and operating-system suppliers | not asked (commodity supplier-update path) | follow supplier updates; no bespoke pilot | no unsupported product or other exception is identified | UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
+| Office laptops | not applicable | signatures | unknown | routine refresh | browser and operating-system suppliers | not asked (commodity supplier-update path) | follow supplier updates | signature changes are expected through supported platform updates; no exception identified | UK NCSC timelines, published and reviewed 20 March 2025 | 2026-12-01 |
 
 ## Supplier answer
 
@@ -44,18 +46,20 @@ The product engineering lead records the supplier's written answer in the [vendo
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment construction and release date apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. It does not cover stored-data key wrapping. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | ask about stored-data key wrapping by 2026-12-01 | pilot Workspace 4.2 for archive key establishment |
+| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment construction and release date apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
 | Fictional design-platform supplier | Workspace 4.2 (fictional) | When will the hosted archive sign or verify with a post-quantum algorithm? | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate priority line |
+| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which construction protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
 
 ## Migration plan
 
 The [migration plan](/resources/migration-plan/) records the UK NCSC target dates as planning guidance for this UK-based company. The guidance asks organisations to complete discovery and build an initial plan by 2028, to carry out their early, highest-priority migration activities by 2031, and to complete migration of systems, services, and products by 2035. The dates are targets, not a claim that every asset has the same milestone.
 
-| asset | owner | why it is included | applicable timeline | authority | milestone | supplier release | testing | production deployment | end of support | dependency | next action | subsequent review |
+| asset | owner | why it is included | applicable timeline | authority | milestone | supplier release | testing | production deployment | end of support | dependencies | next action | subsequent review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | product engineering lead | designs must remain confidential for 15 years | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | carry out highest-priority migration activities by 2031; complete migration by 2035 | 2026-10-01 | 2026-10-21 (staging pilot passed) | unknown | unknown | supplier's Workspace 4.2 release | complete production interoperability checks; keep signature support as a separate item | 2026-12-01 |
-| Firmware verifier for product sensor | product security lead | verifier cannot accept a new trust anchor after shipment | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | include the long-lived hardware root in the initial plan by 2028; carry out highest-priority migration activities by 2031 | unknown | unknown | unknown | unknown | boot ROM; production design freeze on 2027-06-30 (fictional) | obtain a supported signature and trust-root option before production design freeze | 2026-12-01 |
-| Office laptops | IT lead | public-key cryptography is managed through supported commodity platforms | UK NCSC target dates; supplier-update path | UK NCSC, published and reviewed 20 March 2025 | track supplier delivery and include the fleet in the 2035 completion view | supplier-managed | not applicable (supplier-update path) | supplier-managed | unknown | browser and operating-system suppliers | confirm support status and record installed versions; route unsupported devices for review | 2026-12-01 |
+| Product-design archive in supplier-hosted workspace | product engineering lead | key establishment: designs must remain confidential for 15 years | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | carry out highest-priority migration activities by 2031; complete migration by 2035 | 2026-10-01 | 2026-10-21 (staging pilot passed) | unknown | unknown | workspace supplier's Workspace 4.2 release | complete production checks; obtain end of support for Workspace 4.1 | 2026-12-01 |
+| Product-design archive in supplier-hosted workspace | product engineering lead | signatures: supplier-led; no date given | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | complete migration by 2035 | unknown | unknown | unknown | unknown | workspace supplier | obtain the supplier's written signature plan | 2026-12-01 |
+| Firmware verifier for product sensor | product security lead | non-updatable verifier: cannot accept a new trust anchor after shipment | UK NCSC target dates; product design freeze | UK NCSC, published and reviewed 20 March 2025; product plan (fictional) | resolve a supported signature option before production design freeze on 2027-06-30 (fictional); include the long-lived hardware root in the initial plan by 2028 | unknown | unknown | unknown | unknown | boot ROM; production design freeze on 2027-06-30 (fictional) | obtain a supported signature and trust-root option before design freeze | 2026-12-01 |
+| Office laptops | IT lead | key establishment and signatures: commodity platforms receive supplier updates | UK NCSC target dates; supplier-update path | UK NCSC, published and reviewed 20 March 2025 | track supplier delivery and include the fleet in the 2035 completion view | unknown | not applicable (supplier-update path) | unknown | unknown | browser and operating-system suppliers | confirm support status and record installed versions | 2026-12-01 |
 
 ## Option and authority
 
@@ -92,8 +96,10 @@ At the review on `2026-11-10`, the manufacturer reopened the priority record, su
 | date | what was reviewed | unresolved items | owner | next review |
 | --- | --- | --- | --- | --- |
 | 2026-11-10 | product-sensor priority and verifier plan | supported firmware-signing option before production design freeze on 2027-06-30 (fictional) | product security lead | 2026-12-01 |
-| 2026-11-10 | supplier response and archive pilot evidence | archive signature-support plan and stored-data key wrapping answer from the supplier | product engineering lead | 2026-12-01 |
-| 2026-11-10 | archive pilot evidence and agility check | production rollout of Workspace 4.2; agility gaps (configuration change, change window, deprecation path) | product engineering lead | 2026-12-01 |
+| 2026-11-10 | supplier response for the archive | written signature-support plan from the supplier | product engineering lead | 2026-12-01 |
+| 2026-11-10 | supplier response for the archive | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production connection-log check | product engineering lead | 2026-12-01 |
+| 2026-11-10 | archive agility check | configuration change, change window, and deprecation path not yet evidenced | product engineering lead | 2026-12-01 |
 | 2026-11-10 | office laptop fleet | installed browser and operating-system versions not yet recorded | IT lead | 2026-12-01 |
 
 ## Rejected alternative

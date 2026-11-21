@@ -13,7 +13,7 @@ Use this record when completing a first-pass inventory of systems that handle se
 
 system, owner, key-establishment algorithm, signature algorithm, software control, confidentiality period, renewal, version, dependencies, not visible to a scan, confidence
 
-Record `unknown` in any cell you cannot verify yet. Set `confidence` to `known` only when both the key-establishment algorithm and the signature algorithm name a construction; otherwise leave it as `unknown`.
+Record `unknown` in any cell you cannot verify yet. Set `confidence` to `known` only when every applicable algorithm cell names a construction (use `not applicable` for a job the system does not perform); otherwise leave it as `unknown`.
 
 List every dependency inside the `dependencies` cell separated by a semicolon rather than giving a shared component its own system row. Separate multiple timelines or sources in a single cell with a semicolon. Keep keys, secrets, and personal data out of the file — name the system only.
 

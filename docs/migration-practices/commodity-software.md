@@ -17,7 +17,7 @@ You rely on supported commodity software — standard browsers, operating system
 
 ## Do this
 
-1. **Keep supported versions installed** across the fleet, and record the installed browser and operating-system versions with the date checked on the [inventory record](/resources/inventory-record/). A version alone does not prove post-quantum key establishment is in use: enterprise policy or an inspection proxy can disable or strip it. Where you can, check what connections actually negotiate.
+1. **Keep supported versions installed** across the fleet, and record the installed browser and operating-system versions, with the date checked, in the `version` cell of the [inventory record](/resources/inventory-record/). A version alone does not prove post-quantum key establishment is in use: enterprise policy or an inspection proxy can disable or strip it. Where you can, check what connections actually negotiate.
 2. **Keep servers out of this path.** Web servers, load balancers, and services you configure yourself are your own systems, not commodity endpoints; they belong on the inventory with their own rows.
 3. **Check support status.** A product out of support, or a supplier with no migration plan, is no longer commodity: move it to the [Hard-to-change systems](/routes/hard-to-change-systems/) route.
 4. **Check for exceptions** that need their own priority line: long-lived confidential data belongs on the [Long-lived confidentiality](/routes/long-lived-confidentiality/) route, and bespoke systems or devices whose signature check cannot be updated belong on Hard-to-change systems.

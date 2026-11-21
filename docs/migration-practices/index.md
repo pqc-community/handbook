@@ -12,21 +12,18 @@ The practices are written for organisations without specialist cryptography staf
 ```mermaid
 flowchart TD
     D[Decide whether to act] --> P[Set up the programme]
-    D -->|supported commodity software only| C[Keep commodity software updated]
     P --> I[Inventory the cryptography]
     I --> R[Decide what to migrate first]
     R --> PL[Plan the migration]
     PL --> S[Work with suppliers]
-    PL --> O[Choose an option]
-    S --> O
+    S --> O[Choose an option]
     O --> M[Make and verify one change]
     M --> A[Keep the ability to change again]
     A --> V[Review and report]
-    C --> V
-    V -->|triggers and review dates| I
+    V -.->|reopens records| I
 ```
 
-The order is a dependency order, not a strict sequence: supplier work usually runs alongside planning, and review reopens earlier records whenever something changes. Choosing an option is covered in [Technology options](/technology-options/choosing/), because it is a technical decision about mechanisms rather than an operating practice.
+The order is a dependency order, not a strict sequence: supplier work usually runs alongside planning, and review reopens earlier records whenever something changes. An estate of supported commodity software with no exception takes a shorter path, from deciding to act straight to [keeping commodity software updated](/migration-practices/commodity-software/) and regular review. Choosing an option is covered in [Technology options](/technology-options/choosing/), because it is a technical decision about mechanisms rather than an operating practice.
 
 ## The practices
 

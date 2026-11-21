@@ -32,7 +32,7 @@ A subsequent-review date has arrived, or something has happened that may make th
 1. Open the review log and the records due for review.
 2. Update confidence and dates on inventory, priority, plan, and supplier rows.
 3. Carry each unresolved item forward on its own review-log row, with its own owner and date.
-4. Set the next review date on the review log and on every open record.
+4. Set the next review date on the review log and on every open record that carries one (priority, plan, and evidence records).
 5. Report to the sponsor: what moved, what is blocked and why, which decisions or risk acceptances are needed, and the next review date.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) describes the transition as one in which quantum-vulnerable and quantum-resistant algorithms will coexist and be validated for a period, which is why records need regular reopening rather than a single sign-off.
@@ -45,11 +45,13 @@ The [review log](/resources/review-log/): date, what was reviewed, unresolved it
 
 An insufficient record is "The migration project is closed."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier response, and the product sensor's priority. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging. It then carries four unresolved items, each on its own row:
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier response, and the product sensor's priority. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging. It then carries six unresolved items, each on its own row with its own owner:
 
-- **sensor firmware-signing option** before the design freeze on 2027-06-30: product security lead;
-- **archive signature plan and stored-data key wrapping answer:** product engineering lead;
-- **archive production rollout and agility gaps:** product engineering lead;
+- **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead;
+- **archive signature plan from the supplier:** product engineering lead;
+- **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead;
+- **archive production rollout and production connection-log check:** product engineering lead;
+- **archive agility gaps:** product engineering lead;
 - **laptop versions:** IT lead.
 
 The next review is set for 2026-12-01. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked.
