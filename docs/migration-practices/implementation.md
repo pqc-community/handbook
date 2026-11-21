@@ -25,14 +25,16 @@ An option has been chosen for one system, with the standard or authority it foll
    - **performance and size effects**: handshake size and latency, CPU and hardware security module throughput, certificate chain size, and, for firmware, image size and boot time;
    - **failure behaviour**: what a client does when the new option is refused.
 3. **Write the rollback trigger and who may invoke it** before the pilot starts, including a silent fallback to classical-only cryptography as a trigger, not just an outage.
-4. **Write the cutover communication** for users, operations, and any connected parties.
-5. **Write how the deployed state will be checked in production**, by inspection rather than by a supplier statement. Examples: server or load-balancer logs showing the negotiated key-exchange group, a client-side check against the production endpoint, certificate inspection, or the verifier's accepted-key list. Then watch over time for fallback to classical-only connections.
-6. **Record the result honestly.** A result of `unknown` means the change is not closed. A passed pilot is not a production migration.
+4. **Write how you will check the deployed state**, by your own inspection rather than a supplier statement. Examples: server or load-balancer logs showing the negotiated key-exchange group, a client-side check against the production endpoint, certificate inspection, or the verifier's accepted-key list. For a supplier-hosted service you cannot inspect from the inside, use a client-side check from your own systems; the supplier's logs can support it but do not replace it.
+5. **Run the pilot.** Record each test's result. If a rollback trigger fires, roll back, record why, and fix the cause before trying again.
+6. **Cut over.** Send the cutover communication to users, operations, and connected parties, then move to production in the agreed change window.
+7. **Check production** with the method from step 4, then watch for fallback to classical-only connections until the next review.
+8. **Close the change** only when the production check has passed. The asset owner records the result, and the migration lead copies the production deployment date to the [migration plan](/resources/migration-plan/). A result of `unknown` means the change is not closed, and a passed pilot is not a production migration.
 
 **Handle each job differently.**
 
 - **Key establishment.** Changes are negotiated per connection, so they can often be rolled back by configuration. The risk is in the path: unmanaged clients and network equipment that may fail or quietly fall back. Hybrid constructions are designed for this period; [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes them as typically temporary measures. See [Key establishment](/technology-options/key-establishment/) and [RFC 10024](/standards/modules-protocols-identity/rfc-10024/) for the hybrid groups defined for TLS 1.3.
-- **Signatures.** Signers, certificate authorities, and every relying party that verifies must move in a coordinated order. Verifiers must accept the new signatures before signers switch, and new trust anchors take time to distribute. Once relying parties depend on a new chain, rollback is harder than for key establishment, so plan dual or overlapping chains and certificate lifetimes before cutover. See [Signatures](/technology-options/signatures/) and [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/).
+- **Signatures.** Signers, certificate authorities, and every relying party that verifies must move in a coordinated order. Verifiers must accept the new signatures before signers switch, and new [trust anchors](/resources/glossary/#trust-anchor) take time to distribute. Once relying parties depend on a new chain, rollback is harder than for key establishment, so plan dual or overlapping chains and certificate lifetimes before cutover. See [Signatures](/technology-options/signatures/) and [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/).
 - **Verifiers that cannot be updated.** Resolve these before a product's design freeze. Check the signature size and boot-time effects against the device's storage and timing. If you choose a stateful hash-based scheme, confirm you can manage its signing state: NIST IR 8547 says these schemes need strict operational controls and are not intended for general use. If no supported option exists yet, record the change as blocked rather than guessing (see [Long-lived roots](/technology-options/long-lived-roots/)). For devices already in the field, record a retirement or replacement plan and any compensating controls in the [migration plan](/resources/migration-plan/).
 
 ## Keep this evidence
@@ -46,9 +48,9 @@ An insufficient record is "We enabled PQC."
 A decision-ready record, from [Protect this first](/resources/protect-this-first/), shows the product-design archive's staging pilot of Workspace 4.2:
 
 - **option:** hybrid X25519MLKEM768 for TLS connections, recorded against FIPS 203;
-- **pilot:** a test client connects, the supplier's connection log shows X25519MLKEM768 negotiated, and an authorised test account retrieves sample files;
+- **pilot:** a test client connects and its own handshake log shows X25519MLKEM768 negotiated, the supplier's connection log agrees, and an authorised test account retrieves sample files;
 - **rollback triggers:** failed retrieval, or a classical-only connection;
-- **result:** the staging pilot passed on 2026-10-21. Production rollout is pending, and production connection logs will be inspected after rollout.
+- **result:** the staging pilot passed on 2026-10-21. Production rollout is pending, so the change is not closed; the same client check will be run against the production workspace after rollout.
 
 A blocked record is the product sensor's firmware verifier. The signature and trust-root option is `unknown`, so no test is claimed. Rollback is `not applicable`, because the boot ROM cannot change after shipment. The change stays blocked until a supported option can be tested before the design freeze on 2027-06-30.
 

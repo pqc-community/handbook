@@ -18,24 +18,26 @@ Any system on your inventory depends on a supplier's product or service, you are
 
 ## Do this
 
+On the short path, only step 5 applies: write post-quantum requirements into purchases and renewals. Steps 1 to 4 apply to suppliers behind full-path rows on your [migration plan](/resources/migration-plan/).
+
 ### 1. Triage suppliers
 
 Build the supplier list from the [inventory record](/resources/inventory-record/), not from the purchasing system alone. Put each supplier in a tier:
 
-- **Tier 1:** suppliers behind high-priority rows — long-lived confidential data, verifiers that cannot be updated, or many relying parties.
-- **Tier 2:** suppliers with renewals due within the planning horizon.
+- **Tier 1:** suppliers behind the rows that come first in their job's order on the migration plan, such as key establishment for long-lived confidential data, verifiers that cannot be updated, or signatures with many relying parties.
+- **Tier 2:** suppliers whose contract renews or ends within your planning period. The handbook suggests looking at least two years ahead, because a renewal is the cheapest point to add a requirement.
 - **Tier 3:** suppliers of supported commodity products (see [Keep commodity software updated](/migration-practices/commodity-software/)).
 
 Ask tier 1 first and individually; ask tiers 2 and 3 in batches. Add each supplier's renewal or contract end date to the plan, so a renewal triggers a requirement rather than an automatic extension.
 
 ### 2. Ask the same questions in writing
 
-Use the handbook's single question set on the [vendor response log](/resources/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid construction it will support, from which release and date; when signatures and update verification will change; whether keys or trust anchors are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
+Use the handbook's single question set on the [vendor response log](/resources/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid algorithm or scheme it will support, from which release and date; when signatures and update verification will change; whether keys or [trust anchors](/resources/glossary/#trust-anchor) are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
 
 ### 3. Judge each answer, one row per job
 
-- `complete`: names the product, version, construction, and date in a document you can keep.
-- `vague`: gives a year or a promise without the construction or the product line.
+- `complete`: names the product, version, algorithm or scheme, and date in a document you can keep.
+- `vague`: gives a year or a promise without the algorithm or scheme, or without the product line.
 - `missing`: no answer by the date you asked for.
 - `concerning`: for example, a proprietary algorithm, no plan for an in-support product, or a refusal to say.
 
@@ -50,7 +52,7 @@ Ask a `vague` supplier for the missing items in writing. Give a `missing` answer
 For anything new or renewed that uses public-key cryptography, ask before signing for:
 
 - standards-based post-quantum support for the jobs the product performs, or a dated plan to deliver it;
-- the construction and the standard it follows (for example [FIPS 203](/standards/post-quantum/fips-203/) or [FIPS 204](/standards/post-quantum/fips-204/));
+- the algorithm or scheme and the standard it follows (for example [FIPS 203](/standards/post-quantum/fips-203/) or [FIPS 204](/standards/post-quantum/fips-204/));
 - how updates are delivered and validated;
 - whether keys or trust anchors are fixed in hardware;
 - a support period;
@@ -58,7 +60,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Long-lived roots](/technology-options/long-lived-roots/)).
 
-CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) shows where such requirements are realistic today. It lists categories in which products supporting post-quantum standards are widely available — including web browsers and servers, cloud platform and infrastructure services, and data-at-rest endpoint encryption — and advises acquiring only post-quantum-capable products in those categories, noting that the support is mostly for key establishment rather than signatures. Some buyers face obligations: [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to propose, within 180 days, a rule requiring covered contractors to comply with NIST FIPS, including post-quantum cryptography, by 31 December 2030. As at 21 November 2026, that is a rule the order directs to be proposed, not a contract term.
+CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web browsers and servers, in which products supporting post-quantum standards are widely available, and notes that the support is mostly for key establishment rather than signatures. It shows where such requirements are realistic today. US federal contractors should also follow the procurement rule that [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to propose; its Standards summary explains when that rule would bind contractors.
 
 ### 6. Answer your own customers consistently
 
@@ -72,7 +74,7 @@ The [vendor response log](/resources/vendor-response-log/) — one row per suppl
 
 An insufficient record is "They told us on a call that they are quantum safe."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/): the fictional design-platform supplier's letter of 2026-09-04 says Workspace 4.2, due on 2026-10-01, uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. The product engineering lead records that row as `complete` for connections. A second row records signatures as `vague`, because the letter gives no date. A third row records stored-data key wrapping and end of support for Workspace 4.1 as `missing`, because the letter does not answer them. Both follow-ups are due by 2026-12-01, and stored-data protection is not counted as migrated. For the next sensor design, procurement asks each shortlisted microcontroller supplier in writing whether the boot verifier supports a NIST-approved post-quantum signature and how the trust anchor is provisioned, and the product security lead makes a written answer a condition of selection.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/): the fictional design-platform supplier's letter of 2026-09-04 says Workspace 4.2, due on 2026-10-01, uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. The product engineering lead records that row as `complete` for connections. A second row records signatures as `vague`, because the letter gives no date. A third row records stored-data [key wrapping](/resources/glossary/#key-wrapping) and end of support for Workspace 4.1 as `missing`, because the letter does not answer them. Both follow-ups are due by 2026-12-01, and stored-data protection is not counted as migrated. For the next sensor design, procurement asks each shortlisted microcontroller supplier in writing whether the boot verifier supports a NIST-approved post-quantum signature and how the trust anchor is provisioned, and the product security lead makes a written answer a condition of selection.
 
 ## Limits and next step
 

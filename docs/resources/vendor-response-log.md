@@ -18,7 +18,7 @@ This is the handbook's single question set; ask about a named product and versio
 
 **Key establishment**
 
-- Which standards-based post-quantum or hybrid construction will the product support, from which release and on what date?
+- Which standards-based post-quantum or hybrid algorithm or scheme will the product support, from which release and on what date?
 - Does it apply to every connection and to stored-data key wrapping, or only to some?
 
 **Signatures and updates**
@@ -41,9 +41,9 @@ Record `unknown` in any cell you cannot verify yet. Set `judgement` to `complete
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment construction and release date apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
+| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment algorithm or scheme, and which release date, apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
 | Fictional design-platform supplier | Workspace 4.2 (fictional) | When will the hosted archive sign or verify with a post-quantum algorithm? | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate plan line |
-| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which construction protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
+| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which algorithm or scheme protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
 
 ## Blank template
 

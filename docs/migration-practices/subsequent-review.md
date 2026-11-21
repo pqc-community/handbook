@@ -21,7 +21,7 @@ A subsequent-review date has arrived, or something has happened that may make th
 
 **Bring the review forward** when any of these happens:
 
-- a supplier changes the construction or date you recorded;
+- a supplier changes the algorithm, scheme, or date you recorded;
 - an authority republishes or amends a timeline you rely on;
 - a standard you rely on changes status, such as a draft becoming final or an errata notice;
 - an `unknown` that affects the order is resolved, such as a data confidentiality period or whether a verifier can be updated;
@@ -52,7 +52,7 @@ A decision-ready record, from [Protect this first](/resources/protect-this-first
 - **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead;
 - **archive signature plan from the supplier:** product engineering lead;
 - **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead;
-- **archive production rollout and production connection-log check:** product engineering lead;
+- **archive production rollout and production client handshake check:** product engineering lead;
 - **archive agility gaps:** product engineering lead;
 - **laptop versions:** IT lead.
 

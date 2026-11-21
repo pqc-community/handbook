@@ -25,8 +25,8 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 | 2026-11-10 | product-sensor plan line and verifier option | supported firmware-signing option before production design freeze on 2027-06-30 (fictional) | product security lead | open | 2026-12-01 |
 | 2026-11-10 | supplier response for the archive | written signature-support plan from the supplier | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | supplier response for the archive | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production connection-log check | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | archive agility check | configuration change, change window, and deprecation path not yet evidenced | product engineering lead | open | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2026-12-01 |
+| 2026-11-10 | archive agility check | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | office laptop fleet | installed browser and operating-system versions not yet recorded | IT lead | open | 2026-12-01 |
 
 ## Blank template

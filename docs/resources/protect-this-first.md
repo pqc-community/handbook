@@ -34,9 +34,9 @@ The product engineering lead records the supplier's written answer in the [vendo
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment construction and release date apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
+| Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment algorithm or scheme, and which release date, apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
 | Fictional design-platform supplier | Workspace 4.2 (fictional) | When will the hosted archive sign or verify with a post-quantum algorithm? | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate plan line |
-| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which construction protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
+| Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which algorithm or scheme protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
 
 ## Migration plan
 
@@ -55,7 +55,7 @@ The plan uses the UK NCSC target dates as planning guidance for this UK-based co
 
 The supplier names hybrid key establishment for TLS connections to the workspace: X25519MLKEM768, which combines ML-KEM-768 with the classical X25519 exchange and is one of the groups defined in [RFC 10024](/standards/modules-protocols-identity/rfc-10024/). The manufacturer records that option against [FIPS 203](/standards/post-quantum/fips-203/), which specifies ML-KEM. The letter covers connections, not the key wrapping of stored files, which the manufacturer has asked about separately. This example records the supplier's choice; it does not present it as a universal default or an independently validated implementation. NIST's FIPS 203 page notes a potential update, so a real implementation decision also checks the current errata. The UK NCSC timeline supplies migration-planning targets, not an algorithm selection.
 
-The product sensor remains blocked at option selection. The manufacturer does not choose a firmware-signing construction until it has evidence about a supported signature, the immutable trust anchor, and the production design constraints. It records that dependency in [Choosing an option](/technology-options/choosing/) and [Long-lived roots](/technology-options/long-lived-roots/).
+The product sensor remains blocked at option selection. The manufacturer does not choose a firmware-signing scheme until it has evidence about a supported signature, the immutable trust anchor, and the production design constraints. It records that dependency in [Choosing an option](/technology-options/choosing/) and [Long-lived roots](/technology-options/long-lived-roots/).
 
 ## Change record and deployed-state check
 
@@ -63,7 +63,7 @@ The [change record](/resources/change-record/) distinguishes a completed staging
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | evidence | owner | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | test the supplier's key-establishment update in staging | hybrid X25519MLKEM768 (ML-KEM-768 with X25519) for TLS connections | FIPS 203, NIST, 13 August 2024 (technical standard for ML-KEM) | Workspace 4.2 staging workspace with sample files and one test client | the test client connects and the supplier's connection log shows X25519MLKEM768 negotiated; an authorised test account retrieves the sample files | sample retrieval fails, or the connection log shows classical-only key establishment | product engineering lead with supplier support | staging: connection log inspected on 2026-10-21; production: inspect production connection logs after rollout | staging pilot passed with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated | supplier connection log inspected 2026-10-21 (fictional); fictional supplier letter, 2026-09-04 | product engineering lead | 2026-10-21 |
+| Product-design archive in supplier-hosted workspace | test the supplier's key-establishment update in staging | hybrid X25519MLKEM768 (ML-KEM-768 with X25519) for TLS connections | FIPS 203, NIST, 13 August 2024 (technical standard for ML-KEM) | Workspace 4.2 staging workspace with sample files and one test client | the test client connects and its handshake log shows X25519MLKEM768 negotiated, confirmed by the supplier's connection log; an authorised test account retrieves the sample files | sample retrieval fails, or either log shows classical-only key establishment | product engineering lead with supplier support | staging: client handshake log inspected on 2026-10-21; production: repeat the client check against the production workspace after rollout | staging pilot passed with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated | test client handshake log inspected 2026-10-21, with the supplier connection log as corroboration (fictional); fictional supplier letter, 2026-09-04 | product engineering lead | 2026-10-21 |
 
 The sensor verifier row remains blocked because the replacement signature and trust-root option is not known. No implementation test is claimed:
 
@@ -81,8 +81,8 @@ At the review on `2026-11-10`, the manufacturer reopened the migration plan, sup
 | 2026-11-10 | product-sensor plan line and verifier option | supported firmware-signing option before production design freeze on 2027-06-30 (fictional) | product security lead | open | 2026-12-01 |
 | 2026-11-10 | supplier response for the archive | written signature-support plan from the supplier | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | supplier response for the archive | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production connection-log check | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | archive agility check | configuration change, change window, and deprecation path not yet evidenced | product engineering lead | open | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2026-12-01 |
+| 2026-11-10 | archive agility check | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | office laptop fleet | installed browser and operating-system versions not yet recorded | IT lead | open | 2026-12-01 |
 
 ## Rejected alternative
