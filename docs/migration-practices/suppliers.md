@@ -28,7 +28,7 @@ Build the supplier list from the [inventory record](/resources/inventory-record/
 - **Tier 2:** suppliers whose contract renews or ends within your planning period. The handbook suggests looking at least two years ahead, because a renewal is the cheapest point to add a requirement.
 - **Tier 3:** suppliers of supported commodity products (see [Keep commodity software updated](/migration-practices/commodity-software/)).
 
-Ask tier 1 first and individually; ask tiers 2 and 3 in batches. Add each supplier's renewal or contract end date to the plan, so a renewal triggers a requirement rather than an automatic extension.
+Ask tier 1 first and individually, and tier 2 in batches. Do not send tier 3 suppliers questions while their products stay in support: rely on their published support and release information, as in Keep commodity software updated, and ask in writing when a product leaves support or comes up for renewal. Add each supplier's renewal or contract end date to the plan, so a renewal triggers a requirement rather than an automatic extension.
 
 ### 2. Ask the same questions in writing
 
@@ -60,7 +60,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Long-lived roots](/technology-options/long-lived-roots/)).
 
-CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web browsers and servers, in which products supporting post-quantum standards are widely available, and notes that the support is mostly for key establishment rather than signatures. It shows where such requirements are realistic today. US federal contractors should also follow the procurement rule that [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to propose; its Standards summary explains when that rule would bind contractors.
+CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web browsers and servers, in which products supporting post-quantum standards are widely available, and notes that the support is mostly for key establishment rather than signatures. It shows where such requirements are realistic today. US federal contractors should also watch for the procurement rule that [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to propose. It would bind contractors only once a final rule takes effect; its Standards summary explains.
 
 ### 6. Answer your own customers consistently
 

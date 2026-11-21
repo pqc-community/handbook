@@ -37,7 +37,7 @@ The first columns of the [migration plan](/resources/migration-plan/): one row p
 
 An insufficient record is "We will migrate all cryptography in one programme" or a numeric risk score with no reason.
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The archive's signature line and both laptop lines stay on supplier-led paths, each recorded separately so no job is dropped. Both first places stand because the jobs differ.
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The archive's signature line and the laptops' combined line stay on supplier-led paths; the archive's two jobs are recorded separately so neither is dropped, and the laptops share one row because both jobs follow the same supplier updates. Both first places stand because the jobs differ.
 
 ## Limits and next step
 

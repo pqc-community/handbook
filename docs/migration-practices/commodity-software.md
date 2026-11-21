@@ -22,12 +22,13 @@ You rely on supported commodity software — standard browsers, operating system
 3. **Check support status.** A product out of support, or a supplier with no migration plan, is no longer commodity: move it to the [Hard-to-change systems](/routes/hard-to-change-systems/) route.
 4. **Check for exceptions** that need their own priority line: long-lived confidential data belongs on the [Long-lived confidentiality](/routes/long-lived-confidentiality/) route, and bespoke systems or devices whose signature check cannot be updated belong on Hard-to-change systems.
 5. **Keep the fleet on the plan as a tracking line**, with a subsequent-review date, rather than as a bespoke project.
+6. **Write post-quantum requirements into purchases and renewals**, following step 5 of [Work with suppliers](/migration-practices/suppliers/). You do not need to send these suppliers questions while their products stay in support; rely on their published support and release information, and ask in writing when a product leaves support or comes up for renewal.
 
 The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025) say that for small and medium-sized organisations using standard commodity IT, migration should happen seamlessly as services are updated by their vendors. CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) lists web browsers and web servers among the categories where products supporting post-quantum standards are already widely available, and notes that in most such categories the support is for key establishment rather than signatures.
 
 ## Keep this evidence
 
-The installed versions and the date checked on the inventory record, and a written note for each exception naming the route it moved to.
+The installed versions and the date checked on the inventory record, the requirement text used in each purchase or renewal, and a written note for each exception naming the route it moved to.
 
 ## Example
 
@@ -37,7 +38,7 @@ A decision-ready record, from [Protect this first](/resources/protect-this-first
 
 ## Limits and next step
 
-Supplier updates usually cover key establishment before signatures; a platform on this path is not "migrated" for every job. Next, [review and report](/migration-practices/subsequent-review/) on the fleet at each review date.
+Supplier updates usually cover key establishment before signatures; a platform on this path is not "migrated" for every job. Next, [write requirements into purchases and renewals](/migration-practices/suppliers/#5-write-requirements-into-purchases-and-renewals), then [review and report](/migration-practices/subsequent-review/) on the fleet at each review date.
 
 ## Sources
 

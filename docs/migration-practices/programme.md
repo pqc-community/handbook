@@ -7,7 +7,7 @@ displayed_sidebar: migrationPracticesSidebar
 
 ## When this applies
 
-You have decided that migration is more than a routine supplier update: you are an urgent adopter, or you are on the organisation-wide route, or several asset owners will need to change systems on a shared timeline.
+[Decide whether to act](/migration-practices/diagnose/) put at least one asset on the full path, because you answered yes to any of its four questions. That includes regular adopters that operate a public-key infrastructure, sign for others, or run bespoke systems, as well as urgent adopters. Set one up too when several asset owners will need to change systems on a shared timeline.
 
 ## Who does what
 
@@ -26,7 +26,7 @@ You have decided that migration is more than a routine supplier update: you are 
 4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/migration-practices/subsequent-review/)).
 5. **Tell the people whose work will change**: asset owners, procurement, operations, and suppliers, who should expect written questions about their post-quantum plans. Explain the different jobs — key establishment, signatures, and verifiers that cannot be updated — so teams do not assume one cutover.
 
-Authority guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) ask organisations to define their migration goals as the first activity.
+Published migration guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) ask organisations to define their migration goals as the first activity.
 
 ## Keep this evidence
 

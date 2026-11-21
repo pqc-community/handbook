@@ -11,7 +11,7 @@ These pages are the records and references that route pages point to. Each entry
 
 Route: [Mostly standard, vendor-managed software](/routes/vendor-managed-software/).
 
-- [Vendor response log](/resources/vendor-response-log/) — **Reader:** someone on the vendor-managed route with no exception. **Output:** a vendor response log and either a note that no exception applies or the name of the route moved to.
+- [Vendor response log](/resources/vendor-response-log/) — **Reader:** someone on the vendor-managed route with no exception. **Output:** rows for any supplier you ask in writing, such as at a renewal or when a product leaves support, and either a note that no exception applies or the name of the route moved to.
 - [Review log](/resources/review-log/) — **Reader:** someone who has reopened records after [subsequent review](/migration-practices/subsequent-review/) on this route. **Output:** a dated line for what was reviewed, what stayed unresolved, and the next review date.
 
 ## Long-lived confidentiality
