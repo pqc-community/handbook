@@ -254,6 +254,8 @@ const sidebars: SidebarsConfig = {
         'technology-options/tls',
         'technology-options/vpn-ipsec',
         'technology-options/ssh',
+        'technology-options/wifi-network-access',
+        'technology-options/secure-messaging',
         'technology-options/ot-industrial',
       ],
     },
@@ -261,7 +263,12 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Certificates and identity',
       collapsed: false,
-      items: ['technology-options/pki', 'technology-options/dnssec', 'technology-options/identity'],
+      items: [
+        'technology-options/pki',
+        'technology-options/dnssec',
+        'technology-options/identity',
+        'technology-options/kerberos',
+      ],
     },
     {
       type: 'category',

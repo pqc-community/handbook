@@ -45,7 +45,7 @@ Homepage Situation Chooser (/)
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
   - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, keep commodity software updated (the short path for supplier-updated estates), set up the programme, inventory, prioritise, plan dates, work with suppliers (including purchases and renewals), make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
-  - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections (TLS, VPNs and IPsec, SSH, OT and industrial systems), certificates and identity (PKI, DNSSEC, identity and sign-in), signing (code, firmware and secure boot, documents and email), stored data, keys and hardware, and bought-in services. Process stays in Migration practices, positions in Standards, and concepts in Learn.
+  - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections (TLS, VPNs and IPsec, SSH, Wi-Fi and network access, secure messaging, OT and industrial systems), certificates and identity (PKI, DNSSEC, identity and sign-in, Kerberos and directory sign-in), signing (code, firmware and secure boot, documents and email), stored data, keys and hardware, and bought-in services. Process stays in Migration practices, positions in Standards, and concepts in Learn.
   - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
 
 ## Sitemap
@@ -163,10 +163,13 @@ Homepage Situation Chooser (/)
 /technology-options/tls/
 /technology-options/vpn-ipsec/
 /technology-options/ssh/
+/technology-options/wifi-network-access/
+/technology-options/secure-messaging/
 /technology-options/ot-industrial/
 /technology-options/pki/
 /technology-options/dnssec/
 /technology-options/identity/
+/technology-options/kerberos/
 /technology-options/code-signing/
 /technology-options/firmware-secure-boot/
 /technology-options/document-signing/
