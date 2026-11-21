@@ -13,7 +13,7 @@ Use this log when a planned subsequent review arrives, or when a trigger from th
 
 date, what was reviewed, item, owner, status, next review
 
-Give each item its own row. Set `status` to `open`, or to `closed` with the date it was resolved; carry each `open` item forward to the next review rather than rewriting it, and leave closed rows in place as the history. Review dates for individual assets live on the [migration plan](/resources/migration-plan/); the `next review` cell here is for the item itself.
+Give each item its own row. An item can also record a decision, such as a risk the sponsor has accepted, with who decided and the review date, so it is not lost. Set `status` to `open`, or to `closed` with the date it was resolved; carry each `open` item forward to the next review rather than rewriting it, and leave closed rows in place as the history. Review dates for individual assets live on the [migration plan](/resources/migration-plan/); the `next review` cell here is for the item itself.
 
 Record `unknown` in any cell you cannot verify yet. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
 

@@ -15,7 +15,7 @@ displayed_sidebar: migrationPracticesSidebar
 - The **migration lead** runs the programme, keeps the records, and sets the review cadence.
 - **Asset owners** answer for their systems' inventory, priority, and change records.
 - **Procurement** adds post-quantum requirements to purchases and renewals and chases supplier answers.
-- **Legal or risk** confirms which authority timelines and obligations apply and accepts residual risk.
+- **Legal or risk** confirms which authority timelines and obligations apply and advises the sponsor on accepting residual risk.
 - **Operations** runs changes, rollbacks, and deployed-state checks.
 
 ## Do this
