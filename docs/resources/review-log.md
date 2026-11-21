@@ -22,12 +22,12 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 | date | what was reviewed | item | owner | status | next review |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-10 | archive inventory row | update the row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1 | product engineering lead | closed 2026-11-10 | not applicable |
-| 2026-11-10 | product-sensor plan line and verifier option | supported firmware-signing option before production design freeze on 2027-06-30 (fictional) | product security lead | open | 2026-12-01 |
+| 2026-11-10 | product-sensor plan line and verifier option | supported firmware-signing option before production design freeze on 2027-06-30 (fictional); microcontroller supplier's written answer due 2026-12-15 | product security lead | open | 2026-12-15 |
 | 2026-11-10 | supplier response for the archive | written signature-support plan from the supplier | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | supplier response for the archive | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2027-02-10 |
 | 2026-11-10 | archive agility check | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | office laptop fleet | installed browser and operating-system versions not yet recorded | IT lead | open | 2026-12-01 |
+| 2026-11-10 | office laptop fleet | confirm the confidentiality period and record installed versions: 6 years under the office-records policy (fictional), with supported browser and operating-system versions recorded from the device-management console | IT lead | closed 2026-11-10 | not applicable |
 
 ## Blank template
 

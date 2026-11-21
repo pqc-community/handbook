@@ -18,7 +18,7 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Inventory records
 
-The table shows the rows as first recorded. The review on 2026-11-10 updated the archive row; see [Subsequent review](#subsequent-review).
+The table shows the rows as first recorded. The review on 2026-11-10 updated the archive and laptop rows; see [Subsequent review](#subsequent-review).
 
 The manufacturer records one row for each system on the [inventory record](/resources/inventory-record/). It marks facts it has not verified as `unknown`:
 
@@ -28,19 +28,20 @@ The manufacturer records one row for each system on the [inventory record](/reso
 | Firmware verifier for product sensor | product security lead | not applicable (verifies signatures only) | unknown | manufacturer | not applicable | unknown | pre-production product (fictional) | boot ROM trust anchor | firmware trust anchor | product design documentation (fictional) | unknown |
 | Office laptops | IT lead | unknown | unknown | operating-system and browser suppliers | unknown | unknown | unknown | unknown | unknown | none yet | unknown |
 
-## Supplier answer
+## Supplier answers
 
-The product engineering lead records the supplier's written answer in the [vendor response log](/resources/vendor-response-log/). The supplier, product, and version are explicitly fictional.
+The product engineering lead records the workspace supplier's written answer in the [vendor response log](/resources/vendor-response-log/). For the sensor, procurement asked the shortlisted microcontroller suppliers in writing; the product security lead records the one reply received so far. Every supplier, product, and version is fictional.
 
 | supplier | product and version | question | answer | date | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Fictional design-platform supplier | Workspace 4.2 (fictional) | Which key-establishment algorithm or scheme, and which release date, apply to connections to the hosted archive? | The letter says Workspace 4.2 is scheduled for 2026-10-01 and uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | complete | none for this question | pilot Workspace 4.2 for archive key establishment |
 | Fictional design-platform supplier | Workspace 4.2 (fictional) | When will the hosted archive sign or verify with a post-quantum algorithm? | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate plan line |
 | Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Which algorithm or scheme protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | The letter does not answer either question. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
+| Fictional microcontroller supplier | next microcontroller family (fictional) | Does the boot verifier support a NIST-approved post-quantum signature, and how is the trust anchor provisioned? | The reply says a post-quantum boot verifier is planned for the next family, without naming the scheme, a date, or how the trust anchor is provisioned. | 2026-10-30 | Fictional supplier email, 2026-10-30 | vague | written answer naming the scheme, trust-anchor provisioning, and sample date, due 2026-12-15 | do not select; the sensor verifier stays blocked |
 
 ## Migration plan
 
-The [migration plan](/resources/migration-plan/) holds both the order of work and the dates, one row per asset and job. The archive and the firmware verifier each come first for a different job; the archive's signature line follows the supplier, and the laptops are tracked on the supplier-update path rather than ranked. The order for the archive's key establishment rests on the 15-year retention policy, and its supplier readiness on the letter above.
+The [migration plan](/resources/migration-plan/) holds both the order of work and the dates, one row per asset and job. The archive and the firmware verifier each come first for a different job; the archive's signature line follows the supplier, and the laptops are tracked on the supplier-update path rather than ranked. The order for the archive's key establishment rests on the 15-year retention policy, and its supplier readiness on the letter above. Each row's subsequent review follows its own driver: the archive rows on the supplier's answers due 2026-12-01, the sensor on the microcontroller supplier's answer due 2026-12-15, and the laptops on the next quarterly review.
 
 The plan uses the UK NCSC target dates as planning guidance for this UK-based company. The guidance asks organisations to complete discovery and build an initial plan by 2028, to carry out their early, highest-priority migration activities by 2031, and to complete migration of systems, services, and products by 2035. The dates are targets, not a claim that every asset has the same milestone.
 
@@ -48,8 +49,8 @@ The plan uses the UK NCSC target dates as planning guidance for this UK-based co
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product-design archive in supplier-hosted workspace | key establishment | product engineering lead | first for key establishment | the designs must remain confidential for 15 years (company retention policy, fictional) | complete | UK NCSC target dates (UK NCSC, published and reviewed 20 March 2025) | carry out highest-priority migration activities by 2031; complete migration by 2035 | 2026-10-01 | 2026-10-21 (staging pilot passed) | unknown | unknown | workspace supplier's Workspace 4.2 release | complete production checks; obtain end of support for Workspace 4.1 | 2026-12-01 |
 | Product-design archive in supplier-hosted workspace | signatures | product engineering lead | track with the supplier; no bespoke work yet | the supplier has given no signature date (fictional supplier letter, 2026-09-04) | vague | UK NCSC target dates (UK NCSC, published and reviewed 20 March 2025) | complete migration by 2035 | unknown | unknown | unknown | unknown | workspace supplier | obtain the supplier's written signature plan | 2026-12-01 |
-| Firmware verifier for product sensor | non-updatable verifier | product security lead | first for non-updatable verifier | the trust anchor cannot be changed after shipment (product design documentation, fictional; NIST IR 8547 device design advice) | not asked yet | UK NCSC target dates (UK NCSC, published and reviewed 20 March 2025); production design freeze (product plan, fictional) | resolve a supported signature option before production design freeze on 2027-06-30 (fictional); include the long-lived hardware root in the initial plan by 2028 | unknown | unknown | unknown | unknown | boot ROM; production design freeze on 2027-06-30 (fictional) | obtain a supported signature and trust-root option before design freeze | 2026-12-01 |
-| Office laptops | key establishment; signatures | IT lead | tracked, not ranked (supplier-update path) | no unsupported product or other exception is identified (UK NCSC timelines, published and reviewed 20 March 2025) | not asked (commodity supplier-update path) | UK NCSC target dates; supplier-update path (UK NCSC, published and reviewed 20 March 2025) | track supplier delivery and include the fleet in the 2035 completion view | unknown | not applicable (supplier-update path) | unknown | unknown | browser and operating-system suppliers | confirm support status and record installed versions | 2026-12-01 |
+| Firmware verifier for product sensor | non-updatable verifier | product security lead | first for non-updatable verifier | the trust anchor cannot be changed after shipment (product design documentation, fictional; NIST IR 8547 device design advice) | vague (fictional microcontroller supplier email, 2026-10-30) | UK NCSC target dates (UK NCSC, published and reviewed 20 March 2025); production design freeze (product plan, fictional) | resolve a supported signature option before production design freeze on 2027-06-30 (fictional); include the long-lived hardware root in the initial plan by 2028 | unknown | unknown | unknown | unknown | boot ROM; production design freeze on 2027-06-30 (fictional) | obtain a supported signature and trust-root option before design freeze | 2026-12-15 |
+| Office laptops | key establishment; signatures | IT lead | tracked, not ranked (supplier-update path) | no unsupported product or other exception is identified (UK NCSC timelines, published and reviewed 20 March 2025) | not asked (commodity supplier-update path) | UK NCSC target dates; supplier-update path (UK NCSC, published and reviewed 20 March 2025) | track supplier delivery and include the fleet in the 2035 completion view | unknown | not applicable (supplier-update path) | unknown | unknown | browser and operating-system suppliers | keep the fleet on supported versions; check support status at each review | 2027-02-10 |
 
 ## Option and authority
 
@@ -73,17 +74,17 @@ The sensor verifier row remains blocked because the replacement signature and tr
 
 ## Subsequent review
 
-At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier response, archive pilot evidence, and sensor verifier plan. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The [review log](/resources/review-log/) records each item with its own owner and status: the inventory update is closed, and the six unresolved items stay open with the next review date. The operations director reported the outcome to the managing director the same day:
+At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier responses, archive pilot evidence, sensor verifier plan, and laptop row. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 2026-12-01, the sensor on 2026-12-15, and the archive production check at the quarterly review on 2027-02-10, because the programme reviews every three months while a line is first in its job's order. The operations director reported the outcome to the managing director the same day:
 
 | date | what was reviewed | item | owner | status | next review |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-10 | archive inventory row | update the row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1 | product engineering lead | closed 2026-11-10 | not applicable |
-| 2026-11-10 | product-sensor plan line and verifier option | supported firmware-signing option before production design freeze on 2027-06-30 (fictional) | product security lead | open | 2026-12-01 |
+| 2026-11-10 | product-sensor plan line and verifier option | supported firmware-signing option before production design freeze on 2027-06-30 (fictional); microcontroller supplier's written answer due 2026-12-15 | product security lead | open | 2026-12-15 |
 | 2026-11-10 | supplier response for the archive | written signature-support plan from the supplier | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | supplier response for the archive | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2027-02-10 |
 | 2026-11-10 | archive agility check | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | office laptop fleet | installed browser and operating-system versions not yet recorded | IT lead | open | 2026-12-01 |
+| 2026-11-10 | office laptop fleet | confirm the confidentiality period and record installed versions: 6 years under the office-records policy (fictional), with supported browser and operating-system versions recorded from the device-management console | IT lead | closed 2026-11-10 | not applicable |
 
 ## Rejected alternative
 

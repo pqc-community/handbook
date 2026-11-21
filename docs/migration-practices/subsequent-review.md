@@ -47,16 +47,15 @@ The [review log](/resources/review-log/): date, what was reviewed, unresolved it
 
 An insufficient record is "The migration project is closed."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier response, and the product sensor's priority. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging. It then carries six unresolved items, each on its own row with its own owner:
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier responses, the product sensor's plan line, and the laptop row. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, and closes the laptop item once the IT lead confirms a six-year confidentiality period and records the installed versions. It then carries five unresolved items, each on its own row with its own owner and next review:
 
-- **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead;
-- **archive signature plan from the supplier:** product engineering lead;
-- **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead;
-- **archive production rollout and production client handshake check:** product engineering lead;
-- **archive agility gaps:** product engineering lead;
-- **laptop versions:** IT lead.
+- **archive signature plan from the supplier:** product engineering lead, 2026-12-01, when the written answer is due;
+- **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead, 2026-12-01;
+- **archive agility gaps:** product engineering lead, 2026-12-01, as part of the same supplier follow-up;
+- **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead, 2026-12-15, when the microcontroller supplier's answer is due;
+- **archive production rollout and production client handshake check:** product engineering lead, at the quarterly review on 2027-02-10.
 
-The next review is set for 2026-12-01. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked.
+Each date follows the item's own driver rather than one review date for everything. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked.
 
 ## Limits and next step
 
