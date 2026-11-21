@@ -26,7 +26,7 @@ From [Protect this first](/resources/protect-this-first/). The organisation, rol
 | goal | Keep product designs confidential against future quantum attack, secure the product sensor's signature path before production design freeze, and keep office IT on supported supplier updates. |
 | in scope | product-design archive; product sensor firmware verifier; office laptops, on the supplier-update path |
 | out of scope | systems not yet on the inventory, until the first-pass inventory is complete |
-| done for this phase | inventory rows for all three assets; written supplier answers for the archive; a supported signature option for the sensor, or an escalation to the sponsor, before production design freeze on 2027-06-30 |
+| done for this phase | inventory rows for all three assets, including the sensor's firmware-signing key; written supplier answers for the archive; a supported signature option for the sensor, or an escalation to the sponsor, before production design freeze on 2027-06-30 |
 | executive sponsor | managing director |
 | migration lead | operations director |
 | asset owners | product engineering lead (archive); product security lead (sensor); IT lead (laptops) |

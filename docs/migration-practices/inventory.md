@@ -45,10 +45,11 @@ The [inventory record](/resources/inventory-record/), with every column filled, 
 
 An insufficient record is "Our TLS scan found no issues."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), lists three rows:
+A decision-ready record, from [Protect this first](/resources/protect-this-first/), lists four rows:
 
 - **the supplier-hosted product-design archive:** 15-year confidentiality under company policy, with cryptography marked as supplier-hosted and not visible to a scan;
 - **the product sensor's firmware verifier:** key establishment `not applicable`, and a boot ROM trust anchor a scan cannot see;
+- **the key that signs the sensor's firmware:** its own row, because step 3 lists firmware-signing keys among the keys to find, with where it is stored still to record;
 - **the office laptops.**
 
 Every algorithm the manufacturer has not verified is `unknown`, and each row names its owner.
