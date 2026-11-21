@@ -35,7 +35,7 @@ You have a priority record and need to turn it into dated, owned milestones, or 
 4. **Record dependencies that can move a date**: a supplier release, a certificate authority, a hardware refresh, a contract renewal, or a product design freeze. A design freeze is a hard deadline: record its date and escalate when an option is still missing as it approaches.
 5. **Re-plan when a date moves.** Replace the superseded date, note why, and check whether a later milestone is now at risk.
 
-The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028, including long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. NIST IR 8547 advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptanalytically relevant quantum computer exists, should be designed from the start to verify quantum-resistant code signatures.
+The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028 that identifies any requirement to migrate long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. NIST IR 8547 advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptanalytically relevant quantum computer exists, should be designed to require quantum-resistant signatures on their executable code.
 
 ## Keep this evidence
 

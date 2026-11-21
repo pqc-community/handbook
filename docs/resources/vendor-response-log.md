@@ -56,7 +56,7 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- ASD and ACSC, with CISA and NSA, Post-quantum questions to ask your vendors, updated 5 November 2026. [Vendor guide](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
+- Australian Signals Directorate's ACSC, with CISA and NSA, Post-quantum questions to ask your vendors, published 16 July 2026, last reviewed 5 November 2026. [Vendor questions](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
 - CISA, NSA, and NIST, Quantum-Readiness fact sheet, as of 17 August 2023. [Fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 
 ## Related pages

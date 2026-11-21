@@ -51,7 +51,7 @@ The primary next page is [Migration plan](/resources/migration-plan/).
 
 ## Sources
 
-- ASD, Planning for post-quantum cryptography. [Planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
+- Australian Signals Directorate, Planning for post-quantum cryptography, published 6 July 2022, last reviewed 22 September 2025. [Planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
 - ETSI, TR 104 016, October 2024. [TR 104 016](https://www.etsi.org/deliver/etsi_tr/104000_104099/104016/01.01.01_60/tr_104016v010101p.pdf)
 
 ## Related pages
