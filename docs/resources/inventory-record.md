@@ -21,7 +21,7 @@ List every dependency inside the `dependencies` cell separated by a semicolon ra
 
 | system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | product engineering lead | unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.1 (fictional) | unknown | unknown | unknown |
+| Product-design archive in supplier-hosted workspace | product engineering lead | unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.1 (fictional) | workspace supplier's hosting service | supplier-hosted cryptography | unknown |
 
 ## Blank template
 

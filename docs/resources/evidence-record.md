@@ -19,7 +19,7 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 | claim | record | source | date | owner | subsequent review |
 | --- | --- | --- | --- | --- | --- |
-| The Workspace 4.2 staging pilot passed; production rollout remains pending | change record for the product-design archive | fictional supplier letter, 2026-09-04; FIPS 203, 13 August 2024 | 2026-10-21 | product engineering lead | 2026-12-01 |
+| The Workspace 4.2 staging pilot passed with X25519MLKEM768 negotiated; production rollout remains pending | change record for the product-design archive | supplier connection log inspected 2026-10-21 (fictional); fictional supplier letter, 2026-09-04 | 2026-10-21 | product engineering lead | 2026-12-01 |
 
 ## Blank template
 

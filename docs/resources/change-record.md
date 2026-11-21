@@ -19,13 +19,13 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | test the supplier's key-establishment update in staging | ML-KEM-768 | FIPS 203, NIST, 13 August 2024 (technical standard) | Workspace 4.2 staging workspace with sample files | confirm the release setting and that an authorised test account can retrieve sample files | test account cannot retrieve the sample files | product engineering lead with supplier support | supplier release record names Workspace 4.2 and ML-KEM-768 | pilot passed; production rollout pending | 2026-10-21 |
+| Product-design archive in supplier-hosted workspace | test the supplier's key-establishment update in staging | hybrid X25519MLKEM768 (ML-KEM-768 with X25519) for TLS connections | FIPS 203, NIST, 13 August 2024 (technical standard for ML-KEM) | Workspace 4.2 staging workspace with sample files and one test client | the test client connects and the supplier's connection log shows X25519MLKEM768 negotiated; an authorised test account retrieves the sample files | sample retrieval fails, or the connection log shows classical-only key establishment | product engineering lead with supplier support | staging: connection log inspected on 2026-10-21; production: inspect production connection logs after rollout | staging pilot passed; production rollout pending | 2026-10-21 |
 
 The firmware row is blocked: implementation does not start while the option is unknown.
 
 | system | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Firmware verifier for product sensor | select and test a replacement before production design freeze | unknown | unknown | one pre-production sensor | not started; option unknown | unknown | product security lead | confirm the selected verifier and trust anchor before design approval | unknown | unknown |
+| Firmware verifier for product sensor | select and test a replacement before production design freeze | unknown | unknown | one pre-production sensor | not started; option unknown | not applicable (boot ROM cannot change after shipment) | not applicable | confirm the selected verifier and trust anchor before design approval | unknown | unknown |
 
 ## Blank template
 

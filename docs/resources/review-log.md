@@ -19,7 +19,10 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 | date | what was reviewed | unresolved items | owner | next review |
 | --- | --- | --- | --- | --- |
-| 2026-11-10 | archive pilot evidence, supplier response, and product-sensor priority | supported firmware-signing option and supplier plan; archive signature-support date | product security lead | 2026-12-01 |
+| 2026-11-10 | product-sensor priority and verifier plan | supported firmware-signing option before production design freeze on 2027-06-30 (fictional) | product security lead | 2026-12-01 |
+| 2026-11-10 | supplier response and archive pilot evidence | archive signature-support plan and stored-data key wrapping answer from the supplier | product engineering lead | 2026-12-01 |
+| 2026-11-10 | archive pilot evidence and agility check | production rollout of Workspace 4.2; agility gaps (configuration change, change window, deprecation path) | product engineering lead | 2026-12-01 |
+| 2026-11-10 | office laptop fleet | installed browser and operating-system versions not yet recorded | IT lead | 2026-12-01 |
 
 ## Blank template
 
