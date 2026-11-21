@@ -53,3 +53,56 @@
     hyphenate-limit-chars: 10 5 5;
   }
 }
+
+/* On phone screens, show 3- and 4-column tables as stacked cards, one per row,
+   with each cell labelled by its column heading (labels come from
+   src/plugins/rehype-table-labels.mjs). Wider record tables still scroll. */
+@media (max-width: 576px) {
+  .markdown table.table--stack {
+    display: block;
+    overflow: visible;
+    border: 0;
+  }
+
+  .markdown table.table--stack thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .markdown table.table--stack tbody,
+  .markdown table.table--stack tr,
+  .markdown table.table--stack td {
+    display: block;
+  }
+
+  .markdown table.table--stack tr {
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--ifm-table-border-color);
+    border-radius: var(--ifm-global-radius);
+  }
+
+  .markdown table.table--stack td {
+    border: 0;
+    padding: 0.375rem 0.75rem;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+  }
+
+  /* In comparison tables the first heading is blank, so that cell names the row */
+  .markdown table.table--stack td[data-label=''] {
+    font-weight: 700;
+  }
+
+  .markdown table.table--stack td[data-label]:not([data-label=''])::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--ifm-color-emphasis-700);
+  }
+}
+

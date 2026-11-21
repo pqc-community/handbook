@@ -73,7 +73,7 @@ Always retain system sans-serif and monospace fallbacks. Code blocks use high-co
 | Footer | Deep Teal (`#013B4E`) with Surface Light (`#F5FCFD`) links and safe wrapping on narrow mobile viewports (`.footer__link-item { max-width: 100%; }`). |
 | Cards | Outlined surface cards with subtle `1px` borders that highlight in Primary Cyan (`#00C5D8`) on hover and stack cleanly to one column on mobile (`≤ 768px`). |
 | Homepage | Calm, utilitarian entry point: a concise Deep Teal hero header followed by clean card grids and structured reference tables rather than promotional banners or decorative splash graphics. |
-| Tables | Clean borders, subtle header shading, and scannable cell density suitable for both desktop and mobile screens. |
+| Tables | Clean borders, subtle header shading, and scannable cell density suitable for both desktop and mobile screens. On phone screens, 3- and 4-column tables become stacked cards, one per row, with each cell labelled by its column heading; wider record tables scroll inside the page. |
 
 ## Diagrams and Illustrations
 

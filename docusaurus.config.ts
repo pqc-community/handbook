@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import rehypeTableLabels from './src/plugins/rehype-table-labels.mjs';
 
 const config: Config = {
   title: 'PQC Handbook',
@@ -24,7 +25,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {routeBasePath: '/', sidebarPath: './sidebars.ts'},
+        docs: {routeBasePath: '/', sidebarPath: './sidebars.ts', rehypePlugins: [rehypeTableLabels]},
         blog: false,
         theme: {customCss: './src/css/custom.css'},
         sitemap: {changefreq: 'weekly', priority: 0.5, filename: 'sitemap.xml'},
