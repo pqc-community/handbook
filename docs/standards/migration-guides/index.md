@@ -5,7 +5,7 @@ displayed_sidebar: standardsSidebar
 description: National, ETSI and consortium guides for running a post-quantum migration programme, building inventories and engaging suppliers.
 ---
 
-These summaries cover guides for running a post-quantum migration programme, finding quantum-vulnerable cryptography and engaging suppliers, rather than individual algorithm specifications. Most are national guidance that recommends action to a stated audience, such as government departments, critical infrastructure or Member States; ETSI's reports are informative technical reports; and the PQCC roadmap is non-governmental. None of them binds organisations outside its stated audience. National milestones such as 2030, 2031 and 2035 apply to the audiences those authorities name; see [Timelines](/learn/explainers/timelines/). For national positions on algorithms and hybrid use, see [National algorithm positions](/standards/national-algorithm-positions/).
+These summaries cover guides for running a post-quantum migration programme, finding quantum-vulnerable cryptography and engaging suppliers, rather than individual algorithm specifications. Most are national guidance that recommends action to a stated audience, such as government departments, critical infrastructure or Member States; ETSI's reports are informative technical reports. None of them binds organisations outside its stated audience. National milestones such as 2030, 2031 and 2035 apply to the audiences those authorities name; see [Timelines](/learn/explainers/timelines/). For national positions on algorithms and hybrid use, see [National algorithm positions](/standards/national-algorithm-positions/).
 
 ## Which guide do I need?
 
@@ -27,7 +27,6 @@ These summaries cover guides for running a post-quantum migration programme, fin
 | Canadian CFDIR guide | Recommended quantum-readiness best practices from CFDIR's working group; Version 04, 10 July 2024. | [Canadian CFDIR guide](/standards/migration-guides/canadian-cfdir-guide/) |
 | ETSI TR 103 619 | Informative report on a three-stage migration: inventory, plan, execute; V1.1.1, July 2020. | [ETSI TR 103 619](/standards/migration-guides/etsi-tr-103-619/) |
 | ETSI TR 104 016 | Informative report setting out an 11-step repeatable migration cycle; V1.1.1, October 2024. | [ETSI TR 104 016](/standards/migration-guides/etsi-tr-104-016/) |
-| PQCC migration roadmap | Non-governmental coalition roadmap in four categories; released 28 May 2025. | [PQCC roadmap](/standards/migration-guides/pqcc-roadmap/) |
 
 ### Discovery, readiness and supplier guides
 
