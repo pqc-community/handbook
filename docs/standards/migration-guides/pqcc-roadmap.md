@@ -2,19 +2,18 @@
 title: "PQCC: Post-Quantum Cryptography Migration Roadmap"
 sidebar_label: PQCC roadmap
 displayed_sidebar: standardsSidebar
-description: Post-Quantum Cryptography Coalition four-category roadmap for enterprise preparation, baseline discovery, execution, and monitoring.
+description: Post-Quantum Cryptography Coalition roadmap released in May 2025, grouping migration work into preparation, baseline understanding, planning and execution, and monitoring and evaluation.
 ---
 
 ## What it covers
 
-The PQCC migration roadmap groups enterprise transition work into four categories: preparation, baseline understanding, planning and execution, and ongoing monitoring and evaluation.
+The Post-Quantum Cryptography Coalition's migration roadmap groups an organisation's transition into four areas: preparation (identifying stakeholders, assessing vulnerabilities, and aligning goals with migration timelines), baseline understanding (an inventory of cryptographic assets and prioritised critical resources), planning and execution (acquiring or developing quantum-safe solutions and implementing them), and monitoring and evaluation (tracking progress and reassessing cryptographic security as threats evolve).
 
-It is published by the Post-Quantum Cryptography Coalition, whose launch of the roadmap MITRE announced. It is non-governmental guidance: it recommends practices but has no regulatory standing and binds no audience.
+The coalition is a non-governmental community of technologists and researchers, coordinated by MITRE, whose members come from industry and research organisations. MITRE's release says the roadmap is meant for organisations of all sizes and addresses chief information officers and chief information security officers. It is voluntary guidance with no regulatory standing; it binds no audience.
 
 :::info[Official texts]
 
-- [PQCC roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
-- [MITRE publication announcement (HTML)](https://www.mitre.org/news-insights/news-release/post-quantum-cryptography-coalition-unveils-pqc-migration-roadmap)
+- [MITRE release announcing the roadmap, with download link (HTML)](https://www.mitre.org/news-insights/news-release/post-quantum-cryptography-coalition-unveils-pqc-migration-roadmap)
 
 :::
 
@@ -22,15 +21,15 @@ It is published by the Post-Quantum Cryptography Coalition, whose launch of the 
 
 | Date | Event |
 | --- | --- |
-| <time dateTime="2025-05">2025&#8209;05</time> | The Post-Quantum Cryptography Coalition published its PQC Migration Roadmap. |
+| <time dateTime="2025-05-28">2025&#8209;05&#8209;28</time> | The Post-Quantum Cryptography Coalition released its PQC Migration Roadmap, announced by MITRE. |
 
 ## Relationship with other standards
 
-The roadmap is aimed at multi-sector enterprise programme teams looking for a vendor-neutral checklist. It does not cover jurisdiction-specific legal duties or regulator milestones; for those, see the national guides in [Post-quantum migration guides](/standards/migration-guides/) and [Timelines](/learn/explainers/timelines/). For a fuller programme methodology, compare the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/).
+MITRE's release says the roadmap builds on the NIST post-quantum standards ([FIPS 203](/standards/post-quantum/fips-203/), [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/)) and on the [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/) project, and that organisations can tailor it to their own needs. It does not set jurisdiction-specific legal duties or regulator milestones; for those, see the national guides in [Post-quantum migration guides](/standards/migration-guides/) and [Why migration timelines differ](/learn/explainers/timelines/). For a fuller programme methodology from national authorities, compare the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) and [ASD's planning guidance](/standards/migration-guides/asd-planning/).
 
 ## Sources
 
-- Post-Quantum Cryptography Coalition, PQC Migration Roadmap, May 2025. [PQCC roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
+- MITRE, Post-Quantum Cryptography Coalition Unveils PQC Migration Roadmap, news release, 28 May 2025. [MITRE release](https://www.mitre.org/news-insights/news-release/post-quantum-cryptography-coalition-unveils-pqc-migration-roadmap)
 
 ## Related pages
 

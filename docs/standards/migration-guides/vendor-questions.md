@@ -14,7 +14,6 @@ It was authored by the Australian Signals Directorate's Australian Cyber Securit
 :::info[Official texts]
 
 - [ASD publication page (HTML)](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
-- [Downloadable version (PDF)](https://www.cyber.gov.au/sites/default/files/2026-11/Post-quantum%20questions%20to%20ask%20your%20vendors%20%28November-2026%29.pdf)
 
 :::
 

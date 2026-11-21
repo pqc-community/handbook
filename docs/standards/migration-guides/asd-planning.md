@@ -14,7 +14,6 @@ The Australian Signals Directorate (ASD) published the guidance on 6 July 2022 a
 :::info[Official texts]
 
 - [ASD publication page (HTML)](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
-- [Downloadable version (PDF)](https://www.cyber.gov.au/sites/default/files/2026-10/Planning%20for%20post-quantum%20cryptography%20%28September%202025%29.pdf)
 
 :::
 
