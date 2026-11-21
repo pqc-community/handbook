@@ -45,7 +45,7 @@ Homepage Situation Chooser (/)
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
   - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, keep commodity software updated (the short path for supplier-updated estates), set up the programme, inventory, prioritise, plan dates, work with suppliers (including purchases and renewals), make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
-  - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
+  - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job: *choosing* (who decides, the hybrid rule, and recording the authority), *key establishment* (data in transit and stored data), *signatures* (certificates, documents, and code signing where verifiers can be updated), and *long-lived roots* (verifiers that cannot be updated). Each page records its decision on an existing record in `/resources/`.
   - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
 
 ## Sitemap
