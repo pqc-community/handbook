@@ -32,6 +32,7 @@ Route: [Products or systems that may be hard to change](/routes/hard-to-change-s
 
 Route: [Coordinating a migration across the organisation](/routes/organisation-wide/).
 
+- [Programme charter](/resources/programme-charter/) — **Reader:** a sponsor or migration lead starting a programme. **Output:** a one-page charter with the goal, scope, named roles, first budget line, and reporting.
 - [Migration plan](/resources/migration-plan/) — **Reader:** a migration lead coordinating many assets. **Output:** one row per asset and job with an owner, its place in the order, an applicable timeline, the four separate dates (supplier release, testing, production deployment, end of support), and a subsequent-review date.
 - [Change record](/resources/change-record/) — **Reader:** someone asked what supports a claim that a change is complete. **Output:** the result, stating what has and has not been shown, and the evidence behind it.
 - [Review log](/resources/review-log/) — **Reader:** someone due to reopen programme records after verification and communication. **Output:** an updated review log and the next review date.
@@ -40,13 +41,15 @@ Route: [Coordinating a migration across the organisation](/routes/organisation-w
 
 Route: [Ask a supplier](/routes/ask-a-supplier/).
 
-- [Vendor response log](/resources/vendor-response-log/) — **Reader:** procurement or an asset owner preparing or following up supplier questions. **Output:** at least one decision-ready row with the product, the construction, the answer, and the judgement.
+- [Vendor response log](/resources/vendor-response-log/) — **Reader:** procurement or an asset owner preparing or following up supplier questions. **Output:** at least one decision-ready row with the product, the algorithm or scheme, the answer, and the judgement.
 
 ## Not sure
 
 Route: [Not sure which route applies](/routes/not-sure/).
 
 This route's output is a named situation route or a list of unknowns and the person who will close them. The primary next page is [Decide whether to act](/migration-practices/diagnose/), which leads to an [inventory record](/resources/inventory-record/) when the handbook applies.
+
+- [Decision note](/resources/decision-note/) — **Reader:** someone deciding whether post-quantum migration applies. **Output:** one row per asset with the answers to the four questions, the urgency category and path, and the owner of the next step, accepted by the sponsor.
 
 ## Edition reference
 

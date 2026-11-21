@@ -11,7 +11,7 @@ Each role supplies one input to the plan:
 
 | Role | Input |
 | --- | --- |
-| Executive sponsor | The decision to proceed |
+| Executive sponsor | The decision to proceed, in an accepted [decision note](/resources/decision-note/), and the agreed [programme charter](/resources/programme-charter/) |
 | Migration lead | The migration plan |
 | Asset owners | The system and its unknowns |
 | Procurement | The supplier questions |

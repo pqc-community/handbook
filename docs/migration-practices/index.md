@@ -34,9 +34,9 @@ The practices are written for organisations without specialist cryptography staf
 
 | Practice | Who leads | Record it produces |
 | --- | --- | --- |
-| [Decide whether to act](/migration-practices/diagnose/) | Executive sponsor with the migration lead | Decision note and first [inventory](/resources/inventory-record/) rows |
+| [Decide whether to act](/migration-practices/diagnose/) | Executive sponsor with the migration lead | [Decision note](/resources/decision-note/) and first [inventory](/resources/inventory-record/) rows |
 | [Keep commodity software updated](/migration-practices/commodity-software/) | Operations | Checked versions in the [inventory record](/resources/inventory-record/) |
-| [Set up the programme](/migration-practices/programme/) | Executive sponsor | Programme charter (fields on the page) |
+| [Set up the programme](/migration-practices/programme/) | Executive sponsor | [Programme charter](/resources/programme-charter/) |
 | [Inventory the cryptography](/migration-practices/inventory/) | Migration lead with asset owners | [Inventory record](/resources/inventory-record/) |
 | [Decide what to migrate first](/migration-practices/priority/) | Migration lead with legal or risk | Order and reason on the [migration plan](/resources/migration-plan/) |
 | [Plan the migration](/migration-practices/plan/) | Migration lead | Timeline, milestone, and four dates on the [migration plan](/resources/migration-plan/) |

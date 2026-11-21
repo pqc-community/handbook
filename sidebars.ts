@@ -252,6 +252,8 @@ const sidebars: SidebarsConfig = {
   ],
   resourcesSidebar: [
     'resources/index',
+    'resources/decision-note',
+    'resources/programme-charter',
     'resources/inventory-record',
     'resources/vendor-response-log',
     'resources/migration-plan',

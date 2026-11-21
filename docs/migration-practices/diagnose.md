@@ -37,7 +37,7 @@ You have not yet decided whether post-quantum migration is a programme for your 
 
 ## Keep this evidence
 
-A short decision note that the sponsor has accepted: the answers to questions A to D, the urgency category and path for each asset, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/inventory-record/).
+A [decision note](/resources/decision-note/) that the sponsor has accepted: the answers to questions A to D, the urgency category and path for each asset, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/inventory-record/).
 
 ## Example
 
@@ -58,5 +58,6 @@ This decision does not choose algorithms or dates, and it is not a formal risk a
 
 - [Not sure](/routes/not-sure/)
 - [Set up the programme](/migration-practices/programme/)
+- [Decision note](/resources/decision-note/)
 - [Inventory record](/resources/inventory-record/)
 - [When to start: Mosca's inequality](/learn/explainers/when-to-start/)

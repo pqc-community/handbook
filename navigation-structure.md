@@ -165,6 +165,8 @@ Homepage Situation Chooser (/)
 /technology-options/long-lived-roots/
 
 /resources/
+/resources/decision-note/
+/resources/programme-charter/
 /resources/inventory-record/
 /resources/vendor-response-log/
 /resources/migration-plan/

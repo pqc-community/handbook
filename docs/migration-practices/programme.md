@@ -30,7 +30,7 @@ Authority guides start in the same place. The Post-Quantum Cryptography Coalitio
 
 ## Keep this evidence
 
-A one-page programme charter: goal and scope, named sponsor, migration lead, asset owners, procurement, legal or risk, and operations contacts; the first budget line and when it will be revisited; the reporting cadence; and the date the charter was agreed. Store it with the [migration plan](/resources/migration-plan/).
+A one-page [programme charter](/resources/programme-charter/): goal and scope, named sponsor, migration lead, asset owners, procurement, legal or risk, and operations contacts; the first budget line and when it will be revisited; the reporting cadence; and the date the charter was agreed. Store it with the [migration plan](/resources/migration-plan/).
 
 ## Example
 
@@ -50,6 +50,7 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 ## Related pages
 
 - [Decide whether to act](/migration-practices/diagnose/)
+- [Programme charter](/resources/programme-charter/)
 - [Organisation-wide](/routes/organisation-wide/)
 - [Migration plan](/resources/migration-plan/)
 - [Review and report](/migration-practices/subsequent-review/)

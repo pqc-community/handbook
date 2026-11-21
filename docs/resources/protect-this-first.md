@@ -2,7 +2,7 @@
 title: Protect this first
 sidebar_label: Protect this first
 displayed_sidebar: resourcesSidebar
-description: Follow a fictional UK manufacturer through inventory, supplier answers, the migration plan, a change and its evidence, and review.
+description: Follow a fictional UK manufacturer through the decision note and charter, inventory, supplier answers, the migration plan, a change and its evidence, and review.
 ---
 
 This worked example follows a fictional small manufacturer based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration.
@@ -11,7 +11,7 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Initial facts
 
-- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The programme charter was agreed on 2026-08-03 (fictional).
+- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The managing director accepted the [decision note](/resources/decision-note/) on 2026-07-13, and the [programme charter](/resources/programme-charter/) was agreed on 2026-08-03 (fictional); both pages use this example.
 - **Product-design archive**: The supplier controls the hosted workspace software; the product engineering lead owns the design data. The company's retention policy requires the designs to remain confidential for at least 15 years.
 - **Product sensor firmware verifier**: A trust anchor is held in write-protected boot ROM. The verifier cannot accept a replacement trust anchor after the sensor ships, so the product security lead needs to resolve the signature path before production design freeze, planned for 2027-06-30 (fictional).
 - **Office laptops**: Standard browsers and operating systems are under vendor support and follow the commodity supplier-update path. No exception has been identified.
@@ -97,6 +97,8 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 
 ## Related pages
 
+- [Decision note](/resources/decision-note/)
+- [Programme charter](/resources/programme-charter/)
 - [Inventory the cryptography](/migration-practices/inventory/)
 - [Inventory record](/resources/inventory-record/)
 - [Decide what to migrate first](/migration-practices/priority/)
