@@ -43,7 +43,7 @@ Homepage Situation Chooser (/)
 - **Situation Chooser (`/`) and Routes (`/routes/*`)**: Route visitors by operational context (*vendor-managed software*, *long-lived confidentiality*, *hard-to-change systems*, *organisation-wide coordination*, *ask a supplier*, or *not sure*) into an ordered sequence of reference pages without duplicating those pages into separate silos.
 - **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
-  - **Standards (`/standards/`)** — Reference summaries of standards, directives, and external migration guides, grouped by their role in the transition.
+  - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
   - **Migration practices (`/migration-practices/`)** — Reusable operational procedures across diagnosis, discovery, prioritisation, supplier engagement, implementation, agility, and review.
   - **Technology options (`/technology-options/`)** — Functional option guides organised by cryptographic job (*choosing*, *key establishment*, *signatures*, *long-lived roots*).
   - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
@@ -91,11 +91,13 @@ Homepage Situation Chooser (/)
 /standards/post-quantum/fips-205/
 /standards/post-quantum/sp-800-208/
 /standards/post-quantum/nist-ir-8528/
+/standards/post-quantum/nist-ir-8610/
 /standards/post-quantum/nist-ir-8545/
 /standards/transition-and-key-management/
 /standards/transition-and-key-management/nist-ir-8547/
 /standards/transition-and-key-management/sp-800-131a/
 /standards/transition-and-key-management/sp-800-57-part-1/
+/standards/transition-and-key-management/cswp-39/
 /standards/classical-public-key/
 /standards/classical-public-key/fips-186-5/
 /standards/classical-public-key/sp-800-186/
@@ -115,17 +117,27 @@ Homepage Situation Chooser (/)
 /standards/modules-protocols-identity/
 /standards/modules-protocols-identity/fips-140-3/
 /standards/modules-protocols-identity/sp-800-52/
+/standards/modules-protocols-identity/rfc-10024/
+/standards/modules-protocols-identity/rfc-9881/
+/standards/modules-protocols-identity/rfc-10073/
 /standards/modules-protocols-identity/fips-201-3/
 /standards/us-federal-directives/
+/standards/us-federal-directives/qccpa/
 /standards/us-federal-directives/nsm-10/
 /standards/us-federal-directives/eo-14306/
 /standards/us-federal-directives/eo-14412/
 /standards/us-federal-directives/omb-m-26-15/
+/standards/us-federal-directives/cisa-pqc-product-categories/
+/standards/national-algorithm-positions/
+/standards/national-algorithm-positions/cnsa-2-0/
+/standards/national-algorithm-positions/bsi-tr-02102-1/
+/standards/national-algorithm-positions/anssi-pqc-position/
 /standards/migration-guides/
 /standards/migration-guides/dutch-pqc-handbook/
 /standards/migration-guides/uk-ncsc-pqc-guidance/
 /standards/migration-guides/eu-nis-roadmap/
 /standards/migration-guides/asd-planning/
+/standards/migration-guides/canada-itsm-40-001/
 /standards/migration-guides/canadian-cfdir-guide/
 /standards/migration-guides/etsi-tr-103-619/
 /standards/migration-guides/etsi-tr-104-016/
@@ -175,7 +187,7 @@ Add new pages only when there is enough distinct, decision-useful material that 
 
 - **Conceptual primers or deeper technical distinctions** belong in `/learn/` or `/learn/explainers/`.
 - **Reader entry paths for a distinct operational situation** belong in `/routes/` and should point into existing practice, option, and resource pages rather than duplicating procedures.
-- **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules and protocols*, *directives*, *migration guides*) rather than by issuing organisation.
+- **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules, protocols, and certificates*, *US government requirements*, *national algorithm positions*, *migration guides*) rather than by issuing organisation.
 - **Lifecycle operating activities** belong in `/migration-practices/`.
 - **Mechanism and deployment trade-offs** belong in `/technology-options/`, organised around the cryptographic job being solved rather than one narrative page per algorithm.
 - **Reusable templates and reference tools** belong in `/resources/`; keep `/resources/` a focused practical toolkit rather than a catch-all archive.

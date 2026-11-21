@@ -79,3 +79,4 @@ Continue with [In real systems](/learn/in-real-systems/).
 - [Learn the basics](/learn/)
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/)
+- [Modules, protocols, and certificates](/standards/modules-protocols-identity/)

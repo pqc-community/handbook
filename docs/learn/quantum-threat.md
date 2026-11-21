@@ -9,7 +9,7 @@ Quantum computers are not faster versions of today's computers. For most tasks t
 
 ## What would be broken
 
-The threat comes from a machine large and reliable enough to run these attacks at useful scale. The UK NCSC's [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) (August 2024) calls this a cryptographically relevant quantum computer (CRQC); NIST uses the term *cryptanalytically* relevant. No such machine exists today: [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §3) says there are no existing cryptanalytically relevant quantum computers that currently threaten security levels.
+The threat comes from a machine large and reliable enough to run these attacks at useful scale. The UK NCSC's [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (August 2024) calls this a cryptographically relevant quantum computer (CRQC); NIST uses the term *cryptanalytically* relevant. No such machine exists today: [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §3) says there are no existing cryptanalytically relevant quantum computers that currently threaten security levels.
 
 **Shor's algorithm** solves integer factorisation and discrete logarithms efficiently. Those problems are the basis of RSA, Diffie–Hellman, and elliptic-curve cryptography. NIST IR 8547 §2.1 lists the signature algorithms in FIPS 186 (ECDSA, EdDSA, RSA) and the key-establishment schemes in SP 800-56A and SP 800-56B (finite-field and elliptic-curve Diffie–Hellman and MQV, and RSA) as vulnerable to Shor's algorithm on such a machine. Increasing key sizes does not fix this; the algorithms have to be replaced.
 
@@ -54,7 +54,7 @@ Continue with [What post-quantum means](/learn/what-post-quantum-means/). For th
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§1, §2.1, §3, §4.1.3). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025 (§5). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
 
 ## Related pages

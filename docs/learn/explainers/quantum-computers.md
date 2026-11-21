@@ -16,7 +16,7 @@ displayed_sidebar: learnSidebar
 | Affected cryptography | RSA, finite-field and elliptic-curve Diffie–Hellman, ECDSA, EdDSA | Symmetric ciphers and hash functions, in principle |
 | Fix | Replace the algorithm | None needed for approved primitives of at least 128-bit strength, per NIST and the NCSC |
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.1) lists the NIST signature and key-establishment standards that are vulnerable to Shor's algorithm on a cryptanalytically relevant quantum computer. Section 4.1.3 states that NIST's symmetric standards are significantly less vulnerable to known quantum attacks. The UK NCSC's [Next steps](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) whitepaper (August 2024) says symmetric algorithms with at least 128-bit keys, such as AES, can continue to be used.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.1) lists the NIST signature and key-establishment standards that are vulnerable to Shor's algorithm on a cryptanalytically relevant quantum computer. Section 4.1.3 states that NIST's symmetric standards are significantly less vulnerable to known quantum attacks. The UK NCSC's [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) whitepaper (August 2024) says symmetric algorithms with at least 128-bit keys, such as AES, can continue to be used.
 
 ## How post-quantum strength is measured
 
@@ -51,7 +51,7 @@ No one knows when a cryptographically relevant quantum computer will exist; NIST
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1, §3, §3.1.2, §4.1). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 
 ## Related pages
 

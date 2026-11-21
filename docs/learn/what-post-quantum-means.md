@@ -14,7 +14,7 @@ The IETF's terminology for the transition, [RFC 9794](https://www.rfc-editor.org
 Post-quantum cryptography keeps the same jobs and the same shape as the public-key cryptography it replaces. There are still key pairs, public keys still go in certificates, and the two jobs — key establishment and signatures — stay separate. What changes is the underlying hard problem. Instead of factorisation or discrete logarithms, the new algorithms rely on problems for which no efficient quantum attack is known:
 
 - **Lattice problems.** FIPS 203 states that ML-KEM's security relates to the difficulty of the Module Learning with Errors problem; ML-DSA in FIPS 204 is also module-lattice-based.
-- **Hash functions.** SLH-DSA in FIPS 205 and the stateful schemes in SP 800-208 build signatures from hash functions, the same kind of symmetric primitive that Grover's algorithm affects only modestly. The NCSC's [Next steps](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) whitepaper (August 2024) notes the trade-off: their signatures are large, so they are not suitable for general-purpose use.
+- **Hash functions.** SLH-DSA in FIPS 205 and the stateful schemes in SP 800-208 build signatures from hash functions, the same kind of symmetric primitive that Grover's algorithm affects only modestly. The NCSC's [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) whitepaper (August 2024) notes the trade-off: their signatures are large, so they are not suitable for general-purpose use.
 
 NIST IR 8547 (§3.2) notes that some hybrid designs deliberately combine post-quantum algorithms that rely on different mathematical assumptions, so that one unexpected weakness does not break the whole.
 
@@ -55,7 +55,7 @@ Continue with [Post-quantum algorithms](/learn/algorithms/).
 - NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, 13 August 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
 - NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§3.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - UK National Cyber Security Centre, Quantum networking technologies, 5 August 2025. [NCSC paper](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 

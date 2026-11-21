@@ -9,13 +9,14 @@ Every cryptographic standard, federal directive, and programme-scale migration g
 
 Browse by category:
 
-- **[Post-quantum cryptography](/standards/post-quantum/)**: FIPS 203, FIPS 204, FIPS 205, NIST SP 800-208, NIST SP 800-227, NIST IR 8528, and NIST IR 8545.
-- **[Transition and key management](/standards/transition-and-key-management/)**: NIST IR 8547, NIST SP 800-131A, and NIST SP 800-57 Part 1.
+- **[Post-quantum cryptography](/standards/post-quantum/)**: FIPS 203, FIPS 204, FIPS 205, NIST SP 800-208, NIST SP 800-227, NIST IR 8528, NIST IR 8610, and NIST IR 8545.
+- **[Transition and key management](/standards/transition-and-key-management/)**: NIST IR 8547, NIST SP 800-131A, NIST SP 800-57 Part 1, and NIST CSWP 39 (crypto agility).
 - **[Classical public-key (transitioning)](/standards/classical-public-key/)**: FIPS 186-5, NIST SP 800-186, NIST SP 800-56A, and NIST SP 800-56B.
 - **[Symmetric, hash, and KDF primitives](/standards/symmetric-and-primitives/)**: FIPS 197, NIST SP 800-232, FIPS 180-4, FIPS 202, NIST SP 800-185, FIPS 198-1, NIST SP 800-56C, NIST SP 800-108, NIST SP 800-132, and NIST SP 800-90A.
-- **[Modules, protocols, and identity](/standards/modules-protocols-identity/)**: FIPS 140-3, NIST SP 800-52, and FIPS 201-3.
-- **[US federal directives](/standards/us-federal-directives/)**: NSM-10, EO 14306, EO 14412, and OMB M-26-15.
-- **[Migration guides](/standards/migration-guides/)**: Dutch PQC Migration Handbook, UK NCSC guidance, EU NIS Cooperation Group roadmap, ASD planning, Canadian CFDIR guide, ETSI TR 103 619, ETSI TR 104 016, PQCC roadmap, CISA/NSA/NIST fact sheet, NCCoE Migration to PQC, and the ASD/ACSC/CISA/NSA vendor questions guide.
+- **[Modules, protocols, and certificates](/standards/modules-protocols-identity/)**: FIPS 140-3, NIST SP 800-52, RFC 10024, RFC 9881, RFC 10073, and FIPS 201-3, plus a list of further post-quantum RFCs.
+- **[US government requirements](/standards/us-federal-directives/)**: the Quantum Computing Cybersecurity Preparedness Act, NSM-10, EO 14306, EO 14412, OMB M-26-15, and CISA's post-quantum product categories.
+- **[National algorithm positions](/standards/national-algorithm-positions/)**: NSA CNSA 2.0, BSI TR-02102-1, and ANSSI's position paper.
+- **[Migration guides](/standards/migration-guides/)**: Dutch PQC Migration Handbook, UK NCSC guidance, EU NIS Cooperation Group roadmap, ASD planning, Canada ITSM.40.001 roadmap, Canadian CFDIR guide, ETSI TR 103 619, ETSI TR 104 016, PQCC roadmap, CISA/NSA/NIST fact sheet, NCCoE Migration to PQC, and the ASD/ACSC/CISA/NSA vendor questions guide.
 
 References across the handbook prioritise primary technical standards and official national cyber guidance, keeping each authority's milestones scoped to its stated jurisdiction and audience rather than treating one jurisdiction's date as a universal deadline. Sources are reviewed quarterly and when cited publications are updated; report a stale link or superseded edition on the [GitHub issue tracker](https://github.com/pqc-community/handbook/issues).
 

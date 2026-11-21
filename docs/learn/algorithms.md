@@ -30,7 +30,7 @@ You do not need to understand how post-quantum algorithms work internally to pla
 
 **LMS and XMSS** are *stateful* hash-based signatures. The signer must never reuse a one-time key, so it has to track state reliably. NIST IR 8547 (§2.1.1) says they are not intended for general use but may be useful for software and firmware signing. [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains why.
 
-The UK NCSC's [Next steps](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) whitepaper (August 2024) recommends ML-KEM-768 and ML-DSA-65 as giving appropriate security and efficiency for most use cases. Other authorities may prefer other parameter sets for their audiences; record the one your applicable authority names.
+The UK NCSC's [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) whitepaper (August 2024) recommends ML-KEM-768 and ML-DSA-65 as giving appropriate security and efficiency for most use cases. Other authorities may prefer other parameter sets for their audiences; record the one your applicable authority names.
 
 ## Why they behave differently
 
@@ -60,7 +60,7 @@ Continue with [Hybrid cryptography](/learn/hybrid/).
 - NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), 13 April 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
 - NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1, §2.2, §4.1.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 
 ## Related pages
 

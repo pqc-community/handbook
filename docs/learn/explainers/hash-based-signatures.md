@@ -11,7 +11,7 @@ displayed_sidebar: learnSidebar
 
 Hash-based signatures build a signature scheme from a hash function such as SHA-256 or SHAKE. Their appeal is that their security rests on hash functions, which, as [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §4.1.3) notes, are significantly less vulnerable to known quantum attacks than today's public-key algorithms. They are an alternative to the lattice-based ML-DSA that does not depend on lattice assumptions.
 
-The cost is size. The UK NCSC's [Next steps](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) whitepaper (August 2024) notes that hash-based signatures are large and therefore not suitable for general-purpose use.
+The cost is size. The UK NCSC's [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) whitepaper (August 2024) notes that hash-based signatures are large and therefore not suitable for general-purpose use.
 
 ## Stateful and stateless
 
@@ -55,7 +55,7 @@ NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (13 April 2
 - NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
 - NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
 - NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), 13 April 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
-- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages

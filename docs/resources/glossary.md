@@ -19,7 +19,7 @@ A symmetric algorithm that encrypts data in fixed-size blocks under one secret k
 
 ### CBOM (cryptography bill of materials)
 
-A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. The inventory still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/migration-practices/inventory/).
+A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The inventory still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/migration-practices/inventory/).
 
 ### Certificate
 
@@ -28,6 +28,14 @@ A signed binding between a name and a public key. The issuer signs that binding,
 ### Certificate chain
 
 The linked certificates from the leaf certificate for a site or a device, through an intermediate, to a trust anchor the verifier already holds. Checking the leaf is not enough when the verifier does not already trust the issuer. A new signature algorithm on the leaf still has to chain to an anchor that verifier accepts, so the signers, the intermediates, and the trust stores move together. See [Signatures](/technology-options/signatures/) and [In real systems](/learn/in-real-systems/).
+
+### CNSA 2.0
+
+The Commercial National Security Algorithm Suite 2.0: the quantum-resistant algorithms the US National Security Agency approves for national security systems. NSA's CNSA 2.0 FAQ (version 2.2, October 2026) names AES-256, ML-KEM-1024, ML-DSA-87, SHA-384 or SHA-512, and, for firmware and software signing, LMS and XMSS. It applies to national security systems and the suppliers to them, not to organisations in general. See [NSA CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/).
+
+### Composite signature
+
+A single signature object that combines a post-quantum and a classical signature, so both must verify. [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) (November 2026) defines composite ML-DSA for X.509 certificates. NIST IR 8547 treats composite, dual, and hybrid signatures together; see [Dual signature](#dual-signature).
 
 ### Crypto-agility
 
@@ -41,7 +49,7 @@ The module is that implementation, not the name of an algorithm. ML-KEM is not a
 
 ### Cryptographically relevant quantum computer (CRQC)
 
-A quantum computer large and reliable enough to break today's public-key cryptography using Shor's algorithm. The UK NCSC's [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) (August 2024) uses this term; [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says *cryptanalytically* relevant, and states that none exists today. Nobody can say reliably when one will. See [The quantum threat](/learn/quantum-threat/) and [When to start](/learn/explainers/when-to-start/).
+A quantum computer large and reliable enough to break today's public-key cryptography using Shor's algorithm. The UK NCSC's [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (August 2024) uses this term; [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says *cryptanalytically* relevant, and states that none exists today. Nobody can say reliably when one will. See [The quantum threat](/learn/quantum-threat/) and [When to start](/learn/explainers/when-to-start/).
 
 ### Digital signature
 
@@ -68,6 +76,10 @@ A transformation that hides data so it can be read again only with the matching 
 [FIPS 202](https://csrc.nist.gov/pubs/fips/202/final), August 2015, defines an extendable-output function as a function on bit strings in which the output can be extended to any desired length. It specifies two: SHAKE128 and SHAKE256. Those numbers name a security strength, not a fixed output length.
 
 A [hash function](#hash-function) such as SHA3-256 produces one fixed-length digest. A XOF does not. The caller chooses how many bits to take, and a longer output of the same input is an extension of the shorter one. It is not encryption, and it is not a signature. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) and [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) use SHAKE128 and SHAKE256 inside ML-KEM and ML-DSA. See [Algorithms](/learn/algorithms/).
+
+### FIPS (Federal Information Processing Standard)
+
+A standard NIST issues for US federal computer systems, such as FIPS 203 for ML-KEM. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (updated 2 November 2026) says FIPS are not always mandatory for federal agencies: each FIPS's applicability section says when it is. FIPS do not apply to national security systems, and many private-sector organisations use them voluntarily. See [How to read status](/standards/#how-to-read-status).
 
 ### Forward secrecy
 
@@ -222,7 +234,7 @@ The component that checks a signature. When every verifier can be updated, the s
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
 - NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
-- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages

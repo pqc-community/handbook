@@ -73,6 +73,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             'standards/post-quantum/nist-ir-8528',
+            'standards/post-quantum/nist-ir-8610',
             'standards/post-quantum/nist-ir-8545',
           ],
         },
@@ -87,6 +88,7 @@ const sidebars: SidebarsConfig = {
         'standards/transition-and-key-management/nist-ir-8547',
         'standards/transition-and-key-management/sp-800-131a',
         'standards/transition-and-key-management/sp-800-57-part-1',
+        'standards/transition-and-key-management/cswp-39',
       ],
     },
     {
@@ -156,25 +158,41 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Modules, protocols, and identity',
+      label: 'Modules, protocols, and certificates',
       link: {type: 'doc', id: 'standards/modules-protocols-identity/index'},
       collapsed: true,
       items: [
         'standards/modules-protocols-identity/fips-140-3',
         'standards/modules-protocols-identity/sp-800-52',
+        'standards/modules-protocols-identity/rfc-10024',
+        'standards/modules-protocols-identity/rfc-9881',
+        'standards/modules-protocols-identity/rfc-10073',
         'standards/modules-protocols-identity/fips-201-3',
       ],
     },
     {
       type: 'category',
-      label: 'US federal directives',
+      label: 'US government requirements',
       link: {type: 'doc', id: 'standards/us-federal-directives/index'},
       collapsed: true,
       items: [
+        'standards/us-federal-directives/qccpa',
         'standards/us-federal-directives/nsm-10',
         'standards/us-federal-directives/eo-14306',
         'standards/us-federal-directives/eo-14412',
         'standards/us-federal-directives/omb-m-26-15',
+        'standards/us-federal-directives/cisa-pqc-product-categories',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'National algorithm positions',
+      link: {type: 'doc', id: 'standards/national-algorithm-positions/index'},
+      collapsed: true,
+      items: [
+        'standards/national-algorithm-positions/cnsa-2-0',
+        'standards/national-algorithm-positions/bsi-tr-02102-1',
+        'standards/national-algorithm-positions/anssi-pqc-position',
       ],
     },
     {
@@ -192,6 +210,7 @@ const sidebars: SidebarsConfig = {
             'standards/migration-guides/uk-ncsc-pqc-guidance',
             'standards/migration-guides/eu-nis-roadmap',
             'standards/migration-guides/asd-planning',
+            'standards/migration-guides/canada-itsm-40-001',
             'standards/migration-guides/canadian-cfdir-guide',
             'standards/migration-guides/etsi-tr-103-619',
             'standards/migration-guides/etsi-tr-104-016',

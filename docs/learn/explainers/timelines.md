@@ -65,5 +65,6 @@ So a date only makes sense alongside its source, audience, cryptographic job, an
 ## Related pages
 
 - [Timelines](/learn/timelines/)
-- [US federal directives](/standards/us-federal-directives/)
+- [US government requirements](/standards/us-federal-directives/)
+- [National algorithm positions](/standards/national-algorithm-positions/)
 - [Migration guides](/standards/migration-guides/)
