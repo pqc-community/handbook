@@ -16,7 +16,9 @@ Status as checked on 21 November 2026. "Proposed Standard" and "Informational" a
 | [TLS and web services](/technology-options/tls/) | Key establishment; signatures for server authentication | Hybrid ML-KEM groups for TLS 1.3 (RFC 10024) | Key exchange published (August 2026); ML-KEM alone and post-quantum authentication still drafts |
 | [VPNs and IPsec](/technology-options/vpn-ipsec/) | Key establishment | Multiple key exchanges in IKEv2 (RFC 9370); ML-KEM in IKEv2 | Framework published (May 2023); ML-KEM draft in the RFC Editor queue |
 | [SSH](/technology-options/ssh/) | Key establishment | Hybrid ML-KEM key exchange (RFC 10042); sntrup761x25519 (RFC 9941) | Both Informational RFCs (2026) |
+| [OT and industrial systems](/technology-options/ot-industrial/) | All three jobs; integrity usually comes first | Enterprise mechanisms for remote access and IT zones; none yet for many industrial protocols | Depends on the layer and the supplier |
 | [PKI and certificates](/technology-options/pki/) | Signatures | ML-DSA, composite ML-DSA, SLH-DSA and hash-based signatures in X.509 | Published RFCs (2025 to 2026) |
+| [DNSSEC](/technology-options/dnssec/) | Signatures | ML-DSA-44 has a DNSSEC algorithm number (18) from IANA | Specification still an individual Internet-Draft |
 | [Identity and sign-in](/technology-options/identity/) | Signatures, sometimes key establishment | Depends on the certificates and protocols underneath | No technology-specific profile listed yet |
 | [Code and software signing](/technology-options/code-signing/) | Signatures | ML-DSA, SLH-DSA, LMS, XMSS; ML-DSA, SLH-DSA and HSS/LMS in CMS | Algorithms final; formats published |
 | [Firmware and secure boot](/technology-options/firmware-secure-boot/) | A verifier that may not be updatable | Whatever the device's boot verifier supports | Depends on the component supplier |
@@ -35,6 +37,7 @@ Commodity products that receive post-quantum support through supplier updates ne
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
+- IANA, DNSSEC Algorithm Numbers registry, last updated 10 August 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
 - RFC Editor information pages for [RFC 10024](https://www.rfc-editor.org/info/rfc10024), [RFC 9370](https://www.rfc-editor.org/info/rfc9370), [RFC 10042](https://www.rfc-editor.org/info/rfc10042), [RFC 9941](https://www.rfc-editor.org/info/rfc9941), [RFC 9881](https://www.rfc-editor.org/info/rfc9881), [RFC 10073](https://www.rfc-editor.org/info/rfc10073), [RFC 9629](https://www.rfc-editor.org/info/rfc9629), [RFC 9936](https://www.rfc-editor.org/info/rfc9936) and [RFC 9980](https://www.rfc-editor.org/info/rfc9980), checked 21 November 2026.
 - IETF Datatracker, [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/) and [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/), checked 21 November 2026.
 
