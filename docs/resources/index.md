@@ -32,7 +32,7 @@ Route: [Products or systems that may be hard to change](/routes/hard-to-change-s
 
 Route: [Coordinating a migration across the organisation](/routes/organisation-wide/).
 
-- [Migration plan](/resources/migration-plan/) — **Reader:** a migration lead coordinating many assets. **Output:** one row per asset with an owner, an applicable timeline, and a subsequent-review date.
+- [Migration plan](/resources/migration-plan/) — **Reader:** a migration lead coordinating many assets. **Output:** one row per asset with an owner, an applicable timeline, the four separate dates (supplier release, testing, production deployment, end of support), and a subsequent-review date.
 - [Evidence record](/resources/evidence-record/) — **Reader:** someone asked what supports a claim that a programme step is complete. **Output:** a claim linked to the underlying record and source.
 - [Review log](/resources/review-log/) — **Reader:** someone due to reopen programme records after verification and communication. **Output:** an updated review log and the next review date.
 
@@ -46,7 +46,7 @@ Route: [Ask a supplier](/routes/ask-a-supplier/).
 
 Route: [Not sure which route applies](/routes/not-sure/).
 
-This route's output is a named situation route or a list of unknowns and the person who will close them. The primary next page is [Diagnose](/migration-practices/diagnose/), which leads to an [inventory record](/resources/inventory-record/) when the handbook applies.
+This route's output is a named situation route or a list of unknowns and the person who will close them. The primary next page is [Decide whether to act](/migration-practices/diagnose/), which leads to an [inventory record](/resources/inventory-record/) when the handbook applies.
 
 ## Edition reference
 

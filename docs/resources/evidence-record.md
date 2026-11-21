@@ -7,7 +7,7 @@ displayed_sidebar: resourcesSidebar
 
 ## When to use it
 
-Use this record when someone asks what evidence supports a statement that a migration step is complete.
+Use this record when someone asks what evidence supports a statement that a migration step is complete. [Make and verify one change](/migration-practices/implementation/) produces it alongside the change record.
 
 ## Minimum fields
 
@@ -36,6 +36,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Related pages
 
-- [Implementation](/migration-practices/implementation/)
+- [Make and verify one change](/migration-practices/implementation/)
 - [Organisation-wide route](/routes/organisation-wide/)
-- [Subsequent review](/migration-practices/subsequent-review/)
+- [Review and report](/migration-practices/subsequent-review/)

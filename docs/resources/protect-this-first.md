@@ -11,6 +11,7 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Initial facts
 
+- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The programme charter was agreed on 2026-08-03 (fictional).
 - **Product-design archive**: The supplier controls the hosted workspace software; the product engineering lead owns the design data. The company's retention policy requires the designs to remain confidential for at least 15 years.
 - **Product sensor firmware verifier**: A trust anchor is held in write-protected boot ROM. The verifier cannot accept a replacement trust anchor after the sensor ships, so the product security lead needs to resolve the signature path before production design freeze.
 - **Office laptops**: Standard browsers and operating systems are under vendor support and follow the commodity supplier-update path. No exception has been identified.
@@ -47,11 +48,11 @@ The product engineering lead records the supplier's written answer in the [vendo
 
 The [migration plan](/resources/migration-plan/) records the UK NCSC target dates as planning guidance for this UK-based company. The guidance asks organisations to complete discovery and an initial plan by 2028, highest-priority migration activities by 2031, and migration of systems, services, and products by 2035. The dates are targets, not a claim that every asset has the same milestone.
 
-| asset | owner | why it is included | applicable timeline | authority | milestone | dependency | next action | subsequent review |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | product engineering lead | designs must remain confidential for 15 years | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | complete highest-priority migration activities by 2031; complete migration by 2035 | supplier's Workspace 4.2 release | complete production interoperability checks; keep signature support as a separate item | 2026-12-01 |
-| Firmware verifier for product sensor | product security lead | verifier cannot accept a new trust anchor after shipment | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | include the long-lived hardware root in the initial plan by 2028; plan highest-priority work by 2031 | boot ROM and product design freeze | obtain a supported signature and trust-root option before production design freeze | 2026-12-01 |
-| Office laptops | IT lead | public-key cryptography is managed through supported commodity platforms | UK NCSC target dates; supplier-update path | UK NCSC, published and reviewed 20 March 2025 | track supplier delivery and include the fleet in the 2035 completion view | browser and operating-system suppliers | confirm support status and record installed versions; route unsupported devices for review | 2026-12-01 |
+| asset | owner | why it is included | applicable timeline | authority | milestone | supplier release | testing | production deployment | end of support | dependency | next action | subsequent review |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Product-design archive in supplier-hosted workspace | product engineering lead | designs must remain confidential for 15 years | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | complete highest-priority migration activities by 2031; complete migration by 2035 | 2026-10-01 | 2026-10-21 (staging pilot passed) | unknown | unknown | supplier's Workspace 4.2 release | complete production interoperability checks; keep signature support as a separate item | 2026-12-01 |
+| Firmware verifier for product sensor | product security lead | verifier cannot accept a new trust anchor after shipment | UK NCSC target dates | UK NCSC, published and reviewed 20 March 2025 | include the long-lived hardware root in the initial plan by 2028; plan highest-priority work by 2031 | unknown | unknown | unknown | unknown | boot ROM and product design freeze | obtain a supported signature and trust-root option before production design freeze | 2026-12-01 |
+| Office laptops | IT lead | public-key cryptography is managed through supported commodity platforms | UK NCSC target dates; supplier-update path | UK NCSC, published and reviewed 20 March 2025 | track supplier delivery and include the fleet in the 2035 completion view | supplier-managed | not applicable (supplier-update path) | supplier-managed | unknown | browser and operating-system suppliers | confirm support status and record installed versions; route unsupported devices for review | 2026-12-01 |
 
 ## Option and authority
 
@@ -100,20 +101,20 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 
 ## Related pages
 
-- [Inventory](/migration-practices/inventory/)
+- [Inventory the cryptography](/migration-practices/inventory/)
 - [Inventory record](/resources/inventory-record/)
-- [Priority](/migration-practices/priority/)
+- [Decide what to migrate first](/migration-practices/priority/)
 - [Priority record](/resources/priority-record/)
-- [Vendor plan](/migration-practices/vendor-plan/)
+- [Get each supplier's plan](/migration-practices/vendor-plan/)
 - [Vendor response log](/resources/vendor-response-log/)
 - [Migration plan](/resources/migration-plan/)
 - [Choosing an option](/technology-options/choosing/)
 - [Key establishment](/technology-options/key-establishment/)
 - [Signatures](/technology-options/signatures/)
 - [Long-lived roots](/technology-options/long-lived-roots/)
-- [Implementation](/migration-practices/implementation/)
+- [Make and verify one change](/migration-practices/implementation/)
 - [Change record](/resources/change-record/)
 - [Evidence record](/resources/evidence-record/)
-- [Subsequent review](/migration-practices/subsequent-review/)
+- [Review and report](/migration-practices/subsequent-review/)
 - [Review log](/resources/review-log/)
 - [Vendor-managed software route](/routes/vendor-managed-software/)
