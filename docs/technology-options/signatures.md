@@ -14,7 +14,7 @@ The [migration plan](/resources/migration-plan/) has a signatures line for a sys
 - The **asset owner** owns the signatures line and the change.
 - **Operations**, or whoever runs the certification authority or signing service, changes keys, certificates, and signing.
 - **Suppliers** of the verifying software, such as browsers, operating systems, and devices, say when their products accept the new signatures; **procurement** asks them in writing.
-- The **migration lead** keeps the list of parties that must move together on the plan.
+- The **migration lead** keeps the list of parties that move together on the plan.
 
 ## Do this
 
@@ -23,7 +23,7 @@ The [migration plan](/resources/migration-plan/) has a signatures line for a sys
 3. **Choose how certificates carry the new signature**, applying the hybrid rule on [Choosing an option](/technology-options/choosing/):
    - if any applicable authority recommends hybrid signatures and does not also accept post-quantum alone, use a [composite](/resources/glossary/#composite-signature) certificate, as defined in [RFC 10073](/standards/modules-protocols-identity/rfc-10073/), or another [dual signature](/resources/glossary/#dual-signature) that the other applicable authorities accept. NIST IR 8547 says existing NIST standards and guidelines accommodate dual signatures provided at least one component is NIST-approved;
    - otherwise, either form is acceptable, and the choice is yours to record. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, prefers a single migration to a fully post-quantum PKI over an interim hybrid PKI. [ML-DSA](/resources/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) on its own, as encoded for certificates in [RFC 9881](/standards/modules-protocols-identity/rfc-9881/), is an option NIST approves;
-   - if relying parties will move at different times, run the old and new chains side by side, and put the date the old chain stops being issued in the plan line's `milestone`.
+   - if relying parties will move at different times, run the old and new chains side by side, and add the date the old chain stops being issued to the plan line's `milestone`, after the timeline milestone and separated by a semicolon.
 4. **Choose the signature scheme**, from those every applicable authority accepts. This is the handbook's rule of thumb, following the NIST and UK NCSC positions where no applicable authority says otherwise:
    - for certificates and documents, use ML-DSA ([FIPS 204](/standards/post-quantum/fips-204/)): the same NCSC whitepaper says hash-based signatures are not suitable for general-purpose use, because their signatures are large and the algorithms much slower;
    - for code and software signing, use a hash-based scheme where an applicable authority requires one or every verifier supports only that; otherwise use ML-DSA;
@@ -37,7 +37,7 @@ The [migration plan](/resources/migration-plan/) has a signatures line for a sys
 
 ## Keep this evidence
 
-The signatures line on the [migration plan](/resources/migration-plan/), with its order, the parties in `dependencies`, and a milestone set by the slowest party; supplier answers in the [vendor response log](/resources/vendor-response-log/); an [inventory](/resources/inventory-record/) row for each signing key; and the [change record](/resources/change-record/), with the option, authority, tests, and rollback trigger.
+The signatures line on the [migration plan](/resources/migration-plan/), with its rank in `order`, the parties in `dependencies` listed in the order they move, a milestone from the applicable timeline, and any gap the slowest party leaves in `next action`; supplier answers in the [vendor response log](/resources/vendor-response-log/); an [inventory](/resources/inventory-record/) row for each signing key; and the [change record](/resources/change-record/), with the option, authority, tests, and rollback trigger.
 
 ## Example
 
