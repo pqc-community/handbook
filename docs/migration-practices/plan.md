@@ -22,7 +22,7 @@ You have a priority record and need to turn it into dated, owned milestones, or 
    - the UK NCSC's [2028, 2031 and 2035 milestones](/standards/migration-guides/uk-ncsc-pqc-guidance/) for UK organisations;
    - the EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (2026, 2030 and 2035 milestones) for Member States and the entities that follow it;
    - the Australian Signals Directorate's [recommendation](/standards/migration-guides/asd-planning/) to cease traditional asymmetric cryptography by the end of 2030;
-   - [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) for US federal agencies;
+   - [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) for US federal agencies, and through a proposed procurement rule for covered federal contractors;
    - NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) for US national security systems.
 
    [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) schedules quantum-vulnerable public-key algorithms for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines. Record the authority and audience beside every date; see [Why migration timelines differ](/learn/explainers/timelines/).
@@ -35,7 +35,7 @@ You have a priority record and need to turn it into dated, owned milestones, or 
 4. **Record dependencies that can move a date**: a supplier release, a certificate authority, a hardware refresh, a contract renewal, or a product design freeze. A design freeze is a hard deadline: record its date and escalate when an option is still missing as it approaches.
 5. **Re-plan when a date moves.** Replace the superseded date, note why, and check whether a later milestone is now at risk.
 
-The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) note that later milestones depend on supplier updates. They ask organisations to build an initial migration plan by 2028, including long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. NIST IR 8547 advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptanalytically relevant quantum computer exists, should be designed from the start to verify quantum-resistant code signatures.
+The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028, including long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. NIST IR 8547 advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptanalytically relevant quantum computer exists, should be designed from the start to verify quantum-resistant code signatures.
 
 ## Keep this evidence
 
