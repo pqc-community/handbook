@@ -30,7 +30,7 @@ Work through the eight steps in this order:
 7. Make and verify each change, and keep the ability to change again.
 8. Review, report to the sponsor, and reopen records on triggers.
 
-These steps align with the five phases in ASD's [Planning for post-quantum cryptography](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography) — Locate, Assess, Triage, Implement, and Communicate and educate: finding dependencies maps to Locate, prioritising maps to Assess and Triage, working with suppliers and making changes map to Implement, and setting up the programme and reporting carry the communication and education work. Programme setup and dated planning are added because they decide who does the work and by when.
+These steps follow the same broad sequence as the national [migration guides](/standards/migration-guides/) summarised in Standards — find the cryptography, assess and prioritise it, implement, and communicate — with programme setup and dated planning made explicit because they decide who does the work and by when.
 
 A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as this route.
 
@@ -51,7 +51,6 @@ The primary next page is [Migration plan](/resources/migration-plan/).
 
 ## Sources
 
-- Australian Signals Directorate, Planning for post-quantum cryptography, published 6 July 2022, last reviewed 22 September 2025. [Planning publication](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
 - ETSI, TR 104 016, October 2024. [TR 104 016](https://www.etsi.org/deliver/etsi_tr/104000_104099/104016/01.01.01_60/tr_104016v010101p.pdf)
 
 ## Related pages

@@ -9,7 +9,7 @@ displayed_sidebar: resourcesSidebar
 
 Use this log when you ask an existing or prospective supplier about post-quantum migration, receive an answer, and need a decision-ready row before procurement or deployment work proceeds. [Work with suppliers](/migration-practices/suppliers/) explains how to ask, judge, and follow up.
 
-This is the handbook's single question set; ask about a named product and version, and ask the key-establishment and signature questions separately. The Australian Signals Directorate's [vendor questions guide](/standards/migration-guides/vendor-questions/) (published 16 July 2026) gives a fuller set.
+This is the handbook's single question set; ask about a named product and version, and ask the key-establishment and signature questions separately. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set.
 
 **About the product**
 
@@ -56,7 +56,6 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 ## Sources
 
-- Australian Signals Directorate, Post-quantum questions to ask your vendors, published 16 July 2026. [Vendor questions](https://www.cyber.gov.au/publication/post-quantum-questions-to-ask-your-vendors)
 - CISA, NSA, and NIST, Quantum-Readiness fact sheet, as of 17 August 2023. [Fact sheet](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 
 ## Related pages

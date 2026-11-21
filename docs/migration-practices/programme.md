@@ -26,7 +26,7 @@ You have decided that migration is more than a routine supplier update: you are 
 4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/migration-practices/subsequent-review/)).
 5. **Tell the people whose work will change**: asset owners, procurement, operations, and suppliers, who should expect written questions about their post-quantum plans. Explain the different jobs — key establishment, signatures, and verifiers that cannot be updated — so teams do not assume one cutover.
 
-Authority guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The Australian Signals Directorate's [planning guidance](/standards/migration-guides/asd-planning/) ends its five-phase framework with communicating with vendors and stakeholders and educating and training relevant stakeholders. The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) ask organisations to define their migration goals as the first activity.
+Authority guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) ask organisations to define their migration goals as the first activity.
 
 ## Keep this evidence
 
@@ -45,7 +45,6 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 ## Sources
 
 - Post-Quantum Cryptography Coalition, Post-Quantum Cryptography (PQC) Migration Roadmap, May 2025. [PQC Migration Roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
-- Australian Signals Directorate, Planning for post-quantum cryptography, published 6 July 2022, last reviewed 22 September 2025. [ASD guidance](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
 - UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages

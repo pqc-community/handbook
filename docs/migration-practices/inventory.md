@@ -34,7 +34,7 @@ You have decided to act and need to know where public-key cryptography is used b
 
 A first list of rows is a **first-pass inventory**. With a named owner per row and a subsequent-review date, it becomes a **maintained inventory** that the rest of the programme can rely on. Note the discovery methods used, and their gaps, on an [evidence record](/resources/evidence-record/) so a reviewer can judge coverage.
 
-The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) urges organisations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it. ASD's [planning guidance](/standards/migration-guides/asd-planning/) describes a cryptography bill of materials (CBOM) as an effective way to record cryptographic dependencies, and notes that an organisation's first CBOM can be a simple list of critical security functions. In the United States, [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days; until it is published, treat CBOM formats as developing rather than settled.
+The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) urges organisations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it.
 
 ## Keep this evidence
 
@@ -59,7 +59,6 @@ The inventory records what exists; it does not decide order or algorithms. Large
 ## Sources
 
 - CISA, NSA, and NIST, Quantum-Readiness: Migration to Post-Quantum Cryptography, as of 17 August 2023. [Fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
-- Australian Signals Directorate, Planning for post-quantum cryptography, published 6 July 2022, last reviewed 22 September 2025. [ASD guidance](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
 - The White House, Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks, 22 June 2026. [EO 14412](https://www.govinfo.gov/app/details/DCPD-202600417)
 
 ## Related pages

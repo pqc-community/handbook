@@ -21,7 +21,7 @@ You have a priority record and need to turn it into dated, owned milestones, or 
 1. **Work out which timelines apply, and to whom.** A date binds or guides only the audience its authority names. Examples include:
    - the UK NCSC's [2028, 2031 and 2035 milestones](/standards/migration-guides/uk-ncsc-pqc-guidance/) for UK organisations;
    - the EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (2026, 2030 and 2035 milestones) for Member States and the entities that follow it;
-   - the Australian Signals Directorate's [recommendation](/standards/migration-guides/asd-planning/) to cease traditional asymmetric cryptography by the end of 2030;
+   - the Australian Signals Directorate's [planning guidance](/standards/migration-guides/asd-planning/), whose audience and dates are recorded in its Standards summary;
    - [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) for US federal agencies, and, through a procurement rule the order directs the Federal Acquisition Regulatory Council to propose, for covered federal contractors;
    - NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) for US national security systems.
 
@@ -55,7 +55,6 @@ The plan records which dates apply; deciding whether a regulation or contract bi
 
 - UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - EU NIS Cooperation Group, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025. [Roadmap (PDF)](https://ec.europa.eu/newsroom/dae/redirection/document/117507)
-- Australian Signals Directorate, Planning for post-quantum cryptography, published 6 July 2022, last reviewed 22 September 2025. [ASD guidance](https://www.cyber.gov.au/publication/planning-for-post-quantum-cryptography)
 - The White House, Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks, 22 June 2026. [EO 14412](https://www.govinfo.gov/app/details/DCPD-202600417)
 - Office of Management and Budget, Execution of the Migration to Post-Quantum Cryptography, M-26-15, 24 June 2026. [OMB M-26-15 (PDF)](https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf)
 - National Security Agency, Commercial National Security Algorithm Suite 2.0 and Quantum Computing FAQ, version 2.2, October 2026. [CNSA 2.0 FAQ (PDF)](https://media.defense.gov/2022/Sep/07/2003071836/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF)
