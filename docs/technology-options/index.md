@@ -5,7 +5,7 @@ displayed_sidebar: technologyOptionsSidebar
 description: Find your technology, see which cryptographic job it does, and see which standardised post-quantum mechanism exists for it and how mature that mechanism is.
 ---
 
-Start with the technology in front of you. Each page below says what good looks like for that technology, whose position supports it, and the traps to avoid. [Choosing an option](/technology-options/choosing/) holds the rules that apply to every technology: who chooses, how to check the authorities that apply to you, the hybrid rule of thumb, and what to record. The process for making the change is in [Migration practices](/migration-practices/).
+Start with the technology in front of you. Each page below gives the job the technology does, the standardised post-quantum mechanism and its status, who usually chooses, what good looks like or what to ask and test, the traps, and the record it fills. [Choosing an option](/technology-options/choosing/) holds the rules that apply to every technology: who chooses, how to check the authorities that apply to you, the hybrid rule of thumb, and what to record. The process for making the change is in [Migration practices](/migration-practices/).
 
 ## Technologies at a glance
 
@@ -23,7 +23,7 @@ Status as checked on 21 November 2026. "Proposed Standard" and "Informational" a
 | [Documents and email signing](/technology-options/document-signing/) | Signatures | Post-quantum OpenPGP (RFC 9980); ML-DSA and hash-based signatures in CMS | Published RFCs |
 | [Encrypted email and files](/technology-options/encrypted-files/) | Key establishment (stored data) | KEMs and ML-KEM in CMS (RFC 9629, RFC 9936); post-quantum OpenPGP (RFC 9980) | Published RFCs |
 | [Backups, archives and storage](/technology-options/stored-data/) | Key establishment (stored data) | Depends on the product's key wrapping | Ask the supplier |
-| [HSMs and key management](/technology-options/hsm-kms/) | Holds keys for every job | Support for the new algorithms in the module, ideally validated under FIPS 140-3 | Depends on the supplier |
+| [HSMs and key management](/technology-options/hsm-kms/) | Holds keys for every job | Support for the new algorithms in the module, validated under FIPS 140-3 where validation is required | Depends on the supplier |
 | [Cloud and SaaS](/technology-options/cloud-saas/) | Whatever the service does | The supplier's choice | Ask the supplier |
 
 ## Keep the jobs separate

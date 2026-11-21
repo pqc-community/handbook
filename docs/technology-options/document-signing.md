@@ -11,7 +11,7 @@ Signed email (S/MIME or OpenPGP), signed PDFs, and other signed documents prove 
 
 ## Post-quantum options and status
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that email, PDF files, and document signing commonly use RSA and ECDSA, and names S/MIME and OpenPGP as the standards for signing and encrypting email. Status as checked on 21 November 2026:
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that email, PDF files, and document signing commonly use RSA and ECDSA, and names S/MIME and OpenPGP as standards for public-key encryption and signing of email. Status as checked on 21 November 2026:
 
 | Format | Mechanism | Status |
 | --- | --- | --- |

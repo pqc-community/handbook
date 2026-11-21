@@ -2,7 +2,7 @@
 title: Firmware and secure boot
 sidebar_label: Firmware and secure boot
 displayed_sidebar: technologyOptionsSidebar
-description: For devices whose boot verifier cannot be updated after shipment, what must be settled before design freeze, how to choose a scheme the verifier supports, and what to do if none exists.
+description: For devices whose boot verifier cannot be updated after shipment, what to settle before design freeze, how to choose a scheme the verifier supports, and what to do if none exists.
 ---
 
 ## What it is
@@ -15,7 +15,7 @@ Both must be true: the verifier cannot be updated in the field, and the device w
 
 ## Post-quantum options and status
 
-The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, hash-based schemes (SLH-DSA, LMS, XMSS) are common candidates alongside ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
+The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024) lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
 
 ## What good looks like
 
@@ -46,6 +46,7 @@ From [Protect this first](/resources/protect-this-first/): the product sensor's 
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages

@@ -193,7 +193,7 @@ RSA and elliptic-curve public-key schemes are the familiar examples. A [block ci
 
 ### Regular adopter
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Choosing an option](/technology-options/choosing/).
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Decide whether to act](/migration-practices/diagnose/).
 
 ### Relying party
 
@@ -223,11 +223,11 @@ A public key or certificate that a verifier trusts without further proof, and fr
 
 ### Urgent adopter
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Choosing an option](/technology-options/choosing/).
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Decide whether to act](/migration-practices/diagnose/).
 
 ### Verifier
 
-The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, use [Firmware and secure boot](/technology-options/firmware-secure-boot/) instead. A blocked row still counts as the change record. See [PKI and certificates](/technology-options/pki/).
+The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, use [Firmware and secure boot](/technology-options/firmware-secure-boot/) instead. Record the blocked change on the change record. See [PKI and certificates](/technology-options/pki/).
 
 ## Sources
 

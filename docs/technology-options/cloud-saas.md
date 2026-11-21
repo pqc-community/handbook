@@ -11,7 +11,7 @@ Cloud platforms (infrastructure and platform as a service) and software as a ser
 
 ## Post-quantum options and status
 
-The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), focused on products typically acquired by the US federal government, lists cloud platform and infrastructure services among categories where products using post-quantum standards are widely available, and software as a service among categories still transitioning. For widely available categories it says organisations should acquire only post-quantum-capable products. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says commodity IT will receive post-quantum support through updates, while owners of enterprise IT should ask their suppliers about their plans.
+The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), whose lists focus on products typically acquired by the US federal government, lists cloud platform and infrastructure services among categories where products using post-quantum standards are widely available, and software as a service among categories still transitioning. For widely available categories it says organisations should acquire only post-quantum-capable products. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says commodity IT will receive post-quantum support through updates, while owners of enterprise IT should ask their suppliers about their plans.
 
 ## Who usually chooses
 
@@ -26,7 +26,7 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 | Connections | Which post-quantum key exchange, from which release, on which endpoints | A client-side handshake check; see [TLS and web services](/technology-options/tls/) |
 | Stored data | Which algorithm protects stored data keys, and how existing data is re-wrapped | Usually only the provider's written answer; see [Backups, archives and storage](/technology-options/stored-data/) |
 | Signatures | When the service signs and verifies with post-quantum algorithms | The provider's written plan |
-| End of support | When security fixes stop for the release you run | The contract |
+| End of support, asked in the row for each job | When security fixes stop for the release you run | The contract |
 
 ## Traps
 
@@ -36,11 +36,11 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 
 ## Record it fills
 
-One [vendor response log](/resources/vendor-response-log/) row per job; [migration plan](/resources/migration-plan/) lines per job with the provider's readiness; the [change record](/resources/change-record/) for your own client-side checks.
+One [vendor response log](/resources/vendor-response-log/) row per job, with end of support asked in the row it affects; [migration plan](/resources/migration-plan/) lines per job with the provider's readiness; the [change record](/resources/change-record/) for your own client-side checks.
 
 ## Example
 
-From [Protect this first](/resources/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked. The office laptops follow [Keep commodity software updated](/migration-practices/commodity-software/).
+From [Protect this first](/resources/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
 
 ## Sources
 

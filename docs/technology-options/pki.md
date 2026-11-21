@@ -2,7 +2,7 @@
 title: PKI and certificates
 sidebar_label: PKI and certificates
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum move looks like for certification authorities and the certificates they issue, the published X.509 formats, the order in which parties must move, and the traps.
+description: What a good post-quantum move looks like for certification authorities and the certificates they issue, the published X.509 formats, the order in which parties move, and the traps.
 ---
 
 ## What it is
@@ -21,7 +21,7 @@ Status as checked on 21 November 2026. All are Proposed Standards.
 | HSS and XMSS hash-based signatures | [RFC 9802](https://www.rfc-editor.org/info/rfc9802) | June 2025 |
 | ML-KEM keys, for certificates used in key establishment | [RFC 9935](https://www.rfc-editor.org/info/rfc9935) | March 2026 |
 
-NIST IR 8547 says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
+NIST IR 8547, addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
 
 ## What good looks like
 

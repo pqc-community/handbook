@@ -17,9 +17,9 @@ Status as checked on 21 November 2026.
 | --- | --- | --- |
 | Key exchange with ML-KEM | mlkem768x25519-sha256, mlkem768nistp256-sha256, mlkem1024nistp384-sha384, defined in [RFC 10042](https://www.rfc-editor.org/info/rfc10042) | Informational RFC, August 2026 |
 | Key exchange with NTRU Prime | sntrup761x25519-sha512, defined in [RFC 9941](https://www.rfc-editor.org/info/rfc9941) | Informational RFC, April 2026 |
-| Host and user keys | Post-quantum SSH signatures | Not listed in the handbook's Standards section yet |
+| Host and user keys | Post-quantum SSH signatures | Not covered by RFC 10042 or RFC 9941, which define key exchange only; ask the SSH supplier |
 
-Both key-exchange methods are hybrids that keep a classical exchange alongside the post-quantum one. They are Informational RFCs, which document a method without making it an IETF standard. NTRU Prime is not one of NIST's standardised algorithms: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) names ML-KEM as NIST's only approved post-quantum key-establishment scheme. So check sntrup761x25519 against the authorities that apply to you, as [Choosing an option](/technology-options/choosing/) describes, before relying on it.
+Both key-exchange methods are hybrids that keep a classical exchange alongside the post-quantum one. They are Informational RFCs, which document a method without making it an IETF standard. NTRU Prime is not one of NIST's standardised algorithms: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) names ML-KEM as, at this time, NIST's only approved post-quantum key-establishment scheme. So check sntrup761x25519 against the authorities that apply to you, as [Choosing an option](/technology-options/choosing/) describes, before relying on it.
 
 ## Who usually chooses
 
