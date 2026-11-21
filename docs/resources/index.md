@@ -19,7 +19,7 @@ Route: [Mostly standard, vendor-managed software](/routes/vendor-managed-softwar
 Route: [Long-lived confidentiality](/routes/long-lived-confidentiality/).
 
 - [Inventory record](/resources/inventory-record/) — **Reader:** someone who has listed systems with a long data confidentiality period. **Output:** a first-pass inventory row per system, with `known` or `unknown` confidence.
-- [Priority record](/resources/priority-record/) — **Reader:** someone with an inventory before budgeting work on long-lived assets. **Output:** a priority ordering for those assets, including unknowns that stay on the list.
+- [Migration plan](/resources/migration-plan/) — **Reader:** someone with an inventory before budgeting work on long-lived assets. **Output:** an order for those assets by job, with the reason, including unknowns that stay on the list.
 
 ## Hard to change
 
@@ -32,8 +32,8 @@ Route: [Products or systems that may be hard to change](/routes/hard-to-change-s
 
 Route: [Coordinating a migration across the organisation](/routes/organisation-wide/).
 
-- [Migration plan](/resources/migration-plan/) — **Reader:** a migration lead coordinating many assets. **Output:** one row per asset with an owner, an applicable timeline, the four separate dates (supplier release, testing, production deployment, end of support), and a subsequent-review date.
-- [Evidence record](/resources/evidence-record/) — **Reader:** someone asked what supports a claim that a programme step is complete. **Output:** a claim linked to the underlying record and source.
+- [Migration plan](/resources/migration-plan/) — **Reader:** a migration lead coordinating many assets. **Output:** one row per asset and job with an owner, its place in the order, an applicable timeline, the four separate dates (supplier release, testing, production deployment, end of support), and a subsequent-review date.
+- [Change record](/resources/change-record/) — **Reader:** someone asked what supports a claim that a change is complete. **Output:** the result, stating what has and has not been shown, and the evidence behind it.
 - [Review log](/resources/review-log/) — **Reader:** someone due to reopen programme records after verification and communication. **Output:** an updated review log and the next review date.
 
 ## Ask a supplier

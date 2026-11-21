@@ -11,7 +11,7 @@ A first-pass or maintained inventory exists and you need to decide what moves fi
 
 ## Who does what
 
-- The **migration lead** proposes the order and keeps the [priority record](/resources/priority-record/).
+- The **migration lead** proposes the order and records the order and the reason on the [migration plan](/resources/migration-plan/).
 - **Asset owners** supply impact, lead time, and dependencies for their rows.
 - **Legal or risk** confirms data confidentiality periods and accepts the decision for rows that stay later in the order.
 - The **executive sponsor** approves the order when it affects budget or other programmes.
@@ -27,11 +27,11 @@ A first-pass or maintained inventory exists and you need to decide what moves fi
 4. **Break ties within a job in this order:** the earliest fixed date (design freeze, contract renewal, or end of support); then the longest lead time; then the greater impact if the protection fails; then systems exposed to other organisations or the internet before internal ones. These tiebreakers are this handbook's rule of thumb; replace them with your sector authority's method where one exists.
 5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ. Supplier readiness — the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`) — does not change the order; it changes when work can start. A lower-ranked line with a `complete` answer can start in parallel, and a higher-ranked line with a `missing` answer goes to [Work with suppliers](/migration-practices/suppliers/) for escalation.
 6. **Keep `unknown` rows on the list** under their owner; do not drop them to make the order look complete.
-7. **Write the reason and the source for each decision**, and a date to review it.
+7. **Write the order, the reason, and its source on the plan row**, and a date to review it.
 
 ## Keep this evidence
 
-The [priority record](/resources/priority-record/): one line per asset and job, the decision, the reason in plain words, the source for any authority date or definition used, and the subsequent-review date.
+The first columns of the [migration plan](/resources/migration-plan/): one row per asset and job, with the owner, its place in the order, the reason in plain words with its source, supplier readiness, and the subsequent-review date.
 
 ## Example
 
@@ -50,7 +50,7 @@ This rubric deliberately avoids numeric scoring; it is not a formal risk assessm
 
 ## Related pages
 
-- [Priority record](/resources/priority-record/)
+- [Migration plan](/resources/migration-plan/)
 - [Plan the migration](/migration-practices/plan/)
 - [Long-lived confidentiality](/routes/long-lived-confidentiality/)
 - [When to start: Mosca's inequality](/learn/explainers/when-to-start/)

@@ -13,12 +13,12 @@ Read in this order:
 2. [Inventory the cryptography](/migration-practices/inventory/)
 3. [Inventory record](/resources/inventory-record/)
 4. [Decide what to migrate first](/migration-practices/priority/)
-5. [Priority record](/resources/priority-record/)
+5. [Migration plan](/resources/migration-plan/)
 6. [Plan the migration](/migration-practices/plan/)
 7. [Key establishment](/technology-options/key-establishment/)
 8. [Timelines](/learn/timelines/)
 
-The output is a [priority record](/resources/priority-record/) for the assets with a long confidentiality period.
+The output is a [migration plan](/resources/migration-plan/) that orders the assets with a long confidentiality period first for key establishment.
 
 The primary next page is [Decide whether to act](/migration-practices/diagnose/).
 

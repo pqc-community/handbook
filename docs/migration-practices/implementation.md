@@ -14,7 +14,7 @@ An option has been chosen for one system, with the standard or authority it foll
 - The **asset owner** owns the change and decides whether it is complete.
 - **Operations** runs the pilot, the cutover, any rollback, and the deployed-state check.
 - The **supplier** provides the release and support where the change is in their product.
-- The **migration lead** updates the plan and the evidence record.
+- The **migration lead** updates the plan from the change record.
 
 ## Do this
 
@@ -37,7 +37,7 @@ An option has been chosen for one system, with the standard or authority it foll
 
 ## Keep this evidence
 
-The [change record](/resources/change-record/) for the change — system, change, option, authority, pilot scope, tests, rollback trigger and who may roll back, deployed-state check, result, and date — and an [evidence record](/resources/evidence-record/) that states exactly what has been shown and what has not, citing the test and inspection evidence rather than the standard.
+The [change record](/resources/change-record/) for the change: system, change, option, authority, pilot scope, tests, rollback trigger and who may roll back, deployed-state check, a result that states exactly what has been shown and what has not, the evidence behind it (the test and inspection, not the standard), owner, and date.
 
 ## Example
 
@@ -65,6 +65,5 @@ Protocol and product configuration belong in product documentation and specialis
 ## Related pages
 
 - [Change record](/resources/change-record/)
-- [Evidence record](/resources/evidence-record/)
 - [Choosing an option](/technology-options/choosing/)
 - [Keep the ability to change again](/migration-practices/changing-algorithms-again/)

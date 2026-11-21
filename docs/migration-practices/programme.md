@@ -22,7 +22,7 @@ You have decided that migration is more than a routine supplier update: you are 
 
 1. **Write the programme goal in one or two sentences**, based on the decision you recorded in [Decide whether to act](/migration-practices/diagnose/): what is in scope, what is not, and what "done" means for this phase.
 2. **Assign the roles above by name.** A role with no named person is a gap to resolve, not a default.
-3. **Agree the first budget line** for discovery and supplier engagement. A full migration budget usually cannot be estimated until the inventory and priority records exist; say so in the charter and set the date when it will be revisited. When it is, include supplier upgrade charges, replacement of products that cannot be upgraded, testing environments and effort, discovery tooling, and specialist advice.
+3. **Agree the first budget line** for discovery and supplier engagement. A full migration budget usually cannot be estimated until the inventory exists and the migration plan has an order; say so in the charter and set the date when it will be revisited. When it is, include supplier upgrade charges, replacement of products that cannot be upgraded, testing environments and effort, discovery tooling, and specialist advice.
 4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/migration-practices/subsequent-review/)).
 5. **Tell the people whose work will change**: asset owners, procurement, operations, and suppliers, who should expect written questions about their post-quantum plans. Explain the different jobs — key establishment, signatures, and verifiers that cannot be updated — so teams do not assume one cutover.
 

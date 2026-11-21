@@ -38,11 +38,11 @@ The practices are written for organisations without specialist cryptography staf
 | [Keep commodity software updated](/migration-practices/commodity-software/) | Operations | Checked versions in the [inventory record](/resources/inventory-record/) |
 | [Set up the programme](/migration-practices/programme/) | Executive sponsor | Programme charter (fields on the page) |
 | [Inventory the cryptography](/migration-practices/inventory/) | Migration lead with asset owners | [Inventory record](/resources/inventory-record/) |
-| [Decide what to migrate first](/migration-practices/priority/) | Migration lead with legal or risk | [Priority record](/resources/priority-record/) |
-| [Plan the migration](/migration-practices/plan/) | Migration lead | [Migration plan](/resources/migration-plan/) |
+| [Decide what to migrate first](/migration-practices/priority/) | Migration lead with legal or risk | Order and reason on the [migration plan](/resources/migration-plan/) |
+| [Plan the migration](/migration-practices/plan/) | Migration lead | Timeline, milestone, and four dates on the [migration plan](/resources/migration-plan/) |
 | [Work with suppliers](/migration-practices/suppliers/) | Procurement with asset owners | [Vendor response log](/resources/vendor-response-log/) and purchase requirements |
 | [Choose an option](/technology-options/choosing/), in Technology options | Asset owner, with specialist advice where needed | Option and authority on the [change record](/resources/change-record/) |
-| [Make and verify one change](/migration-practices/implementation/) | Asset owner with operations | [Change record](/resources/change-record/) and [evidence record](/resources/evidence-record/) |
+| [Make and verify one change](/migration-practices/implementation/) | Asset owner with operations | [Change record](/resources/change-record/), including its evidence |
 | [Keep the ability to change again](/migration-practices/changing-algorithms-again/) | Asset owner | Agility evidence in existing records |
 | [Review and report](/migration-practices/subsequent-review/) | Migration lead, reporting to the sponsor | [Review log](/resources/review-log/) |
 

@@ -7,7 +7,7 @@ description: Branch on system type, lifetime, jurisdiction, updateability, suppl
 
 ## When this applies
 
-A system is already on the inventory and the priority record, and you are ready to name a post-quantum option and the authority that defends it.
+A system is already on the inventory and has its place in the order on the migration plan, and you are ready to name a post-quantum option and the authority that defends it.
 
 ## Do this
 

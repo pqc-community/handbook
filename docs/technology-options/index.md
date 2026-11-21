@@ -5,7 +5,7 @@ displayed_sidebar: technologyOptionsSidebar
 description: Use-case map from confidentiality, many-party signatures, and non-updatable verifiers to the option pages and the evidence each job produces.
 ---
 
-Use this map after the inventory and the priority record. Pick the situation, open the page, record the authority, and carry the evidence onto the work product named in the table.
+Use this map after the inventory and the order on the migration plan. Pick the situation, open the page, record the authority, and carry the evidence onto the work product named in the table.
 
 | Situation | Page | Authority | Evidence to record |
 | --- | --- | --- | --- |

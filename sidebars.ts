@@ -253,11 +253,9 @@ const sidebars: SidebarsConfig = {
   resourcesSidebar: [
     'resources/index',
     'resources/inventory-record',
-    'resources/priority-record',
     'resources/vendor-response-log',
     'resources/migration-plan',
     'resources/change-record',
-    'resources/evidence-record',
     'resources/review-log',
     'resources/protect-this-first',
     'resources/glossary',

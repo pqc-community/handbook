@@ -11,22 +11,22 @@ Use this record when completing a first-pass inventory of systems that handle se
 
 ## Minimum fields
 
-system, owner, key-establishment algorithm, signature algorithm, software control, confidentiality period, renewal, version, dependencies, not visible to a scan, confidence
+system, owner, key-establishment algorithm, signature algorithm, software control, confidentiality period, renewal, version, dependencies, not visible to a scan, how found, confidence
 
-Record `unknown` in any cell you cannot verify yet. Set `confidence` to `known` only when every applicable algorithm cell names a construction (use `not applicable` for a job the system does not perform); otherwise leave it as `unknown`.
+Record `unknown` in any cell you cannot verify yet. Set `confidence` to `known` only when every applicable algorithm cell names a specific algorithm or scheme, such as X25519MLKEM768 or ECDSA P-256 (use `not applicable` for a job the system does not perform); otherwise leave it as `unknown`. In `how found`, name the discovery methods used for the row, such as an owner interview, a certificate export, a scan, or a supplier answer, so a reviewer can judge coverage.
 
 List every dependency inside the `dependencies` cell separated by a semicolon rather than giving a shared component its own system row. Separate multiple timelines or sources in a single cell with a semicolon. Keep keys, secrets, and personal data out of the file — name the system only.
 
 ## Filled example
 
-| system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | product engineering lead | unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.1 (fictional) | workspace supplier's hosting service | supplier-hosted cryptography | unknown |
+| system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Product-design archive in supplier-hosted workspace | product engineering lead | unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.1 (fictional) | workspace supplier's hosting service | supplier-hosted cryptography | asset owner; supplier questions sent | unknown |
 
 ## Blank template
 
-| system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | confidence |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| system | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Download a blank CSV: [inventory-record.csv](/downloads/inventory-record.csv).
 

@@ -108,7 +108,7 @@ export default function Home(): ReactNode {
                 <tr>
                   <td>Product-design archive</td>
                   <td>Company policy requires 15 years of confidentiality</td>
-                  <td>Priority record</td>
+                  <td>Migration plan</td>
                 </tr>
               </tbody>
             </table>

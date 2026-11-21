@@ -7,7 +7,7 @@ description: The confidentiality job where harvest-now, decrypt-later applies. L
 
 ## When this applies
 
-The priority record marks key establishment for a system whose data confidentiality period is long enough that recorded traffic or stored ciphertext remains sensitive after a migration date.
+The migration plan orders key establishment first for a system whose data confidentiality period is long enough that recorded traffic or stored ciphertext remains sensitive after a migration date.
 
 ## Do this
 

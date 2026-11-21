@@ -7,7 +7,7 @@ displayed_sidebar: migrationPracticesSidebar
 
 ## When this applies
 
-You have a priority record and need to turn it into dated, owned milestones, or a supplier release, test result, design freeze, or support end has changed a date you rely on.
+The migration plan has an order and you need to turn it into dated, owned milestones, or a supplier release, test result, design freeze, or support end has changed a date you rely on.
 
 ## Who does what
 
@@ -26,7 +26,7 @@ You have a priority record and need to turn it into dated, owned milestones, or 
    - NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) for US national security systems.
 
    [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) schedules quantum-vulnerable public-key algorithms for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines. Record the authority and audience beside every date; see [Why migration timelines differ](/learn/explainers/timelines/).
-2. **Set a milestone for each asset and job** from the priority record. Use one plan row per asset and job, and name the job at the start of "why it is included"; combine jobs in one row only when they share every date, owner, and milestone. Highest-priority lines get the earliest applicable milestone. Lines that follow supplier updates get a tracking milestone, not a bespoke project.
+2. **Set a milestone for each asset and job** on the rows [Decide what to migrate first](/migration-practices/priority/) has ordered. Keep one row per asset and job; combine jobs in one row only when they share every date, owner, and milestone. Highest-priority lines get the earliest applicable milestone. Lines that follow supplier updates get a tracking milestone, not a bespoke project.
 3. **Track four separate dates for each asset**, because a supplier's release is not your deployment:
    - **supplier release** — when the supplier ships post-quantum support;
    - **testing** — when your interoperability and performance checks complete;
@@ -39,7 +39,7 @@ The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say th
 
 ## Keep this evidence
 
-The [migration plan](/resources/migration-plan/): per asset, the owner, why it is included (and for which jobs), the applicable timeline and authority, the milestone, the four dates, dependencies, the next action, and the subsequent-review date.
+The [migration plan](/resources/migration-plan/): per asset and job, the owner, the order and reason, the timeline and authority, the milestone, the four dates, dependencies, the next action, and the subsequent-review date.
 
 ## Example
 

@@ -7,7 +7,7 @@ description: A many-party migration coordinated across signers, verifiers, PKI, 
 
 ## When this applies
 
-The priority record marks signatures, or a verifier that can still be updated, and the organisation is ready to list every party that needs to move together.
+The migration plan has a line for signatures, or a verifier that can still be updated, and the organisation is ready to list every party that needs to move together.
 
 ## Do this
 

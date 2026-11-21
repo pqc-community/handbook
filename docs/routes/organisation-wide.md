@@ -12,7 +12,7 @@ Each role supplies one input to the plan:
 | Role | Input |
 | --- | --- |
 | Executive sponsor | The decision to proceed |
-| Migration lead | The one-page plan |
+| Migration lead | The migration plan |
 | Asset owners | The system and its unknowns |
 | Procurement | The supplier questions |
 | Legal or risk | The confidentiality period and the applicable timeline |
@@ -42,10 +42,10 @@ Then read these pages in order:
 4. [Inventory the cryptography](/migration-practices/inventory/)
 5. [Decide what to migrate first](/migration-practices/priority/)
 6. [Plan the migration](/migration-practices/plan/)
-7. [Evidence record](/resources/evidence-record/)
+7. [Change record](/resources/change-record/)
 8. [Review and report](/migration-practices/subsequent-review/)
 
-The output is a one-page [migration plan](/resources/migration-plan/) with an owner for each asset and a subsequent-review date.
+The output is a [migration plan](/resources/migration-plan/) with an owner, an order, and a subsequent-review date for each asset and job.
 
 The primary next page is [Migration plan](/resources/migration-plan/).
 

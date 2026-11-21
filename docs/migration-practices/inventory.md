@@ -33,13 +33,13 @@ You have decided to act and need to know where public-key cryptography is used b
 7. **Mark what a scan cannot see**, including embedded firmware, hardware-bound keys, boot trust anchors, and cryptography inside a supplier's product or hosted service.
 8. **Set confidence honestly.** Use `known` only when every applicable algorithm cell names a specific algorithm or scheme, such as X25519MLKEM768 or ECDSA P-256, rather than "TLS" or "encrypted"; otherwise `unknown`. An `unknown` row stays on the inventory with an owner.
 
-A first list of rows is a **first-pass inventory**. With a named owner per row and a subsequent-review date, it becomes a **maintained inventory** that the rest of the programme can rely on. Note the discovery methods used, and their gaps, on an [evidence record](/resources/evidence-record/) so a reviewer can judge coverage.
+A first list of rows is a **first-pass inventory**. With a named owner per row and a place on the [review log](/resources/review-log/), it becomes a **maintained inventory** that the rest of the programme can rely on. Record the discovery methods used for each row in its `how found` cell, so a reviewer can judge coverage.
 
 The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) urges organisations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it.
 
 ## Keep this evidence
 
-The [inventory record](/resources/inventory-record/), with every column filled, marked `unknown`, or marked `not applicable`, and an evidence record of the discovery methods used and the date the inventory was last reviewed.
+The [inventory record](/resources/inventory-record/), with every column filled, marked `unknown`, or marked `not applicable`, including how each row was found, and the review-log entry showing when the inventory was last reviewed.
 
 ## Example
 

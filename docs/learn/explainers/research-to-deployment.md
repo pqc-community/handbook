@@ -31,7 +31,7 @@ flowchart TD
 | **Protocol specification** | Defines how a protocol or format uses the algorithm | RFC 10024 hybrid TLS key agreement (August 2026); RFC 9881 ML-DSA in X.509 certificates (October 2025) |
 | **Implemented and validated** | Code exists in libraries or hardware; where required, a module is validated under FIPS 140-3 | NIST IR 8547 (§3) says NIST is revising CMVP processes to accelerate validation of post-quantum modules |
 | **Product release** | A supplier ships a version with the capability | Supplier release notes and version numbers |
-| **Deployed** | Enabled, negotiated, and evidenced on your systems | Your own change and evidence records |
+| **Deployed** | Enabled, negotiated, and evidenced on your systems | Your own change records |
 
 ## Things that are easy to confuse
 

@@ -32,9 +32,9 @@ A subsequent-review date has arrived, or something has happened that may make th
 **At each review:**
 
 1. Open the review log and the records due for review.
-2. Update confidence and dates on inventory, priority, plan, and supplier rows.
-3. Carry each unresolved item forward on its own review-log row, with its own owner and date.
-4. Set the next review date on the review log and on every open record that carries one (priority, plan, and evidence records).
+2. Update confidence, order, and dates on the inventory, plan, and supplier rows.
+3. Carry each unresolved item forward on its own review-log row, with its own owner, status, and date.
+4. Mark each item `open` or `closed` on the review log, and set the next review date on the review log and on the plan rows you reviewed.
 5. Report to the sponsor: what moved, what is blocked and why, which decisions or risk acceptances are needed, and the next review date.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) describes the transition as one in which quantum-vulnerable and quantum-resistant algorithms will coexist and be validated for a period, which is why records need regular reopening rather than a single sign-off.
