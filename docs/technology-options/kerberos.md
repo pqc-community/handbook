@@ -7,7 +7,7 @@ description: Where Kerberos and directory-based sign-in depend on public-key cry
 
 ## What it is
 
-Kerberos is the sign-in protocol behind most enterprise directory services. Its core exchanges use **symmetric** cryptography: tickets are protected with shared keys derived from passwords or long-term secrets. Public-key cryptography enters in two places:
+Kerberos is a sign-in protocol used by many enterprise directory services. Its core exchanges use **symmetric** cryptography: tickets are protected with shared keys derived from passwords or long-term secrets. Public-key cryptography enters in two places:
 
 - **certificate and smart-card logon**, using Public Key Cryptography for Initial Authentication in Kerberos (PKINIT), which does **key establishment** and **signatures**;
 - **directory connections** protected by TLS, such as LDAP over TLS, which follow [TLS and web services](/technology-options/tls/).
@@ -18,8 +18,8 @@ Status as checked on 21 November 2026.
 
 | Part | Position |
 | --- | --- |
-| Core Kerberos encryption | Symmetric, for example AES with HMAC-SHA2 ([RFC 8009](https://www.rfc-editor.org/info/rfc8009), Informational, October 2016). The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says existing symmetric algorithms with at least 128-bit keys can continue to be used |
-| PKINIT | [RFC 4556](https://www.rfc-editor.org/info/rfc4556) (Proposed Standard, June 2006) defines Diffie-Hellman and public-key-encryption methods for delivering the reply key, with certificates for authentication; it predates the post-quantum standards, so ask the supplier for its post-quantum plan |
+| Core Kerberos encryption | Symmetric, for example AES with HMAC-SHA2 ([RFC 8009](https://www.rfc-editor.org/info/rfc8009), Informational, October 2016). The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says existing symmetric algorithms with at least 128-bit keys can continue to be used, while [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) names AES with 256-bit keys for US national security systems; check which applies under [Choosing an option](/technology-options/choosing/) |
+| PKINIT | [RFC 4556](https://www.rfc-editor.org/info/rfc4556) (Proposed Standard, June 2006) defines Diffie-Hellman and public-key-encryption methods for delivering the reply key, with certificates for authentication. It predates the post-quantum standards and defines no post-quantum method, so ask the supplier in writing for its post-quantum plan |
 | Certificates for smart-card logon | Follow [PKI and certificates](/technology-options/pki/) and [Identity and sign-in](/technology-options/identity/) |
 
 ## Who usually chooses
@@ -41,7 +41,7 @@ The directory and operating-system supplier decides what the domain controllers 
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the directory service, with certificate logon recorded separately and the issuing CA in `dependencies`; the supplier answer in the [vendor response log](/resources/vendor-response-log/); certificate logon as a signatures line on the [migration plan](/resources/migration-plan/).
+An [inventory](/resources/inventory-record/) row for the directory service, with labelled values in its algorithm cells, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman", and the issuing CA in `dependencies`; the supplier answer in the [vendor response log](/resources/vendor-response-log/); for certificate logon, a key-establishment line and a signatures line on the [migration plan](/resources/migration-plan/).
 
 ## Example
 
@@ -53,6 +53,7 @@ A decision-ready record notes that password-based Kerberos uses AES encryption t
 
 - IETF, Public Key Cryptography for Initial Authentication in Kerberos (PKINIT), RFC 4556, June 2006. [RFC 4556](https://www.rfc-editor.org/info/rfc4556)
 - IETF, AES Encryption with HMAC-SHA2 for Kerberos 5, RFC 8009, October 2016. [RFC 8009](https://www.rfc-editor.org/info/rfc8009)
+- National Security Agency, Commercial National Security Algorithm Suite 2.0 and Quantum Computing Frequently Asked Questions, version 2.2, October 2026. [CNSA 2.0 FAQ (PDF)](https://media.defense.gov/2022/Sep/07/2003071836/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 
 ## Related pages

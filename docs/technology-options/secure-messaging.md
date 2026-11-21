@@ -21,10 +21,10 @@ Status as checked on 21 November 2026.
 | Part | Mechanism | Status |
 | --- | --- | --- |
 | Standard group messaging protocol | Messaging Layer Security (MLS), [RFC 9420](https://www.rfc-editor.org/info/rfc9420) | Proposed Standard, July 2023 |
-| Post-quantum MLS | ML-KEM and hybrid cipher suites for MLS, draft-ietf-mls-pq-ciphersuites | Internet-Draft in IETF Last Call (ending 3 December 2026), intended as a Proposed Standard |
+| Post-quantum MLS, message keys and signatures | ML-KEM and hybrid cipher suites for MLS, draft-ietf-mls-pq-ciphersuites, with either traditional or ML-DSA signatures | Internet-Draft in IETF Last Call (ending 3 December 2026), intended as a Proposed Standard |
 | Proprietary messaging protocols | Each provider's own design | Ask the provider in writing |
 
-The draft registers MLS cipher suites built on ML-KEM, optionally combined with traditional elliptic-curve key encapsulation. Until it is published, apply the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/): use a draft mechanism only where the product ships it and no applicable authority advises against it, and record it as provisional. The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), whose lists focus on products typically acquired by the US federal government, lists chat and messaging among categories where products using post-quantum standards are widely available.
+The draft registers MLS cipher suites built on ML-KEM, optionally combined with traditional elliptic-curve key encapsulation, paired with either traditional or ML-DSA signatures; it says the suites with traditional signatures address harvest-now, decrypt-later without the cost of post-quantum signatures. Until it is published, apply the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/): use a draft mechanism only where the product ships it and no applicable authority advises against it, and record it as provisional. For UK readers, the UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts. The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), which focuses on products typically acquired by the US federal government, lists collaboration software (chat and messaging) among categories where products using post-quantum standards are widely available.
 
 ## Who usually chooses
 
@@ -38,24 +38,25 @@ The provider. Your job is to ask the right questions, choose a product whose ans
 
 ## Traps
 
-- **Old clients** that cannot use the new mechanism can hold a conversation to classical key exchange.
+- **Old clients** that cannot use the new mechanism can keep a group on a classical cipher suite, because each MLS group uses one cipher suite, or be unable to join it.
 - **Messages already sent** stay protected by the old key exchange in any recording an attacker holds.
 - **"Quantum-safe" without a job**: post-quantum message keys do not make authentication or stored history post-quantum; see [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/).
 
 ## Record it fills
 
-One [vendor response log](/resources/vendor-response-log/) row per job; an [inventory](/resources/inventory-record/) row for the service, with the provider in `dependencies`; history and exports on the inventory as stored data.
+One [vendor response log](/resources/vendor-response-log/) row per job; an [inventory](/resources/inventory-record/) row for the service, with the provider in `dependencies` and labelled values in the key-establishment cell, for example "messages: …; stored history: …"; a [migration plan](/resources/migration-plan/) line per job; if you rely on the draft mechanism, "provisional: Internet-Draft" in the [change record](/resources/change-record/)'s `option` and an item on the [review log](/resources/review-log/) to revisit it when it is published.
 
 ## Example
 
 An insufficient record is "Our chat app says it is post-quantum."
 
-A decision-ready record names the product and release, the provider's written answer on message keys (judged `complete` or `vague`), a separate row for authentication, whether older clients fall back, and the retention period for message history.
+A decision-ready record names the product and release, the provider's written answer on message keys with its judgement, a separate row for authentication, whether older clients fall back, and the retention period for message history.
 
 ## Sources
 
 - IETF, The Messaging Layer Security (MLS) Protocol, RFC 9420, July 2023. [RFC 9420](https://www.rfc-editor.org/info/rfc9420)
 - IETF Datatracker, draft-ietf-mls-pq-ciphersuites, ML-KEM and Hybrid Cipher Suites for Messaging Layer Security, checked 21 November 2026. [draft-ietf-mls-pq-ciphersuites](https://datatracker.ietf.org/doc/draft-ietf-mls-pq-ciphersuites/)
+- UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - Cybersecurity and Infrastructure Security Agency, Product Categories for Technologies That Use Post-Quantum Cryptography Standards, 23 January 2026. [CISA product categories](https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards)
 
 ## Related pages
