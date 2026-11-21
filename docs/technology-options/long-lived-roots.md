@@ -26,7 +26,7 @@ A product or device checks signatures, usually on its firmware or software, with
 6. **Track the signing key with the verifier.** Give the key that signs the device's code its own [inventory](/resources/inventory-record/) row, recording where it is held in the `dependencies` cell. Its line on the plan moves with the verifier's, because it has to switch to whatever scheme the verifier accepts.
 7. **For devices already shipped**, record a retirement or replacement date in the plan line's `milestone` and any compensating controls in its `next action` on the [migration plan](/resources/migration-plan/); their verifier will not change.
 
-The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025) ask the organisations they address, technical decision-makers and risk owners in large organisations, critical national infrastructure, and bespoke IT, by 2028, to build an initial plan that identifies any requirement to migrate long-lived hardware roots of trust.
+The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025) ask organisations, by 2028, to build an initial plan that identifies any requirement to migrate long-lived hardware roots of trust. The timelines are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations.
 
 ## Keep this evidence
 

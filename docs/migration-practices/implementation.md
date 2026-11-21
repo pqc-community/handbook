@@ -47,7 +47,7 @@ An insufficient record is "We enabled PQC."
 
 A decision-ready record, from [Protect this first](/resources/protect-this-first/), shows the product-design archive's staging pilot of Workspace 4.2:
 
-- **option:** hybrid X25519MLKEM768 for TLS connections, with the authority recorded as FIPS 203 for ML-KEM and the UK NCSC's TLS guidance (15 October 2026) for the hybrid form;
+- **option:** hybrid X25519MLKEM768 for TLS connections, with the authority recorded as FIPS 203 for ML-KEM and the UK NCSC's TLS guidance (15 October 2026), written for system administrators, for the hybrid form;
 - **pilot:** a test client connects and its own handshake log shows X25519MLKEM768 negotiated, the supplier's connection log agrees, and an authorised test account retrieves sample files;
 - **rollback triggers:** failed retrieval, or a classical-only connection;
 - **result:** the staging pilot passed on 2026-10-21. Production rollout is pending, so the change is not closed; the same client check will be run against the production workspace after rollout.
