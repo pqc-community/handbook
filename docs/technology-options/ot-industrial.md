@@ -17,16 +17,16 @@ The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (pu
 
 ## Post-quantum options and status
 
-As at 21 November 2026, there is no single post-quantum standard for OT. What exists depends on the layer:
+Status as checked on 21 November 2026: there is no single post-quantum standard for OT. What exists depends on the layer:
 
 | Layer | Position |
 | --- | --- |
-| IT zones and remote access into them | Same as enterprise IT: [TLS and web services](/technology-options/tls/), [VPNs and IPsec](/technology-options/vpn-ipsec/), [SSH](/technology-options/ssh/). The NCSC says remote access to ICS IT zones will need to become quantum-secure |
-| Industrial protocols | The NCSC names ICS protocols as one of two areas where post-quantum protocols will be harder to develop, because some legacy protocols have never had modern cryptography and the architectures around them will need to change |
+| IT zones and remote access into them | Same as enterprise IT: [TLS and web services](/technology-options/tls/), [VPNs and IPsec](/technology-options/vpn-ipsec/), [SSH](/technology-options/ssh/). The NCSC timelines say remote access to ICS IT zones will need to become quantum-secure |
+| Industrial protocols | The NCSC timelines name ICS protocols as one of two areas where post-quantum protocols will be harder to develop, because some legacy protocols have never had modern cryptography and the architectures around them will need to change |
 | Field devices and sensors | Whatever the device and its supplier support; ask in writing |
-| Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) leaves OT and IoT devices out of scope, while saying they should also be transitioning |
+| Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) whose lists focus on products typically acquired by the US federal government, leaves OT and IoT devices out of scope, while saying they should also be transitioning |
 
-The NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says owners of bespoke IT or OT that use public-key cryptography in proprietary systems will need to choose which algorithms and protocols to use themselves. Apply the rules on [Choosing an option](/technology-options/choosing/).
+The NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says owners of bespoke IT or OT that use public-key cryptography in proprietary systems will need to choose which algorithms and protocols to use themselves. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols.
 
 ## What good looks like
 
@@ -34,7 +34,7 @@ The NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (v
 - Integrity of commands and sensor data treated as the priority job for fielded devices, with confidentiality judged case by case.
 - Remote access and IT/OT boundaries moved on the enterprise IT timetable.
 - Changes to physical infrastructure planned to coincide with other maintenance and refresh, which the NCSC timelines advise, and post-quantum requirements written into equipment purchases.
-- A written answer from each control-system and device supplier, and a review date for protocols that have no post-quantum path yet.
+- A written answer from each control-system and device supplier to the questions on the [vendor response log](/resources/vendor-response-log/), and a review date for protocols that have no post-quantum path yet.
 
 ## Who usually chooses
 
@@ -49,13 +49,13 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 ## Record it fills
 
-[Inventory](/resources/inventory-record/) rows for OT systems and device types; supplier answers in the [vendor response log](/resources/vendor-response-log/); [migration plan](/resources/migration-plan/) lines whose milestones follow maintenance and refresh windows; exceptions and accepted risks on the [review log](/resources/review-log/).
+[Inventory](/resources/inventory-record/) rows for OT systems and device types, with supplier and protocol in `dependencies`; supplier answers in the [vendor response log](/resources/vendor-response-log/); one [migration plan](/resources/migration-plan/) line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, and the device's expected service life in `reason and source`; where no option exists yet, the [change record](/resources/change-record/) shows `unknown` and blocked, and the protocol's next check goes in the plan's `subsequent review`; exceptions and accepted risks on the [review log](/resources/review-log/).
 
 ## Example
 
 An insufficient record is "The plant network is isolated, so post-quantum does not apply."
 
-A decision-ready record lists each controller and sensor type with its supplier, protocol, and expected service life, separates remote-access links (on the IT timetable) from field protocols (awaiting supplier answers, with review dates), and ties replacements to the next planned outage.
+A decision-ready record lists each controller and sensor type with its supplier and protocol on the inventory and its expected service life in the plan line's `reason and source`, separates remote-access links (on the IT timetable) from field protocols (awaiting supplier answers, with review dates), and ties replacements to the next planned outage.
 
 ## Sources
 
