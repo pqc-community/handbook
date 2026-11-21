@@ -38,7 +38,7 @@ Digital signatures are a separate migration with different drivers, covered by [
 ## Sources
 
 - NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024; planning note of 17 November 2025 and potential-updates spreadsheet. [FIPS 203 publication page](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 203 (PDF)](https://doi.org/10.6028/NIST.FIPS.203)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), updated 2 November 2026. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - NSA, Commercial National Security Algorithm Suite 2.0 and Quantum Computing FAQ, version 2.2, October 2026. [CNSA 2.0 FAQ (PDF)](https://media.defense.gov/2022/Sep/07/2003071836/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF)
 - IETF, RFC 9935 (ML-KEM in X.509) and RFC 9936 (ML-KEM in CMS), March 2026. [RFC 9935](https://www.rfc-editor.org/info/rfc9935), [RFC 9936](https://www.rfc-editor.org/info/rfc9936)

@@ -79,7 +79,7 @@ A [hash function](#hash-function) such as SHA3-256 produces one fixed-length dig
 
 ### FIPS (Federal Information Processing Standard)
 
-A standard NIST issues for US federal computer systems, such as FIPS 203 for ML-KEM. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (updated 2 November 2026) says FIPS are not always mandatory for federal agencies: each FIPS's applicability section says when it is. FIPS do not apply to national security systems, and many private-sector organisations use them voluntarily. See [How to read status](/standards/#how-to-read-status).
+A standard NIST issues for US federal computer systems, such as FIPS 203 for ML-KEM. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (content last updated 3 July 2024) says FIPS are not always mandatory for federal agencies: each FIPS's applicability section says when it is. FIPS do not apply to national security systems, and many private-sector organisations use them voluntarily. See [How to read status](/standards/#how-to-read-status).
 
 ### Forward secrecy
 

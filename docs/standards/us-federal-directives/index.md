@@ -18,9 +18,9 @@ These documents set post-quantum requirements for the US federal government. The
 ### Key federal dates
 
 - 2 January 2030: federal agencies support TLS 1.3 or a successor (EO 14306; M-26-15 Appendix A).
-- 31 December 2030: post-quantum key establishment in agency high-value assets and high-impact systems (EO 14412; M-26-15). The same date is in the contractor FAR rule EO 14412 directs to be proposed; it is not yet a contract requirement.
-- 31 December 2031: post-quantum digital signatures in agency high-value assets and high-impact systems (EO 14412; M-26-15).
-- 2035: full migration of federal systems in scope of M-26-15, matching the NSM-10 goal of mitigating as much quantum risk as feasible by 2035.
+- 31 December 2030: post-quantum key establishment in agency high-value assets and high-impact systems (EO 14412; M-26-15 phases agencies' work towards it). The same date is in the contractor FAR rule EO 14412 directs to be proposed; it is not yet a contract requirement.
+- 31 December 2031: post-quantum digital signatures in agency high-value assets and high-impact systems (EO 14412).
+- 2035: M-26-15's final phase, completing migration of remaining systems based on risk and commercial availability, in line with the NSM-10 goal of mitigating as much quantum risk as feasible by 2035.
 
 These dates are for US federal agencies. Other authorities set their own; see [Timelines](/learn/timelines/).
 

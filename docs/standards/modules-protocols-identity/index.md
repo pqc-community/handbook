@@ -52,7 +52,7 @@ These IETF documents are not summarised in the handbook. Statuses were checked o
 | RFC 9954 | Hybrid key exchange design framework for TLS 1.3. Informational, July 2026. | [RFC 9954](https://www.rfc-editor.org/info/rfc9954) |
 | draft-ietf-tls-mlkem | ML-KEM on its own in TLS 1.3. Internet-Draft in the RFC Editor queue. | [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/) |
 | RFC 9941 | SSH key exchange with sntrup761x25519. Informational, April 2026. | [RFC 9941](https://www.rfc-editor.org/info/rfc9941) |
-| RFC 10042 | SSH hybrid key exchange with ML-KEM (mlkem768x25519). Informational, August 2026. | [RFC 10042](https://www.rfc-editor.org/info/rfc10042) |
+| RFC 10042 | SSH hybrid key exchange with ML-KEM: mlkem768x25519-sha256, mlkem768nistp256-sha256 and mlkem1024nistp384-sha384. Informational, August 2026. | [RFC 10042](https://www.rfc-editor.org/info/rfc10042) |
 | RFC 9370 | Multiple key exchanges in IKEv2. Proposed Standard, May 2023. | [RFC 9370](https://www.rfc-editor.org/info/rfc9370) |
 | draft-ietf-ipsecme-ikev2-mlkem | ML-KEM in IKEv2. Internet-Draft in the RFC Editor queue. | [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/) |
 | RFC 9980 | Post-quantum cryptography in OpenPGP. Proposed Standard, June 2026. | [RFC 9980](https://www.rfc-editor.org/info/rfc9980) |
@@ -61,7 +61,7 @@ These IETF documents are not summarised in the handbook. Statuses were checked o
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), updated 2 November 2026. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - RFC Editor information pages for each RFC listed, checked 21 November 2026. [RFC Editor](https://www.rfc-editor.org/)
 
 ## Related pages

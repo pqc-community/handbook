@@ -9,7 +9,7 @@ description: France's ANSSI 2023 follow-up position paper on post-quantum crypto
 
 This position paper from France's national cybersecurity agency (ANSSI), dated 21 December 2023, updates ANSSI's 2022 position on the post-quantum transition and is to be read as an addendum to it. It sets out ANSSI's recommendations on post-quantum algorithms and on hybridisation, meaning the combination of a post-quantum algorithm with established classical public-key cryptography.
 
-The paper is addressed to industry and to designers of security products: ANSSI encourages them to include the quantum threat in their risk analysis and to define a progressive transition strategy. It expresses ANSSI's recommendations and views rather than a binding requirement. ANSSI publishes further post-quantum material that could not be verified for this summary on 21 November 2026; check [ANSSI's post-quantum cryptography page](https://cyber.gouv.fr/enjeux-technologiques/cryptographie-post-quantique/) for its current positions.
+The paper is addressed to industry and to designers of security products: ANSSI encourages them to include the quantum threat in their risk analysis and to define a progressive transition strategy. It sets out ANSSI's recommendations and views. For the security evaluation of products, however, it states that a product offering post-quantum mitigation shall implement hybridation, unless it relies only on XMSS, LMS or SPHINCS+ (SLH-DSA). ANSSI publishes further post-quantum material that could not be verified for this summary on 21 November 2026; check [ANSSI's post-quantum cryptography page](https://cyber.gouv.fr/enjeux-technologiques/cryptographie-post-quantique/) for its current positions.
 
 :::info[Official texts]
 
@@ -32,7 +32,7 @@ ANSSI strongly stresses the need for hybridisation wherever post-quantum protect
 
 ANSSI does not give a closed list of recommended algorithms. The paper's non-exhaustive list names CRYSTALS-Kyber (ML-KEM, [FIPS 203](/standards/post-quantum/fips-203/)) and FrodoKEM for key encapsulation, and CRYSTALS-Dilithium (ML-DSA, [FIPS 204](/standards/post-quantum/fips-204/)), Falcon, SPHINCS+ (SLH-DSA, [FIPS 205](/standards/post-quantum/fips-205/)), and XMSS and LMS ([NIST SP 800-208](/standards/post-quantum/sp-800-208/)) for signatures, generally preferring the highest security levels. The paper predates the final NIST standards of August 2024, so it refers to the algorithms by their submission names and draft standards.
 
-For signatures, hybridisation is optional for the stateful hash-based schemes XMSS and LMS, which ANSSI considers relevant where state can be carefully stored, typically for software updates, and may be optional for SLH-DSA. That distinction matters for long-lived verifiers such as firmware and update roots.
+For signatures, hybridisation is optional for the stateful hash-based schemes XMSS and LMS, which ANSSI considers relevant where state can be carefully stored, typically for software updates, and may also be optional for SLH-DSA; the paper's product-evaluation section lists SPHINCS+ (SLH-DSA) alongside XMSS and LMS as exceptions. That distinction matters for long-lived verifiers such as firmware and update roots.
 
 ## Sources
 

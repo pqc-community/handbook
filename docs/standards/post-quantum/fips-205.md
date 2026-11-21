@@ -31,13 +31,13 @@ FIPS 205 is issued by the National Institute of Standards and Technology (NIST).
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) lists SLH-DSA among NIST's approved quantum-resistant digital signature schemes, alongside ML-DSA in [FIPS 204](/standards/post-quantum/fips-204/) and the stateful schemes in [SP 800-208](/standards/post-quantum/sp-800-208/). Because it relies on different security assumptions from ML-DSA, it gives organisations a signature option that does not depend on lattice problems.
 
-The draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) would add six parameter sets with a limit of 2^24 signatures per key; NIST states they are not intended for general use. Until it is final, it is not an approved specification. For certificates and signed messages, [RFC 9909](https://www.rfc-editor.org/info/rfc9909) (December 2025) specifies SLH-DSA in X.509, and [RFC 9814](https://www.rfc-editor.org/info/rfc9814) (July 2025) specifies SLH-DSA in CMS.
+The draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) would add six parameter sets with a limit of 2^24 signatures per key; NIST states they are not approved for general-purpose use. Until it is final, it is not an approved specification. For certificates and signed messages, [RFC 9909](https://www.rfc-editor.org/info/rfc9909) (December 2025) specifies SLH-DSA in X.509, and [RFC 9814](https://www.rfc-editor.org/info/rfc9814) (July 2025) specifies SLH-DSA in CMS.
 
 ## Sources
 
 - NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205 publication page](https://csrc.nist.gov/pubs/fips/205/final), [FIPS 205 (PDF)](https://doi.org/10.6028/NIST.FIPS.205)
 - NIST, SP 800-230 initial public draft, 13 April 2026. [NIST SP 800-230 IPD](https://csrc.nist.gov/pubs/sp/800/230/ipd)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), updated 2 November 2026. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - IETF, RFC 9909 (SLH-DSA in X.509), December 2025, and RFC 9814 (SLH-DSA in CMS), July 2025. [RFC 9909](https://www.rfc-editor.org/info/rfc9909), [RFC 9814](https://www.rfc-editor.org/info/rfc9814)
 

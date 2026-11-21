@@ -9,7 +9,7 @@ description: EU NIS Cooperation Group roadmap recommending 2026, 2030 and 2035 m
 
 The coordinated implementation roadmap sets out how EU Member States should plan their transition to post-quantum cryptography: first steps and initial national roadmaps, then pilots and transitions banded by high-, medium- and low-risk use cases, with quantum-safe software and firmware upgrades becoming the default.
 
-It is Part 1, Version 1.1, of the work of the PQC workstream of the NIS Cooperation Group, dated 11 June 2025 on its cover, and the first deliverable of that workstream. The European Commission published it on its digital-strategy site on 23 June 2025. It is addressed to Member States and makes recommendations; it does not itself place legal obligations on organisations.
+It is Part 1, Version 1.1, of the work of the PQC workstream of the NIS Cooperation Group, dated 11 June 2025 on its cover, and the first deliverable of that workstream. The European Commission published it on its digital-strategy site on 23 June 2025. It is aimed at Member States, and it says public administrations and critical infrastructure entities, notably those in scope of the NIS2 Directive, should refer to it. It makes recommendations; it does not itself place legal obligations on organisations.
 
 :::info[Official texts]
 
@@ -25,7 +25,7 @@ It is Part 1, Version 1.1, of the work of the PQC workstream of the NIS Cooperat
 | <time dateTime="2025-06-11">2025&#8209;06&#8209;11</time> | The EU PQC Workstream dated Part 1, Version 1.1, of the roadmap. |
 | <time dateTime="2025-06-23">2025&#8209;06&#8209;23</time> | The European Commission published the roadmap on its digital-strategy site. |
 | <time dateTime="2026-12-31">2026&#8209;12&#8209;31</time> | Roadmap milestone: Member States take the first steps and have initial national roadmaps. |
-| <time dateTime="2030-12-31">2030&#8209;12&#8209;31</time> | Roadmap milestone: next steps done, PQC transition completed for high-risk use cases, planning and pilots under way for medium-risk use cases, and quantum-safe software and firmware upgrades enabled by default. |
+| <time dateTime="2030-12-31">2030&#8209;12&#8209;31</time> | Roadmap milestone: next steps done, PQC transition completed for high-risk use cases, planning and pilots completed for medium-risk use cases, and quantum-safe software and firmware upgrades enabled by default. |
 | <time dateTime="2035-12-31">2035&#8209;12&#8209;31</time> | Roadmap milestone: transition completed for medium-risk use cases, and for low-risk use cases as far as feasible. |
 
 ## Relationship with other standards

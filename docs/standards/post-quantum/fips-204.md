@@ -28,7 +28,7 @@ FIPS 204 is issued by the National Institute of Standards and Technology (NIST).
 
 ## Relationship with other standards
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) lists ML-DSA, alongside SLH-DSA in [FIPS 205](/standards/post-quantum/fips-205/) and the stateful schemes in [SP 800-208](/standards/post-quantum/sp-800-208/), among NIST's approved quantum-resistant digital signature schemes. Separately, IR 8547 schedules the quantum-vulnerable signature algorithms in [FIPS 186-5](/standards/classical-public-key/fips-186-5/) — ECDSA, EdDSA and RSA signatures — for deprecation after 2030 and disallowance after 2035. IR 8547 also says a FIPS for a FALCON-derived signature algorithm is under development, and that dual or composite signatures can be accommodated in FIPS 140 validation if at least one component is approved (§3.2.2).
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) lists ML-DSA, alongside SLH-DSA in [FIPS 205](/standards/post-quantum/fips-205/) and the stateful schemes in [SP 800-208](/standards/post-quantum/sp-800-208/), among NIST's approved quantum-resistant digital signature schemes. Separately, IR 8547 schedules the quantum-vulnerable signature algorithms in [FIPS 186-5](/standards/classical-public-key/fips-186-5/) — ECDSA, EdDSA and RSA signatures — for deprecation after 2030 and disallowance after 2035. IR 8547 also says a FIPS for a FALCON-derived signature algorithm is under development, and that dual or composite signatures can be accommodated in FIPS 140 validation if at least one component is approved (§3.2 and §3.2.2).
 
 For certificates, [RFC 9881](/standards/modules-protocols-identity/rfc-9881/) (October 2025) specifies ML-DSA in X.509, and [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) (November 2026) specifies composite ML-DSA. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-DSA-87 for signatures in any use case.
 
@@ -37,7 +37,7 @@ Signature migration has different drivers from key establishment under [FIPS 203
 ## Sources
 
 - NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, 13 August 2024; planning note of 31 July 2026. [FIPS 204 publication page](https://csrc.nist.gov/pubs/fips/204/final), [FIPS 204 (PDF)](https://doi.org/10.6028/NIST.FIPS.204)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), updated 2 November 2026. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - NSA, Commercial National Security Algorithm Suite 2.0 and Quantum Computing FAQ, version 2.2, October 2026. [CNSA 2.0 FAQ (PDF)](https://media.defense.gov/2022/Sep/07/2003071836/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF)
 - IETF, RFC 9881, ML-DSA in the Internet X.509 Public Key Infrastructure, October 2025. [RFC 9881](https://www.rfc-editor.org/info/rfc9881)

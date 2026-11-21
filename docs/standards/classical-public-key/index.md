@@ -43,7 +43,7 @@ The schedule below is NIST's, for its own standards and guidelines, from [NIST I
 - NIST, SP 800-186, February 2023. [CSRC publication page](https://csrc.nist.gov/pubs/sp/800/186/final)
 - NIST, SP 800-56A Rev. 3, April 2018. [CSRC publication page](https://csrc.nist.gov/pubs/sp/800/56/a/r3/final)
 - NIST, SP 800-56B Rev. 2, March 2019. [CSRC publication page](https://csrc.nist.gov/pubs/sp/800/56/b/r2/final)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), updated 2 November 2026. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 
 ## Related pages
 

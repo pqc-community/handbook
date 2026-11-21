@@ -36,7 +36,7 @@ These publications specify NIST's approved quantum-resistant public-key algorith
 | --- | --- | --- |
 | FALCON-derived signature FIPS | Under development according to NIST IR 8547 (§2.1); no draft on CSRC as of 21 November 2026. | [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) |
 | HQC-KEM FIPS | Under development according to NIST IR 8547; no draft on CSRC as of 21 November 2026. | [NIST IR 8545](/standards/post-quantum/nist-ir-8545/) |
-| NIST SP 800-230 | Six additional SLH-DSA parameter sets limited to 2^24 signatures per key; not for general use. Initial public draft, 13 April 2026. | [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd) |
+| NIST SP 800-230 | Six additional SLH-DSA parameter sets limited to 2^24 signatures per key; not approved for general-purpose use. Initial public draft, 13 April 2026. | [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd) |
 | Additional signature schemes | NIST's on-ramp for further signature algorithms; nine candidates in round three. | [NIST IR 8610](/standards/post-quantum/nist-ir-8610/) |
 
 ### Standardisation status reports
@@ -50,7 +50,7 @@ These publications specify NIST's approved quantum-resistant public-key algorith
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547](https://csrc.nist.gov/pubs/ir/8547/final)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), updated 2 November 2026. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NIST CSRC publication pages for [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final), [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final), [SP 800-227](https://csrc.nist.gov/pubs/sp/800/227/final), [SP 800-230 (draft)](https://csrc.nist.gov/pubs/sp/800/230/ipd), [IR 8528](https://csrc.nist.gov/pubs/ir/8528/final), [IR 8545](https://csrc.nist.gov/pubs/ir/8545/final) and [IR 8610](https://csrc.nist.gov/pubs/ir/8610/final).
 
 ## Related pages
