@@ -20,7 +20,7 @@ Give each asset its own row, because one organisation can be an urgent adopter f
 - **C.** Do you operate a public-key infrastructure, or sign code, firmware, or documents that other people or devices rely on?
 - **D.** Do you build or run bespoke systems, rather than only supported commodity software and supplier-hosted services?
 
-Set `category` to `urgent adopter` or `regular adopter` and `path` to `full` or `short`, using the table on [Decide whether to act](/migration-practices/diagnose/). In `accepted by`, give the sponsor's role and the date they accepted the row.
+Set `category` to `urgent adopter` or `regular adopter` and `path` to `full` or `short`, using the table on [Decide whether to act](/migration-practices/diagnose/). In `route`, name the situation route; for the vendor-managed route, add "(all five conditions hold)" once you have checked them, or name the route the asset moved to. In `accepted by`, give the sponsor's role and the date they accepted the row.
 
 Record `unknown` in any cell you cannot verify yet. Keep keys, secrets, and personal data out of the file — name the system only.
 
@@ -32,7 +32,7 @@ From [Protect this first](/resources/protect-this-first/). The dates are fiction
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product-design archive in supplier-hosted workspace | yes (15 years under the company retention policy) | no | no | no (supplier-hosted service) | urgent adopter | full | Long-lived confidentiality | set up the programme | operations director | 2026-08-03 | managing director, 2026-07-13 |
 | Firmware verifier for product sensor | no (the verifier holds no confidential data) | yes (boot ROM trust anchor) | yes (the manufacturer signs the sensor's firmware) | yes (own product) | urgent adopter | full | Hard-to-change systems | set up the programme | operations director | 2026-08-03 | managing director, 2026-07-13 |
-| Office laptops | no (design files are kept in the archive; period for the IT lead to confirm) | no | no | no (supported commodity software) | regular adopter | short | Vendor-managed software | keep commodity software updated | IT lead | 2026-08-03 | managing director, 2026-07-13 |
+| Office laptops | no (design files are kept in the archive; period for the IT lead to confirm) | no | no | no (supported commodity software) | regular adopter | short | Vendor-managed software (all five conditions hold) | keep commodity software updated | IT lead | 2026-08-03 | managing director, 2026-07-13 |
 
 ## Blank template
 

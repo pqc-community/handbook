@@ -7,13 +7,13 @@ displayed_sidebar: resourcesSidebar
 
 ## When to use it
 
-Use this report at the end of each review under [Review and report](/migration-practices/subsequent-review/), and whenever a report trigger named in the [programme charter](/resources/programme-charter/) fires. It is written from the records reviewed, chiefly the [migration plan](/resources/migration-plan/) and the [review log](/resources/review-log/), so it adds no new facts: every statement in it should be traceable to a row in those records. Use it for each report the charter's `reporting` cell sets, as well as after each review.
+Use this record for each report the charter's `reporting` cell sets, at the end of each review under [Review and report](/migration-practices/subsequent-review/), and whenever a report trigger named in the [programme charter](/resources/programme-charter/) fires. It is written from the records reviewed, chiefly the [migration plan](/resources/migration-plan/) and the [review log](/resources/review-log/), so it adds no new facts: every statement in it should be traceable to a row in those records.
 
 ## Minimum fields
 
 date, reported by, reported to, records reviewed, key establishment, signatures, non-updatable verifier, blocked, milestones at risk, decisions needed, next review, sponsor response
 
-Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the assets by their inventory names and say what moved since the last report and what has not, in the words the [change record](/resources/change-record/) uses, such as "staging passed; production not migrated". Write `none` in a job field the programme does not cover yet.
+Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the assets by their inventory names and say what moved since the last report and what has not, in the words the [change record](/resources/change-record/) uses, such as "staging passed; production not migrated". Write `not applicable` in a job field the programme does not cover.
 
 - **blocked:** each blocked asset and job, why, and the date by which it has to be resolved.
 - **milestones at risk:** each plan milestone that may be missed, with its timeline and authority from the plan, such as the UK NCSC target dates, or `none`. A target date belongs to the authority that set it and the audience it addresses, not to every asset.
@@ -31,7 +31,7 @@ From [Protect this first](/resources/protect-this-first/). The organisation, rol
 | date | 2026-11-10 |
 | reported by | operations director (migration lead) |
 | reported to | managing director (executive sponsor) |
-| records reviewed | migration plan; vendor response log; change record for the archive pilot; inventory rows for the archive and the laptops; review log |
+| records reviewed | migration plan; vendor response log; purchase requirements; change records for the archive pilot and the sensor verifier; inventory rows for the archive and the laptops; decision note for the laptops; review log |
 | key establishment | Product-design archive in supplier-hosted workspace: staging pilot passed on 2026-10-21 with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated; stored-data key wrapping still unanswered by the supplier. Office laptops: on supported versions, tracked on the supplier-update path. |
 | signatures | Product-design archive in supplier-hosted workspace: the supplier has given no signature date. Firmware-signing key for product sensor: scheme to be chosen with the verifier option; where the key is held not yet recorded. Office laptops: tracked on the supplier-update path. |
 | non-updatable verifier | Firmware verifier for product sensor: no supported option; one shortlisted microcontroller supplier's reply was vague, and the other has not answered. |

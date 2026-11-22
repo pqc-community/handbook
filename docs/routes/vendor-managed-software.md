@@ -7,7 +7,7 @@ displayed_sidebar: routesSidebar
 
 This route is for an organisation that relies on standard browsers, operating systems, and mobile devices.
 
-Stay on this route only when all of these hold: the software is supplier-updated browsers, operating systems, or mobile devices; no record needs to stay confidential for years; there is no bespoke system; no verifier that cannot be updated later; and the product is in support and has a published or written supplier plan. A product that is out of support, or has no such plan, uses the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets also opens the [organisation-wide route](/routes/organisation-wide/).
+Stay on this route only when all of these hold: the software is supplier-updated browsers, operating systems, or mobile devices; no record needs to stay confidential for many years (question A on [Decide whether to act](/migration-practices/diagnose/)); there is no bespoke system; no verifier that cannot be updated later; and the product is in support and has a published or written supplier plan. A product that is out of support, or has no such plan, uses the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets also opens the [organisation-wide route](/routes/organisation-wide/).
 
 When all of those conditions hold, read in this order:
 

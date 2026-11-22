@@ -27,7 +27,7 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment (stored data) | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | change record | Product-design archive in supplier-hosted workspace | key establishment | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2027-02-10 |
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment; signatures | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | inventory record | Office laptops | key establishment; signatures | confirm the confidentiality period and record installed versions: 6 years under the office-records policy (fictional), with supported browser and operating-system versions recorded from the device-management console | IT lead | closed 2026-11-10 | not applicable |
+| 2026-11-10 | inventory record; decision note | Office laptops | key establishment; signatures | confirm the confidentiality period and record installed versions: 6 years under the office-records policy (fictional), so question A on the decision note stays `no`, with supported browser and operating-system versions recorded from the device-management console | IT lead | closed 2026-11-10 | not applicable |
 
 ## Blank template
 
