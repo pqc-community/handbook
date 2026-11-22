@@ -36,6 +36,8 @@ flowchart TD
     INV --> PLAN
     PLAN --> CR[Change record]
     CR --> RL[Review log]
+    CR --> INV
+    CR --> PLAN
     PLAN --> RL
     VRL --> RL
     RL --> REP[Progress report]
@@ -48,7 +50,7 @@ flowchart TD
 Three things join the rows:
 
 - **`asset`** is the name the inventory gives each system, service, product, or key. Every row-based record uses the same name, so one asset can be followed from its decision-note row to the sponsor's report. An asset found later, such as a signing key raised by question C on the decision note, starts on the inventory. A row that covers several assets lists them separated by semicolons; a review item about the programme as a whole uses `programme`, with `not applicable` as its job.
-- **`job`** is one of `key establishment`, `signatures`, or `non-updatable verifier`, with a qualifier in brackets where one job needs separate work, such as `key establishment (stored data)`. The plan, vendor log, purchase requirements, change record, and review log use these values; the inventory holds one algorithm cell per job instead, and the progress report has one field per job. Keep the jobs on separate rows, because their urgency and coordination differ; combine them in one row only when they share every owner and date, as the plan allows.
+- **`job`** is one of `key establishment`, `signatures`, or `non-updatable verifier`, with a qualifier in brackets where one job needs separate work, such as `key establishment (stored data)`. The plan, vendor log, purchase requirements, change record, and review log use these values; the inventory instead has one algorithm cell for key establishment and one for signatures, with a non-updatable verifier recorded in the signature cell, and the progress report has one field per job. Keep the jobs on separate rows, because their urgency and coordination differ; combine them in one row only when they share every owner and date, as the plan allows.
 - **`product and version`** names the supplier's release that an answer or purchase requirement covers. Compare it with the asset's `version` cell on the inventory: an answer about a later release, or about a component still being selected, does not change the inventory until that release is in use.
 
 An `unknown` is carried forward, not filled in with a guess. An `unknown` algorithm leaves the inventory row's `confidence` as `unknown`; a missing supplier answer becomes `missing` on the vendor log and in the plan's `supplier readiness`; a change with no supported option is recorded as `blocked`, with a resolve-by date, on the change record; and each of them stays open, as an `open` item on the review log or a plan line with its `subsequent review` date, with an owner, until it is resolved. The progress report lists what is still blocked.

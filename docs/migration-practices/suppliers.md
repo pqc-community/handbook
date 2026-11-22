@@ -58,7 +58,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 - a support period;
 - the evidence you will receive.
 
-Record each requirement, the supplier's commitment, and whether it was met on the [purchase requirements record](/resources/purchase-requirements/), one row per purchase or renewal and job.
+Record each requirement, the supplier's commitment, and whether it was met on the [purchase requirements record](/resources/purchase-requirements/), one row per purchase or renewal, job, and candidate supplier.
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
