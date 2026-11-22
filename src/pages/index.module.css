@@ -20,6 +20,10 @@
   margin-top: 1.5rem;
 }
 
+.tracksHeading {
+  margin: 2rem 0 1rem;
+}
+
 .choosePath,
 .workedExamplePreview,
 .referenceLibrary {
@@ -50,6 +54,7 @@
 }
 
 .roleCard h3,
+.roleCard h4,
 .resourceCard h3 {
   font-size: 1.05rem;
 }

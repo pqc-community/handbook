@@ -28,35 +28,32 @@ function HomepageHeader() {
 type SituationChoice = {
   title: string;
   to: string;
-  text?: string;
+  text: string;
 };
 
-const situations: SituationChoice[] = [
+const paths: SituationChoice[] = [
   {
-    title: 'We mostly use standard, vendor-managed software',
+    title: 'Short path: we mostly use standard, vendor-managed software',
     to: '/routes/vendor-managed-software/',
+    text: 'Every asset answers no to all four questions on Decide whether to act.',
   },
+  {
+    title: 'Full path: we are coordinating a migration across the organisation',
+    to: '/routes/organisation-wide/',
+    text: 'Any asset answers yes. The programme sends each asset to its track.',
+  },
+];
+
+const tracks: SituationChoice[] = [
   {
     title: 'We handle data that stays confidential for years',
     to: '/routes/long-lived-confidentiality/',
+    text: 'Driven by the data confidentiality period.',
   },
   {
     title: 'We own products or systems that may be hard to change',
     to: '/routes/hard-to-change-systems/',
-  },
-  {
-    title: 'I am coordinating a migration across the organisation',
-    to: '/routes/organisation-wide/',
-  },
-  {
-    title: 'Ask a supplier',
-    to: '/routes/ask-a-supplier/',
-    text: 'This is a shortcut across the four situations.',
-  },
-  {
-    title: 'I am not sure',
-    to: '/routes/not-sure/',
-    text: 'Choose a situation here without making a risk assessment.',
+    text: 'Driven by change lead time, relying parties, and verifiers that cannot be updated.',
   },
 ];
 
@@ -78,13 +75,32 @@ export default function Home(): ReactNode {
         <section className={styles.choosePath}>
           <div className="container">
             <div className="text--center margin-bottom--lg">
-              <Heading as="h2">Choose the situation</Heading>
+              <Heading as="h2">Choose your path</Heading>
+              <p>
+                Answer the four questions on <Link to="/migration-practices/diagnose/">Decide whether to act</Link>{' '}
+                first: they put each asset on a path and a route. <Link to="/routes/">All routes</Link> shows how they fit.
+              </p>
             </div>
             <div className={styles.choiceGrid}>
-              {situations.map((choice) => (
+              {paths.map((choice) => (
                 <Link key={choice.title} className={styles.roleCard} to={choice.to}>
                   <Heading as="h3">{choice.title}</Heading>
-                  {choice.text ? <p>{choice.text}</p> : null}
+                  <p>{choice.text}</p>
+                </Link>
+              ))}
+            </div>
+            <Heading as="h3" className={clsx('text--center', styles.tracksHeading)}>
+              Asset tracks on the full path
+            </Heading>
+            <p className="text--center">
+              The full path sends each asset to one of three tracks: these two, or Vendor-managed software for its
+              commodity assets.
+            </p>
+            <div className={styles.choiceGrid}>
+              {tracks.map((choice) => (
+                <Link key={choice.title} className={styles.roleCard} to={choice.to}>
+                  <Heading as="h4">{choice.title}</Heading>
+                  <p>{choice.text}</p>
                 </Link>
               ))}
             </div>

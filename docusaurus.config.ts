@@ -70,12 +70,12 @@ const config: Config = {
         {
           title: 'Routes',
           items: [
-            {label: 'Vendor-managed software', to: '/routes/vendor-managed-software/'},
+            {label: 'All routes', to: '/routes/'},
+            {label: 'Decide whether to act', to: '/migration-practices/diagnose/'},
+            {label: 'Short path: vendor-managed', to: '/routes/vendor-managed-software/'},
+            {label: 'Full path: organisation-wide', to: '/routes/organisation-wide/'},
             {label: 'Long-lived confidentiality', to: '/routes/long-lived-confidentiality/'},
             {label: 'Hard to change', to: '/routes/hard-to-change-systems/'},
-            {label: 'Organisation-wide', to: '/routes/organisation-wide/'},
-            {label: 'Ask a supplier', to: '/routes/ask-a-supplier/'},
-            {label: 'Not sure', to: '/routes/not-sure/'},
           ],
         },
         {

@@ -1,26 +1,46 @@
 ---
 title: Mostly standard, vendor-managed software
 sidebar_label: Vendor-managed software
-description: For an organisation whose software and hosted services are updated by their suppliers, with a check for the cases that need a different route.
+description: The short path, and the track for commodity assets on the full path. Keep supplier updates installed, write requirements into purchases and renewals, review, and leave when a condition stops holding.
 displayed_sidebar: routesSidebar
 ---
 
-This route is for an organisation that relies on standard browsers, operating systems, and mobile devices, and on supported supplier-hosted services such as hosted email and office suites.
+This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Suppliers deliver post-quantum support for these through normal updates.
 
-Stay on this route only when all of these hold: the software is supplier-updated browsers, operating systems, or mobile devices, or a supplier-hosted service whose cryptography the supplier controls; no record needs to stay confidential for many years (question A on [Decide whether to act](/migration-practices/diagnose/)); there is no bespoke system, and the organisation neither runs a public-key infrastructure nor signs code, firmware, or documents that others rely on (question C); no verifier that cannot be updated later; and the product is in support and has a published or written supplier plan that covers each job it performs. A plan that gives a target date without naming the algorithm is enough to stay on this route; when you next ask the supplier in writing, at a renewal or when the product leaves support, record the missing details as a `vague` answer on the vendor response log and follow them up. Including supplier-hosted services is this handbook's position, explained on [Keep commodity software updated](/migration-practices/commodity-software/). A product that is out of support, or has no such plan, uses the [hard-to-change systems route](/routes/hard-to-change-systems/). An organisation coordinating many assets also opens the [organisation-wide route](/routes/organisation-wide/).
+## Who it is for
 
-When all of those conditions hold, read in this order:
+This route is for assets that answer no to all four questions on [Decide whether to act](/migration-practices/diagnose/) and meet its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
 
-1. [Keep commodity software updated](/migration-practices/commodity-software/)
-2. [Timelines](/learn/timelines/)
-3. [Vendor response log](/resources/records/vendor-response-log/)
-4. [Review and report](/migration-practices/subsequent-review/)
+- **Every asset here:** this page is the whole of the short path, and there is no programme charter.
+- **Some assets on the full path:** the programme runs from [Organisation-wide](/routes/organisation-wide/), and this page is the track for the remaining assets, such as office laptops.
 
-The output is the checked versions on the [inventory record](/resources/records/inventory/), the requirement text used in purchases and renewals on the [purchase requirements record](/resources/records/purchase-requirements/), [vendor response log](/resources/records/vendor-response-log/) rows for any supplier you ask in writing, a tracking line on the [migration plan](/resources/records/migration-plan/), the [review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/) from each review, and, in the `route` cell of the [decision note](/resources/records/decision-note/), either "(all five conditions hold)" or the route you moved to.
+## Steps
 
-The primary next page is [Keep commodity software updated](/migration-practices/commodity-software/).
+1. [Decide whether to act](/migration-practices/diagnose/). Record it on the [decision note](/resources/records/decision-note/). Each asset's `route` reads "Vendor-managed software (all five conditions hold)" once you have checked the conditions. The first rows go on the [inventory record](/resources/records/inventory/).
+2. [Keep commodity software updated](/migration-practices/commodity-software/). Record the installed versions, or the subscribed service and plan, with the date checked, in the inventory record. Add a tracking line on the [migration plan](/resources/records/migration-plan/); [Timelines](/learn/timelines/) explains how to read the timeline it records.
+3. [Work with suppliers](/migration-practices/suppliers/#5-write-requirements-into-purchases-and-renewals), step 5. Record the requirement text used in each purchase and renewal on the [purchase requirements record](/resources/records/purchase-requirements/). When a product comes up for renewal or leaves support, steps 2 to 4 of the same practice apply. Record those answers on the [vendor response log](/resources/records/vendor-response-log/).
+4. [Review and report](/migration-practices/subsequent-review/). At each review, recheck the five conditions. Record the review on the [review log](/resources/records/review-log/) and the [progress report](/resources/records/progress-report/).
 
-For an illustration, not a real organisation, see [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/), which follows a small agency through this route, or the laptops in [Protect this first](/resources/examples/protect-this-first/).
+## Output records
+
+- The decision note's `route` cell: "(all five conditions hold)", or the route the asset moved to.
+- The checked versions on the inventory record.
+- The requirement text on the purchase requirements record.
+- Vendor response log rows for any supplier you ask in writing.
+- A tracking line on the migration plan.
+- The review log and progress report from each review.
+
+## When to leave
+
+- **An answer to question A, B, C, or D turns yes.** Re-answer the questions on the decision note. The asset moves to the track its new answers give, and the organisation follows the full path from [Organisation-wide](/routes/organisation-wide/).
+- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds, so the product moves to the [Hard-to-change systems](/routes/hard-to-change-systems/) route.
+- **An answer stays `unknown`, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
+
+## Worked example
+
+[Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) follows a fictional marketing agency along this route, from its decision note to the sponsor's report. The office laptops in [Protect this first](/resources/examples/protect-this-first/) show the same route as a track inside a full-path estate.
+
+The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen seamlessly as services are updated by their vendors.
 
 ## Sources
 
@@ -28,6 +48,7 @@ For an illustration, not a real organisation, see [Stay on supplier updates](/re
 
 ## Related pages
 
+- [Situation routes](/routes/)
 - [Keep commodity software updated](/migration-practices/commodity-software/)
-- [Ask a supplier](/routes/ask-a-supplier/)
-- [Not sure which route applies](/routes/not-sure/)
+- [Work with suppliers](/migration-practices/suppliers/)
+- [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/)

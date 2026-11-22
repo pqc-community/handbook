@@ -33,12 +33,15 @@ const sidebars: SidebarsConfig = {
     },
   ],
   routesSidebar: [
+    'routes/index',
     'routes/vendor-managed-software',
-    'routes/long-lived-confidentiality',
-    'routes/hard-to-change-systems',
     'routes/organisation-wide',
-    'routes/ask-a-supplier',
-    'routes/not-sure',
+    {
+      type: 'category',
+      label: 'Asset tracks',
+      collapsed: false,
+      items: ['routes/long-lived-confidentiality', 'routes/hard-to-change-systems'],
+    },
   ],
   standardsSidebar: [
     'standards/index',
