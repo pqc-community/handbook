@@ -23,6 +23,8 @@ This route is for assets that answer no to all four questions on [Decide whether
 3. [Work with suppliers](/migration-practices/suppliers/#5-write-requirements-into-purchases-and-renewals), step 5. Record the requirement text used in each purchase and renewal on the [purchase requirements record](/resources/records/purchase-requirements/). When a product comes up for renewal or leaves support, steps 2 to 4 of the same practice apply. Record those answers on the [vendor response log](/resources/records/vendor-response-log/).
 4. [Review and report](/migration-practices/subsequent-review/). At each review, recheck the five conditions. Record the review on the [review log](/resources/records/review-log/) and the [progress report](/resources/records/progress-report/). On the full path, these assets are reviewed in the programme's review on the Organisation-wide route, not in a separate report.
 
+A product that fails the fifth condition leaves these steps for the [Hard-to-change systems](/routes/hard-to-change-systems/) steps, as the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says.
+
 ## Output records
 
 - The decision note's `route` cell: "(all five conditions hold)", or the route the asset moved to.
@@ -36,7 +38,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 ## When to leave
 
 - **An answer to question A, B, C, or D turns yes.** Re-answer the questions on the decision note. The asset moves to the track its new answers give, and the organisation follows the full path from [Organisation-wide](/routes/organisation-wide/).
-- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds. Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says where the product goes, the [Hard-to-change systems](/routes/hard-to-change-systems/) track, and what happens to its path.
+- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds. Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says what happens: the product moves to the [Hard-to-change systems](/routes/hard-to-change-systems/) track, and that section says what happens to its path.
 - **An answer stays `unknown`, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
 
 ## Worked example

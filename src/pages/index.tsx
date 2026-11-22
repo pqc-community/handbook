@@ -93,7 +93,7 @@ export default function Home(): ReactNode {
               Asset tracks
             </Heading>
             <p className="text--center">
-              Each asset follows one of three tracks: these two, or Vendor-managed software for commodity assets.
+              Each asset follows one or more of three tracks: these two, or Vendor-managed software for commodity assets.
               Decide whether to act sets each asset's track.
             </p>
             <div className={styles.choiceGrid}>
