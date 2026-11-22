@@ -49,7 +49,7 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 | [Vendor response log](/resources/records/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
 | [Purchase requirements](/resources/records/purchase-requirements/) | A row per job for the contract or renewal, with end of support in `support until` |
 | [Migration plan](/resources/records/migration-plan/) | A line per job, with the provider's readiness and the contract or renewal that will carry the requirement in `next action` |
-| [Change record](/resources/records/change-record/) | Your own client-side checks; on the short path, which keeps no change records, the service's inventory row and the review log |
+| [Change record](/resources/records/change-record/) | Your own client-side checks. While the service follows Vendor-managed software, which makes no change of its own, record those checks on its inventory row and the review log instead; if it fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), that section says what it records |
 
 ## Example
 

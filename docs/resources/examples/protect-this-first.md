@@ -161,7 +161,7 @@ The operations director reported the outcome to the managing director the same d
 
 ## Rejected alternative
 
-The manufacturer considered a separate cryptographic redesign for its office laptops. It instead tracks supported browsers and operating systems through the NCSC's supplier-update path, while keeping the bespoke product sensor in the migration plan. If a laptop fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), the manufacturer follows what that section says for its line.
+The manufacturer considered a separate cryptographic redesign for its office laptops. It instead tracks supported browsers and operating systems through supplier updates, as the NCSC expects for commodity platforms and the handbook's Vendor-managed software route provides, while keeping the bespoke product sensor in the migration plan. If a laptop fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), the manufacturer follows what that section says for its line.
 
 ## Sources
 

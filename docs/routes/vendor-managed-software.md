@@ -14,7 +14,7 @@ The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (pu
 This route is for assets that answer no to all four questions on [Decide whether to act](/migration-practices/diagnose/) and, once checked, meet its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
 
 - **Every asset's path is short:** this page is the short path, and there is no programme charter. A product that fails the fifth condition follows Hard-to-change systems, as the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says.
-- **Some assets on the full path:** the programme runs from [Organisation-wide](/routes/organisation-wide/), and this page is the track for the remaining assets, such as office laptops.
+- **The organisation is on the full path:** the programme runs from [Organisation-wide](/routes/organisation-wide/), and this page is the track for the remaining assets, such as office laptops.
 
 ## Steps
 

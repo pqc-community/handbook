@@ -22,7 +22,7 @@ Take each of the asset's key-establishment lines through these steps. Keep conne
 3. [Plan the migration](/migration-practices/plan/). Record the applicable timeline and its authority, the milestone, and the four dates on the migration plan.
 4. [Work with suppliers](/migration-practices/suppliers/). Record answers on the [vendor response log](/resources/records/vendor-response-log/), with separate rows for connections and for stored data. Record each purchase or renewal on the [purchase requirements record](/resources/records/purchase-requirements/).
 5. [Choose an option](/technology-options/choosing/), using the cards below. Record the option and its authority on the [change record](/resources/records/change-record/).
-6. [Make and verify one change](/migration-practices/implementation/). Complete the change record with tests, rollback, a deployed-state check and evidence, then update the inventory and plan.
+6. [Make and verify one change](/migration-practices/implementation/). Complete the change record with tests, rollback, a deployed-state check and evidence, then update the inventory and plan. When no supported option exists yet, record the change as `blocked`, with a resolve-by date.
 7. [Keep the ability to change again](/migration-practices/changing-algorithms-again/). Record the agility evidence in the existing records.
 
 Reviews run for the whole programme, under [Review and report](/migration-practices/subsequent-review/) on the Organisation-wide route.
@@ -51,7 +51,7 @@ Open the card for each technology that carries the asset's data:
 ## Output records
 
 - Inventory rows with the confidentiality period and each key-establishment algorithm.
-- Migration plan lines for connections and stored data, each with its order, timeline, and four dates.
+- Migration plan lines for connections and stored data, each with its order, timeline and authority, milestone, and four dates.
 - Vendor response log rows and purchase requirements for each supplier involved.
 - A change record for each change. When no supported option exists yet, record the change as `blocked` on the change record, with a resolve-by date, and carry it on the review log until it is resolved.
 

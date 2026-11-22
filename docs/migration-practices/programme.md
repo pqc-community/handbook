@@ -7,7 +7,7 @@ displayed_sidebar: migrationPracticesSidebar
 
 ## When this applies
 
-[Decide whether to act](/migration-practices/diagnose/) put at least one asset on the full path, because you answered yes to any of its four questions. That includes regular adopters that operate a public-key infrastructure, sign for others, or run bespoke systems, as well as urgent adopters. Set one up too when several asset owners will need to change systems on a shared timeline.
+[Decide whether to act](/migration-practices/diagnose/) put at least one asset on the full path under its [path table](/migration-practices/diagnose/#do-this). That includes regular adopters that operate a public-key infrastructure, sign for others, or run bespoke systems, as well as urgent adopters. On the short path you do not need one, even for a product that follows the Hard-to-change systems steps after failing the fifth of the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
 
 ## Who does what
 

@@ -75,7 +75,7 @@ const config: Config = {
             {label: 'Short path: vendor-managed', to: '/routes/vendor-managed-software/'},
             {label: 'Full path: organisation-wide', to: '/routes/organisation-wide/'},
             {label: 'Long-lived confidentiality', to: '/routes/long-lived-confidentiality/'},
-            {label: 'Hard to change', to: '/routes/hard-to-change-systems/'},
+            {label: 'Hard-to-change systems', to: '/routes/hard-to-change-systems/'},
           ],
         },
         {

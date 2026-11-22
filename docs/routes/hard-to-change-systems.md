@@ -1,11 +1,11 @@
 ---
 title: Products or systems that may be hard to change
-sidebar_label: Hard to change
+sidebar_label: Hard-to-change systems
 description: The track for bespoke systems, signatures that others rely on, and verifiers that cannot be updated. Its clocks, the steps, the deadlines that may apply, and the technology cards to open.
 displayed_sidebar: routesSidebar
 ---
 
-This track covers systems where a change takes a long time to make or must be coordinated with others. The urgency comes from the time a change needs, not from data being recorded today, and each kind of system has its own clock: verifiers that cannot be updated after shipment run on the device's service life; signatures that other people or devices rely on run on relying-party coordination; and bespoke systems run on your own change lead time. A product that fails the fifth condition adds a fourth line, whose clock is its replacement or upgrade lead time. Keep them as separate lines. On the full path the programme runs from [Organisation-wide](/routes/organisation-wide/); for a short-path product that fails the fifth condition, Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says how these steps apply. This page holds the steps for each asset on the track.
+This track covers systems where a change takes a long time to make or must be coordinated with others. The urgency comes from the time a change needs, not from data being recorded today, and each kind of system has its own clock: verifiers that cannot be updated after shipment run on the device's service life; signatures that other people or devices rely on run on relying-party coordination; and bespoke systems run on your own change lead time. A product that fails the fifth condition is a fourth kind of line, whose clock is its replacement or upgrade lead time. Keep them as separate lines. On the full path the programme runs from [Organisation-wide](/routes/organisation-wide/); for a short-path product that fails the fifth condition, Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says how these steps apply. This page holds the steps for each asset on the track.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) is intended for a broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories. It says signatures are not vulnerable to harvest-now, decrypt-later attacks. It also says the move to post-quantum signatures is urgent because the transition takes longer, is more complex, and needs more parties to coordinate (§3).
 
@@ -32,7 +32,7 @@ Take each line through these steps.
    - the applicable timeline;
    - the four dates;
    - the dependencies that can move them, including any design freeze.
-4. [Work with suppliers](/migration-practices/suppliers/). Record answers on the [vendor response log](/resources/records/vendor-response-log/). Record what each component selection or renewal requires on the [purchase requirements record](/resources/records/purchase-requirements/). Step 5 of that practice says how strict to be before a design freeze.
+4. [Work with suppliers](/migration-practices/suppliers/). Record answers on the [vendor response log](/resources/records/vendor-response-log/). Record what each component selection or renewal requires on the [purchase requirements record](/resources/records/purchase-requirements/). Step 5 of that practice says how strict to be before a design freeze. When a supplier's answer is `missing` or `concerning`, follow it up and escalate it under [step 4](/migration-practices/suppliers/#4-follow-up-and-escalate) of the same practice.
 5. [Choose an option](/technology-options/choosing/), using the cards below. Record the option and its authority on the [change record](/resources/records/change-record/).
 6. [Make and verify one change](/migration-practices/implementation/). Complete the change record. When no supported option exists yet, a `blocked` change record, with a resolve-by date, counts as that change record.
 7. [Keep the ability to change again](/migration-practices/changing-algorithms-again/). Record the agility evidence in the existing records.
@@ -67,7 +67,7 @@ Open the card for each technology the line depends on:
 ## Output records
 
 - Inventory rows for each asset, including its own rows for any public-key infrastructure you operate.
-- For each line, its order and reason (on the short path, what Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says to record instead), and the four dates on the migration plan: supplier release, testing, production deployment, and end of support.
+- For each line, its order and reason (on the short path, what Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says to record instead), the applicable timeline, the four dates, and the dependencies that can move them, on the migration plan: supplier release, testing, production deployment, and end of support.
 - A change record for each change, which may be a `blocked` record with a resolve-by date.
 - Vendor response log rows and purchase requirements where a supplier or a component selection is involved.
 

@@ -5,7 +5,7 @@ description: A ten-lesson grounding in post-quantum cryptography for security, e
 displayed_sidebar: learnSidebar
 ---
 
-This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, the [situation routes](/) take over.
+This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, the [situation routes](/routes/) take over.
 
 ## The model in one picture
 
@@ -83,6 +83,6 @@ Use the [glossary](/resources/reference/glossary/) for definitions while reading
 
 ## Related pages
 
-- [Homepage situation chooser](/)
+- [Homepage path chooser](/)
 - [Situation routes](/routes/)
 - [Standards](/standards/)
