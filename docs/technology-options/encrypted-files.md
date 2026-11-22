@@ -52,6 +52,7 @@ The email and encryption software suppliers decide what the product supports. Re
 | [Inventory](/resources/inventory-record/) | A row for the encryption service, with the key-establishment value labelled "stored files:" and recipient groups in `dependencies` |
 | [Vendor response log](/resources/vendor-response-log/) | The software suppliers' answers |
 | [Migration plan](/resources/migration-plan/) | A key-establishment line |
+| [Change record](/resources/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
 | [Review log](/resources/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/stored-data/) describes |
 
 ## Example

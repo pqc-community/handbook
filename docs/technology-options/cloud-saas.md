@@ -47,7 +47,7 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | A row for the service, with the provider in `dependencies` |
 | [Vendor response log](/resources/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
-| [Migration plan](/resources/migration-plan/) | A line per job, with the provider's readiness |
+| [Migration plan](/resources/migration-plan/) | A line per job, with the provider's readiness and the contract or renewal that will carry the requirement in `next action` |
 | [Change record](/resources/change-record/) | Your own client-side checks |
 
 ## Example

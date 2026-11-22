@@ -54,6 +54,7 @@ You choose for a private PKI, within what your CA software and hardware security
 | Record | What it holds |
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | A row for each certification authority, with its HSM in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | Answers from CA software and HSM suppliers |
 | [Migration plan](/resources/migration-plan/) | The signatures line, with the parties in `dependencies` in the order they move, a milestone from the applicable timeline, and the date the old chain stops being issued |
 | [Change record](/resources/change-record/) | Tests against every class of verifier, and the rollback trigger |
 

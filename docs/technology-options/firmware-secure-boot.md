@@ -43,10 +43,10 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the signing key |
+| [Inventory](/resources/inventory-record/) | A row for the device's verifier and one for the signing key, with where the key is held in `dependencies` once known |
 | [Vendor response log](/resources/vendor-response-log/) | The supplier's answer, with the job `non-updatable verifier` |
-| [Migration plan](/resources/migration-plan/) | The verifier line, with the design freeze as `milestone` and the escalation point in `next action` |
-| [Change record](/resources/change-record/) | The option and authority, or `unknown` and blocked, with the freeze as the resolve-by date |
+| [Migration plan](/resources/migration-plan/) | The verifier line, with the design freeze as `milestone` and the escalation point in `next action`; the signing key's `signatures` line, which moves with it; for devices already shipped, the retirement or replacement date |
+| [Change record](/resources/change-record/) | The option and authority, or `unknown` in `option` and blocked in `result`, with the freeze as the date to resolve by |
 | [Review log](/resources/review-log/) | Any written risk acceptance, with its review date |
 
 ## Example

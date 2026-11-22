@@ -47,12 +47,12 @@ The backup, archive, or storage supplier for products you buy; you for formats a
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | The key-establishment cell, labelled for stored data |
 | [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
-| [Migration plan](/resources/migration-plan/) | A `key establishment (stored data)` line for re-wrapping |
-| [Review log](/resources/review-log/) | Exposures of copies outside your control |
+| [Migration plan](/resources/migration-plan/) | A `key establishment (stored data)` line for re-wrapping or re-encrypting data already stored |
+| [Review log](/resources/review-log/) | Exposures of copies outside your control, with the sponsor's decision |
 
 ## Example
 
-An insufficient record is "Backups are encrypted with AES, so they are fine."
+An insufficient record is "Backups are encrypted, so they are fine."
 
 A decision-ready record, from [Protect this first](/resources/protect-this-first/): the algorithm that protects the key wrapping of the design archive's stored files is `unknown`, the supplier's answer is `missing`, and a written answer is due by 2026-12-01, so stored-data protection is not counted as migrated. Because the designs must stay confidential for 15 years, files already stored under Workspace 4.1 need the same protection; once the answer arrives, the manufacturer decides whether to re-wrap or re-encrypt them and adds that work to the plan.
 

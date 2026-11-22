@@ -52,7 +52,7 @@ The directory and operating-system supplier decides what the domain controllers 
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | A row for the directory service, with labelled values in its algorithm cells, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman; directory connections: see TLS", and the issuing CA in `dependencies` |
 | [Vendor response log](/resources/vendor-response-log/) | The supplier's answer |
-| [Migration plan](/resources/migration-plan/) | For certificate logon, a key-establishment line and a signatures line |
+| [Migration plan](/resources/migration-plan/) | For certificate logon, a key-establishment line and a signatures line, with the renewal that will carry the requirement in `next action` |
 
 ## Example
 

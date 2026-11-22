@@ -26,7 +26,7 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 ## What good looks like
 
-- Each HSM, KMS, and TPM model on the [inventory](/resources/inventory-record/), named in the `dependencies` of each key and system that relies on it.
+- Each HSM, KMS, and TPM model named in the [inventory](/resources/inventory-record/) `dependencies` of every key and system that relies on it.
 - A `complete` supplier answer for every module the plan depends on.
 - Firmware upgrades or replacements scheduled ahead of the PKI, signing, and server work that depends on them, allowing for hardware lead times.
 
@@ -46,7 +46,7 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for each HSM, KMS, or TPM model, named in the `dependencies` cell of every key and system that relies on it |
+| [Inventory](/resources/inventory-record/) | Each HSM, KMS, or TPM, with its model and firmware or service release, named in the `dependencies` cell of every key and system that relies on it, rather than given its own row |
 | [Vendor response log](/resources/vendor-response-log/) | The supplier's answer on algorithms, releases, and validation |
 | [Migration plan](/resources/migration-plan/) | The module's upgrade or replacement, as a dependency of the lines it blocks |
 

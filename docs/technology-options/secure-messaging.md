@@ -53,7 +53,7 @@ The provider. Your job is to ask the right questions, choose a product whose ans
 | Record | What it holds |
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | A row for the service, with the provider in `dependencies` and labelled values in the key-establishment cell, for example "messages: …; stored history: …" |
-| [Vendor response log](/resources/vendor-response-log/) | One row per job |
+| [Vendor response log](/resources/vendor-response-log/) | One row per job, and one for stored history |
 | [Migration plan](/resources/migration-plan/) | A line per job |
 | [Change record](/resources/change-record/) | If you rely on the draft mechanism, "provisional: Internet-Draft" in `option` |
 | [Review log](/resources/review-log/) | An item to revisit the draft mechanism when it is published |

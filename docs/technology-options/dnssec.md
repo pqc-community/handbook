@@ -48,7 +48,7 @@ Your DNS hosting provider or DNS software chooses which algorithms it can sign w
 | Record | What it holds |
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | A row for each signed zone and each validating resolver you run, with the DNS provider and registrar in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | The DNS provider's answer |
+| [Vendor response log](/resources/vendor-response-log/) | The DNS provider's and registrar's answers |
 | [Migration plan](/resources/migration-plan/) | A signatures line |
 | [Change record](/resources/change-record/) | If you rely on the draft mechanism, "provisional: Internet-Draft" in `option` |
 | [Review log](/resources/review-log/) | An item to revisit the draft mechanism when it is published |
@@ -57,7 +57,7 @@ Your DNS hosting provider or DNS software chooses which algorithms it can sign w
 
 An insufficient record is "Our domains use DNSSEC, so they are fine."
 
-A decision-ready record lists each signed zone with its DNS provider, current algorithm, and the provider's written answer on post-quantum signing; notes that the ML-DSA mechanism is still an Internet-Draft, so no change is scheduled; and sets the plan line's `subsequent review` to recheck its status.
+A decision-ready record lists each signed zone with its DNS provider, current algorithm, and the provider's written answer on post-quantum signing; notes that the ML-DSA mechanism is still an Internet-Draft, so no change is scheduled; and adds an item to the review log to recheck its status.
 
 ## Sources
 

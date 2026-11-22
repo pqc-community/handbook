@@ -51,6 +51,7 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 | Record | What it holds |
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | A row per signing key, with where it is held, such as the HSM, in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | Answers from platform owners and from signing-tool and HSM suppliers |
 | [Migration plan](/resources/migration-plan/) | The signatures line, with verifiers in `dependencies` in the order they move |
 | [Change record](/resources/change-record/) | The scheme, the authority, and tests on each class of verifier |
 

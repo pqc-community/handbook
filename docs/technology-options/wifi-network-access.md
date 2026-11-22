@@ -52,6 +52,7 @@ The suppliers of the authentication server and the device operating systems deci
 | [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
 | [Migration plan](/resources/migration-plan/) | A key-establishment line for the EAP-TLS handshake; certificates stay on the PKI's signatures line |
 | [Change record](/resources/change-record/) | The negotiated group as the deployed-state check |
+| [Review log](/resources/review-log/) | Devices that cannot follow, as exceptions with an owner and a replacement date |
 
 ## Example
 
