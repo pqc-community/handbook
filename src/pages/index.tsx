@@ -53,7 +53,7 @@ const tracks: SituationChoice[] = [
   {
     title: 'We own products or systems that may be hard to change',
     to: '/routes/hard-to-change-systems/',
-    text: 'Driven by change lead time, relying-party coordination, and the service life of verifiers that cannot be updated; also takes products that leave support or have no supplier plan.',
+    text: 'Driven by change lead time, relying-party coordination, and the service life of verifiers that cannot be updated; also takes products that fail the fifth of Decide whether to act\'s five conditions.',
   },
 ];
 

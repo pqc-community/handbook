@@ -18,7 +18,7 @@ This track is for assets that answer yes to question B, C, or D on [Decide wheth
 | Verifier that cannot be updated | B | The device's service life | The design freeze or production date, before which the verifier must be chosen |
 | Signatures others rely on: a public-key infrastructure, or code, firmware, or document signing | C | Relying-party coordination | How long signers, certificate authorities, and relying parties take to move together |
 | Bespoke systems | D | Change lead time | Your own development, test, and release cycle, and the supplier releases it depends on |
-| Product out of support, or with no supplier plan | Fifth condition | Replacement or upgrade lead time | The date support ends, or the next renewal, before which the replacement or upgrade must be chosen |
+| Product that fails the fifth of the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) | Fifth condition | Replacement or upgrade lead time | The date support ends, or the next renewal, before which the replacement or upgrade must be chosen |
 
 ## Steps
 
