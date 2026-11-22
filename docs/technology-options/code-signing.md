@@ -21,6 +21,10 @@ Code signing proves that software packages, updates, scripts, and container imag
 
 Pick the scheme with the signature-schemes rule on [Choosing an option](/technology-options/choosing/): ML-DSA unless an applicable authority requires a hash-based scheme or every verifier supports only one; among hash-based schemes, SLH-DSA unless you can control signing state for LMS or XMSS.
 
+## Who usually chooses
+
+You choose for your own pipeline, within what your signing tools and [HSMs](/technology-options/hsm-kms/) support. Platform owners choose which algorithms their verifiers accept, so your choice has to fit theirs.
+
 ## What good looks like
 
 1. **Know every verifier** of your signatures and when each can accept the new algorithm.
@@ -28,9 +32,12 @@ Pick the scheme with the signature-schemes rule on [Choosing an option](/technol
 3. **Give each signing key its own [inventory](/resources/inventory-record/) row**, recording where it is held, such as the hardware security module, in `dependencies`.
 4. **If you choose LMS or XMSS, show how state is controlled**: one signing system, an index that is never reused, and backups that can never roll the state back.
 
-## Who usually chooses
+## What to ask or test
 
-You choose for your own pipeline, within what your signing tools and [HSMs](/technology-options/hsm-kms/) support. Platform owners choose which algorithms their verifiers accept, so your choice has to fit theirs.
+- Which post-quantum signature schemes your signing tools and [HSMs](/technology-options/hsm-kms/) support, and from which release.
+- For each platform and update agent that verifies your signatures, which algorithms it accepts and from which release, asked of the platform owner in writing.
+- Whether a test signature verifies on each class of verifier, including older releases still in the field, before signing switches.
+- How long verifiers will keep accepting signatures made with the old algorithm.
 
 ## Traps
 

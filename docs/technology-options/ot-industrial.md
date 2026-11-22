@@ -28,6 +28,10 @@ Status as checked on 21 November 2026: there is no single post-quantum standard 
 
 The NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says owners of bespoke IT or OT that use public-key cryptography in proprietary systems will need to choose which algorithms and protocols to use themselves. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols.
 
+## Who usually chooses
+
+The control-system, device, and protocol suppliers, often within an industry standard you do not control. You choose what you buy, when you replace it, and how you segment and protect what cannot change.
+
 ## What good looks like
 
 - An inventory that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/migration-practices/inventory/) describes.
@@ -36,9 +40,12 @@ The NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (v
 - Changes to physical infrastructure planned to coincide with other maintenance and refresh, which the NCSC timelines advise, and post-quantum requirements written into equipment purchases.
 - A written answer from each control-system and device supplier to the questions on the [vendor response log](/resources/vendor-response-log/), and a review date for protocols that have no post-quantum path yet.
 
-## Who usually chooses
+## What to ask or test
 
-The control-system, device, and protocol suppliers, often within an industry standard you do not control. You choose what you buy, when you replace it, and how you segment and protect what cannot change.
+- For each control-system and device supplier, which post-quantum algorithms the product supports or will support, from which release, and whether it can be updated in the field.
+- Whether remote-access and boundary systems support post-quantum key exchange, using the questions on the connection cards.
+- Whether devices can handle larger keys and signatures, tested on spare or test-bench equipment rather than live plant.
+- When each system is next due for maintenance or refresh.
 
 ## Traps
 

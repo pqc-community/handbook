@@ -29,6 +29,13 @@ The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-prote
 - **Browsers, operating systems, CDNs, and SaaS providers:** the supplier. Your job is to keep them updated and check what they negotiate.
 - **Your own servers, load balancers, and gateways:** you, within what the product supports. Both ends of a connection must support the same group, so check the clients and partners that connect to you.
 
+## What good looks like
+
+- Every TLS endpoint you run is on the [inventory](/resources/inventory-record/) with the post-quantum groups its software supports, and the clients and partners that connect to it.
+- A hybrid or ML-KEM group, chosen by the hybrid rule on [Choosing an option](/technology-options/choosing/), is offered and preferred wherever the product supports it, and what connections actually negotiate is checked from the client side.
+- Proxies, load balancers, and CDNs that end the TLS connection are recorded with their own support, because each one starts a new handshake.
+- Certificates are tracked on their own line, as [PKI and certificates](/technology-options/pki/) describes.
+
 ## What to ask or test
 
 - Which post-quantum groups the product supports, from which release, and whether they are on by default.

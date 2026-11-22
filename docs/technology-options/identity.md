@@ -19,16 +19,16 @@ Identity and sign-in covers single sign-on and federation (signed assertions and
 | US federal PIV smart cards | [FIPS 201-3](/standards/modules-protocols-identity/fips-201-3/) (January 2022) does not itself specify post-quantum algorithms |
 | Federation tokens and assertions, passkeys, and other sign-in protocols | The supplier's written answer on which signature algorithms it supports and which specification it follows, checked against the signature-schemes rule on [Choosing an option](/technology-options/choosing/) |
 
+## Who usually chooses
+
+The identity provider, token maker, or platform supplier. You choose when to require support in purchases and renewals, and you own the inventory of what signs and what verifies.
+
 ## What good looks like
 
 - An inventory row for each identity provider and each token or card type, naming the signature algorithm it uses today.
 - The applications and devices that verify its signatures listed, because they have to accept a new algorithm before the provider switches.
 - A written answer from each identity or token supplier on its post-quantum signing plan, judged on the vendor response log, and a requirement for post-quantum signing written into the next purchase or renewal.
 - For hardware tokens and cards, the replacement cycle set against the applicable timeline, so that tokens bought now are not still in use after the date the algorithm has to change.
-
-## Who usually chooses
-
-The identity provider, token maker, or platform supplier. You choose when to require support in purchases and renewals, and you own the inventory of what signs and what verifies.
 
 ## What to ask or test
 

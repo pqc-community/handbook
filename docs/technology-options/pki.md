@@ -23,6 +23,10 @@ Status as checked on 21 November 2026. All are Proposed Standards.
 
 NIST IR 8547, addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
 
+## Who usually chooses
+
+You choose for a private PKI, within what your CA software and hardware security modules support. Public certificates follow the public Web PKI's rules and the browsers that trust it. Any verifier that cannot be updated moves to [Firmware and secure boot](/technology-options/firmware-secure-boot/).
+
 ## What good looks like
 
 1. **List everyone who touches the signature**: certification authorities, hardware security modules, signers, trust stores, verifiers, and relying parties. [Why post-quantum signatures affect more than the signer](/learn/explainers/signature-dependencies/) shows how.
@@ -30,9 +34,13 @@ NIST IR 8547, addressed to US federal agencies, technology providers, standards 
 3. **Choose the certificate form** by the hybrid rule on [Choosing an option](/technology-options/choosing/): composite or dual signatures where an applicable authority recommends hybrid and does not also accept post-quantum alone; otherwise ML-DSA alone is an option NIST approves. The scheme follows the signature-schemes rule on the same page.
 4. **Run old and new chains side by side** while relying parties move at different times, and set a date to stop issuing from the old chain.
 
-## Who usually chooses
+## What to ask or test
 
-You choose for a private PKI, within what your CA software and hardware security modules support. Public certificates follow the public Web PKI's rules and the browsers that trust it. Any verifier that cannot be updated moves to [Firmware and secure boot](/technology-options/firmware-secure-boot/).
+- Which post-quantum algorithms and certificate formats your CA software and HSMs support, and from which release.
+- Whether each trust store and relying party verifies a certificate from a test chain that uses the new algorithm.
+- Whether revocation services (CRLs and OCSP responders) can sign with the new algorithm.
+- Whether larger certificates and chains still fit the protocols and devices that carry them.
+- For public certificates, what your certification authority and the browsers have published about post-quantum certificates.
 
 ## Traps
 

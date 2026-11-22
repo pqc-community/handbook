@@ -26,6 +26,13 @@ Form and drafts follow the hybrid and protocol-mechanisms rules on [Choosing an 
 
 The email and encryption software suppliers decide what the product supports. Recipients decide when they publish post-quantum keys, so the sender cannot move alone.
 
+## What good looks like
+
+- Software that implements a published mechanism (RFC 9629 with RFC 9936 for CMS-based formats, RFC 9980 for OpenPGP), and recipients who publish post-quantum keys or certificates.
+- A chosen and recorded rule for recipients without a post-quantum key, rather than whatever the software does by default.
+- A sample message inspected after sending, confirming which mechanism protects its key.
+- The exposure of messages already sent recorded on the [review log](/resources/review-log/), with the sponsor's decision.
+
 ## What to ask or test
 
 - Which post-quantum mechanism the software uses to protect the message key, and from which release.

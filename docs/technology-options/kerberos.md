@@ -33,6 +33,13 @@ The directory and operating-system supplier decides what the domain controllers 
 - A written supplier answer on post-quantum PKINIT and certificate support, and a requirement in the next renewal.
 - Smart cards and readers tracked with their replacement cycle, as on [Identity and sign-in](/technology-options/identity/).
 
+## What to ask or test
+
+- Whether certificate or smart-card logon is used, and for which users and systems.
+- Which encryption types domain controllers and clients allow, and whether older types can be removed.
+- The supplier's written plan for post-quantum PKINIT and logon certificates, and from which release.
+- Whether directory connections use TLS, and what they negotiate.
+
 ## Traps
 
 - **Assuming all of Kerberos is affected**, or that none of it is; it depends on whether certificate logon is used.

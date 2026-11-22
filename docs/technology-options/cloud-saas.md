@@ -17,6 +17,13 @@ The US Cybersecurity and Infrastructure Security Agency's [product categories li
 
 The provider. Your job is to ask the right questions, judge the answer, write requirements into contracts and renewals, and check from your side what you can.
 
+## What good looks like
+
+- One written answer per job, each judged on the [vendor response log](/resources/vendor-response-log/).
+- Connections checked from your side, not only taken from the provider's statement.
+- Post-quantum requirements for each job, and end-of-support dates, written into contracts and renewals.
+- A known plan, from the provider, for data already stored under the old key wrapping.
+
 ## What to ask or test
 
 Ask separately for each job, in writing, as [Work with suppliers](/migration-practices/suppliers/) describes:

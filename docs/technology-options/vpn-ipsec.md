@@ -24,6 +24,13 @@ RFC 9370 lets IKEv2 run additional key exchanges alongside the classical one, wh
 
 The VPN gateway supplier decides what the product supports; you choose what to enable. Both ends of every tunnel must agree, so a partner's or another site's gateway, and every remote-access client, is part of the decision.
 
+## What good looks like
+
+- Every tunnel and remote-access client is on the [inventory](/resources/inventory-record/) with its peer, and both ends support the same post-quantum key exchange before you require it.
+- The post-quantum exchange is added under RFC 9370, with the ML-KEM method recorded as provisional until it is published.
+- Each peer's negotiated key exchange is confirmed from the gateway logs, and peers that cannot follow have an owner and a date.
+- Gateway certificates are tracked on their own line, as [PKI and certificates](/technology-options/pki/) describes.
+
 ## What to ask or test
 
 - Which post-quantum key exchange the gateway and client support, from which release, and whether it follows RFC 9370 and the ML-KEM draft or a supplier-specific method.

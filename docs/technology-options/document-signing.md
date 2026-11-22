@@ -26,6 +26,13 @@ The scheme follows the signature-schemes rule on [Choosing an option](/technolog
 
 The email and document software suppliers decide what their products sign with and verify; your certification authority decides what signer certificates contain. You choose when to switch, which depends on your recipients.
 
+## What good looks like
+
+- Internal and external recipient groups listed, with whether their software verifies the new algorithm.
+- Signer certificates issued with the chosen scheme, following [PKI and certificates](/technology-options/pki/).
+- A switch date for each recipient group, set only after verification tests pass, with classical signing kept for groups that cannot yet verify.
+- An agreed way, recorded with the archive's owner, to keep long-lived signed records verifiable through the transition.
+
 ## What to ask or test
 
 - Which post-quantum signature algorithms the email client, document software, and signing service support, and from which release.

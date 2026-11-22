@@ -25,6 +25,12 @@ Both key-exchange methods are hybrids that keep a classical exchange alongside t
 
 The SSH implementation's supplier, usually the operating system or the network device maker, decides which methods exist and which are preferred by default. You choose what servers and clients allow. Both ends must share a method.
 
+## What good looks like
+
+- Servers and clients prefer a hybrid post-quantum key exchange that every applicable authority accepts, and classical-only methods stay enabled only for devices recorded as exceptions.
+- Network devices, appliances, and automation tools with their own SSH library are on the [inventory](/resources/inventory-record/), with the method each one negotiates.
+- Host and user keys are tracked on their own signatures line.
+
 ## What to ask or test
 
 - Which post-quantum key-exchange methods each SSH server and client supports and prefers, by version.

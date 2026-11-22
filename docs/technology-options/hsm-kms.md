@@ -24,6 +24,13 @@ Hardware security modules (HSMs), cloud key management services (KMS), and Trust
 
 The HSM or cloud provider decides what the module supports and when; you decide when to upgrade firmware, change service tiers, or replace hardware.
 
+## What good looks like
+
+- Every HSM, KMS, and TPM on the [inventory](/resources/inventory-record/), named in the `dependencies` of each key and system that relies on it.
+- A written supplier answer on supported algorithms, releases, and validation status, judged on the [vendor response log](/resources/vendor-response-log/).
+- Firmware upgrades or replacements scheduled ahead of the PKI, signing, and server work that depends on them, allowing for hardware lead times.
+- The new algorithms tested in a non-production partition before anything depends on them.
+
 ## What to ask or test
 
 - The supplier's written answer on supported algorithms, releases, and validation status, recorded on the [vendor response log](/resources/vendor-response-log/).

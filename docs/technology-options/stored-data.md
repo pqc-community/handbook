@@ -16,6 +16,10 @@ Backups, archives, object storage, and encrypted databases hold data for years. 
 
 There is no single storage standard. The mechanism depends on the format: CMS and OpenPGP formats follow [Encrypted email and files](/technology-options/encrypted-files/); products with their own key wrapping need a written answer from the supplier naming the algorithm.
 
+## Who usually chooses
+
+The backup, archive, or storage supplier for products you buy; you for formats and tools you run. For supplier-hosted storage, the supplier also decides how existing data is re-wrapped.
+
 ## What good looks like
 
 1. **Protect new data under the chosen option** as soon as it is available.
@@ -25,9 +29,11 @@ There is no single storage standard. The mechanism depends on the format: CMS an
    - delete data and keys you no longer need rather than migrating them.
 3. **Check what is actually in use** by inspecting a sample object and confirming which algorithm protects its key.
 
-## Who usually chooses
+## What to ask or test
 
-The backup, archive, or storage supplier for products you buy; you for formats and tools you run. For supplier-hosted storage, the supplier also decides how existing data is re-wrapped.
+- For each product, whether data keys are wrapped to a public key or held symmetrically in a key service, in the supplier's written answer.
+- Whether the format can re-wrap data keys without decrypting the data.
+- Where every copy lives: replicas, other media and sites, and third parties.
 
 ## Traps
 
