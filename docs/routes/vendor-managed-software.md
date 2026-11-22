@@ -13,7 +13,7 @@ The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (pu
 
 This route is for assets that answer no to all four questions on [Decide whether to act](/migration-practices/diagnose/) and, once checked, meet its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
 
-- **Every asset here:** this page is the whole of the short path, and there is no programme charter.
+- **Every asset's path is short:** this page is the short path, and there is no programme charter. A product that fails the fifth condition follows Hard-to-change systems, as the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says.
 - **Some assets on the full path:** the programme runs from [Organisation-wide](/routes/organisation-wide/), and this page is the track for the remaining assets, such as office laptops.
 
 ## Steps
@@ -35,7 +35,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 ## When to leave
 
 - **An answer to question A, B, C, or D turns yes.** Re-answer the questions on the decision note. The asset moves to the track its new answers give, and the organisation follows the full path from [Organisation-wide](/routes/organisation-wide/).
-- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds. Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says where the product goes: the [Hard-to-change systems](/routes/hard-to-change-systems/) track for its replacement or upgrade. Its path stays short, so there is no programme; keep reviewing it under step 4 of this route.
+- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds. Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says where the product goes, the [Hard-to-change systems](/routes/hard-to-change-systems/) track, and what happens to its path.
 - **An answer stays `unknown`, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
 
 ## Worked example

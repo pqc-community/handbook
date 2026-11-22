@@ -35,7 +35,7 @@ const paths: SituationChoice[] = [
   {
     title: 'Short path: we use only standard, vendor-managed software',
     to: '/routes/vendor-managed-software/',
-    text: 'Every asset answers no to all four questions on Decide whether to act and meets its five conditions.',
+    text: 'Every asset answers no to all four questions on Decide whether to act.',
   },
   {
     title: 'Full path: we are coordinating a migration across the organisation',
@@ -90,11 +90,11 @@ export default function Home(): ReactNode {
               ))}
             </div>
             <Heading as="h3" className={clsx('text--center', styles.tracksHeading)}>
-              Asset tracks on the full path
+              Asset tracks
             </Heading>
             <p className="text--center">
-              The full path sends each asset to one of three tracks: these two, or Vendor-managed software for its
-              commodity assets.
+              Each asset follows one of three tracks: these two, or Vendor-managed software for commodity assets.
+              Decide whether to act sets each asset's track.
             </p>
             <div className={styles.choiceGrid}>
               {tracks.map((choice) => (

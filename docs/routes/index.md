@@ -11,7 +11,7 @@ A situation route is a short, ordered path into the practices and records. [Deci
 
 | Path | Who it is for, from Decide whether to act | Route | What it produces |
 | --- | --- | --- | --- |
-| Short | Every asset's path is short: no to all four questions. Assets that meet the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) once checked stay on Vendor-managed software; a product that fails the fifth follows Hard-to-change systems without a programme | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
+| Short | Every asset's path is short: no to all four questions. Its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) set which route each asset follows | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing, and the plan dates and change record of any product on Hard-to-change systems |
 | Full | Any asset's path is full: yes to question A, B, C, or D | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record, with each asset sent to its track |
 
 ```mermaid
@@ -23,12 +23,13 @@ flowchart TD
     O --> VM[Track: Vendor-managed software, for commodity assets]
     S -.->|an answer turns yes| O
     S -.->|a product fails the fifth condition| HC
+    HC -.->|the product is back in support with a plan| S
     O -.->|every asset's path is short again| S
 ```
 
 ## Three asset tracks
 
-On the full path, the programme sends each asset to the track its decision-note row records in `route`. [Decide whether to act](/migration-practices/diagnose/), step 3, sets that value, including for an asset that needs two tracks.
+Each asset follows the track its decision-note row records in `route`; on the full path, the programme sends it there. [Decide whether to act](/migration-practices/diagnose/), step 3, sets that value, including for an asset that needs two tracks.
 
 | Track, as recorded in `route` | Assets, from Decide whether to act | Clock | Page |
 | --- | --- | --- | --- |
@@ -44,7 +45,7 @@ The split between the short and full paths is consistent with the UK National Cy
 
 1. [Decide whether to act](/migration-practices/diagnose/). Record each asset's answers, path, and route on the [decision note](/resources/records/decision-note/), and the first rows on the [inventory record](/resources/records/inventory/).
 2. **Follow your path.** On the short path, follow [Vendor-managed software](/routes/vendor-managed-software/). On the full path, follow [Organisation-wide](/routes/organisation-wide/), which starts with [Set up the programme](/migration-practices/programme/) and the [programme charter](/resources/records/programme-charter/).
-3. **On the full path, take each asset through its track**, as its `route` cell records. Each track page lists the records it fills on the [migration plan](/resources/records/migration-plan/), [vendor response log](/resources/records/vendor-response-log/), [purchase requirements](/resources/records/purchase-requirements/), and [change record](/resources/records/change-record/).
+3. **Take each asset through its track**, as its `route` cell records. Each track page lists the records it fills on the [migration plan](/resources/records/migration-plan/), [vendor response log](/resources/records/vendor-response-log/), [purchase requirements](/resources/records/purchase-requirements/), and [change record](/resources/records/change-record/).
 4. [Review and report](/migration-practices/subsequent-review/). Record each review on the [review log](/resources/records/review-log/) and the [progress report](/resources/records/progress-report/), and re-answer the four questions when something changes.
 
 ## Output records
@@ -54,7 +55,7 @@ All nine [migration records](/resources/records/) come from a route: the short p
 ## When to change path or route
 
 - **On the short path, an answer turns yes.** Move to the full path; see [When to leave](/routes/vendor-managed-software/#when-to-leave) on Vendor-managed software.
-- **On the short path, a product fails the fifth condition.** The product follows Hard-to-change systems for its replacement or upgrade, and the organisation stays on the short path; see the same section.
+- **On the short path, a product fails the fifth condition.** Its route changes as Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says.
 - **On the full path, every asset's path is short again at a review.** Move to the short path; see [When to leave](/routes/organisation-wide/#when-to-leave) on Organisation-wide.
 - **An asset's answers change.** Re-answer the four questions on the decision note; step 3 of Decide whether to act sets the new route.
 - **You cannot answer or cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).

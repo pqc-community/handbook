@@ -77,7 +77,7 @@ On the short path the [migration plan](/resources/records/migration-plan/) holds
 
 ## Connection check
 
-A supplier's statement is not evidence that the agency's own connections use it: a browser policy or an inspection proxy can remove the post-quantum option. On 12 November 2026 the IT support provider opens the hosted suite in the standard browser on one staff laptop and inspects the connection details, which show X25519MLKEM768 negotiated. The agency keeps no change records on the short path, and this is a check of the deployed state for one client, not a change it made, so the result goes on the hosted suite's inventory row and the review log. X25519MLKEM768 combines ML-KEM-768, specified in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, and is one of the groups defined in [RFC 10024](/standards/modules-protocols-identity/rfc-10024/). The check says nothing about stored data or signatures.
+A supplier's statement is not evidence that the agency's own connections use it: a browser policy or an inspection proxy can remove the post-quantum option. On 12 November 2026 the IT support provider opens the hosted suite in the standard browser on one staff laptop and inspects the connection details, which show X25519MLKEM768 negotiated. The agency has made no change of its own, so it keeps no change records, and this is a check of the deployed state for one client, so the result goes on the hosted suite's inventory row and the review log. X25519MLKEM768 combines ML-KEM-768, specified in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, and is one of the groups defined in [RFC 10024](/standards/modules-protocols-identity/rfc-10024/). The check says nothing about stored data or signatures.
 
 ## Review
 
@@ -118,9 +118,9 @@ The office manager reports to the managing director the same day on the [progres
 | next review | 2026-12-14 (stored-data item); 2027-01-18 (full review, brought forward before the renewal notice date); signature details due 2027-01-11 |
 | sponsor response | noted by the managing director, 2026-11-16; no decision needed |
 
-## What would move the agency off the short path
+## What would change the agency's path or routes
 
-The short path holds only while the answers to the four questions stay no and all five of the vendor-managed route's conditions on [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) hold. The agency reopens its decision note when any of these happens:
+The short path holds while the answers to the four questions stay no, and each asset stays on the vendor-managed route while all five of its conditions on [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) hold. The agency reopens its decision note when any of these happens:
 
 - a client contract requires its files to stay confidential for many years (question A);
 - the agency starts shipping or running a device whose signature check cannot be updated, such as a product it builds for a client (question B);
