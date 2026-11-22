@@ -19,7 +19,7 @@ Write in a calm, practical, neutral, and evidence-led **briefing register** for 
 - **British English**: Use British spelling consistently — *organisation*, *programme* (for a planned set of activities; *program* only for computer code), *prioritise*, *standardisation*, *labelled*, *recognise*.
 - **Direct, natural prose**: Prefer active voice and clear sentence structure. Use second person (*you*) for steps a practitioner carries out directly, and name specific organisational roles — *executive sponsor*, *migration lead*, *asset owner*, *procurement*, *legal or risk*, *operations*, or *supplier* — when responsibilities sit across functions.
 - **Acronyms**: Spell out abbreviations on first use on a page — for example, *post-quantum cryptography (PQC)*, *key-encapsulation mechanism (KEM)*, *cryptography bill of materials (CBOM)* — unless the short form is universally clearer in a heading or table and explained immediately in text or the [Glossary](./docs/resources/reference/glossary.md).
-- **Dates**: Write dates in British day–month–year order in prose (*5 November 2026*) and ISO 8601 (`2026-11-10`) in front matter and structured record tables. `npm test` fails on an ISO date in prose; a deliberate format example needs an entry in `ALLOWED` in `scripts/check-dates.test.mjs`.
+- **Dates**: Write dates in British day–month–year order in prose (*5 November 2026*) and ISO 8601 (`2026-11-10`) in front matter and structured record tables. `npm test` and `npm run check` fail on an ISO date in prose; a deliberate format example needs an entry in `ISO_FORMAT_EXAMPLES` in `scripts/checks/dates.mjs`.
 
 ### Preferred Domain Terms
 

@@ -10,8 +10,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "typecheck": "tsc",
-    "test": "node --test scripts/check-pages.test.mjs scripts/check-standards.test.mjs scripts/check-records.test.mjs scripts/check-dates.test.mjs",
-    "check": "node scripts/check-pages.mjs",
+    "test": "node --test scripts/tests/pages.test.mjs scripts/tests/standards.test.mjs scripts/tests/records.test.mjs scripts/tests/dates.test.mjs",
+    "check": "node scripts/check.mjs",
     "records-zip": "node scripts/records-zip.mjs"
   },
   "dependencies": {

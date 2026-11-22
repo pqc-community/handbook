@@ -54,9 +54,9 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`, `scripts/check-standards.test.mjs`, `scripts/check-records.test.mjs`, `scripts/check-dates.test.mjs`); the records test checks that each CSV matches its record page, that filled examples match Protect this first, and that the records zip is current; the dates test fails on any ISO date in prose and suggests the day–month–year form |
+| `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
-| `npm run check` | Validates page `title` lengths (`docs/**/*.md`) and surface-specific navigation bounds across navbar, footer, and sidebars (`scripts/check-pages.mjs`) |
+| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, admonition syntax, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
 | `npm run serve` | Serves the production `build/` output locally |
@@ -72,7 +72,7 @@ npm run build
 | `static/img/` | Shared shield logo, favicon, and `1200 × 630` OpenGraph social card |
 | `sidebars.ts` | Six hand-written documentation sidebars |
 | `docusaurus.config.ts` | Site configuration, navbar, footer, Mermaid theme, local search, and link policy |
-| `scripts/` | Page and navigation validation scripts and tests |
+| `scripts/` | `checks/` holds the site rules by area (`index.mjs` lists them all), `lib/` the shared Markdown and test helpers, `tests/` the tests, `check.mjs` the `npm run check` runner, and `records-zip.mjs` the records zip builder |
 
 *(If present locally, `.ai-helper-files/` holds gitignored private drafting material and must never be linked or cited on public pages.)*
 

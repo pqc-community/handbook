@@ -1,9 +1,11 @@
+// Page and navigation rules: title lengths, navbar, footer and sidebar label
+// lengths, and admonition title syntax.
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
 import vm from 'node:vm';
 import ts from 'typescript';
+import {classifyLines, frontMatterField, relativePath, walkMarkdown} from '../lib/markdown.mjs';
 
 export const MIN_TITLE_LENGTH = 3;
 export const MAX_TITLE_LENGTH = 160;
@@ -13,39 +15,6 @@ export const MAX_NAVBAR_LABEL_LENGTH = 32;
 export const MAX_FOOTER_TITLE_LENGTH = 24;
 export const MAX_FOOTER_LABEL_LENGTH = 32;
 export const MAX_SIDEBAR_LABEL_LENGTH = 50;
-
-function walkMarkdown(dir) {
-  if (!fs.existsSync(dir)) return [];
-  const found = [];
-  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      found.push(...walkMarkdown(full));
-    } else if (entry.isFile() && entry.name.endsWith('.md')) {
-      found.push(full);
-    }
-  }
-  return found;
-}
-
-function unquote(raw) {
-  let value = raw.trim();
-  if (
-    (value.startsWith('"') && value.endsWith('"')) ||
-    (value.startsWith("'") && value.endsWith("'"))
-  ) {
-    value = value.slice(1, -1);
-  }
-  return value.trim();
-}
-
-function extractFrontMatterField(content, field) {
-  const frontMatter = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!frontMatter) return undefined;
-  const match = frontMatter[1].match(new RegExp(`^${field}:\\s*(.+)$`, 'm'));
-  if (!match) return undefined;
-  return unquote(match[1]);
-}
 
 function loadTsModule(filePath) {
   const abs = path.resolve(filePath);
@@ -113,8 +82,8 @@ function walkSidebarItems(items, sidebarName, violations) {
 export function findPageViolations(docsDir) {
   const violations = [];
   for (const file of walkMarkdown(docsDir)) {
-    const relative = path.relative(docsDir, file).split(path.sep).join('/');
-    const title = extractFrontMatterField(fs.readFileSync(file, 'utf8'), 'title');
+    const relative = relativePath(docsDir, file);
+    const title = frontMatterField(fs.readFileSync(file, 'utf8'), 'title');
     if (!title) {
       violations.push(`${relative}: missing title`);
       continue;
@@ -194,11 +163,11 @@ export function findNavigationViolations(rootDir) {
 
   const docsDir = path.join(rootDir, 'docs');
   for (const file of walkMarkdown(docsDir)) {
-    const relative = path.relative(docsDir, file).split(path.sep).join('/');
+    const relative = relativePath(docsDir, file);
     const content = fs.readFileSync(file, 'utf8');
     const sidebarLabel =
-      extractFrontMatterField(content, 'sidebar_label') ??
-      extractFrontMatterField(content, 'title');
+      frontMatterField(content, 'sidebar_label') ??
+      frontMatterField(content, 'title');
     checkBounds(
       violations,
       `docs/${relative} sidebar label`,
@@ -211,19 +180,17 @@ export function findNavigationViolations(rootDir) {
   return violations;
 }
 
-const isMain =
-  process.argv[1] &&
-  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
-
-if (isMain) {
-  const rootDir = path.resolve(process.argv[2] ?? process.cwd());
-  const docsDir = path.join(rootDir, 'docs');
-  const violations = [
-    ...findPageViolations(docsDir),
-    ...findNavigationViolations(rootDir),
-  ];
-  if (violations.length > 0) {
-    console.error(violations.join('\n'));
-    process.exit(1);
+// Titled admonitions must use Docusaurus bracket syntax, such as :::info[Title].
+export function findAdmonitionViolations(docsDir) {
+  const violations = [];
+  const invalidTitle = /^\s*:::(?:note|tip|info|warning|danger)\s+\S/;
+  for (const file of walkMarkdown(docsDir)) {
+    const relative = relativePath(docsDir, file);
+    for (const line of classifyLines(fs.readFileSync(file, 'utf8'))) {
+      if (line.kind !== 'fence' && invalidTitle.test(line.text)) {
+        violations.push(`${relative}:${line.number}: titled admonition must use bracket syntax, for example :::info[Title]`);
+      }
+    }
   }
+  return violations;
 }
