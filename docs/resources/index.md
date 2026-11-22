@@ -7,7 +7,7 @@ description: The linked records a migration lead sets up, fills in, and keeps to
 
 These are the records a migration lead keeps to show what has been decided, asked, required, changed, and reviewed in a post-quantum migration. Each practice and technology card writes to them, and together they are the evidence: when a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement. [Protect this first](/resources/protect-this-first/) shows the whole set filled in for one fictional organisation.
 
-You do not need every record on day one. A short-path organisation, running only supported commodity software, keeps the decision note, the inventory, purchase requirements, and the review log, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine.
+You do not need every record on day one. A short-path organisation, running only supported commodity software, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine.
 
 ## The records, in order of use
 
@@ -15,7 +15,7 @@ You do not need every record on day one. A short-path organisation, running only
 | --- | --- | --- | --- |
 | [Decision note](/resources/decision-note/) | [Decide whether to act](/migration-practices/diagnose/) | One row per asset: the four answers, the urgency category, the path, and the sponsor's acceptance | The charter, for assets on the full path; the inventory, for every asset |
 | [Programme charter](/resources/programme-charter/) | [Set up the programme](/migration-practices/programme/) | Goal, scope, named roles, first budget line, reporting, and report triggers | Every later record, for owners; the progress report, for its cadence and triggers |
-| [Inventory record](/resources/inventory-record/) | [Inventory the cryptography](/migration-practices/inventory/), [Keep commodity software updated](/migration-practices/commodity-software/), and every technology card | One row per asset, with its algorithms for each job, dependencies, what a scan cannot see, and confidence | The migration plan, which orders its assets; the vendor log, for what to ask |
+| [Inventory record](/resources/inventory-record/) | [Inventory the cryptography](/migration-practices/inventory/), [Keep commodity software updated](/migration-practices/commodity-software/), and every technology card | One row per asset, with its algorithms for each job, dependencies, what a scan cannot see, and confidence | The migration plan, which orders its assets; the vendor log and purchase requirements, for what to ask and require |
 | [Vendor response log](/resources/vendor-response-log/) | [Work with suppliers](/migration-practices/suppliers/) and every technology card | One row per supplier answer, product, version, and job, with the judgement and follow-up | The plan's `supplier readiness`; the review log, for follow-ups |
 | [Purchase requirements](/resources/purchase-requirements/) | [Work with suppliers](/migration-practices/suppliers/#5-write-requirements-into-purchases-and-renewals), step 5, [Keep commodity software updated](/migration-practices/commodity-software/), and the [identity](/technology-options/identity/), [Kerberos](/technology-options/kerberos/), [firmware](/technology-options/firmware-secure-boot/), [cloud](/technology-options/cloud-saas/), and [OT](/technology-options/ot-industrial/) cards | One row per purchase or renewal, job, and candidate supplier: the requirement, the supplier's commitment, and whether it was met | The plan's `end of support` and `next action`; the review log, for any requirement not met |
 | [Migration plan](/resources/migration-plan/) | [Decide what to migrate first](/migration-practices/priority/), [Plan the migration](/migration-practices/plan/), and every technology card | One row per asset and job: the order and why, the applicable timeline, the four separate dates, and the next review | The change record, one per change it schedules |
@@ -41,6 +41,8 @@ flowchart TD
     RL --> REP[Progress report]
     CH --> REP
     PLAN --> REP
+    PRQ --> RL
+    REP --> RL
 ```
 
 Three things join the rows:
@@ -69,7 +71,7 @@ Each situation route names the records it produces. Where you start depends on t
 
 | Route | Start with |
 | --- | --- |
-| [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, and the review log |
+| [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report |
 | [Long-lived confidentiality](/routes/long-lived-confidentiality/) | Inventory, then the migration plan |
 | [Hard-to-change systems](/routes/hard-to-change-systems/) | The asset's four dates on the migration plan and its change record, with purchase requirements where a component is still being selected |
 | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record in order |
