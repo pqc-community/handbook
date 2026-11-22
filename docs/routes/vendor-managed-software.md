@@ -5,7 +5,7 @@ description: The short path, and the track for commodity assets on the full path
 displayed_sidebar: routesSidebar
 ---
 
-This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Their suppliers are expected to deliver post-quantum support through normal updates; including supplier-hosted services is this handbook's position, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says.
+This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers the assets that meet the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) on Decide whether to act, whose suppliers are expected to deliver post-quantum support through normal updates.
 
 The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT, say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen seamlessly as services are updated by their vendors.
 
@@ -23,7 +23,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 3. [Work with suppliers](/migration-practices/suppliers/#5-write-requirements-into-purchases-and-renewals), step 5. Record the requirement text used in each purchase and renewal on the [purchase requirements record](/resources/records/purchase-requirements/). When a product comes up for renewal or leaves support, steps 2 to 4 of the same practice apply. Record those answers on the [vendor response log](/resources/records/vendor-response-log/).
 4. [Review and report](/migration-practices/subsequent-review/). At each review, recheck the five conditions. Record the review on the [review log](/resources/records/review-log/) and the [progress report](/resources/records/progress-report/). On the full path, these assets are reviewed in the programme's review on the Organisation-wide route, not in a separate report.
 
-A product that fails the fifth condition leaves these steps for the [Hard-to-change systems](/routes/hard-to-change-systems/) steps, as the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says.
+For a product that fails the fifth condition, follow the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section, which says how it uses the [Hard-to-change systems](/routes/hard-to-change-systems/) steps alongside these.
 
 ## Output records
 
@@ -38,7 +38,7 @@ A product that fails the fifth condition leaves these steps for the [Hard-to-cha
 ## When to leave
 
 - **An answer to question A, B, C, or D turns yes.** Re-answer the questions on the decision note. The asset moves to the track its new answers give, and the organisation follows the full path from [Organisation-wide](/routes/organisation-wide/).
-- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds. Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says what happens: the product moves to the [Hard-to-change systems](/routes/hard-to-change-systems/) track, and that section says what happens to its path.
+- **The fifth condition no longer holds for a product.** Follow Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section, which sends it to the [Hard-to-change systems](/routes/hard-to-change-systems/) track and says what happens to its path.
 - **An answer stays `unknown`, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
 
 ## Worked example

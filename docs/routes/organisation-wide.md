@@ -43,7 +43,7 @@ ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024)
 - The decision note, with a path and a route for each asset.
 - The programme charter.
 - The inventory record.
-- A [migration plan](/resources/records/migration-plan/) with an owner, an order, and a subsequent-review date for each asset and job.
+- A [migration plan](/resources/records/migration-plan/) with an owner, an order or tracking line, and a subsequent-review date for each asset and job.
 - The review log and progress report from each review.
 - Through the tracks: the [vendor response log](/resources/records/vendor-response-log/), [purchase requirements](/resources/records/purchase-requirements/), and [change records](/resources/records/change-record/).
 
