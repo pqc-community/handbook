@@ -321,8 +321,8 @@ const sidebars: SidebarsConfig = {
       label: 'Examples',
       link: {
         type: 'generated-index',
-        title: 'Worked examples',
-        description: 'Every migration record filled in for one fictional organisation, so you can follow one asset from the first decision to the sponsor\'s report.',
+        title: 'Examples',
+        description: 'Worked examples that show the handbook\'s records and practices applied to a fictional organisation.',
         slug: '/resources/examples/',
       },
       collapsed: false,

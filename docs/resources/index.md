@@ -11,7 +11,7 @@ The rest of the handbook says what to do. This section holds what you take away 
 
 | Group | What you do with it | Start with |
 | --- | --- | --- |
-| [Records](/resources/records/) | Set up, fill in, and keep. Nine linked records show what has been decided, asked, required, changed, and reviewed, from the decision note to the sponsor's progress report. Each has a blank table and a CSV, and one download holds them all. | [Migration records](/resources/records/), which shows the records in order of use and how they connect |
+| [Records](/resources/records/) | Set up, fill in, and keep. Nine linked records show what has been decided, asked, required, changed, and reviewed, from the decision note to the sponsor's progress report. Each has a blank table and a CSV, and one download holds them all. | The [records overview](/resources/records/), which shows the records in order of use and how they connect; then the [decision note](/resources/records/decision-note/) |
 | [Examples](/resources/examples/) | Follow. A worked example shows every record filled in for one fictional organisation, so you can see one asset traced from the first decision to the sponsor's report. | [Protect this first](/resources/examples/protect-this-first/) |
 | [Reference](/resources/reference/) | Look up. Plain-language definitions of the terms the records and pages use. | [Glossary](/resources/reference/glossary/) |
 

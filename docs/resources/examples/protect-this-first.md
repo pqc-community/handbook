@@ -5,7 +5,7 @@ displayed_sidebar: resourcesSidebar
 description: Every migration record filled in for one fictional UK manufacturer, from the decision note and charter through inventory, supplier answers, purchase requirements, the plan, a change, review, and the sponsor's report.
 ---
 
-This worked example shows every record in the [record set](/resources/records/) filled in for one fictional small manufacturer, in the order the records are used. Each template's filled example is taken from this page, and each record names the same assets, so you can follow one asset from the decision note to the sponsor's report.
+This worked example shows every record in the [record set](/resources/records/) filled in for one fictional small manufacturer, in the order the records are used. Each record page's filled example is taken from this page, and each record names the same assets, so you can follow one asset from the decision note to the sponsor's report.
 
 The manufacturer is based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration.
 

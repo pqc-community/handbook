@@ -5,7 +5,7 @@ displayed_sidebar: resourcesSidebar
 description: Terms used across this handbook, from asymmetric cryptography and key encapsulation to hybrid constructions and harvest-now, decrypt-later.
 ---
 
-Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, return to the [homepage](/).
+Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, return to the [homepage](/). For the fields and values the records share, such as `asset`, `job`, and `unknown`, see [Migration records](/resources/records/#how-the-records-connect).
 
 ### Asymmetric cryptography
 
@@ -271,3 +271,5 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Inventory the cryptography](/migration-practices/inventory/)
 - [Decide what to migrate first](/migration-practices/priority/)
 - [Decide whether to act](/migration-practices/diagnose/)
+- [Resources](/resources/)
+- [Migration records](/resources/records/)

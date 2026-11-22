@@ -63,6 +63,6 @@ Each practice keeps key establishment, digital signatures, and verifiers that ca
 ## Related pages
 
 - [Situation routes](/routes/not-sure/)
-- [Resources](/resources/)
+- [Migration records](/resources/records/)
 - [Technology options](/technology-options/)
 - [Migration guides](/standards/migration-guides/)
