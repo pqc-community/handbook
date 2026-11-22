@@ -55,7 +55,7 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 
 An insufficient record is "The provider says it is quantum-safe."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 1 December 2026. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
 
 ## Sources
 

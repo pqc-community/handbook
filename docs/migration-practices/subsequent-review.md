@@ -47,13 +47,13 @@ The [review log](/resources/records/review-log/): date, the record, asset, and j
 
 An insufficient record is "The migration project is closed."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier responses, the product sensor's plan line, and the laptop row. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, and closes the laptop item once the IT lead confirms a six-year confidentiality period and records the installed versions. It then carries five unresolved items, each on its own row with its own owner and next review:
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), opens the review on 10 November 2026 and reviews the archive pilot evidence, the supplier responses, the product sensor's plan line, and the laptop row. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, and closes the laptop item once the IT lead confirms a six-year confidentiality period and records the installed versions. It then carries five unresolved items, each on its own row with its own owner and next review:
 
-- **archive signature plan from the supplier:** product engineering lead, 2026-12-01, when the written answer is due;
-- **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead, 2026-12-01;
-- **archive agility gaps:** product engineering lead, 2026-12-01, as part of the same supplier follow-up;
-- **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead, 2026-12-15, when the microcontroller suppliers' answers are due;
-- **archive production rollout and production client handshake check:** product engineering lead, at the quarterly review on 2027-02-10.
+- **archive signature plan from the supplier:** product engineering lead, 1 December 2026, when the written answer is due;
+- **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead, 1 December 2026;
+- **archive agility gaps:** product engineering lead, 1 December 2026, as part of the same supplier follow-up;
+- **sensor firmware-signing option**, needed before the design freeze on 30 June 2027: product security lead, 15 December 2026, when the microcontroller suppliers' answers are due;
+- **archive production rollout and production client handshake check:** product engineering lead, at the quarterly review on 10 February 2027.
 
 Each date follows the item's own driver rather than one review date for everything. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked.
 

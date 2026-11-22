@@ -36,7 +36,7 @@ A one-page [programme charter](/resources/records/programme-charter/): goal and 
 
 An insufficient record is "IT will handle post-quantum."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the fictional manufacturer's charter, agreed on 2026-08-03, names the managing director as sponsor and the operations director as migration lead, and names the product engineering lead, product security lead, and IT lead as owners of the archive, the product sensor, and the office laptops. The first phase covers discovery, supplier answers for the design archive, and a decision on the sensor's firmware verifier before production design freeze. The migration lead reports monthly, and immediately if the supplier's release date moves or there is still no supported sensor signature option three months before design freeze.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the fictional manufacturer's charter, agreed on 3 August 2026, names the managing director as sponsor and the operations director as migration lead, and names the product engineering lead, product security lead, and IT lead as owners of the archive, the product sensor, and the office laptops. The first phase covers discovery, supplier answers for the design archive, and a decision on the sensor's firmware verifier before production design freeze. The migration lead reports monthly, and immediately if the supplier's release date moves or there is still no supported sensor signature option three months before design freeze.
 
 ## Limits and next step
 

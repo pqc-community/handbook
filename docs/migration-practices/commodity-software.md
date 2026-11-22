@@ -34,7 +34,7 @@ The installed versions and the date checked on the inventory record, the require
 
 An insufficient record is "The platform will handle it."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), keeps the manufacturer's office laptops on the supplier-update path under the IT lead, records the installed browser and operating-system versions and a six-year confidentiality period at the 2026-11-10 review, sets the next check for the quarterly review on 2027-02-10, and notes that the product-design archive and the sensor's firmware verifier are tracked separately because their confidentiality period and update constraints differ.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), keeps the manufacturer's office laptops on the supplier-update path under the IT lead, records the installed browser and operating-system versions and a six-year confidentiality period at the 10 November 2026 review, sets the next check for the quarterly review on 10 February 2027, and notes that the product-design archive and the sensor's firmware verifier are tracked separately because their confidentiality period and update constraints differ.
 
 For an organisation entirely on this path, see [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/).
 

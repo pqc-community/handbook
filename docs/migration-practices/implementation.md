@@ -50,9 +50,9 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 - **option:** hybrid X25519MLKEM768 for TLS connections, with the authority recorded as FIPS 203 for ML-KEM and the UK NCSC's TLS guidance (15 October 2026), written for system administrators, for the hybrid form;
 - **pilot:** a test client connects and its own handshake log shows X25519MLKEM768 negotiated, the supplier's connection log agrees, and an authorised test account retrieves sample files;
 - **rollback triggers:** failed retrieval, or a classical-only connection;
-- **result:** the staging pilot passed on 2026-10-21. Production rollout is pending, so the change is not closed; the same client check will be run against the production workspace after rollout.
+- **result:** the staging pilot passed on 21 October 2026. Production rollout is pending, so the change is not closed; the same client check will be run against the production workspace after rollout.
 
-A blocked record is the product sensor's firmware verifier. The signature and trust-root option is `unknown`, so no test is claimed. Rollback is `not applicable`, because the boot ROM cannot change after shipment. The change stays blocked until a supported option can be tested before the design freeze on 2027-06-30.
+A blocked record is the product sensor's firmware verifier. The signature and trust-root option is `unknown`, so no test is claimed. Rollback is `not applicable`, because the boot ROM cannot change after shipment. The change stays blocked until a supported option can be tested before the design freeze on 30 June 2027.
 
 ## Limits and next step
 

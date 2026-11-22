@@ -63,7 +63,7 @@ The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-prote
 
 An insufficient record is "TLS is configured for hybrid key exchange."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 2026-10-21, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/stored-data/).
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 21 October 2026, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/stored-data/).
 
 ## Sources
 

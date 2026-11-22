@@ -54,7 +54,7 @@ The backup, archive, or storage supplier for products you buy; you for formats a
 
 An insufficient record is "Backups are encrypted, so they are fine."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the algorithm that protects the key wrapping of the design archive's stored files is `unknown`, the supplier's answer is `missing`, and a written answer is due by 2026-12-01, so stored-data protection is not counted as migrated. Because the designs must stay confidential for 15 years, files already stored under Workspace 4.1 need the same protection; once the answer arrives, the manufacturer decides whether to re-wrap or re-encrypt them and adds that work to the plan.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the algorithm that protects the key wrapping of the design archive's stored files is `unknown`, the supplier's answer is `missing`, and a written answer is due by 1 December 2026, so stored-data protection is not counted as migrated. Because the designs must stay confidential for 15 years, files already stored under Workspace 4.1 need the same protection; once the answer arrives, the manufacturer decides whether to re-wrap or re-encrypt them and adds that work to the plan.
 
 ## Sources
 

@@ -13,14 +13,14 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Initial facts
 
-- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The managing director accepted the decision note on 2026-07-13, and the programme charter was agreed on 2026-08-03 (fictional).
+- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The managing director accepted the decision note on 13 July 2026, and the programme charter was agreed on 3 August 2026 (fictional).
 - **Product-design archive**: The supplier controls the hosted workspace software; the product engineering lead owns the design data. The company's retention policy requires the designs to remain confidential for at least 15 years.
-- **Product sensor firmware verifier and signing key**: The manufacturer signs the sensor's firmware with its own key, and each sensor checks that signature against a trust anchor held in write-protected boot ROM. The verifier cannot accept a replacement trust anchor after the sensor ships, so the product security lead needs to resolve the signature path before production design freeze, planned for 2027-06-30 (fictional).
+- **Product sensor firmware verifier and signing key**: The manufacturer signs the sensor's firmware with its own key, and each sensor checks that signature against a trust anchor held in write-protected boot ROM. The verifier cannot accept a replacement trust anchor after the sensor ships, so the product security lead needs to resolve the signature path before production design freeze, planned for 30 June 2027 (fictional).
 - **Office laptops**: Standard browsers and operating systems are under vendor support and follow the commodity supplier-update path. No exception has been identified.
 
 ## Decision note
 
-The [decision note](/resources/records/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path. The rows are shown as accepted on 2026-07-13; the review on 2026-11-10 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/records/review-log/) records.
+The [decision note](/resources/records/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path. The rows are shown as accepted on 13 July 2026; the review on 10 November 2026 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/records/review-log/) records.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -53,7 +53,7 @@ Because two assets are on the full path, the managing director agrees a [program
 
 ## Inventory records
 
-The table shows the rows as first recorded. The review on 2026-11-10 updated the archive and laptop rows; see [Subsequent review](#subsequent-review).
+The table shows the rows as first recorded. The review on 10 November 2026 updated the archive and laptop rows; see [Subsequent review](#subsequent-review).
 
 The manufacturer records one row for each system on the [inventory record](/resources/records/inventory/). It marks facts it has not verified as `unknown`:
 
@@ -66,7 +66,7 @@ The manufacturer records one row for each system on the [inventory record](/reso
 
 ## Supplier answers
 
-The product engineering lead records the workspace supplier's written answer in the [vendor response log](/resources/records/vendor-response-log/). For the sensor, procurement asked the two shortlisted microcontroller suppliers in writing on 2026-10-05; the product security lead records the one reply received and marks the other answer `missing` once its due date passes. Every supplier, product, and version is fictional.
+The product engineering lead records the workspace supplier's written answer in the [vendor response log](/resources/records/vendor-response-log/). For the sensor, procurement asked the two shortlisted microcontroller suppliers in writing on 5 October 2026; the product security lead records the one reply received and marks the other answer `missing` once its due date passes. Every supplier, product, and version is fictional.
 
 | supplier | product and version | asset | job | question | asked | answer due | answer | answered | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ The sensor's microcontroller has not yet been selected, so procurement makes a p
 
 ## Migration plan
 
-The [migration plan](/resources/records/migration-plan/) holds both the order of work and the dates, one row per asset and job. The archive and the firmware verifier each come first for a different job, and the firmware-signing key comes first for signatures, moving with the verifier because it must switch to whatever scheme the verifier accepts; the archive's signature line follows the supplier, and the laptops are tracked on the supplier-update path rather than ranked. The order for the archive's key establishment rests on the 15-year retention policy, and its supplier readiness on the letter above. Each row's subsequent review follows its own driver: the archive rows on the supplier's answers due 2026-12-01, the sensor on the microcontroller suppliers' answers due 2026-12-15, and the laptops on the next quarterly review.
+The [migration plan](/resources/records/migration-plan/) holds both the order of work and the dates, one row per asset and job. The archive and the firmware verifier each come first for a different job, and the firmware-signing key comes first for signatures, moving with the verifier because it must switch to whatever scheme the verifier accepts; the archive's signature line follows the supplier, and the laptops are tracked on the supplier-update path rather than ranked. The order for the archive's key establishment rests on the 15-year retention policy, and its supplier readiness on the letter above. Each row's subsequent review follows its own driver: the archive rows on the supplier's answers due 1 December 2026, the sensor on the microcontroller suppliers' answers due 15 December 2026, and the laptops on the next quarterly review.
 
 The plan uses the UK NCSC target dates as planning guidance for this UK-based company. The guidance, written mainly for large organisations, operators of critical national infrastructure, and organisations that run bespoke IT, asks them to complete discovery and build an initial plan by 2028, to carry out their early, highest-priority migration activities by 2031, and to complete migration of systems, services, and products by 2035. The dates are targets, not a claim that every asset has the same milestone.
 
@@ -121,7 +121,7 @@ The sensor verifier row remains blocked because the replacement signature and tr
 
 ## Subsequent review
 
-At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier responses, purchase requirements, archive pilot evidence, sensor verifier plan, and the laptops' inventory and decision-note rows. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/records/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 2026-12-01, the sensor on 2026-12-15, and the archive production check at the quarterly review on 2027-02-10, because the programme reviews every three months while a line is first in its job's order. The review log holds each item:
+At the review on 10 November 2026, the manufacturer reopened the migration plan, supplier responses, purchase requirements, archive pilot evidence, sensor verifier plan, and the laptops' inventory and decision-note rows. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/records/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 1 December 2026, the sensor on 15 December 2026, and the archive production check at the quarterly review on 10 February 2027, because the programme reviews every three months while a line is first in its job's order. The review log holds each item:
 
 | date | record | asset | job | item | owner | status | next review |
 | --- | --- | --- | --- | --- | --- | --- | --- |

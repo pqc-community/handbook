@@ -21,7 +21,7 @@ List every dependency inside the `dependencies` cell separated by a semicolon ra
 
 ## Filled example
 
-The archive row as first recorded, before the review on 2026-11-10 updated it; [Protect this first](/resources/examples/protect-this-first/) shows how it changes.
+The archive row as first recorded, before the review on 10 November 2026 updated it; [Protect this first](/resources/examples/protect-this-first/) shows how it changes.
 
 | asset | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
