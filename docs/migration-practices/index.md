@@ -8,7 +8,7 @@ displayed_sidebar: migrationPracticesSidebar
 Start with [Decide whether to act](/migration-practices/diagnose/). Four questions place you on one of two paths:
 
 - **The short path.** If every asset answers no to all four questions and meets the five conditions on Decide whether to act, you mostly need to [keep commodity software updated](/migration-practices/commodity-software/), write post-quantum requirements into purchases and renewals ([Work with suppliers](/migration-practices/suppliers/), step 5), and [review](/migration-practices/subsequent-review/) regularly.
-- **The full path.** If any asset answers yes to one of the questions, you need a programme. Follow the practices in this order:
+- **The full path.** If any asset's path is full under the table on Decide whether to act, because it answers yes to one of the questions or is a product that fails the fifth condition, you need a programme. Follow the practices in this order:
 
 ```mermaid
 flowchart TD

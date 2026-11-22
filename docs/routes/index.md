@@ -32,11 +32,11 @@ On the full path, the programme sends each asset to the track its decision-note 
 | --- | --- | --- | --- |
 | Vendor-managed software | No to all four questions, with the five conditions met | The supplier's release and support dates | [Vendor-managed software](/routes/vendor-managed-software/) |
 | Long-lived confidentiality | Yes to question A | The data confidentiality period | [Long-lived confidentiality](/routes/long-lived-confidentiality/) |
-| Hard-to-change systems | Yes to question B, C, or D, or a product that fails the fifth condition | Change lead time, relying parties, and verifiers that cannot be updated, each on its own line | [Hard-to-change systems](/routes/hard-to-change-systems/) |
+| Hard-to-change systems | Yes to question B, C, or D, or a product that fails the fifth condition | Change lead time, relying parties, and verifiers that cannot be updated, each on its own line, plus replacement lead time for an out-of-support product | [Hard-to-change systems](/routes/hard-to-change-systems/) |
 
 Path is recorded per asset on the decision note, so a full-path organisation can still have assets whose path is short, such as office laptops: they follow Vendor-managed software as a track. That page is therefore both the short path and the track for the commodity part of a full-path estate. The two other tracks each list the deadlines that may apply to their job and the technology cards to open.
 
-The split between the short and full paths follows the UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025). They are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT. They say that for small and medium-sized enterprises using mainly commodity IT, migration should happen seamlessly as services are updated by their vendors. Where custom or specialised software is used, the timelines say it should follow the same timetable as for larger organisations.
+The split between the short and full paths follows the UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025). They are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT. They say that for small and medium-sized enterprises using mainly commodity IT, migration should happen seamlessly as services are updated by their vendors. Where custom or specialised software is used, the timelines say PQC-compatible updates or replacements need to be identified and deployed, on the same timetable as for larger organisations.
 
 ## Worked examples
 

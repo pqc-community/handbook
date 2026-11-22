@@ -40,7 +40,7 @@ const paths: SituationChoice[] = [
   {
     title: 'Full path: we are coordinating a migration across the organisation',
     to: '/routes/organisation-wide/',
-    text: 'Any asset is on the full path. The programme sends each asset to its track.',
+    text: 'Any asset answers yes, or a product fails the fifth condition. The programme sends each asset to its track.',
   },
 ];
 

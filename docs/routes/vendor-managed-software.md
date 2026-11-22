@@ -5,7 +5,7 @@ description: The short path, and the track for commodity assets on the full path
 displayed_sidebar: routesSidebar
 ---
 
-This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Suppliers deliver post-quantum support for these through normal updates.
+This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Their suppliers are expected to deliver post-quantum support through normal updates; the UK NCSC says this of commodity IT, and including supplier-hosted services is this handbook's position, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says.
 
 ## Who it is for
 

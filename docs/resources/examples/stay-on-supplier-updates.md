@@ -126,7 +126,7 @@ The short path holds only while the answers to the four questions stay no and al
 - the agency starts shipping or running a device whose signature check cannot be updated, such as a product it builds for a client (question B);
 - the agency starts signing code or documents that clients rely on, or runs its own certificate authority (question C);
 - the agency starts building or running its own systems, such as a client portal it hosts and configures (question D);
-- a device or service leaves support, or its supplier withdraws its published plan or has none for a job the product performs, which moves it to the [hard-to-change systems route](/routes/hard-to-change-systems/);
+- a device or service leaves support, or its supplier withdraws its published plan or has none for a job the product performs, which moves it to the [hard-to-change systems route](/routes/hard-to-change-systems/) and the agency onto the full path;
 - the IT support provider can no longer show the devices' versions and support status.
 
 The NCSC guidance notes that for many organisations, managed service providers are likely to deliver most of their IT capability, and that it is then important to make sure they are also carrying out the discovery and assessment work it describes. Here the IT support provider records the versions and runs the connection check, and the office manager keeps the records.

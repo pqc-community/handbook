@@ -76,7 +76,7 @@ Every route starts from the decision note, which [Decide whether to act](/migrat
 | [Vendor-managed software](/routes/vendor-managed-software/), the short path and the track for commodity assets | Inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
 | [Organisation-wide](/routes/organisation-wide/), the full path | Programme charter and inventory, then the migration plan's order, the review log, and the progress report, with each asset's other records from its track |
 | [Long-lived confidentiality](/routes/long-lived-confidentiality/) track | Inventory rows with the confidentiality period, migration plan lines for connections and stored data, vendor response log rows, purchase requirements, and change records |
-| [Hard-to-change systems](/routes/hard-to-change-systems/) track | The four dates on the migration plan and a change record for each line, with vendor response log rows and purchase requirements where a supplier or component is involved |
+| [Hard-to-change systems](/routes/hard-to-change-systems/) track | Inventory rows, the four dates on the migration plan and a change record for each line, with vendor response log rows and purchase requirements where a supplier or component is involved |
 
 The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023), addressed to organisations, especially those supporting critical infrastructure, urges them to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it; the inventory and vendor log hold that work.
 

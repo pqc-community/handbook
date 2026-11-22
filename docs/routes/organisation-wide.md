@@ -36,7 +36,7 @@ Each role supplies one input to the plan:
 6. **Follow each track's steps.** Record the plan dates, vendor response log rows, purchase requirements and change records that each track produces.
 7. [Review and report](/migration-practices/subsequent-review/). Record the [review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/), and reopen records on their triggers.
 
-These steps follow the same broad sequence as the national [migration guides](/standards/migration-guides/) summarised in Standards: find the cryptography, assess and prioritise it, implement, and communicate. Programme setup and dated planning are made explicit because they decide who does the work and by when.
+ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024), an informative technical report, sets out a repeatable migration framework that likewise runs from asset inventories through prioritisation and planning to executing the plans and preparing for the next iteration. This route makes programme setup an explicit step because it decides who does the work and by when.
 
 ## Output records
 
@@ -51,7 +51,7 @@ These steps follow the same broad sequence as the national [migration guides](/s
 
 - **At a later review, every asset answers no to all four questions and meets the five conditions.** The organisation is on the short path; follow [Vendor-managed software](/routes/vendor-managed-software/).
 - **An asset's answers change.** Re-answer the four questions on the decision note; the asset moves to the track its new answers give.
-- **The estate is a large bespoke estate, critical national infrastructure, or a regulated system, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
+- **You cannot choose a route for an asset.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose). A large bespoke estate, critical national infrastructure, or a regulated system stays on this route and brings in a specialist as well, as that section says.
 
 ## Worked example
 

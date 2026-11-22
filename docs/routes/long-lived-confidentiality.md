@@ -15,7 +15,7 @@ This track is for assets that answer yes to question A on [Decide whether to act
 
 ## Steps
 
-Take each of the asset's key-establishment lines through these steps. Keep connections and stored data as separate lines.
+Take each of the asset's key-establishment lines through these steps. Keep connections and stored data as separate lines. The asset's other lines, such as the signatures of a supplier-hosted service, stay on the migration plan as [Decide what to migrate first](/migration-practices/priority/) orders them; this track adds nothing to them unless the asset's route also records Hard-to-change systems.
 
 1. [Inventory the cryptography](/migration-practices/inventory/). Record the confidentiality period and the key-establishment algorithm for each use, in transit and for stored data, on the [inventory record](/resources/records/inventory/).
 2. [Decide what to migrate first](/migration-practices/priority/). Record the order and reason, under that page's rule for key establishment, on the [migration plan](/resources/records/migration-plan/).
@@ -34,7 +34,7 @@ Each date binds or guides only the audience its authority names. Record the one 
 | Authority | Audience | What it sets for key establishment |
 | --- | --- | --- |
 | EU NIS Cooperation Group, [roadmap](/standards/migration-guides/eu-nis-roadmap/), version 1.1, 11 June 2025 | EU Member States. It says public administrations and critical infrastructure entities, notably those in scope of the NIS2 Directive, should refer to it | Recommends that data needing to stay confidential for at least ten years be protected from quantum attack no later than the end of 2030, and that high-risk use cases complete the transition by then |
-| NIST, [IR 8547](/standards/transition-and-key-management/nist-ir-8547/), October 2026 | A broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories | Says systems that protect data with long-term confidentiality needs warrant the earliest transitions. Schedules quantum-vulnerable key establishment for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines (§4) |
+| NIST, [IR 8547](/standards/transition-and-key-management/nist-ir-8547/), October 2026 | A broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories | Says systems that protect data with long-term confidentiality needs warrant the earliest transitions (§4). Schedules quantum-vulnerable key establishment for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines, and notes that application-specific guidance may require earlier migration (§4.1.2) |
 | [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | High value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030. Agencies must give the same priority to systems that protect data expected to remain mission-sensitive in 2030 (§4) |
 | UK NCSC, [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/), published and reviewed 20 March 2025 | Primarily large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | General milestones for every job, not specific to key establishment: early, highest-priority migration activities by 2031, and migration of all systems, services, and products completed by 2035 |
 
@@ -58,9 +58,9 @@ The track's work for a line is in place when its four dates are recorded and its
 ## When to leave
 
 - **The data owner confirms a period that changes the answer to question A.** Re-answer on the decision note. The asset moves to the track its new answers give.
-- **The asset's signatures, a verifier, or bespoke code need work.** Those lines follow [Hard-to-change systems](/routes/hard-to-change-systems/).
+- **Something changes the asset's answer to question B, C, or D.** Re-answer the four questions on the decision note; step 3 of [Decide whether to act](/migration-practices/diagnose/) sets the new route, which may add [Hard-to-change systems](/routes/hard-to-change-systems/).
 - **A supplier's answer is `missing` or `concerning`.** Follow it up and escalate it under step 4 of [Work with suppliers](/migration-practices/suppliers/#4-follow-up-and-escalate).
-- **The system is critical national infrastructure or a regulated system, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
+- **You cannot choose a route for an asset.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose). A large bespoke estate, critical national infrastructure, or a regulated system stays on this route and brings in a specialist as well, as that section says.
 
 ## Worked example
 
