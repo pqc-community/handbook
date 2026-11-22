@@ -42,7 +42,7 @@ You now have the model the rest of the handbook uses:
 - **Dates belong to authorities and audiences**; your data lifetimes and device lifetimes decide which ones bind you, and when.
 - The work is **repeatable**, so build the capability to do it again.
 
-To act on it, choose the situation that fits your organisation on the [homepage](/) or start with [Not sure which route applies](/routes/not-sure/). The worked example in [Protect this first](/resources/examples/protect-this-first/) applies these ideas to one fictional manufacturer. Keep the [glossary](/resources/reference/glossary/) to hand.
+To act on it, choose the path that fits your organisation on the [homepage](/) or start with [Decide whether to act](/migration-practices/diagnose/). The worked example in [Protect this first](/resources/examples/protect-this-first/) applies these ideas to one fictional manufacturer. Keep the [glossary](/resources/reference/glossary/) to hand.
 
 ## Check your understanding
 

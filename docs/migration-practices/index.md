@@ -7,8 +7,8 @@ displayed_sidebar: migrationPracticesSidebar
 
 Start with [Decide whether to act](/migration-practices/diagnose/). Four questions place you on one of two paths:
 
-- **The short path.** If you run only supported commodity software and supplier-hosted services, hold no data that must stay secret for many years, and ship no device that checks signatures, you mostly need to [keep commodity software updated](/migration-practices/commodity-software/), write post-quantum requirements into purchases and renewals ([Work with suppliers](/migration-practices/suppliers/), step 5), and [review](/migration-practices/subsequent-review/) regularly.
-- **The full path.** Anything else — long-lived confidential data, devices whose signature check cannot be updated, signing or certificate infrastructure others rely on, or bespoke systems — needs a programme. Follow the practices in this order:
+- **The short path.** If every asset answers no to all four questions and meets the five conditions on Decide whether to act, you mostly need to [keep commodity software updated](/migration-practices/commodity-software/), write post-quantum requirements into purchases and renewals ([Work with suppliers](/migration-practices/suppliers/), step 5), and [review](/migration-practices/subsequent-review/) regularly.
+- **The full path.** If any asset answers yes to one of the questions, you need a programme. Follow the practices in this order:
 
 ```mermaid
 flowchart TD
@@ -26,7 +26,7 @@ flowchart TD
 
 The order is a dependency order, not a strict sequence: supplier work usually runs alongside planning, and review reopens earlier records whenever something changes. Choosing an option sits in [Technology options](/technology-options/choosing/) because it is a technical decision about mechanisms rather than an operating practice.
 
-Each practice says when it applies, who does what, the steps, the evidence to keep, and what an insufficient record looks like next to a decision-ready one. The [situation routes](/routes/not-sure/) are short summaries for common situations; each one points into these practices, which hold the full method.
+Each practice says when it applies, who does what, the steps, the evidence to keep, and what an insufficient record looks like next to a decision-ready one. The [situation routes](/routes/) set out the two paths and the tracks an asset can follow; each one points into these practices, which hold the full method.
 
 The practices are written for organisations without specialist cryptography staff. They do not replace a formal risk assessment or specialist advice on large bespoke estates, critical national infrastructure, or regulated systems; where a practice reaches that boundary, it says so and routes the decision to the risk owner, sector authority, or specialist.
 
@@ -48,7 +48,7 @@ The practices are written for organisations without specialist cryptography staf
 
 ## Where to start by role
 
-- **Anyone unsure whether this applies.** [Decide whether to act](/migration-practices/diagnose/), or answer the questions on the [Not sure](/routes/not-sure/) route.
+- **Anyone unsure whether this applies.** [Decide whether to act](/migration-practices/diagnose/), which also says what to do when you cannot yet answer or choose.
 - **IT or operations, on the short path.** [Keep commodity software updated](/migration-practices/commodity-software/).
 - **Procurement or supplier management.** [Work with suppliers](/migration-practices/suppliers/), which covers existing suppliers, purchases, renewals, and customers who ask you.
 - **Owners of systems that must change.** [Inventory the cryptography](/migration-practices/inventory/) and [Make and verify one change](/migration-practices/implementation/).
@@ -62,7 +62,7 @@ Each practice keeps key establishment, digital signatures, and verifiers that ca
 
 ## Related pages
 
-- [Situation routes](/routes/not-sure/)
+- [Situation routes](/routes/)
 - [Migration records](/resources/records/)
 - [Technology options](/technology-options/)
 - [Migration guides](/standards/migration-guides/)

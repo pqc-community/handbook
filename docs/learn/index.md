@@ -84,5 +84,5 @@ Use the [glossary](/resources/reference/glossary/) for definitions while reading
 ## Related pages
 
 - [Homepage situation chooser](/)
-- [Not sure which route applies](/routes/not-sure/)
+- [Situation routes](/routes/)
 - [Standards](/standards/)

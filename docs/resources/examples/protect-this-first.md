@@ -9,7 +9,7 @@ This worked example shows every record in the [record set](/resources/records/) 
 
 The manufacturer is based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration.
 
-The manufacturer has three different migration paths: product designs in a supplier-hosted archive that must remain confidential for 15 years under the company's own retention policy; a product sensor whose firmware verifier cannot be updated after shipment, together with the key the manufacturer signs its firmware with; and ordinary office laptops that receive standard supplier updates. The UK National Cyber Security Centre (NCSC) milestones are used as UK planning targets. NIST standards are cited only as technical references, not as UK deadlines.
+The manufacturer's assets follow three different [routes](/routes/): product designs in a supplier-hosted archive that must remain confidential for 15 years under the company's own retention policy (Long-lived confidentiality); a product sensor whose firmware verifier cannot be updated after shipment, together with the key the manufacturer signs its firmware with (Hard-to-change systems); and ordinary office laptops that receive standard supplier updates (Vendor-managed software). The UK National Cyber Security Centre (NCSC) milestones are used as UK planning targets. NIST standards are cited only as technical references, not as UK deadlines.
 
 ## Initial facts
 
@@ -20,7 +20,7 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Decision note
 
-The [decision note](/resources/records/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path. The rows are shown as accepted on 13 July 2026; the review on 10 November 2026 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/records/review-log/) records.
+The [decision note](/resources/records/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets, so the programme runs from the [Organisation-wide](/routes/organisation-wide/) route; the laptops stay on the short path. The rows are shown as accepted on 13 July 2026; the review on 10 November 2026 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/records/review-log/) records.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

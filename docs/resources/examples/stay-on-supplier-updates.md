@@ -31,7 +31,7 @@ Before the decision, the IT support provider records one row per asset on the [i
 
 ## Decision note
 
-The office manager answers the four questions on the [decision note](/resources/records/decision-note/) for each asset, with the IT support provider. Every asset answers no to all four, so the agency is a regular adopter on the short path. Before the managing director accepted the note on 7 September 2026, the office manager checked the vendor-managed route's five conditions against the inventory: every product is in support, and the suppliers' published roadmaps are the plans the route asks for, each covering the jobs its product performs, so each route cell already records them. For the hosted suite, the roadmap's key-establishment plan covers connections; whether any public-key step protects stored data at all is the open question on its stored-data line, so it is followed up as a supplier question rather than treated as a missing plan.
+The office manager answers the four questions on the [decision note](/resources/records/decision-note/) for each asset, with the IT support provider. Every asset answers no to all four, so the agency is a regular adopter on the short path. Before the managing director accepted the note on 7 September 2026, the office manager checked the vendor-managed route's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) on Decide whether to act against the inventory: every product is in support, and the suppliers' published roadmaps are the plans the route asks for, each covering the jobs its product performs, so each route cell already records them. For the hosted suite, the roadmap's key-establishment plan covers connections; whether any public-key step protects stored data at all is the open question on its stored-data line, so it is followed up as a supplier question rather than treated as a missing plan.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -120,7 +120,7 @@ The office manager reports to the managing director the same day on the [progres
 
 ## What would move the agency off the short path
 
-The short path holds only while the answers to the four questions stay no and all five of the vendor-managed route's conditions hold. The agency reopens its decision note when any of these happens:
+The short path holds only while the answers to the four questions stay no and all five of the vendor-managed route's conditions on [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) hold. The agency reopens its decision note when any of these happens:
 
 - a client contract requires its files to stay confidential for many years (question A);
 - the agency starts shipping or running a device whose signature check cannot be updated, such as a product it builds for a client (question B);

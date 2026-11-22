@@ -20,7 +20,7 @@ Give each asset its own row, because one organisation can be an urgent adopter f
 - **C.** Do you operate a public-key infrastructure, or sign code, firmware, or documents that other people or devices rely on?
 - **D.** Do you build or run bespoke systems, rather than only supported commodity software and supplier-hosted services?
 
-Set `category` to `urgent adopter` or `regular adopter` and `path` to `full` or `short`, using the table on [Decide whether to act](/migration-practices/diagnose/). In `route`, name the situation route; for the vendor-managed route, add "(all five conditions hold)" once you have checked them, or name the route the asset moved to. In `accepted by`, give the sponsor's role and the date they accepted the row.
+Set `category` to `urgent adopter` or `regular adopter` and `path` to `full` or `short`, using the table on [Decide whether to act](/migration-practices/diagnose/). In `route`, name the asset's route as step 3 of [Decide whether to act](/migration-practices/diagnose/) sets it: Vendor-managed software, Long-lived confidentiality, or Hard-to-change systems, with any bracketed addition that step gives. For the vendor-managed route, add "(all five conditions hold)" once you have checked the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), or name the route the asset moved to. In `accepted by`, give the sponsor's role and the date they accepted the row.
 
 Record `unknown` in any cell you cannot verify yet. Keep keys, secrets, and personal data out of the file — name the system only.
 
@@ -53,4 +53,4 @@ The note records a decision, not a risk assessment. Where the answers are unclea
 - [Decide whether to act](/migration-practices/diagnose/)
 - [Programme charter](/resources/records/programme-charter/)
 - [Inventory record](/resources/records/inventory/)
-- [Not sure](/routes/not-sure/)
+- [Situation routes](/routes/)

@@ -28,7 +28,7 @@ It was authored by the Australian Signals Directorate's Australian Cyber Securit
 
 The publication names cyber security leaders, procurement and vendor management teams, and technical stakeholders as its readers. It asks vendors to use algorithms approved by the appropriate authority for the buyer's organisation rather than specifying test vectors or protocol detail. Answers are easier to judge against the standards they reference: [FIPS 203](/standards/post-quantum/fips-203/) for key establishment, [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures. Ask separately about long-lived verifiers such as firmware and hardware roots of trust, which may not be updatable in the field; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
-The guide complements ASD's [planning publication](/standards/migration-guides/asd-planning/). Pair it with the handbook's [Ask a supplier](/routes/ask-a-supplier/) route, [Work with suppliers](/migration-practices/suppliers/) practice and [Vendor response log](/resources/records/vendor-response-log/).
+The guide complements ASD's [planning publication](/standards/migration-guides/asd-planning/). Pair it with the handbook's [Work with suppliers](/migration-practices/suppliers/) practice and [Vendor response log](/resources/records/vendor-response-log/).
 
 ## Sources
 
@@ -37,6 +37,5 @@ The guide complements ASD's [planning publication](/standards/migration-guides/a
 ## Related pages
 
 - [Post-quantum migration guides](/standards/migration-guides/)
-- [Ask a supplier](/routes/ask-a-supplier/)
 - [Work with suppliers](/migration-practices/suppliers/)
 - [Vendor response log](/resources/records/vendor-response-log/)

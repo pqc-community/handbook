@@ -7,7 +7,7 @@ description: The linked records a migration lead sets up, fills in, and keeps to
 
 These are the records a migration lead keeps to show what has been decided, asked, required, changed, and reviewed in a post-quantum migration. Each practice and technology card writes to them, and together they are the evidence: when a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement. [Protect this first](/resources/examples/protect-this-first/) shows the whole set filled in for one fictional organisation.
 
-You do not need every record on day one. A short-path organisation, running only supported commodity software and supplier-hosted services, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
+You do not need every record on day one. A short-path organisation, whose every asset is on the [Vendor-managed software](/routes/vendor-managed-software/) route, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
 
 ## The records, in order of use
 
@@ -69,16 +69,14 @@ Each record page has a blank table and a CSV. To set up all nine at once, downlo
 
 ## Starting from a route
 
-Each situation route names the records it produces. Where you start depends on the route:
+Every route starts from the decision note, which [Decide whether to act](/migration-practices/diagnose/) fills. Each [situation route](/routes/) then names the records it produces:
 
-| Route | Start with |
+| Route | Records it produces |
 | --- | --- |
-| [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report |
-| [Long-lived confidentiality](/routes/long-lived-confidentiality/) | Inventory, then the migration plan |
-| [Hard-to-change systems](/routes/hard-to-change-systems/) | The asset's four dates on the migration plan and its change record, with purchase requirements where a component is still being selected |
-| [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record in order |
-| [Ask a supplier](/routes/ask-a-supplier/) | Vendor response log |
-| [Not sure](/routes/not-sure/) | Decision note |
+| [Vendor-managed software](/routes/vendor-managed-software/), the short path and the track for commodity assets | Inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
+| [Organisation-wide](/routes/organisation-wide/), the full path | Programme charter and inventory, then the migration plan's order, the review log, and the progress report, with each asset's other records from its track |
+| [Long-lived confidentiality](/routes/long-lived-confidentiality/) track | Inventory rows with the confidentiality period, migration plan lines for connections and stored data, vendor response log rows, purchase requirements, and change records |
+| [Hard-to-change systems](/routes/hard-to-change-systems/) track | The four dates on the migration plan and a change record for each line, with vendor response log rows and purchase requirements where a supplier or component is involved |
 
 The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023), addressed to organisations, especially those supporting critical infrastructure, urges them to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it; the inventory and vendor log hold that work.
 
