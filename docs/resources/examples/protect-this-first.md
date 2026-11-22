@@ -5,7 +5,7 @@ displayed_sidebar: resourcesSidebar
 description: Every migration record filled in for one fictional UK manufacturer, from the decision note and charter through inventory, supplier answers, purchase requirements, the plan, a change, review, and the sponsor's report.
 ---
 
-This worked example shows every record in the [record set](/resources/) filled in for one fictional small manufacturer, in the order the records are used. Each template's filled example is taken from this page, and each record names the same assets, so you can follow one asset from the decision note to the sponsor's report.
+This worked example shows every record in the [record set](/resources/records/) filled in for one fictional small manufacturer, in the order the records are used. Each template's filled example is taken from this page, and each record names the same assets, so you can follow one asset from the decision note to the sponsor's report.
 
 The manufacturer is based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration.
 
@@ -20,7 +20,7 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Decision note
 
-The [decision note](/resources/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path. The rows are shown as accepted on 2026-07-13; the review on 2026-11-10 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/review-log/) records.
+The [decision note](/resources/records/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path. The rows are shown as accepted on 2026-07-13; the review on 2026-11-10 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/records/review-log/) records.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ The [decision note](/resources/decision-note/) answers the four questions for ea
 
 ## Programme charter
 
-Because two assets are on the full path, the managing director agrees a [programme charter](/resources/programme-charter/) naming the roles, the first phase, and the reporting.
+Because two assets are on the full path, the managing director agrees a [programme charter](/resources/records/programme-charter/) naming the roles, the first phase, and the reporting.
 
 | field | entry |
 | --- | --- |
@@ -55,7 +55,7 @@ Because two assets are on the full path, the managing director agrees a [program
 
 The table shows the rows as first recorded. The review on 2026-11-10 updated the archive and laptop rows; see [Subsequent review](#subsequent-review).
 
-The manufacturer records one row for each system on the [inventory record](/resources/inventory-record/). It marks facts it has not verified as `unknown`:
+The manufacturer records one row for each system on the [inventory record](/resources/records/inventory/). It marks facts it has not verified as `unknown`:
 
 | asset | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -66,7 +66,7 @@ The manufacturer records one row for each system on the [inventory record](/reso
 
 ## Supplier answers
 
-The product engineering lead records the workspace supplier's written answer in the [vendor response log](/resources/vendor-response-log/). For the sensor, procurement asked the two shortlisted microcontroller suppliers in writing on 2026-10-05; the product security lead records the one reply received and marks the other answer `missing` once its due date passes. Every supplier, product, and version is fictional.
+The product engineering lead records the workspace supplier's written answer in the [vendor response log](/resources/records/vendor-response-log/). For the sensor, procurement asked the two shortlisted microcontroller suppliers in writing on 2026-10-05; the product security lead records the one reply received and marks the other answer `missing` once its due date passes. Every supplier, product, and version is fictional.
 
 | supplier | product and version | asset | job | question | asked | answer due | answer | answered | source | judgement | follow-up | decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -78,7 +78,7 @@ The product engineering lead records the workspace supplier's written answer in 
 
 ## Purchase requirements
 
-The sensor's microcontroller has not yet been selected, so procurement makes a post-quantum signature option a condition of selection on the [purchase requirements record](/resources/purchase-requirements/). It has one row per candidate supplier, and neither has committed yet.
+The sensor's microcontroller has not yet been selected, so procurement makes a post-quantum signature option a condition of selection on the [purchase requirements record](/resources/records/purchase-requirements/). It has one row per candidate supplier, and neither has committed yet.
 
 | asset | job | purchase or renewal | supplier | product and version | requirement | decide by | supplier commitment | support until | evidence | owner | status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ The sensor's microcontroller has not yet been selected, so procurement makes a p
 
 ## Migration plan
 
-The [migration plan](/resources/migration-plan/) holds both the order of work and the dates, one row per asset and job. The archive and the firmware verifier each come first for a different job, and the firmware-signing key comes first for signatures, moving with the verifier because it must switch to whatever scheme the verifier accepts; the archive's signature line follows the supplier, and the laptops are tracked on the supplier-update path rather than ranked. The order for the archive's key establishment rests on the 15-year retention policy, and its supplier readiness on the letter above. Each row's subsequent review follows its own driver: the archive rows on the supplier's answers due 2026-12-01, the sensor on the microcontroller suppliers' answers due 2026-12-15, and the laptops on the next quarterly review.
+The [migration plan](/resources/records/migration-plan/) holds both the order of work and the dates, one row per asset and job. The archive and the firmware verifier each come first for a different job, and the firmware-signing key comes first for signatures, moving with the verifier because it must switch to whatever scheme the verifier accepts; the archive's signature line follows the supplier, and the laptops are tracked on the supplier-update path rather than ranked. The order for the archive's key establishment rests on the 15-year retention policy, and its supplier readiness on the letter above. Each row's subsequent review follows its own driver: the archive rows on the supplier's answers due 2026-12-01, the sensor on the microcontroller suppliers' answers due 2026-12-15, and the laptops on the next quarterly review.
 
 The plan uses the UK NCSC target dates as planning guidance for this UK-based company. The guidance, written mainly for large organisations, operators of critical national infrastructure, and organisations that run bespoke IT, asks them to complete discovery and build an initial plan by 2028, to carry out their early, highest-priority migration activities by 2031, and to complete migration of systems, services, and products by 2035. The dates are targets, not a claim that every asset has the same milestone.
 
@@ -107,7 +107,7 @@ The product sensor remains blocked at option selection. The manufacturer does no
 
 ## Change record and deployed-state check
 
-The [change record](/resources/change-record/) distinguishes a completed staging pilot from the product sensor decision, which is still blocked. Its result and evidence make the claim precise: the staging pilot passed, but production migration is not complete.
+The [change record](/resources/records/change-record/) distinguishes a completed staging pilot from the product sensor decision, which is still blocked. Its result and evidence make the claim precise: the staging pilot passed, but production migration is not complete.
 
 | asset | job | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | evidence | owner | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ The sensor verifier row remains blocked because the replacement signature and tr
 
 ## Subsequent review
 
-At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier responses, purchase requirements, archive pilot evidence, sensor verifier plan, and the laptops' inventory and decision-note rows. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 2026-12-01, the sensor on 2026-12-15, and the archive production check at the quarterly review on 2027-02-10, because the programme reviews every three months while a line is first in its job's order. The review log holds each item:
+At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier responses, purchase requirements, archive pilot evidence, sensor verifier plan, and the laptops' inventory and decision-note rows. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/records/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 2026-12-01, the sensor on 2026-12-15, and the archive production check at the quarterly review on 2027-02-10, because the programme reviews every three months while a line is first in its job's order. The review log holds each item:
 
 | date | record | asset | job | item | owner | status | next review |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -142,7 +142,7 @@ The review updated two inventory rows. The archive now shows the staging change 
 
 ## Progress report
 
-The operations director reported the outcome to the managing director the same day on the [progress report](/resources/progress-report/), one field per job, written from the plan and the review log:
+The operations director reported the outcome to the managing director the same day on the [progress report](/resources/records/progress-report/), one field per job, written from the plan and the review log:
 
 | field | entry |
 | --- | --- |
@@ -173,23 +173,23 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 
 ## Related pages
 
-- [Resources: the record set](/resources/)
-- [Decision note](/resources/decision-note/)
-- [Programme charter](/resources/programme-charter/)
+- [Migration records](/resources/records/)
+- [Decision note](/resources/records/decision-note/)
+- [Programme charter](/resources/records/programme-charter/)
 - [Inventory the cryptography](/migration-practices/inventory/)
-- [Inventory record](/resources/inventory-record/)
+- [Inventory record](/resources/records/inventory/)
 - [Decide what to migrate first](/migration-practices/priority/)
 - [Work with suppliers](/migration-practices/suppliers/)
-- [Vendor response log](/resources/vendor-response-log/)
-- [Purchase requirements](/resources/purchase-requirements/)
-- [Migration plan](/resources/migration-plan/)
+- [Vendor response log](/resources/records/vendor-response-log/)
+- [Purchase requirements](/resources/records/purchase-requirements/)
+- [Migration plan](/resources/records/migration-plan/)
 - [Choosing an option](/technology-options/choosing/)
 - [TLS and web services](/technology-options/tls/)
 - [PKI and certificates](/technology-options/pki/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [Make and verify one change](/migration-practices/implementation/)
-- [Change record](/resources/change-record/)
+- [Change record](/resources/records/change-record/)
 - [Review and report](/migration-practices/subsequent-review/)
-- [Review log](/resources/review-log/)
-- [Progress report](/resources/progress-report/)
+- [Review log](/resources/records/review-log/)
+- [Progress report](/resources/records/progress-report/)
 - [Vendor-managed software route](/routes/vendor-managed-software/)

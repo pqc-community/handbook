@@ -26,10 +26,10 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 
 ## What good looks like
 
-- Every tunnel and remote-access client is on the [inventory](/resources/inventory-record/) with its peer, and both ends support the same post-quantum key exchange before you require it.
+- Every tunnel and remote-access client is on the [inventory](/resources/records/inventory/) with its peer, and both ends support the same post-quantum key exchange before you require it.
 - The post-quantum exchange is added under RFC 9370, using the draft ML-KEM method, or a supplier-specific one, only under the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/), and recorded as provisional until it is published.
 - Each peer's negotiated key exchange is confirmed from the gateway logs, and peers that cannot follow have an owner and a date.
-- Gateway certificates have their own signatures line on the [migration plan](/resources/migration-plan/), with its own milestone, as [PKI and certificates](/technology-options/pki/) describes.
+- Gateway certificates have their own signatures line on the [migration plan](/resources/records/migration-plan/), with its own milestone, as [PKI and certificates](/technology-options/pki/) describes.
 
 ## What to ask or test
 
@@ -49,11 +49,11 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for each gateway, with the key-establishment cell and the peers in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | The gateway supplier's answer |
-| [Migration plan](/resources/migration-plan/) | A key-establishment line; gateway certificates have their own signatures line |
-| [Change record](/resources/change-record/) | The negotiated key exchange as the deployed-state check and, if a draft mechanism is used, "provisional: Internet-Draft" in `option` |
-| [Review log](/resources/review-log/) | Peers still on classical key exchange, as exceptions with an owner and the date they move in `item`, and an item to revisit the draft mechanism when it is published |
+| [Inventory](/resources/records/inventory/) | A row for each gateway, with the key-establishment cell and the peers in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | The gateway supplier's answer |
+| [Migration plan](/resources/records/migration-plan/) | A key-establishment line; gateway certificates have their own signatures line |
+| [Change record](/resources/records/change-record/) | The negotiated key exchange as the deployed-state check and, if a draft mechanism is used, "provisional: Internet-Draft" in `option` |
+| [Review log](/resources/records/review-log/) | Peers still on classical key exchange, as exceptions with an owner and the date they move in `item`, and an item to revisit the draft mechanism when it is published |
 
 ## Example
 

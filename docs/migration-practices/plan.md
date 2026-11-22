@@ -11,7 +11,7 @@ The migration plan has an order and you need to turn it into dated, owned milest
 
 ## Who does what
 
-- The **migration lead** keeps the [migration plan](/resources/migration-plan/) and its dependencies.
+- The **migration lead** keeps the [migration plan](/resources/records/migration-plan/) and its dependencies.
 - **Legal or risk** confirms which authority timelines apply to the organisation, its sectors, and its customers.
 - **Asset owners** supply and update the four dates for their rows; the migration lead records them, including the production deployment date from the change record.
 - **Procurement** supplies supplier release dates, renewal dates, and support ends from written answers and contracts.
@@ -39,13 +39,13 @@ The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say th
 
 ## Keep this evidence
 
-The [migration plan](/resources/migration-plan/): per asset and job, the owner, the order and reason, the timeline and authority, the milestone, the four dates, dependencies, the next action, and the subsequent-review date.
+The [migration plan](/resources/records/migration-plan/): per asset and job, the owner, the order and reason, the timeline and authority, the milestone, the four dates, dependencies, the next action, and the subsequent-review date.
 
 ## Example
 
 An insufficient record is a single target year with no owner, test window, or deployment date.
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), plans the product-design archive against the UK NCSC target dates. It sits in the first group because of its 15-year confidentiality period, so its key-establishment line takes the NCSC's 2031 milestone for highest-priority migration activities, within the 2035 completion date; its signature line is a separate row that waits on the supplier's plan. The plan records the supplier release as 2026-10-01, from the supplier's letter, and testing as the staging pilot passed on 2026-10-21. Production deployment stays `unknown` until production checks finish, and end of support for the current release is `unknown`, with a written answer due from the supplier by 2026-12-01. The sensor's firmware verifier takes its production design freeze on 2027-06-30 (fictional) as its milestone, with all four dates `unknown` until a signature option exists.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), plans the product-design archive against the UK NCSC target dates. It sits in the first group because of its 15-year confidentiality period, so its key-establishment line takes the NCSC's 2031 milestone for highest-priority migration activities, within the 2035 completion date; its signature line is a separate row that waits on the supplier's plan. The plan records the supplier release as 2026-10-01, from the supplier's letter, and testing as the staging pilot passed on 2026-10-21. Production deployment stays `unknown` until production checks finish, and end of support for the current release is `unknown`, with a written answer due from the supplier by 2026-12-01. The sensor's firmware verifier takes its production design freeze on 2027-06-30 (fictional) as its milestone, with all four dates `unknown` until a signature option exists.
 
 ## Limits and next step
 
@@ -63,7 +63,7 @@ The plan records which dates apply; deciding whether a regulation or contract bi
 
 ## Related pages
 
-- [Migration plan](/resources/migration-plan/)
+- [Migration plan](/resources/records/migration-plan/)
 - [Why migration timelines differ](/learn/explainers/timelines/)
 - [Work with suppliers](/migration-practices/suppliers/)
 - [Hard-to-change systems](/routes/hard-to-change-systems/)

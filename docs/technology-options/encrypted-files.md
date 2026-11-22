@@ -7,7 +7,7 @@ description: What a good post-quantum move looks like for encrypted email and fi
 
 ## What it is
 
-Encrypted email and files protect content for named recipients: S/MIME, OpenPGP, and file-encryption tools that encrypt a data key to each recipient's public key. It is a **key-establishment** job for stored data, and exposed to [harvest-now, decrypt-later](/resources/glossary/#harvest-now-decrypt-later): [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that, as with other applications providing data confidentiality, email encryption is subject to it. Signing the same messages is a separate job, on [Documents and email signing](/technology-options/document-signing/).
+Encrypted email and files protect content for named recipients: S/MIME, OpenPGP, and file-encryption tools that encrypt a data key to each recipient's public key. It is a **key-establishment** job for stored data, and exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later): [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that, as with other applications providing data confidentiality, email encryption is subject to it. Signing the same messages is a separate job, on [Documents and email signing](/technology-options/document-signing/).
 
 ## Post-quantum options and status
 
@@ -31,7 +31,7 @@ The email and encryption software suppliers decide what the product supports. Re
 - Software that implements a published mechanism (RFC 9629 with RFC 9936 for CMS-based formats, RFC 9980 for OpenPGP) or, for proprietary tools, a `complete` supplier answer naming the mechanism, and recipients who publish post-quantum keys or certificates (RFC 9935 for certificates).
 - A chosen and recorded rule for recipients without a post-quantum key, rather than whatever the software does by default.
 - The mechanism a sample message showed recorded on the inventory.
-- The exposure of messages already sent recorded on the [review log](/resources/review-log/), with the sponsor's decision.
+- The exposure of messages already sent recorded on the [review log](/resources/records/review-log/), with the sponsor's decision.
 
 ## What to ask or test
 
@@ -49,11 +49,11 @@ The email and encryption software suppliers decide what the product supports. Re
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the encryption service, with the key-establishment value labelled "stored files:" and recipient groups in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | The software suppliers' answers |
-| [Migration plan](/resources/migration-plan/) | A key-establishment line |
-| [Change record](/resources/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
-| [Review log](/resources/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/stored-data/) describes |
+| [Inventory](/resources/records/inventory/) | A row for the encryption service, with the key-establishment value labelled "stored files:" and recipient groups in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | The software suppliers' answers |
+| [Migration plan](/resources/records/migration-plan/) | A key-establishment line |
+| [Change record](/resources/records/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
+| [Review log](/resources/records/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/stored-data/) describes |
 
 ## Example
 

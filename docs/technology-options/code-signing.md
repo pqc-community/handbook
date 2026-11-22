@@ -29,7 +29,7 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 
 1. **Know every verifier** of your signatures and when each can accept the new algorithm.
 2. **Ship the verifier update first, signed with the current key**, then switch signing once verifiers are ready; keep the old signature acceptable until they have all moved.
-3. **Give each signing key its own [inventory](/resources/inventory-record/) row**, recording where it is held, such as the hardware security module, in `dependencies`.
+3. **Give each signing key its own [inventory](/resources/records/inventory/) row**, recording where it is held, such as the hardware security module, in `dependencies`.
 4. **If you choose LMS or XMSS, show how state is controlled**: one signing system, an index that is never reused, and backups that can never roll the state back.
 
 ## What to ask or test
@@ -50,10 +50,10 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row per signing key, with where it is held, such as the HSM, in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | Answers from platform owners and from signing-tool and HSM suppliers |
-| [Migration plan](/resources/migration-plan/) | The signatures line, with verifiers in `dependencies` in the order they move |
-| [Change record](/resources/change-record/) | The scheme, the authority, and tests on each class of verifier |
+| [Inventory](/resources/records/inventory/) | A row per signing key, with where it is held, such as the HSM, in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | Answers from platform owners and from signing-tool and HSM suppliers |
+| [Migration plan](/resources/records/migration-plan/) | The signatures line, with verifiers in `dependencies` in the order they move |
+| [Change record](/resources/records/change-record/) | The scheme, the authority, and tests on each class of verifier |
 
 ## Example
 

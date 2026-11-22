@@ -50,10 +50,10 @@ The directory and operating-system supplier decides what the domain controllers 
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the directory service, with labelled values in its algorithm cells, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman; directory connections: see TLS", and the issuing CA in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | The supplier's answer |
-| [Purchase requirements](/resources/purchase-requirements/) | For certificate logon, a key-establishment row requiring post-quantum PKINIT and a signatures row requiring post-quantum logon certificates, both for the next renewal of the directory service |
-| [Migration plan](/resources/migration-plan/) | For certificate logon, a key-establishment line and a signatures line, with the renewal that will carry the requirement in `next action` |
+| [Inventory](/resources/records/inventory/) | A row for the directory service, with labelled values in its algorithm cells, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman; directory connections: see TLS", and the issuing CA in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | The supplier's answer |
+| [Purchase requirements](/resources/records/purchase-requirements/) | For certificate logon, a key-establishment row requiring post-quantum PKINIT and a signatures row requiring post-quantum logon certificates, both for the next renewal of the directory service |
+| [Migration plan](/resources/records/migration-plan/) | For certificate logon, a key-establishment line and a signatures line, with the renewal that will carry the requirement in `next action` |
 
 ## Example
 

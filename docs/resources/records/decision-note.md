@@ -26,7 +26,7 @@ Record `unknown` in any cell you cannot verify yet. Keep keys, secrets, and pers
 
 ## Filled example
 
-From [Protect this first](/resources/protect-this-first/). The dates are fictional. The rows are shown as accepted on 2026-07-13; the review on 2026-11-10 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/review-log/) records.
+From [Protect this first](/resources/examples/protect-this-first/). The dates are fictional. The rows are shown as accepted on 2026-07-13; the review on 2026-11-10 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/records/review-log/) records.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -51,6 +51,6 @@ The note records a decision, not a risk assessment. Where the answers are unclea
 ## Related pages
 
 - [Decide whether to act](/migration-practices/diagnose/)
-- [Programme charter](/resources/programme-charter/)
-- [Inventory record](/resources/inventory-record/)
+- [Programme charter](/resources/records/programme-charter/)
+- [Inventory record](/resources/records/inventory/)
 - [Not sure](/routes/not-sure/)

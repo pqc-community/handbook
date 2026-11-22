@@ -7,19 +7,19 @@ displayed_sidebar: resourcesSidebar
 
 ## When to use it
 
-Use this charter when you [set up the programme](/migration-practices/programme/): once the [decision note](/resources/decision-note/) puts any asset on the full path, and again when the scope, roles, or budget change.
+Use this charter when you [set up the programme](/migration-practices/programme/): once the [decision note](/resources/records/decision-note/) puts any asset on the full path, and again when the scope, roles, or budget change.
 
 ## Minimum fields
 
 goal, in scope, out of scope, done for this phase, executive sponsor, migration lead, asset owners, procurement, legal or risk, operations, first budget line, budget revisit, reporting, report triggers, people told, agreed by
 
-Unlike the other records, the charter is one document, so the fields run down the page rather than across it. Name a person or role in every role field; a role with no one named is a gap to resolve, not a default. In `budget revisit`, give the date or event at which the full migration budget will be estimated, usually once the [migration plan](/resources/migration-plan/) has an order.
+Unlike the other records, the charter is one document, so the fields run down the page rather than across it. Name a person or role in every role field; a role with no one named is a gap to resolve, not a default. In `budget revisit`, give the date or event at which the full migration budget will be estimated, usually once the [migration plan](/resources/records/migration-plan/) has an order.
 
 Record `unknown` in any field you cannot settle yet. Keep keys, secrets, and personal data out of the file. Store the charter with the migration plan.
 
 ## Filled example
 
-From [Protect this first](/resources/protect-this-first/). The organisation, roles, and dates are fictional.
+From [Protect this first](/resources/examples/protect-this-first/). The organisation, roles, and dates are fictional.
 
 | field | entry |
 | --- | --- |
@@ -73,6 +73,6 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 ## Related pages
 
 - [Set up the programme](/migration-practices/programme/)
-- [Decision note](/resources/decision-note/)
-- [Migration plan](/resources/migration-plan/)
+- [Decision note](/resources/records/decision-note/)
+- [Migration plan](/resources/records/migration-plan/)
 - [Organisation-wide](/routes/organisation-wide/)

@@ -18,7 +18,7 @@ Write in a calm, practical, neutral, and evidence-led **briefing register** for 
 
 - **British English**: Use British spelling consistently — *organisation*, *programme* (for a planned set of activities; *program* only for computer code), *prioritise*, *standardisation*, *labelled*, *recognise*.
 - **Direct, natural prose**: Prefer active voice and clear sentence structure. Use second person (*you*) for steps a practitioner carries out directly, and name specific organisational roles — *executive sponsor*, *migration lead*, *asset owner*, *procurement*, *legal or risk*, *operations*, or *supplier* — when responsibilities sit across functions.
-- **Acronyms**: Spell out abbreviations on first use on a page — for example, *post-quantum cryptography (PQC)*, *key-encapsulation mechanism (KEM)*, *cryptography bill of materials (CBOM)* — unless the short form is universally clearer in a heading or table and explained immediately in text or the [Glossary](./docs/resources/glossary.md).
+- **Acronyms**: Spell out abbreviations on first use on a page — for example, *post-quantum cryptography (PQC)*, *key-encapsulation mechanism (KEM)*, *cryptography bill of materials (CBOM)* — unless the short form is universally clearer in a heading or table and explained immediately in text or the [Glossary](./docs/resources/reference/glossary.md).
 - **Dates**: Write dates in British day–month–year order in prose (*5 November 2026*) and ISO 8601 (`2026-11-10`) in front matter and structured record tables.
 
 ### Preferred Domain Terms
@@ -52,7 +52,7 @@ Structure pages around the reader's job rather than forcing every topic into ide
 | **Standards & guidance summaries** (`/standards/`) | Open with what the source covers; use a focused callout to link its official texts, adding context only to distinguish editions, drafts, or errata; show key dates in a compact two-column table with dates kept on one line; and explain its relationship to other standards and guidance. |
 | **Reference indexes & glossary** (`index.md`, `glossary.md`) | Route readers cleanly without duplicating full guides. Keep glossary entries alphabetical and concise, naming the standard directly in prose where a formal definition is cited. |
 
-Where pages use a worked organisational example, align with the shared fictional UK manufacturer in [Protect this first](./docs/resources/protect-this-first.md), keep its invented facts and event dates explicit, and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
+Where pages use a worked organisational example, align with the shared fictional UK manufacturer in [Protect this first](./docs/resources/examples/protect-this-first.md), keep its invented facts and event dates explicit, and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
 
 ## 5. Sourcing and Citations
 

@@ -16,7 +16,7 @@ The [CISA, NSA, and NIST fact sheet](https://www.nccoe.nist.gov/sites/default/fi
 Read in this order:
 
 1. [Work with suppliers](/migration-practices/suppliers/)
-2. [Vendor response log](/resources/vendor-response-log/)
+2. [Vendor response log](/resources/records/vendor-response-log/)
 
 The output is one row per product, version, and cryptographic job. A route-specific plan is still required when the organisation has to change configuration or a verifier, rather than only wait for a release.
 
@@ -29,5 +29,5 @@ The primary next page is [Work with suppliers](/migration-practices/suppliers/).
 ## Related pages
 
 - [Mostly standard, vendor-managed software](/routes/vendor-managed-software/)
-- [Vendor response log](/resources/vendor-response-log/)
-- [Protect this first](/resources/protect-this-first/)
+- [Vendor response log](/resources/records/vendor-response-log/)
+- [Protect this first](/resources/examples/protect-this-first/)

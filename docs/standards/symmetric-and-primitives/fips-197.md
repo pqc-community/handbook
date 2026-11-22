@@ -44,4 +44,4 @@ For US national security systems, the NSA's CNSA 2.0 FAQ (October 2026) specifie
 - [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/)
 - [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/)
 - [Quantum threat](/learn/quantum-threat/)
-- [Glossary](/resources/glossary/)
+- [Glossary](/resources/reference/glossary/)

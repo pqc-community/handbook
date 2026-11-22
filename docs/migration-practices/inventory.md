@@ -11,7 +11,7 @@ You have decided to act and need to know where public-key cryptography is used b
 
 ## Who does what
 
-- The **migration lead** sets the scope, keeps the [inventory record](/resources/inventory-record/), and chases unknowns.
+- The **migration lead** sets the scope, keeps the [inventory record](/resources/records/inventory/), and chases unknowns.
 - **Asset owners** confirm each row for their systems.
 - **Operations** runs scans, log reviews, and configuration checks.
 - **Procurement** asks suppliers for what cannot be seen from inside the organisation (see [Work with suppliers](/migration-practices/suppliers/)).
@@ -19,7 +19,7 @@ You have decided to act and need to know where public-key cryptography is used b
 ## Do this
 
 1. **Start where the risk is.** List each system that holds sensitive or long-lived data, exposes an external connection, operates signing infrastructure, or contains a device or product that verifies signatures. Add the rest later.
-2. **Make a minimum first pass before anything else.** For each system from step 1, ask its owner what it does with public-key cryptography; export the certificate list from your certificate authority or certificate manager, if you have one; and, where a supplier controls the system, send the supplier the questions on the [vendor response log](/resources/vendor-response-log/). Mark everything you cannot confirm as `unknown`. That is enough to start deciding what to migrate first; supplier answers can follow, and the methods below fill the gaps over time.
+2. **Make a minimum first pass before anything else.** For each system from step 1, ask its owner what it does with public-key cryptography; export the certificate list from your certificate authority or certificate manager, if you have one; and, where a supplier controls the system, send the supplier the questions on the [vendor response log](/resources/records/vendor-response-log/). Mark everything you cannot confirm as `unknown`. That is enough to start deciding what to migrate first; supplier answers can follow, and the methods below fill the gaps over time.
 3. **Add further discovery methods as you go**, because each one misses something:
    - **connections**: certificate and TLS scans, plus server or load-balancer logs that show which key-exchange groups and signature algorithms are actually negotiated;
    - **certificates**: internal certificate authority issuance records and certificate transparency logs for public certificates;
@@ -33,19 +33,19 @@ You have decided to act and need to know where public-key cryptography is used b
 7. **Mark what a scan cannot see**, including embedded firmware, hardware-bound keys, boot trust anchors, and cryptography inside a supplier's product or hosted service.
 8. **Set confidence honestly.** Use `known` only when every applicable algorithm cell names a specific algorithm or scheme, such as X25519MLKEM768 or ECDSA P-256, rather than "TLS" or "encrypted"; otherwise `unknown`. An `unknown` row stays on the inventory with an owner.
 
-A first list of rows is a **first-pass inventory**. With a named owner per row and a place on the [review log](/resources/review-log/), it becomes a **maintained inventory** that the rest of the programme can rely on. Record the discovery methods used for each row in its `how found` cell, so a reviewer can judge coverage.
+A first list of rows is a **first-pass inventory**. With a named owner per row and a place on the [review log](/resources/records/review-log/), it becomes a **maintained inventory** that the rest of the programme can rely on. Record the discovery methods used for each row in its `how found` cell, so a reviewer can judge coverage.
 
 The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) urges organisations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it.
 
 ## Keep this evidence
 
-The [inventory record](/resources/inventory-record/), with every column filled, marked `unknown`, or marked `not applicable`, including how each row was found, and the review-log entry showing when the inventory was last reviewed.
+The [inventory record](/resources/records/inventory/), with every column filled, marked `unknown`, or marked `not applicable`, including how each row was found, and the review-log entry showing when the inventory was last reviewed.
 
 ## Example
 
 An insufficient record is "Our TLS scan found no issues."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), lists four rows:
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), lists four rows:
 
 - **the supplier-hosted product-design archive:** 15-year confidentiality under company policy, with cryptography marked as supplier-hosted and not visible to a scan;
 - **the product sensor's firmware verifier:** key establishment `not applicable`, and a boot ROM trust anchor a scan cannot see;
@@ -64,7 +64,7 @@ The inventory records what exists; it does not decide order or algorithms. Large
 
 ## Related pages
 
-- [Inventory record](/resources/inventory-record/)
+- [Inventory record](/resources/records/inventory/)
 - [Decide what to migrate first](/migration-practices/priority/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)

@@ -15,16 +15,16 @@ Read in this order:
 4. [Code and software signing](/technology-options/code-signing/). Open it when the verifiers can be updated and a signature scheme is being chosen.
 5. [Work with suppliers](/migration-practices/suppliers/). Open it when a supplier is involved, or when you are selecting a component or renewing a product, especially before a design freeze.
 6. [Make and verify one change](/migration-practices/implementation/). Open it when the product will change, including when the change is intended and the option is still unknown.
-7. [Change record](/resources/change-record/). Open the change record in that same case.
-8. [Vendor response log](/resources/vendor-response-log/). Open the vendor response log only when a supplier is involved.
+7. [Change record](/resources/records/change-record/). Open the change record in that same case.
+8. [Vendor response log](/resources/records/vendor-response-log/). Open the vendor response log only when a supplier is involved.
 
 Stop when the release dates are recorded and the change record exists. A blocked row counts as that change record.
 
-The output is one asset's vendor-release, test, production-deployment, and end-of-support dates, plus a [change record](/resources/change-record/).
+The output is one asset's vendor-release, test, production-deployment, and end-of-support dates, plus a [change record](/resources/records/change-record/).
 
 The primary next page is [Inventory the cryptography](/migration-practices/inventory/).
 
-For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
+For an illustration, not a real organisation, see [Protect this first](/resources/examples/protect-this-first/).
 
 ## Sources
 
@@ -34,5 +34,5 @@ For an illustration, not a real organisation, see [Protect this first](/resource
 ## Related pages
 
 - [Plan the migration](/migration-practices/plan/)
-- [Protect this first](/resources/protect-this-first/)
+- [Protect this first](/resources/examples/protect-this-first/)
 - [Not sure which route applies](/routes/not-sure/)

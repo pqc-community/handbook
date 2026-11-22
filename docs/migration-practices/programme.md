@@ -30,13 +30,13 @@ Published migration guides start in the same place. The Post-Quantum Cryptograph
 
 ## Keep this evidence
 
-A one-page [programme charter](/resources/programme-charter/): goal and scope, named sponsor, migration lead, asset owners, procurement, legal or risk, and operations contacts; the first budget line and when it will be revisited; the reporting cadence; and the date the charter was agreed. Store it with the [migration plan](/resources/migration-plan/).
+A one-page [programme charter](/resources/records/programme-charter/): goal and scope, named sponsor, migration lead, asset owners, procurement, legal or risk, and operations contacts; the first budget line and when it will be revisited; the reporting cadence; and the date the charter was agreed. Store it with the [migration plan](/resources/records/migration-plan/).
 
 ## Example
 
 An insufficient record is "IT will handle post-quantum."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/): the fictional manufacturer's charter, agreed on 2026-08-03, names the managing director as sponsor and the operations director as migration lead, and names the product engineering lead, product security lead, and IT lead as owners of the archive, the product sensor, and the office laptops. The first phase covers discovery, supplier answers for the design archive, and a decision on the sensor's firmware verifier before production design freeze. The migration lead reports monthly, and immediately if the supplier's release date moves or there is still no supported sensor signature option three months before design freeze.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the fictional manufacturer's charter, agreed on 2026-08-03, names the managing director as sponsor and the operations director as migration lead, and names the product engineering lead, product security lead, and IT lead as owners of the archive, the product sensor, and the office laptops. The first phase covers discovery, supplier answers for the design archive, and a decision on the sensor's firmware verifier before production design freeze. The migration lead reports monthly, and immediately if the supplier's release date moves or there is still no supported sensor signature option three months before design freeze.
 
 ## Limits and next step
 
@@ -50,7 +50,7 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 ## Related pages
 
 - [Decide whether to act](/migration-practices/diagnose/)
-- [Programme charter](/resources/programme-charter/)
+- [Programme charter](/resources/records/programme-charter/)
 - [Organisation-wide](/routes/organisation-wide/)
-- [Migration plan](/resources/migration-plan/)
+- [Migration plan](/resources/records/migration-plan/)
 - [Review and report](/migration-practices/subsequent-review/)

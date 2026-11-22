@@ -49,10 +49,10 @@ The email and document software suppliers decide what their products sign with a
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the signing service and the signer certificates, with recipient groups in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | The software suppliers' answers |
-| [Migration plan](/resources/migration-plan/) | The signatures line |
-| [Change record](/resources/change-record/) | Verification tests for each recipient group |
+| [Inventory](/resources/records/inventory/) | A row for the signing service and the signer certificates, with recipient groups in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | The software suppliers' answers |
+| [Migration plan](/resources/records/migration-plan/) | The signatures line |
+| [Change record](/resources/records/change-record/) | Verification tests for each recipient group |
 
 ## Example
 

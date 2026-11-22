@@ -75,7 +75,7 @@ Optional explainers expand one distinction each. Read them when a lesson leaves 
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) — turning a supplier statement into checkable facts.
 - [Why migration timelines differ](/learn/explainers/timelines/) — NIST, US federal, UK, EU, and Australian dates compared.
 
-Use the [glossary](/resources/glossary/) for definitions while reading.
+Use the [glossary](/resources/reference/glossary/) for definitions while reading.
 
 ## Sources
 

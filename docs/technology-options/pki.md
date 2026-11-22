@@ -7,7 +7,7 @@ description: What a good post-quantum move looks like for certification authorit
 
 ## What it is
 
-A public-key infrastructure (PKI) issues and checks certificates: public certificates for websites, private certification authorities for internal services and devices, and the revocation services that go with them. Its job is **signatures**: the authority signs certificates and revocation information, and every [relying party](/resources/glossary/#relying-party) verifies them. Signatures are not exposed to harvest-now, decrypt-later, but [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says the transition is urgent because it takes longer, is more complex, and needs more parties to coordinate.
+A public-key infrastructure (PKI) issues and checks certificates: public certificates for websites, private certification authorities for internal services and devices, and the revocation services that go with them. Its job is **signatures**: the authority signs certificates and revocation information, and every [relying party](/resources/reference/glossary/#relying-party) verifies them. Signatures are not exposed to harvest-now, decrypt-later, but [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says the transition is urgent because it takes longer, is more complex, and needs more parties to coordinate.
 
 ## Post-quantum options and status
 
@@ -15,8 +15,8 @@ Status as checked on 21 November 2026. All are Proposed Standards.
 
 | Certificate contents | Specification | Published |
 | --- | --- | --- |
-| [ML-DSA](/resources/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) keys and signatures | [RFC 9881](/standards/modules-protocols-identity/rfc-9881/) | October 2025 |
-| [Composite](/resources/glossary/#composite-signature) ML-DSA with a classical algorithm | [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) | November 2026 |
+| [ML-DSA](/resources/reference/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) keys and signatures | [RFC 9881](/standards/modules-protocols-identity/rfc-9881/) | October 2025 |
+| [Composite](/resources/reference/glossary/#composite-signature) ML-DSA with a classical algorithm | [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) | November 2026 |
 | SLH-DSA keys and signatures | [RFC 9909](https://www.rfc-editor.org/info/rfc9909) | December 2025 |
 | HSS and XMSS hash-based signatures | [RFC 9802](https://www.rfc-editor.org/info/rfc9802) | June 2025 |
 | ML-KEM keys, for certificates used in key establishment | [RFC 9935](https://www.rfc-editor.org/info/rfc9935) | March 2026 |
@@ -53,10 +53,10 @@ You choose for a private PKI, within what your CA software and hardware security
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for each certification authority, with its HSM in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | Answers from CA software and HSM suppliers |
-| [Migration plan](/resources/migration-plan/) | The signatures line, with the parties in `dependencies` in the order they move, a milestone from the applicable timeline, and the date the old chain stops being issued |
-| [Change record](/resources/change-record/) | Tests against every class of verifier, and the rollback trigger |
+| [Inventory](/resources/records/inventory/) | A row for each certification authority, with its HSM in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | Answers from CA software and HSM suppliers |
+| [Migration plan](/resources/records/migration-plan/) | The signatures line, with the parties in `dependencies` in the order they move, a milestone from the applicable timeline, and the date the old chain stops being issued |
+| [Change record](/resources/records/change-record/) | Tests against every class of verifier, and the rollback trigger |
 
 ## Example
 

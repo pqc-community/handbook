@@ -13,14 +13,14 @@ When all of those conditions hold, read in this order:
 
 1. [Keep commodity software updated](/migration-practices/commodity-software/)
 2. [Timelines](/learn/timelines/)
-3. [Vendor response log](/resources/vendor-response-log/)
+3. [Vendor response log](/resources/records/vendor-response-log/)
 4. [Review and report](/migration-practices/subsequent-review/)
 
-The output is the checked versions on the [inventory record](/resources/inventory-record/), the requirement text used in purchases and renewals on the [purchase requirements record](/resources/purchase-requirements/), [vendor response log](/resources/vendor-response-log/) rows for any supplier you ask in writing, a tracking line on the [migration plan](/resources/migration-plan/), the [review log](/resources/review-log/) and [progress report](/resources/progress-report/) from each review, and, in the `route` cell of the [decision note](/resources/decision-note/), either "(all five conditions hold)" or the route you moved to.
+The output is the checked versions on the [inventory record](/resources/records/inventory/), the requirement text used in purchases and renewals on the [purchase requirements record](/resources/records/purchase-requirements/), [vendor response log](/resources/records/vendor-response-log/) rows for any supplier you ask in writing, a tracking line on the [migration plan](/resources/records/migration-plan/), the [review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/) from each review, and, in the `route` cell of the [decision note](/resources/records/decision-note/), either "(all five conditions hold)" or the route you moved to.
 
 The primary next page is [Keep commodity software updated](/migration-practices/commodity-software/).
 
-For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
+For an illustration, not a real organisation, see [Protect this first](/resources/examples/protect-this-first/).
 
 ## Sources
 

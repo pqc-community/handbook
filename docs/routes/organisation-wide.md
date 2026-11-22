@@ -11,7 +11,7 @@ Each role supplies one input to the plan:
 
 | Role | Input |
 | --- | --- |
-| Executive sponsor | The decision to proceed, in an accepted [decision note](/resources/decision-note/), and the agreed [programme charter](/resources/programme-charter/) |
+| Executive sponsor | The decision to proceed, in an accepted [decision note](/resources/records/decision-note/), and the agreed [programme charter](/resources/records/programme-charter/) |
 | Migration lead | The migration plan |
 | Asset owners | The system and its unknowns |
 | Procurement | The supplier questions |
@@ -36,18 +36,18 @@ A large bespoke estate, critical national infrastructure, or a regulated system 
 
 Then read these pages in order:
 
-1. [Migration plan](/resources/migration-plan/)
+1. [Migration plan](/resources/records/migration-plan/)
 2. [Decide whether to act](/migration-practices/diagnose/)
 3. [Set up the programme](/migration-practices/programme/)
 4. [Inventory the cryptography](/migration-practices/inventory/)
 5. [Decide what to migrate first](/migration-practices/priority/)
 6. [Plan the migration](/migration-practices/plan/)
-7. [Change record](/resources/change-record/)
+7. [Change record](/resources/records/change-record/)
 8. [Review and report](/migration-practices/subsequent-review/)
 
-The output is a [migration plan](/resources/migration-plan/) with an owner, an order, and a subsequent-review date for each asset and job.
+The output is a [migration plan](/resources/records/migration-plan/) with an owner, an order, and a subsequent-review date for each asset and job.
 
-The primary next page is [Migration plan](/resources/migration-plan/).
+The primary next page is [Migration plan](/resources/records/migration-plan/).
 
 ## Sources
 
@@ -56,6 +56,6 @@ The primary next page is [Migration plan](/resources/migration-plan/).
 ## Related pages
 
 - [Ask a supplier](/routes/ask-a-supplier/)
-- [Protect this first](/resources/protect-this-first/)
+- [Protect this first](/resources/examples/protect-this-first/)
 - [Standards](/standards/)
-- [Migration records](/resources/)
+- [Migration records](/resources/records/)

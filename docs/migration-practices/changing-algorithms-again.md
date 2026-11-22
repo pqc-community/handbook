@@ -32,13 +32,13 @@ The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handboo
 
 ## Keep this evidence
 
-The evidence for each of the six capabilities, held in the records you already keep: the inventory row (owner, dependencies), the change record (tests), your change calendar (window), and the written deprecation path. Record any capability without evidence as a gap with an owner on the [review log](/resources/review-log/).
+The evidence for each of the six capabilities, held in the records you already keep: the inventory row (owner, dependencies), the change record (tests), your change calendar (window), and the written deprecation path. Record any capability without evidence as a gap with an owner on the [review log](/resources/records/review-log/).
 
 ## Example
 
 An insufficient record is "We picked an algorithm, so the programme is closed."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), checks the supplier-hosted product-design archive after its staging pilot. The owner is named (product engineering lead), the workspace supplier is listed as a dependency, and the client handshake check and sample-file retrieval are reusable tests. The three capabilities that depend on the supplier are open: a written commitment that later changes come as supported updates, the supplier's notice period for cryptographic changes, and its plan for moving off hybrid key establishment. Procurement adds all three to the written follow-up due on 2026-12-01, and the review log carries them as one open item owned by the product engineering lead.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), checks the supplier-hosted product-design archive after its staging pilot. The owner is named (product engineering lead), the workspace supplier is listed as a dependency, and the client handshake check and sample-file retrieval are reusable tests. The three capabilities that depend on the supplier are open: a written commitment that later changes come as supported updates, the supplier's notice period for cryptographic changes, and its plan for moving off hybrid key establishment. Procurement adds all three to the written follow-up due on 2026-12-01, and the review log carries them as one open item owned by the product engineering lead.
 
 ## Limits and next step
 
@@ -53,5 +53,5 @@ Agility is a property you evidence, not a product you buy; this page does not ch
 ## Related pages
 
 - [Crypto-agility](/learn/crypto-agility/)
-- [Change record](/resources/change-record/)
+- [Change record](/resources/records/change-record/)
 - [Review and report](/migration-practices/subsequent-review/)

@@ -11,18 +11,18 @@ Read in this order:
 
 1. [Decide whether to act](/migration-practices/diagnose/)
 2. [Inventory the cryptography](/migration-practices/inventory/)
-3. [Inventory record](/resources/inventory-record/)
+3. [Inventory record](/resources/records/inventory/)
 4. [Decide what to migrate first](/migration-practices/priority/)
-5. [Migration plan](/resources/migration-plan/)
+5. [Migration plan](/resources/records/migration-plan/)
 6. [Plan the migration](/migration-practices/plan/)
 7. [Technology options](/technology-options/)
 8. [Timelines](/learn/timelines/)
 
-The output is a [migration plan](/resources/migration-plan/) that orders the assets with a long confidentiality period first for key establishment.
+The output is a [migration plan](/resources/records/migration-plan/) that orders the assets with a long confidentiality period first for key establishment.
 
 The primary next page is [Decide whether to act](/migration-practices/diagnose/).
 
-For an illustration, not a real organisation, see [Protect this first](/resources/protect-this-first/).
+For an illustration, not a real organisation, see [Protect this first](/resources/examples/protect-this-first/).
 
 ## Sources
 
@@ -31,5 +31,5 @@ For an illustration, not a real organisation, see [Protect this first](/resource
 ## Related pages
 
 - [Not sure which route applies](/routes/not-sure/)
-- [Protect this first](/resources/protect-this-first/)
-- [Glossary](/resources/glossary/)
+- [Protect this first](/resources/examples/protect-this-first/)
+- [Glossary](/resources/reference/glossary/)

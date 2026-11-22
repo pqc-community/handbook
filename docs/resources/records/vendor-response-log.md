@@ -64,4 +64,4 @@ Keep a real log off a public ticket and off an unlocked shared drive: supplier a
 
 - [Work with suppliers](/migration-practices/suppliers/)
 - [Ask a supplier](/routes/ask-a-supplier/)
-- [Protect this first](/resources/protect-this-first/)
+- [Protect this first](/resources/examples/protect-this-first/)

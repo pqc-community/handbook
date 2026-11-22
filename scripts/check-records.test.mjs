@@ -4,8 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {DOWNLOADS_DIR, ZIP_NAME, buildZip, listCsvFiles} from './records-zip.mjs';
 
-const RESOURCES = 'docs/resources';
-const WORKED_EXAMPLE = path.join(RESOURCES, 'protect-this-first.md');
+const RECORDS = 'docs/resources/records';
+const WORKED_EXAMPLE = 'docs/resources/examples/protect-this-first.md';
 
 function cells(line) {
   return line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim());
@@ -26,9 +26,9 @@ function tableLines(block) {
 // Record pages are the ones that offer a blank CSV download.
 function recordPages() {
   return fs
-    .readdirSync(RESOURCES)
+    .readdirSync(RECORDS)
     .filter((name) => name.endsWith('.md'))
-    .map((name) => ({name, text: fs.readFileSync(path.join(RESOURCES, name), 'utf8')}))
+    .map((name) => ({name, text: fs.readFileSync(path.join(RECORDS, name), 'utf8')}))
     .map((page) => ({...page, csv: page.text.match(/\(\/downloads\/([a-z-]+\.csv)\)/)?.[1]}))
     .filter((page) => page.csv);
 }

@@ -34,17 +34,17 @@ The practices are written for organisations without specialist cryptography staf
 
 | Practice | Who leads | Record it produces |
 | --- | --- | --- |
-| [Decide whether to act](/migration-practices/diagnose/) | Executive sponsor with the migration lead | [Decision note](/resources/decision-note/) and first [inventory](/resources/inventory-record/) rows |
-| [Keep commodity software updated](/migration-practices/commodity-software/) | Operations | Checked versions in the [inventory record](/resources/inventory-record/) |
-| [Set up the programme](/migration-practices/programme/) | Executive sponsor | [Programme charter](/resources/programme-charter/) |
-| [Inventory the cryptography](/migration-practices/inventory/) | Migration lead with asset owners | [Inventory record](/resources/inventory-record/) |
-| [Decide what to migrate first](/migration-practices/priority/) | Migration lead with legal or risk | Order and reason on the [migration plan](/resources/migration-plan/) |
-| [Plan the migration](/migration-practices/plan/) | Migration lead | Timeline, milestone, and four dates on the [migration plan](/resources/migration-plan/) |
-| [Work with suppliers](/migration-practices/suppliers/) | Procurement with asset owners | [Vendor response log](/resources/vendor-response-log/) and [purchase requirements](/resources/purchase-requirements/) |
-| [Choose an option](/technology-options/choosing/), in Technology options | Asset owner, with specialist advice where needed | Option and authority on the [change record](/resources/change-record/) |
-| [Make and verify one change](/migration-practices/implementation/) | Asset owner with operations | [Change record](/resources/change-record/), including its evidence |
+| [Decide whether to act](/migration-practices/diagnose/) | Executive sponsor with the migration lead | [Decision note](/resources/records/decision-note/) and first [inventory](/resources/records/inventory/) rows |
+| [Keep commodity software updated](/migration-practices/commodity-software/) | Operations | Checked versions in the [inventory record](/resources/records/inventory/) |
+| [Set up the programme](/migration-practices/programme/) | Executive sponsor | [Programme charter](/resources/records/programme-charter/) |
+| [Inventory the cryptography](/migration-practices/inventory/) | Migration lead with asset owners | [Inventory record](/resources/records/inventory/) |
+| [Decide what to migrate first](/migration-practices/priority/) | Migration lead with legal or risk | Order and reason on the [migration plan](/resources/records/migration-plan/) |
+| [Plan the migration](/migration-practices/plan/) | Migration lead | Timeline, milestone, and four dates on the [migration plan](/resources/records/migration-plan/) |
+| [Work with suppliers](/migration-practices/suppliers/) | Procurement with asset owners | [Vendor response log](/resources/records/vendor-response-log/) and [purchase requirements](/resources/records/purchase-requirements/) |
+| [Choose an option](/technology-options/choosing/), in Technology options | Asset owner, with specialist advice where needed | Option and authority on the [change record](/resources/records/change-record/) |
+| [Make and verify one change](/migration-practices/implementation/) | Asset owner with operations | [Change record](/resources/records/change-record/), including its evidence |
 | [Keep the ability to change again](/migration-practices/changing-algorithms-again/) | Asset owner | Agility evidence in existing records |
-| [Review and report](/migration-practices/subsequent-review/) | Migration lead, reporting to the sponsor | [Review log](/resources/review-log/) and [progress report](/resources/progress-report/) |
+| [Review and report](/migration-practices/subsequent-review/) | Migration lead, reporting to the sponsor | [Review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/) |
 
 ## Where to start by role
 
@@ -54,7 +54,7 @@ The practices are written for organisations without specialist cryptography staf
 - **Owners of systems that must change.** [Inventory the cryptography](/migration-practices/inventory/) and [Make and verify one change](/migration-practices/implementation/).
 - **Accountable for the programme.** [Set up the programme](/migration-practices/programme/) and [Review and report](/migration-practices/subsequent-review/).
 
-Each practice keeps key establishment, digital signatures, and verifiers that cannot be updated as separate lines, because their urgency and coordination differ. The [Protect this first](/resources/protect-this-first/) worked example follows one fictional manufacturer through every record.
+Each practice keeps key establishment, digital signatures, and verifiers that cannot be updated as separate lines, because their urgency and coordination differ. The [Protect this first](/resources/examples/protect-this-first/) worked example follows one fictional manufacturer through every record.
 
 ## Sources
 

@@ -46,10 +46,10 @@ The identity provider, token maker, or platform supplier. You choose when to req
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the identity provider and each token type, with the verifying applications in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
-| [Purchase requirements](/resources/purchase-requirements/) | A signatures row for the next purchase or renewal of the identity provider and each token type, requiring post-quantum signing |
-| [Migration plan](/resources/migration-plan/) | A signatures line for the provider and each token type, with the purchase or renewal at which post-quantum signing will be required, under [Work with suppliers](/migration-practices/suppliers/), in `next action` |
+| [Inventory](/resources/records/inventory/) | A row for the identity provider and each token type, with the verifying applications in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | Supplier answers |
+| [Purchase requirements](/resources/records/purchase-requirements/) | A signatures row for the next purchase or renewal of the identity provider and each token type, requiring post-quantum signing |
+| [Migration plan](/resources/records/migration-plan/) | A signatures line for the provider and each token type, with the purchase or renewal at which post-quantum signing will be required, under [Work with suppliers](/migration-practices/suppliers/), in `next action` |
 
 ## Example
 

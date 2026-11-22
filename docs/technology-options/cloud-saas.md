@@ -19,7 +19,7 @@ The provider. Your job is to ask the right questions, judge the answer, write re
 
 ## What good looks like
 
-- One written answer per job, each judged on the [vendor response log](/resources/vendor-response-log/).
+- One written answer per job, each judged on the [vendor response log](/resources/records/vendor-response-log/).
 - Connections checked from your side, not only taken from the provider's statement.
 - Post-quantum requirements for each job, and end-of-support dates, written into contracts and renewals.
 - Where stored data keys are wrapped to a public key, a known plan from the provider for data already stored under the old wrapping.
@@ -45,17 +45,17 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the service, with the provider in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
-| [Purchase requirements](/resources/purchase-requirements/) | A row per job for the contract or renewal, with end of support in `support until` |
-| [Migration plan](/resources/migration-plan/) | A line per job, with the provider's readiness and the contract or renewal that will carry the requirement in `next action` |
-| [Change record](/resources/change-record/) | Your own client-side checks |
+| [Inventory](/resources/records/inventory/) | A row for the service, with the provider in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
+| [Purchase requirements](/resources/records/purchase-requirements/) | A row per job for the contract or renewal, with end of support in `support until` |
+| [Migration plan](/resources/records/migration-plan/) | A line per job, with the provider's readiness and the contract or renewal that will carry the requirement in `next action` |
+| [Change record](/resources/records/change-record/) | Your own client-side checks |
 
 ## Example
 
 An insufficient record is "The provider says it is quantum-safe."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
 
 ## Sources
 

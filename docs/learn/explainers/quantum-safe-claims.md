@@ -25,7 +25,7 @@ The questions follow the handbook's model: separate jobs, separate [layers](/lea
 
 An insufficient record: *"Vendor confirms the platform is quantum-safe."*
 
-A decision-ready record, from the fictional [Protect this first](/resources/protect-this-first/) example: *"The supplier's letter of 4 September 2026 states that Workspace 4.2, scheduled for 1 October 2026, uses ML-KEM-768 (FIPS 203) for the hosted archive's key-establishment service and does not include post-quantum signing changes. Staging pilot of Workspace 4.2 passed on 21 October 2026; production rollout pending. Signatures tracked separately: written signature-support plan due 1 December 2026."*
+A decision-ready record, from the fictional [Protect this first](/resources/examples/protect-this-first/) example: *"The supplier's letter of 4 September 2026 states that Workspace 4.2, scheduled for 1 October 2026, uses ML-KEM-768 (FIPS 203) for the hosted archive's key-establishment service and does not include post-quantum signing changes. Staging pilot of Workspace 4.2 passed on 21 October 2026; production rollout pending. Signatures tracked separately: written signature-support plan due 1 December 2026."*
 
 The second record names the job, the algorithm and its standard, the version, the evidence, and what is still open. It can be tested, compared with an authority's timeline, and revisited.
 
@@ -39,7 +39,7 @@ The second record names the job, the algorithm and its standard, the version, th
 
 ## Where this goes next
 
-Record the answers in the [vendor response log](/resources/vendor-response-log/) and judge them with [Work with suppliers](/migration-practices/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
+Record the answers in the [vendor response log](/resources/records/vendor-response-log/) and judge them with [Work with suppliers](/migration-practices/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
 
 ## Sources
 
@@ -50,5 +50,5 @@ Record the answers in the [vendor response log](/resources/vendor-response-log/)
 ## Related pages
 
 - [Work with suppliers](/migration-practices/suppliers/)
-- [Vendor response log](/resources/vendor-response-log/)
+- [Vendor response log](/resources/records/vendor-response-log/)
 - [From research to deployment](/learn/explainers/research-to-deployment/)

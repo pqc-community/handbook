@@ -68,4 +68,4 @@ Continue with [Signatures, certificates, and trust](/learn/signatures-and-trust/
 
 - [Learn the basics](/learn/)
 - [What the keys actually do](/learn/explainers/keys/)
-- [Glossary](/resources/glossary/)
+- [Glossary](/resources/reference/glossary/)

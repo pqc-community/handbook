@@ -9,7 +9,7 @@ description: What post-quantum readiness looks like for enterprise Wi-Fi and wir
 
 Network access control decides which devices may join a wired or wireless network. Enterprise Wi-Fi and wired 802.1X commonly use the Extensible Authentication Protocol with TLS (EAP-TLS), where the authentication server, and normally the device, prove themselves with certificates. It does two jobs:
 
-- **key establishment** in the TLS handshake inside EAP, whose derived keys protect the traffic, so a recording of it is exposed to [harvest-now, decrypt-later](/resources/glossary/#harvest-now-decrypt-later);
+- **key establishment** in the TLS handshake inside EAP, whose derived keys protect the traffic, so a recording of it is exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later);
 - **signatures** in the device and server certificates.
 
 ## Post-quantum options and status
@@ -48,11 +48,11 @@ The suppliers of the authentication server and the device operating systems deci
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the authentication service and each device class, with the EAP method as a labelled value in the key-establishment cell (for example "EAP-TLS 1.3: X25519") and the private certification authority in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
-| [Migration plan](/resources/migration-plan/) | A key-establishment line for the EAP-TLS handshake; certificates stay on the PKI's signatures line |
-| [Change record](/resources/change-record/) | The negotiated group as the deployed-state check |
-| [Review log](/resources/review-log/) | Devices that cannot follow, as exceptions with an owner and the replacement date in `item` |
+| [Inventory](/resources/records/inventory/) | A row for the authentication service and each device class, with the EAP method as a labelled value in the key-establishment cell (for example "EAP-TLS 1.3: X25519") and the private certification authority in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | Supplier answers |
+| [Migration plan](/resources/records/migration-plan/) | A key-establishment line for the EAP-TLS handshake; certificates stay on the PKI's signatures line |
+| [Change record](/resources/records/change-record/) | The negotiated group as the deployed-state check |
+| [Review log](/resources/records/review-log/) | Devices that cannot follow, as exceptions with an owner and the replacement date in `item` |
 
 ## Example
 

@@ -21,7 +21,7 @@ List every dependency inside the `dependencies` cell separated by a semicolon ra
 
 ## Filled example
 
-The archive row as first recorded, before the review on 2026-11-10 updated it; [Protect this first](/resources/protect-this-first/) shows how it changes.
+The archive row as first recorded, before the review on 2026-11-10 updated it; [Protect this first](/resources/examples/protect-this-first/) shows how it changes.
 
 | asset | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -44,4 +44,4 @@ Keep a real inventory off a public ticket and off an unlocked shared drive, and 
 
 - [Inventory the cryptography](/migration-practices/inventory/)
 - [Long-lived confidentiality route](/routes/long-lived-confidentiality/)
-- [Protect this first](/resources/protect-this-first/)
+- [Protect this first](/resources/examples/protect-this-first/)

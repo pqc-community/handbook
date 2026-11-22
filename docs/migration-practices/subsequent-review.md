@@ -11,7 +11,7 @@ A subsequent-review date has arrived, or something has happened that may make th
 
 ## Who does what
 
-- The **migration lead** runs the review, updates the [review log](/resources/review-log/), and reports to the sponsor.
+- The **migration lead** runs the review, updates the [review log](/resources/records/review-log/), and reports to the sponsor.
 - **Asset owners** update their rows and accept carried-forward items.
 - The **executive sponsor** receives the report and decides on escalations, budget, and risk acceptance.
 
@@ -35,19 +35,19 @@ A subsequent-review date has arrived, or something has happened that may make th
 2. Update confidence, order, and dates on the inventory, plan, and supplier rows.
 3. Carry each unresolved item forward on its own review-log row, with its own owner, status, and date.
 4. Mark each item `open` or `closed` on the review log, and set the next review date on the review log and on the plan rows you reviewed.
-5. Report to the sponsor on the [progress report](/resources/progress-report/): what moved for each job, what is blocked and why, which milestones are at risk, which decisions or risk acceptances are needed, and the next review date.
+5. Report to the sponsor on the [progress report](/resources/records/progress-report/): what moved for each job, what is blocked and why, which milestones are at risk, which decisions or risk acceptances are needed, and the next review date.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) describes the transition as one in which quantum-vulnerable and quantum-resistant algorithms will coexist and be validated for a period, which is why records need regular reopening rather than a single sign-off.
 
 ## Keep this evidence
 
-The [review log](/resources/review-log/): date, the record, asset, and job reviewed, unresolved items, owner, and next review date — plus the [progress report](/resources/progress-report/) sent to the sponsor, with the sponsor's response.
+The [review log](/resources/records/review-log/): date, the record, asset, and job reviewed, unresolved items, owner, and next review date — plus the [progress report](/resources/records/progress-report/) sent to the sponsor, with the sponsor's response.
 
 ## Example
 
 An insufficient record is "The migration project is closed."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier responses, the product sensor's plan line, and the laptop row. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, and closes the laptop item once the IT lead confirms a six-year confidentiality period and records the installed versions. It then carries five unresolved items, each on its own row with its own owner and next review:
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), opens the review on 2026-11-10 and reviews the archive pilot evidence, the supplier responses, the product sensor's plan line, and the laptop row. It updates the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, and closes the laptop item once the IT lead confirms a six-year confidentiality period and records the installed versions. It then carries five unresolved items, each on its own row with its own owner and next review:
 
 - **archive signature plan from the supplier:** product engineering lead, 2026-12-01, when the written answer is due;
 - **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead, 2026-12-01;
@@ -67,7 +67,7 @@ The suggested cadence is a starting point, not an obligation; regulated organisa
 
 ## Related pages
 
-- [Review log](/resources/review-log/)
-- [Progress report](/resources/progress-report/)
+- [Review log](/resources/records/review-log/)
+- [Progress report](/resources/records/progress-report/)
 - [Set up the programme](/migration-practices/programme/)
 - [Organisation-wide](/routes/organisation-wide/)

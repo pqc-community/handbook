@@ -11,7 +11,7 @@ A first-pass or maintained inventory exists and you need to decide what moves fi
 
 ## Who does what
 
-- The **migration lead** proposes the order and records the order and the reason on the [migration plan](/resources/migration-plan/).
+- The **migration lead** proposes the order and records the order and the reason on the [migration plan](/resources/records/migration-plan/).
 - **Asset owners** supply impact, lead time, and dependencies for their rows.
 - **Legal or risk** confirms data confidentiality periods and accepts the decision for rows that stay later in the order.
 - The **executive sponsor** approves the order when it affects budget or other programmes.
@@ -25,19 +25,19 @@ A first-pass or maintained inventory exists and you need to decide what moves fi
    - **Verifiers that cannot be updated:** earliest design freeze or production date first. Decide each one before that date.
    - **Other signatures:** most relying parties that must change together first, because coordination sets the lead time. A signing key whose signatures a non-updatable verifier checks moves with that verifier's line, because the signer must switch to the scheme the verifier accepts.
 4. **Break ties within a job in this order:** the earliest fixed date (design freeze, contract renewal, or end of support); then the longest lead time; then the greater impact if the protection fails; then systems exposed to other organisations or the internet before internal ones. These tiebreakers are this handbook's rule of thumb; replace them with your sector authority's method where one exists.
-5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ. Supplier readiness — the judgement from the [vendor response log](/resources/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`) — does not change the order; it changes when work can start. A lower-ranked line with a `complete` answer can start in parallel, and a higher-ranked line with a `missing` answer goes to [Work with suppliers](/migration-practices/suppliers/) for escalation.
+5. **Allow ties across jobs.** Two assets can both rank first when their jobs differ. Supplier readiness — the judgement from the [vendor response log](/resources/records/vendor-response-log/) (`complete`, `vague`, `missing`, or `concerning`) — does not change the order; it changes when work can start. A lower-ranked line with a `complete` answer can start in parallel, and a higher-ranked line with a `missing` answer goes to [Work with suppliers](/migration-practices/suppliers/) for escalation.
 6. **Keep `unknown` rows on the list** under their owner; do not drop them to make the order look complete.
 7. **Write the order, the reason, and its source on the plan row**, and a date to review it.
 
 ## Keep this evidence
 
-The first columns of the [migration plan](/resources/migration-plan/): one row per asset and job, with the owner, its place in the order, the reason in plain words with its source, supplier readiness, and the subsequent-review date.
+The first columns of the [migration plan](/resources/records/migration-plan/): one row per asset and job, with the owner, its place in the order, the reason in plain words with its source, supplier readiness, and the subsequent-review date.
 
 ## Example
 
 An insufficient record is "We will migrate all cryptography in one programme" or a numeric risk score with no reason.
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The key that signs the sensor's firmware comes first for signatures and moves with the verifier line. The archive's signature line and the laptops' combined line stay on supplier-led paths; the archive's two jobs are recorded separately so neither is dropped, and the laptops share one row because both jobs follow the same supplier updates. Both first places stand because the jobs differ.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The key that signs the sensor's firmware comes first for signatures and moves with the verifier line. The archive's signature line and the laptops' combined line stay on supplier-led paths; the archive's two jobs are recorded separately so neither is dropped, and the laptops share one row because both jobs follow the same supplier updates. Both first places stand because the jobs differ.
 
 ## Limits and next step
 
@@ -50,7 +50,7 @@ This rubric deliberately avoids numeric scoring; it is not a formal risk assessm
 
 ## Related pages
 
-- [Migration plan](/resources/migration-plan/)
+- [Migration plan](/resources/records/migration-plan/)
 - [Plan the migration](/migration-practices/plan/)
 - [Long-lived confidentiality](/routes/long-lived-confidentiality/)
 - [When to start: Mosca's inequality](/learn/explainers/when-to-start/)

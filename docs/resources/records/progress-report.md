@@ -7,13 +7,13 @@ displayed_sidebar: resourcesSidebar
 
 ## When to use it
 
-Use this record for each report the charter's `reporting` cell sets, at the end of each review under [Review and report](/migration-practices/subsequent-review/), and whenever a report trigger named in the [programme charter](/resources/programme-charter/) fires. It is written from the records reviewed, chiefly the [migration plan](/resources/migration-plan/) and the [review log](/resources/review-log/), so it adds no new facts: every statement in it should be traceable to a row in those records.
+Use this record for each report the charter's `reporting` cell sets, at the end of each review under [Review and report](/migration-practices/subsequent-review/), and whenever a report trigger named in the [programme charter](/resources/records/programme-charter/) fires. It is written from the records reviewed, chiefly the [migration plan](/resources/records/migration-plan/) and the [review log](/resources/records/review-log/), so it adds no new facts: every statement in it should be traceable to a row in those records.
 
 ## Minimum fields
 
 date, reported by, reported to, records reviewed, key establishment, signatures, non-updatable verifier, blocked, milestones at risk, decisions needed, next review, sponsor response
 
-Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the assets by their inventory names and say what moved since the last report and what has not, in the words the [change record](/resources/change-record/) uses, such as "staging passed; production not migrated". Write `not applicable` in a job field the programme does not cover.
+Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the assets by their inventory names and say what moved since the last report and what has not, in the words the [change record](/resources/records/change-record/) uses, such as "staging passed; production not migrated". Write `not applicable` in a job field the programme does not cover.
 
 - **blocked:** each blocked asset and job, why, and the date by which it has to be resolved.
 - **milestones at risk:** each plan milestone that may be missed, with its timeline and authority from the plan, such as the UK NCSC target dates, or `none`. A target date belongs to the authority that set it and the audience it addresses, not to every asset.
@@ -24,7 +24,7 @@ Record `unknown` in any field you cannot settle yet. Keep keys, secrets, and per
 
 ## Filled example
 
-From [Protect this first](/resources/protect-this-first/). The organisation, roles, and dates are fictional.
+From [Protect this first](/resources/examples/protect-this-first/). The organisation, roles, and dates are fictional.
 
 | field | entry |
 | --- | --- |
@@ -69,6 +69,6 @@ The report summarises the records; it does not replace them. Where a regulator, 
 ## Related pages
 
 - [Review and report](/migration-practices/subsequent-review/)
-- [Review log](/resources/review-log/)
-- [Migration plan](/resources/migration-plan/)
-- [Programme charter](/resources/programme-charter/)
+- [Review log](/resources/records/review-log/)
+- [Migration plan](/resources/records/migration-plan/)
+- [Programme charter](/resources/records/programme-charter/)

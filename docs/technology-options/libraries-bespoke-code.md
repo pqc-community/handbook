@@ -9,7 +9,7 @@ description: What post-quantum readiness looks like for software that calls cryp
 
 Some software calls cryptographic libraries directly instead of relying on a protocol a supplier configures: in-house applications, embedded software, custom file and message formats, and products you build. Such code can do any job:
 
-- **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/resources/glossary/#harvest-now-decrypt-later) for whatever it protects;
+- **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later) for whatever it protects;
 - **signatures** where it signs or verifies, with timing that follows the parties relying on those signatures;
 - **verifiers that cannot be updated** where it checks signatures in devices that cannot be updated in the field, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
@@ -33,7 +33,7 @@ You do, as the developer or product owner, within what your libraries support. L
 
 ## What good looks like
 
-- Every application or component that calls cryptography has a row on the [inventory](/resources/inventory-record/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/migration-practices/inventory/) describes.
+- Every application or component that calls cryptography has a row on the [inventory](/resources/records/inventory/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/migration-practices/inventory/) describes.
 - Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite and can be demonstrated as [Keep the ability to change again](/migration-practices/changing-algorithms-again/) describes.
 - Algorithms taken from a maintained library rather than implemented in-house, with the library's own tests run in your build.
 - New designs built on a published protocol or format with a post-quantum mechanism wherever one exists.
@@ -59,11 +59,11 @@ You do, as the developer or product owner, within what your libraries support. L
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row per application or component, with each library and its release in `dependencies`, a labelled value per use in each algorithm cell (for example "file format: X25519; API client: unknown"), and bundled or statically linked copies in `not visible to a scan` |
-| [Vendor response log](/resources/vendor-response-log/) | Answers from suppliers of commercial libraries and components; for open-source libraries, which have no supplier to ask, the release notes used as the source |
-| [Migration plan](/resources/migration-plan/) | One line per job, with the library and the release that delivers support in `dependencies` and that release's date in `supplier release` |
-| [Change record](/resources/change-record/) | The option, the authority, and the tests on size, interoperability, and older peers |
-| [Review log](/resources/review-log/) | Bespoke protocols with no published post-quantum path yet, with the specialist adviser's view and a review date |
+| [Inventory](/resources/records/inventory/) | A row per application or component, with each library and its release in `dependencies`, a labelled value per use in each algorithm cell (for example "file format: X25519; API client: unknown"), and bundled or statically linked copies in `not visible to a scan` |
+| [Vendor response log](/resources/records/vendor-response-log/) | Answers from suppliers of commercial libraries and components; for open-source libraries, which have no supplier to ask, the release notes used as the source |
+| [Migration plan](/resources/records/migration-plan/) | One line per job, with the library and the release that delivers support in `dependencies` and that release's date in `supplier release` |
+| [Change record](/resources/records/change-record/) | The option, the authority, and the tests on size, interoperability, and older peers |
+| [Review log](/resources/records/review-log/) | Bespoke protocols with no published post-quantum path yet, with the specialist adviser's view and a review date |
 
 ## Example
 

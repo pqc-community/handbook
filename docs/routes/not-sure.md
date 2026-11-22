@@ -27,5 +27,5 @@ The primary next page is [Decide whether to act](/migration-practices/diagnose/)
 ## Related pages
 
 - [Homepage](/)
-- [Protect this first](/resources/protect-this-first/)
-- [Glossary](/resources/glossary/)
+- [Protect this first](/resources/examples/protect-this-first/)
+- [Glossary](/resources/reference/glossary/)

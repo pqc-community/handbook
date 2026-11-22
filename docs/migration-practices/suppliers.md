@@ -13,16 +13,16 @@ Any system on your inventory depends on a supplier's product or service, you are
 
 - **Procurement** keeps the supplier list, sends questions, chases answers, writes requirements into purchases and renewals, and uses the contract when answers fall short.
 - **Asset owners** say what each system needs and whether an answer is usable.
-- The **migration lead** copies supplier dates into the [migration plan](/resources/migration-plan/) and tracks gaps.
+- The **migration lead** copies supplier dates into the [migration plan](/resources/records/migration-plan/) and tracks gaps.
 - **Legal or risk** advises on contract wording, remedies, and residual risk.
 
 ## Do this
 
-On the short path, only step 5 applies: write post-quantum requirements into purchases and renewals. Steps 1 to 4 apply to suppliers behind full-path rows on your [migration plan](/resources/migration-plan/).
+On the short path, only step 5 applies: write post-quantum requirements into purchases and renewals. Steps 1 to 4 apply to suppliers behind full-path rows on your [migration plan](/resources/records/migration-plan/).
 
 ### 1. Triage suppliers
 
-Build the supplier list from the [inventory record](/resources/inventory-record/), not from the purchasing system alone. Put each supplier in a tier:
+Build the supplier list from the [inventory record](/resources/records/inventory/), not from the purchasing system alone. Put each supplier in a tier:
 
 - **Tier 1:** suppliers behind the rows that come first in their job's order on the migration plan, such as key establishment for long-lived confidential data, verifiers that cannot be updated, or signatures with many relying parties.
 - **Tier 2:** suppliers whose contract renews or ends within your planning period. The handbook suggests looking at least two years ahead, because a renewal is the cheapest point to add a requirement.
@@ -32,7 +32,7 @@ Ask tier 1 first and individually, and tier 2 in batches. Do not send tier 3 sup
 
 ### 2. Ask the same questions in writing
 
-Use the handbook's single question set on the [vendor response log](/resources/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid algorithm or scheme it will support, from which release and date; when signatures and update verification will change; whether keys or [trust anchors](/resources/glossary/#trust-anchor) are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
+Use the handbook's single question set on the [vendor response log](/resources/records/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid algorithm or scheme it will support, from which release and date; when signatures and update verification will change; whether keys or [trust anchors](/resources/reference/glossary/#trust-anchor) are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
 
 ### 3. Judge each answer, one row per job
 
@@ -58,7 +58,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 - a support period;
 - the evidence you will receive.
 
-Record each requirement, the supplier's commitment, and whether it was met on the [purchase requirements record](/resources/purchase-requirements/), one row per purchase or renewal, job, and candidate supplier.
+Record each requirement, the supplier's commitment, and whether it was met on the [purchase requirements record](/resources/records/purchase-requirements/), one row per purchase or renewal, job, and candidate supplier.
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
@@ -70,13 +70,13 @@ If you supply products, your customers will send you the same questions. Answer 
 
 ## Keep this evidence
 
-The [vendor response log](/resources/vendor-response-log/) — one row per supplier, product, version, and job, with the assets it covers, the question, the dates asked, due, and answered, the answer, source document, judgement, follow-up, and decision — plus the [purchase requirements record](/resources/purchase-requirements/): the requirement text used in each purchase or renewal and the commitment the supplier agreed.
+The [vendor response log](/resources/records/vendor-response-log/) — one row per supplier, product, version, and job, with the assets it covers, the question, the dates asked, due, and answered, the answer, source document, judgement, follow-up, and decision — plus the [purchase requirements record](/resources/records/purchase-requirements/): the requirement text used in each purchase or renewal and the commitment the supplier agreed.
 
 ## Example
 
 An insufficient record is "They told us on a call that they are quantum safe."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/): the fictional design-platform supplier's letter of 2026-09-04 says Workspace 4.2, due on 2026-10-01, uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. The product engineering lead records that row as `complete` for connections. A second row records signatures as `vague`, because the letter gives no date. A third row records stored-data [key wrapping](/resources/glossary/#key-wrapping) and end of support for Workspace 4.1 as `missing`, because the letter does not answer them. Both follow-ups are due by 2026-12-01, and stored-data protection is not counted as migrated. For the next sensor design, procurement asks each shortlisted microcontroller supplier in writing whether the boot verifier supports a NIST-approved post-quantum signature and how the trust anchor is provisioned, and procurement, with the product security lead, makes a post-quantum signature option a condition of selection. One supplier has not answered; the one reply so far, dated 2026-10-30, says a post-quantum boot verifier is planned but names no scheme, date, or trust-anchor provisioning, so it is recorded as `vague` with a written answer due by 2026-12-15, and no supplier is selected.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the fictional design-platform supplier's letter of 2026-09-04 says Workspace 4.2, due on 2026-10-01, uses hybrid key establishment (X25519MLKEM768) for TLS connections to the hosted workspace. The product engineering lead records that row as `complete` for connections. A second row records signatures as `vague`, because the letter gives no date. A third row records stored-data [key wrapping](/resources/reference/glossary/#key-wrapping) and end of support for Workspace 4.1 as `missing`, because the letter does not answer them. Both follow-ups are due by 2026-12-01, and stored-data protection is not counted as migrated. For the next sensor design, procurement asks each shortlisted microcontroller supplier in writing whether the boot verifier supports a NIST-approved post-quantum signature and how the trust anchor is provisioned, and procurement, with the product security lead, makes a post-quantum signature option a condition of selection. One supplier has not answered; the one reply so far, dated 2026-10-30, says a post-quantum boot verifier is planned but names no scheme, date, or trust-anchor provisioning, so it is recorded as `vague` with a written answer due by 2026-12-15, and no supplier is selected.
 
 ## Limits and next step
 
@@ -90,7 +90,7 @@ The log records what suppliers say; it does not validate their products. Validat
 
 ## Related pages
 
-- [Vendor response log](/resources/vendor-response-log/)
+- [Vendor response log](/resources/records/vendor-response-log/)
 - [Ask a supplier](/routes/ask-a-supplier/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)
 - [Vendor questions guide](/standards/migration-guides/vendor-questions/)

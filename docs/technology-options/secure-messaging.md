@@ -9,7 +9,7 @@ description: What post-quantum readiness looks like for end-to-end encrypted cha
 
 Secure messaging and collaboration tools protect chat, calls, and shared content, often end to end between users' devices. They do two jobs:
 
-- **key establishment** for message keys, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/resources/glossary/#harvest-now-decrypt-later) for anything sensitive that is recorded today;
+- **key establishment** for message keys, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later) for anything sensitive that is recorded today;
 - **signatures** to authenticate users and devices.
 
 Messages kept in history or exports are also stored data; see [Backups, archives and storage](/technology-options/stored-data/).
@@ -32,7 +32,7 @@ The provider. Your job is to ask the right questions, choose a product whose ans
 
 ## What good looks like
 
-- A written answer from the provider for each job (message keys, user and device authentication) and for stored history, each judged on the [vendor response log](/resources/vendor-response-log/).
+- A written answer from the provider for each job (message keys, user and device authentication) and for stored history, each judged on the [vendor response log](/resources/records/vendor-response-log/).
 - Post-quantum protection of message keys switched on for every client and group conversation, with a minimum client version enforced where the product allows it; if it relies on draft-ietf-mls-pq-ciphersuites, recorded as provisional.
 - Retention and exports set so that sensitive history is kept no longer than it is needed.
 
@@ -52,11 +52,11 @@ The provider. Your job is to ask the right questions, choose a product whose ans
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row for the service, with the provider in `dependencies` and labelled values in the key-establishment cell, for example "messages: …; stored history: …" |
-| [Vendor response log](/resources/vendor-response-log/) | One row per job, and one for stored history |
-| [Migration plan](/resources/migration-plan/) | A line per job |
-| [Change record](/resources/change-record/) | If you rely on the draft mechanism, "provisional: Internet-Draft" in `option` |
-| [Review log](/resources/review-log/) | An item to revisit the draft mechanism when it is published |
+| [Inventory](/resources/records/inventory/) | A row for the service, with the provider in `dependencies` and labelled values in the key-establishment cell, for example "messages: …; stored history: …" |
+| [Vendor response log](/resources/records/vendor-response-log/) | One row per job, and one for stored history |
+| [Migration plan](/resources/records/migration-plan/) | A line per job |
+| [Change record](/resources/records/change-record/) | If you rely on the draft mechanism, "provisional: Internet-Draft" in `option` |
+| [Review log](/resources/records/review-log/) | An item to revisit the draft mechanism when it is published |
 
 ## Example
 

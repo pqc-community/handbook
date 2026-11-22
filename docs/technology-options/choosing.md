@@ -7,7 +7,7 @@ description: Decide who chooses the option, find what every applicable authority
 
 ## When this applies
 
-A system has a line on the [migration plan](/resources/migration-plan/), and you need to name the post-quantum option it will use and the authority that justifies it. These rules apply to every technology; each [technology card](/technology-options/) applies them. In the [migration practices](/migration-practices/), this step sits between working with suppliers and making the change.
+A system has a line on the [migration plan](/resources/records/migration-plan/), and you need to name the post-quantum option it will use and the authority that justifies it. These rules apply to every technology; each [technology card](/technology-options/) applies them. In the [migration practices](/migration-practices/), this step sits between working with suppliers and making the change.
 
 ## Who does what
 
@@ -21,7 +21,7 @@ A system has a line on the [migration plan](/resources/migration-plan/), and you
 
 1. **Read the facts you already hold.** The inventory row gives who controls the software and the data confidentiality period; the plan line gives the job, including `non-updatable verifier`, and the applicable timeline. Resolve any `unknown` that changes the steps below.
 2. **Decide who chooses.**
-   - **The supplier controls the software:** its named algorithm or scheme is the proposed option once the [vendor response log](/resources/vendor-response-log/) judges the answer `complete`; follow up a `vague` or `missing` answer under [Work with suppliers](/migration-practices/suppliers/). If the option conflicts with an applicable authority, judge the answer `concerning` and escalate it there.
+   - **The supplier controls the software:** its named algorithm or scheme is the proposed option once the [vendor response log](/resources/records/vendor-response-log/) judges the answer `complete`; follow up a `vague` or `missing` answer under [Work with suppliers](/migration-practices/suppliers/). If the option conflicts with an applicable authority, judge the answer `concerning` and escalate it there.
    - **You configure or build it:** you choose, using steps 3 to 5.
 3. **List the authorities that apply.** Legal or risk confirms them. For each one, take the algorithms, parameter sets, and hybrid position from the comparison on [National algorithm positions](/standards/national-algorithm-positions/), which states each authority's audience, and the [Hybrid cryptography](/learn/hybrid/) lesson, which adds the UK NCSC. They differ: for US national security systems, [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) requires ML-KEM-1024 and ML-DSA-87; [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) names ML-KEM ([FIPS 203](/standards/post-quantum/fips-203/)) as, at this time, NIST's only approved post-quantum key-establishment scheme; and [BSI TR-02102-1](/standards/national-algorithm-positions/bsi-tr-02102-1/) also recommends FrodoKEM and Classic McEliece.
 4. **Choose an algorithm and parameter set every applicable authority accepts**, and settle the form with [the hybrid rule](#the-hybrid-rule) below.
@@ -41,7 +41,7 @@ Place each applicable authority in its row; the highest row any of them reaches 
 
 If no authority applies, either form is acceptable; record that legal or risk confirmed none applies, and why you chose the form.
 
-If no option satisfies every applicable authority, for example because their accepted algorithms or forms do not overlap, take the conflict to legal or risk and the sponsor, who decide which position governs. Record the decision and its reason in the `authority` cell and as an item on the [review log](/resources/review-log/). A row-one authority and a row-three authority do not conflict where the row-three authority permits the hybrid, as ASD does.
+If no option satisfies every applicable authority, for example because their accepted algorithms or forms do not overlap, take the conflict to legal or risk and the sponsor, who decide which position governs. Record the decision and its reason in the `authority` cell and as an item on the [review log](/resources/records/review-log/). A row-one authority and a row-three authority do not conflict where the row-three authority permits the hybrid, as ASD does.
 
 If you choose hybrid, record the path away from it under [Keep the ability to change again](/migration-practices/changing-algorithms-again/). For signatures, the same table applies, with the hash-based exceptions under [Signature schemes](#signature-schemes).
 
@@ -50,7 +50,7 @@ If you choose hybrid, record the path away from it under [Keep the ability to ch
 - Use a mechanism the protocol's own specification defines, in the form the hybrid rule settled; do not build your own combination.
 - Prefer a published RFC. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts.
 - Where an authority's general advice and its later protocol-specific guidance differ, follow the later, specific guidance for that protocol; this is the handbook's rule of thumb.
-- Use a draft mechanism only when the product you run ships it and no applicable authority advises against it for that protocol. Then write "provisional: Internet-Draft" in the change record's `option` cell and add an item to the [review log](/resources/review-log/) to revisit it when the specification is published.
+- Use a draft mechanism only when the product you run ships it and no applicable authority advises against it for that protocol. Then write "provisional: Internet-Draft" in the change record's `option` cell and add an item to the [review log](/resources/records/review-log/) to revisit it when the specification is published.
 
 Each technology card gives the current status of its mechanisms.
 
@@ -60,9 +60,9 @@ Choose from the schemes every applicable authority accepts. This is the handbook
 
 | Use | Scheme | Why |
 | --- | --- | --- |
-| Certificates, documents, and other general signing | [ML-DSA](/resources/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) ([FIPS 204](/standards/post-quantum/fips-204/)) | The NCSC whitepaper says hash-based signatures are not suitable for general-purpose use, because their signatures are large and the algorithms much slower |
+| Certificates, documents, and other general signing | [ML-DSA](/resources/reference/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) ([FIPS 204](/standards/post-quantum/fips-204/)) | The NCSC whitepaper says hash-based signatures are not suitable for general-purpose use, because their signatures are large and the algorithms much slower |
 | Code, software, and firmware signing | A hash-based scheme where an applicable authority requires one or every verifier supports only that; otherwise ML-DSA | NIST IR 8547 says stateful schemes are not intended for general use but may suit software and firmware signing; the NCSC whitepaper lists SLH-DSA, LMS, and XMSS for such uses |
-| Choosing among hash-based schemes | [SLH-DSA](/resources/glossary/#slh-dsa-stateless-hash-based-digital-signature-algorithm) ([FIPS 205](/standards/post-quantum/fips-205/)) unless you can control signing state; Leighton-Micali Signatures (LMS) or the eXtended Merkle Signature Scheme (XMSS) ([SP 800-208](/standards/post-quantum/sp-800-208/)) only if you can show no one-time key will ever be reused | [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains the state problem |
+| Choosing among hash-based schemes | [SLH-DSA](/resources/reference/glossary/#slh-dsa-stateless-hash-based-digital-signature-algorithm) ([FIPS 205](/standards/post-quantum/fips-205/)) unless you can control signing state; Leighton-Micali Signatures (LMS) or the eXtended Merkle Signature Scheme (XMSS) ([SP 800-208](/standards/post-quantum/sp-800-208/)) only if you can show no one-time key will ever be reused | [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains the state problem |
 
 The authority check can change the answer:
 
@@ -72,13 +72,13 @@ The authority check can change the answer:
 
 ## Keep this evidence
 
-The `option` and `authority` cells of the system's [change record](/resources/change-record/), as step 7 describes. Update the [inventory](/resources/inventory-record/) row's algorithm cells as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Commodity products on the supplier-update path need no option recorded here (see [Keep commodity software updated](/migration-practices/commodity-software/)).
+The `option` and `authority` cells of the system's [change record](/resources/records/change-record/), as step 7 describes. Update the [inventory](/resources/records/inventory/) row's algorithm cells as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Commodity products on the supplier-update path need no option recorded here (see [Keep commodity software updated](/migration-practices/commodity-software/)).
 
 ## Example
 
 An insufficient record is "Hybrid is required for everyone."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/): the design-archive supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections. The manufacturer, a UK company, checks it against the UK NCSC's TLS guidance (15 October 2026), written for system administrators who configure TLS, which falls in the second row of the hybrid rule: it recommends hybrid as an interim measure and accepts ML-KEM on its own. It records that guidance, with FIPS 203 (NIST, 13 August 2024; for US federal systems) as the specification of ML-KEM, in the `authority` cell, followed by "hybrid because the supplier ships it". The cards for [TLS and web services](/technology-options/tls/), [Backups, archives and storage](/technology-options/stored-data/), and [Firmware and secure boot](/technology-options/firmware-secure-boot/) carry the rest of the example.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-archive supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections. The manufacturer, a UK company, checks it against the UK NCSC's TLS guidance (15 October 2026), written for system administrators who configure TLS, which falls in the second row of the hybrid rule: it recommends hybrid as an interim measure and accepts ML-KEM on its own. It records that guidance, with FIPS 203 (NIST, 13 August 2024; for US federal systems) as the specification of ML-KEM, in the `authority` cell, followed by "hybrid because the supplier ships it". The cards for [TLS and web services](/technology-options/tls/), [Backups, archives and storage](/technology-options/stored-data/), and [Firmware and secure boot](/technology-options/firmware-secure-boot/) carry the rest of the example.
 
 ## Limits and next page
 

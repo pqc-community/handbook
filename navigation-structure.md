@@ -41,12 +41,12 @@ Homepage Situation Chooser (/)
 ```
 
 - **Situation Chooser (`/`) and Routes (`/routes/*`)**: Route visitors by operational context (*vendor-managed software*, *long-lived confidentiality*, *hard-to-change systems*, *organisation-wide coordination*, *ask a supplier*, or *not sure*) into an ordered sequence of reference pages without duplicating those pages into separate silos.
-- **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
+- **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/reference/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
   - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, keep commodity software updated (the short path for supplier-updated estates), set up the programme, inventory, prioritise, plan dates, work with suppliers (including purchases and renewals), make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
   - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections (TLS, VPNs and IPsec, SSH, Wi-Fi and network access, secure messaging), certificates and identity (PKI, DNSSEC, identity and sign-in, Kerberos and directory sign-in), signing (code, firmware and secure boot, documents and email), stored data (encrypted email and files, backups and archives), and platforms and environments that span several jobs (HSMs and key management, cryptographic libraries and bespoke code, cloud and SaaS, OT and industrial systems). The overview also routes technologies without a card. Process stays in Migration practices, positions in Standards, and concepts in Learn.
-  - **Resources (`/resources/`)** — The migration record set: the linked records a migration lead sets up, fills in, and keeps, in order of use (decision note, programme charter, inventory record, vendor response log, purchase requirements, migration plan, change record, review log, and progress report), with how they join on `asset` and `job`, how unknowns carry forward, and one zip of every blank CSV; then the worked manufacturer example that fills every record, and the glossary. Practices and technology cards write to these records; each record page names the practice that fills it. The sidebar groups them as Records, Worked example, and Reference.
+  - **Resources (`/resources/`)** — What a migration lead takes away and uses, grouped by what the reader does with it. The section overview (`/resources/`) lists the groups. **Records** (`/resources/records/`) are the migration record set: the linked records a migration lead sets up, fills in, and keeps, in order of use (decision note, programme charter, inventory record, vendor response log, purchase requirements, migration plan, change record, review log, and progress report). The records overview shows how they join on `asset` and `job`, how unknowns carry forward, and one zip of every blank CSV. **Examples** (`/resources/examples/`) hold worked examples, starting with the manufacturer example that fills every record. **Reference** (`/resources/reference/`) holds the glossary. Practices and technology cards write to the records; each record page names the practice that fills it.
 
 ## Sitemap
 
@@ -180,22 +180,25 @@ Homepage Situation Chooser (/)
 /technology-options/ot-industrial/
 
 /resources/
-/resources/decision-note/
-/resources/programme-charter/
-/resources/inventory-record/
-/resources/vendor-response-log/
-/resources/purchase-requirements/
-/resources/migration-plan/
-/resources/change-record/
-/resources/review-log/
-/resources/progress-report/
-/resources/protect-this-first/
-/resources/glossary/
+/resources/records/
+/resources/records/decision-note/
+/resources/records/programme-charter/
+/resources/records/inventory/
+/resources/records/vendor-response-log/
+/resources/records/purchase-requirements/
+/resources/records/migration-plan/
+/resources/records/change-record/
+/resources/records/review-log/
+/resources/records/progress-report/
+/resources/examples/
+/resources/examples/protect-this-first/
+/resources/reference/
+/resources/reference/glossary/
 ```
 
 ## Homepage and Footer Routing
 
-- **Homepage (`src/pages/index.tsx`)**: Introduces the handbook and routes visitors cleanly without competing navigation systems — leading with the six situation routes under `/routes/*`, a distinct entry into `/learn/`, a preview pointing to `/resources/protect-this-first/`, and direct entry cards for the four reference sections.
+- **Homepage (`src/pages/index.tsx`)**: Introduces the handbook and routes visitors cleanly without competing navigation systems — leading with the six situation routes under `/routes/*`, a distinct entry into `/learn/`, a preview pointing to `/resources/examples/protect-this-first/`, and direct entry cards for the four reference sections.
 - **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Routes**, **Learn**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
 
 ## Section Placement and Expansion Rules
@@ -207,4 +210,4 @@ Add new pages only when there is enough distinct, decision-useful material that 
 - **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules, protocols, and certificates*, *US government requirements*, *national algorithm positions*, *migration guides*) rather than by issuing organisation.
 - **Lifecycle operating activities** belong in `/migration-practices/`; each practice owns at least one record in `/resources/` or states its evidence on the page.
 - **What good looks like for a specific technology** belongs in `/technology-options/`, as a short reference card per technology that keeps the cryptographic jobs distinct, rather than one narrative page per algorithm.
-- **Records and reference tools** belong in `/resources/`. Add a record only when a practice produces it and no existing record holds it; keep `/resources/` the record set rather than a catch-all archive, and send lists of cited works to `/standards/`.
+- **What a reader takes away and uses** belongs in `/resources/`, in a group named for what the reader does with it: records to fill in (`/resources/records/`), worked examples to follow (`/resources/examples/`), and reference to look up (`/resources/reference/`). Add a record only when a practice produces it and no existing record holds it. Add a new group, such as briefings or tools, only when its first page is written, and give each group a landing page. Keep the hierarchy to section, group, and page; split Records by phase only if it grows past about twelve. Send lists of cited works to `/standards/`, and keep material about the handbook itself (changes, citation, editions) out of `/resources/`.

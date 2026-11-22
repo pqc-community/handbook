@@ -38,7 +38,7 @@ The control-system, device, and protocol suppliers, often within an industry sta
 - Integrity of commands and sensor data treated as the priority job for fielded devices, with confidentiality judged case by case.
 - Remote access and IT/OT boundaries moved on the enterprise IT timetable.
 - Changes to physical infrastructure planned to coincide with other maintenance and refresh, which the NCSC timelines advise, and post-quantum requirements written into equipment purchases.
-- A written answer from each control-system and device supplier to the questions on the [vendor response log](/resources/vendor-response-log/), and a review date for protocols that have no post-quantum path yet.
+- A written answer from each control-system and device supplier to the questions on the [vendor response log](/resources/records/vendor-response-log/), and a review date for protocols that have no post-quantum path yet.
 
 ## What to ask or test
 
@@ -58,12 +58,12 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | Rows for OT systems and device types, with supplier and protocol in `dependencies` |
-| [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
-| [Purchase requirements](/resources/purchase-requirements/) | A row per job for each equipment purchase or refresh, with the planned outage or refresh date in `decide by` |
-| [Migration plan](/resources/migration-plan/) | One line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, the device's expected service life in `reason and source`, the purchase that will carry post-quantum requirements in `next action`, and, where no option exists yet, the protocol's next check in `subsequent review` |
-| [Change record](/resources/change-record/) | `unknown` and blocked where no option exists yet |
-| [Review log](/resources/review-log/) | Exceptions and accepted risks |
+| [Inventory](/resources/records/inventory/) | Rows for OT systems and device types, with supplier and protocol in `dependencies` |
+| [Vendor response log](/resources/records/vendor-response-log/) | Supplier answers |
+| [Purchase requirements](/resources/records/purchase-requirements/) | A row per job for each equipment purchase or refresh, with the planned outage or refresh date in `decide by` |
+| [Migration plan](/resources/records/migration-plan/) | One line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, the device's expected service life in `reason and source`, the purchase that will carry post-quantum requirements in `next action`, and, where no option exists yet, the protocol's next check in `subsequent review` |
+| [Change record](/resources/records/change-record/) | `unknown` and blocked where no option exists yet |
+| [Review log](/resources/records/review-log/) | Exceptions and accepted risks |
 
 ## Example
 

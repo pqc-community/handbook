@@ -37,13 +37,13 @@ You have not yet decided whether post-quantum migration is a programme for your 
 
 ## Keep this evidence
 
-A [decision note](/resources/decision-note/) that the sponsor has accepted: the answers to questions A to D, the urgency category and path for each asset, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/inventory-record/).
+A [decision note](/resources/records/decision-note/) that the sponsor has accepted: the answers to questions A to D, the urgency category and path for each asset, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/records/inventory/).
 
 ## Example
 
 An insufficient record is "We are quantum safe" or "This is an IT matter."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/): the fictional manufacturer records that product designs must stay confidential for 15 years under its own retention policy, and that its product sensor's firmware verifier cannot accept a new trust anchor after shipment. It answers yes to A and B, so it records itself as an urgent adopter for those two assets and takes the full path. Its office laptops are not where the long-lived designs are kept, so on their own they answer no to all four and stay on the short, supplier-update path; the IT lead later confirms their confidentiality period as six years under the office-records policy, below the ten-year threshold in question A. The managing director accepts the decision and names the operations director as migration lead, with the programme charter to follow.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the fictional manufacturer records that product designs must stay confidential for 15 years under its own retention policy, and that its product sensor's firmware verifier cannot accept a new trust anchor after shipment. It answers yes to A and B, so it records itself as an urgent adopter for those two assets and takes the full path. Its office laptops are not where the long-lived designs are kept, so on their own they answer no to all four and stay on the short, supplier-update path; the IT lead later confirms their confidentiality period as six years under the office-records policy, below the ten-year threshold in question A. The managing director accepts the decision and names the operations director as migration lead, with the programme charter to follow.
 
 ## Limits and next step
 
@@ -58,6 +58,6 @@ This decision does not choose algorithms or dates, and it is not a formal risk a
 
 - [Not sure](/routes/not-sure/)
 - [Set up the programme](/migration-practices/programme/)
-- [Decision note](/resources/decision-note/)
-- [Inventory record](/resources/inventory-record/)
+- [Decision note](/resources/records/decision-note/)
+- [Inventory record](/resources/records/inventory/)
 - [When to start: Mosca's inequality](/learn/explainers/when-to-start/)

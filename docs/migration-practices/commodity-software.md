@@ -17,7 +17,7 @@ You rely on supported commodity software — standard browsers, operating system
 
 ## Do this
 
-1. **Keep supported versions installed** across the fleet, and record the installed browser and operating-system versions, with the date checked, in the `version` cell of the [inventory record](/resources/inventory-record/). A version alone does not prove post-quantum key establishment is in use: enterprise policy or an inspection proxy can disable or strip it. Where you can, check what connections actually negotiate.
+1. **Keep supported versions installed** across the fleet, and record the installed browser and operating-system versions, with the date checked, in the `version` cell of the [inventory record](/resources/records/inventory/). A version alone does not prove post-quantum key establishment is in use: enterprise policy or an inspection proxy can disable or strip it. Where you can, check what connections actually negotiate.
 2. **Keep servers out of this path.** Web servers, load balancers, and services you configure yourself are your own systems, not commodity endpoints; they belong on the inventory with their own rows.
 3. **Check support status.** A product out of support, or a supplier with no migration plan, is no longer commodity: move it to the [Hard-to-change systems](/routes/hard-to-change-systems/) route.
 4. **Check for exceptions** that need their own priority line: long-lived confidential data belongs on the [Long-lived confidentiality](/routes/long-lived-confidentiality/) route, and bespoke systems or devices whose signature check cannot be updated belong on Hard-to-change systems.
@@ -28,13 +28,13 @@ The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (pu
 
 ## Keep this evidence
 
-The installed versions and the date checked on the inventory record, the requirement text used in each purchase or renewal on the [purchase requirements record](/resources/purchase-requirements/), and, for each exception, the route it moved to in the `route` cell of its [decision note](/resources/decision-note/) row, or on the [review log](/resources/review-log/) if it moved at a later review.
+The installed versions and the date checked on the inventory record, the requirement text used in each purchase or renewal on the [purchase requirements record](/resources/records/purchase-requirements/), and, for each exception, the route it moved to in the `route` cell of its [decision note](/resources/records/decision-note/) row, or on the [review log](/resources/records/review-log/) if it moved at a later review.
 
 ## Example
 
 An insufficient record is "The platform will handle it."
 
-A decision-ready record, from [Protect this first](/resources/protect-this-first/), keeps the manufacturer's office laptops on the supplier-update path under the IT lead, records the installed browser and operating-system versions and a six-year confidentiality period at the 2026-11-10 review, sets the next check for the quarterly review on 2027-02-10, and notes that the product-design archive and the sensor's firmware verifier are tracked separately because their confidentiality period and update constraints differ.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), keeps the manufacturer's office laptops on the supplier-update path under the IT lead, records the installed browser and operating-system versions and a six-year confidentiality period at the 2026-11-10 review, sets the next check for the quarterly review on 2027-02-10, and notes that the product-design archive and the sensor's firmware verifier are tracked separately because their confidentiality period and update constraints differ.
 
 ## Limits and next step
 
@@ -48,5 +48,5 @@ Supplier updates usually cover key establishment before signatures; a platform o
 ## Related pages
 
 - [Vendor-managed software](/routes/vendor-managed-software/)
-- [Inventory record](/resources/inventory-record/)
+- [Inventory record](/resources/records/inventory/)
 - [Review and report](/migration-practices/subsequent-review/)
