@@ -51,4 +51,3 @@ These summaries cover guides for running a post-quantum migration programme, fin
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Timelines](/learn/explainers/timelines/)
 - [Decide whether to act](/migration-practices/diagnose/)
-- [Curated references](/resources/curated-references/)

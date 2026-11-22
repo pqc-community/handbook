@@ -57,4 +57,5 @@ The primary next page is [Migration plan](/resources/migration-plan/).
 
 - [Ask a supplier](/routes/ask-a-supplier/)
 - [Protect this first](/resources/protect-this-first/)
-- [Curated references](/resources/curated-references/)
+- [Standards](/standards/)
+- [Migration records](/resources/)

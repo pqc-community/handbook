@@ -24,7 +24,7 @@ Read these four root documents before changing structure, prose, or styling:
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
-- [Resources](./docs/resources/index.md) — Seven CSV-backed work-product templates, the [Protect this first](./docs/resources/protect-this-first.md) worked example, [Glossary](./docs/resources/glossary.md), and [Curated references](./docs/resources/curated-references.md)
+- [Resources](./docs/resources/index.md) — The migration record set: nine CSV-backed records in order of use, with how they connect and a zip of every blank CSV, the [Protect this first](./docs/resources/protect-this-first.md) worked example, and the [Glossary](./docs/resources/glossary.md)
 
 ## Getting Started
 
@@ -54,7 +54,8 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`, `scripts/check-standards.test.mjs`) |
+| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`, `scripts/check-standards.test.mjs`, `scripts/check-records.test.mjs`); the records test checks that each CSV matches its record page, that filled examples match Protect this first, and that the records zip is current |
+| `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
 | `npm run check` | Validates page `title` lengths (`docs/**/*.md`) and surface-specific navigation bounds across navbar, footer, and sidebars (`scripts/check-pages.mjs`) |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |

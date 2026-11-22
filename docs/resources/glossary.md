@@ -250,7 +250,7 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Standardisation](/learn/standardisation/)
 - [Homepage](/)
 - [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
-- [Curated references](/resources/curated-references/)
+- [Standards](/standards/)
 - [Choosing an option](/technology-options/choosing/)
 - [Technology options](/technology-options/)
 - [PKI and certificates](/technology-options/pki/)

@@ -35,6 +35,8 @@ Publications are grouped by their role in the transition:
 - NIST Special Publications and Internal Reports, IETF RFCs, ETSI reports, and national guides recommend or inform. They bind an organisation only where a law, directive, regulator, or contract makes them do so.
 - Standards publication is not product release or deployment. See [From research to deployment](/learn/explainers/research-to-deployment/).
 
+Each handbook page's own `Sources` list names the works it uses. Sources are reviewed quarterly and when a cited publication is updated; report a stale link or superseded edition on the [GitHub issue tracker](https://github.com/pqc-community/handbook/issues).
+
 ## Sources
 
 - NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)

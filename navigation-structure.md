@@ -30,7 +30,7 @@ Linking guidance:
 
 - In `docusaurus.config.ts`, React pages (`src/pages/`), and cross-section references, use canonical root paths with trailing slashes (for example, `/migration-practices/inventory/` or `/standards/post-quantum/fips-203/`), never `/docs/...`.
 - Within the same `docs/` directory, relative Markdown links (such as `./priority.md`) and canonical root paths both work cleanly; broken links, anchors, and Markdown links fail `npm run build`.
-- Downloadable work-product CSVs live in `static/downloads/` and resolve at `/downloads/*.csv` (for example, `/downloads/inventory-record.csv`).
+- Downloadable work-product CSVs live in `static/downloads/` and resolve at `/downloads/*.csv` (for example, `/downloads/inventory-record.csv`). `/downloads/pqc-handbook-records.zip` holds every blank CSV; rebuild it with `npm run records-zip` after changing a CSV, and `npm test` fails if it is out of date or if a CSV header no longer matches its page.
 
 ## Site Model
 
@@ -46,7 +46,7 @@ Homepage Situation Chooser (/)
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
   - **Migration practices (`/migration-practices/`)** — Reusable operating practices in lifecycle order: decide whether to act, keep commodity software updated (the short path for supplier-updated estates), set up the programme, inventory, prioritise, plan dates, work with suppliers (including purchases and renewals), make and verify each change, keep the ability to change again, and review and report. Each practice names who leads it and the record it produces.
   - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections (TLS, VPNs and IPsec, SSH, Wi-Fi and network access, secure messaging), certificates and identity (PKI, DNSSEC, identity and sign-in, Kerberos and directory sign-in), signing (code, firmware and secure boot, documents and email), stored data (encrypted email and files, backups and archives), and platforms and environments that span several jobs (HSMs and key management, cryptographic libraries and bespoke code, cloud and SaaS, OT and industrial systems). The overview also routes technologies without a card. Process stays in Migration practices, positions in Standards, and concepts in Learn.
-  - **Resources (`/resources/`)** — Practical work-product templates, the worked manufacturer example, glossary, and curated references.
+  - **Resources (`/resources/`)** — The migration record set: the linked records a migration lead sets up, fills in, and keeps, in order of use (decision note, programme charter, inventory record, vendor response log, purchase requirements, migration plan, change record, review log, and progress report), with how they join on `asset` and `job`, how unknowns carry forward, and one zip of every blank CSV; then the worked manufacturer example that fills every record, and the glossary. Practices and technology cards write to these records; each record page names the practice that fills it. The sidebar groups them as Records, Worked example, and Reference.
 
 ## Sitemap
 
@@ -184,12 +184,13 @@ Homepage Situation Chooser (/)
 /resources/programme-charter/
 /resources/inventory-record/
 /resources/vendor-response-log/
+/resources/purchase-requirements/
 /resources/migration-plan/
 /resources/change-record/
 /resources/review-log/
+/resources/progress-report/
 /resources/protect-this-first/
 /resources/glossary/
-/resources/curated-references/
 ```
 
 ## Homepage and Footer Routing
@@ -206,4 +207,4 @@ Add new pages only when there is enough distinct, decision-useful material that 
 - **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules, protocols, and certificates*, *US government requirements*, *national algorithm positions*, *migration guides*) rather than by issuing organisation.
 - **Lifecycle operating activities** belong in `/migration-practices/`; each practice owns at least one record in `/resources/` or states its evidence on the page.
 - **What good looks like for a specific technology** belongs in `/technology-options/`, as a short reference card per technology that keeps the cryptographic jobs distinct, rather than one narrative page per algorithm.
-- **Reusable templates and reference tools** belong in `/resources/`; keep `/resources/` a focused practical toolkit rather than a catch-all archive.
+- **Records and reference tools** belong in `/resources/`. Add a record only when a practice produces it and no existing record holds it; keep `/resources/` the record set rather than a catch-all archive, and send lists of cited works to `/standards/`.

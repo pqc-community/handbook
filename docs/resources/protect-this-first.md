@@ -2,19 +2,54 @@
 title: Protect this first
 sidebar_label: Protect this first
 displayed_sidebar: resourcesSidebar
-description: Follow a fictional UK manufacturer through the decision note and charter, inventory, supplier answers, the migration plan, a change and its evidence, and review.
+description: Every migration record filled in for one fictional UK manufacturer, from the decision note and charter through inventory, supplier answers, purchase requirements, the plan, a change, review, and the sponsor's report.
 ---
 
-This worked example follows a fictional small manufacturer based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration.
+This worked example shows every record in the [record set](/resources/) filled in for one fictional small manufacturer, in the order the records are used. Each template's filled example is taken from this page, and each record names the same assets, so you can follow one asset from the decision note to the sponsor's report.
+
+The manufacturer is based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration.
 
 The manufacturer has three different migration paths: product designs in a supplier-hosted archive that must remain confidential for 15 years under the company's own retention policy; a product sensor whose firmware verifier cannot be updated after shipment, together with the key the manufacturer signs its firmware with; and ordinary office laptops that receive standard supplier updates. The UK National Cyber Security Centre (NCSC) milestones are used as UK planning targets. NIST standards are cited only as technical references, not as UK deadlines.
 
 ## Initial facts
 
-- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The managing director accepted the [decision note](/resources/decision-note/) on 2026-07-13, and the [programme charter](/resources/programme-charter/) was agreed on 2026-08-03 (fictional); both pages use this example.
+- **Programme roles**: The managing director is the executive sponsor. The operations director is the migration lead, responsible for the programme records and the review cadence. Asset owners are the product engineering lead, the product security lead, and the IT lead. The managing director accepted the decision note on 2026-07-13, and the programme charter was agreed on 2026-08-03 (fictional).
 - **Product-design archive**: The supplier controls the hosted workspace software; the product engineering lead owns the design data. The company's retention policy requires the designs to remain confidential for at least 15 years.
 - **Product sensor firmware verifier and signing key**: The manufacturer signs the sensor's firmware with its own key, and each sensor checks that signature against a trust anchor held in write-protected boot ROM. The verifier cannot accept a replacement trust anchor after the sensor ships, so the product security lead needs to resolve the signature path before production design freeze, planned for 2027-06-30 (fictional).
 - **Office laptops**: Standard browsers and operating systems are under vendor support and follow the commodity supplier-update path. No exception has been identified.
+
+## Decision note
+
+The [decision note](/resources/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path.
+
+| asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Product-design archive in supplier-hosted workspace | yes (15 years under the company retention policy) | no | no | no (supplier-hosted service) | urgent adopter | full | Long-lived confidentiality | set up the programme | operations director | 2026-08-03 | managing director, 2026-07-13 |
+| Firmware verifier for product sensor | no (the verifier holds no confidential data) | yes (boot ROM trust anchor) | yes (the manufacturer signs the sensor's firmware) | yes (own product) | urgent adopter | full | Hard-to-change systems | set up the programme | operations director | 2026-08-03 | managing director, 2026-07-13 |
+| Office laptops | no (design files are kept in the archive; period for the IT lead to confirm) | no | no | no (supported commodity software) | regular adopter | short | Vendor-managed software | keep commodity software updated | IT lead | 2026-08-03 | managing director, 2026-07-13 |
+
+## Programme charter
+
+Because two assets are on the full path, the managing director agrees a [programme charter](/resources/programme-charter/) naming the roles, the first phase, and the reporting.
+
+| field | entry |
+| --- | --- |
+| goal | Keep product designs confidential against future quantum attack, secure the product sensor's signature path before production design freeze, and keep office IT on supported supplier updates. |
+| in scope | product-design archive; product sensor firmware verifier and its signing key; office laptops, on the supplier-update path |
+| out of scope | systems not yet on the inventory, until the first-pass inventory is complete |
+| done for this phase | inventory rows for all three assets, including the sensor's firmware-signing key; written supplier answers for the archive; a supported signature option for the sensor, or an escalation to the sponsor, before production design freeze on 2027-06-30 |
+| executive sponsor | managing director |
+| migration lead | operations director |
+| asset owners | product engineering lead (archive); product security lead (sensor); IT lead (laptops) |
+| procurement | procurement manager |
+| legal or risk | company secretary |
+| operations | IT lead |
+| first budget line | discovery and supplier engagement, from the operations budget |
+| budget revisit | at the first quarterly review after the migration plan has an order |
+| reporting | monthly report from the migration lead to the sponsor; quarterly review while any line is first in its job's order |
+| report triggers | the workspace supplier's release date moves; no supported sensor signature option three months before design freeze |
+| people told | asset owners, procurement, and IT by 2026-08-14; the workspace supplier and shortlisted microcontroller suppliers by written question |
+| agreed by | managing director, 2026-08-03 |
 
 ## Inventory records
 
@@ -39,6 +74,14 @@ The product engineering lead records the workspace supplier's written answer in 
 | Fictional design-platform supplier | Workspace 4.2 (fictional) | Product-design archive in supplier-hosted workspace | signatures | When will the hosted archive sign or verify with a post-quantum algorithm? | 2026-08-14 | 2026-09-14 | The letter says Workspace 4.2 does not include post-quantum signing changes and gives no date. | 2026-09-04 | Fictional supplier letter, 2026-09-04 | vague | written signature-support plan due 2026-12-01 | track signatures as a separate plan line |
 | Fictional design-platform supplier | Workspace 4.1 and 4.2 (fictional) | Product-design archive in supplier-hosted workspace | key establishment (stored data) | Which algorithm or scheme protects the key wrapping of stored files, and when does support for Workspace 4.1 end? | 2026-08-14 | 2026-09-14 | The letter of 2026-09-04 does not answer either question. | not answered | Fictional supplier letter, 2026-09-04 | missing | written answer due 2026-12-01 | do not count stored-data protection as migrated |
 | Fictional microcontroller supplier | next microcontroller family (fictional) | Firmware verifier for product sensor | non-updatable verifier | Does the boot verifier support a NIST-approved post-quantum signature, and how is the trust anchor provisioned? | 2026-10-05 | 2026-11-02 | The reply says a post-quantum boot verifier is planned for the next family, without naming the scheme, a date, or how the trust anchor is provisioned. | 2026-10-30 | Fictional supplier email, 2026-10-30 | vague | written answer naming the scheme, trust-anchor provisioning, and sample date, due 2026-12-15 | do not select; the sensor verifier stays blocked |
+
+## Purchase requirements
+
+The sensor's microcontroller has not yet been selected, so procurement makes a post-quantum signature option a condition of selection on the [purchase requirements record](/resources/purchase-requirements/). No shortlisted supplier has met it yet.
+
+| asset | job | purchase or renewal | supplier | product and version | requirement | decide by | supplier commitment | support until | evidence | owner | status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Firmware verifier for product sensor | non-updatable verifier | selection of the microcontroller for the product sensor | Fictional microcontroller supplier | next microcontroller family (fictional) | a boot verifier that checks a standards-based post-quantum signature scheme, named with the standard it follows, with the trust-anchor provisioning method and a sample date, as a condition of selection | 2027-06-30 (production design freeze, fictional) | none yet; the reply of 2026-10-30 is vague (fictional supplier email) | unknown | a written answer naming the scheme, trust-anchor provisioning, and sample date, due 2026-12-15; samples for size and boot-time tests | procurement manager with the product security lead | not met, 2026-11-10 |
 
 ## Migration plan
 
@@ -76,7 +119,7 @@ The sensor verifier row remains blocked because the replacement signature and tr
 
 ## Subsequent review
 
-At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier responses, archive pilot evidence, sensor verifier plan, and laptop row. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 2026-12-01, the sensor on 2026-12-15, and the archive production check at the quarterly review on 2027-02-10, because the programme reviews every three months while a line is first in its job's order. The operations director reported the outcome to the managing director the same day:
+At the review on `2026-11-10`, the manufacturer reopened the migration plan, supplier responses, archive pilot evidence, sensor verifier plan, and laptop row. It updated the archive's inventory row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirmed that design files are opened from the archive rather than stored on laptops, so laptop data falls under the six-year office-records policy, and recorded the installed versions. The [review log](/resources/review-log/) records each item with its own owner, status, and next review: the archive and laptop updates are closed, and five items stay open. The supplier-answer items return on 2026-12-01, the sensor on 2026-12-15, and the archive production check at the quarterly review on 2027-02-10, because the programme reviews every three months while a line is first in its job's order. The review log holds each item:
 
 | date | record | asset | job | item | owner | status | next review |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -87,6 +130,25 @@ At the review on `2026-11-10`, the manufacturer reopened the migration plan, sup
 | 2026-11-10 | change record | Product-design archive in supplier-hosted workspace | key establishment | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2027-02-10 |
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment; signatures | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | inventory record | Office laptops | key establishment; signatures | confirm the confidentiality period and record installed versions: 6 years under the office-records policy (fictional), with supported browser and operating-system versions recorded from the device-management console | IT lead | closed 2026-11-10 | not applicable |
+
+## Progress report
+
+The operations director reported the outcome to the managing director the same day on the [progress report](/resources/progress-report/), one field per job, written from the plan and the review log:
+
+| field | entry |
+| --- | --- |
+| date | 2026-11-10 |
+| reported by | operations director (migration lead) |
+| reported to | managing director (executive sponsor) |
+| records reviewed | migration plan; vendor response log; change record for the archive pilot; inventory rows for the archive and the laptops; review log |
+| key establishment | Product-design archive in supplier-hosted workspace: staging pilot passed on 2026-10-21 with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated; stored-data key wrapping still unanswered by the supplier. Office laptops: on supported versions, tracked on the supplier-update path. |
+| signatures | Product-design archive in supplier-hosted workspace: the supplier has given no signature date. Firmware-signing key for product sensor: scheme to be chosen with the verifier option; where the key is held not yet recorded. Office laptops: tracked on the supplier-update path. |
+| non-updatable verifier | Firmware verifier for product sensor: no supported option; the microcontroller supplier's reply was vague. |
+| blocked | Firmware verifier for product sensor: no supported signature and trust-root option; resolve before production design freeze on 2027-06-30 (fictional). |
+| milestones at risk | none at this review; the sensor's design-freeze milestone is at risk if no option is found by 2027-03-31 |
+| decisions needed | none at this review; escalation to the managing director on 2027-03-31 if there is still no supported sensor option |
+| next review | 2026-12-01 (archive supplier answers); 2026-12-15 (microcontroller supplier's answer); 2027-02-10 (quarterly review) |
+| sponsor response | noted by the managing director, 2026-11-10; no decision needed |
 
 ## Rejected alternative
 
@@ -100,6 +162,7 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 
 ## Related pages
 
+- [Resources: the record set](/resources/)
 - [Decision note](/resources/decision-note/)
 - [Programme charter](/resources/programme-charter/)
 - [Inventory the cryptography](/migration-practices/inventory/)
@@ -107,6 +170,7 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 - [Decide what to migrate first](/migration-practices/priority/)
 - [Work with suppliers](/migration-practices/suppliers/)
 - [Vendor response log](/resources/vendor-response-log/)
+- [Purchase requirements](/resources/purchase-requirements/)
 - [Migration plan](/resources/migration-plan/)
 - [Choosing an option](/technology-options/choosing/)
 - [TLS and web services](/technology-options/tls/)
@@ -116,4 +180,5 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 - [Change record](/resources/change-record/)
 - [Review and report](/migration-practices/subsequent-review/)
 - [Review log](/resources/review-log/)
+- [Progress report](/resources/progress-report/)
 - [Vendor-managed software route](/routes/vendor-managed-software/)

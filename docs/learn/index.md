@@ -85,4 +85,4 @@ Use the [glossary](/resources/glossary/) for definitions while reading.
 
 - [Homepage situation chooser](/)
 - [Not sure which route applies](/routes/not-sure/)
-- [Curated references](/resources/curated-references/)
+- [Standards](/standards/)

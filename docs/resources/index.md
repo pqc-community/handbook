@@ -1,63 +1,86 @@
 ---
-title: Post-quantum migration resources
+title: Migration records
 sidebar_label: Resources
 displayed_sidebar: resourcesSidebar
-description: Work products and reference pages grouped by route, with who uses each one and the record it produces.
+description: The linked records a migration lead sets up, fills in, and keeps to show a post-quantum migration's progress, in order of use, with how they connect and a download of the full set.
 ---
 
-These pages are the records and references that route pages point to. Each entry names who it is for and what to file when the step is done.
+These are the records a migration lead keeps to show what has been decided, asked, required, changed, and reviewed in a post-quantum migration. Each practice and technology card writes to them, and together they are the evidence: when a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement. [Protect this first](/resources/protect-this-first/) shows the whole set filled in for one fictional organisation.
 
-## Vendor-managed software
+You do not need every record on day one. A short-path organisation, running only supported commodity software, keeps the decision note, the inventory, purchase requirements, and the review log; the full path uses all nine.
 
-Route: [Mostly standard, vendor-managed software](/routes/vendor-managed-software/).
+## The records, in order of use
 
-- [Vendor response log](/resources/vendor-response-log/) — **Reader:** someone on the vendor-managed route with no exception. **Output:** rows for any supplier you ask in writing, such as at a renewal or when a product leaves support, and either a note that no exception applies or the name of the route moved to.
-- [Review log](/resources/review-log/) — **Reader:** someone who has reopened records after [subsequent review](/migration-practices/subsequent-review/) on this route. **Output:** a dated line for what was reviewed, what stayed unresolved, and the next review date.
+| Record | Filled by | What it holds | Read next by |
+| --- | --- | --- | --- |
+| [Decision note](/resources/decision-note/) | [Decide whether to act](/migration-practices/diagnose/) | One row per asset: the four answers, the urgency category, the path, and the sponsor's acceptance | The charter, for assets on the full path; the inventory, for every asset |
+| [Programme charter](/resources/programme-charter/) | [Set up the programme](/migration-practices/programme/) | Goal, scope, named roles, first budget line, reporting, and report triggers | Every later record, for owners; the progress report, for its cadence and triggers |
+| [Inventory record](/resources/inventory-record/) | [Inventory the cryptography](/migration-practices/inventory/), [Keep commodity software updated](/migration-practices/commodity-software/), and every technology card | One row per asset, with its algorithms for each job, dependencies, what a scan cannot see, and confidence | The migration plan, which orders its assets; the vendor log, for what to ask |
+| [Vendor response log](/resources/vendor-response-log/) | [Work with suppliers](/migration-practices/suppliers/) and every technology card | One row per supplier answer, product, version, and job, with the judgement and follow-up | The plan's `supplier readiness`; the review log, for follow-ups |
+| [Purchase requirements](/resources/purchase-requirements/) | Work with suppliers, step 5, and the identity, Kerberos, firmware, cloud, and OT cards | One row per purchase or renewal and job: the requirement, the supplier's commitment, and whether it was met | The plan's `next action`; the review log, for any requirement not met |
+| [Migration plan](/resources/migration-plan/) | [Decide what to migrate first](/migration-practices/priority/), [Plan the migration](/migration-practices/plan/), and every technology card | One row per asset and job: the order and why, the applicable timeline, the four separate dates, and the next review | The change record, one per change it schedules |
+| [Change record](/resources/change-record/) | [Choosing an option](/technology-options/choosing/), [Make and verify one change](/migration-practices/implementation/), and most technology cards | One change to one asset and job: the option and authority, tests, rollback, deployed-state check, and evidence | The inventory and plan, updated with the result; the review log, for what is still open |
+| [Review log](/resources/review-log/) | [Review and report](/migration-practices/subsequent-review/) and the technology cards for drafts and exceptions | One row per item reviewed, with its record, asset, job, owner, status, and next review | The progress report; the next review |
+| [Progress report](/resources/progress-report/) | Review and report | One report per review: progress per job, what is blocked, milestones at risk, decisions needed, and the sponsor's response | The sponsor; the review log, for any decision taken |
 
-## Long-lived confidentiality
+## How the records connect
 
-Route: [Long-lived confidentiality](/routes/long-lived-confidentiality/).
+```mermaid
+flowchart TD
+    DN[Decision note] --> CH[Programme charter]
+    DN --> INV[Inventory record]
+    INV --> VRL[Vendor response log]
+    INV --> PRQ[Purchase requirements]
+    VRL --> PLAN[Migration plan]
+    PRQ --> PLAN
+    INV --> PLAN
+    PLAN --> CR[Change record]
+    CR --> RL[Review log]
+    PLAN --> RL
+    VRL --> RL
+    RL --> REP[Progress report]
+    CH --> REP
+```
 
-- [Inventory record](/resources/inventory-record/) — **Reader:** someone who has listed systems with a long data confidentiality period. **Output:** a first-pass inventory row per system, with `known` or `unknown` confidence.
-- [Migration plan](/resources/migration-plan/) — **Reader:** someone with an inventory before budgeting work on long-lived assets. **Output:** an order for those assets by job, with the reason, including unknowns that stay on the list.
+Three things join the rows:
 
-## Hard to change
+- **`asset`** is the name the inventory gives each system, service, product, or key. Every row-based record uses the same name, so one asset can be followed from its decision-note row to the sponsor's report. A row that covers several assets lists them separated by semicolons; a review item about the programme as a whole uses `programme`.
+- **`job`** is one of `key establishment`, `signatures`, or `non-updatable verifier`, with a qualifier in brackets where one job needs separate work, such as `key establishment (stored data)`. The plan, vendor log, purchase requirements, change record, and review log use these values; the inventory holds one algorithm cell per job instead, and the progress report has one field per job. Keep the jobs on separate rows, because their urgency and coordination differ.
+- **`product and version`** joins a supplier answer or purchase requirement to the `version` cell on the inventory, because a supplier's answer applies to a named release.
 
-Route: [Products or systems that may be hard to change](/routes/hard-to-change-systems/).
+An `unknown` is carried forward, not filled in with a guess. An `unknown` algorithm leaves the inventory row's `confidence` as `unknown`; a missing supplier answer becomes `missing` on the vendor log and in the plan's `supplier readiness`; a change with no supported option is recorded as `blocked`, with a resolve-by date, on the change record; and each of them stays an `open` item on the review log, with an owner and a next review date, until it is resolved. The progress report lists what is still blocked.
 
-- [Change record](/resources/change-record/) — **Reader:** someone finishing [implementation](/migration-practices/implementation/) on a hard-to-change product. **Output:** the option chosen, the test and deployment evidence, and the deployed-state check.
-- [Vendor response log](/resources/vendor-response-log/) — **Reader:** someone recording supplier answers while planning a release on this route. **Output:** judgement rows for each question, with follow-up dates where needed.
+## Rules for every record
 
-## Organisation-wide
+- Record `unknown` in any cell you cannot verify yet, and `not applicable` where a job or field does not apply.
+- Write dates in record tables as ISO 8601, such as `2026-11-10`.
+- Separate several values in one cell with semicolons, labelling each where it helps.
+- Keep keys, secrets, and personal data out of the files; name the system only.
+- Store the records with the access controls of the asset list they describe, off public tickets and unlocked shared drives.
 
-Route: [Coordinating a migration across the organisation](/routes/organisation-wide/).
+## Download the set
 
-- [Programme charter](/resources/programme-charter/) — **Reader:** a sponsor or migration lead starting a programme. **Output:** a one-page charter with the goal, scope, named roles, first budget line, and reporting.
-- [Migration plan](/resources/migration-plan/) — **Reader:** a migration lead coordinating many assets. **Output:** one row per asset and job with an owner, its place in the order, an applicable timeline, the four separate dates (supplier release, testing, production deployment, end of support), and a subsequent-review date.
-- [Change record](/resources/change-record/) — **Reader:** someone asked what supports a claim that a change is complete. **Output:** the result, stating what has and has not been shown, and the evidence behind it.
-- [Review log](/resources/review-log/) — **Reader:** someone due to reopen programme records after verification and communication. **Output:** an updated review log and the next review date.
+Each record page has a blank table and a CSV. To set up all nine at once, download [pqc-handbook-records.zip](/downloads/pqc-handbook-records.zip), which holds every blank CSV. The charter and progress report CSVs run down the page as `field,entry` pairs; the others have one header row.
 
-## Ask a supplier
+## Starting from a route
 
-Route: [Ask a supplier](/routes/ask-a-supplier/).
+Each situation route names the records it produces. Where you start depends on the route:
 
-- [Vendor response log](/resources/vendor-response-log/) — **Reader:** procurement or an asset owner preparing or following up supplier questions. **Output:** at least one decision-ready row with the product, the algorithm or scheme, the answer, and the judgement.
+| Route | Start with |
+| --- | --- |
+| [Vendor-managed software](/routes/vendor-managed-software/) | Inventory versions, purchase requirements, and the review log |
+| [Long-lived confidentiality](/routes/long-lived-confidentiality/) | Inventory, then the migration plan |
+| [Hard-to-change systems](/routes/hard-to-change-systems/) | Vendor response log, purchase requirements, and the change record |
+| [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record in order |
+| [Ask a supplier](/routes/ask-a-supplier/) | Vendor response log |
+| [Not sure](/routes/not-sure/) | Decision note |
 
-## Not sure
+## Reference
 
-Route: [Not sure which route applies](/routes/not-sure/).
+- [Glossary](/resources/glossary/): plain-language definitions of the terms the records and pages use.
+- [Standards](/standards/): summaries of every standard, directive, and migration guide the handbook cites, grouped by their role in the transition, with links to the official texts.
 
-This route's output is a named situation route or a list of unknowns and the person who will close them. The primary next page is [Decide whether to act](/migration-practices/diagnose/), which leads to an [inventory record](/resources/inventory-record/) when the handbook applies.
-
-- [Decision note](/resources/decision-note/) — **Reader:** someone deciding whether post-quantum migration applies. **Output:** one row per asset with the answers to the four questions, the urgency category and path, and the owner of the next step, accepted by the sponsor.
-
-## Edition reference
-
-These pages sit on the resources sidebar for every reader.
-
-- [Protect this first](/resources/protect-this-first/) — **Reader:** anyone who wants an illustration across selected records. **Output:** a walkthrough of one fictional UK manufacturer's rows, not a template or sector guide for a real organisation.
-- [Glossary](/resources/glossary/) — **Reader:** someone encountering a short form in a lesson or practice page. **Output:** plain-language definitions linked to the page that uses each term.
-- [Curated references](/resources/curated-references/) — **Reader:** someone choosing a longer authority document. **Output:** a grouped index of cited standards, directives, and migration guides.
+The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) urges organisations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it; the inventory and vendor log hold that work.
 
 ## Sources
 
@@ -65,6 +88,7 @@ These pages sit on the resources sidebar for every reader.
 
 ## Related pages
 
-- [Curated references](./curated-references.md)
-- [Glossary](./glossary.md)
-- [Homepage](/)
+- [Protect this first](/resources/protect-this-first/)
+- [Migration practices](/migration-practices/)
+- [Technology options](/technology-options/)
+- [Glossary](/resources/glossary/)
