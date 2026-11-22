@@ -58,6 +58,7 @@ A product that is out of support, or has no such plan, uses the Hard-to-change s
 ### When you cannot answer or cannot choose
 
 - Write each `unknown` down on the asset's row, say in its brackets who will close it, and set the `confirm by` date. Do not add "(all five conditions hold)" to a row while one of its answers is still `unknown`.
+- Until it is closed, count an `unknown` answer to question B, C, or D as `yes` when you use the table in step 2 and the routes in step 3, as question A already does for a period you do not know. Correct the path and route when the answer is confirmed.
 - Choosing a route does not assess risk. When you still cannot choose, the risk owner or the sector authority chooses.
 - A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as the Organisation-wide route.
 

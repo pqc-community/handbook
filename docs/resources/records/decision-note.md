@@ -13,7 +13,7 @@ Use this note when you [decide whether to act](/migration-practices/diagnose/): 
 
 asset, A long-lived confidentiality, B fixed verifier, C others rely on your signatures, D bespoke systems, category, path, route, next step, owner, confirm by, accepted by
 
-Give each asset its own row, because one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; for question A, answer `yes` for data that may be long-lived while its period is unknown, until the data owner confirms it, as [Decide whether to act](/migration-practices/diagnose/) says. The questions are:
+Give each asset its own row, because this handbook applies the urgent and regular adopter categories per asset: one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; [Decide whether to act](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) says how an `unknown` answer counts until it is closed. The questions are:
 
 - **A.** Is any data protected by public-key cryptography required to stay confidential for many years?
 - **B.** Does any product or device you build or run check signatures with a key it cannot replace after shipment?
@@ -46,7 +46,6 @@ The note records a decision, not a risk assessment. Where the answers are unclea
 ## Sources
 
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [The PQC Migration Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
-- EU NIS Cooperation Group, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025. [Roadmap (PDF)](https://ec.europa.eu/newsroom/dae/redirection/document/117507)
 
 ## Related pages
 
