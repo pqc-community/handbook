@@ -13,7 +13,7 @@ Top navigation stays restrained. The logo and **PQC Handbook** title link to `/`
 5. **Resources** (`resourcesSidebar`)
 6. **GitHub**
 
-**Situation routes** (`routesSidebar`) are intentionally omitted from the top navbar so top-level navigation stays uncluttered. Visitors enter `/routes/*` from the homepage situation chooser or the footer, and `routesSidebar` keeps all six routes visible once inside a route. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
+**Situation routes** (`routesSidebar`) are intentionally omitted from the top navbar so top-level navigation stays uncluttered. Visitors enter `/routes/*` from the homepage path chooser or the footer, and `routesSidebar` keeps the overview, both paths, and the two asset tracks visible once inside a route. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
 
 Do not use standards-body or algorithm names (such as NIST, ETSI, ML-KEM, or FIPS) as top-level navigation labels; organise top-level navigation around reader jobs.
 
@@ -35,12 +35,12 @@ Linking guidance:
 ## Site Model
 
 ```text
-Homepage Situation Chooser (/)
+Homepage Path Chooser (/)
   ├── Situation Routes (/routes/*) ──► Migration Practices, Options, Standards, and Resources
   └── Learn the Basics (/learn/*)  ──► Plain-English lessons + optional Explainers
 ```
 
-- **Situation Chooser (`/`) and Routes (`/routes/*`)**: Route visitors by operational context (*vendor-managed software*, *long-lived confidentiality*, *hard-to-change systems*, *organisation-wide coordination*, *ask a supplier*, or *not sure*) into an ordered sequence of reference pages without duplicating those pages into separate silos.
+- **Path Chooser (`/`) and Routes (`/routes/*`)**: Route visitors into an ordered sequence of reference pages without duplicating those pages into separate silos. `/routes/` shows two paths and three asset tracks. The short path is *vendor-managed software*. The full path is *organisation-wide*, which runs the programme and sends each asset to its track: *vendor-managed software* for commodity assets, *long-lived confidentiality* (driven by the data confidentiality period), or *hard-to-change systems* (driven by change lead time, relying parties, and non-updatable verifiers). Each track page carries its own deadlines and technology cards. [Decide whether to act](/migration-practices/diagnose/) owns every rule that chooses a path or route, including the vendor-managed route's five conditions and what to do when an answer is unknown; route pages link to those rules rather than restating them. Each route page says who it is for, in terms of those answers, its ordered steps (each a practice and the record it fills), its output records, when to leave and where to go, and the worked example that shows it. `npm test` and `npm run check` fail if a route page or the overview does not link Decide whether to act and a record page, or if a decision-note `route` value is not one of the three track names, optionally followed by a bracketed qualifier.
 - **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/reference/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
@@ -76,12 +76,11 @@ Homepage Situation Chooser (/)
 /learn/explainers/quantum-safe-claims/
 /learn/explainers/timelines/
 
+/routes/
 /routes/vendor-managed-software/
+/routes/organisation-wide/
 /routes/long-lived-confidentiality/
 /routes/hard-to-change-systems/
-/routes/organisation-wide/
-/routes/ask-a-supplier/
-/routes/not-sure/
 
 /standards/
 /standards/post-quantum/
@@ -199,7 +198,7 @@ Homepage Situation Chooser (/)
 
 ## Homepage and Footer Routing
 
-- **Homepage (`src/pages/index.tsx`)**: Introduces the handbook and routes visitors cleanly without competing navigation systems — leading with the six situation routes under `/routes/*`, a distinct entry into `/learn/`, a preview pointing to `/resources/examples/protect-this-first/`, and direct entry cards for the four reference sections.
+- **Homepage (`src/pages/index.tsx`)**: Introduces the handbook and routes visitors cleanly without competing navigation systems — leading with the two paths and the two asset tracks under `/routes/*`, with links to Decide whether to act and the `/routes/` overview, a distinct entry into `/learn/`, a preview pointing to `/resources/examples/protect-this-first/`, and direct entry cards for the four reference sections.
 - **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Routes**, **Learn**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
 
 ## Section Placement and Expansion Rules

@@ -8,7 +8,7 @@ Mission, audience, editorial stance, sister-site boundaries, and scope exclusion
 
 A vendor-neutral handbook (`https://pqchandbook.com`) for security, engineering, product, procurement, and risk professionals transitioning public-key cryptography to post-quantum standards without in-house cryptographers.
 
-- **Promise**: Situation routes, repeatable practices, sourced authority positions, and downloadable records so leads can plan, prioritise, and evidence a migration.
+- **Promise**: Situation routes (two paths and the asset tracks they send systems to), repeatable practices, sourced authority positions, and downloadable records so leads can plan, prioritise, and evidence a migration.
 - **Limit**: Not a formal risk assessment, and not a substitute for specialist cryptography advice on large bespoke estates, CNI, or regulated systems. Pages surface this boundary and route hard cases to the organisation's risk owner, sector authority, or specialist.
 
 ## Audience

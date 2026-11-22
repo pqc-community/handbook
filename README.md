@@ -20,7 +20,7 @@ Read these four root documents before changing structure, prose, or styling:
 ### Handbook Content (`docs/`)
 
 - [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
-- [Situation Routes](./docs/routes/not-sure.md) (`docs/routes/`) — Six operational routes entered from the homepage situation chooser
+- [Situation Routes](./docs/routes/index.md) (`docs/routes/`) — Two paths (short: vendor-managed software; full: organisation-wide) and the asset tracks the full path sends each asset to, entered from the homepage path chooser
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
@@ -54,9 +54,9 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
+| `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, routes, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
-| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, admonition syntax, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
+| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, admonition syntax, route pages linking Decide whether to act and a record, decision-note route values, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
 | `npm run serve` | Serves the production `build/` output locally |
