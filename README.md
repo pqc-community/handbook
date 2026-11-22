@@ -24,7 +24,7 @@ Read these four root documents before changing structure, prose, or styling:
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
-- [Resources](./docs/resources/index.md) — What a migration lead takes away and uses, in three groups: the [migration records](./docs/resources/records/index.md), nine CSV-backed records in order of use, with how they connect and a zip of every blank CSV; the [Protect this first](./docs/resources/examples/protect-this-first.md) worked example; and the [Glossary](./docs/resources/reference/glossary.md)
+- [Resources](./docs/resources/index.md) — What a migration lead takes away and uses, in three groups: the [migration records](./docs/resources/records/index.md), nine CSV-backed records in order of use, with how they connect and a zip of every blank CSV; the [Protect this first](./docs/resources/examples/protect-this-first.md) and [Stay on supplier updates](./docs/resources/examples/stay-on-supplier-updates.md) worked examples, for the full and short paths; and the [Glossary](./docs/resources/reference/glossary.md)
 
 ## Getting Started
 

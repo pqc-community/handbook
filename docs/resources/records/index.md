@@ -7,7 +7,7 @@ description: The linked records a migration lead sets up, fills in, and keeps to
 
 These are the records a migration lead keeps to show what has been decided, asked, required, changed, and reviewed in a post-quantum migration. Each practice and technology card writes to them, and together they are the evidence: when a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement. [Protect this first](/resources/examples/protect-this-first/) shows the whole set filled in for one fictional organisation.
 
-You do not need every record on day one. A short-path organisation, running only supported commodity software, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine.
+You do not need every record on day one. A short-path organisation, running only supported commodity software and supplier-hosted services, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
 
 ## The records, in order of use
 
@@ -90,6 +90,7 @@ The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guid
 
 - [Resources](/resources/)
 - [Protect this first](/resources/examples/protect-this-first/)
+- [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/)
 - [Migration practices](/migration-practices/)
 - [Technology options](/technology-options/)
 - [Glossary](/resources/reference/glossary/)

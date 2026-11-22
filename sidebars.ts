@@ -326,7 +326,7 @@ const sidebars: SidebarsConfig = {
         slug: '/resources/examples/',
       },
       collapsed: false,
-      items: ['resources/examples/protect-this-first'],
+      items: ['resources/examples/protect-this-first', 'resources/examples/stay-on-supplier-updates'],
     },
     {
       type: 'category',

@@ -12,7 +12,7 @@ The rest of the handbook says what to do. This section holds what you take away 
 | Group | What you do with it | Start with |
 | --- | --- | --- |
 | [Records](/resources/records/) | Set up, fill in, and keep. Nine linked records show what has been decided, asked, required, changed, and reviewed, from the decision note to the sponsor's progress report. Each has a blank table and a CSV, and one download holds them all. | The [records overview](/resources/records/), which shows the records in order of use and how they connect; then the [decision note](/resources/records/decision-note/) |
-| [Examples](/resources/examples/) | Follow. A worked example shows every record filled in for one fictional organisation, so you can see one asset traced from the first decision to the sponsor's report. | [Protect this first](/resources/examples/protect-this-first/) |
+| [Examples](/resources/examples/) | Follow. Worked examples show the records filled in for fictional organisations, so you can see one asset traced from the first decision to the sponsor's report: every record on the full path, and the smaller set on the short path. | [Protect this first](/resources/examples/protect-this-first/) for the full path; [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) for the short path |
 | [Reference](/resources/reference/) | Look up. Plain-language definitions of the terms the records and pages use. | [Glossary](/resources/reference/glossary/) |
 
 Most readers start with the records. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (20 March 2025), aimed primarily at technical decision-makers and risk owners of large organisations, operators of critical national infrastructure, and companies with bespoke IT, set defining migration goals, a full discovery exercise, and an initial migration plan as the first milestones, by 2028. The decision note, inventory, and migration plan are where that work is written down, whichever authority's timeline applies to you.
@@ -30,6 +30,7 @@ Most readers start with the records. The UK NCSC's [migration timelines](https:/
 
 - [Migration records](/resources/records/)
 - [Protect this first](/resources/examples/protect-this-first/)
+- [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/)
 - [Glossary](/resources/reference/glossary/)
 - [Migration practices](/migration-practices/)
 - [Standards](/standards/)

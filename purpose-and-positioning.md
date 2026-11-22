@@ -25,7 +25,7 @@ Migration is an ongoing operational capability, not a single cutover:
 - **Standards are not universal deadlines** — a FIPS standardises an algorithm; milestones belong to named authorities and audiences.
 - **Vendor release is not deployment** — release, buyer testing, cutover, and end of support are separate dates; unanswered items stay `unknown` until a subsequent review.
 
-Use one fictional **UK-based small manufacturer** across [Protect this first](./docs/resources/examples/protect-this-first.md) and selected work-product examples. It is a business illustration, not sector-specific or critical-infrastructure guidance; all company and supplier facts, product versions, and event dates are fictional.
+Use one fictional **UK-based small manufacturer** across [Protect this first](./docs/resources/examples/protect-this-first.md) and the record pages' filled examples. A second fictional **UK marketing agency** in [Stay on supplier updates](./docs/resources/examples/stay-on-supplier-updates.md) illustrates the short path only; do not reuse it on other pages. Both are business illustrations, not sector-specific or critical-infrastructure guidance; all company and supplier facts, product versions, and event dates are fictional.
 
 ## Sister Sites
 
