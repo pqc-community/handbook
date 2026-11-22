@@ -198,7 +198,7 @@ Homepage Path Chooser (/)
 
 ## Homepage and Footer Routing
 
-- **Homepage (`src/pages/index.tsx`)**: Introduces the handbook and routes visitors cleanly without competing navigation systems — leading with the two paths and the two asset tracks under `/routes/*`, with links to Decide whether to act and the `/routes/` overview, a distinct entry into `/learn/`, a preview pointing to `/resources/examples/protect-this-first/`, and direct entry cards for the four reference sections.
+- **Homepage (`src/pages/index.tsx`)**: A calm reference entry point, not a product landing page, that introduces the handbook and routes visitors without competing navigation systems. A Deep Teal hero gives the tagline, one modest link to Decide whether to act, and the specialist-advice limit. Three short lists follow, each row a link with a one-line description taken from the page it points to: the situation routes (both paths and both asset tracks, with a link to the `/routes/` overview), the two worked examples, and background and reference (Learn the basics and the four reference sections). No sales copy, feature grids, large or repeated buttons, gradients, or imagery.
 - **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Routes**, **Learn**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
 
 ## Section Placement and Expansion Rules

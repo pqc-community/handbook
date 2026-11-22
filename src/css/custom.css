@@ -12,6 +12,11 @@
   --ifm-font-weight-semibold: 700;
   --ifm-color-warning: #ff9f45;
   --ifm-code-font-size: 95%;
+  /* Homepage brand colours (brand-guidelines.md): Deep Teal hero, Surface Light text,
+     and a darker teal for text links on Surface Light, where Primary Cyan is too pale. */
+  --pqc-deep-teal: #013b4e;
+  --pqc-surface-light: #f5fcfd;
+  --pqc-link-on-light: #006b78;
 }
 
 [data-theme='dark'] {

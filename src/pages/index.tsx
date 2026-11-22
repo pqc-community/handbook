@@ -1,68 +1,128 @@
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+type Entry = {
+  title: string;
+  to: string;
+  kind?: string;
+  text: string;
+};
+
+const routes: Entry[] = [
+  {
+    kind: 'Short path',
+    title: 'Standard, vendor-managed software',
+    to: '/routes/vendor-managed-software/',
+    text: 'Keep supplier updates installed, write post-quantum requirements into purchases and renewals, and review. Also the track for commodity assets on the full path.',
+  },
+  {
+    kind: 'Full path',
+    title: 'Coordinating a migration across the organisation',
+    to: '/routes/organisation-wide/',
+    text: 'Run the programme, send each asset to its track, order the work across tracks, and review and report to the sponsor.',
+  },
+  {
+    kind: 'Track',
+    title: 'Data that needs to stay confidential for years',
+    to: '/routes/long-lived-confidentiality/',
+    text: 'Key establishment for data whose confidentiality period makes harvest-now, decrypt-later the reason to start now.',
+  },
+  {
+    kind: 'Track',
+    title: 'Products or systems that may be hard to change',
+    to: '/routes/hard-to-change-systems/',
+    text: 'Bespoke systems, signatures that others rely on, and verifiers that cannot be updated after shipment.',
+  },
+];
+
+const examples: Entry[] = [
+  {
+    kind: 'Full path',
+    title: 'Protect this first',
+    to: '/resources/examples/protect-this-first/',
+    text: 'Every record filled in for a fictional UK manufacturer, from the decision note to the sponsor’s report: a product-design archive, a product sensor, and office laptops.',
+  },
+  {
+    kind: 'Short path',
+    title: 'Stay on supplier updates',
+    to: '/resources/examples/stay-on-supplier-updates/',
+    text: 'The short-path records for a fictional UK marketing agency that runs only supported devices and a hosted email and office suite.',
+  },
+];
+
+const reference: Entry[] = [
+  {
+    title: 'Learn the basics',
+    to: '/learn/',
+    text: 'Ten short lessons on the cryptography a migration affects, with optional explainers. No mathematics assumed.',
+  },
+  {
+    title: 'Standards',
+    to: '/standards/',
+    text: 'Summaries of standards, government requirements, national positions, and migration guides, with each one’s audience and status.',
+  },
+  {
+    title: 'Migration practices',
+    to: '/migration-practices/',
+    text: 'The repeatable practices in lifecycle order, who leads each one, and the record it produces.',
+  },
+  {
+    title: 'Technology options',
+    to: '/technology-options/',
+    text: 'One card per technology: the job it does and the status of its post-quantum mechanism.',
+  },
+  {
+    title: 'Resources',
+    to: '/resources/',
+    text: 'The migration records to fill in, the worked examples, and the glossary.',
+  },
+];
+
+function EntryList({entries, label}: {entries: Entry[]; label: string}) {
+  return (
+    <ul className={styles.entryList} aria-label={label}>
+      {entries.map((entry) => (
+        <li key={entry.to}>
+          <Link className={styles.entry} to={entry.to}>
+            <span className={styles.entryHead}>
+              {entry.kind ? <span className={styles.entryKind}>{entry.kind}</span> : null}
+              <span className={styles.entryTitle}>{entry.title}</span>
+            </span>
+            <span className={styles.entryText}>{entry.text}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.hero}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={styles.heroTitle}>
           {siteConfig.title}
         </Heading>
-        <p className={styles.heroLead}>
-          Practical, source-backed guidance for deciding what public-key cryptography to migrate, in what order, and how to evidence the transition.
+        <p className={styles.heroLead}>{siteConfig.tagline}.</p>
+        <p className={styles.heroStart}>
+          <Link className={styles.startLink} to="/migration-practices/diagnose/">
+            Start with Decide whether to act
+          </Link>
+          <span>Four questions that put each asset on the short or full path.</span>
         </p>
-        <p className={styles.heroLead}>
-          Not a formal risk assessment, and not a substitute for specialist cryptography advice on large bespoke estates, critical national infrastructure, or regulated systems.
+        <p className={styles.heroLimit}>
+          Not a formal risk assessment, and not a substitute for specialist cryptography advice on large bespoke
+          estates, critical national infrastructure, or regulated systems.
         </p>
       </div>
     </header>
   );
 }
-
-type SituationChoice = {
-  title: string;
-  to: string;
-  text: string;
-};
-
-const paths: SituationChoice[] = [
-  {
-    title: 'Short path: we use only standard, vendor-managed software',
-    to: '/routes/vendor-managed-software/',
-    text: 'Every asset answers no to all four questions on Decide whether to act.',
-  },
-  {
-    title: 'Full path: we are coordinating a migration across the organisation',
-    to: '/routes/organisation-wide/',
-    text: 'Any asset answers yes to one of the four questions. The programme sends each asset to its track.',
-  },
-];
-
-const tracks: SituationChoice[] = [
-  {
-    title: 'We handle data that stays confidential for years',
-    to: '/routes/long-lived-confidentiality/',
-    text: 'Driven by the data confidentiality period.',
-  },
-  {
-    title: 'We own products or systems that may be hard to change',
-    to: '/routes/hard-to-change-systems/',
-    text: 'Driven by change lead time, relying-party coordination, and the service life of verifiers that cannot be updated; also takes products that fail the fifth of Decide whether to act\'s five conditions.',
-  },
-];
-
-const referenceSections = [
-  {title: 'Standards', to: '/standards/'},
-  {title: 'Migration practices', to: '/migration-practices/'},
-  {title: 'Technology options', to: '/technology-options/'},
-  {title: 'Resources', to: '/resources/'},
-];
 
 export default function Home(): ReactNode {
   return (
@@ -71,77 +131,30 @@ export default function Home(): ReactNode {
       description="Practical, source-backed guidance for organisations planning, prioritising, and evidencing a migration to post-quantum cryptography without specialist cryptography staff."
     >
       <HomepageHeader />
-      <main>
-        <section className={styles.choosePath}>
+      <main className={styles.main}>
+        <section className={styles.section}>
           <div className="container">
-            <div className="text--center margin-bottom--lg">
-              <Heading as="h2">Choose your path</Heading>
-              <p>
-                Answer the four questions on <Link to="/migration-practices/diagnose/">Decide whether to act</Link>{' '}
-                first: they put each asset on a path and a route. <Link to="/routes/">All routes</Link> shows how they fit.
-              </p>
-            </div>
-            <div className={styles.choiceGrid}>
-              {paths.map((choice) => (
-                <Link key={choice.title} className={styles.roleCard} to={choice.to}>
-                  <Heading as="h3">{choice.title}</Heading>
-                  <p>{choice.text}</p>
-                </Link>
-              ))}
-            </div>
-            <Heading as="h3" className={clsx('text--center', styles.tracksHeading)}>
-              Asset tracks
-            </Heading>
-            <p className="text--center">
-              Each asset follows one or more of three tracks: these two, or Vendor-managed software for commodity assets.
-              Decide whether to act sets each asset's track.
+            <Heading as="h2">Situation routes</Heading>
+            <p className={styles.sectionIntro}>
+              Decide whether to act places each asset on a path. Each route sets out the steps, the records to keep, and
+              when to change route. <Link to="/routes/">See how the routes fit together</Link>.
             </p>
-            <div className={styles.choiceGrid}>
-              {tracks.map((choice) => (
-                <Link key={choice.title} className={styles.roleCard} to={choice.to}>
-                  <Heading as="h4">{choice.title}</Heading>
-                  <p>{choice.text}</p>
-                </Link>
-              ))}
-            </div>
-            <Link className={clsx(styles.roleCard, styles.learnApart)} to="/learn/">
-              <Heading as="h3">Learn the basics</Heading>
-              <p>Read this for background before you choose a route.</p>
-            </Link>
+            <EntryList entries={routes} label="Situation routes" />
           </div>
         </section>
-        <section className={styles.workedExamplePreview}>
+        <section className={styles.section}>
           <div className="container">
-            <table className={styles.priorityTable}>
-              <thead>
-                <tr>
-                  <th>Asset</th>
-                  <th>Why it is first</th>
-                  <th>Next record</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Product-design archive</td>
-                  <td>Company policy requires 15 years of confidentiality</td>
-                  <td>Migration plan</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>
-              <Link to="/resources/examples/protect-this-first/">The manufacturer example</Link>
+            <Heading as="h2">Worked examples</Heading>
+            <p className={styles.sectionIntro}>
+              Two fictional organisations, with every record they keep filled in.
             </p>
+            <EntryList entries={examples} label="Worked examples" />
           </div>
         </section>
-        <section className={styles.referenceLibrary}>
+        <section className={styles.section}>
           <div className="container">
-            <div className={styles.resourceGrid}>
-              {referenceSections.map((section) => (
-                <Link key={section.title} className={styles.resourceCard} to={section.to}>
-                  <Heading as="h3">{section.title}</Heading>
-                </Link>
-              ))}
-            </div>
+            <Heading as="h2">Background and reference</Heading>
+            <EntryList entries={reference} label="Background and reference" />
           </div>
         </section>
       </main>
