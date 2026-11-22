@@ -1,6 +1,7 @@
-/* Homepage: a Deep Teal hero, then three short reference lists. Colours come from
-   Infima variables and the --pqc-* variables in src/css/custom.css. */
+/* Homepage. Colours come from Infima variables and the --pqc-* variables in
+   src/css/custom.css; nothing here is a raw colour value. */
 
+/* Hero */
 .hero {
   background-color: var(--pqc-deep-teal);
   color: var(--pqc-surface-light);
@@ -10,126 +11,275 @@
 
 .heroTitle {
   color: var(--pqc-surface-light);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 0.75rem;
 }
 
 .heroLead {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.5;
-  max-width: 44rem;
-  margin-bottom: 1.5rem;
+  max-width: 42rem;
+  margin-bottom: 0.75rem;
 }
 
-.heroStart {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.startLink {
-  border: 1px solid var(--pqc-surface-light);
-  border-radius: var(--ifm-global-radius);
-  color: var(--pqc-surface-light);
-  font-weight: 700;
-  padding: 0.4rem 0.9rem;
-}
-
-.startLink:hover,
-.startLink:focus-visible {
-  border-color: var(--ifm-color-primary);
-  color: var(--pqc-surface-light);
-  text-decoration: none;
-}
-
-.startLink:focus-visible,
-.entry:focus-visible {
-  outline: 2px solid var(--ifm-color-primary);
-  outline-offset: 2px;
+.heroAudience {
+  max-width: 42rem;
+  margin-bottom: 1.25rem;
 }
 
 .heroLimit {
   font-size: 0.875rem;
-  max-width: 44rem;
+  max-width: 42rem;
   margin-bottom: 0;
-  opacity: 0.85;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--ifm-color-primary);
+  opacity: 0.9;
 }
 
+/* Sections */
 .section {
-  padding: 2.5rem 0 0.5rem;
+  padding: 3rem 0 0;
 }
 
-.section:last-child {
-  padding-bottom: 2rem;
+.last {
+  padding-bottom: 3.5rem;
 }
 
 .section h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
-.sectionIntro {
-  max-width: 44rem;
-  margin-bottom: 1rem;
+.intro {
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
 }
 
-[data-theme='light'] .main a:not(.entry) {
+.after {
+  margin: 1rem 0 0;
+  max-width: 46rem;
+}
+
+[data-theme='light'] .section p a {
   color: var(--pqc-link-on-light);
   text-decoration: underline;
 }
 
-.entryList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--ifm-color-emphasis-300);
-}
-
-.entryList li {
-  margin: 0;
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
-}
-
-.entry {
-  display: grid;
-  grid-template-columns: minmax(0, 22rem) minmax(0, 1fr);
-  gap: 0.25rem 2rem;
-  padding: 0.9rem 0.5rem;
-  color: inherit;
-  border-left: 3px solid transparent;
-}
-
-.entry:hover,
-.entry:focus-visible {
-  color: inherit;
-  text-decoration: none;
-  border-left-color: var(--ifm-color-primary);
-  background-color: var(--pqc-row-hover);
-}
-
-.entryHead {
+/* Linked boxes (brand cards: outlined, cyan border on hover) */
+.box {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius);
+  color: inherit;
 }
 
-.entryKind {
+.box:hover,
+.box:focus-visible {
+  border-color: var(--ifm-color-primary);
+  background-color: var(--pqc-row-hover);
+  color: inherit;
+  text-decoration: none;
+}
+
+.box:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.boxLabel {
   font-size: 0.8125rem;
   font-weight: 700;
   color: var(--ifm-color-emphasis-700);
 }
 
-.entryTitle {
+.boxTitle {
   font-weight: 700;
+  font-size: 1.05rem;
   color: var(--ifm-heading-color);
-  text-decoration: underline;
-  text-decoration-color: var(--ifm-color-primary);
-  text-underline-offset: 0.2em;
 }
 
-.entryText {
-  color: var(--ifm-font-color-base);
+.boxText {
+  font-size: 0.95rem;
+}
+
+/* Route chooser */
+.chooser {
+  display: flex;
+  flex-direction: column;
+}
+
+.decide {
+  max-width: 40rem;
+  height: auto;
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--pqc-row-hover);
+}
+
+.connector {
+  width: 2px;
+  height: 1.5rem;
+  margin-left: 2rem;
+  background-color: var(--ifm-color-primary);
+}
+
+.pathRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.pathCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.trackGroup {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--ifm-color-primary);
+}
+
+.trackHeading {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.trackRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.track .boxTitle {
+  font-size: 0.95rem;
+}
+
+.track .boxText {
+  font-size: 0.875rem;
+}
+
+/* Three clocks */
+.clockGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.clock {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-top: 3px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-card-border-radius);
+}
+
+.clockJob {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.15rem;
+}
+
+.clockName {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.clockFacts {
+  margin: 0;
+}
+
+.clockFacts dt {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.clockFacts dd {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* Record excerpt */
+.tableWrap {
+  max-width: 100%;
+}
+
+.record {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.record caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.record th,
+.record td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.record thead th {
+  background-color: var(--pqc-row-hover);
+  font-size: 0.875rem;
+}
+
+.record tbody th {
+  font-weight: 700;
+}
+
+/* Reference: Learn the basics leads, then the four reference sections */
+.refGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.refGrid > .ref:first-child {
+  grid-column: 1 / -1;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+/* Light theme: Deep Teal headings and card titles instead of body grey */
+[data-theme='light'] .section h2,
+[data-theme='light'] .boxTitle,
+[data-theme='light'] .clockName {
+  color: var(--pqc-deep-teal);
+}
+
+/* Narrow screens */
+@media screen and (max-width: 996px) {
+  .pathRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trackRow,
+  .clockGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .refGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .refGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -138,14 +288,57 @@
   }
 
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   .heroLead {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
-  .entry {
-    grid-template-columns: minmax(0, 1fr);
+  .section {
+    padding-top: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .record thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .record,
+  .record tbody,
+  .record tr,
+  .record th,
+  .record td {
+    display: block;
+  }
+
+  .record caption {
+    display: block;
+  }
+
+  .record tr {
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: var(--ifm-global-radius);
+  }
+
+  .record th,
+  .record td {
+    border: 0;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .record td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--ifm-color-emphasis-700);
   }
 }
