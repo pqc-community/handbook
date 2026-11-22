@@ -12,13 +12,13 @@ const paths: Node[] = [
     label: 'Short path',
     title: 'Standard, vendor-managed software',
     to: '/routes/vendor-managed-software/',
-    text: 'Every asset answers no. Keep supplier updates installed, write post-quantum requirements into purchases and renewals, and review.',
+    text: 'Every asset answers no to all four questions. Keep supplier updates installed, write post-quantum requirements into purchases and renewals, and review.',
   },
   {
     label: 'Full path',
     title: 'Coordinating a migration across the organisation',
     to: '/routes/organisation-wide/',
-    text: 'Any asset answers yes. Run the programme, send each asset to its track, and report to the sponsor.',
+    text: 'Any asset answers yes, or unknown, to one of them. Run the programme, send each asset to its track, and report to the sponsor.',
   },
 ];
 
@@ -79,7 +79,7 @@ const decisionRows = [
   },
   {
     asset: 'Office laptops',
-    answer: 'No to all four: supported commodity software',
+    answer: 'No to all four: the long-lived designs are kept in the archive; supported commodity software',
     path: 'short',
     route: 'Vendor-managed software',
   },
@@ -197,19 +197,19 @@ function Clocks() {
     <section className={styles.section} aria-labelledby="clocks">
       <div className="container">
         <Heading as="h2" id="clocks">
-          Not one cutover: three jobs, three clocks
+          Three jobs, three clocks
         </Heading>
         <p className={styles.intro}>
-          Public-key cryptography does three jobs, and each has its own reason to move and its own timing. The
-          handbook keeps them on separate lines. <Link to="/learn/timelines/">Read the Timelines lesson</Link>.
+          Migration is not one cutover. Public-key cryptography does three jobs, and each has its own reason to move and
+          its own timing, so the handbook keeps them on separate lines. <Link to="/learn/timelines/">Read the Timelines lesson</Link>.
         </p>
         <div className={styles.clockGrid}>
           {clocks.map((c) => (
             <div key={c.job} className={styles.clock}>
-              <p className={styles.clockJob}>{c.job}</p>
               <Heading as="h3" className={styles.clockName}>
-                {c.clock}
+                {c.job}
               </Heading>
+              <p className={styles.clockJob}>{c.clock} clock</p>
               <dl className={styles.clockFacts}>
                 <dt>Starts</dt>
                 <dd>{c.starts}</dd>
@@ -229,7 +229,7 @@ function Evidence() {
     <section className={styles.section} aria-labelledby="evidence">
       <div className="container">
         <Heading as="h2" id="evidence">
-          Evidence, not assertions
+          Records you can check
         </Heading>
         <p className={styles.intro}>
           Each practice fills in a record, so the answer to &ldquo;have we migrated?&rdquo; is a row someone can

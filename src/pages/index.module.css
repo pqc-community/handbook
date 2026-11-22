@@ -60,9 +60,16 @@
   max-width: 46rem;
 }
 
+.section p a {
+  text-decoration: underline;
+}
+
 [data-theme='light'] .section p a {
   color: var(--pqc-link-on-light);
-  text-decoration: underline;
+}
+
+[data-theme='light'] .box:focus-visible {
+  outline-color: var(--pqc-link-on-light);
 }
 
 /* Linked boxes (brand cards: outlined, cyan border on hover) */
@@ -121,12 +128,16 @@
 
 .connector {
   width: 2px;
-  height: 1.5rem;
+  height: 1.25rem;
   margin-left: 2rem;
   background-color: var(--ifm-color-primary);
 }
 
+/* The connector branches into both paths: a rule across the top of the row,
+   with a short drop into each column. */
 .pathRow {
+  border-top: 2px solid var(--ifm-color-primary);
+  padding-top: 1rem;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   gap: 1rem;
@@ -136,6 +147,17 @@
 .pathCol {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.pathCol::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  width: 2px;
+  height: 1rem;
+  background-color: var(--ifm-color-primary);
 }
 
 .trackGroup {
@@ -178,15 +200,15 @@
   border-radius: var(--ifm-card-border-radius);
 }
 
-.clockJob {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  color: var(--ifm-color-emphasis-700);
+.clockName {
+  font-size: 1.15rem;
   margin-bottom: 0.15rem;
 }
 
-.clockName {
-  font-size: 1.2rem;
+.clockJob {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-700);
   margin-bottom: 0.75rem;
 }
 
@@ -276,12 +298,6 @@
   }
 }
 
-@media screen and (max-width: 576px) {
-  .refGrid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .hero {
     padding: 2rem 0 1.75rem;
@@ -297,6 +313,10 @@
 
   .section {
     padding-top: 2.25rem;
+  }
+
+  .refGrid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
