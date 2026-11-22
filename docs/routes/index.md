@@ -11,7 +11,7 @@ A situation route is a short, ordered path into the practices and records. [Deci
 
 | Path | Who it is for, from Decide whether to act | Route | What it produces |
 | --- | --- | --- | --- |
-| Short | Every asset's path is short: no to all four questions. Its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) set which route each asset follows | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing, and the plan dates and change record of any product on Hard-to-change systems |
+| Short | Every asset's path is short under Decide whether to act's path table; its step 3 and [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) set each asset's route | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing, and the plan dates and change record of any product on Hard-to-change systems |
 | Full | Any asset's path is full: yes to question A, B, C, or D | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record, with each asset sent to its track |
 
 ```mermaid

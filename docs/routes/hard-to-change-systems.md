@@ -67,7 +67,7 @@ Open the card for each technology the line depends on:
 ## Output records
 
 - Inventory rows for each asset, including its own rows for any public-key infrastructure you operate.
-- For each line, its order and reason (on the short path, its reason and end-of-support or renewal date), and the four dates on the migration plan: supplier release, testing, production deployment, and end of support.
+- For each line, its order and reason (on the short path, what Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says to record instead), and the four dates on the migration plan: supplier release, testing, production deployment, and end of support.
 - A change record for each change, which may be a `blocked` record with a resolve-by date.
 - Vendor response log rows and purchase requirements where a supplier or a component selection is involved.
 
