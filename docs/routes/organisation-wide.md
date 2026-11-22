@@ -32,7 +32,7 @@ Each role supplies one input to the plan:
    - [Long-lived confidentiality](/routes/long-lived-confidentiality/);
    - [Hard-to-change systems](/routes/hard-to-change-systems/);
    - [Vendor-managed software](/routes/vendor-managed-software/).
-5. [Decide what to migrate first](/migration-practices/priority/). This step owns the order. Record the order, the reason, and a subsequent-review date for each line on the [migration plan](/resources/records/migration-plan/), within each job and across every track; each track's step 2 places its lines in this order.
+5. [Decide what to migrate first](/migration-practices/priority/). This step owns the order, using the rules on Decide what to migrate first. Record the order, the reason, and a subsequent-review date for each line on the [migration plan](/resources/records/migration-plan/), within each job and across every track; each track's step 2 places its lines in this order.
 6. **Follow each track's steps.** The tracks' inventory and priority steps add each asset's detail to the same inventory record and migration plan; they are not a second inventory. Record the plan dates, vendor response log rows, purchase requirements and change records that each track produces.
 7. [Review and report](/migration-practices/subsequent-review/). Record the [review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/), and reopen records on their triggers.
 
