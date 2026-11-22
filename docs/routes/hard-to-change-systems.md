@@ -5,13 +5,13 @@ description: The track for bespoke systems, signatures that others rely on, and 
 displayed_sidebar: routesSidebar
 ---
 
-This track covers systems where a change takes a long time to make or must be coordinated with others. The urgency comes from the time a change needs, not from data being recorded today, and each kind of system has its own clock: verifiers that cannot be updated after shipment run on the device's service life; signatures that other people or devices rely on run on relying-party coordination; and bespoke systems run on your own change lead time. A product that fails the fifth condition adds a fourth line, whose clock is its replacement or upgrade lead time. Keep them as separate lines. The programme runs from [Organisation-wide](/routes/organisation-wide/); this page holds the steps for each asset on the track.
+This track covers systems where a change takes a long time to make or must be coordinated with others. The urgency comes from the time a change needs, not from data being recorded today, and each kind of system has its own clock: verifiers that cannot be updated after shipment run on the device's service life; signatures that other people or devices rely on run on relying-party coordination; and bespoke systems run on your own change lead time. A product that fails the fifth condition adds a fourth line, whose clock is its replacement or upgrade lead time. Keep them as separate lines. On the full path the programme runs from [Organisation-wide](/routes/organisation-wide/); on the short path, a product that fails the fifth condition follows these steps without a programme. This page holds the steps for each asset on the track.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) is intended for a broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories. It says signatures are not vulnerable to harvest-now, decrypt-later attacks. It also says the move to post-quantum signatures is urgent because the transition takes longer, is more complex, and needs more parties to coordinate (§3).
 
 ## Who it is for
 
-This track is for assets that answer yes to question B, C, or D on [Decide whether to act](/migration-practices/diagnose/). Their `route` cell on the [decision note](/resources/records/decision-note/) reads Hard-to-change systems, or names it in brackets after Long-lived confidentiality. It also takes products that fail the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). If the same asset also answers yes to question A, its key-establishment line follows [Long-lived confidentiality](/routes/long-lived-confidentiality/).
+This track is for assets that answer yes to question B, C, or D on [Decide whether to act](/migration-practices/diagnose/). Their `route` cell on the [decision note](/resources/records/decision-note/) reads Hard-to-change systems, or names it in brackets after Long-lived confidentiality. It also takes products that fail the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), whose path stays as Decide whether to act's table gives it. If the same asset also answers yes to question A, its key-establishment line follows [Long-lived confidentiality](/routes/long-lived-confidentiality/).
 
 | Line | From question | Clock | What sets the date |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ Take each line through these steps.
 6. [Make and verify one change](/migration-practices/implementation/). Complete the change record. When no supported option exists yet, a `blocked` change record, with a resolve-by date, counts as that change record.
 7. [Keep the ability to change again](/migration-practices/changing-algorithms-again/). Record the agility evidence in the existing records.
 
-Reviews run for the whole programme, under [Review and report](/migration-practices/subsequent-review/) on the Organisation-wide route.
+Reviews run under [Review and report](/migration-practices/subsequent-review/): for the whole programme on the Organisation-wide route, or, for a short-path product that fails the fifth condition, under step 4 of [Vendor-managed software](/routes/vendor-managed-software/).
 
 ## Deadlines that may apply
 

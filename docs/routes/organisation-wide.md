@@ -9,7 +9,7 @@ This route is the full path through a post-quantum migration. It runs the progra
 
 ## Who it is for
 
-This route is for any organisation with at least one asset whose path is full under [Decide whether to act](/migration-practices/diagnose/): an asset that answers yes to question A, B, C, or D, or a product that fails the fifth of its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). The migration lead usually follows it for the executive sponsor.
+This route is for any organisation with at least one asset whose path is full under [Decide whether to act](/migration-practices/diagnose/): an asset that answers yes to question A, B, C, or D. The migration lead usually follows it for the executive sponsor.
 
 Each role supplies one input to the plan:
 
@@ -49,7 +49,7 @@ ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024)
 
 ## When to leave
 
-- **At a later review, every asset answers no to all four questions and meets the five conditions.** The organisation is on the short path; follow [Vendor-managed software](/routes/vendor-managed-software/).
+- **At a later review, every asset answers no to all four questions.** Every asset's path is short again, so the organisation is on the short path; follow [Vendor-managed software](/routes/vendor-managed-software/).
 - **An asset's answers change.** Re-answer the four questions on the decision note; the asset moves to the track its new answers give.
 - **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
 

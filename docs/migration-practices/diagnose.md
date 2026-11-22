@@ -53,7 +53,7 @@ An asset that answers no to all four questions stays on the Vendor-managed softw
 
 Conditions 2 to 4 are questions A to D again, and condition 1 is question D seen from the product: software you host or configure yourself is not only supported commodity software, so it answers yes to question D. An asset that fails one of conditions 1 to 4 therefore re-answers the matching question and takes its route from step 3.
 
-A product that is out of support, or has no such plan, uses the Hard-to-change systems route: record that route in its `route` cell, or on the [review log](/resources/records/review-log/) if it moves at a later review. Its replacement or upgrade is now planned work with a lead time, so record its `path` as `full`, and run the programme from the [Organisation-wide](/routes/organisation-wide/) route. When the product is back in support with a plan that covers each job, check the five conditions again; if they hold, it returns to Vendor-managed software.
+A product that is out of support, or has no such plan, uses the Hard-to-change systems route: record that route in its `route` cell, or on the [review log](/resources/records/review-log/) if it moves at a later review. Its `path` stays as the table gives it: on the short path, take the product's replacement or upgrade through the [Hard-to-change systems](/routes/hard-to-change-systems/) steps without setting up a programme, and keep reviewing it with the rest of the short path under [Review and report](/migration-practices/subsequent-review/). When the product is back in support with a plan that covers each job, check the five conditions again; if they hold, it returns to Vendor-managed software.
 
 ### When you cannot answer or cannot choose
 
