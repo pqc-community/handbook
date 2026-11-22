@@ -9,7 +9,7 @@ description: How to tell whether stored data depends on public-key cryptography 
 
 Backups, archives, object storage, and encrypted databases hold data for years. Whether they need a post-quantum change depends on one question: **is any key protected by public-key cryptography?**
 
-- **Symmetric encryption only**, with keys held in a key management service rather than wrapped to a public key: the UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, says existing symmetric algorithms with at least 128-bit keys, such as AES, can continue to be used. The data itself does not need a post-quantum change, though the way keys reach the key service may.
+- **Symmetric encryption only**, with keys held in a key management service rather than wrapped to a public key: the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says existing symmetric algorithms with at least 128-bit keys, such as AES, can continue to be used. The data itself does not need a post-quantum change, though the way keys reach the key service may.
 - **Data keys wrapped or encrypted to a public key**, such as archive formats, backup tools, or SaaS storage that wrap keys for recipients or escrow: this is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/resources/glossary/#harvest-now-decrypt-later) for as long as the data must stay confidential.
 
 ## Post-quantum options and status

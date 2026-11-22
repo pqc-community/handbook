@@ -48,7 +48,7 @@ If you choose hybrid, record the path away from it under [Keep the ability to ch
 ## Protocol mechanisms
 
 - Use a mechanism the protocol's own specification defines, in the form the hybrid rule settled; do not build your own combination.
-- Prefer a published RFC. The UK NCSC's whitepaper *Next steps in preparing for post-quantum cryptography* (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts.
+- Prefer a published RFC. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts.
 - Where an authority's general advice and its later protocol-specific guidance differ, follow the later, specific guidance for that protocol; this is the handbook's rule of thumb.
 - Use a draft mechanism only when the product you run ships it and no applicable authority advises against it for that protocol. Then write "provisional: Internet-Draft" in the change record's `option` cell and add an item to the [review log](/resources/review-log/) to revisit it when the specification is published.
 

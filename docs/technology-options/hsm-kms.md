@@ -11,7 +11,7 @@ Hardware security modules (HSMs), cloud key management services (KMS), and Trust
 
 ## Post-quantum options and status
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, says hardware modules such as HSMs and TPMs must be upgraded or redesigned to support post-quantum algorithms, and that, given long lead times for hardware, it is a high priority for vendors to start integrating support now. Module validation for US federal use is under [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/) (22 March 2019); NIST IR 8547 says NIST will accommodate hybrid key establishment and dual signatures in FIPS 140 validation when they are suitably combined with a NIST-approved scheme.
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says hardware modules such as HSMs and TPMs must be upgraded or redesigned to support post-quantum algorithms, and that, given long lead times for hardware, it is a high priority for vendors to start integrating support now. Module validation for US federal use is under [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/) (22 March 2019); NIST IR 8547 says NIST will accommodate hybrid key establishment and dual signatures in FIPS 140 validation when they are suitably combined with a NIST-approved scheme.
 
 | What to establish | Why |
 | --- | --- |

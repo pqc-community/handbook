@@ -11,7 +11,7 @@ Identity and sign-in covers single sign-on and federation (signed assertions and
 
 ## Post-quantum options and status
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, says an authentication system stays secure as long as its algorithms and keys are secure when the authentication is performed, so authentication is not exposed to harvest-now, decrypt-later. It adds that moving authentication to quantum-resistant algorithms needs upgrades to both the system performing and the system accepting the authentication, to supporting infrastructure such as a PKI, and possibly new hardware tokens.
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says an authentication system stays secure as long as its algorithms and keys are secure when the authentication is performed, so authentication is not exposed to harvest-now, decrypt-later. It adds that moving authentication to quantum-resistant algorithms needs upgrades to both the system performing and the system accepting the authentication, to supporting infrastructure such as a PKI, and possibly new hardware tokens.
 
 | Technology | What to rely on, as checked on 21 November 2026 |
 | --- | --- |
