@@ -7,7 +7,7 @@ displayed_sidebar: resourcesSidebar
 
 ## When to use it
 
-Use this report at the end of each review under [Review and report](/migration-practices/subsequent-review/), and whenever a report trigger named in the [programme charter](/resources/programme-charter/) fires. It is written from the [migration plan](/resources/migration-plan/) and the [review log](/resources/review-log/), so it adds no new facts: every statement in it should be traceable to a row in those records.
+Use this report at the end of each review under [Review and report](/migration-practices/subsequent-review/), and whenever a report trigger named in the [programme charter](/resources/programme-charter/) fires. It is written from the records reviewed, chiefly the [migration plan](/resources/migration-plan/) and the [review log](/resources/review-log/), so it adds no new facts: every statement in it should be traceable to a row in those records. Use it for each report the charter's `reporting` cell sets, as well as after each review.
 
 ## Minimum fields
 
@@ -17,7 +17,7 @@ Like the charter, the report is one document, so the fields run down the page. R
 
 - **blocked:** each blocked asset and job, why, and the date by which it has to be resolved.
 - **milestones at risk:** each plan milestone that may be missed, with its timeline and authority from the plan, such as the UK NCSC target dates, or `none`. A target date belongs to the authority that set it and the audience it addresses, not to every asset.
-- **decisions needed:** escalations, budget, or risk acceptances the sponsor must decide, or `none`, with any escalation date already set on the plan.
+- **decisions needed:** escalations, budget, or risk acceptances the sponsor needs to decide, or `none`, with any escalation date already set on the plan.
 - **sponsor response:** what the sponsor decided, who, and when. A decision such as a risk acceptance also goes on the review log, with its own review date.
 
 Record `unknown` in any field you cannot settle yet. Keep keys, secrets, and personal data out of the file. Store each report with the migration plan, rather than overwriting the last one, so the reports form the programme's history.
@@ -34,11 +34,11 @@ From [Protect this first](/resources/protect-this-first/). The organisation, rol
 | records reviewed | migration plan; vendor response log; change record for the archive pilot; inventory rows for the archive and the laptops; review log |
 | key establishment | Product-design archive in supplier-hosted workspace: staging pilot passed on 2026-10-21 with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated; stored-data key wrapping still unanswered by the supplier. Office laptops: on supported versions, tracked on the supplier-update path. |
 | signatures | Product-design archive in supplier-hosted workspace: the supplier has given no signature date. Firmware-signing key for product sensor: scheme to be chosen with the verifier option; where the key is held not yet recorded. Office laptops: tracked on the supplier-update path. |
-| non-updatable verifier | Firmware verifier for product sensor: no supported option; the microcontroller supplier's reply was vague. |
+| non-updatable verifier | Firmware verifier for product sensor: no supported option; one shortlisted microcontroller supplier's reply was vague, and the other has not answered. |
 | blocked | Firmware verifier for product sensor: no supported signature and trust-root option; resolve before production design freeze on 2027-06-30 (fictional). |
 | milestones at risk | none at this review; the sensor's design-freeze milestone is at risk if no option is found by 2027-03-31 |
 | decisions needed | none at this review; escalation to the managing director on 2027-03-31 if there is still no supported sensor option |
-| next review | 2026-12-01 (archive supplier answers); 2026-12-15 (microcontroller supplier's answer); 2027-02-10 (quarterly review) |
+| next review | 2026-12-01 (archive supplier answers); 2026-12-15 (microcontroller suppliers' answers); 2027-02-10 (quarterly review) |
 | sponsor response | noted by the managing director, 2026-11-10; no decision needed |
 
 ## Blank template

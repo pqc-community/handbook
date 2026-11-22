@@ -51,7 +51,7 @@ The SSH implementation's supplier, usually the operating system or the network d
 | [Vendor response log](/resources/vendor-response-log/) | Answers from the makers of devices and tools with their own SSH library |
 | [Migration plan](/resources/migration-plan/) | A key-establishment line, and a separate signatures line for host and user keys |
 | [Change record](/resources/change-record/) | Any change to server or client settings, with the negotiated method as the deployed-state check |
-| [Review log](/resources/review-log/) | Devices that cannot follow, as exceptions with an owner and a replacement date |
+| [Review log](/resources/review-log/) | Devices that cannot follow, as exceptions with an owner and the replacement date in `item` |
 
 ## Example
 

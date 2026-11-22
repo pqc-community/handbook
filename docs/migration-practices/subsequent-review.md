@@ -52,7 +52,7 @@ A decision-ready record, from [Protect this first](/resources/protect-this-first
 - **archive signature plan from the supplier:** product engineering lead, 2026-12-01, when the written answer is due;
 - **stored-data key wrapping answer and Workspace 4.1 end of support:** product engineering lead, 2026-12-01;
 - **archive agility gaps:** product engineering lead, 2026-12-01, as part of the same supplier follow-up;
-- **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead, 2026-12-15, when the microcontroller supplier's answer is due;
+- **sensor firmware-signing option**, needed before the design freeze on 2027-06-30: product security lead, 2026-12-15, when the microcontroller suppliers' answers are due;
 - **archive production rollout and production client handshake check:** product engineering lead, at the quarterly review on 2027-02-10.
 
 Each date follows the item's own driver rather than one review date for everything. The operations director reports to the managing director that the archive pilot has passed, production rollout is pending, and the sensor decision is still blocked.

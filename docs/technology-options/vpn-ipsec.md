@@ -53,7 +53,7 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 | [Vendor response log](/resources/vendor-response-log/) | The gateway supplier's answer |
 | [Migration plan](/resources/migration-plan/) | A key-establishment line; gateway certificates have their own signatures line |
 | [Change record](/resources/change-record/) | The negotiated key exchange as the deployed-state check and, if a draft mechanism is used, "provisional: Internet-Draft" in `option` |
-| [Review log](/resources/review-log/) | Peers still on classical key exchange, as exceptions with an owner and a date, and an item to revisit the draft mechanism when it is published |
+| [Review log](/resources/review-log/) | Peers still on classical key exchange, as exceptions with an owner and the date they move in `item`, and an item to revisit the draft mechanism when it is published |
 
 ## Example
 

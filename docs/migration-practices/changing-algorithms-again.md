@@ -32,7 +32,7 @@ The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handboo
 
 ## Keep this evidence
 
-The evidence for each of the six capabilities, held in the records you already keep: the inventory row (owner, dependencies), the change record (tests), your change calendar (window), and the written deprecation path. Record any capability without evidence as a gap with an owner.
+The evidence for each of the six capabilities, held in the records you already keep: the inventory row (owner, dependencies), the change record (tests), your change calendar (window), and the written deprecation path. Record any capability without evidence as a gap with an owner on the [review log](/resources/review-log/).
 
 ## Example
 
