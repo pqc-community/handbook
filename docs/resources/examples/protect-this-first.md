@@ -138,7 +138,7 @@ The review updated two inventory rows. The archive now shows the staging change 
 | asset | owner | key-establishment algorithm | signature algorithm | software control | confidentiality period | renewal | version | dependencies | not visible to a scan | how found | confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product-design archive in supplier-hosted workspace | product engineering lead | in transit: X25519MLKEM768 in staging (Workspace 4.2), unknown in production (Workspace 4.1); stored files: unknown | unknown | workspace supplier | 15 years (company policy) | unknown | Workspace 4.2 in staging; Workspace 4.1 in production (fictional) | workspace supplier's hosting service | supplier-hosted cryptography | asset owner; supplier letter, 2026-09-04; staging handshake log, 2026-10-21 | unknown |
-| Office laptops | IT lead | unknown | unknown | operating-system and browser suppliers | 6 years (office-records policy, fictional) | unknown | supported browser and operating-system versions, recorded 2026-11-10 from the device-management console | browser and operating-system suppliers | unknown | device-management console; IT lead | unknown |
+| Office laptops | IT lead | unknown | unknown | operating-system and browser suppliers | 6 years (office-records policy, fictional) | unknown | supported browser and operating-system versions, recorded 2026-11-10 from the device-management console | browser and operating-system suppliers | unknown | device-management console; the browser and operating-system suppliers' published support pages and post-quantum roadmaps (fictional); IT lead | unknown |
 
 ## Progress report
 
