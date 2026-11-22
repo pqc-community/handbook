@@ -46,5 +46,5 @@ Keep real change records off a public ticket and off an unlocked shared drive: t
 ## Related pages
 
 - [Make and verify one change](/migration-practices/implementation/)
-- [Hard to change systems route](/routes/hard-to-change-systems/)
+- [Hard-to-change systems route](/routes/hard-to-change-systems/)
 - [Protect this first](/resources/examples/protect-this-first/)

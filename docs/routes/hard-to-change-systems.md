@@ -32,7 +32,7 @@ Take each line through these steps.
    - the applicable timeline;
    - the four dates;
    - the dependencies that can move them, including any design freeze.
-4. [Work with suppliers](/migration-practices/suppliers/). Record answers on the [vendor response log](/resources/records/vendor-response-log/). Record what each component selection or renewal requires on the [purchase requirements record](/resources/records/purchase-requirements/). Step 5 of that practice says how strict to be before a design freeze. When a supplier's answer is `missing` or `concerning`, follow it up and escalate it under [step 4](/migration-practices/suppliers/#4-follow-up-and-escalate) of the same practice.
+4. [Work with suppliers](/migration-practices/suppliers/). Record answers on the [vendor response log](/resources/records/vendor-response-log/). Record what each component selection or renewal requires on the [purchase requirements record](/resources/records/purchase-requirements/). Step 5 of that practice says how strict to be before a design freeze. Follow up each `vague`, `missing` or `concerning` answer under [step 4](/migration-practices/suppliers/#4-follow-up-and-escalate) of the same practice.
 5. [Choose an option](/technology-options/choosing/), using the cards below. Record the option and its authority on the [change record](/resources/records/change-record/).
 6. [Make and verify one change](/migration-practices/implementation/). Complete the change record. When no supported option exists yet, a `blocked` change record, with a resolve-by date, counts as that change record.
 7. [Keep the ability to change again](/migration-practices/changing-algorithms-again/). Record the agility evidence in the existing records.
@@ -67,7 +67,7 @@ Open the card for each technology the line depends on:
 ## Output records
 
 - Inventory rows for each asset, including its own rows for any public-key infrastructure you operate.
-- For each line, its order and reason (on the short path, what Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says to record instead), the applicable timeline, the four dates, and the dependencies that can move them, on the migration plan: supplier release, testing, production deployment, and end of support.
+- For each line, its order and reason (on the short path, what Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says to record instead), the applicable timeline, the four dates (supplier release, testing, production deployment, and end of support), and the dependencies that can move them, on the migration plan.
 - A change record for each change, which may be a `blocked` record with a resolve-by date.
 - Vendor response log rows and purchase requirements where a supplier or a component selection is involved.
 
