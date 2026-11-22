@@ -1,7 +1,7 @@
 ---
 title: Decide whether to act
 sidebar_label: Decide whether to act
-description: Decide whether a post-quantum migration applies, how urgently, and which route to follow, and name the person who owns the next step.
+description: Decide whether a post-quantum migration applies, how urgently, which path the organisation takes and which route each asset follows, and name the person who owns the next step.
 displayed_sidebar: migrationPracticesSidebar
 ---
 
@@ -17,7 +17,7 @@ You have not yet decided whether post-quantum migration is a programme for your 
 
 ## Do this
 
-1. **Answer four questions.** The [Not sure](/routes/not-sure/) route asks the same questions in more detail.
+1. **Answer four questions for each asset**, with `yes`, `no`, or `unknown`.
    - **A.** Is any data protected by public-key cryptography required to stay confidential for many years? The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk, for the Member States it addresses, when compromise after ten years or more would still cause significant damage; if you hold data that may be long-lived but do not know its period, answer yes until the data owner confirms it.
    - **B.** Does any product or device you build or run check signatures with a key it cannot replace after shipment?
    - **C.** Do you operate a public-key infrastructure, or sign code, firmware, or documents that other people or devices rely on?
@@ -31,13 +31,37 @@ You have not yet decided whether post-quantum migration is a programme for your 
    | No to all four | Regular adopter | Short path: [keep commodity software updated](/migration-practices/commodity-software/) |
 
    Record the category per asset where answers differ: an organisation can be an urgent adopter for one archive and a regular adopter for its laptops. A reactive stance should not mean inaction: even on the short path, add post-quantum requirements to purchases and renewals now (see [Work with suppliers](/migration-practices/suppliers/)), because each product bought today is one you may have to replace later.
-3. **Choose the route that matches your answers**, for a summary of what to read: [Long-lived confidentiality](/routes/long-lived-confidentiality/) for yes to A; [Hard-to-change systems](/routes/hard-to-change-systems/) for yes to B, C, or D; [Vendor-managed software](/routes/vendor-managed-software/) for no to all four; and [Organisation-wide](/routes/organisation-wide/) when many assets need coordinating.
+3. **Record each asset's route.** The path says how the organisation runs the work; the route names the track each asset follows:
+   - yes to A: **Long-lived confidentiality**;
+   - yes to B, C, or D: **Hard-to-change systems**;
+   - yes to A and to B, C, or D: **Long-lived confidentiality (also Hard-to-change systems)**, because the key-establishment line and the signature or verifier line run on different clocks;
+   - no to all four: **Vendor-managed software**, adding "(all five conditions hold)" once you have checked the [five conditions](#five-conditions-for-the-vendor-managed-route) below, or naming the route the asset moved to.
+
+   If any asset is on the full path, run the programme from the [Organisation-wide](/routes/organisation-wide/) route, and send each asset, including any on Vendor-managed software, to the route its row records. If every asset is on the short path, follow the [Vendor-managed software](/routes/vendor-managed-software/) route. [Situation routes](/routes/) shows both paths and the three tracks.
 4. **Write the first inventory rows** for the systems that triggered the decision, marking unverified facts as `unknown`. Do not wait for a complete inventory before deciding.
 5. **Name the owner of the next step** and set a date to confirm the decision. On the full path, the next step is [Set up the programme](/migration-practices/programme/); on the short path, it is [Keep commodity software updated](/migration-practices/commodity-software/).
 
+### Five conditions for the vendor-managed route
+
+An asset that answers no to all four questions stays on the Vendor-managed software route only while all five of these hold:
+
+1. The software is supplier-updated browsers, operating systems, or mobile devices, or a supplier-hosted service whose cryptography the supplier controls. Including supplier-hosted services is this handbook's position, explained on [Keep commodity software updated](/migration-practices/commodity-software/).
+2. No record needs to stay confidential for many years (question A).
+3. There is no bespoke system (question D), and the organisation neither runs a public-key infrastructure nor signs code, firmware, or documents that others rely on (question C).
+4. There is no verifier that cannot be updated later (question B).
+5. The product is in support and has a published or written supplier plan that covers each job it performs. A plan that gives a target date without naming the algorithm is enough; when you next ask the supplier in writing, at a renewal or when the product leaves support, record the missing details as a `vague` answer on the [vendor response log](/resources/records/vendor-response-log/) and follow them up.
+
+A product that is out of support, or has no such plan, uses the Hard-to-change systems route: record that route in its `route` cell, or on the [review log](/resources/records/review-log/) if it moves at a later review.
+
+### When you cannot answer or cannot choose
+
+- Write each `unknown` down on the asset's row, say in its brackets who will close it, and set the `confirm by` date. Do not add "(all five conditions hold)" to a row while one of its answers is still `unknown`.
+- Choosing a route does not assess risk. When you still cannot choose, the risk owner or the sector authority chooses.
+- A large bespoke estate, critical national infrastructure, or a regulated system needs a specialist as well as the Organisation-wide route.
+
 ## Keep this evidence
 
-A [decision note](/resources/records/decision-note/) that the sponsor has accepted: the answers to questions A to D, the urgency category and path for each asset, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/records/inventory/).
+A [decision note](/resources/records/decision-note/) that the sponsor has accepted: the answers to questions A to D, with who will close each `unknown`, the urgency category and path for each asset, the route, the named owner, and the date the decision will be confirmed. The first rows go on the [inventory record](/resources/records/inventory/).
 
 ## Example
 
@@ -56,7 +80,7 @@ This decision does not choose algorithms or dates, and it is not a formal risk a
 
 ## Related pages
 
-- [Not sure](/routes/not-sure/)
+- [Situation routes](/routes/)
 - [Set up the programme](/migration-practices/programme/)
 - [Decision note](/resources/records/decision-note/)
 - [Inventory record](/resources/records/inventory/)

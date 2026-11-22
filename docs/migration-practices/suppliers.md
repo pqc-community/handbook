@@ -32,7 +32,7 @@ Ask tier 1 first and individually, and tier 2 in batches. Do not send tier 3 sup
 
 ### 2. Ask the same questions in writing
 
-Use the handbook's single question set on the [vendor response log](/resources/records/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid algorithm or scheme it will support, from which release and date; when signatures and update verification will change; whether keys or [trust anchors](/resources/reference/glossary/#trust-anchor) are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
+Use the handbook's single question set on the [vendor response log](/resources/records/vendor-response-log/): what public-key cryptography the product uses and where; which post-quantum or hybrid algorithm or scheme it will support, from which release and date; when signatures and update verification will change; whether keys or [trust anchors](/resources/reference/glossary/#trust-anchor) are fixed in hardware; what evidence will be provided; and when support for your current release ends. Ask about key establishment and signatures separately, for a named product and version, and set the date you need an answer by. The [vendor questions guide](/standards/migration-guides/vendor-questions/) summarised in Standards gives a fuller set. The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) likewise encourages organisations to ask vendors about their quantum-readiness roadmaps.
 
 ### 3. Judge each answer, one row per job
 
@@ -41,11 +41,13 @@ Use the handbook's single question set on the [vendor response log](/resources/r
 - `missing`: no answer by the answer-due date you set.
 - `concerning`: for example, a proprietary algorithm, no plan for an in-support product, or a refusal to say.
 
-A supplier can be `complete` for key establishment and `vague` for signatures; record two rows.
+A supplier can be `complete` for key establishment and `vague` for signatures; record two rows. When an answer is `complete`, record the decision it supports in the log and link the source document.
+
+A national milestone that a supplier quotes applies to the audience its authority names, not to every customer; see [Why migration timelines differ](/learn/explainers/timelines/).
 
 ### 4. Follow up and escalate
 
-Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the asset owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time in the plan; or written risk acceptance by the sponsor, with a review date.
+Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the asset owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time in the plan; or written risk acceptance by the sponsor, with a review date.
 
 ### 5. Write requirements into purchases and renewals
 
@@ -80,7 +82,7 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 
 ## Limits and next step
 
-The log records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/). This page does not give contract clauses or legal advice. Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/migration-practices/implementation/).
+The log records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the asset's line through its [Long-lived confidentiality](/routes/long-lived-confidentiality/) or [Hard-to-change systems](/routes/hard-to-change-systems/) track. Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/migration-practices/implementation/).
 
 ## Sources
 
@@ -91,6 +93,6 @@ The log records what suppliers say; it does not validate their products. Validat
 ## Related pages
 
 - [Vendor response log](/resources/records/vendor-response-log/)
-- [Ask a supplier](/routes/ask-a-supplier/)
+- [Situation routes](/routes/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)
 - [Vendor questions guide](/standards/migration-guides/vendor-questions/)
