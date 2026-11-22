@@ -54,7 +54,7 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`, `scripts/check-standards.test.mjs`, `scripts/check-records.test.mjs`); the records test checks that each CSV matches its record page, that filled examples match Protect this first, and that the records zip is current |
+| `npm test` | Runs the Node test suite (`scripts/check-pages.test.mjs`, `scripts/check-standards.test.mjs`, `scripts/check-records.test.mjs`, `scripts/check-dates.test.mjs`); the records test checks that each CSV matches its record page, that filled examples match Protect this first, and that the records zip is current; the dates test fails on any ISO date in prose and suggests the day–month–year form |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
 | `npm run check` | Validates page `title` lengths (`docs/**/*.md`) and surface-specific navigation bounds across navbar, footer, and sidebars (`scripts/check-pages.mjs`) |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
