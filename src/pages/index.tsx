@@ -113,7 +113,7 @@ export default function Home(): ReactNode {
               </tbody>
             </table>
             <p>
-              <Link to="/resources/protect-this-first/">The manufacturer example</Link>
+              <Link to="/resources/examples/protect-this-first/">The manufacturer example</Link>
             </p>
           </div>
         </section>
