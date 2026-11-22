@@ -26,7 +26,7 @@ Status as checked on 21 November 2026: there is no single post-quantum standard 
 | Field devices and sensors | Whatever the device and its supplier support; ask in writing |
 | Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, leaves OT and IoT devices out of scope, while saying they should also be transitioning |
 
-The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says owners of bespoke IT or OT that use public-key cryptography in proprietary systems will need to choose which algorithms and protocols to use themselves. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols.
+The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says owners of bespoke IT or OT that use public-key cryptography in proprietary systems will need to choose which algorithms and protocols to use themselves. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols; code you build follows [Libraries and bespoke code](/technology-options/libraries-bespoke-code/).
 
 ## Who usually chooses
 

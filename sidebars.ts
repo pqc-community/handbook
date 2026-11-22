@@ -256,7 +256,6 @@ const sidebars: SidebarsConfig = {
         'technology-options/ssh',
         'technology-options/wifi-network-access',
         'technology-options/secure-messaging',
-        'technology-options/ot-industrial',
       ],
     },
     {
@@ -288,15 +287,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Keys and hardware',
+      label: 'Platforms and environments',
       collapsed: false,
-      items: ['technology-options/hsm-kms'],
-    },
-    {
-      type: 'category',
-      label: 'Bought-in services',
-      collapsed: false,
-      items: ['technology-options/cloud-saas'],
+      items: [
+        'technology-options/hsm-kms',
+        'technology-options/libraries-bespoke-code',
+        'technology-options/cloud-saas',
+        'technology-options/ot-industrial',
+      ],
     },
   ],
   resourcesSidebar: [
