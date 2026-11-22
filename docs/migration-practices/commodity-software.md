@@ -28,7 +28,7 @@ The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (pu
 
 ## Keep this evidence
 
-The installed versions and the date checked on the inventory record, the requirement text used in each purchase or renewal, and a written note for each exception naming the route it moved to.
+The installed versions and the date checked on the inventory record, the requirement text used in each purchase or renewal on the [purchase requirements record](/resources/purchase-requirements/), and a written note for each exception naming the route it moved to.
 
 ## Example
 

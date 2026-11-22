@@ -58,6 +58,8 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 - a support period;
 - the evidence you will receive.
 
+Record each requirement, the supplier's commitment, and whether it was met on the [purchase requirements record](/resources/purchase-requirements/), one row per purchase or renewal and job.
+
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
 CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web browsers and servers, in which products supporting post-quantum standards are widely available, and notes that the support is mostly for key establishment rather than signatures. It shows where such requirements are realistic today. US federal contractors should also watch for the procurement rule that [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to propose. It would bind contractors only once a final rule takes effect; its Standards summary explains.
@@ -68,7 +70,7 @@ If you supply products, your customers will send you the same questions. Answer 
 
 ## Keep this evidence
 
-The [vendor response log](/resources/vendor-response-log/) — one row per supplier, product, version, and job, with the question, the dates asked, due, and answered, the answer, source document, judgement, follow-up, and decision — plus the requirement text used in each purchase or renewal and the contract commitment agreed.
+The [vendor response log](/resources/vendor-response-log/) — one row per supplier, product, version, and job, with the assets it covers, the question, the dates asked, due, and answered, the answer, source document, judgement, follow-up, and decision — plus the [purchase requirements record](/resources/purchase-requirements/): the requirement text used in each purchase or renewal and the commitment the supplier agreed.
 
 ## Example
 

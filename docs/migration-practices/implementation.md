@@ -39,7 +39,7 @@ An option has been chosen for one system, with the standard or authority it foll
 
 ## Keep this evidence
 
-The [change record](/resources/change-record/) for the change: system, change, option, authority, pilot scope, tests, rollback trigger and who may roll back, deployed-state check, a result that states exactly what has been shown and what has not, the evidence behind it (the test and inspection, not the standard), owner, and date.
+The [change record](/resources/change-record/) for the change: asset and job, change, option, authority, pilot scope, tests, rollback trigger and who may roll back, deployed-state check, a result that states exactly what has been shown and what has not, the evidence behind it (the test and inspection, not the standard), owner, and date.
 
 ## Example
 

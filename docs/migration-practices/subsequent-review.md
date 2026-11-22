@@ -35,13 +35,13 @@ A subsequent-review date has arrived, or something has happened that may make th
 2. Update confidence, order, and dates on the inventory, plan, and supplier rows.
 3. Carry each unresolved item forward on its own review-log row, with its own owner, status, and date.
 4. Mark each item `open` or `closed` on the review log, and set the next review date on the review log and on the plan rows you reviewed.
-5. Report to the sponsor: what moved, what is blocked and why, which decisions or risk acceptances are needed, and the next review date.
+5. Report to the sponsor on the [progress report](/resources/progress-report/): what moved for each job, what is blocked and why, which milestones are at risk, which decisions or risk acceptances are needed, and the next review date.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) describes the transition as one in which quantum-vulnerable and quantum-resistant algorithms will coexist and be validated for a period, which is why records need regular reopening rather than a single sign-off.
 
 ## Keep this evidence
 
-The [review log](/resources/review-log/): date, what was reviewed, unresolved items, owner, and next review date — plus the report sent to the sponsor.
+The [review log](/resources/review-log/): date, the record, asset, and job reviewed, unresolved items, owner, and next review date — plus the [progress report](/resources/progress-report/) sent to the sponsor, with the sponsor's response.
 
 ## Example
 
@@ -68,5 +68,6 @@ The suggested cadence is a starting point, not an obligation; regulated organisa
 ## Related pages
 
 - [Review log](/resources/review-log/)
+- [Progress report](/resources/progress-report/)
 - [Set up the programme](/migration-practices/programme/)
 - [Organisation-wide](/routes/organisation-wide/)

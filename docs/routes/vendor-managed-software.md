@@ -16,7 +16,7 @@ When all of those conditions hold, read in this order:
 3. [Vendor response log](/resources/vendor-response-log/)
 4. [Review and report](/migration-practices/subsequent-review/)
 
-The output is the checked versions on the [inventory record](/resources/inventory-record/), the requirement text used in purchases and renewals, [vendor response log](/resources/vendor-response-log/) rows for any supplier you ask in writing, and either a written note that all five conditions hold or the name of the route you moved to.
+The output is the checked versions on the [inventory record](/resources/inventory-record/), the requirement text used in purchases and renewals on the [purchase requirements record](/resources/purchase-requirements/), [vendor response log](/resources/vendor-response-log/) rows for any supplier you ask in writing, and either a written note that all five conditions hold or the name of the route you moved to.
 
 The primary next page is [Keep commodity software updated](/migration-practices/commodity-software/).
 

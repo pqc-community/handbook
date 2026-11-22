@@ -60,6 +60,7 @@ The control-system, device, and protocol suppliers, often within an industry sta
 | --- | --- |
 | [Inventory](/resources/inventory-record/) | Rows for OT systems and device types, with supplier and protocol in `dependencies` |
 | [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
+| [Purchase requirements](/resources/purchase-requirements/) | A row per job for each equipment purchase or refresh, with the planned outage or refresh date in `decide by` |
 | [Migration plan](/resources/migration-plan/) | One line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, the device's expected service life in `reason and source`, the purchase that will carry post-quantum requirements in `next action`, and, where no option exists yet, the protocol's next check in `subsequent review` |
 | [Change record](/resources/change-record/) | `unknown` and blocked where no option exists yet |
 | [Review log](/resources/review-log/) | Exceptions and accepted risks |
