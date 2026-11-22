@@ -2,7 +2,7 @@
 title: Cryptographic libraries and bespoke code
 sidebar_label: Libraries and bespoke code
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness looks like for software that calls cryptographic libraries directly or implements its own protocols and formats, and the size, agility and dependency traps to test for.
+description: What post-quantum readiness looks like for software that calls cryptographic libraries directly or implements its own protocols and formats, and the size, agility, and dependency traps to test for.
 ---
 
 ## What it is
@@ -10,10 +10,10 @@ description: What post-quantum readiness looks like for software that calls cryp
 Some software calls cryptographic libraries directly instead of relying on a protocol a supplier configures: in-house applications, embedded software, custom file and message formats, and products you build. Such code can do any job:
 
 - **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/resources/glossary/#harvest-now-decrypt-later) for whatever it protects;
-- **signatures** where it signs or verifies;
-- **verifiers that cannot be updated** where it ships in devices, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
+- **signatures** where it signs or verifies, with timing that follows the parties relying on those signatures;
+- **verifiers that cannot be updated** where it checks signatures in devices that cannot be updated in the field, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
-Where your code only uses a standard protocol through a library, such as TLS or SSH, follow that protocol's card. This card covers the code and the libraries it calls.
+Where your code uses a standard protocol through a library, such as TLS or SSH, follow that protocol's card and list the library in `dependencies`. This card covers code that uses cryptographic algorithms directly or defines its own protocols and formats, and the libraries it calls.
 
 ## Post-quantum options and status
 
@@ -22,8 +22,8 @@ Status as checked on 21 November 2026.
 | Part | Position |
 | --- | --- |
 | Algorithms | [ML-KEM](/standards/post-quantum/fips-203/) (FIPS 203), [ML-DSA](/standards/post-quantum/fips-204/) (FIPS 204), and [SLH-DSA](/standards/post-quantum/fips-205/) (FIPS 205) are final NIST standards (13 August 2024); LMS and XMSS are specified in [SP 800-208](/standards/post-quantum/sp-800-208/) |
-| Library support | Varies by library and release; check the library's own release notes and, where you need a validated module, its [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/) validation |
-| Bespoke protocols and formats | No standard path. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says owners of bespoke IT or OT that use public-key cryptography in proprietary systems will need to choose which algorithms and protocols to use themselves |
+| Library support | Varies by library and release; check the library's own release notes and, where you need a module validated for US federal use, its [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/) validation |
+| Bespoke protocols and formats | No standard path. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says that for the minority of systems with bespoke IT or OT, such as those that implement public-key cryptography in proprietary communications systems, system and risk owners will need to choose which algorithms and protocols are best to use |
 
 Choose the algorithm, parameter set, and form with the rules on [Choosing an option](/technology-options/choosing/). Where a published protocol or format already defines a post-quantum mechanism, use it rather than building your own combination, as the protocol-mechanisms rule says.
 
@@ -33,8 +33,9 @@ You do, as the developer or product owner, within what your libraries support. L
 
 ## What good looks like
 
-- Every place the code calls cryptography is on the [inventory](/resources/inventory-record/), with the library, its release, the algorithm, and the job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/migration-practices/inventory/) describes.
-- Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite, as [Keep the ability to change again](/migration-practices/changing-algorithms-again/) describes.
+- Every application or component that calls cryptography has a row on the [inventory](/resources/inventory-record/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/migration-practices/inventory/) describes.
+- Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite and can be demonstrated as [Keep the ability to change again](/migration-practices/changing-algorithms-again/) describes.
+- Algorithms taken from a maintained library rather than implemented in-house, with the library's own tests run in your build.
 - New designs built on a published protocol or format with a post-quantum mechanism wherever one exists.
 - Libraries kept current, with post-quantum support and, where required, validation confirmed for the release you ship.
 - Bespoke protocols reviewed by a specialist adviser, with the review recorded.
@@ -43,7 +44,7 @@ You do, as the developer or product owner, within what your libraries support. L
 
 - Which post-quantum algorithms each library supports, from which release, and whether that release is validated where you need validation.
 - Whether message formats, database columns, packets, and storage can carry the larger keys, ciphertexts, and signatures.
-- Whether algorithm identifiers are negotiated or fixed in the format, and what an older peer or reader does with a new one.
+- Whether algorithm identifiers are negotiated or fixed in the format, and what an older peer or reader does with a new one, including whether an attacker can force the older algorithm.
 - Whether third-party components bundle or statically link their own cryptography.
 
 ## Traps
@@ -52,14 +53,15 @@ You do, as the developer or product owner, within what your libraries support. L
 - **Hard-coded algorithms** spread through the code, so every change becomes a rewrite.
 - **A home-made hybrid or protocol** where a specified mechanism exists.
 - **Hidden copies**: vendored or statically linked libraries that the inventory misses.
+- **Stateful signatures without state control**: LMS or XMSS signing code that can reuse a one-time key after a restart or restore, or across two signers.
 
 ## Record it fills
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/inventory-record/) | A row per application or component, with the library and its release in `dependencies` and labelled values in the algorithm cells for each job |
-| [Vendor response log](/resources/vendor-response-log/) | Answers from suppliers of commercial libraries and components |
-| [Migration plan](/resources/migration-plan/) | One line per job, with the library release that delivers support in `dependencies` |
+| [Inventory](/resources/inventory-record/) | A row per application or component, with each library and its release in `dependencies`, a labelled value per use in each algorithm cell (for example "file format: X25519; API client: unknown"), and bundled or statically linked copies in `not visible to a scan` |
+| [Vendor response log](/resources/vendor-response-log/) | Answers from suppliers of commercial libraries and components; for open-source libraries, which have no supplier to ask, the release notes used as the source |
+| [Migration plan](/resources/migration-plan/) | One line per job, with the library and the release that delivers support in `dependencies` and that release's date in `supplier release` |
 | [Change record](/resources/change-record/) | The option, the authority, and the tests on size, interoperability, and older peers |
 | [Review log](/resources/review-log/) | Bespoke protocols with no published post-quantum path yet, with the specialist adviser's view and a review date |
 
