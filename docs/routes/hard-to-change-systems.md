@@ -11,7 +11,7 @@ This track covers systems where a change takes a long time to make or must be co
 
 ## Who it is for
 
-This track is for assets that answer yes to question B, C, or D on [Decide whether to act](/migration-practices/diagnose/), whose `route` cell names Hard-to-change systems, on its own or in brackets after Long-lived confidentiality, of the [decision note](/resources/records/decision-note/). It also takes products that fail the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). If the same asset also answers yes to question A, its key-establishment line follows [Long-lived confidentiality](/routes/long-lived-confidentiality/).
+This track is for assets that answer yes to question B, C, or D on [Decide whether to act](/migration-practices/diagnose/). Their `route` cell on the [decision note](/resources/records/decision-note/) reads Hard-to-change systems, or names it in brackets after Long-lived confidentiality. It also takes products that fail the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). If the same asset also answers yes to question A, its key-establishment line follows [Long-lived confidentiality](/routes/long-lived-confidentiality/).
 
 | Line | From question | Clock | What sets the date |
 | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ Take each line through these steps.
 1. [Inventory the cryptography](/migration-practices/inventory/). Record on the [inventory record](/resources/records/inventory/):
    - its own rows for any public-key infrastructure you operate;
    - what a scan cannot see, such as boot trust anchors and embedded firmware.
-2. [Decide what to migrate first](/migration-practices/priority/). Record the order and reason on the [migration plan](/resources/records/migration-plan/), under that page's rule for the line's job, and its tie-breakers, which include the earliest fixed date and the longest lead time.
+2. [Decide what to migrate first](/migration-practices/priority/). Place each line in the order that step 5 of [Organisation-wide](/routes/organisation-wide/) sets, under that page's rule for the line's job and its tie-breakers, which include the earliest fixed date and the longest lead time, and record the order and reason on the [migration plan](/resources/records/migration-plan/).
 3. [Plan the migration](/migration-practices/plan/). Record on the migration plan:
    - the applicable timeline;
    - the four dates;
@@ -51,9 +51,9 @@ Each date binds or guides only the audience its authority names. Record the one 
 | NIST IR 8547, as above | As above | Signatures others rely on | Schedules quantum-vulnerable signatures for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines (§4.1.1) |
 | EU NIS Cooperation Group, [roadmap](/standards/migration-guides/eu-nis-roadmap/), version 1.1, 11 June 2025 | EU Member States. It says public administrations and critical infrastructure entities, notably those in scope of the NIS2 Directive, should refer to it | Systems with a long life cycle, and complex systems such as public-key infrastructures (the source's terms) | Says it is necessary to plan the migration of systems with a long life cycle, and of complex systems such as public-key infrastructures, well in advance, and recommends starting detailed transition plans for them as soon as possible |
 | EU roadmap, as above | As above | Verifiers that cannot be updated | Highly recommends that products entering the market with an expected lifetime beyond 2030 be upgradable to post-quantum cryptography, with post-quantum signatures in their software and firmware upgrade mechanism. Sets, as a 31 December 2030 milestone in the timeline it recommends to Member States, that quantum-safe software and firmware upgrades are enabled by default |
-| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | Signatures others rely on, and verifiers | High value assets and high-impact systems must adopt post-quantum digital signatures by 31 December 2031 (§4) |
+| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | Signatures others rely on, and verifiers | High value assets and high-impact systems must adopt post-quantum digital signatures by 31 December 2031, and agencies must give the same priority to other systems with highly sensitive data (§4) |
 
-Beyond the general milestones, no authority above sets a date specific to bespoke change lead time or to out-of-support products; their dates come from your own release cycle and the supplier's end-of-support date. NIST IR 8547, citing OMB M-26-15, says, without a date, that systems that cannot support post-quantum cryptography should be identified and prioritised for replacement or decommissioning (§4).
+Beyond the general milestones, no authority above sets a date specific to bespoke change lead time or to out-of-support products; their dates come from your own release cycle and the supplier's end-of-support date. For a bespoke system's key-establishment line, use the rows of [Deadlines that may apply](/routes/long-lived-confidentiality/#deadlines-that-may-apply) on Long-lived confidentiality other than those that depend on long-lived data: NIST IR 8547's key-establishment schedule and the US federal key-establishment date. NIST IR 8547, citing OMB M-26-15, says, without a date, that systems that cannot support post-quantum cryptography should be identified and prioritised for replacement or decommissioning (§4).
 
 ## Technology cards
 
@@ -67,7 +67,7 @@ Open the card for each technology the line depends on:
 ## Output records
 
 - Inventory rows for each asset, including its own rows for any public-key infrastructure you operate.
-- For each line, the four dates on the migration plan: supplier release, testing, production deployment, and end of support.
+- For each line, its order and reason, and the four dates on the migration plan: supplier release, testing, production deployment, and end of support.
 - A change record for each change, which may be a `blocked` record with a resolve-by date.
 - Vendor response log rows and purchase requirements where a supplier or a component selection is involved.
 

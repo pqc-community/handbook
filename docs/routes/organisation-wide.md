@@ -28,15 +28,15 @@ Each role supplies one input to the plan:
 1. [Decide whether to act](/migration-practices/diagnose/). Record the path and route for each asset on the [decision note](/resources/records/decision-note/). The first rows go on the [inventory record](/resources/records/inventory/).
 2. [Set up the programme](/migration-practices/programme/). Record the roles, scope, first budget line and reporting on the [programme charter](/resources/records/programme-charter/).
 3. [Inventory the cryptography](/migration-practices/inventory/). Record one row per asset on the inventory record, with unknowns marked. When the inventory finds an asset that raises the question again, answer the four questions for it on the decision note.
-4. **Send each asset to its track.** Each asset follows the route in its decision-note `route` cell, which [Decide whether to act](/migration-practices/diagnose/), step 3, sets:
+4. **Send each asset to its track.** Each asset follows the route in its [decision note](/resources/records/decision-note/) `route` cell, which [Decide whether to act](/migration-practices/diagnose/), step 3, sets:
    - [Long-lived confidentiality](/routes/long-lived-confidentiality/);
    - [Hard-to-change systems](/routes/hard-to-change-systems/);
    - [Vendor-managed software](/routes/vendor-managed-software/).
-5. [Decide what to migrate first](/migration-practices/priority/). Record the order and reason on the [migration plan](/resources/records/migration-plan/), within each job and across every track.
+5. [Decide what to migrate first](/migration-practices/priority/). This step owns the order. Record the order, the reason, and a subsequent-review date for each line on the [migration plan](/resources/records/migration-plan/), within each job and across every track; each track's step 2 places its lines in this order.
 6. **Follow each track's steps.** The tracks' inventory and priority steps add each asset's detail to the same inventory record and migration plan; they are not a second inventory. Record the plan dates, vendor response log rows, purchase requirements and change records that each track produces.
 7. [Review and report](/migration-practices/subsequent-review/). Record the [review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/), and reopen records on their triggers.
 
-ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024), an informative technical report, sets out a repeatable migration framework that likewise runs from asset inventories through prioritisation and planning to executing the plans and preparing for the next iteration. This route makes programme setup an explicit step because it decides who does the work and by when.
+ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024), an informative technical report, sets out a repeatable migration framework that likewise runs from identifying the enterprise architecture and generating asset inventories, through prioritisation and planning, to executing the plans and preparing for the next iteration. This route makes programme setup an explicit step because it decides who does the work and by when.
 
 ## Output records
 

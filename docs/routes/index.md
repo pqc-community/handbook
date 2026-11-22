@@ -11,7 +11,7 @@ A situation route is a short, ordered path into the practices and records. [Deci
 
 | Path | Who it is for, from Decide whether to act | Route | What it produces |
 | --- | --- | --- | --- |
-| Short | Every asset's path is short: no to all four questions, with the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) met | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
+| Short | Every asset's path is short: no to all four questions, with the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) met once checked | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
 | Full | Any asset's path is full: yes to question A, B, C, or D, or a product that fails the fifth condition | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record, with each asset sent to its track |
 
 ```mermaid
@@ -31,13 +31,13 @@ On the full path, the programme sends each asset to the track its decision-note 
 
 | Track, as recorded in `route` | Assets, from Decide whether to act | Clock | Page |
 | --- | --- | --- | --- |
-| Vendor-managed software | No to all four questions, with the five conditions met | The supplier's release and support dates | [Vendor-managed software](/routes/vendor-managed-software/) |
+| Vendor-managed software | No to all four questions, with the five conditions met once checked | The supplier's release and support dates | [Vendor-managed software](/routes/vendor-managed-software/) |
 | Long-lived confidentiality | Yes to question A | The data confidentiality period | [Long-lived confidentiality](/routes/long-lived-confidentiality/) |
 | Hard-to-change systems | Yes to question B, C, or D, or a product that fails the fifth condition | Change lead time for bespoke systems, relying-party coordination for signatures, and the device's service life for verifiers that cannot be updated, each on its own line, plus replacement lead time for an out-of-support product | [Hard-to-change systems](/routes/hard-to-change-systems/) |
 
 Path is recorded per asset on the decision note, so a full-path organisation can still have assets whose path is short, such as office laptops: they follow Vendor-managed software as a track. That page is therefore both the short path and the track for the commodity part of a full-path estate. The two other tracks each list the deadlines that may apply to their job and the technology cards to open.
 
-The split between the short and full paths is consistent with the UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025). They are primarily aimed at technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT. They say that for small and medium-sized enterprises using mainly commodity IT, migration should happen seamlessly as services are updated by their vendors. Where custom or specialised software is used, the timelines say PQC-compatible updates or replacements need to be identified and deployed, on the same timetable as for larger organisations.
+The split between the short and full paths is consistent with the UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025). They are primarily aimed at technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT. They say that for small and medium-sized enterprises using mainly commodity IT, migration should happen seamlessly as services are updated by their vendors. Where custom or specialised software is used, the timelines say PQC-compatible updates or replacements need to be identified and deployed, and that this should follow the same timetable as for larger organisations.
 
 ## Steps
 

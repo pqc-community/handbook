@@ -13,7 +13,7 @@ Use this note when you [decide whether to act](/migration-practices/diagnose/): 
 
 asset, A long-lived confidentiality, B fixed verifier, C others rely on your signatures, D bespoke systems, category, path, route, next step, owner, confirm by, accepted by
 
-Give each asset its own row, because one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; for question A, an `unknown` period for data that may be long-lived counts as `yes` until the data owner confirms it. The questions are:
+Give each asset its own row, because one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; for question A, answer `yes` for data that may be long-lived while its period is unknown, until the data owner confirms it, as [Decide whether to act](/migration-practices/diagnose/) says. The questions are:
 
 - **A.** Is any data protected by public-key cryptography required to stay confidential for many years?
 - **B.** Does any product or device you build or run check signatures with a key it cannot replace after shipment?

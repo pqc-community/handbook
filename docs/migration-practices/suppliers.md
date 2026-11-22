@@ -18,7 +18,7 @@ Any system on your inventory depends on a supplier's product or service, you are
 
 ## Do this
 
-On the short path, step 5 applies: write post-quantum requirements into purchases and renewals. When a short-path product comes up for renewal or leaves support, you also ask its supplier in writing, so steps 2 to 4 (ask, judge, follow up) apply to that supplier's answers. Steps 1 to 4 apply in full to suppliers behind full-path rows on your [migration plan](/resources/records/migration-plan/).
+On the short path, step 5 applies: write post-quantum requirements into purchases and renewals. When a short-path product comes up for renewal, or leaves support (which moves it to the Hard-to-change systems route, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says), you also ask its supplier in writing, so steps 2 to 4 (ask, judge, follow up) apply to that supplier's answers. Steps 1 to 4 apply in full to suppliers behind full-path rows on your [migration plan](/resources/records/migration-plan/).
 
 ### 1. Triage suppliers
 

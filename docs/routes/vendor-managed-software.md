@@ -5,11 +5,13 @@ description: The short path, and the track for commodity assets on the full path
 displayed_sidebar: routesSidebar
 ---
 
-This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Their suppliers are expected to deliver post-quantum support through normal updates, as the UK NCSC guidance quoted under Worked example says for small and medium-sized enterprises using mainly commodity IT; including supplier-hosted services is this handbook's position, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says.
+This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Their suppliers are expected to deliver post-quantum support through normal updates; including supplier-hosted services is this handbook's position, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says.
+
+The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT, say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen seamlessly as services are updated by their vendors.
 
 ## Who it is for
 
-This route is for assets that answer no to all four questions on [Decide whether to act](/migration-practices/diagnose/) and meet its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
+This route is for assets that answer no to all four questions on [Decide whether to act](/migration-practices/diagnose/) and, once checked, meet its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
 
 - **Every asset here:** this page is the whole of the short path, and there is no programme charter.
 - **Some assets on the full path:** the programme runs from [Organisation-wide](/routes/organisation-wide/), and this page is the track for the remaining assets, such as office laptops.
@@ -39,8 +41,6 @@ This route is for assets that answer no to all four questions on [Decide whether
 ## Worked example
 
 [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) follows a fictional marketing agency along this route, from its decision note to the sponsor's report. The office laptops in [Protect this first](/resources/examples/protect-this-first/) show the same route as a track inside a full-path estate.
-
-The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT, say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen seamlessly as services are updated by their vendors.
 
 ## Sources
 
