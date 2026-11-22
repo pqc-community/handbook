@@ -5,7 +5,7 @@ displayed_sidebar: resourcesSidebar
 description: The short-path records filled in for one fictional UK marketing agency that runs only supported devices and a hosted email and office suite, from the decision note to the sponsor's report.
 ---
 
-This worked example shows the short path through the [record set](/resources/records/) for one fictional organisation whose IT is entirely supported devices and supplier-hosted services. It uses the records the short path keeps: the decision note, the inventory, supplier answers, purchase requirements, tracking lines on the migration plan, the review log, and the progress report. For the full path, with a programme charter and change records, see [Protect this first](/resources/examples/protect-this-first/).
+This worked example shows the short path through the [record set](/resources/records/) for one fictional organisation whose IT is entirely supported devices and supplier-hosted services. It uses the records the short path keeps: the decision note, the inventory, supplier answers, purchase requirements, tracking lines on the migration plan, the review log, and the progress report. For the full path, with a programme charter and change records for every changed asset, see [Protect this first](/resources/examples/protect-this-first/).
 
 The agency is a 25-person marketing agency based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, service plan, roadmap, email, version number, release date, and check result below is invented for illustration.
 
@@ -126,7 +126,7 @@ The short path holds while the answers to the four questions stay no, and each a
 - the agency starts shipping or running a device whose signature check cannot be updated, such as a product it builds for a client (question B);
 - the agency starts signing code or documents that clients rely on, or runs its own certificate authority (question C);
 - the agency starts building or running its own systems, such as a client portal it hosts and configures (question D);
-- a device or service leaves support, or its supplier withdraws its published plan or has none for a job the product performs, which moves it to the [hard-to-change systems route](/routes/hard-to-change-systems/);
+- a device or service leaves support, or its supplier withdraws its published plan or has none for a job the product performs, which moves it to the [hard-to-change systems route](/routes/hard-to-change-systems/) while the agency stays on the short path, as Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says;
 - the IT support provider can no longer show the devices' versions and support status.
 
 The NCSC guidance notes that for many organisations, managed service providers are likely to deliver most of their IT capability, and that it is then important to make sure they are also carrying out the discovery and assessment work it describes. Here the IT support provider records the versions and runs the connection check, and the office manager keeps the records.

@@ -31,6 +31,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 - Vendor response log rows for any supplier you ask in writing.
 - A tracking line on the migration plan.
 - The review log and progress report from each review.
+- For a product that fails the fifth condition, the plan dates and change record that the [Hard-to-change systems](/routes/hard-to-change-systems/) steps produce, as the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says.
 
 ## When to leave
 

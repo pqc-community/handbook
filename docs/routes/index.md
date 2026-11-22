@@ -22,7 +22,7 @@ flowchart TD
     O --> HC[Track: Hard-to-change systems]
     O --> VM[Track: Vendor-managed software, for commodity assets]
     S -.->|an answer turns yes| O
-    S -.->|a product fails the fifth condition| HC
+    S -.->|a product fails the fifth condition, path stays short| HC
     HC -.->|the product is back in support with a plan| S
     O -.->|every asset's path is short again| S
 ```

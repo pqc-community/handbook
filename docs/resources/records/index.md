@@ -7,7 +7,7 @@ description: The linked records a migration lead sets up, fills in, and keeps to
 
 These are the records a migration lead keeps to show what has been decided, asked, required, changed, and reviewed in a post-quantum migration. Each practice and technology card writes to them, and together they are the evidence: when a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement. [Protect this first](/resources/examples/protect-this-first/) shows the whole set filled in for one fictional organisation.
 
-You do not need every record on day one. A short-path organisation, whose every asset answers no to the four questions and follows the [Vendor-managed software](/routes/vendor-managed-software/) route, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing; the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
+You do not need every record on day one. A short-path organisation, whose every asset answers no to the four questions and follows the [Vendor-managed software](/routes/vendor-managed-software/) route, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing, and plan dates and a change record for any product that fails the fifth of the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route); the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
 
 ## The records, in order of use
 
@@ -73,7 +73,7 @@ Every route starts from the decision note, which [Decide whether to act](/migrat
 
 | Route | Records it produces |
 | --- | --- |
-| [Vendor-managed software](/routes/vendor-managed-software/), the short path and the track for commodity assets | Inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
+| [Vendor-managed software](/routes/vendor-managed-software/), the short path and the track for commodity assets | Inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing; a product that fails the fifth condition adds the [Hard-to-change systems](/routes/hard-to-change-systems/) track's plan dates and change record |
 | [Organisation-wide](/routes/organisation-wide/), the full path | Programme charter and inventory, then the migration plan's order, the review log, and the progress report, with each asset's other records from its track |
 | [Long-lived confidentiality](/routes/long-lived-confidentiality/) track | Inventory rows with the confidentiality period, migration plan lines for connections and stored data, vendor response log rows, purchase requirements, and change records |
 | [Hard-to-change systems](/routes/hard-to-change-systems/) track | Inventory rows, the four dates on the migration plan and a change record for each line, with vendor response log rows and purchase requirements where a supplier or component is involved |
