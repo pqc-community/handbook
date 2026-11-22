@@ -70,7 +70,7 @@ Each situation route names the records it produces. Where you start depends on t
 | --- | --- |
 | [Vendor-managed software](/routes/vendor-managed-software/) | Inventory versions, purchase requirements, and the review log |
 | [Long-lived confidentiality](/routes/long-lived-confidentiality/) | Inventory, then the migration plan |
-| [Hard-to-change systems](/routes/hard-to-change-systems/) | Vendor response log, purchase requirements, and the change record |
+| [Hard-to-change systems](/routes/hard-to-change-systems/) | The asset's four dates on the migration plan and its change record, with purchase requirements where a component is still being selected |
 | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record in order |
 | [Ask a supplier](/routes/ask-a-supplier/) | Vendor response log |
 | [Not sure](/routes/not-sure/) | Decision note |
