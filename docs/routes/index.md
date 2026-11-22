@@ -14,17 +14,21 @@ A situation route is a short, ordered path into the practices and records. [Deci
 | Short | Every asset's path is short under Decide whether to act's [path table](/migration-practices/diagnose/#do-this); its step 3 and [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) set each asset's route | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing, and the plan dates and change record of any product on Hard-to-change systems |
 | Full | Any asset's path is full under Decide whether to act's [path table](/migration-practices/diagnose/#do-this) | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record, with each asset sent to its track |
 
+Every arrow below is decided by Decide whether to act: its [path table](/migration-practices/diagnose/#do-this), step 3 and [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). The diagram shows where each route leads, not the rules.
+
 ```mermaid
 flowchart TD
-    D[Decide whether to act] -->|every asset: no to all four| S[Short path: Vendor-managed software]
-    D -->|any asset: yes to A, B, C, or D| O[Full path: Organisation-wide]
+    D[Decide whether to act] --> S[Short path: Vendor-managed software]
+    D --> O[Full path: Organisation-wide]
     O --> LL[Track: Long-lived confidentiality]
     O --> HC[Track: Hard-to-change systems]
     O --> VM[Track: Vendor-managed software, for commodity assets]
-    S -.->|an answer turns yes| O
-    S -.->|a product fails the fifth condition, path stays short| HC
-    HC -.->|the product is back in support with a plan| S
-    O -.->|every asset's path is short again| S
+    S -.-> O
+    O -.-> S
+    S -.-> HC
+    VM -.-> HC
+    HC -.-> S
+    HC -.-> VM
 ```
 
 ## Three asset tracks
