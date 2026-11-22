@@ -13,6 +13,7 @@ import {
   findNavigationViolations,
   findPageViolations,
 } from '../checks/pages.mjs';
+import {findRoutePageViolations, findRouteValueViolations, isRouteValue} from '../checks/routes.mjs';
 import {assertNoViolations, withRoot} from '../lib/test-helpers.mjs';
 
 const ROOT = process.cwd();
@@ -143,4 +144,83 @@ test('all handbook navigation items fit their UI surface bounds', () => {
 
 test('all handbook admonition titles use supported syntax', () => {
   assertNoViolations(findAdmonitionViolations(DOCS), 'Admonition titles need bracket syntax');
+});
+
+// Situation routes. These tests live here because `npm test` lists its test files
+// explicitly; the checks themselves are in scripts/checks/routes.mjs.
+const routeRecordPage = `---
+title: Decision note
+---
+
+## Minimum fields
+
+asset, route
+
+Download a blank CSV: [decision-note.csv](/downloads/decision-note.csv).
+`;
+
+const decisionTable = (route) => `| asset | A long-lived confidentiality | path | route |
+| --- | --- | --- | --- |
+| Laptops | no | short | ${route} |
+`;
+
+test('accepts route pages that link Decide whether to act and a record page', () => {
+  withRoot(
+    {
+      'docs/resources/records/decision-note.md': routeRecordPage,
+      'docs/routes/index.md': 'See [Decide](/migration-practices/diagnose/) and the [note](/resources/records/decision-note/).\n',
+      'docs/routes/short.md': 'See [Decide](/migration-practices/diagnose/#five-conditions) and the [note](/resources/records/decision-note/#filled-example).\n',
+    },
+    (root) => assert.deepEqual(findRoutePageViolations(root), []),
+  );
+});
+
+test('flags a route page without Decide whether to act or a record, and a missing overview', () => {
+  withRoot(
+    {
+      'docs/resources/records/decision-note.md': routeRecordPage,
+      'docs/routes/short.md': 'See [Programme](/migration-practices/programme/) and the [glossary](/resources/reference/glossary/).\n',
+    },
+    (root) =>
+      assert.deepEqual(findRoutePageViolations(root), [
+        'docs/routes/index.md is missing',
+        'docs/routes/short.md: does not link Decide whether to act (/migration-practices/diagnose/)',
+        'docs/routes/short.md: does not link a record page',
+      ]),
+  );
+});
+
+test('accepts the three route names, alone or with one bracketed qualifier', () => {
+  for (const value of [
+    'Vendor-managed software',
+    'Vendor-managed software (all five conditions hold)',
+    'Long-lived confidentiality (also Hard-to-change systems)',
+    'Hard-to-change systems',
+  ]) {
+    assert.ok(isRouteValue(value), value);
+  }
+});
+
+test('flags decision-note route values that are not a track name', () => {
+  withRoot(
+    {
+      'docs/a.md': decisionTable('Organisation-wide'),
+      'docs/b.md': decisionTable('Vendor-managed software (all five conditions hold) (checked)'),
+      'docs/c.md': decisionTable('vendor-managed software'),
+      'docs/d.md': `${decisionTable('Hard-to-change systems')}\n| asset | route |\n| --- | --- |\n| Laptops | anything |\n`,
+    },
+    (root) =>
+      assert.deepEqual(
+        findRouteValueViolations(root).map((violation) => violation.split(': route')[0]),
+        ['docs/a.md:3', 'docs/b.md:3', 'docs/c.md:3'],
+      ),
+  );
+});
+
+test('every route page links Decide whether to act and a record page', () => {
+  assertNoViolations(findRoutePageViolations(ROOT), 'Route pages missing a required link');
+});
+
+test('every decision-note route value is a track name', () => {
+  assertNoViolations(findRouteValueViolations(ROOT), 'Decision-note route values');
 });
