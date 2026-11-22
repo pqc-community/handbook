@@ -35,12 +35,12 @@ const paths: SituationChoice[] = [
   {
     title: 'Short path: we mostly use standard, vendor-managed software',
     to: '/routes/vendor-managed-software/',
-    text: 'Every asset answers no to all four questions on Decide whether to act.',
+    text: 'Every asset answers no to all four questions on Decide whether to act and meets its five conditions.',
   },
   {
     title: 'Full path: we are coordinating a migration across the organisation',
     to: '/routes/organisation-wide/',
-    text: 'Any asset answers yes. The programme sends each asset to its track.',
+    text: 'Any asset is on the full path. The programme sends each asset to its track.',
   },
 ];
 

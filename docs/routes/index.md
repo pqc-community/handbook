@@ -5,14 +5,14 @@ description: The two paths through a post-quantum migration, the short vendor-ma
 displayed_sidebar: routesSidebar
 ---
 
-A situation route is a short, ordered path into the practices and records. [Decide whether to act](/migration-practices/diagnose/) holds every rule that chooses a path and a route: its four questions, the table that turns the answers into a path, and the route each asset records on the [decision note](/resources/records/decision-note/). The routes link to those rules and do not restate them. If you have not answered the four questions yet, start there.
+A situation route is a short, ordered path into the practices and records. [Decide whether to act](/migration-practices/diagnose/) holds every rule that chooses a path and a route: its four questions, the table that turns the answers into a path, and the route each asset records on the [decision note](/resources/records/decision-note/). The routes link to those rules; the tables below only point to where each answer leads, and Decide whether to act's wording governs. If you have not answered the four questions yet, start there.
 
 ## Two paths
 
 | Path | Who it is for, from Decide whether to act | Route | What it produces |
 | --- | --- | --- | --- |
-| Short | Every asset answers no to all four questions and meets the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report |
-| Full | Any asset answers yes to question A, B, C, or D | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record, with each asset sent to its track |
+| Short | Every asset's path is short: no to all four questions, with the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) met | [Vendor-managed software](/routes/vendor-managed-software/) | Decision note, inventory versions, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier asked in writing |
+| Full | Any asset's path is full: yes to question A, B, C, or D, or a product that fails the fifth condition | [Organisation-wide](/routes/organisation-wide/) | Programme charter, then every record, with each asset sent to its track |
 
 ```mermaid
 flowchart TD
@@ -21,7 +21,7 @@ flowchart TD
     O --> LL[Track: Long-lived confidentiality]
     O --> HC[Track: Hard-to-change systems]
     O --> VM[Track: Vendor-managed software, for commodity assets]
-    S -.->|an answer turns yes| O
+    S -.->|an answer turns yes, or a product fails the fifth condition| O
 ```
 
 ## Three asset tracks
@@ -34,9 +34,9 @@ On the full path, the programme sends each asset to the track its decision-note 
 | Long-lived confidentiality | Yes to question A | The data confidentiality period | [Long-lived confidentiality](/routes/long-lived-confidentiality/) |
 | Hard-to-change systems | Yes to question B, C, or D, or a product that fails the fifth condition | Change lead time, relying parties, and verifiers that cannot be updated, each on its own line | [Hard-to-change systems](/routes/hard-to-change-systems/) |
 
-The Vendor-managed software page is both the short path and the track for the commodity part of a full-path estate. The two other tracks each list the deadlines that may apply to their job and the technology cards to open.
+Path is recorded per asset on the decision note, so a full-path organisation can still have assets whose path is short, such as office laptops: they follow Vendor-managed software as a track. That page is therefore both the short path and the track for the commodity part of a full-path estate. The two other tracks each list the deadlines that may apply to their job and the technology cards to open.
 
-The split follows the UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025). They are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT. They say that for small and medium-sized enterprises using mainly commodity IT, migration should happen seamlessly as services are updated by their vendors. Where custom or specialised software is used, the timelines say it should follow the same timetable as for larger organisations.
+The split between the short and full paths follows the UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025). They are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT. They say that for small and medium-sized enterprises using mainly commodity IT, migration should happen seamlessly as services are updated by their vendors. Where custom or specialised software is used, the timelines say it should follow the same timetable as for larger organisations.
 
 ## Worked examples
 

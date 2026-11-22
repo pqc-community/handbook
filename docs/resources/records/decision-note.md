@@ -16,7 +16,7 @@ asset, A long-lived confidentiality, B fixed verifier, C others rely on your sig
 Give each asset its own row, because one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; for question A, an `unknown` period for data that may be long-lived counts as `yes` until the data owner confirms it. The questions are:
 
 - **A.** Is any data protected by public-key cryptography required to stay confidential for many years?
-- **B.** Does any product or device check signatures with a key it cannot replace after shipment?
+- **B.** Does any product or device you build or run check signatures with a key it cannot replace after shipment?
 - **C.** Do you operate a public-key infrastructure, or sign code, firmware, or documents that other people or devices rely on?
 - **D.** Do you build or run bespoke systems, rather than only supported commodity software and supplier-hosted services?
 

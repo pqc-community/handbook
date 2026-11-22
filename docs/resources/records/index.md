@@ -13,7 +13,7 @@ You do not need every record on day one. A short-path organisation, whose every 
 
 | Record | Filled by | What it holds | Read next by |
 | --- | --- | --- | --- |
-| [Decision note](/resources/records/decision-note/) | [Decide whether to act](/migration-practices/diagnose/) | One row per asset: the four answers, the urgency category, the path, and the sponsor's acceptance | The charter, for assets on the full path; the inventory, for every asset |
+| [Decision note](/resources/records/decision-note/) | [Decide whether to act](/migration-practices/diagnose/) | One row per asset: the four answers, the urgency category, the path, the route, and the sponsor's acceptance | The charter, for assets on the full path; the inventory, for every asset |
 | [Programme charter](/resources/records/programme-charter/) | [Set up the programme](/migration-practices/programme/) | Goal, scope, named roles, first budget line, reporting, and report triggers | The progress report, for its cadence and report triggers |
 | [Inventory record](/resources/records/inventory/) | [Inventory the cryptography](/migration-practices/inventory/), [Keep commodity software updated](/migration-practices/commodity-software/), and every technology card | One row per asset, with its algorithms for each job, dependencies, what a scan cannot see, and confidence | The migration plan, which orders its assets; the vendor log and purchase requirements, for what to ask and require |
 | [Vendor response log](/resources/records/vendor-response-log/) | [Work with suppliers](/migration-practices/suppliers/) and every technology card | One row per supplier answer, product, version, and job, with the judgement and follow-up | The plan's `supplier readiness`; the review log, for follow-ups |

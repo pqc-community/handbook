@@ -37,7 +37,7 @@ You have not yet decided whether post-quantum migration is a programme for your 
    - yes to A and to B, C, or D: **Long-lived confidentiality (also Hard-to-change systems)**, because the key-establishment line and the signature or verifier line run on different clocks;
    - no to all four: **Vendor-managed software**, adding "(all five conditions hold)" once you have checked the [five conditions](#five-conditions-for-the-vendor-managed-route) below, or naming the route the asset moved to.
 
-   If any asset is on the full path, run the programme from the [Organisation-wide](/routes/organisation-wide/) route, and send each asset, including any on Vendor-managed software, to the route its row records. If every asset is on the short path, follow the [Vendor-managed software](/routes/vendor-managed-software/) route. [Situation routes](/routes/) shows both paths and the three tracks.
+   The table gives each asset its own path. If any asset's path is full, the organisation is on the full path: run the programme from the [Organisation-wide](/routes/organisation-wide/) route, and send each asset, including any on Vendor-managed software, to the route its row records. If every asset is on the short path, follow the [Vendor-managed software](/routes/vendor-managed-software/) route. [Situation routes](/routes/) shows both paths and the three tracks.
 4. **Write the first inventory rows** for the systems that triggered the decision, marking unverified facts as `unknown`. Do not wait for a complete inventory before deciding.
 5. **Name the owner of the next step** and set a date to confirm the decision. On the full path, the next step is [Set up the programme](/migration-practices/programme/); on the short path, it is [Keep commodity software updated](/migration-practices/commodity-software/).
 
@@ -51,7 +51,9 @@ An asset that answers no to all four questions stays on the Vendor-managed softw
 4. There is no verifier that cannot be updated later (question B).
 5. The product is in support and has a published or written supplier plan that covers each job it performs. A plan that gives a target date without naming the algorithm is enough; when you next ask the supplier in writing, at a renewal or when the product leaves support, record the missing details as a `vague` answer on the [vendor response log](/resources/records/vendor-response-log/) and follow them up.
 
-A product that is out of support, or has no such plan, uses the Hard-to-change systems route: record that route in its `route` cell, or on the [review log](/resources/records/review-log/) if it moves at a later review.
+Conditions 2 to 4 are questions A to D again, and condition 1 is question D seen from the product: software you host or configure yourself is not only supported commodity software, so it answers yes to question D. An asset that fails one of conditions 1 to 4 therefore re-answers the matching question and takes its route from step 3.
+
+A product that is out of support, or has no such plan, uses the Hard-to-change systems route: record that route in its `route` cell, or on the [review log](/resources/records/review-log/) if it moves at a later review. Its replacement or upgrade is now planned work with a lead time, so record its `path` as `full`, and run the programme from the [Organisation-wide](/routes/organisation-wide/) route. When the product is back in support with a plan that covers each job, check the five conditions again; if they hold, it returns to Vendor-managed software.
 
 ### When you cannot answer or cannot choose
 

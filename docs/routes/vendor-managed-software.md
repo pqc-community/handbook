@@ -33,7 +33,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 ## When to leave
 
 - **An answer to question A, B, C, or D turns yes.** Re-answer the questions on the decision note. The asset moves to the track its new answers give, and the organisation follows the full path from [Organisation-wide](/routes/organisation-wide/).
-- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds, so the product moves to the [Hard-to-change systems](/routes/hard-to-change-systems/) route.
+- **A product leaves support, or its supplier has no plan for a job it performs.** The fifth condition no longer holds. Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says where the product goes: the [Hard-to-change systems](/routes/hard-to-change-systems/) track, with the programme run from [Organisation-wide](/routes/organisation-wide/).
 - **An answer stays `unknown`, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
 
 ## Worked example

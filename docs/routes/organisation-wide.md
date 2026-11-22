@@ -9,7 +9,7 @@ This route is the full path through a post-quantum migration. It runs the progra
 
 ## Who it is for
 
-This route is for any organisation with at least one asset on the full path in the table on [Decide whether to act](/migration-practices/diagnose/): an asset that answers yes to question A, B, C, or D. The migration lead usually follows it for the executive sponsor.
+This route is for any organisation with at least one asset whose path is full under [Decide whether to act](/migration-practices/diagnose/): an asset that answers yes to question A, B, C, or D, or a product that fails the fifth of its [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). The migration lead usually follows it for the executive sponsor.
 
 Each role supplies one input to the plan:
 

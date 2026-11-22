@@ -7,7 +7,7 @@ displayed_sidebar: routesSidebar
 
 This track covers key establishment that protects data which must stay confidential for years, both in transit and in storage. Its clock is the data confidentiality period. Data recorded or copied today can be decrypted once a cryptographically relevant quantum computer exists, so the work starts now rather than when that computer arrives. The programme runs from [Organisation-wide](/routes/organisation-wide/); this page holds the steps for each asset on the track.
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) is issued for US federal agencies, technology providers, standards organisations, and validation laboratories. It says this harvest-now, decrypt-later threat makes acting immediately necessary, especially for data with long-term sensitivity, and that signatures are not vulnerable to it (§3). [When to start](/learn/explainers/when-to-start/) adds the confidentiality period to the migration lead time.
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) is intended for a broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories. It says this harvest-now, decrypt-later threat makes acting immediately necessary, especially for data with long-term sensitivity, and that signatures are not vulnerable to it (§3). [When to start](/learn/explainers/when-to-start/) adds the confidentiality period to the migration lead time.
 
 ## Who it is for
 
@@ -34,9 +34,9 @@ Each date binds or guides only the audience its authority names. Record the one 
 | Authority | Audience | What it sets for key establishment |
 | --- | --- | --- |
 | EU NIS Cooperation Group, [roadmap](/standards/migration-guides/eu-nis-roadmap/), version 1.1, 11 June 2025 | EU Member States. It says public administrations and critical infrastructure entities, notably those in scope of the NIS2 Directive, should refer to it | Recommends that data needing to stay confidential for at least ten years be protected from quantum attack no later than the end of 2030, and that high-risk use cases complete the transition by then |
-| NIST, [IR 8547](/standards/transition-and-key-management/nist-ir-8547/), October 2026 | US federal agencies, technology providers, standards organisations, and validation laboratories | Says systems that protect data with long-term confidentiality needs warrant the earliest transitions. Schedules quantum-vulnerable key establishment for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines (§4) |
-| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | High value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030. Systems that protect data expected to remain mission-sensitive in 2030 get the same priority (§4) |
-| UK NCSC, [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/), published and reviewed 20 March 2025 | Primarily large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | Early, highest-priority migration activities by 2031; migration of all systems, services, and products completed by 2035 |
+| NIST, [IR 8547](/standards/transition-and-key-management/nist-ir-8547/), October 2026 | A broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories | Says systems that protect data with long-term confidentiality needs warrant the earliest transitions. Schedules quantum-vulnerable key establishment for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines (§4) |
+| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | High value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030. Agencies must give the same priority to systems that protect data expected to remain mission-sensitive in 2030 (§4) |
+| UK NCSC, [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/), published and reviewed 20 March 2025 | Primarily large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | General milestones for every job, not specific to key establishment: early, highest-priority migration activities by 2031, and migration of all systems, services, and products completed by 2035 |
 
 ## Technology cards
 
@@ -51,14 +51,16 @@ Open the card for each technology that carries the asset's data:
 - Inventory rows with the confidentiality period and each key-establishment algorithm.
 - Migration plan lines for connections and stored data, each with its order, timeline, and four dates.
 - Vendor response log rows and purchase requirements for each supplier involved.
-- A change record for each change.
+- A change record for each change. When no supported option exists yet, record the change as `blocked` on the change record, with a resolve-by date, and carry it on the review log until it is resolved.
+
+The track's work for a line is in place when its four dates are recorded and its change record exists.
 
 ## When to leave
 
 - **The data owner confirms a period that changes the answer to question A.** Re-answer on the decision note. The asset moves to the track its new answers give.
 - **The asset's signatures, a verifier, or bespoke code need work.** Those lines follow [Hard-to-change systems](/routes/hard-to-change-systems/).
 - **A supplier's answer is `missing` or `concerning`.** Follow it up and escalate it under step 4 of [Work with suppliers](/migration-practices/suppliers/#4-follow-up-and-escalate).
-- **No supported option exists.** Record the change as `blocked` on the change record, with a resolve-by date. Carry it on the review log until it is resolved.
+- **The system is critical national infrastructure or a regulated system, or you cannot choose.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose).
 
 ## Worked example
 

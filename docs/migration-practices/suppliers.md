@@ -82,7 +82,7 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 
 ## Limits and next step
 
-The log records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the asset's line through its [Long-lived confidentiality](/routes/long-lived-confidentiality/) or [Hard-to-change systems](/routes/hard-to-change-systems/) track. Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/migration-practices/implementation/).
+The log records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the asset's line through the track its decision-note row records, such as [Long-lived confidentiality](/routes/long-lived-confidentiality/) or [Hard-to-change systems](/routes/hard-to-change-systems/). Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/migration-practices/implementation/).
 
 ## Sources
 
