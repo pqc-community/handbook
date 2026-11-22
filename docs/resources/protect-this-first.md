@@ -20,7 +20,7 @@ The manufacturer has three different migration paths: product designs in a suppl
 
 ## Decision note
 
-The [decision note](/resources/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path.
+The [decision note](/resources/decision-note/) answers the four questions for each asset. The archive and the sensor put the manufacturer on the full path as an urgent adopter for those assets; the laptops stay on the short path. The rows are shown as accepted on 2026-07-13; the review on 2026-11-10 later confirmed the laptops' six-year period and added "(all five conditions hold)" to their route, as the [review log](/resources/review-log/) records.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ At the review on `2026-11-10`, the manufacturer reopened the migration plan, sup
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment (stored data) | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | change record | Product-design archive in supplier-hosted workspace | key establishment | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2027-02-10 |
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | inventory record; decision note | Office laptops | key establishment; signatures | confirm the confidentiality period (6 years, office-records policy, fictional; question A stays `no`) and record the installed browser and operating-system versions from the device-management console; the decision note's route now reads "Vendor-managed software (all five conditions hold)" | IT lead | closed 2026-11-10 | not applicable |
+| 2026-11-10 | inventory record; decision note | Office laptops | key establishment; signatures | confirm the confidentiality period (6 years, office-records policy, fictional; question A stays `no`, because the IT lead judges six years short of the many years question A covers) and record the installed browser and operating-system versions from the device-management console; the decision note's route now reads "Vendor-managed software (all five conditions hold)" | IT lead | closed 2026-11-10 | not applicable |
 
 The review updated two inventory rows. The archive now shows the staging change and the stored-data gap; the laptops show the confirmed confidentiality period and recorded versions, but their algorithm cells stay `unknown` until the negotiated methods are checked, so `confidence` stays `unknown` and the laptop plan line keeps its next check at the quarterly review:
 

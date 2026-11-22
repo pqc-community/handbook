@@ -19,6 +19,8 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 
 ## Filled example
 
+From [Protect this first](/resources/protect-this-first/). The dates are fictional.
+
 | date | record | asset | job | item | owner | status | next review |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-11-10 | inventory record | Product-design archive in supplier-hosted workspace | key establishment | update the row to show Workspace 4.2 and X25519MLKEM768 in staging, with production still on Workspace 4.1 | product engineering lead | closed 2026-11-10 | not applicable |
@@ -27,7 +29,7 @@ Record `unknown` in any cell you cannot verify yet. Separate multiple timelines 
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment (stored data) | stored-data key wrapping answer and Workspace 4.1 end of support | product engineering lead | open | 2026-12-01 |
 | 2026-11-10 | change record | Product-design archive in supplier-hosted workspace | key establishment | production rollout of Workspace 4.2 and production client handshake check | product engineering lead | open | 2027-02-10 |
 | 2026-11-10 | vendor response log | Product-design archive in supplier-hosted workspace | key establishment | supplier commitments on later updates, notice period for cryptographic changes, and deprecation plan, added to the supplier follow-up | product engineering lead | open | 2026-12-01 |
-| 2026-11-10 | inventory record; decision note | Office laptops | key establishment; signatures | confirm the confidentiality period (6 years, office-records policy, fictional; question A stays `no`) and record the installed browser and operating-system versions from the device-management console; the decision note's route now reads "Vendor-managed software (all five conditions hold)" | IT lead | closed 2026-11-10 | not applicable |
+| 2026-11-10 | inventory record; decision note | Office laptops | key establishment; signatures | confirm the confidentiality period (6 years, office-records policy, fictional; question A stays `no`, because the IT lead judges six years short of the many years question A covers) and record the installed browser and operating-system versions from the device-management console; the decision note's route now reads "Vendor-managed software (all five conditions hold)" | IT lead | closed 2026-11-10 | not applicable |
 
 ## Blank template
 
