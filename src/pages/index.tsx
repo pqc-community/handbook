@@ -33,7 +33,7 @@ type SituationChoice = {
 
 const paths: SituationChoice[] = [
   {
-    title: 'Short path: we mostly use standard, vendor-managed software',
+    title: 'Short path: we use only standard, vendor-managed software',
     to: '/routes/vendor-managed-software/',
     text: 'Every asset answers no to all four questions on Decide whether to act and meets its five conditions.',
   },
@@ -53,7 +53,7 @@ const tracks: SituationChoice[] = [
   {
     title: 'We own products or systems that may be hard to change',
     to: '/routes/hard-to-change-systems/',
-    text: 'Driven by change lead time, relying parties, and verifiers that cannot be updated.',
+    text: 'Driven by change lead time, relying-party coordination, and the service life of verifiers that cannot be updated.',
   },
 ];
 

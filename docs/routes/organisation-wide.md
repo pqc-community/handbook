@@ -19,7 +19,7 @@ Each role supplies one input to the plan:
 | Migration lead | The migration plan |
 | Asset owners | The system and its unknowns |
 | Procurement | The supplier questions |
-| Legal or risk | The confidentiality period and the applicable timeline |
+| Legal or risk | The applicable timeline, and advice on the confidentiality period that the data owner confirms |
 | Operations | The change window and the rollback owner |
 | Suppliers | The product, version, and the answer |
 
@@ -33,7 +33,7 @@ Each role supplies one input to the plan:
    - [Hard-to-change systems](/routes/hard-to-change-systems/);
    - [Vendor-managed software](/routes/vendor-managed-software/).
 5. [Decide what to migrate first](/migration-practices/priority/). Record the order and reason on the [migration plan](/resources/records/migration-plan/), within each job and across every track.
-6. **Follow each track's steps.** Record the plan dates, vendor response log rows, purchase requirements and change records that each track produces.
+6. **Follow each track's steps.** The tracks' inventory and priority steps add each asset's detail to the same inventory record and migration plan; they are not a second inventory. Record the plan dates, vendor response log rows, purchase requirements and change records that each track produces.
 7. [Review and report](/migration-practices/subsequent-review/). Record the [review log](/resources/records/review-log/) and [progress report](/resources/records/progress-report/), and reopen records on their triggers.
 
 ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024), an informative technical report, sets out a repeatable migration framework that likewise runs from asset inventories through prioritisation and planning to executing the plans and preparing for the next iteration. This route makes programme setup an explicit step because it decides who does the work and by when.
@@ -51,7 +51,7 @@ ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024)
 
 - **At a later review, every asset answers no to all four questions and meets the five conditions.** The organisation is on the short path; follow [Vendor-managed software](/routes/vendor-managed-software/).
 - **An asset's answers change.** Re-answer the four questions on the decision note; the asset moves to the track its new answers give.
-- **You cannot choose a route for an asset.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose). A large bespoke estate, critical national infrastructure, or a regulated system stays on this route and brings in a specialist as well, as that section says.
+- **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
 
 ## Worked example
 

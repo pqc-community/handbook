@@ -5,13 +5,13 @@ description: The track for bespoke systems, signatures that others rely on, and 
 displayed_sidebar: routesSidebar
 ---
 
-This track covers systems where a change takes a long time to make or must be coordinated with others: bespoke systems, signatures that other people or devices rely on, and verifiers that cannot be updated after shipment. The urgency comes from the time a change needs, not from data being recorded today, but each of the three has a different clock: a device's service life, relying-party coordination, or your own change lead time. A product that fails the fifth condition adds a fourth line, whose clock is its replacement or upgrade lead time. Keep them as separate lines. The programme runs from [Organisation-wide](/routes/organisation-wide/); this page holds the steps for each asset on the track.
+This track covers systems where a change takes a long time to make or must be coordinated with others. The urgency comes from the time a change needs, not from data being recorded today, and each kind of system has its own clock: verifiers that cannot be updated after shipment run on the device's service life; signatures that other people or devices rely on run on relying-party coordination; and bespoke systems run on your own change lead time. A product that fails the fifth condition adds a fourth line, whose clock is its replacement or upgrade lead time. Keep them as separate lines. The programme runs from [Organisation-wide](/routes/organisation-wide/); this page holds the steps for each asset on the track.
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) is intended for a broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories. It says signatures are not vulnerable to harvest-now, decrypt-later attacks. It also says the move to post-quantum signatures is urgent because the transition takes longer, is more complex, and needs more parties to coordinate (§3).
 
 ## Who it is for
 
-This track is for assets that answer yes to question B, C, or D on [Decide whether to act](/migration-practices/diagnose/), recorded as Hard-to-change systems in the `route` cell of the [decision note](/resources/records/decision-note/). It also takes products that fail the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). If the same asset also answers yes to question A, its key-establishment line follows [Long-lived confidentiality](/routes/long-lived-confidentiality/).
+This track is for assets that answer yes to question B, C, or D on [Decide whether to act](/migration-practices/diagnose/), whose `route` cell names Hard-to-change systems, on its own or in brackets after Long-lived confidentiality, of the [decision note](/resources/records/decision-note/). It also takes products that fail the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route). If the same asset also answers yes to question A, its key-establishment line follows [Long-lived confidentiality](/routes/long-lived-confidentiality/).
 
 | Line | From question | Clock | What sets the date |
 | --- | --- | --- | --- |
@@ -45,15 +45,15 @@ Each date binds or guides only the audience its authority names. Record the one 
 
 | Authority | Audience | Line it applies to | What it sets |
 | --- | --- | --- | --- |
-| UK NCSC, [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/), published and reviewed 20 March 2025 | Primarily large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | Verifiers that cannot be updated | By 2028, an initial migration plan that identifies any requirement to migrate long-lived hardware roots of trust |
+| UK NCSC, [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/), published and reviewed 20 March 2025 | Primarily technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | Verifiers that cannot be updated | By 2028, an initial migration plan that identifies any requirement to migrate long-lived hardware roots of trust |
 | UK NCSC, as above | As above | Every line | General milestones: early, highest-priority activities by 2031, and migration of all systems, services, and products completed by 2035 |
 | NIST, [IR 8547](/standards/transition-and-key-management/nist-ir-8547/), October 2026 | A broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories | Verifiers that cannot be updated | Where a device's signature verification cannot be updated after manufacture and the device may still be in use once a cryptographically relevant quantum computer exists, says it is important for the device to be designed to require quantum-resistant signatures on its code (§3.1.1) |
 | NIST IR 8547, as above | As above | Signatures others rely on | Schedules quantum-vulnerable signatures for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines (§4.1.1) |
 | EU NIS Cooperation Group, [roadmap](/standards/migration-guides/eu-nis-roadmap/), version 1.1, 11 June 2025 | EU Member States. It says public administrations and critical infrastructure entities, notably those in scope of the NIS2 Directive, should refer to it | Systems with a long life cycle, and complex systems such as public-key infrastructures (the source's terms) | Says it is necessary to plan the migration of systems with a long life cycle, and of complex systems such as public-key infrastructures, well in advance, and recommends starting detailed transition plans for them as soon as possible |
 | EU roadmap, as above | As above | Verifiers that cannot be updated | Highly recommends that products entering the market with an expected lifetime beyond 2030 be upgradable to post-quantum cryptography, with post-quantum signatures in their software and firmware upgrade mechanism. Sets, as a 31 December 2030 milestone in the timeline it recommends to Member States, that quantum-safe software and firmware upgrades are enabled by default |
-| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | Signatures | High value assets and high-impact systems must adopt post-quantum digital signatures by 31 December 2031 (§4) |
+| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies | Signatures others rely on, and verifiers | High value assets and high-impact systems must adopt post-quantum digital signatures by 31 December 2031 (§4) |
 
-Beyond the general milestones, no authority above sets a date specific to bespoke change lead time or to out-of-support products; their dates come from your own release cycle and the supplier's end-of-support date. NIST IR 8547 says, without a date, that systems that cannot support post-quantum cryptography should be identified and prioritised for replacement or decommissioning (§4).
+Beyond the general milestones, no authority above sets a date specific to bespoke change lead time or to out-of-support products; their dates come from your own release cycle and the supplier's end-of-support date. NIST IR 8547, citing OMB M-26-15, says, without a date, that systems that cannot support post-quantum cryptography should be identified and prioritised for replacement or decommissioning (§4).
 
 ## Technology cards
 
@@ -71,15 +71,16 @@ Open the card for each technology the line depends on:
 - A change record for each change, which may be a `blocked` record with a resolve-by date.
 - Vendor response log rows and purchase requirements where a supplier or a component selection is involved.
 
-The track's work for a line is in place when its four dates are recorded and its change record exists.
+A line is planned when its four dates are recorded and its change record exists; it is not migrated while that change record is `blocked` or its production deployment date is still to come.
 
 ## When to leave
 
 - **The asset is replaced by supported commodity software or a supplier-hosted service.** Re-answer the four questions on the decision note. The asset moves to the track its new answers give.
+- **The asset's answer to question B, C, or D turns no**, for example because you retire the public-key infrastructure or stop signing for others. Re-answer the four questions on the decision note; step 3 of [Decide whether to act](/migration-practices/diagnose/) sets the new route.
 - **Something changes the asset's answer to question A.** Re-answer the four questions on the decision note; step 3 of [Decide whether to act](/migration-practices/diagnose/) sets the new route, which may add [Long-lived confidentiality](/routes/long-lived-confidentiality/).
 - **A design freeze is approaching and there is still no option.** Escalate it, as step 4 of [Plan the migration](/migration-practices/plan/) says. [Review and report](/migration-practices/subsequent-review/) is where decisions needed reach the executive sponsor, on the [progress report](/resources/records/progress-report/).
 - **A product that failed the fifth condition is back in support with a plan.** Check the five conditions again, as Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says; if they hold, the product returns to [Vendor-managed software](/routes/vendor-managed-software/).
-- **You cannot choose a route for an asset.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose). A large bespoke estate, critical national infrastructure, or a regulated system stays on this route and brings in a specialist as well, as that section says.
+- **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
 
 ## Worked example
 

@@ -1,11 +1,11 @@
 ---
-title: Mostly standard, vendor-managed software
+title: Standard, vendor-managed software
 sidebar_label: Vendor-managed software
 description: The short path, and the track for commodity assets on the full path. Keep supplier updates installed, write requirements into purchases and renewals, review, and leave when a condition stops holding.
 displayed_sidebar: routesSidebar
 ---
 
-This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Their suppliers are expected to deliver post-quantum support through normal updates; the UK NCSC says this of commodity IT, and including supplier-hosted services is this handbook's position, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says.
+This route is the short path through a post-quantum migration. It is also the track for the commodity part of a full-path estate. It covers supported browsers, operating systems and mobile devices, and supplier-hosted services such as hosted email and office suites. Their suppliers are expected to deliver post-quantum support through normal updates, as the UK NCSC guidance quoted under Worked example says for small and medium-sized enterprises using mainly commodity IT; including supplier-hosted services is this handbook's position, as [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) says.
 
 ## Who it is for
 
@@ -19,7 +19,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 1. [Decide whether to act](/migration-practices/diagnose/). Record it on the [decision note](/resources/records/decision-note/). Each asset's `route` reads "Vendor-managed software (all five conditions hold)" once you have checked the conditions. The first rows go on the [inventory record](/resources/records/inventory/).
 2. [Keep commodity software updated](/migration-practices/commodity-software/). Record the installed versions, or the subscribed service and plan, with the date checked, in the inventory record. Add a tracking line on the [migration plan](/resources/records/migration-plan/); [Timelines](/learn/timelines/) explains how to read the timeline it records.
 3. [Work with suppliers](/migration-practices/suppliers/#5-write-requirements-into-purchases-and-renewals), step 5. Record the requirement text used in each purchase and renewal on the [purchase requirements record](/resources/records/purchase-requirements/). When a product comes up for renewal or leaves support, steps 2 to 4 of the same practice apply. Record those answers on the [vendor response log](/resources/records/vendor-response-log/).
-4. [Review and report](/migration-practices/subsequent-review/). At each review, recheck the five conditions. Record the review on the [review log](/resources/records/review-log/) and the [progress report](/resources/records/progress-report/).
+4. [Review and report](/migration-practices/subsequent-review/). At each review, recheck the five conditions. Record the review on the [review log](/resources/records/review-log/) and the [progress report](/resources/records/progress-report/). On the full path, these assets are reviewed in the programme's review on the Organisation-wide route, not in a separate report.
 
 ## Output records
 
@@ -40,7 +40,7 @@ This route is for assets that answer no to all four questions on [Decide whether
 
 [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) follows a fictional marketing agency along this route, from its decision note to the sponsor's report. The office laptops in [Protect this first](/resources/examples/protect-this-first/) show the same route as a track inside a full-path estate.
 
-The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen seamlessly as services are updated by their vendors.
+The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT, say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration should happen seamlessly as services are updated by their vendors.
 
 ## Sources
 
