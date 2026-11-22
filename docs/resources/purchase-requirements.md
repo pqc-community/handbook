@@ -35,7 +35,7 @@ From [Protect this first](/resources/protect-this-first/). The supplier, product
 
 Download a blank CSV: [purchase-requirements.csv](/downloads/purchase-requirements.csv).
 
-Be strictest where the product cannot change later: for a verifier that cannot be updated, the requirement is a condition of selection, not a request. CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), addressed to organisations generally with specific direction for US federal civilian agencies, shows the categories in which products supporting post-quantum standards are widely available, which helps judge where a requirement is realistic today.
+Be strictest where the product cannot change later: for a verifier that cannot be updated, the requirement is a condition of selection, not a request. CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), addressed to organisations generally with specific direction for US federal civilian agencies, shows the categories in which products supporting post-quantum standards are widely available, which helps judge where a requirement is realistic today. That support is mostly for key establishment rather than signatures, so the list says little about a signature requirement such as a boot verifier's.
 
 Keep a real record off a public ticket and off an unlocked shared drive: requirements and commitments describe how your systems are protected.
 
