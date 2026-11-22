@@ -7,7 +7,7 @@ displayed_sidebar: routesSidebar
 
 Use these three questions when you are not sure which route applies.
 
-If the organisation mostly uses supplier-updated browsers, operating systems, and mobile devices, and supplier-hosted services such as hosted email, and holds no long-lived confidential data and no product it cannot update, use the [vendor-managed software route](/routes/vendor-managed-software/).
+If the organisation mostly uses supplier-updated browsers, operating systems, mobile devices, and supplier-hosted services such as hosted email, holds no long-lived confidential data, and has no product it cannot update, use the [vendor-managed software route](/routes/vendor-managed-software/).
 
 If a record needs to stay confidential for years, use the [long-lived confidentiality route](/routes/long-lived-confidentiality/). If the organisation ships or operates a product whose signature check cannot be updated later, use the [hard-to-change systems route](/routes/hard-to-change-systems/).
 
