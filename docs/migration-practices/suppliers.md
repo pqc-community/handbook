@@ -47,7 +47,7 @@ A national milestone that a supplier quotes applies to the audience its authorit
 
 ### 4. Follow up and escalate
 
-Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the asset owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time in the plan; or written risk acceptance by the sponsor, with a review date.
+Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the asset owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time in the plan; or written risk acceptance by the sponsor, with a review date. Where the answer means a vendor-managed product fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), that section also sets its route.
 
 ### 5. Write requirements into purchases and renewals
 
