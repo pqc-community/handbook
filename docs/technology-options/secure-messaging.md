@@ -33,7 +33,7 @@ The provider. Your job is to ask the right questions, choose a product whose ans
 ## What good looks like
 
 - A written answer from the provider for each job (message keys, user and device authentication) and for stored history, each judged on the [vendor response log](/resources/vendor-response-log/).
-- Post-quantum protection of message keys on for every client and for group conversations, with a minimum client version enforced where the product allows it, so older clients do not hold groups on a classical cipher suite.
+- Post-quantum protection of message keys switched on for every client and group conversation, with a minimum client version enforced where the product allows it; if it relies on draft-ietf-mls-pq-ciphersuites, recorded as provisional.
 - Retention and exports set so that sensitive history is kept no longer than it is needed.
 
 ## What to ask or test

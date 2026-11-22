@@ -27,9 +27,9 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 ## What good looks like
 
 - Every tunnel and remote-access client is on the [inventory](/resources/inventory-record/) with its peer, and both ends support the same post-quantum key exchange before you require it.
-- The post-quantum exchange is added under RFC 9370, with the ML-KEM method recorded as provisional until it is published.
+- The post-quantum exchange is added under RFC 9370, using the draft ML-KEM method, or a supplier-specific one, only under the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/), and recorded as provisional until it is published.
 - Each peer's negotiated key exchange is confirmed from the gateway logs, and peers that cannot follow have an owner and a date.
-- Gateway certificates are tracked on their own line, as [PKI and certificates](/technology-options/pki/) describes.
+- Gateway certificates have their own signatures line on the [migration plan](/resources/migration-plan/), with its own milestone, as [PKI and certificates](/technology-options/pki/) describes.
 
 ## What to ask or test
 

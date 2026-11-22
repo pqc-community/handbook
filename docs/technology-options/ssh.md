@@ -27,9 +27,9 @@ The SSH implementation's supplier, usually the operating system or the network d
 
 ## What good looks like
 
-- Servers and clients prefer a hybrid post-quantum key exchange that every applicable authority accepts, and classical-only methods stay enabled only for devices recorded as exceptions.
+- Servers and clients prefer a hybrid post-quantum key exchange that every applicable authority accepts, and classical-only methods are kept only where a recorded exception needs them.
 - Network devices, appliances, and automation tools with their own SSH library are on the [inventory](/resources/inventory-record/), with the method each one negotiates.
-- Host and user keys are tracked on their own signatures line.
+- Host and user keys have their own signatures line on the [migration plan](/resources/migration-plan/), with its own milestone.
 
 ## What to ask or test
 

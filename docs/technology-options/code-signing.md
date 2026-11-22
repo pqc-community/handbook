@@ -34,7 +34,7 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 
 ## What to ask or test
 
-- Which post-quantum signature schemes your signing tools and [HSMs](/technology-options/hsm-kms/) support, and from which release.
+- Which post-quantum signature schemes your signing tools and HSMs support, and from which release.
 - For each platform and update agent that verifies your signatures, which algorithms it accepts and from which release, asked of the platform owner in writing.
 - Whether a test signature verifies on each class of verifier, including older releases still in the field, before signing switches.
 - How long verifiers will keep accepting signatures made with the old algorithm.

@@ -32,9 +32,9 @@ The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-prote
 ## What good looks like
 
 - Every TLS endpoint you run is on the [inventory](/resources/inventory-record/) with the post-quantum groups its software supports, and the clients and partners that connect to it.
-- A hybrid or ML-KEM group, chosen by the hybrid rule on [Choosing an option](/technology-options/choosing/), is offered and preferred wherever the product supports it, and what connections actually negotiate is checked from the client side.
+- A hybrid group from RFC 10024, or ML-KEM alone recorded as provisional while draft-ietf-tls-mlkem is a draft, chosen by the hybrid and protocol-mechanisms rules on [Choosing an option](/technology-options/choosing/), is offered and preferred wherever the product supports it, and what connections actually negotiate is checked from the client side.
 - Proxies, load balancers, and CDNs that end the TLS connection are recorded with their own support, because each one starts a new handshake.
-- Certificates are tracked on their own line, as [PKI and certificates](/technology-options/pki/) describes.
+- Certificates have their own signatures line on the [migration plan](/resources/migration-plan/), with its own milestone, as [PKI and certificates](/technology-options/pki/) describes.
 
 ## What to ask or test
 

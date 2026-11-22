@@ -31,7 +31,7 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 - Whether signature and key sizes fit the device's storage, and verification fits its boot time, tested on supplier samples.
 - For LMS or XMSS, how the signing side will control state for the whole life of the key.
-- For devices already shipped, whether any field update path for the verifier exists at all, confirmed with the supplier rather than assumed.
+- For devices already shipped, whether any field update path for the verifier exists at all, confirmed with the supplier rather than assumed; if one does, the device moves to [Code and software signing](/technology-options/code-signing/).
 
 ## Traps
 

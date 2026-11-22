@@ -40,7 +40,7 @@ You choose for a private PKI, within what your CA software and hardware security
 - Whether each trust store and relying party verifies a certificate from a test chain that uses the new algorithm.
 - Whether revocation services (CRLs and OCSP responders) can sign with the new algorithm.
 - Whether larger certificates and chains still fit the protocols and devices that carry them.
-- For public certificates, what your certification authority and the browsers have published about post-quantum certificates.
+- For public certificates, what your certification authority and the browser root programmes have published about post-quantum certificates.
 
 ## Traps
 

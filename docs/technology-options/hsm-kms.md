@@ -26,16 +26,15 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 ## What good looks like
 
-- Every HSM, KMS, and TPM on the [inventory](/resources/inventory-record/), named in the `dependencies` of each key and system that relies on it.
-- A written supplier answer on supported algorithms, releases, and validation status, judged on the [vendor response log](/resources/vendor-response-log/).
+- Each HSM, KMS, and TPM model on the [inventory](/resources/inventory-record/), named in the `dependencies` of each key and system that relies on it.
+- A `complete` supplier answer for every module the plan depends on.
 - Firmware upgrades or replacements scheduled ahead of the PKI, signing, and server work that depends on them, allowing for hardware lead times.
-- The new algorithms tested in a non-production partition before anything depends on them.
 
 ## What to ask or test
 
 - The supplier's written answer on supported algorithms, releases, and validation status, recorded on the [vendor response log](/resources/vendor-response-log/).
 - Whether a firmware upgrade is enough or new hardware is needed, and the replacement lead time.
-- A test key generation and signing or decapsulation with the new algorithm in a non-production partition.
+- A test key generation and signing or decapsulation with the new algorithm in a non-production partition, account, or test device.
 
 ## Traps
 

@@ -42,8 +42,8 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 ## What to ask or test
 
-- For each control-system and device supplier, which post-quantum algorithms the product supports or will support, from which release, and whether it can be updated in the field.
-- Whether remote-access and boundary systems support post-quantum key exchange, using the questions on the connection cards.
+- For each control-system and device supplier, which post-quantum algorithms the product supports or will support for each job (key establishment, signatures, and any verifier that cannot be updated), from which release, and whether it can be updated in the field.
+- Whether remote-access and boundary systems support post-quantum key exchange, using the questions on [TLS and web services](/technology-options/tls/), [VPNs and IPsec](/technology-options/vpn-ipsec/), and [SSH](/technology-options/ssh/).
 - Whether devices can handle larger keys and signatures, tested on spare or test-bench equipment rather than live plant.
 - When each system is next due for maintenance or refresh.
 

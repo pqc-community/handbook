@@ -37,7 +37,7 @@ The directory and operating-system supplier decides what the domain controllers 
 
 - Whether certificate or smart-card logon is used, and for which users and systems.
 - Which encryption types domain controllers and clients allow, and whether older types can be removed.
-- The supplier's written plan for post-quantum PKINIT and logon certificates, and from which release.
+- The supplier's written plan for post-quantum PKINIT and logon certificates, naming the release that delivers it.
 - Whether directory connections use TLS, and what they negotiate.
 
 ## Traps
