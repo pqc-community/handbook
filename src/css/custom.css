@@ -20,6 +20,15 @@
 }
 
 [data-theme='dark'] {
+  /* Homepage row hover: Code Surface (brand-guidelines.md) */
+  --pqc-row-hover: #024c63;
+}
+
+[data-theme='light'] {
+  --pqc-row-hover: #eef9fb;
+}
+
+[data-theme='dark'] {
   --ifm-background-color: #013b4e;
   --ifm-font-color-base: #f5fcfd;
   --ifm-navbar-background-color: #012a38;

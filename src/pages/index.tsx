@@ -17,7 +17,7 @@ const routes: Entry[] = [
     kind: 'Short path',
     title: 'Standard, vendor-managed software',
     to: '/routes/vendor-managed-software/',
-    text: 'Keep supplier updates installed, write post-quantum requirements into purchases and renewals, and review. Also the track for commodity assets on the full path.',
+    text: 'Keep supplier updates installed, write post-quantum requirements into purchases and renewals, review, and change route when a condition stops holding. Also the track for commodity assets on the full path.',
   },
   {
     kind: 'Full path',
@@ -29,13 +29,13 @@ const routes: Entry[] = [
     kind: 'Track',
     title: 'Data that needs to stay confidential for years',
     to: '/routes/long-lived-confidentiality/',
-    text: 'Key establishment for data whose confidentiality period makes harvest-now, decrypt-later the reason to start now.',
+    text: 'Key establishment for data that must stay confidential for years, where data recorded today could be decrypted later.',
   },
   {
     kind: 'Track',
     title: 'Products or systems that may be hard to change',
     to: '/routes/hard-to-change-systems/',
-    text: 'Bespoke systems, signatures that others rely on, and verifiers that cannot be updated after shipment.',
+    text: 'Bespoke systems, signatures that others rely on, verifiers that cannot be updated after shipment, and products that leave support or have no supplier plan.',
   },
 ];
 
@@ -73,7 +73,7 @@ const reference: Entry[] = [
   {
     title: 'Technology options',
     to: '/technology-options/',
-    text: 'One card per technology: the job it does and the status of its post-quantum mechanism.',
+    text: 'One card per technology: the cryptographic job or jobs it does and the status of its post-quantum mechanism.',
   },
   {
     title: 'Resources',
@@ -111,7 +111,7 @@ function HomepageHeader() {
         <p className={styles.heroLead}>{siteConfig.tagline}.</p>
         <p className={styles.heroStart}>
           <Link className={styles.startLink} to="/migration-practices/diagnose/">
-            Start with Decide whether to act
+            First step: Decide whether to act
           </Link>
           <span>Four questions that put each asset on the short or full path.</span>
         </p>
@@ -136,7 +136,7 @@ export default function Home(): ReactNode {
           <div className="container">
             <Heading as="h2">Situation routes</Heading>
             <p className={styles.sectionIntro}>
-              Decide whether to act places each asset on a path. Each route sets out the steps, the records to keep, and
+              <Link to="/migration-practices/diagnose/">Decide whether to act</Link> places each asset on a path. Each route sets out the steps, the records to keep, and
               when to change route. <Link to="/routes/">See how the routes fit together</Link>.
             </p>
             <EntryList entries={routes} label="Situation routes" />
