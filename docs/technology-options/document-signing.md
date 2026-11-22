@@ -47,7 +47,12 @@ The email and document software suppliers decide what their products sign with a
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the signing service and the signer certificates, with recipient groups in `dependencies`; the signatures line on the [migration plan](/resources/migration-plan/); the [change record](/resources/change-record/), with verification tests for each recipient group.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for the signing service and the signer certificates, with recipient groups in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | The software suppliers' answers |
+| [Migration plan](/resources/migration-plan/) | The signatures line |
+| [Change record](/resources/change-record/) | Verification tests for each recipient group |
 
 ## Example
 

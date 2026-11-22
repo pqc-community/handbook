@@ -46,7 +46,12 @@ The suppliers of the authentication server and the device operating systems deci
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the authentication service and each device class, with the EAP method as a labelled value in the key-establishment cell (for example "EAP-TLS 1.3: X25519") and the private certification authority in `dependencies`; a key-establishment line on the [migration plan](/resources/migration-plan/) for the EAP-TLS handshake and the PKI's signatures line for certificates; the [change record](/resources/change-record/) for the change, with the negotiated group as the deployed-state check; supplier answers in the [vendor response log](/resources/vendor-response-log/).
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for the authentication service and each device class, with the EAP method as a labelled value in the key-establishment cell (for example "EAP-TLS 1.3: X25519") and the private certification authority in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
+| [Migration plan](/resources/migration-plan/) | A key-establishment line for the EAP-TLS handshake; certificates stay on the PKI's signatures line |
+| [Change record](/resources/change-record/) | The negotiated group as the deployed-state check |
 
 ## Example
 

@@ -44,7 +44,12 @@ The identity provider, token maker, or platform supplier. You choose when to req
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the identity provider and each token type, with the verifying applications in `dependencies`; supplier answers in the [vendor response log](/resources/vendor-response-log/); requirements in purchases and renewals under [Work with suppliers](/migration-practices/suppliers/).
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for the identity provider and each token type, with the verifying applications in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
+| [Migration plan](/resources/migration-plan/) | A signatures line for the provider and each token type |
+| Purchases and renewals | Post-quantum requirements, under [Work with suppliers](/migration-practices/suppliers/) |
 
 ## Example
 

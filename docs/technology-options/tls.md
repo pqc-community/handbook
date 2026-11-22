@@ -52,11 +52,18 @@ The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-prote
 
 ## Record it fills
 
-The system's [inventory](/resources/inventory-record/) key-establishment cell, updated as the change reaches each environment (for example "in transit: X25519MLKEM768 in staging"), and the [change record](/resources/change-record/), with the option, authority, the client-side check as the deployed-state check, and a fallback to classical-only key establishment as a rollback trigger.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | The key-establishment cell, updated as the change reaches each environment, for example "in transit: X25519MLKEM768 in staging" |
+| [Vendor response log](/resources/vendor-response-log/) | The supplier's answer, where a supplier controls the endpoint |
+| [Migration plan](/resources/migration-plan/) | A key-establishment line; certificates have their own signatures line |
+| [Change record](/resources/change-record/) | The option, the authority, the client-side check as the deployed-state check, and a fallback to classical-only key establishment as a rollback trigger |
 
 ## Example
 
-From [Protect this first](/resources/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 2026-10-21, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/stored-data/).
+An insufficient record is "TLS is configured for hybrid key exchange."
+
+A decision-ready record, from [Protect this first](/resources/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 2026-10-21, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/stored-data/).
 
 ## Sources
 

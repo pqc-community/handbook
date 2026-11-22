@@ -44,7 +44,11 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for each HSM or KMS, named in the `dependencies` cell of every key and system that relies on it; the module's upgrade or replacement as a dependency on the [migration plan](/resources/migration-plan/) lines it blocks.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for each HSM, KMS, or TPM model, named in the `dependencies` cell of every key and system that relies on it |
+| [Vendor response log](/resources/vendor-response-log/) | The supplier's answer on algorithms, releases, and validation |
+| [Migration plan](/resources/migration-plan/) | The module's upgrade or replacement, as a dependency of the lines it blocks |
 
 ## Example
 

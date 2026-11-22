@@ -45,7 +45,13 @@ Your DNS hosting provider or DNS software chooses which algorithms it can sign w
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for each signed zone and for validating resolvers you run, with the DNS provider and registrar in `dependencies`; a signatures line on the [migration plan](/resources/migration-plan/); a provider answer in the [vendor response log](/resources/vendor-response-log/); if you adopt the draft mechanism, "provisional: Internet-Draft" in the [change record](/resources/change-record/)'s `option` and an item on the [review log](/resources/review-log/) to revisit it when it is published.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for each signed zone and each validating resolver you run, with the DNS provider and registrar in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | The DNS provider's answer |
+| [Migration plan](/resources/migration-plan/) | A signatures line |
+| [Change record](/resources/change-record/) | If you rely on the draft mechanism, "provisional: Internet-Draft" in `option` |
+| [Review log](/resources/review-log/) | An item to revisit the draft mechanism when it is published |
 
 ## Example
 

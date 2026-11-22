@@ -56,7 +56,13 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 ## Record it fills
 
-[Inventory](/resources/inventory-record/) rows for OT systems and device types, with supplier and protocol in `dependencies`; supplier answers in the [vendor response log](/resources/vendor-response-log/); one [migration plan](/resources/migration-plan/) line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, and the device's expected service life in `reason and source`; where no option exists yet, the [change record](/resources/change-record/) shows `unknown` and blocked, and the protocol's next check goes in the plan's `subsequent review`; exceptions and accepted risks on the [review log](/resources/review-log/).
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | Rows for OT systems and device types, with supplier and protocol in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | Supplier answers |
+| [Migration plan](/resources/migration-plan/) | One line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, the device's expected service life in `reason and source`, and, where no option exists yet, the protocol's next check in `subsequent review` |
+| [Change record](/resources/change-record/) | `unknown` and blocked where no option exists yet |
+| [Review log](/resources/review-log/) | Exceptions and accepted risks |
 
 ## Example
 

@@ -47,7 +47,13 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 
 ## Record it fills
 
-The [inventory](/resources/inventory-record/) row for each gateway, with the key-establishment cell and the peers in `dependencies`; the [change record](/resources/change-record/), with "provisional: Internet-Draft" in `option` if a draft mechanism is used and an item on the [review log](/resources/review-log/) to revisit it.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for each gateway, with the key-establishment cell and the peers in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | The gateway supplier's answer |
+| [Migration plan](/resources/migration-plan/) | A key-establishment line; gateway certificates have their own signatures line |
+| [Change record](/resources/change-record/) | The negotiated key exchange as the deployed-state check and, if a draft mechanism is used, "provisional: Internet-Draft" in `option` |
+| [Review log](/resources/review-log/) | An item to revisit the draft mechanism when it is published |
 
 ## Example
 

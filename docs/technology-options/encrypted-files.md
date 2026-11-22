@@ -47,7 +47,12 @@ The email and encryption software suppliers decide what the product supports. Re
 
 ## Record it fills
 
-An [inventory](/resources/inventory-record/) row for the encryption service, with the key-establishment value labelled "stored files:", and recipient groups in `dependencies`; for messages and files already sent, an item on the [review log](/resources/review-log/) recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/stored-data/) describes.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for the encryption service, with the key-establishment value labelled "stored files:" and recipient groups in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | The software suppliers' answers |
+| [Migration plan](/resources/migration-plan/) | A key-establishment line |
+| [Review log](/resources/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/stored-data/) describes |
 
 ## Example
 

@@ -41,11 +41,19 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 ## Record it fills
 
-The supplier's answer in the [vendor response log](/resources/vendor-response-log/) with the job `non-updatable verifier`; the verifier line on the [migration plan](/resources/migration-plan/) with the design freeze as `milestone` and the escalation point in `next action`; the [change record](/resources/change-record/), with the option and authority, or `unknown` and blocked with the freeze as the resolve-by date.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for the signing key |
+| [Vendor response log](/resources/vendor-response-log/) | The supplier's answer, with the job `non-updatable verifier` |
+| [Migration plan](/resources/migration-plan/) | The verifier line, with the design freeze as `milestone` and the escalation point in `next action` |
+| [Change record](/resources/change-record/) | The option and authority, or `unknown` and blocked, with the freeze as the resolve-by date |
+| [Review log](/resources/review-log/) | Any written risk acceptance, with its review date |
 
 ## Example
 
-From [Protect this first](/resources/protect-this-first/): the product sensor's trust anchor sits in write-protected boot ROM and the sensor will stay in service. Procurement asked the shortlisted microcontroller suppliers on 2026-10-05; the one reply so far, of 2026-10-30, says a post-quantum boot verifier is planned but names no scheme, date, or trust-anchor provisioning, so it is judged `vague`, with a written answer due by 2026-12-15. The milestone is the production design freeze on 2027-06-30, with escalation to the managing director if there is still no supported option by 2027-03-31. The change record shows the option as `unknown` and the change as blocked. The key that signs the sensor's firmware has its own inventory row; where it is held is still to be recorded.
+An insufficient record is "The microcontroller supplier will add post-quantum support."
+
+A decision-ready record, from [Protect this first](/resources/protect-this-first/): the product sensor's trust anchor sits in write-protected boot ROM and the sensor will stay in service. Procurement asked the shortlisted microcontroller suppliers on 2026-10-05; the one reply so far, of 2026-10-30, says a post-quantum boot verifier is planned but names no scheme, date, or trust-anchor provisioning, so it is judged `vague`, with a written answer due by 2026-12-15. The milestone is the production design freeze on 2027-06-30, with escalation to the managing director if there is still no supported option by 2027-03-31. The change record shows the option as `unknown` and the change as blocked. The key that signs the sensor's firmware has its own inventory row; where it is held is still to be recorded.
 
 ## Sources
 

@@ -43,11 +43,18 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 
 ## Record it fills
 
-One [vendor response log](/resources/vendor-response-log/) row per job, with end of support asked in the row it affects; [migration plan](/resources/migration-plan/) lines per job with the provider's readiness; the [change record](/resources/change-record/) for your own client-side checks.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | A row for the service, with the provider in `dependencies` |
+| [Vendor response log](/resources/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
+| [Migration plan](/resources/migration-plan/) | A line per job, with the provider's readiness |
+| [Change record](/resources/change-record/) | Your own client-side checks |
 
 ## Example
 
-From [Protect this first](/resources/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
+An insufficient record is "The provider says it is quantum-safe."
+
+A decision-ready record, from [Protect this first](/resources/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 2026-12-01. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
 
 ## Sources
 

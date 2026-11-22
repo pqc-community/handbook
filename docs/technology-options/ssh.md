@@ -45,7 +45,12 @@ The SSH implementation's supplier, usually the operating system or the network d
 
 ## Record it fills
 
-The [inventory](/resources/inventory-record/) rows for SSH servers and the devices that cannot follow, and the [change record](/resources/change-record/) for any change to server or client settings, with the negotiated method as evidence.
+| Record | What it holds |
+| --- | --- |
+| [Inventory](/resources/inventory-record/) | Rows for SSH servers and for the devices that cannot follow |
+| [Vendor response log](/resources/vendor-response-log/) | Answers from the makers of devices and tools with their own SSH library |
+| [Migration plan](/resources/migration-plan/) | A key-establishment line, and a separate signatures line for host and user keys |
+| [Change record](/resources/change-record/) | Any change to server or client settings, with the negotiated method as the deployed-state check |
 
 ## Example
 
