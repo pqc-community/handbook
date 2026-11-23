@@ -66,7 +66,7 @@ The programme page opens with **first moves**: one row per question, naming the 
 | Question that applied | First move |
 | --- | --- |
 | Data that must stay secret for years | Ask the supplier, or the team that runs it, in writing which method protects connections and which protects stored data, and when each changes. Separate register lines for each. |
-| Devices with a fixed key | For products being designed: make a post-quantum signature option a condition of component selection before the design freeze. For devices already in service: record them, ask for an upgrade or replacement route, and plan by end of life. |
+| Devices with a fixed key | For products being designed: make a post-quantum signature option a condition of component selection before the design freeze. For devices already shipped: keep their signing key protected for the fleet's life, tell customers when a replacement is planned, and record the date. For devices you run: ask the maker for an upgrade or replacement route, and plan by end of life. |
 | Signatures others rely on | List who checks the signatures; verifiers must accept new signatures before signers switch. |
 | Systems you build or configure | Record each system's cryptographic library, protocols, and versions. |
 

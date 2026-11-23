@@ -40,7 +40,7 @@ So the baseline is the agency's whole plan.
 
 ## Register
 
-The register after the review on 16 November 2026. The devices share one row each for both jobs, because nothing about them differs by job yet. The hosted suite has a row per job, and a separate row for stored data, because the supplier's answers and follow-up dates differ.
+The register after the review on 16 November 2026. The devices share one row each for both jobs, because nothing about them differs by job yet. The hosted suite has a row per job, and a separate row for stored data, because the supplier's answers and follow-up dates differ. The agency also filled some columns the baseline does not require, such as protected by today and order, where the facts were to hand.
 
 | system | job | owner | why it is here | protected by today | version or plan | supplier | supplier answer | judgement | dates that apply | supplier release | testing | production deployment | end of support | order | next step | status | next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
