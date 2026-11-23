@@ -13,7 +13,7 @@ import {
   findNavigationViolations,
   findPageViolations,
 } from '../checks/pages.mjs';
-import {MAX_SENTENCE_WORDS, MAX_WORDS, findJourneyBudgetViolations, findRetiredLabelViolations, readingMetrics, retiredLabelsIn, sentences} from '../checks/reading.mjs';
+import {MAX_SENTENCE_WORDS, MAX_WORDS, MIN_AVG_SENTENCE_WORDS, choppyParagraphs, findJourneyBudgetViolations, findRetiredLabelViolations, readingMetrics, retiredLabelsIn, sentences} from '../checks/reading.mjs';
 import {assertNoViolations, withRoot} from '../lib/test-helpers.mjs';
 
 const ROOT = process.cwd();
@@ -171,16 +171,27 @@ test('splits sentences at full stops, not at semicolons, colons or common abbrev
 
 test('accepts journey pages exactly at their limits', () => {
   assert.deepEqual(budget(`${words(MAX_SENTENCE_WORDS)}.`), []);
-  assert.deepEqual(budget(Array.from({length: MAX_WORDS / 10}, () => `${words(10)}.`).join(' ')), []);
+  assert.deepEqual(budget(Array.from({length: MAX_WORDS / 20}, () => `${words(20)}.`).join(' ')), []);
 });
 
 test('flags each budget rule on its own', () => {
-  assert.match(budget(Array.from({length: MAX_WORDS / 10 + 1}, () => `${words(10)}.`).join(' '))[0], /words \(at most/);
+  assert.match(budget(Array.from({length: MAX_WORDS / 20 + 1}, () => `${words(20)}.`).join(' '))[0], /words \(at most/);
   assert.match(budget('[a](/a/) [b](/b/) [c](/c/) words here.')[0], /internal links per 100 words/);
   assert.match(budget(`${words(MAX_SENTENCE_WORDS + 1)}.`)[0], /a sentence of 41 words/);
   assert.match(budget(`${words(25)}; ${words(25)}.`)[0], /a sentence of 50 words/);
   assert.match(budget(`| Column |\n| --- |\n| ${words(MAX_SENTENCE_WORDS + 5)}. |`)[0], /a sentence of 45 words/);
   assert.match(budget('Use the `route` field.')[0], /backticked/);
+  assert.match(budget(`${words(8)}. ${words(9)}. ${words(10)}.`)[0], /1 staccato paragraphs/);
+});
+
+test('flags staccato paragraphs but not connected prose, short paragraphs, lists or tables', () => {
+  const short = (n) => `${words(n)}.`;
+  assert.equal(choppyParagraphs(journeyPage([short(8), short(9), short(10)].join(' '))).length, 1);
+  assert.equal(choppyParagraphs(journeyPage([short(12), short(16), short(20)].join(' '))).length, 0);
+  assert.equal(choppyParagraphs(journeyPage(`${short(5)} ${short(6)}`)).length, 0);
+  assert.equal(choppyParagraphs(journeyPage(`- ${short(5)} ${short(6)} ${short(7)}`)).length, 0);
+  assert.equal(choppyParagraphs(journeyPage(`| A |\n| --- |\n| ${short(5)} ${short(6)} ${short(7)} |`)).length, 0);
+  assert.equal(MIN_AVG_SENTENCE_WORDS, 15);
 });
 
 test('finds retired labels with hyphens, line breaks, plurals and any case, once each', () => {

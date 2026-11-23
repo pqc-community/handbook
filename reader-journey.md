@@ -107,6 +107,7 @@ Which plan you need, Core actions, and the Programme overview are held to readin
 - At most `2` internal links per `100` words.
 - No sentence longer than `40` words.
 - No backticked record field names in prose.
+- No staccato paragraphs: a paragraph of three or more sentences must average at least `15` words a sentence. Short sentences are fine; a run of them, each a separate rule, reads as small print. Join related points, as the style guide's "Connected, not staccato" rule describes.
 - The retired routing labels (short path, full path, situation route, asset track, five conditions, urgent adopter, regular adopter) and the retired page names (Decide whether to act, Start here, Plan the migration, Baseline) do not appear as labels anywhere on the site, except where quoting a source. The ordinary words path, route, track, and condition remain available.
 
 How the rules work in practice:
@@ -117,9 +118,9 @@ How the rules work in practice:
 
 ## Keeping It Simple
 
-The previous routing grew more complex one careful fix at a time: each review checked for contradictions and missing exits, and each fix added a clause. These rules stop that recurring:
+The previous routing grew more complex one careful fix at a time: each review checked for contradictions and missing exits, and each fix added a clause. The same happens at sentence level, where each fix appends a short sentence until the page reads as small print. These rules stop both recurring:
 
-- **Measure before and after**: Every change to a journey page reports its reading metrics (words, links per 100 words, longest sentence, backticked terms, retired labels) before and after the change, using `npm run metrics`. A fix that raises a budget needs a stated reason.
+- **Measure before and after**: Every change to a journey page reports its reading metrics (words, links per 100 words, longest sentence, backticked terms, retired labels, staccato paragraphs) before and after the change, using `npm run metrics`. A fix that raises a budget needs a stated reason.
 - **Test with readers**: Before a change to the questions, outcomes, or first moves merges, fresh readers given only the changed pages, as built, and one persona brief each say what they would do first and which records they would keep. Test the built pages, not the Markdown: the navbar and sidebar are part of what readers see. The five core personas are a small firm on supplied software; a manufacturer with long-lived data and devices with fixed keys; a software supplier asked by its customers; a public body with one in-house system; and a regulated critical-infrastructure operator. Add a newcomer, an executive, or a returning practitioner when testing the homepage or names. Every programme decision must be right, and every edge case must land where this guide says.
 - **Count what a rule change touches**: Changing a question should touch Which plan you need, one first-move row, and the register template. If it touches more, the journey has started to grow a routing layer again.
 

@@ -6,17 +6,19 @@ description: "First moves for each question that applied, small and full program
 displayed_sidebar: journeySidebar
 ---
 
-Run a programme when any of the [four questions](/plan/) applies. Keep following the core actions for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Start by naming the owner (core action 1). The first moves only gather facts, so they need not wait for the regulator. Ask the regulator which requirements and dates apply to you, and what evidence it expects to see.
+Run a programme when any of the [four questions](/plan/) applies, and keep following the core actions for everything you buy in, because the programme covers only what the questions found. Start by naming the owner, which is core action 1.
+
+If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and ask your sector regulator which requirements and dates apply to you and what evidence it expects. The first moves only gather facts, so they need not wait for the regulator's answer.
 
 ## First moves
 
-Take the first move for each question that applied, this week. Record each as its own register row, for one system and one job, because each runs on its own clock.
+Take the first move for each question that applied this week. Record each as its own register row, for one system and one job, because each runs on its own clock.
 
 | What applied | Its clock | First move |
 | --- | --- | --- |
-| Data that must stay secret for years | How long the data must stay secret | Ask the supplier, or the team that runs the system, in writing which method protects connections and which protects stored data, and when each changes. Keep connections and stored data as separate lines. |
+| Data that must stay secret for years | How long the data must stay secret | Ask the supplier, or the team that runs the system, in writing which method protects connections and which protects stored data, and when each changes. Keep connections and stored data as separate rows. |
 | Devices with a fixed key | The design freeze, then the device's service life | For products you make: ask component suppliers in writing which post-quantum signature the boot verifier supports, and make one a condition of selection before the next design freeze. For devices you have already shipped: keep their signing key protected for the fleet's life, tell customers when a replacement is planned, and record the date. For devices you run: ask the maker for an upgrade or replacement route, and plan by end of life. |
-| Signatures others rely on | How long you and everyone who checks your signatures take to move together | List who checks your signatures. Their verifiers must accept new signatures before you switch. Where a verifier can never change, treat it as a device with a fixed key; where another party controls it, such as an operating system, record its plan and date. |
+| Signatures others rely on | How long you and everyone who checks your signatures take to move together | List who checks your signatures, because their verifiers have to accept new signatures before you switch. Treat a verifier that can never change as a device with a fixed key, and where another party controls one, such as an operating system, record that party's plan and date. |
 | Systems you build or configure | Your own release cycle | Record each system's cryptographic library, protocols, and versions. |
 
 If customers are asking about your post-quantum plans, answer from the register: the dates you can stand behind, and what is still unknown.
@@ -25,12 +27,12 @@ If customers are asking about your post-quantum plans, answer from the register:
 
 Count a system as one service or product with one owner, such as a portal and its servers, or one device model, not each server or site.
 
-- **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeps the register, and adds a change record for each change. It needs no charter or progress report.
+- **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeping the register and a change record for each change, but needs no charter or progress report.
 - **Full programme**: anything larger, any device with a fixed key, or any organisation whose answers send it to a specialist and regulator first. It needs a named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
 
 ## Diagnose, order and schedule, execute
 
-The practices run in three phases. They overlap: supplier questions start during diagnosis, and each review reopens earlier work.
+The practices run in three phases, which overlap, because supplier questions start during diagnosis and each review reopens earlier work.
 
 **Diagnose**
 
@@ -39,8 +41,8 @@ The practices run in three phases. They overlap: supplier questions start during
 
 **Order and schedule**
 
-- [Decide what to migrate first](/plan/programme/priority/): order the lines within each job. Key establishment goes by the longest confidentiality period, devices with a fixed key by the earliest design freeze, and other signatures by the most relying parties.
-- [Set dates and milestones](/plan/programme/dates/): the dates that apply, and four dates for each line.
+- [Decide what to migrate first](/plan/programme/priority/): order the rows within each job, with key establishment going by the longest confidentiality period, devices with a fixed key by the earliest design freeze, and other signatures by the most relying parties.
+- [Set dates and milestones](/plan/programme/dates/): the dates that apply, and four dates for each row.
 - [Work with suppliers](/plan/programme/suppliers/): written questions, judged answers, and purchase wording.
 
 **Execute**
@@ -52,11 +54,11 @@ The practices run in three phases. They overlap: supplier questions start during
 
 ## When no option exists in time
 
-If no supported option exists before a fixed date, such as a design freeze or the end of support, record the line as blocked with a date, escalate to the sponsor, and get specialist advice on alternatives. One alternative is hardware that can accept a new key later. Do not record a blocked line as migrated.
+If no supported option exists before a fixed date, such as a design freeze or the end of support, record the row as blocked with a date and escalate to the sponsor. Get specialist advice on alternatives, such as hardware that can accept a new key later, and do not record a blocked row as migrated.
 
 ## Records
 
-The register for every line; a change record for each change you make; and, for a full programme, the programme charter and a progress report at each review. [Protect this first](/templates/examples/protect-this-first/) shows a full programme for a fictional manufacturer, and [Templates](/templates/) has every record.
+Every programme keeps the register and a change record for each change you make, and a full programme adds the programme charter and a progress report at each review. [Protect this first](/templates/examples/protect-this-first/) shows a full programme for a fictional manufacturer, and [Templates](/templates/) has every record.
 
 ## Sources
 

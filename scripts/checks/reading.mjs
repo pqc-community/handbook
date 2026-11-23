@@ -10,6 +10,11 @@ export const JOURNEY_PAGES = ['docs/plan/index.md', 'docs/plan/core-actions.md',
 export const MAX_WORDS = 900;
 export const MAX_LINKS_PER_100_WORDS = 2;
 export const MAX_SENTENCE_WORDS = 40;
+// Staccato prose: a paragraph of at least MIN_CHOPPY_SENTENCES sentences whose average
+// sentence is shorter than MIN_AVG_SENTENCE_WORDS reads as a list of rules rather than
+// connected prose (style-guide.md, "Connected, not staccato"). Lists and tables are exempt.
+export const MIN_AVG_SENTENCE_WORDS = 15;
+const MIN_CHOPPY_SENTENCES = 3;
 
 // Labels from the retired routing model. Words inside a label may be joined by spaces,
 // hyphens or a line break. The ordinary words path, route, track and condition stay
@@ -59,6 +64,16 @@ export function sentences(text) {
   return out.map((s) => s.trim()).filter(Boolean);
 }
 
+// Paragraphs (prose lines that are not list items) that read as staccato.
+export function choppyParagraphs(text) {
+  return classifyLines(stripHeadingIds(body(text)))
+    .filter((line) => line.kind === 'prose' && !/^\s*(?:[-*+]|\d+\.)\s/.test(line.text))
+    .map((line) => sentences(stripLinkTargets(line.text)).map((sentence) => sentence.split(/\s+/).length))
+    .filter((lengths) => lengths.length >= MIN_CHOPPY_SENTENCES)
+    .map((lengths) => lengths.reduce((total, n) => total + n, 0) / lengths.length)
+    .filter((average) => average < MIN_AVG_SENTENCE_WORDS);
+}
+
 export function readingMetrics(text) {
   const main = stripHeadingIds(body(text));
   const words = (stripLinkTargets(main).match(/[A-Za-z0-9][\w'’-]*/g) ?? []).length;
@@ -72,7 +87,7 @@ export function readingMetrics(text) {
   const units = [...prose, ...cells].map((unit) => stripLinkTargets(unit).replace(/^\s*(?:[-*+]|\d+\.)\s+/, ''));
   const longest = Math.max(0, ...units.flatMap(sentences).map((sentence) => sentence.split(/\s+/).length));
   const backticks = (prose.join('\n').match(/`[^`\n]+`/g) ?? []).length;
-  return {words, links, linksPer100: words ? (100 * links) / words : 0, longest, backticks};
+  return {words, links, linksPer100: words ? (100 * links) / words : 0, longest, backticks, choppy: choppyParagraphs(text).length};
 }
 
 export function findJourneyBudgetViolations(root = '.') {
@@ -90,6 +105,9 @@ export function findJourneyBudgetViolations(root = '.') {
     }
     if (m.longest > MAX_SENTENCE_WORDS) violations.push(`${page}: a sentence of ${m.longest} words (at most ${MAX_SENTENCE_WORDS})`);
     if (m.backticks > 0) violations.push(`${page}: ${m.backticks} backticked terms in prose (none allowed)`);
+    if (m.choppy > 0) {
+      violations.push(`${page}: ${m.choppy} staccato paragraphs (3 or more sentences averaging under ${MIN_AVG_SENTENCE_WORDS} words; join related points)`);
+    }
   }
   return violations;
 }
