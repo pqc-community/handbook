@@ -8,7 +8,7 @@ description: The five records that evidence a post-quantum migration, who keeps 
 
 These records show what you have decided, asked, required, changed, and reviewed. When a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement.
 
-Most organisations keep two of them. An organisation following the [core actions](/plan/core-actions/) keeps the register and the purchase wording. A [programme](/plan/programme/) adds a change record for each change, and a full programme adds the charter and a progress report at each review.
+Most organisations keep only two of them, because an organisation following the [core actions](/plan/core-actions/) needs just the register and the purchase wording. A [programme](/plan/programme/) adds a change record for each change, and a full programme adds the charter and a progress report at each review.
 
 ## The records
 

@@ -16,7 +16,7 @@ goal, in scope, out of scope, done for this phase, executive sponsor, migration 
 
 Unlike the other records, the charter is one document, so the fields run down the page rather than across it. Name a person or role in every role field; a role with no one named is a gap to resolve, not a default. In `budget revisit`, give the date or event at which the full migration budget will be estimated, usually once the [register](/templates/records/register/) has an order.
 
-Record `unknown` in any field you cannot settle yet. Keep keys, secrets, and personal data out of the file. Store the charter with the register.
+Record `unknown` in any field you cannot settle yet, keep keys, secrets, and personal data out of the file, and store the charter with the register.
 
 ## Filled example
 

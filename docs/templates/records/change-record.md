@@ -16,7 +16,7 @@ system, job, change, option, authority, pilot scope, tests, rollback trigger, wh
 
 Use one record per change to one system and job. Copy `system` and `job` from the [register](/templates/records/register/) row the change delivers, with `job` set to `key establishment`, `signatures`, or `non-updatable verifier` and any qualifier the register uses. Write `option` as the algorithm or scheme and its form; if it relies on a specification still at Internet-Draft, add "provisional: Internet-Draft". Write `result` so that it says exactly what has been shown and what has not, such as "staging passed; production not migrated"; where no supported option exists yet, write "blocked" with the date by which it has to be resolved. Set `date` to the date the result was last recorded. In `evidence`, cite the test output, log, or inspection that supports the result, not the standard the option follows. This is the record to show when someone asks what supports a claim that a change is complete.
 
-Record `unknown` in any cell you cannot verify yet. Separate multiple timelines or sources in a single cell with a semicolon, and keep keys, secrets, and personal data out of the file — name the system only.
+Record `unknown` in any cell you cannot verify yet. Where a cell holds several timelines or sources, separate them with semicolons, and keep keys, secrets, and personal data out of the file by naming the system only.
 
 ## Filled example
 

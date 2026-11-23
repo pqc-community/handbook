@@ -21,7 +21,7 @@ Like the charter, the report is one document, so the fields run down the page. R
 - **decisions needed:** escalations, budget, or risk acceptances the sponsor needs to decide, or `none`, with any escalation date already set on the register.
 - **sponsor response:** what was decided, by whom, and when. A decision such as a risk acceptance also goes on the register, with its own review date.
 
-Record `unknown` in any field you cannot settle yet. Keep keys, secrets, and personal data out of the file. Store each report with the register, rather than overwriting the last one, so the reports form the programme's history.
+Record `unknown` in any field you cannot settle yet, and keep keys, secrets, and personal data out of the file. Store each report with the register rather than overwriting the last one, so that the reports form the programme's history.
 
 ## Filled example
 
@@ -61,7 +61,7 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 
 Download a blank CSV: [progress-report.csv](/downloads/progress-report.csv).
 
-The report summarises the records; it does not replace them. Where a regulator, board, or customer asks for evidence, give the register and change records behind the report. Keep real reports off a public ticket and off an unlocked shared drive.
+The report summarises the records rather than replacing them, so where a regulator, board, or customer asks for evidence, give them the register and change records behind it. Keep real reports off public tickets and unlocked shared drives, because they describe how your systems are protected.
 
 ## Sources
 

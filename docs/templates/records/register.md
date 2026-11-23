@@ -26,7 +26,7 @@ Give each system one row per job, with `job` set to `key establishment`, `signat
 - **order:** the row's place within its job, as [Decide what to migrate first](/plan/programme/priority/) sets it, or `tracked, not ranked (core actions)` for a supplied product.
 - **status:** `open`, `blocked` with the date it must be resolved by, `migrated` once a deployed-state check shows the new method live, or `closed`.
 
-Record `unknown` in any cell you cannot verify yet, and keep the row on the register with its owner. Separate several values in one cell with semicolons. Keep keys, secrets, and personal data out of the file — name the system only.
+Record `unknown` in any cell you cannot verify yet, and keep the row on the register with its owner. Where a cell holds several values, separate them with semicolons, and keep keys, secrets, and personal data out of the file by naming the system only.
 
 ## Filled example
 

@@ -6,9 +6,9 @@ displayed_sidebar: templatesSidebar
 description: The core actions followed by a fictional UK marketing agency on supported devices and a hosted suite, with its register and purchase wording filled in.
 ---
 
-This worked example follows one fictional organisation through the [core actions](/plan/core-actions/). Its IT consists entirely of supported devices and supplier-hosted services. It keeps the two records the core actions call for: the [register](/templates/records/register/) and the [purchase wording](/templates/records/purchase-wording/). For a full programme, see [Protect this first](/templates/examples/protect-this-first/).
+This worked example follows one fictional organisation, whose IT consists entirely of supported devices and supplier-hosted services, through the [core actions](/plan/core-actions/). It keeps the two records the core actions call for: the [register](/templates/records/register/) and the [purchase wording](/templates/records/purchase-wording/). For a full programme, see [Protect this first](/templates/examples/protect-this-first/).
 
-The agency is a 25-person marketing agency based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, service plan, roadmap, email, version number, release date, and check result below is invented for illustration.
+The agency is a 25-person marketing agency based in the United Kingdom, so it is neither a critical-infrastructure operator nor a regulated-sector case. Every company fact, supplier, service plan, roadmap, email, version number, release date, and check result below is invented for illustration.
 
 ## Initial facts
 

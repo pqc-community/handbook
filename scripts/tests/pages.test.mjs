@@ -13,7 +13,7 @@ import {
   findNavigationViolations,
   findPageViolations,
 } from '../checks/pages.mjs';
-import {MAX_SENTENCE_WORDS, MAX_WORDS, MIN_AVG_SENTENCE_WORDS, choppyParagraphs, findJourneyBudgetViolations, findRetiredLabelViolations, readingMetrics, retiredLabelsIn, sentences} from '../checks/reading.mjs';
+import {MAX_SENTENCE_WORDS, MAX_WORDS, MIN_AVG_SENTENCE_WORDS, choppyParagraphs, findJourneyBudgetViolations, findRetiredLabelViolations, findStaccatoViolations, readingMetrics, retiredLabelsIn, sentences} from '../checks/reading.mjs';
 import {assertNoViolations, withRoot} from '../lib/test-helpers.mjs';
 
 const ROOT = process.cwd();
@@ -235,4 +235,12 @@ test('the handbook journey pages stay within their reading budgets', () => {
 
 test('the handbook does not use retired routing labels', () => {
   assertNoViolations(findRetiredLabelViolations(ROOT), 'Retired routing labels');
+});
+
+test('flags staccato paragraphs in checked sections, and the handbook has none there', () => {
+  const choppy = '---\ntitle: A record\n---\n\nKeep it short. Keep it safe. Keep it here.\n';
+  withRoot({'docs/templates/records/a.md': choppy, 'docs/learn/b.md': choppy}, (root) => {
+    assert.deepEqual(findStaccatoViolations(root), ['docs/templates/records/a.md: 1 staccato paragraphs (3 or more sentences averaging under 15 words; join related points)']);
+  });
+  assertNoViolations(findStaccatoViolations(ROOT), 'Staccato paragraphs');
 });

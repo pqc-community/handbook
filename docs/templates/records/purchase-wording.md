@@ -18,7 +18,7 @@ Use one row per purchase or renewal, job, and candidate supplier, with `job` set
 
 In `supplier commitment`, quote what the supplier agreed and where, such as a contract clause or a written answer, or write `none yet`. Set `status`, with the date, to `drafted`; `sent`; `agreed`, once the supplier commits in writing or in the contract; `met`, once the evidence has arrived and been checked; or `not met`, if the supplier refuses or `decide by` passes without a commitment. Once a row is `agreed`, copy `support until` into the register row's `end of support`. Refer a `not met` row to the sponsor, or to the owner where there is no sponsor, to decide whether to buy anyway, and record that decision on the register.
 
-Record `unknown` in any cell you cannot verify yet. Keep keys, secrets, and personal data out of the file — name the system only.
+Record `unknown` in any cell you cannot verify yet, and keep keys, secrets, and personal data out of the file by naming the system only.
 
 ## Filled example
 

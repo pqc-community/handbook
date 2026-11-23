@@ -90,6 +90,25 @@ export function readingMetrics(text) {
   return {words, links, linksPer100: words ? (100 * links) / words : 0, longest, backticks, choppy: choppyParagraphs(text).length};
 }
 
+// Sections beyond the journey pages where staccato paragraphs are also blocked. Extend
+// this list as each section is rewritten (style-guide.md, "Connected, not staccato").
+export const STACCATO_SECTIONS = ['docs/templates'];
+
+export function findStaccatoViolations(root = '.') {
+  const violations = [];
+  for (const section of STACCATO_SECTIONS) {
+    const dir = path.join(root, section);
+    if (!fs.existsSync(dir)) continue;
+    for (const file of walkMarkdown(dir)) {
+      const count = choppyParagraphs(fs.readFileSync(file, 'utf8')).length;
+      if (count > 0) {
+        violations.push(`${relativePath(root, file)}: ${count} staccato paragraphs (3 or more sentences averaging under ${MIN_AVG_SENTENCE_WORDS} words; join related points)`);
+      }
+    }
+  }
+  return violations;
+}
+
 export function findJourneyBudgetViolations(root = '.') {
   const violations = [];
   for (const page of JOURNEY_PAGES) {
