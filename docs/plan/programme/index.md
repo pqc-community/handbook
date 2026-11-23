@@ -50,7 +50,7 @@ The practices run in three phases, which overlap, because supplier questions sta
 - [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
 - [Make and verify one change](/plan/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
 - [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
-- [Review and report](/plan/programme/subsequent-review/): every three months while a row is ranked first for its job or a fixed date falls within a year, and every six months otherwise. A small programme reviews every six months unless a fixed date falls within a year. A programme review replaces the separate six-monthly review of the core actions, so check them at the same time.
+- [Review and report](/plan/programme/subsequent-review/): every six months, and every three months while a fixed date, such as a design freeze or end of support, falls within the next year. A programme review replaces the separate six-monthly review of the core actions, so check them at the same time.
 
 ## When no option exists in time
 

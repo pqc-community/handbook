@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Use this charter when you [set up the programme](/plan/programme/set-up/): once the four questions in [Which plan you need](/plan/) show that a full programme is required, and again when the scope, roles, or budget change.
+Use this charter when you [set up the programme](/plan/programme/set-up/): once the four questions in [Which plan you need](/plan/) show that you need a programme and the [size rule](/plan/programme/#size) makes it a full one, and again when the scope, roles, or budget change.
 
 ## Minimum fields
 
@@ -36,7 +36,7 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 | operations | IT lead |
 | first budget line | discovery and supplier engagement, from the operations budget |
 | budget revisit | at the first quarterly review after the register has an order |
-| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while any register row is first in its job's order |
+| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while the sensor's design freeze is within a year, otherwise every six months |
 | report triggers | the workspace supplier's release date moves; no supported sensor signature option three months before design freeze |
 | people told | system owners, procurement, and IT by 2026-08-14; the workspace supplier and shortlisted microcontroller suppliers by written question |
 | agreed by | managing director, 2026-08-03 |

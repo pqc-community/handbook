@@ -24,7 +24,7 @@ On 13 July 2026 the operations director answered the four questions in [Which pl
 - **Question 1, data that must stay secret for years**: applies. The product designs must stay confidential for 15 years, and the archive is supplier-hosted, so connections and stored files are both protected by the supplier's cryptography.
 - **Question 2, devices with a fixed key**: applies. The sensor's boot ROM trust anchor cannot change after shipment.
 - **Question 3, signatures others rely on**: applies. Every sensor shipped checks firmware the manufacturer signs.
-- **Question 4, systems you build or configure**: applies. The sensor's firmware is the manufacturer's own product. Office IT is supported commodity software, kept covered by the core actions.
+- **Question 4, systems you build or configure**: applies. The sensor's firmware is the manufacturer's own product. Office IT is supported commodity software, covered by the core actions.
 
 Because a device with a fixed key is involved, the manufacturer runs a full programme. The office laptops are covered by the [core actions](/plan/core-actions/): they hold office records, kept for six years, not the long-lived designs.
 
@@ -35,7 +35,7 @@ In the week after answering, the manufacturer took a first move for each questio
 - **Question 1, the archive**: on 15 July 2026 the product engineering lead asked the workspace supplier in writing which method protects connections and which protects stored files, and when each changes.
 - **Question 2, the sensor verifier**: the product security lead made a post-quantum signature in the boot verifier a condition of selection for the next sensor's microcontroller, before the design freeze. Procurement put the written question to the two shortlisted suppliers on 5 October 2026, once the shortlist existed.
 - **Question 3, firmware signing**: the product security lead listed who checks the firmware signatures: every sensor shipped, through its boot verifier.
-- **Question 4, the firmware build**: the product security lead started a register row for the firmware-signing key, to hold the signing tool's library and version once recorded.
+- **Question 4, the firmware build**: the product security lead recorded the firmware build's cryptographic library and protocols, and started a register row for the firmware-signing key, with the signing tool's library and version still to record.
 
 ## Programme charter
 
@@ -55,14 +55,14 @@ The managing director agreed a [programme charter](/templates/records/programme-
 | operations | IT lead |
 | first budget line | discovery and supplier engagement, from the operations budget |
 | budget revisit | at the first quarterly review after the register has an order |
-| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while any register row is first in its job's order |
+| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while the sensor's design freeze is within a year, otherwise every six months |
 | report triggers | the workspace supplier's release date moves; no supported sensor signature option three months before design freeze |
 | people told | system owners, procurement, and IT by 2026-08-14; the workspace supplier and shortlisted microcontroller suppliers by written question |
 | agreed by | managing director, 2026-08-03 |
 
 ## Register
 
-The [register](/templates/records/register/) holds one row per system and job. The archive has separate rows for connections, stored data, and signatures, because the supplier's answers and the follow-up dates differ. The verifier and the firmware-signing key each come first for their own job, and the key moves with the verifier because the signer must switch to whatever scheme the verifier accepts. The laptops are tracked covered by the core actions rather than ranked. The table shows the register as updated at the review on 10 November 2026.
+The [register](/templates/records/register/) holds one row per system and job. The archive has separate rows for connections, stored data, and signatures, because the supplier's answers and the follow-up dates differ. The verifier and the firmware-signing key each come first for their own job, and the key moves with the verifier because the signer must switch to whatever scheme the verifier accepts. The laptops are tracked as part of the core actions rather than ranked. The table shows the register as updated at the review on 10 November 2026.
 
 The manufacturer uses the UK NCSC [timelines](/standards/migration-guides/ncsc-migration-timelines/) as planning targets for this UK company. They are aimed primarily at large organisations, operators of critical national infrastructure, and organisations with bespoke IT, and say their core timelines are relevant to all organisations. The dates are targets, not a claim that every system has the same milestone.
 
@@ -118,8 +118,8 @@ The operations director reported to the managing director the same day, using th
 | reported by | operations director (migration lead) |
 | reported to | managing director (executive sponsor) |
 | records reviewed | register; purchase wording; change records for the archive pilot and the sensor verifier |
-| key establishment | Product-design archive in supplier-hosted workspace: staging pilot passed on 2026-10-21 with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated; stored-data key wrapping still unanswered by the supplier. Office laptops: on supported versions, tracked covered by the core actions. |
-| signatures | Product-design archive in supplier-hosted workspace: the supplier has given no signature date. Firmware-signing key for product sensor: scheme to be chosen with the verifier option; where the key is held not yet recorded. Office laptops: tracked covered by the core actions. |
+| key establishment | Product-design archive in supplier-hosted workspace: staging pilot passed on 2026-10-21 with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated; stored-data key wrapping still unanswered by the supplier. Office laptops: on supported versions, tracked as part of the core actions. |
+| signatures | Product-design archive in supplier-hosted workspace: the supplier has given no signature date. Firmware-signing key for product sensor: scheme to be chosen with the verifier option; where the key is held not yet recorded. Office laptops: tracked as part of the core actions. |
 | non-updatable verifier | Firmware verifier for product sensor: no supported option; one shortlisted microcontroller supplier's reply was vague, and the other has not answered. |
 | blocked | Firmware verifier for product sensor: no supported signature and trust-root option; resolve before production design freeze on 2027-06-30 (fictional). |
 | milestones at risk | none at this review; the sensor's design-freeze milestone is at risk if no option is found by 2027-03-31 |

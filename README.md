@@ -21,7 +21,7 @@ Read these five root documents before changing structure, prose, or styling:
 ### Handbook Content (`docs/`)
 
 - [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
-- [Which plan you need](./docs/plan/index.md), [Core actions](./docs/plan/core-actions.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the core actions every organisation follows, and the programme with its first moves and practices in three phases (diagnose, plan, execute)
+- [Which plan you need](./docs/plan/index.md), [Core actions](./docs/plan/core-actions.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the core actions every organisation follows, and the programme with its first moves and practices in three phases (diagnose, order and schedule, execute)
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Programme practices](./docs/plan/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/programme/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust

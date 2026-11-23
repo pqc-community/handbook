@@ -23,7 +23,7 @@ Give each system one row per job, with `job` set to `key establishment`, `signat
 - **supplier answer** and **judgement:** what the supplier said in writing, with the date, and your judgement of it: `complete`, `vague`, `missing`, or `concerning`, as [Work with suppliers](/plan/programme/suppliers/) defines them, or `not asked` or `not applicable`.
 - **dates that apply:** each date with its authority and audience, such as a national milestone or a design freeze, as [Which dates apply to you](/plan/#which-dates-apply-to-you) explains.
 - **the four dates:** keep them separate. A supplier's release is not your testing, your production deployment is not the supplier's release, and end of support is the date security fixes stop for the version you run now.
-- **order:** the row's place within its job, as [Decide what to migrate first](/plan/programme/priority/) sets it, or `tracked, not ranked (core actions)` for a supplied product.
+- **order:** the row's place within its job, as [Decide what to migrate first](/plan/programme/priority/) sets it, or `tracked, not ranked` with the reason in brackets: `(core actions)` for a supplied product, or `(supplier-led)` for a programme row whose change only its supplier can make.
 - **status:** `open`, `blocked` with the date it must be resolved by, `migrated` once a deployed-state check shows the new method live, or `closed`.
 
 Record `unknown` in any cell you cannot verify yet, and keep the row on the register with its owner. Where a cell holds several values, separate them with semicolons, and keep keys, secrets, and personal data out of the file by naming the system only.

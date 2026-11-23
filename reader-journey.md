@@ -26,7 +26,7 @@ The reader learns three terms to act: **core actions**, **programme**, and **reg
 - **Ask only what changes the outcome**: Each question exists because its answer changes what the reader does next. If a rule fits on the page, state it there instead of asking a question.
 - **Serve the majority first**: Most readers buy in their technology and need a short, complete plan. The core actions are that plan, written so a reader who needs nothing more can stop there with confidence.
 - **Everyone does the core actions**: Programme organisations keep doing the core actions for everything they buy in. The programme covers only what the four questions found.
-- **Separate jobs where their clocks differ**: Key establishment, signatures, and verifiers that cannot be updated each get their own first move, register line, and ordering rule. Job separation lives in the programme, not in the routing.
+- **Separate jobs where their clocks differ**: Key establishment, signatures, and verifiers that cannot be updated each get their own first move, register row, and ordering rule. Job separation lives in the programme, not in the routing.
 - **A first move, not a framework**: Every outcome ends in an action the reader can take this week, named with who does it.
 - **Hand off as an action**: Where the handbook reaches its limit, the page tells the reader whom to contact first, rather than noting a caveat.
 - **Readable alone**: Each journey page makes sense to a reader who arrived from search and opens nothing else.
@@ -68,15 +68,15 @@ The **first moves** are one row per question, naming the clock it runs on and th
 
 | Question that applied | First move |
 | --- | --- |
-| Data that must stay secret for years | Ask the supplier, or the team that runs it, in writing which method protects connections and which protects stored data, and when each changes. Separate register lines for each. |
+| Data that must stay secret for years | Ask the supplier, or the team that runs it, in writing which method protects connections and which protects stored data, and when each changes. Separate register rows for each. |
 | Devices with a fixed key | For products being designed: make a post-quantum signature option a condition of component selection before the design freeze. For devices already shipped: keep their signing key protected for the fleet's life, tell customers when a replacement is planned, and record the date. For devices you run: ask the maker for an upgrade or replacement route, and plan by end of life. |
 | Signatures others rely on | List who checks the signatures; verifiers must accept new signatures before signers switch. A verifier that can never change is treated as a device with a fixed key; one another party controls, such as an operating system, is recorded with that party's plan and date. |
 | Systems you build or configure | Record each system's cryptographic library, protocols, and versions. |
 
 The programme has two sizes. A system counts as one service or product with one owner, such as a portal and its servers, or one device model, not each server or site.
 
-- **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeps the register, and adds a change record for each change. No charter or progress report; reviews every six months unless a fixed date falls within a year.
-- **Full programme**: anything larger, any device with a fixed key, or any organisation in the specialist outcome. A named sponsor and lead, a one-page programme charter, and a progress report at each review. A programme's reviews replace the core actions' reviews and include them.
+- **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeps the register, and adds a change record for each change. No charter or progress report.
+- **Full programme**: anything larger, any device with a fixed key, or any organisation in the specialist outcome. A named sponsor and lead, a one-page programme charter, and a progress report at each review. Every programme reviews every six months, and every three months while a design freeze, contract renewal, or end of support falls within the next year; those reviews replace the core actions' own six-monthly review and include it.
 
 After the first moves, the existing migration practices run in three phases: **Diagnose** (set up, find the cryptography), **Order and schedule** (order the work within each job, set dates and milestones, work with suppliers), and **Execute** (choose an option from the technology card, make and verify each change, keep the ability to change again, review and report). The page also says what to do when no option exists before a fixed date, and that suppliers asked by their customers answer from the register.
 
@@ -160,6 +160,6 @@ The test readers were language models acting from persona briefs, not people. Th
 ## Open Questions
 
 - **Suppliers' urgency**: Whether a supplier with no long-lived data or systems of its own should take its urgency from customers who are urgent. No test covered that case.
-- **Terms on the programme page**: Some readers could not tell what a job is, or whether signing an installer is a separate system from the app it installs. The page defines a line and a system, but not a job.
+- **Terms on the programme page**: Some readers could not tell what a job is, or whether signing an installer is a separate system from the app it installs. The page defines a system, but not a job.
 - **One owner or two**: Readers asked whether the core-actions owner and the programme owner should be the same person. The pages do not say.
 - **"Migration"**: It felt heavy to the newcomer persona, who is served by Learn the basics.
