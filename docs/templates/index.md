@@ -6,7 +6,7 @@ displayed_sidebar: templatesSidebar
 description: "What you fill in and keep during a post-quantum migration: five record templates, two worked examples of them filled in, and the glossary."
 ---
 
-[Start here](/start-here/), the [baseline](/baseline/), and the [programme](/programme/) say what to do. This section holds what you fill in and keep while you do it, grouped by what you do with each item.
+[Which plan you need](/plan/), the [baseline](/plan/baseline/), and the [programme](/plan/programme/) say what to do. This section holds what you fill in and keep while you do it, grouped by what you do with each item.
 
 ## What is here
 
@@ -19,7 +19,7 @@ description: "What you fill in and keep during a post-quantum migration: five re
 ## What is not here
 
 - **The works the handbook cites** are in [Standards](/standards/), with a summary of each and a link to the official text.
-- **How to do each step** is in the [programme](/programme/) practices and [Technology options](/technology-options/). Those pages say which record each step fills.
+- **How to do each step** is in the [programme](/plan/programme/) practices and [Technology options](/technology-options/). Those pages say which record each step fills.
 
 ## Sources
 
@@ -30,4 +30,4 @@ The templates set out the handbook's own method; the practices that fill them ci
 - [Migration records](/templates/records/)
 - [Register](/templates/records/register/)
 - [Glossary](/templates/reference/glossary/)
-- [Start here](/start-here/)
+- [Which plan you need](/plan/)

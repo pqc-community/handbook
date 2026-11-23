@@ -30,7 +30,7 @@ IR 8545 is an informative report from the National Institute of Standards and Te
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) cites IR 8545 when explaining that NIST selected HQC as an alternative to ML-KEM (§2.1.2). IR 8547 states that, after publication, HQC will also be an approved post-quantum key-establishment scheme, and that NIST has no current plans to select further KEMs, although that could change (§4.1.2). Until then, ML-KEM in [FIPS 203](/standards/post-quantum/fips-203/) remains the only approved post-quantum public-key key-establishment scheme.
 
-HQC concerns key establishment only. For organisations, its main practical relevance is as a reason to keep key-establishment choices changeable; see [Keep the ability to change again](/programme/changing-algorithms-again/).
+HQC concerns key establishment only. For organisations, its main practical relevance is as a reason to keep key-establishment choices changeable; see [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
 
 ## Sources
 
@@ -42,4 +42,4 @@ HQC concerns key establishment only. For organisations, its main practical relev
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [FIPS 203](/standards/post-quantum/fips-203/)
 - [Standardisation](/learn/standardisation/)
-- [Keep the ability to change again](/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)

@@ -72,10 +72,8 @@ const config: Config = {
       logo: {alt: 'PQC Handbook', src: 'img/logo.svg'},
       style: 'dark',
       items: [
-        {type: 'doc', docId: 'start-here/index', sidebarId: 'journeySidebar', position: 'left', label: 'Start here'},
-        {type: 'doc', docId: 'baseline/index', sidebarId: 'journeySidebar', position: 'left', label: 'Baseline'},
-        {type: 'doc', docId: 'programme/index', sidebarId: 'journeySidebar', position: 'left', label: 'Programme'},
-        {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn'},
+        {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn the basics'},
+        {type: 'docSidebar', sidebarId: 'journeySidebar', position: 'left', label: 'Plan your migration'},
         {type: 'docSidebar', sidebarId: 'technologyOptionsSidebar', position: 'left', label: 'Technology options'},
         {type: 'docSidebar', sidebarId: 'standardsSidebar', position: 'left', label: 'Standards'},
         {type: 'docSidebar', sidebarId: 'templatesSidebar', position: 'left', label: 'Templates'},
@@ -86,16 +84,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Start',
-          items: [
-            {label: 'Start here', to: '/start-here/'},
-            {label: 'Baseline', to: '/baseline/'},
-            {label: 'Programme', to: '/programme/'},
-          ],
-        },
-        {
           title: 'Learn',
           items: [{label: 'Learn the basics', to: '/learn/'}],
+        },
+        {
+          title: 'Plan your migration',
+          items: [
+            {label: 'Which plan you need', to: '/plan/'},
+            {label: 'Baseline', to: '/plan/baseline/'},
+            {label: 'Programme', to: '/plan/programme/'},
+          ],
         },
         {
           title: 'Reference',

@@ -6,7 +6,7 @@ displayed_sidebar: templatesSidebar
 description: Terms used across this handbook, from asymmetric cryptography and key encapsulation to hybrid constructions and harvest-now, decrypt-later.
 ---
 
-Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, go to [Start here](/start-here/). For the fields and values the records share, such as `system`, `job`, and `unknown`, see [Migration records](/templates/records/#how-the-records-connect).
+Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, go to [Plan your migration](/plan/). For the fields and values the records share, such as `system`, `job`, and `unknown`, see [Migration records](/templates/records/#how-the-records-connect).
 
 ## Asymmetric cryptography
 
@@ -14,7 +14,7 @@ Cryptography that uses a matched pair of keys. The public key can be shared, and
 
 ## Baseline
 
-The short plan every organisation follows, whether or not it also runs a programme. It is seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question on [Start here](#start-here) applies, the baseline is the whole plan. It keeps two records: the [register](#register) and the purchase wording. See [Baseline](/baseline/).
+The short plan every organisation follows, whether or not it also runs a programme. It is seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the baseline is the whole plan. It keeps two records: the [register](#register) and the purchase wording. See [Baseline](/plan/baseline/).
 
 ## Block cipher
 
@@ -24,7 +24,7 @@ A symmetric algorithm that encrypts data in fixed-size blocks under one secret k
 
 ## CBOM (cryptography bill of materials)
 
-A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The [register](#register) still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/programme/inventory/).
+A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The [register](#register) still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/plan/programme/inventory/).
 
 ## Certificate
 
@@ -44,7 +44,7 @@ A single signature object that combines a post-quantum and a classical signature
 
 ## Crypto-agility
 
-The ability to change algorithms again after this migration. Choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/programme/changing-algorithms-again/).
+The ability to change algorithms again after this migration. Choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
 
 ## Cryptographic module
 
@@ -66,7 +66,7 @@ Origin authenticity means the check shows that the holder of the private key app
 
 ## Discovery
 
-Finding where cryptography is used, including what a scan cannot see. A scan of libraries and configurations finds some of it and misses embedded and hardware-bound cryptography, and cryptography inside a supplier's product. Those gaps stay on the [register](#register) as unknown until each job's row names the construction that protects it today. See [Inventory the cryptography](/programme/inventory/).
+Finding where cryptography is used, including what a scan cannot see. A scan of libraries and configurations finds some of it and misses embedded and hardware-bound cryptography, and cryptography inside a supplier's product. Those gaps stay on the [register](#register) as unknown until each job's row names the construction that protects it today. See [Inventory the cryptography](/plan/programme/inventory/).
 
 ## Dual signature
 
@@ -182,7 +182,7 @@ The public-key infrastructure that issues and checks certificates. A certificate
 
 ## Programme
 
-The work an organisation runs, on top of the [baseline](#baseline), for what the four questions on [Start here](#start-here) found. It opens with one first move for each question that applied, then runs in three phases: diagnose, plan, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/programme/).
+The work an organisation runs, on top of the [baseline](#baseline), for what the four questions in [Which plan you need](#which-plan-you-need) found. It opens with one first move for each question that applied, then runs in three phases: diagnose, plan, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/plan/programme/).
 
 ## Public-key cryptography
 
@@ -218,10 +218,6 @@ A check the device cannot replace later. The case that matters is a verifier tha
 
 NIST's stateless hash-based digital signature algorithm in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final). It signs, as ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) does, and the hash-based design is the difference. It is the stateless scheme to record when a stateful hash-based scheme is not appropriate, and it does not establish a shared secret. See [Algorithms](/learn/algorithms/) and [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
-## Start here
-
-Four questions about the organisation as a whole that decide whether the [baseline](#baseline) is enough or a [programme](#programme) is also needed: data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a programme. See [Start here](/start-here/).
-
 ## Stateful hash-based signature
 
 A hash-based signature scheme in which the signer must track which one-time keys have been used and never reuse one. LMS, HSS, XMSS, and XMSS^MT in [NIST SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final) are the approved examples. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says they are not intended for general use but may suit software and firmware signing. Compare [SLH-DSA](#slh-dsa-stateless-hash-based-digital-signature-algorithm), which is stateless. See [Hash-based signatures](/learn/explainers/hash-based-signatures/).
@@ -239,6 +235,10 @@ A public key or certificate that a verifier trusts without further proof, and fr
 ## Verifier
 
 The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, the algorithm has to be right before the design is frozen; see [Firmware and secure boot](/technology-options/firmware-secure-boot/). If no supported option exists in time, record the change as blocked on the change record. For verifiers that can be updated, see [PKI and certificates](/technology-options/pki/).
+
+## Which plan you need
+
+Four questions about the organisation as a whole that decide whether the [baseline](#baseline) is enough or a [programme](#programme) is also needed: data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a programme. See [Which plan you need](/plan/).
 
 ## Sources
 
@@ -273,16 +273,16 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
 - [Standardisation](/learn/standardisation/)
 - [Homepage](/)
-- [Keep the ability to change again](/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
 - [Standards](/standards/)
 - [Choosing an option](/technology-options/choosing/)
 - [Technology options](/technology-options/)
 - [PKI and certificates](/technology-options/pki/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Inventory the cryptography](/programme/inventory/)
-- [Decide what to migrate first](/programme/priority/)
-- [Start here](/start-here/)
-- [Baseline](/baseline/)
-- [Programme](/programme/)
+- [Inventory the cryptography](/plan/programme/inventory/)
+- [Decide what to migrate first](/plan/programme/priority/)
+- [Which plan you need](/plan/)
+- [Baseline](/plan/baseline/)
+- [Programme](/plan/programme/)
 - [Templates](/templates/)
 - [Migration records](/templates/records/)

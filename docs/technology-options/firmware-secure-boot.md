@@ -22,7 +22,7 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 ## What good looks like
 
-1. **Order verifiers by the earliest design freeze.** Where you have more than one product with a verifier that cannot be updated, the one whose design freeze comes first comes first, as [Decide what to migrate first](/programme/priority/) sets out.
+1. **Order verifiers by the earliest design freeze.** Where you have more than one product with a verifier that cannot be updated, the one whose design freeze comes first comes first, as [Decide what to migrate first](/plan/programme/priority/) sets out.
 2. **Ask each shortlisted component supplier in writing** which post-quantum schemes its verifier supports, how the trust anchor is provisioned, and when samples are available; make a `complete` answer a condition of selection.
 3. **Check fit before design freeze**: signature and key sizes against storage, and verification time against boot time.
 4. **Decide before the design freeze, with an escalation point before it**, at least as far ahead as the lead time to change component; this handbook suggests no less than three months. While no supported option exists, record the verifier as blocked with the freeze as the date to resolve by. If there is still no supported option at the escalation point, escalate to the sponsor, who decides between another component, a later freeze, or written risk acceptance with a review date, recorded on the [register](/templates/records/register/), and get specialist advice on alternatives, such as hardware that can accept a new key later. Do not record a blocked verifier as migrated.
@@ -66,5 +66,5 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 - [Code and software signing](/technology-options/code-signing/)
 - [Choosing an option](/technology-options/choosing/)
-- [Programme](/programme/)
-- [Plan the migration](/programme/plan/)
+- [Programme](/plan/programme/)
+- [Set dates and milestones](/plan/programme/dates/)

@@ -35,11 +35,11 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 ## What good looks like
 
-- A register that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/programme/inventory/) describes.
+- A register that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/plan/programme/inventory/) describes.
 - Integrity of commands and sensor data treated as the priority job for fielded devices, with confidentiality judged case by case.
 - Remote access and IT/OT boundaries moved on the enterprise IT timetable.
 - Changes to physical infrastructure planned to coincide with other maintenance and refresh, which the NCSC timelines advise, and post-quantum requirements written into equipment purchases.
-- A written answer from each control-system and device supplier to the questions in [Work with suppliers](/programme/suppliers/), judged on the [register](/templates/records/register/), and a review date for protocols that have no post-quantum path yet.
+- A written answer from each control-system and device supplier to the questions in [Work with suppliers](/plan/programme/suppliers/), judged on the [register](/templates/records/register/), and a review date for protocols that have no post-quantum path yet.
 
 ## What to ask or test
 
@@ -78,6 +78,6 @@ A decision-ready record lists each controller and sensor type with its supplier,
 ## Related pages
 
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Programme](/programme/)
-- [Inventory the cryptography](/programme/inventory/)
-- [Work with suppliers](/programme/suppliers/)
+- [Programme](/plan/programme/)
+- [Inventory the cryptography](/plan/programme/inventory/)
+- [Work with suppliers](/plan/programme/suppliers/)

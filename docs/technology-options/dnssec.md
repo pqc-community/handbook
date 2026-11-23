@@ -69,4 +69,4 @@ A decision-ready record lists each signed zone with its DNS provider, current al
 - [PKI and certificates](/technology-options/pki/)
 - [Choosing an option](/technology-options/choosing/)
 - [Why post-quantum signatures affect more than the signer](/learn/explainers/signature-dependencies/)
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)

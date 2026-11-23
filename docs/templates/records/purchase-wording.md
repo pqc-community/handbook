@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Use this record whenever anything new or renewed uses public-key cryptography, before the contract is signed. Every organisation keeps it, as part of the [baseline](/baseline/), which gives a sentence to start from. [Work with suppliers](/programme/suppliers/) explains what to ask for. The supplier's answers to your questions go on the [register](/templates/records/register/); this record holds what you required and what the supplier committed to.
+Use this record whenever anything new or renewed uses public-key cryptography, before the contract is signed. Every organisation keeps it, as part of the [baseline](/plan/baseline/), which gives a sentence to start from. [Work with suppliers](/plan/programme/suppliers/) explains what to ask for. The supplier's answers to your questions go on the [register](/templates/records/register/); this record holds what you required and what the supplier committed to.
 
 ## Minimum fields
 
@@ -47,8 +47,8 @@ Keep a real record off a public ticket and off an unlocked shared drive: require
 
 ## Related pages
 
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)
 - [Register](/templates/records/register/)
-- [Baseline](/baseline/)
+- [Baseline](/plan/baseline/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [Protect this first](/templates/examples/protect-this-first/)

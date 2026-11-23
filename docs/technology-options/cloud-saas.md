@@ -27,7 +27,7 @@ The provider. Your job is to ask the right questions, judge the answer, write re
 
 ## What to ask or test
 
-For a service that no question on [Start here](/start-here/) applies to, the [baseline](/baseline/) is enough: ask when the service comes up for renewal or leaves support. A service a question applies to, such as one holding data that must stay secret for years, joins the [programme](/programme/). Either way, ask separately for each job, in writing, as [Work with suppliers](/programme/suppliers/) describes:
+For a service that no question in [Which plan you need](/plan/) applies to, the [baseline](/plan/baseline/) is enough: ask when the service comes up for renewal or leaves support. A service a question applies to, such as one holding data that must stay secret for years, joins the [programme](/plan/programme/). Either way, ask separately for each job, in writing, as [Work with suppliers](/plan/programme/suppliers/) describes:
 
 | Job | Ask | Check from your side |
 | --- | --- | --- |
@@ -63,7 +63,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Related pages
 
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)
 - [TLS and web services](/technology-options/tls/)
 - [Backups, archives and storage](/technology-options/backups-archives/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)

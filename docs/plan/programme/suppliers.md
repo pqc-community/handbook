@@ -19,7 +19,7 @@ Any system on your register depends on a supplier's product or service, you are 
 
 ## Do this
 
-On the [baseline](/baseline/), step 5 applies: put post-quantum wording into every purchase and renewal, and judge the supplier's answer as in step 3. The baseline replaces a product that is out of support, or whose supplier has no post-quantum plan, with a date on the register. Steps 1 to 4 apply in full to suppliers behind the systems a programme covers.
+On the [baseline](/plan/baseline/), step 5 applies: put post-quantum wording into every purchase and renewal, and judge the supplier's answer as in step 3. The baseline replaces a product that is out of support, or whose supplier has no post-quantum plan, with a date on the register. Steps 1 to 4 apply in full to suppliers behind the systems a programme covers.
 
 ### 1. Triage suppliers
 
@@ -68,7 +68,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 - a support period;
 - the evidence you will receive.
 
-Record the wording, the supplier's commitment, and whether it was met on the [purchase wording](/templates/records/purchase-wording/) record, one row per purchase or renewal, job, and candidate supplier. The [baseline](/baseline/#wording-for-purchases-and-renewals) has a sentence to copy and adapt.
+Record the wording, the supplier's commitment, and whether it was met on the [purchase wording](/templates/records/purchase-wording/) record, one row per purchase or renewal, job, and candidate supplier. The [baseline](/plan/baseline/#wording-for-purchases-and-renewals) has a sentence to copy and adapt.
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
@@ -90,7 +90,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next step
 
-The register records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the row through the rest of the [programme](/programme/). Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/programme/implementation/).
+The register records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the row through the rest of the [programme](/plan/programme/). Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/plan/programme/implementation/).
 
 ## Sources
 
@@ -102,6 +102,6 @@ The register records what suppliers say; it does not validate their products. Va
 
 - [Register](/templates/records/register/)
 - [Purchase wording](/templates/records/purchase-wording/)
-- [Baseline](/baseline/)
+- [Baseline](/plan/baseline/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)
 - [Vendor questions guide](/standards/migration-guides/vendor-questions/)

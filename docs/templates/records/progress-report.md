@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Use this record for each report the charter's `reporting` cell sets, at the end of each review under [Review and report](/programme/subsequent-review/), and whenever a report trigger named in the [programme charter](/templates/records/programme-charter/) fires. It is written from the records reviewed, chiefly the [register](/templates/records/register/), so it adds no new facts: every statement in it should be traceable to a row in those records.
+Use this record for each report the charter's `reporting` cell sets, at the end of each review under [Review and report](/plan/programme/subsequent-review/), and whenever a report trigger named in the [programme charter](/templates/records/programme-charter/) fires. It is written from the records reviewed, chiefly the [register](/templates/records/register/), so it adds no new facts: every statement in it should be traceable to a row in those records.
 
 ## Minimum fields
 
@@ -69,6 +69,6 @@ The report summarises the records; it does not replace them. Where a regulator, 
 
 ## Related pages
 
-- [Review and report](/programme/subsequent-review/)
+- [Review and report](/plan/programme/subsequent-review/)
 - [Register](/templates/records/register/)
 - [Programme charter](/templates/records/programme-charter/)

@@ -65,4 +65,4 @@ From [Protect this first](/templates/examples/protect-this-first/): where the ke
 - [PKI and certificates](/technology-options/pki/)
 - [Code and software signing](/technology-options/code-signing/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)

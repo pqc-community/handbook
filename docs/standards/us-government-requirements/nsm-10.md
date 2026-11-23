@@ -47,5 +47,5 @@ NSM-10 is the starting point for US federal post-quantum policy. The [Quantum Co
 - [US government requirements](/standards/us-government-requirements/)
 - [Quantum Computing Cybersecurity Preparedness Act](/standards/us-government-requirements/qccpa/)
 - [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/)
-- [Inventory the cryptography](/programme/inventory/)
+- [Inventory the cryptography](/plan/programme/inventory/)
 - [Timelines](/learn/timelines/)

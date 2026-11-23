@@ -84,4 +84,4 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 - [What changes in a TLS connection](/learn/explainers/tls/)
 - [PKI and certificates](/technology-options/pki/)
 - [Cloud and SaaS](/technology-options/cloud-saas/)
-- [Make and verify one change](/programme/implementation/)
+- [Make and verify one change](/plan/programme/implementation/)

@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Start the register on the first day, with the [baseline](/baseline/): it is the one record every organisation keeps. List each system, service, or product you rely on, and add a row for each job it does once you know. A [programme](/programme/) adds rows for the systems the four questions on [Start here](/start-here/) found, and keeps their order and dates here.
+Start the register on the first day, with the [baseline](/plan/baseline/): it is the one record every organisation keeps. List each system, service, or product you rely on, and add a row for each job it does once you know. A [programme](/plan/programme/) adds rows for the systems the four questions in [Which plan you need](/plan/) found, and keeps their order and dates here.
 
 ## Minimum fields
 
@@ -18,12 +18,12 @@ system, job, owner, why it is here, protected by today, version or plan, supplie
 
 Give each system one row per job, with `job` set to `key establishment`, `signatures`, or `non-updatable verifier`, and a qualifier in brackets where one job needs separate work, such as `key establishment (stored data)`. A supported commodity product can share one row for both jobs until something differs between them. Name each system the same way on every record, so its change records and purchase wording can be found from its row.
 
-- **why it is here:** the question on Start here that applies, with the reason and its source, such as "question 1: designs confidential for 15 years (company retention policy)", or `baseline` for a system no question applies to. For a `not sure` answer, name who will confirm it and by when.
+- **why it is here:** which of the four questions in [Which plan you need](/plan/) applies, with the reason and its source, such as "question 1: designs confidential for 15 years (company retention policy)", or `baseline` for a system no question applies to. For a `not sure` answer, name who will confirm it and by when.
 - **protected by today:** the algorithm or scheme in use for this job, such as X25519MLKEM768 or ECDSA P-256, or `unknown`. A protocol name such as "TLS" is not enough.
-- **supplier answer** and **judgement:** what the supplier said in writing, with the date, and your judgement of it: `complete`, `vague`, `missing`, or `concerning`, as [Work with suppliers](/programme/suppliers/) defines them, or `not asked` or `not applicable`.
-- **dates that apply:** each date with its authority and audience, such as a national milestone or a design freeze, as [Which dates apply to you](/start-here/#which-dates-apply-to-you) explains.
+- **supplier answer** and **judgement:** what the supplier said in writing, with the date, and your judgement of it: `complete`, `vague`, `missing`, or `concerning`, as [Work with suppliers](/plan/programme/suppliers/) defines them, or `not asked` or `not applicable`.
+- **dates that apply:** each date with its authority and audience, such as a national milestone or a design freeze, as [Which dates apply to you](/plan/#which-dates-apply-to-you) explains.
 - **the four dates:** keep them separate. A supplier's release is not your testing, your production deployment is not the supplier's release, and end of support is the date security fixes stop for the version you run now.
-- **order:** the row's place within its job, as [Decide what to migrate first](/programme/priority/) sets it, or `tracked, not ranked (baseline)` for a supplied product.
+- **order:** the row's place within its job, as [Decide what to migrate first](/plan/programme/priority/) sets it, or `tracked, not ranked (baseline)` for a supplied product.
 - **status:** `open`, `blocked` with the date it must be resolved by, `migrated` once a deployed-state check shows the new method live, or `closed`.
 
 Record `unknown` in any cell you cannot verify yet, and keep the row on the register with its owner. Separate several values in one cell with semicolons. Keep keys, secrets, and personal data out of the file — name the system only.
@@ -56,8 +56,8 @@ Keep a real register with the access controls of an asset register, off public t
 
 ## Related pages
 
-- [Start here](/start-here/)
-- [Baseline](/baseline/)
-- [Inventory the cryptography](/programme/inventory/)
-- [Decide what to migrate first](/programme/priority/)
+- [Which plan you need](/plan/)
+- [Baseline](/plan/baseline/)
+- [Inventory the cryptography](/plan/programme/inventory/)
+- [Decide what to migrate first](/plan/programme/priority/)
 - [Protect this first](/templates/examples/protect-this-first/)

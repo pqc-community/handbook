@@ -40,7 +40,7 @@ Dates that do not bind you can still reach you in three ways:
 - **Through later authority dates.** NIST IR 8547 (§4.2) says its application-specific guidelines may specify earlier transitions, based on the expected impact of a cryptanalytically relevant quantum computer and the level of post-quantum support in standards, products, and services.
 - **Through customers and contracts.** EO 14412 directs a procurement rule to be proposed for covered US federal contractors, so a deadline set for agencies can arrive in a contract.
 
-Record each date with its issuer, audience, and version, alongside your own reasoning, and check it again at each review. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) sets NIST, US federal, UK, EU, Australian, and supplier dates side by side. [Plan the migration](/programme/plan/) shows how to work out which apply to you and record them.
+Record each date with its issuer, audience, and version, alongside your own reasoning, and check it again at each review. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) sets NIST, US federal, UK, EU, Australian, and supplier dates side by side. [Set dates and milestones](/plan/programme/dates/) shows how to work out which apply to you and record them.
 
 ## Check your understanding
 
@@ -65,5 +65,5 @@ Continue with [Crypto-agility](/learn/crypto-agility/).
 
 - [Learn the basics](/learn/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
-- [Plan the migration](/programme/plan/)
-- [Decide what to migrate first](/programme/priority/)
+- [Set dates and milestones](/plan/programme/dates/)
+- [Decide what to migrate first](/plan/programme/priority/)

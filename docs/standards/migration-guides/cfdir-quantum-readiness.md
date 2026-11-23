@@ -31,7 +31,7 @@ The document is produced by the Quantum-Readiness Working Group (QRWG) of the Ca
 
 The guide is a national best-practices document rather than a government programme plan. For Government of Canada departments, the Canadian Centre for Cyber Security has published the [ITSM.40.001 roadmap](/standards/migration-guides/canada-itsm-40-001/), with its own milestones. The CFDIR guide focuses on organisational readiness rather than algorithm choice; for which algorithms national authorities recommend, see [National algorithm positions](/standards/national-algorithm-positions/), and for the underlying standards see [Post-quantum standards](/standards/post-quantum/).
 
-Pair it with the handbook's [Start here](/start-here/) page and its [programme](/programme/).
+Pair it with the handbook's [Which plan you need](/plan/) page and its [programme](/plan/programme/).
 
 ## Sources
 
@@ -41,5 +41,5 @@ Pair it with the handbook's [Start here](/start-here/) page and its [programme](
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [Canada ITSM.40.001 roadmap](/standards/migration-guides/canada-itsm-40-001/)
-- [Start here](/start-here/)
-- [programme](/programme/)
+- [Which plan you need](/plan/)
+- [programme](/plan/programme/)

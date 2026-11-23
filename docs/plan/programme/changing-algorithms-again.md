@@ -27,7 +27,7 @@ Treat the system as finished for this phase only when each capability has verifi
 5. **Change window.** A window and a named approver exist for the next change. Evidence: the window and approver in your change calendar or change-management system. For a supplier-hosted service: the notice period the supplier gives before changing cryptography, in the contract or service terms, and the person who decides whether to accept or test the change in that period.
 6. **Deprecation path.** There is a written path away from what is in use now, for example from hybrid key establishment to post-quantum only when your authority and interoperability allow. Evidence: the written path. For a supplier-hosted service: the supplier's written plan, or an open request for one.
 
-If the supplier will not give a commitment, a notice period, or a plan, record the gap and handle it as a `concerning` answer in [Work with suppliers](/programme/suppliers/) (step 4).
+If the supplier will not give a commitment, a notice period, or a plan, record the gap and handle it as a `concerning` answer in [Work with suppliers](/plan/programme/suppliers/) (step 4).
 
 The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises using cryptographic solutions that are crypto-agile, and notes that other bodies encourage organisations to remain cryptographically agile. NIST's [crypto-agility white paper](/standards/transition-and-key-management/nist-cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters.
 
@@ -43,7 +43,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next step
 
-Agility is a property you evidence, not a product you buy; this page does not choose the next algorithm. Next, [review and report](/programme/subsequent-review/).
+Agility is a property you evidence, not a product you buy; this page does not choose the next algorithm. Next, [review and report](/plan/programme/subsequent-review/).
 
 ## Sources
 
@@ -55,4 +55,4 @@ Agility is a property you evidence, not a product you buy; this page does not ch
 
 - [Crypto-agility](/learn/crypto-agility/)
 - [Change record](/templates/records/change-record/)
-- [Review and report](/programme/subsequent-review/)
+- [Review and report](/plan/programme/subsequent-review/)

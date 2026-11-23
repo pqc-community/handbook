@@ -1,12 +1,12 @@
 ---
-title: Start here
-search_title: Start a post-quantum migration
-sidebar_label: Start here
-description: Four questions decide whether supplier updates and a short baseline are enough, or whether you also need a post-quantum migration programme.
+title: Which plan you need
+search_title: Plan your post-quantum migration
+sidebar_label: Which plan you need
+description: "Four questions decide which post-quantum migration plan you need: the baseline alone, or the baseline and a programme, and which dates apply to you."
 displayed_sidebar: journeySidebar
 ---
 
-Post-quantum cryptography replaces the public-key methods that a future quantum computer could break. Most organisations will not change any cryptography themselves: their suppliers will. Every organisation follows the same [baseline](/baseline/). Four questions decide whether you also need a [programme](/programme/).
+Post-quantum cryptography replaces the public-key methods that a future quantum computer could break. Every organisation needs a migration plan. For most it is short: suppliers make the changes, and you keep the [baseline](/plan/baseline/). Four questions decide whether your plan also needs a [programme](/plan/programme/).
 
 ## Four questions
 
@@ -19,13 +19,13 @@ Answer for the organisation as a whole. A question applies if any system, servic
 
 A supplied product that is out of support, or whose supplier has no post-quantum plan, is not a reason for a programme on its own. The baseline replaces it.
 
-## What to do
+## Your plan
 
-| Your answers | What to do |
+| Your answers | Your plan |
 | --- | --- |
-| None apply | Follow the [baseline](/baseline/). That is your plan. |
-| Any applies | Follow the baseline for everything you buy in, and run a [programme](/programme/) for what the questions found. Name an owner, then take its first moves. |
-| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. Then follow the baseline and run a full programme. |
+| None apply | The [baseline](/plan/baseline/): seven actions, on one page. |
+| Any applies | The baseline for everything you buy in, and a [programme](/plan/programme/) for what the questions found. Name an owner, then take its first moves. |
+| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. Then the baseline and a full programme. |
 
 ## Which dates apply to you
 
@@ -58,7 +58,7 @@ Dates belong to the authority that set them and the audience it names. There is 
 
 ## Related pages
 
-- [Baseline](/baseline/)
-- [Programme](/programme/)
+- [Baseline](/plan/baseline/)
+- [Programme](/plan/programme/)
 - [Register](/templates/records/register/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)

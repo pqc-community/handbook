@@ -3,10 +3,10 @@ title: Protect this first
 search_title: "Worked example: a manufacturer's PQC migration"
 sidebar_label: Protect this first
 displayed_sidebar: templatesSidebar
-description: All five migration records filled in for one fictional UK manufacturer running a full programme, from Start here and the charter to the sponsor's report.
+description: All five migration records filled in for one fictional UK manufacturer running a full programme, from the questions and the charter to the sponsor's report.
 ---
 
-This worked example follows one fictional manufacturer from [Start here](/start-here/) through a full [programme](/programme/), with all five [records](/templates/records/) filled in. Each record page's filled example is taken from this page, and every record names the same systems, so you can follow one system from its register row to the sponsor's report.
+This worked example follows one fictional manufacturer from [Which plan you need](/plan/) through a full [programme](/plan/programme/), with all five [records](/templates/records/) filled in. Each record page's filled example is taken from this page, and every record names the same systems, so you can follow one system from its register row to the sponsor's report.
 
 The manufacturer is based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, product version, letter, release date, and test result below is invented for illustration. The UK National Cyber Security Centre (NCSC) milestones are used as UK planning targets; NIST standards are cited only as technical references, not as UK deadlines.
 
@@ -17,16 +17,16 @@ The manufacturer is based in the United Kingdom. It is not a critical-infrastruc
 - **Product sensor**: The manufacturer signs the sensor's firmware with its own key, and each sensor checks that signature against a trust anchor held in write-protected boot ROM. The verifier cannot accept a replacement trust anchor after the sensor ships, so the product security lead needs a supported signature option before production design freeze, planned for 30 June 2027.
 - **Office laptops**: Standard browsers and operating systems under vendor support, kept updated by the IT lead.
 
-## Start here
+## Which plan you need
 
-On 13 July 2026 the operations director answered the four questions on Start here for the organisation, and the managing director accepted the answers:
+On 13 July 2026 the operations director answered the four questions in Which plan you need for the organisation, and the managing director accepted the answers:
 
 - **Question 1, data that must stay secret for years**: applies. The product designs must stay confidential for 15 years, and the archive is supplier-hosted, so connections and stored files are both protected by the supplier's cryptography.
 - **Question 2, devices with a fixed key**: applies. The sensor's boot ROM trust anchor cannot change after shipment.
 - **Question 3, signatures others rely on**: applies. Every sensor shipped checks firmware the manufacturer signs.
 - **Question 4, systems you build or configure**: applies. The sensor's firmware is the manufacturer's own product. Office IT is supported commodity software, kept on the baseline.
 
-Because a device with a fixed key is involved, the manufacturer runs a full programme. The office laptops stay on the [baseline](/baseline/): they hold office records, kept for six years, not the long-lived designs.
+Because a device with a fixed key is involved, the manufacturer runs a full programme. The office laptops stay on the [baseline](/plan/baseline/): they hold office records, kept for six years, not the long-lived designs.
 
 ## First moves
 
@@ -140,10 +140,10 @@ The manufacturer considered a separate cryptographic redesign for its office lap
 
 ## Related pages
 
-- [Start here](/start-here/)
-- [Programme](/programme/)
+- [Which plan you need](/plan/)
+- [Programme](/plan/programme/)
 - [Migration records](/templates/records/)
 - [Register](/templates/records/register/)
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/)

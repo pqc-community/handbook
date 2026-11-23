@@ -71,5 +71,5 @@ A decision-ready record lists the servers by operating-system release with the k
 
 - [Choosing an option](/technology-options/choosing/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
-- [Inventory the cryptography](/programme/inventory/)
+- [Inventory the cryptography](/plan/programme/inventory/)
 - [PKI and certificates](/technology-options/pki/)

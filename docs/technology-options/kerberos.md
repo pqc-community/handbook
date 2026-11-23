@@ -72,4 +72,4 @@ A decision-ready record notes that password-based Kerberos uses AES encryption t
 - [Identity and sign-in](/technology-options/identity/)
 - [PKI and certificates](/technology-options/pki/)
 - [TLS and web services](/technology-options/tls/)
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)

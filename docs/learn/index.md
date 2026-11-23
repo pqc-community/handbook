@@ -5,7 +5,7 @@ description: Ten short lessons on post-quantum cryptography for security, engine
 displayed_sidebar: learnSidebar
 ---
 
-This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, [Start here](/start-here/) takes over, followed by the worked examples, [Protect this first](/templates/examples/protect-this-first/) and [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/), and the glossary.
+This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, [Plan your migration](/plan/) takes over, followed by the worked examples, [Protect this first](/templates/examples/protect-this-first/) and [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/), and the glossary.
 
 ## The model in one picture
 
@@ -84,5 +84,5 @@ Use the [glossary](/templates/reference/glossary/) for definitions while reading
 ## Related pages
 
 - [Homepage](/)
-- [Start here](/start-here/)
+- [Which plan you need](/plan/)
 - [Standards](/standards/)

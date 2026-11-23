@@ -67,5 +67,5 @@ A decision-ready record lists device classes with their EAP method and supplican
 
 - [TLS and web services](/technology-options/tls/)
 - [PKI and certificates](/technology-options/pki/)
-- [Inventory the cryptography](/programme/inventory/)
-- [Work with suppliers](/programme/suppliers/)
+- [Inventory the cryptography](/plan/programme/inventory/)
+- [Work with suppliers](/plan/programme/suppliers/)

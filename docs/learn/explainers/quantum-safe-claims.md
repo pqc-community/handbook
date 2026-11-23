@@ -39,7 +39,7 @@ The second record names the job, the algorithm and its standard, the version, th
 
 ## Where this goes next
 
-Record each answer, and your judgement of it, on the system's row in the [register](/templates/records/register/), and judge it with [Work with suppliers](/programme/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
+Record each answer, and your judgement of it, on the system's row in the [register](/templates/records/register/), and judge it with [Work with suppliers](/plan/programme/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
 
 ## Sources
 
@@ -49,6 +49,6 @@ Record each answer, and your judgement of it, on the system's row in the [regist
 
 ## Related pages
 
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)
 - [Register](/templates/records/register/)
 - [From research to deployment](/learn/explainers/research-to-deployment/)

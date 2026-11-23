@@ -7,7 +7,7 @@ description: Decide who chooses, find what every applicable authority accepts, a
 
 ## When this applies
 
-A system has a row on the [register](/templates/records/register/), and you need to name the post-quantum option it will use and the authority that justifies it. These rules apply to every technology; each [technology card](/technology-options/) applies them. In the [programme](/programme/), this step opens the execute phase, between working with suppliers and making the change.
+A system has a row on the [register](/templates/records/register/), and you need to name the post-quantum option it will use and the authority that justifies it. These rules apply to every technology; each [technology card](/technology-options/) applies them. In the [programme](/plan/programme/), this step opens the execute phase, between working with suppliers and making the change.
 
 ## Who does what
 
@@ -21,12 +21,12 @@ A system has a row on the [register](/templates/records/register/), and you need
 
 1. **Read the facts you already hold.** The system's register row gives who controls the software, the job, including `non-updatable verifier`, why it is here, including any data confidentiality period, and the dates that apply. Resolve any `unknown` that changes the steps below.
 2. **Decide who chooses.**
-   - **The supplier controls the software:** its named algorithm or scheme is the proposed option once its answer is judged `complete` on the [register](/templates/records/register/); follow up a `vague` or `missing` answer under [Work with suppliers](/programme/suppliers/). If the option conflicts with an applicable authority, judge the answer `concerning` and escalate it there.
+   - **The supplier controls the software:** its named algorithm or scheme is the proposed option once its answer is judged `complete` on the [register](/templates/records/register/); follow up a `vague` or `missing` answer under [Work with suppliers](/plan/programme/suppliers/). If the option conflicts with an applicable authority, judge the answer `concerning` and escalate it there.
    - **You configure or build it:** you choose, using steps 3 to 5.
 3. **List the authorities that apply.** Legal or risk confirms them. For each one, take the algorithms, parameter sets, and hybrid position from the comparison on [National algorithm positions](/standards/national-algorithm-positions/), which states each authority's audience, and the [Hybrid cryptography](/learn/hybrid/) lesson, which adds the UK NCSC. They differ: for US national security systems, [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) requires ML-KEM-1024 and ML-DSA-87; [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) names ML-KEM ([FIPS 203](/standards/post-quantum/fips-203/)) as, at this time, NIST's only approved post-quantum key-establishment scheme; and [BSI TR-02102-1](/standards/national-algorithm-positions/bsi-tr-02102-1/) also recommends FrodoKEM and Classic McEliece.
 4. **Choose an algorithm and parameter set every applicable authority accepts**, and settle the form with [the hybrid rule](#the-hybrid-rule) below.
 5. **Apply the technology card**, with the [protocol-mechanisms](#protocol-mechanisms) and [signature-schemes](#signature-schemes) rules below. For a verifier that cannot be updated, the option has to be one the device's verifier supports; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
-6. **Check that the option fits**: protocols, certificates, storage, and hardware can carry the larger keys and signatures. Name the tests on the change record; [Make and verify one change](/programme/implementation/) runs them.
+6. **Check that the option fits**: protocols, certificates, storage, and hardware can carry the larger keys and signatures. Name the tests on the change record; [Make and verify one change](/plan/programme/implementation/) runs them.
 7. **Record the option and the authority that justifies it.** The `authority` cell names every position the option relies on, for both the algorithm and the form: the authority, the document, its date, and the audience it addresses. Where the supplier chose, name the positions you checked its choice against. If no supported option exists yet, write `unknown` in `option` and "blocked" in `result`, with the date by which it has to be resolved, such as a design freeze.
 
 ## The hybrid rule
@@ -43,7 +43,7 @@ If no authority applies, either form is acceptable; record that legal or risk co
 
 If no option satisfies every applicable authority, for example because their accepted algorithms or forms do not overlap, take the conflict to legal or risk and the sponsor, who decide which position governs. Record the decision and its reason in the `authority` cell and on the system's [register](/templates/records/register/) row. A row-one authority and a row-three authority do not conflict where the row-three authority permits the hybrid, as ASD does.
 
-If you choose hybrid, record the path away from it under [Keep the ability to change again](/programme/changing-algorithms-again/). For signatures, the same table applies, with the hash-based exceptions under [Signature schemes](#signature-schemes).
+If you choose hybrid, record the path away from it under [Keep the ability to change again](/plan/programme/changing-algorithms-again/). For signatures, the same table applies, with the hash-based exceptions under [Signature schemes](#signature-schemes).
 
 ## Protocol mechanisms
 
@@ -72,7 +72,7 @@ The authority check can change the answer:
 
 ## Keep this evidence
 
-The `option` and `authority` cells of the system's [change record](/templates/records/change-record/), as step 7 describes. Update what the system's [register](/templates/records/register/) row records as protecting it today as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Supplied products tracked on the [baseline](/baseline/) need no option recorded here.
+The `option` and `authority` cells of the system's [change record](/templates/records/change-record/), as step 7 describes. Update what the system's [register](/templates/records/register/) row records as protecting it today as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Supplied products tracked on the [baseline](/plan/baseline/) need no option recorded here.
 
 ## Example
 
@@ -82,7 +82,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next page
 
-This page records which option applies and why; it does not configure protocols or products, and it does not decide whether a regulation binds you, which is a question for your risk owner or sector authority. Do not treat one authority's position as a requirement for an audience it does not address. This handbook does not cover quantum key distribution; [ETSI TR 103 619](/standards/migration-guides/etsi-tr-103-619/) (July 2020) likewise sets it outside its scope. Bespoke protocols, embedded devices, and regulated systems need specialist review. Next, [make and verify one change](/programme/implementation/).
+This page records which option applies and why; it does not configure protocols or products, and it does not decide whether a regulation binds you, which is a question for your risk owner or sector authority. Do not treat one authority's position as a requirement for an audience it does not address. This handbook does not cover quantum key distribution; [ETSI TR 103 619](/standards/migration-guides/etsi-tr-103-619/) (July 2020) likewise sets it outside its scope. Bespoke protocols, embedded devices, and regulated systems need specialist review. Next, [make and verify one change](/plan/programme/implementation/).
 
 ## Sources
 

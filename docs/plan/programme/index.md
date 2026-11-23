@@ -2,11 +2,11 @@
 title: Programme
 search_title: Run a post-quantum migration programme
 sidebar_label: Overview
-description: "First moves for each question that applied, small and full programme sizes, and the practices in three phases: diagnose, plan, and execute."
+description: "First moves for each question that applied, small and full programme sizes, and the practices in three phases: diagnose, order and schedule, and execute."
 displayed_sidebar: journeySidebar
 ---
 
-Run a programme when any of the four questions on [Start here](/start-here/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (baseline action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator. Ask the regulator which requirements and dates apply to you, and what evidence it expects to see.
+Run a programme when any of the four questions in [Which plan you need](/plan/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (baseline action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator. Ask the regulator which requirements and dates apply to you, and what evidence it expects to see.
 
 ## First moves
 
@@ -26,29 +26,29 @@ If customers are asking about your post-quantum plans, answer from the register:
 Count a system as one service or product with one owner, such as a portal and its servers, or one device model, not each server or site.
 
 - **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeps the register, and adds a change record for each change. No charter or progress report.
-- **Full programme**: anything larger, any device with a fixed key, or any organisation Start here sends to a specialist and regulator first. A named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
+- **Full programme**: anything larger, any device with a fixed key, or any organisation whose answers send it to a specialist and regulator first. A named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
 
-## Diagnose, plan, execute
+## Diagnose, order and schedule, execute
 
 The practices run in three phases. They overlap: supplier questions start during diagnosis, and each review reopens earlier work.
 
 **Diagnose**
 
-- [Set up the programme](/programme/set-up/): sponsor, lead, scope, and a first budget line.
-- [Inventory the cryptography](/programme/inventory/): find where public-key cryptography is used, starting with the systems the questions found.
+- [Set up the programme](/plan/programme/set-up/): sponsor, lead, scope, and a first budget line.
+- [Inventory the cryptography](/plan/programme/inventory/): find where public-key cryptography is used, starting with the systems the questions found.
 
-**Plan**
+**Order and schedule**
 
-- [Decide what to migrate first](/programme/priority/): order the lines within each job. Key establishment goes by the longest confidentiality period, devices with a fixed key by the earliest design freeze, and other signatures by the most relying parties.
-- [Plan the migration](/programme/plan/): the dates that apply, and four dates for each line.
-- [Work with suppliers](/programme/suppliers/): written questions, judged answers, and purchase wording.
+- [Decide what to migrate first](/plan/programme/priority/): order the lines within each job. Key establishment goes by the longest confidentiality period, devices with a fixed key by the earliest design freeze, and other signatures by the most relying parties.
+- [Set dates and milestones](/plan/programme/dates/): the dates that apply, and four dates for each line.
+- [Work with suppliers](/plan/programme/suppliers/): written questions, judged answers, and purchase wording.
 
 **Execute**
 
 - [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
-- [Make and verify one change](/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
-- [Keep the ability to change again](/programme/changing-algorithms-again/).
-- [Review and report](/programme/subsequent-review/): every three months while a line is ranked first for its job or a fixed date falls within a year, and every six months otherwise. A small programme reviews every six months unless a fixed date falls within a year. A programme's reviews replace the baseline's: check the baseline items at the same time.
+- [Make and verify one change](/plan/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
+- [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
+- [Review and report](/plan/programme/subsequent-review/): every three months while a line is ranked first for its job or a fixed date falls within a year, and every six months otherwise. A small programme reviews every six months unless a fixed date falls within a year. A programme's reviews replace the baseline's: check the baseline items at the same time.
 
 ## When no option exists in time
 
@@ -64,7 +64,7 @@ This page sets out the handbook's own method. The practices it links cite the au
 
 ## Related pages
 
-- [Start here](/start-here/)
-- [Baseline](/baseline/)
+- [Which plan you need](/plan/)
+- [Baseline](/plan/baseline/)
 - [Technology options](/technology-options/)
 - [Templates](/templates/)

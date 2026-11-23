@@ -40,4 +40,4 @@ These NIST publications explain when quantum-vulnerable algorithms leave NIST st
 - [Standards](/standards/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Crypto-agility and the next transition](/learn/crypto-agility/)
-- [Decide what to migrate first](/programme/priority/)
+- [Decide what to migrate first](/plan/programme/priority/)

@@ -46,6 +46,6 @@ Keep real change records off a public ticket and off an unlocked shared drive: t
 
 ## Related pages
 
-- [Make and verify one change](/programme/implementation/)
-- [Programme](/programme/)
+- [Make and verify one change](/plan/programme/implementation/)
+- [Programme](/plan/programme/)
 - [Protect this first](/templates/examples/protect-this-first/)

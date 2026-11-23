@@ -8,19 +8,19 @@ displayed_sidebar: journeySidebar
 
 ## When this applies
 
-At least one question on [Start here](/start-here/) applies, and you need to know where public-key cryptography is used before prioritising, planning, or claiming that anything has migrated. Start with the systems the questions found.
+At least one question in [Which plan you need](/plan/) applies, and you need to know where public-key cryptography is used before prioritising, planning, or claiming that anything has migrated. Start with the systems the questions found.
 
 ## Who does what
 
 - The **migration lead** sets the scope, keeps the [register](/templates/records/register/), and chases unknowns.
 - **System owners** confirm each row for their systems.
 - **Operations** runs scans, log reviews, and configuration checks.
-- **Procurement** asks suppliers for what cannot be seen from inside the organisation (see [Work with suppliers](/programme/suppliers/)).
+- **Procurement** asks suppliers for what cannot be seen from inside the organisation (see [Work with suppliers](/plan/programme/suppliers/)).
 
 ## Do this
 
 1. **Start where the risk is.** List each system that holds sensitive or long-lived data, exposes an external connection, operates signing infrastructure, or contains a device or product that verifies signatures. Add the rest later.
-2. **Make a minimum first pass before anything else.** For each system from step 1, ask its owner what it does with public-key cryptography; export the certificate list from your certificate authority or certificate manager, if you have one; and, where a supplier controls the system, send the supplier the questions in [Work with suppliers](/programme/suppliers/). Mark everything you cannot confirm as unknown. That is enough to start deciding what to migrate first; supplier answers can follow, and the methods below fill the gaps over time.
+2. **Make a minimum first pass before anything else.** For each system from step 1, ask its owner what it does with public-key cryptography; export the certificate list from your certificate authority or certificate manager, if you have one; and, where a supplier controls the system, send the supplier the questions in [Work with suppliers](/plan/programme/suppliers/). Mark everything you cannot confirm as unknown. That is enough to start deciding what to migrate first; supplier answers can follow, and the methods below fill the gaps over time.
 3. **Add further discovery methods as you go**, because each one misses something:
    - **connections**: certificate and TLS scans, plus server or load-balancer logs that show which key-exchange groups and signature algorithms are actually negotiated;
    - **certificates**: internal certificate authority issuance records and certificate transparency logs for public certificates;
@@ -57,7 +57,7 @@ Every algorithm the manufacturer has not verified is `unknown`, and each row nam
 
 ## Limits and next step
 
-The inventory records what exists; it does not decide order or algorithms. Large estates may need specialist discovery tooling and support. Next, [decide what to migrate first](/programme/priority/).
+The inventory records what exists; it does not decide order or algorithms. Large estates may need specialist discovery tooling and support. Next, [decide what to migrate first](/plan/programme/priority/).
 
 ## Sources
 
@@ -66,6 +66,6 @@ The inventory records what exists; it does not decide order or algorithms. Large
 ## Related pages
 
 - [Register](/templates/records/register/)
-- [Decide what to migrate first](/programme/priority/)
+- [Decide what to migrate first](/plan/programme/priority/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)

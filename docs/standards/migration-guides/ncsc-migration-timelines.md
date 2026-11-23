@@ -31,7 +31,7 @@ NCSC published version 1.0 on 20 March 2025, and the page records the same date 
 
 ## Relationship with other standards
 
-These milestones apply to NCSC's stated audience, not to every organisation everywhere; see [Timelines](/learn/explainers/why-timelines-differ/). For commodity IT, NCSC expects most organisations to receive post-quantum support through normal supplier updates; see [Baseline](/baseline/). Bespoke systems and long-lived verifiers, such as hardware roots of trust that cannot be updated in the field, need active planning; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
+These milestones apply to NCSC's stated audience, not to every organisation everywhere; see [Timelines](/learn/explainers/why-timelines-differ/). For commodity IT, NCSC expects most organisations to receive post-quantum support through normal supplier updates; see [Baseline](/plan/baseline/). Bespoke systems and long-lived verifiers, such as hardware roots of trust that cannot be updated in the field, need active planning; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
 The companion whitepaper, *Next steps in preparing for post-quantum cryptography*, version 2.0 of 14 August 2024, is written for system and risk owners in commercial enterprises, public sector organisations, and critical national infrastructure, and covers NCSC's broader position on preparing for post-quantum cryptography. NCSC's [Using TLS to protect data](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) guidance (15 October 2026) covers protocol configuration. For how NCSC's algorithm and hybrid positions compare with other authorities, see [National algorithm positions](/standards/national-algorithm-positions/).
 
@@ -44,6 +44,6 @@ The companion whitepaper, *Next steps in preparing for post-quantum cryptography
 ## Related pages
 
 - [Post-quantum migration guides](/standards/migration-guides/)
-- [Baseline](/baseline/)
+- [Baseline](/plan/baseline/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [Timelines](/learn/explainers/why-timelines-differ/)

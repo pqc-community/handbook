@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Use this charter when you [set up the programme](/programme/set-up/): once [Start here](/start-here/) shows you need a full programme, and again when the scope, roles, or budget change.
+Use this charter when you [set up the programme](/plan/programme/set-up/): once [Which plan you need](/plan/) shows you need a full programme, and again when the scope, roles, or budget change.
 
 ## Minimum fields
 
@@ -73,6 +73,6 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 
 ## Related pages
 
-- [Set up the programme](/programme/set-up/)
-- [Programme](/programme/)
+- [Set up the programme](/plan/programme/set-up/)
+- [Programme](/plan/programme/)
 - [Register](/templates/records/register/)

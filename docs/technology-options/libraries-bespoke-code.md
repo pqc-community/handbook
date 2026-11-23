@@ -34,8 +34,8 @@ You do, as the developer or product owner, within what your libraries support. L
 
 ## What good looks like
 
-- Every application or component that calls cryptography has a row on the [register](/templates/records/register/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/programme/inventory/) describes.
-- Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite and can be demonstrated as [Keep the ability to change again](/programme/changing-algorithms-again/) describes.
+- Every application or component that calls cryptography has a row on the [register](/templates/records/register/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/plan/programme/inventory/) describes.
+- Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite and can be demonstrated as [Keep the ability to change again](/plan/programme/changing-algorithms-again/) describes.
 - Algorithms taken from a maintained library rather than implemented in-house, with the library's own tests run in your build.
 - New designs built on a published protocol or format with a post-quantum mechanism wherever one exists.
 - Libraries kept current, with post-quantum support and, where required, validation confirmed for the release you ship.
@@ -81,6 +81,6 @@ A decision-ready record lists each application with the library and release it u
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
-- [Keep the ability to change again](/programme/changing-algorithms-again/)
-- [Inventory the cryptography](/programme/inventory/)
+- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
+- [Inventory the cryptography](/plan/programme/inventory/)
 - [HSMs and key management](/technology-options/hsm-kms/)

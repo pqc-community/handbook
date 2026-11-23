@@ -18,7 +18,7 @@ A next review date on the register has arrived, or something has happened that m
 
 ## Do this
 
-**Set a cadence.** Use the cadence your sector or authorities require. Where nothing sets one, this handbook suggests reviewing a programme at least every six months, and every three months while any line is first in its job's order or a design freeze, contract renewal, or end of support on the register falls within the next year. A small programme, as [Programme](/programme/#size) defines it, is reviewed every six months unless such a date falls within the next year. The [baseline](/baseline/) is reviewed every six months, and when a product is renewed or leaves support. This is the handbook's suggestion, not an authority's requirement.
+**Set a cadence.** Use the cadence your sector or authorities require. Where nothing sets one, this handbook suggests reviewing a programme at least every six months, and every three months while any line is first in its job's order or a design freeze, contract renewal, or end of support on the register falls within the next year. A small programme, as [Programme](/plan/programme/#size) defines it, is reviewed every six months unless such a date falls within the next year. The [baseline](/plan/baseline/) is reviewed every six months, and when a product is renewed or leaves support. This is the handbook's suggestion, not an authority's requirement.
 
 **Bring the review forward** when any of these happens:
 
@@ -60,7 +60,7 @@ Each date follows the item's own driver rather than one review date for everythi
 
 ## Limits and next step
 
-The suggested cadence is a starting point, not an obligation; regulated organisations should follow their sector authority. The review reopens earlier practices, starting with [Inventory the cryptography](/programme/inventory/).
+The suggested cadence is a starting point, not an obligation; regulated organisations should follow their sector authority. The review reopens earlier practices, starting with [Inventory the cryptography](/plan/programme/inventory/).
 
 ## Sources
 
@@ -70,5 +70,5 @@ The suggested cadence is a starting point, not an obligation; regulated organisa
 
 - [Register](/templates/records/register/)
 - [Progress report](/templates/records/progress-report/)
-- [Set up the programme](/programme/set-up/)
-- [Programme](/programme/)
+- [Set up the programme](/plan/programme/set-up/)
+- [Programme](/plan/programme/)

@@ -74,4 +74,4 @@ A decision-ready record names the gateway model and release, the key exchange ne
 - [Choosing an option](/technology-options/choosing/)
 - [TLS and web services](/technology-options/tls/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
-- [Make and verify one change](/programme/implementation/)
+- [Make and verify one change](/plan/programme/implementation/)

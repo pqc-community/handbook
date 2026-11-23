@@ -57,7 +57,7 @@ A blocked record is the product sensor's firmware verifier. The signature and tr
 
 ## Limits and next step
 
-Protocol and product configuration belong in product documentation and specialist hands; this page records the change and how it was proved, not the settings. Next, [keep the ability to change again](/programme/changing-algorithms-again/).
+Protocol and product configuration belong in product documentation and specialist hands; this page records the change and how it was proved, not the settings. Next, [keep the ability to change again](/plan/programme/changing-algorithms-again/).
 
 ## Sources
 
@@ -70,4 +70,4 @@ Protocol and product configuration belong in product documentation and specialis
 
 - [Change record](/templates/records/change-record/)
 - [Choosing an option](/technology-options/choosing/)
-- [Keep the ability to change again](/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)

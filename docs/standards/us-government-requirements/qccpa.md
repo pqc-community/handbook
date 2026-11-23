@@ -31,7 +31,7 @@ Congress passed the Act as H.R. 7535 and it was approved on 21 December 2022 as 
 
 The Act turned the inventory work begun under [NSM-10](/standards/us-government-requirements/nsm-10/) into a statutory duty for federal agencies, and its Section 4(c) migration-planning requirement is implemented by [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/). Its definition of post-quantum cryptography is broad and does not name algorithms; the algorithms themselves come from NIST standards such as [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) for signatures.
 
-The sense of Congress in Section 2 calls for applications, hardware and software that can be easily updated to support cryptographic agility. That is relevant to any organisation's planning, not only federal agencies; see [Crypto-agility](/learn/crypto-agility/) and [Inventory the cryptography](/programme/inventory/).
+The sense of Congress in Section 2 calls for applications, hardware and software that can be easily updated to support cryptographic agility. That is relevant to any organisation's planning, not only federal agencies; see [Crypto-agility](/learn/crypto-agility/) and [Inventory the cryptography](/plan/programme/inventory/).
 
 ## Sources
 
@@ -44,4 +44,4 @@ The sense of Congress in Section 2 calls for applications, hardware and software
 - [US government requirements](/standards/us-government-requirements/)
 - [NSM-10](/standards/us-government-requirements/nsm-10/)
 - [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/)
-- [Inventory the cryptography](/programme/inventory/)
+- [Inventory the cryptography](/plan/programme/inventory/)

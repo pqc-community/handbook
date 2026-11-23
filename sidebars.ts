@@ -2,25 +2,25 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   journeySidebar: [
-    'start-here/index',
-    'baseline/index',
+    'plan/index',
+    'plan/baseline',
     {
       type: 'category',
       label: 'Programme',
-      link: {type: 'doc', id: 'programme/index'},
+      link: {type: 'doc', id: 'plan/programme/index'},
       collapsed: false,
       items: [
         {
           type: 'category',
           label: 'Diagnose',
           collapsed: false,
-          items: ['programme/set-up', 'programme/inventory'],
+          items: ['plan/programme/set-up', 'plan/programme/inventory'],
         },
         {
           type: 'category',
-          label: 'Plan',
+          label: 'Order and schedule',
           collapsed: false,
-          items: ['programme/priority', 'programme/plan', 'programme/suppliers'],
+          items: ['plan/programme/priority', 'plan/programme/dates', 'plan/programme/suppliers'],
         },
         {
           type: 'category',
@@ -28,9 +28,9 @@ const sidebars: SidebarsConfig = {
           collapsed: false,
           items: [
             {type: 'link', label: 'Choose an option', href: '/technology-options/choosing/'},
-            'programme/implementation',
-            'programme/changing-algorithms-again',
-            'programme/subsequent-review',
+            'plan/programme/implementation',
+            'plan/programme/changing-algorithms-again',
+            'plan/programme/subsequent-review',
           ],
         },
       ],

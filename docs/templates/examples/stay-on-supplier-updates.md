@@ -6,7 +6,7 @@ displayed_sidebar: templatesSidebar
 description: The baseline in action for a fictional UK marketing agency on supported devices and a hosted suite, with its register and purchase wording filled in.
 ---
 
-This worked example follows one fictional organisation whose IT is entirely supported devices and supplier-hosted services through the [baseline](/baseline/). It keeps the baseline's two records: the [register](/templates/records/register/) and the [purchase wording](/templates/records/purchase-wording/). For a full programme, see [Protect this first](/templates/examples/protect-this-first/).
+This worked example follows one fictional organisation whose IT is entirely supported devices and supplier-hosted services through the [baseline](/plan/baseline/). It keeps the baseline's two records: the [register](/templates/records/register/) and the [purchase wording](/templates/records/purchase-wording/). For a full programme, see [Protect this first](/templates/examples/protect-this-first/).
 
 The agency is a 25-person marketing agency based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, service plan, roadmap, email, version number, release date, and check result below is invented for illustration.
 
@@ -18,9 +18,9 @@ The agency is a 25-person marketing agency based in the United Kingdom. It is no
 - **Hosted email and office suite**: Email, documents, and file storage on a supplier-hosted service whose cryptography the supplier controls. The supplier's published security roadmap of 14 May 2026 states hybrid post-quantum key establishment for connections and gives 2028 as the target for post-quantum signatures, without naming an algorithm. The annual subscription renews on 1 March 2027, and the contract requires notice by 1 February 2027 not to renew.
 - **Data**: Client work is confidential until a campaign launches, usually within a year. The records policy keeps client contracts, finance, and staff records for up to six years.
 
-## Start here
+## Which plan you need
 
-On 7 September 2026 the office manager answered the four questions on [Start here](/start-here/) with the IT support provider, and the managing director agreed:
+On 7 September 2026 the office manager answered the four questions in [Which plan you need](/plan/) with the IT support provider, and the managing director agreed:
 
 - **Question 1**: does not apply. Nothing the agency holds needs to stay confidential for ten years or more; the office manager recorded the six-year records policy on the register.
 - **Questions 2 and 3**: do not apply. The agency makes no devices, and signs no code, firmware, or documents that clients rely on.
@@ -64,7 +64,7 @@ If a row is still without a commitment when the notice date passes, it becomes n
 
 ## What would start a programme
 
-The baseline stays the agency's whole plan while none of the four questions applies. The office manager answers them again at each review, and starts a [programme](/programme/) if any changes:
+The baseline stays the agency's whole plan while none of the four questions applies. The office manager answers them again at each review, and starts a [programme](/plan/programme/) if any changes:
 
 - a client contract requires files to stay confidential for ten years or more (question 1);
 - the agency starts making or running a device whose signature check cannot be changed, such as a product it builds for a client (question 2);
@@ -83,8 +83,8 @@ The NCSC guidance notes that for many organisations, managed service providers a
 
 ## Related pages
 
-- [Baseline](/baseline/)
-- [Start here](/start-here/)
+- [Baseline](/plan/baseline/)
+- [Which plan you need](/plan/)
 - [Register](/templates/records/register/)
 - [Purchase wording](/templates/records/purchase-wording/)
 - [Protect this first](/templates/examples/protect-this-first/)

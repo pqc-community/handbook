@@ -8,7 +8,7 @@ displayed_sidebar: journeySidebar
 
 ## When this applies
 
-At least one of the four questions on [Start here](/start-here/) applies, and you need a full programme: any device with a fixed key is involved, the programme covers more than one or two systems, or Start here sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/programme/#size). A product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: the [baseline](/baseline/) replaces it, with a date on the register.
+At least one of the four questions in [Which plan you need](/plan/) applies, and you need a full programme: any device with a fixed key is involved, the programme covers more than one or two systems, or your answers sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/plan/programme/#size). A product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: the [baseline](/plan/baseline/) replaces it, with a date on the register.
 
 ## Who does what
 
@@ -21,10 +21,10 @@ At least one of the four questions on [Start here](/start-here/) applies, and yo
 
 ## Do this
 
-1. **Write the programme goal in one or two sentences**, based on the answers to the four questions on Start here: what is in scope, what is not, and what "done" means for this phase.
+1. **Write the programme goal in one or two sentences**, based on the answers to the four questions in [Which plan you need](/plan/): what is in scope, what is not, and what "done" means for this phase.
 2. **Assign the roles above by name.** A role with no named person is a gap to resolve, not a default.
 3. **Agree the first budget line** for discovery and supplier engagement. A full migration budget usually cannot be estimated until the inventory exists and the register has an order; say so in the charter and set the date when it will be revisited. When it is, include supplier upgrade charges, replacement of products that cannot be upgraded, testing environments and effort, discovery tooling, and specialist advice.
-4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/programme/subsequent-review/)).
+4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/plan/programme/subsequent-review/)).
 5. **Tell the people whose work will change**: system owners, procurement, operations, and suppliers, who should expect written questions about their post-quantum plans. Explain the different jobs — key establishment, signatures, and verifiers that cannot be updated — so teams do not assume one cutover.
 
 Published migration guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) ask organisations to define their migration goals as the first activity.
@@ -41,7 +41,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next step
 
-The charter assigns responsibility; it does not decide priorities or algorithms. Large or regulated organisations will usually need a formal governance structure and specialist input beyond this page. Next, [inventory the cryptography](/programme/inventory/).
+The charter assigns responsibility; it does not decide priorities or algorithms. Large or regulated organisations will usually need a formal governance structure and specialist input beyond this page. Next, [inventory the cryptography](/plan/programme/inventory/).
 
 ## Sources
 
@@ -50,8 +50,8 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 
 ## Related pages
 
-- [Start here](/start-here/)
-- [Programme](/programme/)
+- [Which plan you need](/plan/)
+- [Programme](/plan/programme/)
 - [Programme charter](/templates/records/programme-charter/)
 - [Register](/templates/records/register/)
-- [Review and report](/programme/subsequent-review/)
+- [Review and report](/plan/programme/subsequent-review/)

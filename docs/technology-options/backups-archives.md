@@ -25,8 +25,8 @@ The backup, archive, or storage supplier for products you buy; you for formats a
 
 1. **Protect new data under the chosen option** as soon as it is available.
 2. **Keep stored data on its own register row.** Give it a `key establishment (stored data)` row, separate from the row for connections to the same system. A supplier's answer about connections says nothing about stored data, so ask about each in writing and judge each answer on its own row.
-3. **Treat a confidentiality period nobody can confirm as long.** Until the data owner confirms how long the data must stay secret, handle it as data that must stay secret for years, as question 1 on [Start here](/start-here/) does with a not-sure answer, and name on the register who will confirm it and by when.
-4. **Decide what happens to data already encrypted** when its confidentiality period, counted from when the data was created, is long enough for question 1 on Start here to apply:
+3. **Treat a confidentiality period nobody can confirm as long.** Until the data owner confirms how long the data must stay secret, handle it as data that must stay secret for years, as question 1 in [Which plan you need](/plan/) does with a not-sure answer, and name on the register who will confirm it and by when.
+4. **Decide what happens to data already encrypted** when its confidentiality period, counted from when the data was created, is long enough for question 1 in Which plan you need to apply:
    - if you still hold the only copies, [re-wrap](/templates/reference/glossary/#key-wrapping) the data keys under the new option where the format allows it without decrypting the data, and re-encrypt the data where it does not; record that work on the stored-data row;
    - if copies have already left your control, such as data sent out or held by a third party, re-wrapping your copy does not protect theirs; record the exposure on the [register](/templates/records/register/) for the sponsor, advised by legal or risk, to accept or act on;
    - delete data and keys you no longer need rather than migrating them.
@@ -65,4 +65,4 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 - [Encrypted email and files](/technology-options/encrypted-files/)
 - [Cloud and SaaS](/technology-options/cloud-saas/)
 - [HSMs and key management](/technology-options/hsm-kms/)
-- [Start here](/start-here/)
+- [Which plan you need](/plan/)

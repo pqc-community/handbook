@@ -67,7 +67,7 @@ Supplier targets matter to you in two ways. They set when the services you depen
 
 The dates above differ because their sources address different audiences and describe different events. A standards body sets when algorithms become deprecated or disallowed under its standards. A government sets requirements for agencies within its remit. National guidance gives organisations target dates for planning and migration, and a regional roadmap coordinates Member States that will implement it through their own arrangements. A supplier sets targets for its own services. Each is a judgement made at a point in time: NIST changed its deprecation schedule between draft and final report, and the US federal deadlines date from June 2026.
 
-So a date only makes sense alongside its source, audience, cryptographic job, milestone, and the date it was set. This page compares selected guidance; it does not replace the source documents. [Plan the migration](/programme/plan/) shows how to work out which timelines apply to your organisation, and to whom, and how to record each one with its authority.
+So a date only makes sense alongside its source, audience, cryptographic job, milestone, and the date it was set. This page compares selected guidance; it does not replace the source documents. [Set dates and milestones](/plan/programme/dates/) shows how to work out which timelines apply to your organisation, and to whom, and how to record each one with its authority.
 
 ## Sources
 
@@ -85,7 +85,7 @@ So a date only makes sense alongside its source, audience, cryptographic job, mi
 ## Related pages
 
 - [Timelines](/learn/timelines/)
-- [Plan the migration](/programme/plan/)
+- [Set dates and milestones](/plan/programme/dates/)
 - [US government requirements](/standards/us-government-requirements/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Migration guides](/standards/migration-guides/)

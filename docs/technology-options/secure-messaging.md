@@ -74,4 +74,4 @@ A decision-ready record names the product and release, the provider's written an
 - [Cloud and SaaS](/technology-options/cloud-saas/)
 - [Encrypted email and files](/technology-options/encrypted-files/)
 - [Choosing an option](/technology-options/choosing/)
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)

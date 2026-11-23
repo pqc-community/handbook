@@ -1,7 +1,7 @@
 ---
-title: Plan the migration
-search_title: Plan a post-quantum migration
-sidebar_label: Plan the migration
+title: Set dates and milestones
+search_title: Post-quantum migration dates and milestones
+sidebar_label: Set dates and milestones
 description: Record which authority dates apply to each system and job, and track supplier release, testing, deployment and end-of-support dates separately.
 displayed_sidebar: journeySidebar
 ---
@@ -27,7 +27,7 @@ The register has an order and you need to turn it into dated, owned milestones, 
    - NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) for US national security systems.
 
    [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) schedules quantum-vulnerable public-key algorithms for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines. Record the authority and audience beside every date. [Dates that may apply, by job](#dates-that-may-apply-by-job) sets out each authority's dates for key establishment, signatures, and verifiers that cannot be updated.
-2. **Set a milestone for each system and job** on the rows [Decide what to migrate first](/programme/priority/) has ordered, and record it in the row's dates that apply. Keep one row per system and job; combine jobs in one row only when they share every date, owner, and milestone. Highest-priority lines get the earliest applicable milestone. Supplied products on the baseline are tracked against their supplier's dates, not given a bespoke project.
+2. **Set a milestone for each system and job** on the rows [Decide what to migrate first](/plan/programme/priority/) has ordered, and record it in the row's dates that apply. Keep one row per system and job; combine jobs in one row only when they share every date, owner, and milestone. Highest-priority lines get the earliest applicable milestone. Supplied products on the baseline are tracked against their supplier's dates, not given a bespoke project.
 3. **Track four separate dates on each row**, because a supplier's release is not your deployment:
    - **supplier release** — when the supplier ships post-quantum support;
    - **testing** — when your interoperability and performance checks complete;
@@ -69,7 +69,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next step
 
-The plan records which dates apply; deciding whether a regulation or contract binds you is a legal question for your risk owner or sector authority. Next, [work with suppliers](/programme/suppliers/) and [choose an option](/technology-options/choosing/) for each system.
+The plan records which dates apply; deciding whether a regulation or contract binds you is a legal question for your risk owner or sector authority. Next, [work with suppliers](/plan/programme/suppliers/) and [choose an option](/technology-options/choosing/) for each system.
 
 ## Sources
 
@@ -85,5 +85,5 @@ The plan records which dates apply; deciding whether a regulation or contract bi
 
 - [Register](/templates/records/register/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
-- [Work with suppliers](/programme/suppliers/)
+- [Work with suppliers](/plan/programme/suppliers/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
