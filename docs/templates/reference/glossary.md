@@ -2,15 +2,19 @@
 title: Post-quantum glossary
 search_title: Post-quantum cryptography glossary
 sidebar_label: Glossary
-displayed_sidebar: resourcesSidebar
+displayed_sidebar: templatesSidebar
 description: Terms used across this handbook, from asymmetric cryptography and key encapsulation to hybrid constructions and harvest-now, decrypt-later.
 ---
 
-Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, return to the [homepage](/). For the fields and values the records share, such as `asset`, `job`, and `unknown`, see [Migration records](/resources/records/#how-the-records-connect).
+Keep the glossary open while working through [Learn the basics](/learn/). Formal definitions are attributed to their defining standards where cited. When you are ready to plan, go to [Start here](/start-here/). For the fields and values the records share, such as `system`, `job`, and `unknown`, see [Migration records](/templates/records/#how-the-records-connect).
 
 ## Asymmetric cryptography
 
 Cryptography that uses a matched pair of keys. The public key can be shared, and the private key stays secret, because the two keys do different jobs. In key establishment the public key is used to create a shared secret and the private key recovers it. In signing, the private key creates the signature and the public key checks it, and that check does not reverse the signature. [Symmetric cryptography](#symmetric-cryptography) is the other family: one shared secret protects the bulk of the traffic once the public-key step is finished. The lessons call this [public-key cryptography](#public-key-cryptography). See [Public-key cryptography](/learn/public-key-cryptography/).
+
+## Baseline
+
+The short plan every organisation follows, whether or not it also runs a programme. It is seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question on [Start here](#start-here) applies, the baseline is the whole plan. It keeps two records: the [register](#register) and the purchase wording. See [Baseline](/baseline/).
 
 ## Block cipher
 
@@ -20,7 +24,7 @@ A symmetric algorithm that encrypts data in fixed-size blocks under one secret k
 
 ## CBOM (cryptography bill of materials)
 
-A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The inventory still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/migration-practices/inventory/).
+A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The [register](#register) still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/programme/inventory/).
 
 ## Certificate
 
@@ -40,7 +44,7 @@ A single signature object that combines a post-quantum and a classical signature
 
 ## Crypto-agility
 
-The ability to change algorithms again after this migration. Choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/migration-practices/changing-algorithms-again/).
+The ability to change algorithms again after this migration. Choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/programme/changing-algorithms-again/).
 
 ## Cryptographic module
 
@@ -62,7 +66,7 @@ Origin authenticity means the check shows that the holder of the private key app
 
 ## Discovery
 
-Finding where cryptography is used, including what a scan cannot see. A scan of libraries and configurations finds some of it and misses embedded and hardware-bound cryptography, and cryptography inside a supplier's product. Those gaps stay on the inventory as unknown until both algorithm cells name a construction. See [Inventory the cryptography](/migration-practices/inventory/).
+Finding where cryptography is used, including what a scan cannot see. A scan of libraries and configurations finds some of it and misses embedded and hardware-bound cryptography, and cryptography inside a supplier's product. Those gaps stay on the [register](#register) as unknown until each job's row names the construction that protects it today. See [Inventory the cryptography](/programme/inventory/).
 
 ## Dual signature
 
@@ -146,7 +150,7 @@ The sender chooses the secret and sends it. In [key agreement](#key-agreement), 
 
 A wrapping key that the parties already share protects another key. The method hides that key and checks that it was not altered. [Key transport](#key-transport) is a different procedure: the sender selects a secret and sends it protected by the receiver's public key. Wrapping does not establish a shared secret, and it is not a [digital signature](#digital-signature). AES Key Wrap is the familiar example. A [block cipher](#block-cipher) such as AES supplies the symmetric algorithm underneath.
 
-A stored-data product can also protect the wrapping key itself with a public-key step, such as [key transport](#key-transport) to a recipient's public key or a key-encapsulation step. A classical public-key step of that kind is quantum-vulnerable, and it is what the stored-data rows on the [vendor response log](/resources/records/vendor-response-log/) ask about; the symmetric wrap underneath does not need replacing. Keep a stored-data row `unknown` until the supplier says in writing whether such a step exists and, if so, which algorithm it uses.
+A stored-data product can also protect the wrapping key itself with a public-key step, such as [key transport](#key-transport) to a recipient's public key or a key-encapsulation step. A classical public-key step of that kind is quantum-vulnerable, and it is what the supplier is asked about for a stored-data row on the [register](/templates/records/register/); the symmetric wrap underneath does not need replacing. Keep a stored-data row `unknown` until the supplier says in writing whether such a step exists and, if so, which algorithm it uses.
 
 ## Message authentication code (MAC)
 
@@ -176,6 +180,10 @@ The public-key infrastructure that issues and checks certificates. A certificate
 
 [Public-key cryptography](#public-key-cryptography) intended to stay secure against a cryptographically relevant quantum computer, if one is built. The algorithms run on ordinary computers. Parties still use public keys, private keys, key establishment, and signatures, and the hard problems are chosen so that known quantum attacks on today's RSA and elliptic-curve schemes do not apply on the same terms. It is not a guarantee against every future attack. It is also not quantum key distribution, which uses specialised quantum channels rather than public-key cryptography on ordinary networks. See [What post-quantum means](/learn/what-post-quantum-means/).
 
+## Programme
+
+The work an organisation runs, on top of the [baseline](#baseline), for what the four questions on [Start here](#start-here) found. It opens with one first move for each question that applied, then runs in three phases: diagnose, plan, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/programme/).
+
 ## Public-key cryptography
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines public-key cryptography as cryptography that uses two separate keys to exchange data, one to encrypt or digitally sign the data and one to decrypt the data or verify the digital signature. It says this is also known as [asymmetric cryptography](#asymmetric-cryptography).
@@ -194,9 +202,9 @@ The belief is about known attacks, including a cryptographically relevant quantu
 
 RSA and elliptic-curve public-key schemes are the familiar examples. A [block cipher](#block-cipher) such as AES, and a [hash function](#hash-function) such as SHA-256, are not in this class on the same timetable. Harvest-now, decrypt-later is the confidentiality case for a quantum-vulnerable [key establishment](#key-establishment). A signature checked at the time of use is not that case. See [The quantum threat](/learn/quantum-threat/).
 
-## Regular adopter
+## Register
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Decide whether to act](/migration-practices/decide-whether-to-act/).
+The one record every organisation keeps. It has one row per system and job, giving the owner, what protects it today, the supplier's answer and its judgement, the dates that apply, the next step, the status, and the next review. The [baseline](#baseline) starts it, and a [programme](#programme) adds its order and dates. See [Register](/templates/records/register/).
 
 ## Relying party
 
@@ -209,6 +217,10 @@ A check the device cannot replace later. The case that matters is a verifier tha
 ## SLH-DSA (Stateless Hash-Based Digital Signature Algorithm)
 
 NIST's stateless hash-based digital signature algorithm in [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final). It signs, as ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) does, and the hash-based design is the difference. It is the stateless scheme to record when a stateful hash-based scheme is not appropriate, and it does not establish a shared secret. See [Algorithms](/learn/algorithms/) and [Firmware and secure boot](/technology-options/firmware-secure-boot/).
+
+## Start here
+
+Four questions about the organisation as a whole that decide whether the [baseline](#baseline) is enough or a [programme](#programme) is also needed: data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a programme. See [Start here](/start-here/).
 
 ## Stateful hash-based signature
 
@@ -223,10 +235,6 @@ One shared secret does both jobs. The same key encrypts and decrypts, and the sa
 ## Trust anchor
 
 A public key or certificate that a verifier trusts without further proof, and from which it checks every other certificate in a [certificate chain](#certificate-chain). Browsers and operating systems hold many in trust stores; an embedded device may hold one publisher key in its boot code. A new signature algorithm usually needs new trust anchors. See [Signatures, certificates, and trust](/learn/signatures-and-trust/).
-
-## Urgent adopter
-
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Decide whether to act](/migration-practices/decide-whether-to-act/).
 
 ## Verifier
 
@@ -265,14 +273,16 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
 - [Standardisation](/learn/standardisation/)
 - [Homepage](/)
-- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/programme/changing-algorithms-again/)
 - [Standards](/standards/)
 - [Choosing an option](/technology-options/choosing/)
 - [Technology options](/technology-options/)
 - [PKI and certificates](/technology-options/pki/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Inventory the cryptography](/migration-practices/inventory/)
-- [Decide what to migrate first](/migration-practices/priority/)
-- [Decide whether to act](/migration-practices/decide-whether-to-act/)
-- [Resources](/resources/)
-- [Migration records](/resources/records/)
+- [Inventory the cryptography](/programme/inventory/)
+- [Decide what to migrate first](/programme/priority/)
+- [Start here](/start-here/)
+- [Baseline](/baseline/)
+- [Programme](/programme/)
+- [Templates](/templates/)
+- [Migration records](/templates/records/)
