@@ -159,13 +159,13 @@ function Choices() {
                 has a named sponsor and lead, a one-page charter, and a progress report at each review.
               </li>
             </ol>
-            <p className={styles.choiceNext}>
-              <Link to="/plan/">Answer the four questions</Link>
-            </p>
             <p className={styles.choiceExamples}>
               Worked examples: <Link to="/templates/examples/stay-on-supplier-updates/">a small agency under the core
               actions</Link> and <Link to="/templates/examples/protect-this-first/">a manufacturer running a full
               programme</Link>.
+            </p>
+            <p className={styles.choiceNext}>
+              <Link to="/plan/">Answer the four questions</Link>
             </p>
           </div>
         </div>
