@@ -129,15 +129,15 @@
   background-color: var(--ifm-color-primary);
 }
 
-/* The connector branches into both paths: a rule across the top of the row,
+/* The connector branches into the three outcomes: a rule across the top of the row,
    with a short drop into each column. */
-.pathRow {
+.outcomeRow {
   border-top: 2px solid var(--ifm-color-primary);
   padding-top: 1rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .pathCol {
@@ -156,30 +156,24 @@
   background-color: var(--ifm-color-primary);
 }
 
-.trackGroup {
-  margin-top: 1rem;
-  padding-left: 1rem;
-  border-left: 2px solid var(--ifm-color-primary);
+.pathCol > .box {
+  flex: 1;
 }
 
-.trackHeading {
-  font-size: 0.875rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+/* The four questions, numbered, inside the Start here box. */
+.questions {
+  margin: 0;
+  padding-left: 2.5rem;
 }
 
-.trackRow {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
+.questions li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.6rem;
 }
 
-.track .boxTitle {
-  font-size: 0.95rem;
-}
-
-.track .boxText {
-  font-size: 0.875rem;
+.questions li:last-child {
+  margin-bottom: 0;
 }
 
 /* Three clocks */
@@ -259,10 +253,10 @@
   font-weight: 700;
 }
 
-/* Reference: Learn the basics leads, then the four reference sections */
+/* Reference: Learn the basics leads, then the three reference sections */
 .refGrid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -280,11 +274,7 @@
 
 /* Narrow screens */
 @media screen and (max-width: 996px) {
-  .pathRow {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .trackRow,
+  .outcomeRow,
   .clockGrid {
     grid-template-columns: minmax(0, 1fr);
   }

@@ -1,6 +1,36 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
+  journeySidebar: [
+    'start-here/index',
+    'baseline/index',
+    {
+      type: 'category',
+      label: 'Programme',
+      link: {type: 'doc', id: 'programme/index'},
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'Diagnose',
+          collapsed: false,
+          items: ['programme/set-up', 'programme/inventory'],
+        },
+        {
+          type: 'category',
+          label: 'Plan',
+          collapsed: false,
+          items: ['programme/priority', 'programme/plan', 'programme/suppliers'],
+        },
+        {
+          type: 'category',
+          label: 'Execute',
+          collapsed: false,
+          items: ['programme/implementation', 'programme/changing-algorithms-again', 'programme/subsequent-review'],
+        },
+      ],
+    },
+  ],
   learnSidebar: [
     'learn/index',
     'learn/public-key-cryptography',
@@ -30,17 +60,6 @@ const sidebars: SidebarsConfig = {
         'learn/explainers/quantum-safe-claims',
         'learn/explainers/why-timelines-differ',
       ],
-    },
-  ],
-  routesSidebar: [
-    'routes/index',
-    'routes/vendor-managed-software',
-    'routes/organisation-wide',
-    {
-      type: 'category',
-      label: 'Asset tracks',
-      collapsed: false,
-      items: ['routes/long-lived-confidentiality', 'routes/hard-to-change-systems'],
     },
   ],
   standardsSidebar: [
@@ -233,19 +252,6 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  migrationPracticesSidebar: [
-    'migration-practices/index',
-    'migration-practices/decide-whether-to-act',
-    'migration-practices/commodity-software',
-    'migration-practices/programme',
-    'migration-practices/inventory',
-    'migration-practices/priority',
-    'migration-practices/plan',
-    'migration-practices/suppliers',
-    'migration-practices/implementation',
-    'migration-practices/changing-algorithms-again',
-    'migration-practices/subsequent-review',
-  ],
   technologyOptionsSidebar: [
     'technology-options/index',
     'technology-options/choosing',
@@ -300,23 +306,19 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  resourcesSidebar: [
-    'resources/index',
+  templatesSidebar: [
+    'templates/index',
     {
       type: 'category',
       label: 'Records',
-      link: {type: 'doc', id: 'resources/records/index'},
+      link: {type: 'doc', id: 'templates/records/index'},
       collapsed: false,
       items: [
-        'resources/records/decision-note',
-        'resources/records/programme-charter',
-        'resources/records/inventory',
-        'resources/records/vendor-response-log',
-        'resources/records/purchase-requirements',
-        'resources/records/migration-plan',
-        'resources/records/change-record',
-        'resources/records/review-log',
-        'resources/records/progress-report',
+        'templates/records/register',
+        'templates/records/purchase-wording',
+        'templates/records/programme-charter',
+        'templates/records/change-record',
+        'templates/records/progress-report',
       ],
     },
     {
@@ -326,10 +328,10 @@ const sidebars: SidebarsConfig = {
         type: 'generated-index',
         title: 'Examples',
         description: 'Worked examples that show the handbook\'s records and practices applied to a fictional organisation.',
-        slug: '/resources/examples/',
+        slug: '/templates/examples/',
       },
       collapsed: false,
-      items: ['resources/examples/protect-this-first', 'resources/examples/stay-on-supplier-updates'],
+      items: ['templates/examples/protect-this-first', 'templates/examples/stay-on-supplier-updates'],
     },
     {
       type: 'category',
@@ -338,10 +340,10 @@ const sidebars: SidebarsConfig = {
         type: 'generated-index',
         title: 'Reference',
         description: 'Plain-language definitions of the terms the records and pages use.',
-        slug: '/resources/reference/',
+        slug: '/templates/reference/',
       },
       collapsed: false,
-      items: ['resources/reference/glossary'],
+      items: ['templates/reference/glossary'],
     },
   ],
 };

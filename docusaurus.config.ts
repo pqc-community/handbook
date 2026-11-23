@@ -72,11 +72,13 @@ const config: Config = {
       logo: {alt: 'PQC Handbook', src: 'img/logo.svg'},
       style: 'dark',
       items: [
-        {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn the basics'},
-        {type: 'docSidebar', sidebarId: 'standardsSidebar', position: 'left', label: 'Standards'},
-        {type: 'docSidebar', sidebarId: 'migrationPracticesSidebar', position: 'left', label: 'Migration practices'},
+        {type: 'doc', docId: 'start-here/index', sidebarId: 'journeySidebar', position: 'left', label: 'Start here'},
+        {type: 'doc', docId: 'baseline/index', sidebarId: 'journeySidebar', position: 'left', label: 'Baseline'},
+        {type: 'doc', docId: 'programme/index', sidebarId: 'journeySidebar', position: 'left', label: 'Programme'},
+        {type: 'docSidebar', sidebarId: 'learnSidebar', position: 'left', label: 'Learn'},
         {type: 'docSidebar', sidebarId: 'technologyOptionsSidebar', position: 'left', label: 'Technology options'},
-        {type: 'docSidebar', sidebarId: 'resourcesSidebar', position: 'left', label: 'Resources'},
+        {type: 'docSidebar', sidebarId: 'standardsSidebar', position: 'left', label: 'Standards'},
+        {type: 'docSidebar', sidebarId: 'templatesSidebar', position: 'left', label: 'Templates'},
         {href: 'https://github.com/pqc-community/handbook', label: 'GitHub', position: 'right'},
       ],
     },
@@ -84,14 +86,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Routes',
+          title: 'Start',
           items: [
-            {label: 'All routes', to: '/routes/'},
-            {label: 'Decide whether to act', to: '/migration-practices/decide-whether-to-act/'},
-            {label: 'Short path: vendor-managed', to: '/routes/vendor-managed-software/'},
-            {label: 'Full path: organisation-wide', to: '/routes/organisation-wide/'},
-            {label: 'Long-lived confidentiality', to: '/routes/long-lived-confidentiality/'},
-            {label: 'Hard-to-change systems', to: '/routes/hard-to-change-systems/'},
+            {label: 'Start here', to: '/start-here/'},
+            {label: 'Baseline', to: '/baseline/'},
+            {label: 'Programme', to: '/programme/'},
           ],
         },
         {
@@ -101,10 +100,9 @@ const config: Config = {
         {
           title: 'Reference',
           items: [
-            {label: 'Standards', to: '/standards/'},
-            {label: 'Migration practices', to: '/migration-practices/'},
             {label: 'Technology options', to: '/technology-options/'},
-            {label: 'Resources', to: '/resources/'},
+            {label: 'Standards', to: '/standards/'},
+            {label: 'Templates', to: '/templates/'},
           ],
         },
       ],

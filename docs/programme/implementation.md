@@ -3,19 +3,19 @@ title: Make and verify one change
 search_title: Make and verify a post-quantum change
 sidebar_label: Make and verify one change
 description: Pilot, test, cut over and verify one post-quantum change with a rollback trigger and evidence, treating key establishment, signatures and verifiers differently.
-displayed_sidebar: migrationPracticesSidebar
+displayed_sidebar: journeySidebar
 ---
 
 ## When this applies
 
-An option has been chosen for one system, with the standard or authority it follows recorded (see [Choosing an option](/technology-options/choosing/)), and the system is next in the plan.
+An option has been chosen for one system, with the standard or authority it follows recorded (see [Choosing an option](/technology-options/choosing/)), and the system is next in its job's order on the register.
 
 ## Who does what
 
-- The **asset owner** owns the change and decides whether it is complete.
+- The **system owner** owns the change and decides whether it is complete.
 - **Operations** runs the pilot, the cutover, any rollback, and the deployed-state check.
 - The **supplier** provides the release and support where the change is in their product.
-- The **migration lead** updates the plan from the change record.
+- The **migration lead** updates the register from the change record.
 
 ## Do this
 
@@ -30,23 +30,23 @@ An option has been chosen for one system, with the standard or authority it foll
 5. **Run the pilot.** Record each test's result. If a rollback trigger fires, roll back, record why, and fix the cause before trying again.
 6. **Cut over.** Send the cutover communication to users, operations, and connected parties, then move to production in the agreed change window.
 7. **Check production** with the method from step 4, then watch for fallback to classical-only connections until the next review.
-8. **Close the change** only when the production check has passed. The asset owner records the result, and the migration lead copies the production deployment date to the [migration plan](/resources/records/migration-plan/). A result of `unknown` means the change is not closed, and a passed pilot is not a production migration.
+8. **Close the change** only when the production check has passed. The system owner records the result, and the migration lead copies the production deployment date to the [register](/templates/records/register/) and sets the row's status to migrated. A result of `unknown` means the change is not closed, and a passed pilot is not a production migration.
 
 **Handle each job differently.**
 
 - **Key establishment.** Changes are negotiated per connection, so they can often be rolled back by configuration. The risk is in the path: unmanaged clients and network equipment that may fail or quietly fall back. Hybrid constructions are one option for this period, chosen by the rule on [Choosing an option](/technology-options/choosing/); [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes them as typically temporary measures. See [TLS and web services](/technology-options/tls/) and [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/) for the hybrid groups defined for TLS 1.3.
-- **Signatures.** Signers, certificate authorities, and every relying party that verifies move in a coordinated order. Verifiers need to accept the new signatures before signers switch, and new [trust anchors](/resources/reference/glossary/#trust-anchor) take time to distribute. Once relying parties depend on a new chain, rollback is harder than for key establishment, so plan dual or overlapping chains and certificate lifetimes before cutover. See [PKI and certificates](/technology-options/pki/) and [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/).
-- **Verifiers that cannot be updated.** Resolve these before a product's design freeze. Check the signature size and boot-time effects against the device's storage and timing. If you choose a stateful hash-based scheme, confirm you can manage its signing state, as [Choosing an option](/technology-options/choosing/#signature-schemes) describes. If no supported option exists yet, record the change as blocked rather than guessing (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)). For devices already in the field, record a retirement or replacement plan in the [migration plan](/resources/records/migration-plan/), with the retirement or replacement date as the line's `milestone` and any compensating controls in `next action`.
+- **Signatures.** Signers, certificate authorities, and every relying party that verifies move in a coordinated order. Verifiers need to accept the new signatures before signers switch, and new [trust anchors](/templates/reference/glossary/#trust-anchor) take time to distribute. Once relying parties depend on a new chain, rollback is harder than for key establishment, so plan dual or overlapping chains and certificate lifetimes before cutover. See [PKI and certificates](/technology-options/pki/) and [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/).
+- **Verifiers that cannot be updated.** Resolve these before a product's design freeze. Check the signature size and boot-time effects against the device's storage and timing. If you choose a stateful hash-based scheme, confirm you can manage its signing state, as [Choosing an option](/technology-options/choosing/#signature-schemes) describes. If no supported option exists yet, record the change as blocked rather than guessing (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)). For devices already in the field, record a retirement or replacement plan on the register, with the retirement or replacement date in the row's dates that apply and any compensating controls in its next step.
 
 ## Keep this evidence
 
-The [change record](/resources/records/change-record/) for the change: asset and job, change, option, authority, pilot scope, tests, rollback trigger and who may roll back, deployed-state check, a result that states exactly what has been shown and what has not, the evidence behind it (the test and inspection, not the standard), owner, and date.
+The [change record](/templates/records/change-record/) for the change: system and job, change, option, authority, pilot scope, tests, rollback trigger and who may roll back, deployed-state check, a result that states exactly what has been shown and what has not, the evidence behind it (the test and inspection, not the standard), owner, and date.
 
 ## Example
 
 An insufficient record is "We enabled PQC."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/), shows the product-design archive's staging pilot of Workspace 4.2:
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/), shows the product-design archive's staging pilot of Workspace 4.2:
 
 - **option:** hybrid X25519MLKEM768 for TLS connections, with the authority recorded as FIPS 203 for ML-KEM and the UK NCSC's TLS guidance (15 October 2026), written for system administrators, for the hybrid form;
 - **pilot:** a test client connects and its own handshake log shows X25519MLKEM768 negotiated, the supplier's connection log agrees, and an authorised test account retrieves sample files;
@@ -57,7 +57,7 @@ A blocked record is the product sensor's firmware verifier. The signature and tr
 
 ## Limits and next step
 
-Protocol and product configuration belong in product documentation and specialist hands; this page records the change and how it was proved, not the settings. Next, [keep the ability to change again](/migration-practices/changing-algorithms-again/).
+Protocol and product configuration belong in product documentation and specialist hands; this page records the change and how it was proved, not the settings. Next, [keep the ability to change again](/programme/changing-algorithms-again/).
 
 ## Sources
 
@@ -68,6 +68,6 @@ Protocol and product configuration belong in product documentation and specialis
 
 ## Related pages
 
-- [Change record](/resources/records/change-record/)
+- [Change record](/templates/records/change-record/)
 - [Choosing an option](/technology-options/choosing/)
-- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/programme/changing-algorithms-again/)

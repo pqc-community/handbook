@@ -8,39 +8,31 @@ import styles from './index.module.css';
 
 type Node = {label?: string; title: string; to: string; text: string};
 
-const paths: Node[] = [
-  {
-    label: 'Short path',
-    title: 'Standard, vendor-managed software',
-    to: '/routes/vendor-managed-software/',
-    text: 'Every asset answers no to all four questions. Keep supplier updates installed, write post-quantum requirements into purchases and renewals, and review.',
-  },
-  {
-    label: 'Full path',
-    title: 'Coordinating a migration across the organisation',
-    to: '/routes/organisation-wide/',
-    text: 'Any asset answers yes, or unknown, to one of them. Run the programme, send each asset to its track, and report to the sponsor.',
-  },
+const questions = [
+  {name: 'Data that must stay secret for years', text: 'Information that must stay confidential for ten years or more and is protected by public-key methods.'},
+  {name: 'Devices with a fixed key', text: 'Products or devices that check signatures with a key or method that cannot change after they ship.'},
+  {name: 'Signatures others rely on', text: 'A certificate authority, or code, firmware, or documents you sign that others check.'},
+  {name: 'Systems you build or configure', text: 'Software you build, or cryptography you set up on your own servers, VPNs, or applications.'},
 ];
 
-const tracks: Node[] = [
+const outcomes: Node[] = [
   {
-    label: 'Track',
-    title: 'Data that needs to stay confidential for years',
-    to: '/routes/long-lived-confidentiality/',
-    text: 'Key establishment for long-lived data.',
+    label: 'None apply',
+    title: 'Baseline',
+    to: '/baseline/',
+    text: 'Seven actions: list what you use, keep it supported, replace what is not, put post-quantum wording into purchases, and review every six months.',
   },
   {
-    label: 'Track',
-    title: 'Products or systems that may be hard to change',
-    to: '/routes/hard-to-change-systems/',
-    text: 'Bespoke systems, signatures others rely on, and verifiers that cannot be updated.',
+    label: 'Any applies',
+    title: 'Baseline and a programme',
+    to: '/programme/',
+    text: 'The baseline for everything you buy in, and a first move this week for each question that applied, then diagnose, plan, and execute.',
   },
   {
-    label: 'Track',
-    title: 'Vendor-managed software',
-    to: '/routes/vendor-managed-software/',
-    text: 'The commodity assets of a full-path estate.',
+    label: 'Critical, regulated, or a large estate you build',
+    title: 'Specialist advice first',
+    to: '/start-here/',
+    text: 'Bring in specialist advice and speak to your sector regulator, then follow the baseline and run a full programme.',
   },
 ];
 
@@ -65,24 +57,24 @@ const clocks = [
   },
 ];
 
-const decisionRows = [
+const registerRows = [
   {
-    asset: 'Product-design archive in supplier-hosted workspace',
-    answer: 'A yes: 15 years under the company retention policy',
-    path: 'full',
-    route: 'Long-lived confidentiality',
+    system: 'Product-design archive in supplier-hosted workspace',
+    job: 'key establishment',
+    why: 'Question 1: designs confidential for 15 years',
+    status: 'Open: staging pilot passed; production not migrated',
   },
   {
-    asset: 'Firmware verifier for product sensor',
-    answer: 'B yes: boot ROM trust anchor',
-    path: 'full',
-    route: 'Hard-to-change systems',
+    system: 'Firmware verifier for product sensor',
+    job: 'non-updatable verifier',
+    why: 'Question 2: boot ROM trust anchor',
+    status: 'Blocked: resolve before the 30 June 2027 design freeze',
   },
   {
-    asset: 'Office laptops',
-    answer: 'No to all four: the long-lived designs are kept in the archive; supported commodity software',
-    path: 'short',
-    route: 'Vendor-managed software',
+    system: 'Office laptops',
+    job: 'key establishment; signatures',
+    why: 'Baseline: supported commodity software',
+    status: 'Open: tracked on the baseline',
   },
 ];
 
@@ -93,24 +85,19 @@ const reference: Node[] = [
     text: 'Ten short lessons on the cryptography a migration affects. No mathematics assumed.',
   },
   {
-    title: 'Standards',
-    to: '/standards/',
-    text: 'Standards, government requirements, and migration guides, each with its audience and status.',
-  },
-  {
-    title: 'Migration practices',
-    to: '/migration-practices/',
-    text: 'The repeatable practices in lifecycle order, and the record each produces.',
-  },
-  {
     title: 'Technology options',
     to: '/technology-options/',
     text: 'One card per technology: the job or jobs it does and its post-quantum status.',
   },
   {
-    title: 'Resources',
-    to: '/resources/',
-    text: 'The nine migration records, both worked examples, and the glossary.',
+    title: 'Standards',
+    to: '/standards/',
+    text: 'Standards, government requirements, and migration guides, each with its audience and status.',
+  },
+  {
+    title: 'Templates',
+    to: '/templates/',
+    text: 'The five migration records, two worked examples, and the glossary.',
   },
 ];
 
@@ -146,46 +133,37 @@ function Hero() {
   );
 }
 
-function RouteChooser() {
+function StartHere() {
   return (
-    <section className={styles.section} aria-labelledby="choose">
+    <section className={styles.section} aria-labelledby="start">
       <div className="container">
-        <Heading as="h2" id="choose">
-          Find your route
+        <Heading as="h2" id="start">
+          Start here: four questions
         </Heading>
         <p className={styles.intro}>
-          Four questions decide whether a migration is a programme or a supplier matter, asset by asset. Each answer
-          leads to a route with its steps, its records, and when to change route.{' '}
-          <Link to="/routes/">How the routes fit together</Link>.
+          Most organisations will not change any cryptography themselves: their suppliers will. Answer for the
+          organisation as a whole. A question applies if any system you run fits it, and not sure counts as yes until
+          someone confirms. <Link to="/start-here/">Read the questions in full</Link>.
         </p>
 
         <div className={styles.chooser}>
-          <Link className={`${styles.box} ${styles.decide}`} to="/migration-practices/decide-whether-to-act/">
-            <span className={styles.boxLabel}>Start here</span>
-            <span className={styles.boxTitle}>Decide whether to act</span>
-            <span className={styles.boxText}>
-              Four questions about long-lived data, devices you cannot update, signing others rely on, and bespoke
-              systems.
-            </span>
-          </Link>
+          <ol className={`${styles.box} ${styles.decide} ${styles.questions}`}>
+            {questions.map((q) => (
+              <li key={q.name}>
+                <span className={styles.boxTitle}>{q.name}</span>
+                <span className={styles.boxText}>{q.text}</span>
+              </li>
+            ))}
+          </ol>
 
           <div className={styles.connector} aria-hidden="true" />
 
-          <div className={styles.pathRow}>
-            <div className={styles.pathCol}>
-              <Box node={paths[0]} />
-            </div>
-            <div className={styles.pathCol}>
-              <Box node={paths[1]} />
-              <div className={styles.trackGroup}>
-                <p className={styles.trackHeading}>The full path sends each asset to a track</p>
-                <div className={styles.trackRow}>
-                  {tracks.map((track) => (
-                    <Box key={track.title} node={track} className={styles.track} />
-                  ))}
-                </div>
+          <div className={styles.outcomeRow}>
+            {outcomes.map((outcome) => (
+              <div key={outcome.title} className={styles.pathCol}>
+                <Box node={outcome} />
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -233,38 +211,38 @@ function Evidence() {
           Records you can check
         </Heading>
         <p className={styles.intro}>
-          Each practice fills in a record, so the answer to &ldquo;have we migrated?&rdquo; is a row someone can
-          check. This is part of the decision note kept by the fictional manufacturer in the{' '}
-          <Link to="/resources/examples/protect-this-first/">Protect this first</Link> worked example.
+          The register holds one row per system and job, so the answer to &ldquo;have we migrated?&rdquo; is a row
+          someone can check. This is part of the register kept by the fictional manufacturer in the{' '}
+          <Link to="/templates/examples/protect-this-first/">Protect this first</Link> worked example.
         </p>
         <div className={styles.tableWrap}>
           <table className={styles.record}>
-            <caption>Decision note, as accepted on 13 July 2026 (fictional)</caption>
+            <caption>Register, as reviewed on 10 November 2026 (fictional)</caption>
             <thead>
               <tr>
-                <th scope="col">Asset</th>
-                <th scope="col">Answer that decided it</th>
-                <th scope="col">Path</th>
-                <th scope="col">Route</th>
+                <th scope="col">System</th>
+                <th scope="col">Job</th>
+                <th scope="col">Why it is here</th>
+                <th scope="col">Status</th>
               </tr>
             </thead>
             <tbody>
-              {decisionRows.map((row) => (
-                <tr key={row.asset}>
-                  <th scope="row" data-label="Asset">
-                    {row.asset}
+              {registerRows.map((row) => (
+                <tr key={row.system}>
+                  <th scope="row" data-label="System">
+                    {row.system}
                   </th>
-                  <td data-label="Answer that decided it">{row.answer}</td>
-                  <td data-label="Path">{row.path}</td>
-                  <td data-label="Route">{row.route}</td>
+                  <td data-label="Job">{row.job}</td>
+                  <td data-label="Why it is here">{row.why}</td>
+                  <td data-label="Status">{row.status}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p className={styles.after}>
-          See <Link to="/resources/records/">all nine migration records</Link>, or the short path filled in for a
-          small agency in <Link to="/resources/examples/stay-on-supplier-updates/">Stay on supplier updates</Link>.
+          See <Link to="/templates/records/">all five migration records</Link>, or the baseline filled in for a small
+          agency in <Link to="/templates/examples/stay-on-supplier-updates/">Stay on supplier updates</Link>.
         </p>
       </div>
     </section>
@@ -312,7 +290,7 @@ export default function Home(): ReactNode {
       </Head>
       <Hero />
       <main>
-        <RouteChooser />
+        <StartHere />
         <Clocks />
         <Evidence />
         <Reference />
