@@ -1,6 +1,6 @@
 # PQC Handbook - Purpose & Positioning
 
-Mission, audience, editorial stance, sister-site boundaries, and scope exclusions. Structure: [navigation-structure.md](./navigation-structure.md). Voice: [style-guide.md](./style-guide.md). Visual identity: [brand-guidelines.md](./brand-guidelines.md).
+Mission, audience, editorial stance, sister-site boundaries, and scope exclusions. Structure: [navigation-structure.md](./navigation-structure.md). Voice: [style-guide.md](./style-guide.md). Visual identity: [brand-guidelines.md](./brand-guidelines.md). Reader journey: [reader-journey.md](./reader-journey.md).
 
 ## What We Are Building
 

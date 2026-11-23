@@ -10,10 +10,11 @@ The PQC Handbook is built with [Docusaurus 3](https://docusaurus.io/) and is a s
 
 ### Maintainer Guides
 
-Read these four root documents before changing structure, prose, or styling:
+Read these five root documents before changing structure, prose, or styling:
 
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, audience, editorial thesis, sister-site boundaries, and non-goals
 - [Navigation Structure](./navigation-structure.md) — URL policy, navbar and six sidebars, complete sitemap, and situation-route journeys
+- [Reader Journey](./reader-journey.md) — How readers are routed from Start here to a first action, the baseline and programme, the records, the rules that keep the journey simple, and why it was chosen
 - [Style Guide](./style-guide.md) — Editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
 - [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
 

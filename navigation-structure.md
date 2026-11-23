@@ -1,6 +1,6 @@
 # PQC Handbook - Navigation Structure
 
-Information architecture, URL conventions, and routing model for `https://pqchandbook.com`, aligned with `docusaurus.config.ts`, `sidebars.ts`, and `docs/`.
+Information architecture, URL conventions, and routing model for `https://pqchandbook.com`, aligned with `docusaurus.config.ts`, `sidebars.ts`, and `docs/`. The routing model below is the one the live site uses; the reader journey that replaces it, adopted on 23 November 2026 and not yet implemented, is in [reader-journey.md](./reader-journey.md).
 
 ## Top-Level Navigation and Sidebars
 
