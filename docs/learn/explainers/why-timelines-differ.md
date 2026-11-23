@@ -2,7 +2,7 @@
 title: Why migration timelines differ
 search_title: Why post-quantum migration timelines differ
 sidebar_label: Why timelines differ
-description: Post-quantum dates from NIST, the US government, the UK NCSC, the EU and Australia's ASD compared, and why authority, audience and job change what each means.
+description: Post-quantum dates from NIST, US federal direction, the UK NCSC, the EU NIS roadmap and Australia's ASD compared, and why authority, audience and job matter.
 displayed_sidebar: learnSidebar
 ---
 

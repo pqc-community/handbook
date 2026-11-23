@@ -3,7 +3,7 @@ title: SSH
 search_title: Post-quantum SSH
 sidebar_label: SSH
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum SSH deployment looks like for administration, automation and Git, which key exchanges have RFCs, and why host and user keys differ.
+description: What a good post-quantum SSH deployment looks like for administration, automation and Git, which key exchanges have RFCs, and why host keys are another job.
 ---
 
 ## What it is

@@ -3,7 +3,7 @@ title: "FIPS 204: Module-Lattice-Based Digital Signature Standard"
 search_title: "FIPS 204: ML-DSA digital signature standard"
 sidebar_label: FIPS 204 (ML-DSA)
 displayed_sidebar: standardsSidebar
-description: NIST standard specifying ML-DSA (formerly CRYSTALS-Dilithium), a lattice-based post-quantum signature algorithm, with its dates, errata and related formats.
+description: NIST standard specifying ML-DSA (formerly CRYSTALS-Dilithium), a lattice-based post-quantum signature algorithm, with its dates, planned updates and formats.
 ---
 
 ## What it covers

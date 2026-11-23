@@ -2,7 +2,7 @@
 title: Post-quantum algorithms
 search_title: "Post-quantum algorithms: ML-KEM, ML-DSA, SLH-DSA"
 sidebar_label: 5. Algorithms
-description: What ML-KEM (formerly Kyber), ML-DSA (Dilithium), SLH-DSA and the stateful hash-based schemes each do, and why larger keys and signatures affect deployment.
+description: What ML-KEM (formerly Kyber), ML-DSA (formerly Dilithium), SLH-DSA and the stateful hash-based schemes each do, and why larger keys and signatures matter.
 displayed_sidebar: learnSidebar
 ---
 

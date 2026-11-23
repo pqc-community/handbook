@@ -1,7 +1,7 @@
 ---
 title: Data that needs to stay confidential for years
 sidebar_label: Long-lived confidentiality
-description: "The track for key establishment protecting data that must stay confidential for years, against harvest-now, decrypt-later: its clock, steps and deadlines."
+description: "Key establishment for data that must stay confidential for years, against harvest-now, decrypt-later: the track's clock, steps and deadlines that may apply."
 displayed_sidebar: routesSidebar
 ---
 

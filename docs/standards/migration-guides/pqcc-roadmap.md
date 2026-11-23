@@ -2,7 +2,7 @@
 title: "PQCC: Post-Quantum Cryptography Migration Roadmap"
 sidebar_label: PQCC roadmap
 displayed_sidebar: standardsSidebar
-description: "PQC Coalition roadmap (May 2025) in four stages: preparation, baseline understanding, planning and execution, and monitoring and evaluation."
+description: "PQC Coalition roadmap (May 2025) in four categories: preparation, baseline understanding, planning and execution, and monitoring and evaluation."
 ---
 
 ## What it covers

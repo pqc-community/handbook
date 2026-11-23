@@ -2,7 +2,7 @@
 title: Hash-based signatures
 search_title: "Hash-based signatures: SLH-DSA, LMS and XMSS"
 sidebar_label: Hash-based signatures
-description: How stateless SLH-DSA differs from stateful LMS and XMSS, why reusing a one-time key is catastrophic, and why stateful schemes suit firmware signing.
+description: How stateless SLH-DSA differs from stateful LMS and XMSS, why reusing a one-time key is catastrophic, and why stateful schemes suit firmware, not general use.
 displayed_sidebar: learnSidebar
 ---
 

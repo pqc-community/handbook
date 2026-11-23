@@ -3,7 +3,7 @@ title: "FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard"
 search_title: "FIPS 203: ML-KEM key encapsulation standard"
 sidebar_label: FIPS 203 (ML-KEM)
 displayed_sidebar: standardsSidebar
-description: NIST standard specifying ML-KEM (formerly CRYSTALS-Kyber), the only NIST-approved post-quantum key-establishment scheme, with its dates and related guidance.
+description: NIST standard specifying ML-KEM (formerly CRYSTALS-Kyber), for now the only NIST-approved post-quantum public-key key-establishment scheme, with its dates.
 ---
 
 ## What it covers

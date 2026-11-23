@@ -2,7 +2,7 @@
 title: Standard, vendor-managed software
 search_title: Post-quantum migration for vendor-managed software
 sidebar_label: Vendor-managed software
-description: "The short path, and the full path's track for commodity assets: keep supplier updates installed, write requirements into purchases and renewals, and review."
+description: "The short path, and the full path's commodity track: keep supplier updates installed, write requirements into purchases, review, and know when to leave."
 displayed_sidebar: routesSidebar
 ---
 

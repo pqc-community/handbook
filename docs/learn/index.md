@@ -1,7 +1,7 @@
 ---
 title: Learn the basics of post-quantum cryptography
 sidebar_label: Learn the basics
-description: Ten short lessons on post-quantum cryptography for professionals without specialist cryptography staff, with optional explainers for more depth.
+description: Ten short lessons on post-quantum cryptography for security, engineering and risk teams without specialist cryptography staff, with optional explainers.
 displayed_sidebar: learnSidebar
 ---
 

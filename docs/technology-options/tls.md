@@ -3,7 +3,7 @@ title: TLS and web services
 search_title: Post-quantum TLS and web services
 sidebar_label: TLS and web services
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum TLS deployment looks like for web servers, APIs, load balancers and browsers, which mechanisms are published, and the traps.
+description: What a good post-quantum TLS deployment looks like for web servers, APIs, load balancers and browsers, the published mechanisms, and traps that stay classical.
 ---
 
 ## What it is

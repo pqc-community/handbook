@@ -2,7 +2,7 @@
 title: Work with suppliers
 search_title: Post-quantum questions for suppliers and purchases
 sidebar_label: Work with suppliers
-description: Triage suppliers, ask them all the same written post-quantum questions, judge the answers, and write requirements into purchases and renewals.
+description: Triage suppliers, ask the ones you prioritise the same written post-quantum questions, judge the answers, and write requirements into purchases and renewals.
 displayed_sidebar: migrationPracticesSidebar
 ---
 

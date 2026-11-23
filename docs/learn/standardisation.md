@@ -2,7 +2,7 @@
 title: Standardisation
 search_title: How post-quantum standards reach real systems
 sidebar_label: 7. Standardisation
-description: "The layers between a published post-quantum algorithm and a protected system: standard, protocol, validated module, product and deployment, with their status."
+description: "The layers from a published post-quantum algorithm to a protected system: standard, protocol, validated module, product and deployment, as of November 2026."
 displayed_sidebar: learnSidebar
 ---
 
