@@ -103,18 +103,11 @@ function Hero() {
           Every organisation needs a post-quantum migration plan.
         </Heading>
         <p className={styles.heroLead}>
-          A future quantum computer could break the public-key cryptography that protects connections and proves
-          software is genuine, and data recorded now could be decrypted later. For most organisations, suppliers make
-          the changes, and the plan is a short list of core actions. Organisations that build or configure their own
-          systems, sign what others rely on, make devices with fixed keys, or hold data that must stay secret for
-          years also need a migration programme. This handbook helps you work out which plan you need and carry it
-          out, without specialist cryptography staff.
+          A future quantum computer could break the public-key cryptography in use today. For most organisations,
+          suppliers make the changes and the plan is a short list of core actions. Some also need a migration
+          programme. This handbook helps you work out which plan you need.
         </p>
-        <p className={styles.heroLimit}>
-          Vendor-neutral and based on published guidance. It is not a formal risk assessment. Operators of critical
-          national infrastructure and regulated services should take specialist advice and speak to their sector
-          regulator.
-        </p>
+        <p className={styles.heroLimit}>The guidance is vendor-neutral and is not a formal risk assessment.</p>
       </div>
     </header>
   );
