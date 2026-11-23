@@ -33,7 +33,7 @@ It is Part 1, Version 1.1, of the work of the PQC workstream of the NIS Cooperat
 
 The roadmap follows [Commission Recommendation (EU) 2024/1101](https://eur-lex.europa.eu/eli/reco/2024/1101/oj) of 11 April 2024, which called for a coordinated implementation roadmap for the transition. For high-risk use cases, the roadmap says quantum-vulnerable public-key cryptography "shall not be used stand-alone after the end of 2030"; for medium-risk use cases the equivalent point is the end of 2035. These are recommendations to Member States, not dates that apply universally; see [Timelines](/learn/explainers/why-timelines-differ/).
 
-The roadmap does not specify algorithms. For the positions of individual national authorities, such as Germany's BSI and France's ANSSI, on algorithms and hybrid use, see [National algorithm positions](/standards/national-algorithm-positions/). For asset-level work inside one organisation, pair it with the handbook's [Decide what to migrate first](/migration-practices/priority/) practice and the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/).
+The roadmap does not specify algorithms. For the positions of individual national authorities, such as Germany's BSI and France's ANSSI, on algorithms and hybrid use, see [National algorithm positions](/standards/national-algorithm-positions/). For asset-level work inside one organisation, pair it with the handbook's [Decide what to migrate first](/programme/priority/) practice and the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/).
 
 ## Sources
 
@@ -45,4 +45,4 @@ The roadmap does not specify algorithms. For the positions of individual nationa
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Timelines](/learn/explainers/why-timelines-differ/)
-- [Decide what to migrate first](/migration-practices/priority/)
+- [Decide what to migrate first](/programme/priority/)

@@ -20,14 +20,14 @@ The provider. Your job is to ask the right questions, judge the answer, write re
 
 ## What good looks like
 
-- One written answer per job, each judged on the [vendor response log](/resources/records/vendor-response-log/).
+- One written answer per job, each judged on the service's [register](/templates/records/register/) row for that job.
 - Connections checked from your side, not only taken from the provider's statement.
 - Post-quantum requirements for each job, and end-of-support dates, written into contracts and renewals.
 - Where stored data keys are wrapped to a public key, a known plan from the provider for data already stored under the old wrapping.
 
 ## What to ask or test
 
-Ask separately for each job, in writing, as [Work with suppliers](/migration-practices/suppliers/) describes. On the short path, ask when the service comes up for renewal or leaves support, as [Keep commodity software updated](/migration-practices/commodity-software/) describes:
+For a service that no question on [Start here](/start-here/) applies to, the [baseline](/baseline/) is enough: ask when the service comes up for renewal or leaves support. A service a question applies to, such as one holding data that must stay secret for years, joins the [programme](/programme/). Either way, ask separately for each job, in writing, as [Work with suppliers](/programme/suppliers/) describes:
 
 | Job | Ask | Check from your side |
 | --- | --- | --- |
@@ -46,17 +46,15 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row for the service, with the provider in `dependencies` |
-| [Vendor response log](/resources/records/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
-| [Purchase requirements](/resources/records/purchase-requirements/) | A row per job for the contract or renewal, with end of support in `support until` |
-| [Migration plan](/resources/records/migration-plan/) | A line per job, with the provider's readiness and the contract or renewal that will carry the requirement in `next action` |
-| [Change record](/resources/records/change-record/) | Your own client-side checks. While the service follows Vendor-managed software, which keeps no change record, record those checks on its inventory row and the review log instead; if it fails the fifth of Decide whether to act's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route), that section says what it records |
+| [Register](/templates/records/register/) | A row per job for the service, with the provider as supplier, the provider's answer and its judgement, end of support asked in the row it affects, and the contract or renewal that will carry the wording in `next step`. A service on the baseline is tracked, not ranked; record your own client-side checks on its row |
+| [Purchase wording](/templates/records/purchase-wording/) | A row per job for the contract or renewal, with end of support in `support until` |
+| [Change record](/templates/records/change-record/) | Your own client-side checks, for a service the programme covers. A service that is out of support, or whose provider has no post-quantum plan, is replaced, with a date on the register, as the baseline describes |
 
 ## Example
 
 An insufficient record is "The provider says it is quantum-safe."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 1 December 2026. The plan records readiness for the archive's key establishment as "complete (connections); missing (stored data)", and the signatures line as tracked, not ranked.
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the design-platform supplier's letter is judged `complete` for connections (hybrid X25519MLKEM768 in Workspace 4.2), `vague` for signatures (no date), and `missing` for stored-data key wrapping and the end of support for Workspace 4.1, with written answers due by 1 December 2026. The register keeps connections and stored data as separate key-establishment rows, judged `complete` and `missing`, and the signatures row as tracked, not ranked.
 
 ## Sources
 
@@ -65,7 +63,7 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 
 ## Related pages
 
-- [Work with suppliers](/migration-practices/suppliers/)
+- [Work with suppliers](/programme/suppliers/)
 - [TLS and web services](/technology-options/tls/)
 - [Backups, archives and storage](/technology-options/backups-archives/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)

@@ -28,7 +28,7 @@ It was issued jointly by the US Cybersecurity and Infrastructure Security Agency
 
 The fact sheet predates the August 2024 publication of [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures, so it refers to standards still in preparation. For NIST's current transition position, see [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/).
 
-It is an opening document for executives and programme leads; it does not give discovery field lists or sector milestones. Pair it with the [NCCoE Migration to PQC project](/standards/migration-guides/nccoe-migration-to-pqc/), the handbook's [Decide whether to act](/migration-practices/decide-whether-to-act/) and [Work with suppliers](/migration-practices/suppliers/) practices.
+It is an opening document for executives and programme leads; it does not give discovery field lists or sector milestones. Pair it with the [NCCoE Migration to PQC project](/standards/migration-guides/nccoe-migration-to-pqc/), the handbook's [Start here](/start-here/) page and its [Work with suppliers](/programme/suppliers/) practice.
 
 ## Sources
 
@@ -38,5 +38,5 @@ It is an opening document for executives and programme leads; it does not give d
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)
-- [Decide whether to act](/migration-practices/decide-whether-to-act/)
+- [Start here](/start-here/)
 - [Vendor questions](/standards/migration-guides/vendor-questions/)

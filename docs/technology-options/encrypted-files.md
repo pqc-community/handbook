@@ -8,7 +8,7 @@ description: Post-quantum options for encrypted email and files sent to named re
 
 ## What it is
 
-Encrypted email and files protect content for named recipients: S/MIME, OpenPGP, and file-encryption tools that encrypt a data key to each recipient's public key. It is a **key-establishment** job for stored data, and exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later): [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that, as with other applications providing data confidentiality, email encryption is subject to it. Signing the same messages is a separate job, on [Documents and email signing](/technology-options/document-signing/).
+Encrypted email and files protect content for named recipients: S/MIME, OpenPGP, and file-encryption tools that encrypt a data key to each recipient's public key. It is a **key-establishment** job for stored data, and exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later): [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that, as with other applications providing data confidentiality, email encryption is subject to it. Signing the same messages is a separate job, on [Documents and email signing](/technology-options/document-signing/).
 
 ## Post-quantum options and status
 
@@ -31,8 +31,8 @@ The email and encryption software suppliers decide what the product supports. Re
 
 - Software that implements a published mechanism (RFC 9629 with RFC 9936 for CMS-based formats, RFC 9980 for OpenPGP) or, for proprietary tools, a `complete` supplier answer naming the mechanism, and recipients who publish post-quantum keys or certificates (RFC 9935 for certificates).
 - A chosen and recorded rule for recipients without a post-quantum key, rather than whatever the software does by default.
-- The mechanism a sample message showed recorded on the inventory.
-- The exposure of messages already sent recorded on the [review log](/resources/records/review-log/), with the sponsor's decision.
+- The mechanism a sample message showed recorded on the register.
+- The exposure of messages already sent recorded on the [register](/templates/records/register/), with the sponsor's decision.
 
 ## What to ask or test
 
@@ -50,17 +50,14 @@ The email and encryption software suppliers decide what the product supports. Re
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row for the encryption service, with the key-establishment value labelled "stored files:" and recipient groups in `dependencies` |
-| [Vendor response log](/resources/records/vendor-response-log/) | The software suppliers' answers |
-| [Migration plan](/resources/records/migration-plan/) | A key-establishment line |
-| [Change record](/resources/records/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
-| [Review log](/resources/records/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/backups-archives/) describes |
+| [Register](/templates/records/register/) | A key-establishment row for the encryption service, with the value in `protected by today` labelled "stored files:", the recipient groups named, and the software suppliers' answers and judgement; for messages and files already sent, the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/backups-archives/) describes |
+| [Change record](/templates/records/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
 
 ## Example
 
 An insufficient record is "Encrypted email is on the roadmap."
 
-A decision-ready record names the email client and gateway releases, the mechanism a sample message showed, the share of internal and external recipients with post-quantum keys, and a review-log item recording that mail sent before the change stays classically protected, with the sponsor's decision.
+A decision-ready record names the email client and gateway releases, the mechanism a sample message showed, the share of internal and external recipients with post-quantum keys, and a register entry recording that mail sent before the change stays classically protected, with the sponsor's decision.
 
 ## Sources
 

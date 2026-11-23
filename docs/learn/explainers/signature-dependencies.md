@@ -43,7 +43,7 @@ Recorded signatures do not leak secrets later, so there is no harvest-now, decry
 
 ## Worked example
 
-The fictional manufacturer in [Protect this first](/resources/examples/protect-this-first/) is developing a product sensor whose firmware verifier holds its trust anchor in write-protected boot ROM. To use a post-quantum signature for that firmware, it would need a signing key in hardware that supports the algorithm, a build pipeline that produces the new signature, and — critically — a verifier in the boot ROM that accepts it. Because the verifier cannot change after the sensor ships, every other party's readiness is irrelevant if the ROM decision is wrong; the product security lead therefore has to settle the signature and trust-root option before production design freeze, and records it as [Firmware and secure boot](/technology-options/firmware-secure-boot/) describes.
+The fictional manufacturer in [Protect this first](/templates/examples/protect-this-first/) is developing a product sensor whose firmware verifier holds its trust anchor in write-protected boot ROM. To use a post-quantum signature for that firmware, it would need a signing key in hardware that supports the algorithm, a build pipeline that produces the new signature, and — critically — a verifier in the boot ROM that accepts it. Because the verifier cannot change after the sensor ships, every other party's readiness is irrelevant if the ROM decision is wrong; the product security lead therefore has to settle the signature and trust-root option before production design freeze, and records it as [Firmware and secure boot](/technology-options/firmware-secure-boot/) describes.
 
 ## What to take away
 

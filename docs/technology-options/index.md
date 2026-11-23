@@ -5,7 +5,7 @@ displayed_sidebar: technologyOptionsSidebar
 description: Find your technology and see, for key establishment and for signatures separately, which post-quantum mechanism exists and how mature it is.
 ---
 
-Start with the technology in front of you. Each page below gives the job the technology does, the standardised post-quantum mechanism and its status, who usually chooses, what good looks like, what to ask or test, the traps, the record it fills, and an example. [Choosing an option](/technology-options/choosing/) holds the rules that apply to every technology: who chooses, how to check the authorities that apply to you, the hybrid rule of thumb, and what to record. The process for making the change is in [Migration practices](/migration-practices/).
+Start with the technology in front of you. Each page below gives the job the technology does, the standardised post-quantum mechanism and its status, who usually chooses, what good looks like, what to ask or test, the traps, the record it fills, and an example. [Choosing an option](/technology-options/choosing/) holds the rules that apply to every technology: who chooses, how to check the authorities that apply to you, the hybrid rule of thumb, and what to record. The process for making the change is in the [programme](/programme/).
 
 ## Technologies at a glance
 
@@ -70,15 +70,15 @@ The Post-Quantum Cryptography Coalition, a non-governmental community whose [mig
 
 1. **Name the jobs it does**: does it agree or wrap keys (key establishment), sign or check signatures (signatures), or check code with a verifier that cannot be updated?
 2. **Find the protocol or format underneath.** Many products run on TLS, SSH, IPsec, X.509 certificates, CMS, or OpenPGP; use that card for that job.
-3. **If a supplier controls it**, ask in writing for each job, as [Work with suppliers](/migration-practices/suppliers/) describes; the questions on [Cloud and SaaS](/technology-options/cloud-saas/) work for most bought-in products.
+3. **If a supplier controls it**, ask in writing for each job, as [Work with suppliers](/programme/suppliers/) describes; the questions on [Cloud and SaaS](/technology-options/cloud-saas/) work for most bought-in products.
 4. **If you build it**, use [Libraries and bespoke code](/technology-options/libraries-bespoke-code/).
 5. **Then apply** [Choosing an option](/technology-options/choosing/) and record each job on its own line.
 
 ## Keep the jobs separate
 
-One product can do several jobs, each on its own clock. Key establishment runs to the data's confidentiality period, because of [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later). Signatures run to the coordination of everyone who verifies them, which [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes takes longer and involves more parties. A verifier that cannot be updated runs to its product's design freeze, the date after which the hardware can no longer change. Record each job on its own line of the [migration plan](/resources/records/migration-plan/).
+One product can do several jobs, each on its own clock. Key establishment runs to the data's confidentiality period, because of [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later). Signatures run to the coordination of everyone who verifies them, which [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes takes longer and involves more parties. A verifier that cannot be updated runs to its product's design freeze, the date after which the hardware can no longer change. Record each job on its own row of the [register](/templates/records/register/).
 
-Commodity products that receive post-quantum support through supplier updates need no option chosen here; see [Keep commodity software updated](/migration-practices/commodity-software/). Algorithms are summarised in [Post-quantum cryptography standards](/standards/post-quantum/), protocols and certificates in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/), and authorities' positions in [National algorithm positions](/standards/national-algorithm-positions/).
+Commodity products that receive post-quantum support through supplier updates need no option chosen here; the [baseline](/baseline/) covers them. Algorithms are summarised in [Post-quantum cryptography standards](/standards/post-quantum/), protocols and certificates in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/), and authorities' positions in [National algorithm positions](/standards/national-algorithm-positions/).
 
 ## Sources
 
@@ -94,6 +94,6 @@ Commodity products that receive post-quantum support through supplier updates ne
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
-- [Migration practices](/migration-practices/)
+- [Programme](/programme/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
 - [Hybrid cryptography](/learn/hybrid/)

@@ -36,11 +36,11 @@ Meeting a published target does not mean the risk has gone. A date is its issuer
 
 Dates that do not bind you can still reach you in three ways:
 
-- **Through your suppliers.** A supplier's target for its own services decides when the connections, certificates, and products you take from it change. On the [migration plan](/resources/records/migration-plan/) it belongs in the supplier release column, not the timeline and authority column: it can shorten your migration, or force a change on its own schedule.
+- **Through your suppliers.** A supplier's target for its own services decides when the connections, certificates, and products you take from it change. On the [register](/templates/records/register/) it belongs in the supplier release field, not with the dates that apply: it can shorten your migration, or force a change on its own schedule.
 - **Through later authority dates.** NIST IR 8547 (§4.2) says its application-specific guidelines may specify earlier transitions, based on the expected impact of a cryptanalytically relevant quantum computer and the level of post-quantum support in standards, products, and services.
 - **Through customers and contracts.** EO 14412 directs a procurement rule to be proposed for covered US federal contractors, so a deadline set for agencies can arrive in a contract.
 
-Record each date with its issuer, audience, and version, alongside your own reasoning, and check it again at each review. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) sets NIST, US federal, UK, EU, Australian, and supplier dates side by side. [Plan the migration](/migration-practices/plan/) shows how to work out which apply to you and record them.
+Record each date with its issuer, audience, and version, alongside your own reasoning, and check it again at each review. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) sets NIST, US federal, UK, EU, Australian, and supplier dates side by side. [Plan the migration](/programme/plan/) shows how to work out which apply to you and record them.
 
 ## Check your understanding
 
@@ -65,5 +65,5 @@ Continue with [Crypto-agility](/learn/crypto-agility/).
 
 - [Learn the basics](/learn/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
-- [Plan the migration](/migration-practices/plan/)
-- [Decide what to migrate first](/migration-practices/priority/)
+- [Plan the migration](/programme/plan/)
+- [Decide what to migrate first](/programme/priority/)

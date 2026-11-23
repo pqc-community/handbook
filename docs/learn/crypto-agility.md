@@ -31,7 +31,7 @@ In practice, an agile estate tends to have:
 | Supplier commitments | Contracts and roadmaps that cover future algorithm changes, not just the current one |
 | Practised change | A tested process to roll out, monitor, and roll back an algorithm change |
 
-These are properties of an estate. [Keep the ability to change again](/migration-practices/changing-algorithms-again/) turns them into six capabilities you can evidence for each system, from a demonstrated configuration change to a written deprecation path. The fastest way to lose agility is a verifier that cannot be updated, which is why the [lifetime clock](/learn/timelines/) matters at procurement.
+These are properties of an estate. [Keep the ability to change again](/programme/changing-algorithms-again/) turns them into six capabilities you can evidence for each system, from a demonstrated configuration change to a written deprecation path. The fastest way to lose agility is a verifier that cannot be updated, which is why the [lifetime clock](/learn/timelines/) matters at procurement.
 
 ## From learning to planning
 
@@ -42,7 +42,7 @@ You now have the model the rest of the handbook uses:
 - **Dates belong to authorities and audiences**; your data lifetimes and device lifetimes decide which ones bind you, and when.
 - The work is **repeatable**, so build the capability to do it again.
 
-To act on it, start with [Decide whether to act](/migration-practices/decide-whether-to-act/), which puts each asset on a path, then follow the matching [situation route](/routes/). The worked example in [Protect this first](/resources/examples/protect-this-first/) applies these ideas to one fictional manufacturer. Keep the [glossary](/resources/reference/glossary/) to hand.
+To act on it, go to [Start here](/start-here/): four questions decide whether the baseline is enough or you also need a programme. Two worked examples then apply these ideas: [Protect this first](/templates/examples/protect-this-first/) follows a fictional manufacturer through a programme, and [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) follows a fictional agency through the baseline. Keep the [glossary](/templates/reference/glossary/) to hand.
 
 ## Check your understanding
 
@@ -59,5 +59,6 @@ To act on it, start with [Decide whether to act](/migration-practices/decide-whe
 ## Related pages
 
 - [Learn the basics](/learn/)
-- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
-- [Glossary](/resources/reference/glossary/)
+- [Start here](/start-here/)
+- [Keep the ability to change again](/programme/changing-algorithms-again/)
+- [Glossary](/templates/reference/glossary/)

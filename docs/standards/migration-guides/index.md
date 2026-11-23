@@ -50,4 +50,4 @@ These summaries cover guides for running a post-quantum migration programme, fin
 - [Standards](/standards/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Timelines](/learn/explainers/why-timelines-differ/)
-- [Decide whether to act](/migration-practices/decide-whether-to-act/)
+- [Start here](/start-here/)

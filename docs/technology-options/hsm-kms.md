@@ -27,13 +27,13 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 ## What good looks like
 
-- Each HSM, KMS, and TPM model named in the [inventory](/resources/records/inventory/) `dependencies` of every key and system that relies on it.
-- A `complete` supplier answer for every module the plan depends on.
+- Each HSM, KMS, and TPM model named on the [register](/templates/records/register/) row of every key and system that relies on it.
+- A `complete` supplier answer for every module the register rows depend on.
 - Firmware upgrades or replacements scheduled ahead of the PKI, signing, and server work that depends on them, allowing for hardware lead times.
 
 ## What to ask or test
 
-- The supplier's written answer on supported algorithms, releases, and validation status, recorded on the [vendor response log](/resources/records/vendor-response-log/).
+- The supplier's written answer on supported algorithms, releases, and validation status, recorded on the [register](/templates/records/register/).
 - Whether a firmware upgrade is enough or new hardware is needed, and the replacement lead time.
 - A test key generation and signing or decapsulation with the new algorithm in a non-production partition, account, or test device.
 
@@ -47,15 +47,13 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | Each HSM, KMS, or TPM, with its model and firmware or service release, named in the `dependencies` cell of every key and system that relies on it, rather than given its own row |
-| [Vendor response log](/resources/records/vendor-response-log/) | The supplier's answer on algorithms, releases, and validation |
-| [Migration plan](/resources/records/migration-plan/) | The module's upgrade or replacement, as a dependency of the lines it blocks |
+| [Register](/templates/records/register/) | Each HSM, KMS, or TPM, with its model and firmware or service release, named on the row of every key and system that relies on it, rather than given its own row; the module supplier's answer on algorithms, releases, and validation, with its judgement, recorded as a further supplier and answer on those same rows; and the module's upgrade or replacement as the `next step` on the rows it blocks |
 
 ## Example
 
 An insufficient record is "Our HSMs are quantum-ready."
 
-From [Protect this first](/resources/examples/protect-this-first/): where the key that signs the product sensor's firmware is held is still to be recorded. A decision-ready record would name the HSM, its firmware release, the post-quantum signature schemes it supports and their validation status, and whether it can manage state if the sensor's verifier needs LMS or XMSS.
+From [Protect this first](/templates/examples/protect-this-first/): where the key that signs the product sensor's firmware is held is still to be recorded. A decision-ready record would name the HSM, its firmware release, the post-quantum signature schemes it supports and their validation status, and whether it can manage state if the sensor's verifier needs LMS or XMSS.
 
 ## Sources
 
@@ -67,4 +65,4 @@ From [Protect this first](/resources/examples/protect-this-first/): where the ke
 - [PKI and certificates](/technology-options/pki/)
 - [Code and software signing](/technology-options/code-signing/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Work with suppliers](/migration-practices/suppliers/)
+- [Work with suppliers](/programme/suppliers/)

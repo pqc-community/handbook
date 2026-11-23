@@ -30,7 +30,7 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 
 1. **Know every verifier** of your signatures and when each can accept the new algorithm.
 2. **Ship the verifier update first, signed with the current key**, then switch signing once verifiers are ready; keep the old signature acceptable until they have all moved.
-3. **Give each signing key its own [inventory](/resources/records/inventory/) row**, recording where it is held, such as the hardware security module, in `dependencies`.
+3. **Give each signing key its own [register](/templates/records/register/) row**, recording where it is held, such as the hardware security module.
 4. **If you choose LMS or XMSS, show how state is controlled**: one signing system, an index that is never reused, and backups that can never roll the state back.
 
 ## What to ask or test
@@ -43,7 +43,7 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 ## Traps
 
 - **Signing before verifiers can check** breaks installs and updates in the field.
-- **A signer checked by a non-updatable verifier** moves with that verifier's line on the plan; it cannot switch on its own timetable.
+- **A signer checked by a non-updatable verifier** moves with that verifier's register row; it cannot switch on its own timetable.
 - **Restoring a stateful signing key from backup** can reuse one-time keys and break LMS or XMSS security.
 - **Old signatures on long-lived software** still need to verify after the switch; check how long verifiers keep accepting them.
 
@@ -51,10 +51,8 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row per signing key, with where it is held, such as the HSM, in `dependencies` |
-| [Vendor response log](/resources/records/vendor-response-log/) | Answers from platform owners and from signing-tool and HSM suppliers |
-| [Migration plan](/resources/records/migration-plan/) | The signatures line, with verifiers in `dependencies` in the order they move |
-| [Change record](/resources/records/change-record/) | The scheme, the authority, and tests on each class of verifier |
+| [Register](/templates/records/register/) | The signatures row for each signing key, recording where it is held, such as the HSM, with the verifiers listed in the order they move and answers from platform owners and from signing-tool and HSM suppliers with their judgement |
+| [Change record](/templates/records/change-record/) | The scheme, the authority, and tests on each class of verifier |
 
 ## Example
 

@@ -5,7 +5,7 @@ description: Ten short lessons on post-quantum cryptography for security, engine
 displayed_sidebar: learnSidebar
 ---
 
-This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, the [situation routes](/routes/) take over.
+This section gives security, engineering, product, procurement, and risk professionals a shared, accurate model of the cryptography affected by a post-quantum migration. It assumes you understand systems, suppliers, certificates, and change control. It does not assume any mathematics. It is conceptual grounding, not a migration procedure; when you are ready to plan, [Start here](/start-here/) takes over, followed by the worked examples, [Protect this first](/templates/examples/protect-this-first/) and [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/), and the glossary.
 
 ## The model in one picture
 
@@ -75,7 +75,7 @@ Optional explainers expand one distinction each. Read them when a lesson leaves 
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) — turning a supplier statement into checkable facts.
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/) — NIST, US federal, UK, EU, and Australian dates compared.
 
-Use the [glossary](/resources/reference/glossary/) for definitions while reading.
+Use the [glossary](/templates/reference/glossary/) for definitions while reading.
 
 ## Sources
 
@@ -83,6 +83,6 @@ Use the [glossary](/resources/reference/glossary/) for definitions while reading
 
 ## Related pages
 
-- [Homepage path chooser](/)
-- [Situation routes](/routes/)
+- [Homepage](/)
+- [Start here](/start-here/)
 - [Standards](/standards/)

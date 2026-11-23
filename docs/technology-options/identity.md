@@ -22,13 +22,13 @@ Identity and sign-in covers single sign-on and federation (signed assertions and
 
 ## Who usually chooses
 
-The identity provider, token maker, or platform supplier. You choose when to require support in purchases and renewals, and you own the inventory of what signs and what verifies.
+The identity provider, token maker, or platform supplier. You choose when to require support in purchases and renewals, and you own the register of what signs and what verifies.
 
 ## What good looks like
 
-- An inventory row for each identity provider and each token or card type, naming the signature algorithm it uses today.
+- A register row for each identity provider and each token or card type, naming the signature algorithm it uses today.
 - The applications and devices that verify its signatures listed, because they have to accept a new algorithm before the provider switches.
-- A written answer from each identity or token supplier on its post-quantum signing plan, judged on the vendor response log, and a requirement for post-quantum signing written into the next purchase or renewal.
+- A written answer from each identity or token supplier on its post-quantum signing plan, judged on the register, and wording requiring post-quantum signing written into the next purchase or renewal.
 - For hardware tokens and cards, the replacement cycle set against the applicable timeline, so that tokens bought now are not still in use after the date the algorithm has to change.
 
 ## What to ask or test
@@ -41,22 +41,20 @@ The identity provider, token maker, or platform supplier. You choose when to req
 
 - **Hardware lead times.** Tokens, cards, and readers are replaced over years; a card bought now may still be in use when the algorithm must change.
 - **Verifiers you do not control.** Every application that trusts the identity provider has to accept the new signatures before the provider switches.
-- **Assuming no urgency means no action.** Authentication has time, but the plan and the purchase requirements do not.
+- **Assuming no urgency means no action.** Authentication has time, but the register and the purchase wording do not.
 
 ## Record it fills
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row for the identity provider and each token type, with the verifying applications in `dependencies` |
-| [Vendor response log](/resources/records/vendor-response-log/) | Supplier answers |
-| [Purchase requirements](/resources/records/purchase-requirements/) | A signatures row for the next purchase or renewal of the identity provider and each token type, requiring post-quantum signing |
-| [Migration plan](/resources/records/migration-plan/) | A signatures line for the provider and each token type, with the purchase or renewal at which post-quantum signing will be required, under [Work with suppliers](/migration-practices/suppliers/), in `next action` |
+| [Register](/templates/records/register/) | A signatures row for the identity provider and each token type, naming the applications that verify it, with supplier answers and their judgement, and the purchase or renewal at which post-quantum signing will be required, under [Work with suppliers](/programme/suppliers/), in `next step` |
+| [Purchase wording](/templates/records/purchase-wording/) | A signatures row for the next purchase or renewal of the identity provider and each token type, requiring post-quantum signing |
 
 ## Example
 
 An insufficient record is "Single sign-on is a vendor service, so it is their problem."
 
-A decision-ready record names the identity provider and its token-signing algorithm, the supplier's written answer judged on the vendor response log, the applications that verify its tokens, and the renewal at which a post-quantum signing commitment will be required.
+A decision-ready record names the identity provider and its token-signing algorithm, the supplier's written answer judged on the register, the applications that verify its tokens, and the renewal at which a post-quantum signing commitment will be required.
 
 ## Sources
 
@@ -67,5 +65,5 @@ A decision-ready record names the identity provider and its token-signing algori
 
 - [PKI and certificates](/technology-options/pki/)
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
-- [Work with suppliers](/migration-practices/suppliers/)
+- [Work with suppliers](/programme/suppliers/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)

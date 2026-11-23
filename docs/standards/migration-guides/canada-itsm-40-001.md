@@ -43,4 +43,4 @@ The roadmap is a programme plan rather than an algorithm specification. For the 
 - [Canadian CFDIR guide](/standards/migration-guides/cfdir-quantum-readiness/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Timelines](/learn/explainers/why-timelines-differ/)
-- [Decide what to migrate first](/migration-practices/priority/)
+- [Decide what to migrate first](/programme/priority/)

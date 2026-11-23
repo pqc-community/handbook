@@ -50,10 +50,8 @@ The email and document software suppliers decide what their products sign with a
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row for the signing service and the signer certificates, with recipient groups in `dependencies` |
-| [Vendor response log](/resources/records/vendor-response-log/) | The software suppliers' answers |
-| [Migration plan](/resources/records/migration-plan/) | The signatures line |
-| [Change record](/resources/records/change-record/) | Verification tests for each recipient group |
+| [Register](/templates/records/register/) | The signatures row for the signing service and the signer certificates, naming the recipient groups that verify them, with the software suppliers' answers and judgement |
+| [Change record](/templates/records/change-record/) | Verification tests for each recipient group |
 
 ## Example
 

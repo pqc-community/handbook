@@ -30,7 +30,7 @@ IR 8528 is an informative report from the National Institute of Standards and Te
 
 IR 8528 has been followed by [NIST IR 8610](/standards/post-quantum/nist-ir-8610/), which is now the current status report for this track. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) cites IR 8528 when noting that NIST is evaluating further signature algorithms for possible standardisation, separately from the FALCON-derived signature FIPS it says is under development.
 
-Approved post-quantum signatures today are [FIPS 204](/standards/post-quantum/fips-204/), [FIPS 205](/standards/post-quantum/fips-205/) and [SP 800-208](/standards/post-quantum/sp-800-208/). Candidates in this track are useful for horizon scanning and for planning for [changing algorithms again](/migration-practices/changing-algorithms-again/), not for procurement requirements.
+Approved post-quantum signatures today are [FIPS 204](/standards/post-quantum/fips-204/), [FIPS 205](/standards/post-quantum/fips-205/) and [SP 800-208](/standards/post-quantum/sp-800-208/). Candidates in this track are useful for horizon scanning and for planning for [changing algorithms again](/programme/changing-algorithms-again/), not for procurement requirements.
 
 ## Sources
 
@@ -43,4 +43,4 @@ Approved post-quantum signatures today are [FIPS 204](/standards/post-quantum/fi
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [NIST IR 8610](/standards/post-quantum/nist-ir-8610/)
 - [Standardisation](/learn/standardisation/)
-- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
+- [Keep the ability to change again](/programme/changing-algorithms-again/)

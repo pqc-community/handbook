@@ -10,11 +10,11 @@ description: Post-quantum readiness for software that calls cryptographic librar
 
 Some software calls cryptographic libraries directly instead of relying on a protocol a supplier configures: in-house applications, embedded software, custom file and message formats, and products you build. Such code can do any job:
 
-- **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later) for whatever it protects;
+- **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later) for whatever it protects;
 - **signatures** where it signs or verifies, with timing that follows the parties relying on those signatures;
 - **verifiers that cannot be updated** where it checks signatures in devices that cannot be updated in the field, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
-Where your code uses a standard protocol through a library, such as TLS or SSH, follow that protocol's card and list the library in `dependencies`. This card covers code that uses cryptographic algorithms directly or defines its own protocols and formats, and the libraries it calls.
+Where your code uses a standard protocol through a library, such as TLS or SSH, follow that protocol's card and name the library on the system's register row. This card covers code that uses cryptographic algorithms directly or defines its own protocols and formats, and the libraries it calls.
 
 ## Post-quantum options and status
 
@@ -34,8 +34,8 @@ You do, as the developer or product owner, within what your libraries support. L
 
 ## What good looks like
 
-- Every application or component that calls cryptography has a row on the [inventory](/resources/records/inventory/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/migration-practices/inventory/) describes.
-- Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite and can be demonstrated as [Keep the ability to change again](/migration-practices/changing-algorithms-again/) describes.
+- Every application or component that calls cryptography has a row on the [register](/templates/records/register/), with each library, its release, and the algorithm for each job, found by dependency scans, software bills of materials, and code review as [Inventory the cryptography](/programme/inventory/) describes.
+- Algorithm choices held in configuration or behind one internal interface, so a later change is one change rather than a rewrite and can be demonstrated as [Keep the ability to change again](/programme/changing-algorithms-again/) describes.
 - Algorithms taken from a maintained library rather than implemented in-house, with the library's own tests run in your build.
 - New designs built on a published protocol or format with a post-quantum mechanism wherever one exists.
 - Libraries kept current, with post-quantum support and, where required, validation confirmed for the release you ship.
@@ -53,18 +53,15 @@ You do, as the developer or product owner, within what your libraries support. L
 - **Fixed-size fields** in formats, columns, or packets that cannot hold post-quantum keys and signatures.
 - **Hard-coded algorithms** spread through the code, so every change becomes a rewrite.
 - **A home-made hybrid or protocol** where a specified mechanism exists.
-- **Hidden copies**: vendored or statically linked libraries that the inventory misses.
+- **Hidden copies**: vendored or statically linked libraries that the register misses.
 - **Stateful signatures without state control**: LMS or XMSS signing code that can reuse a one-time key after a restart or restore, or across two signers.
 
 ## Record it fills
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row per application or component, with each library and its release in `dependencies`, a labelled value per use in each algorithm cell (for example "file format: X25519; API client: unknown"), and bundled or statically linked copies in `not visible to a scan` |
-| [Vendor response log](/resources/records/vendor-response-log/) | Answers from suppliers of commercial libraries and components; for open-source libraries, which have no supplier to ask, the release notes used as the source |
-| [Migration plan](/resources/records/migration-plan/) | One line per job, with the library and the release that delivers support in `dependencies` and that release's date in `supplier release` |
-| [Change record](/resources/records/change-record/) | The option, the authority, and the tests on size, interoperability, and older peers |
-| [Review log](/resources/records/review-log/) | Bespoke protocols with no published post-quantum path yet, with the specialist adviser's view and a review date |
+| [Register](/templates/records/register/) | One row per application or component and job, with each library and its release in `version or plan`, a labelled value per use in `protected by today` (for example "file format: X25519; API client: unknown"), bundled or statically linked copies that a scan cannot see noted on the row, and the release that delivers support and its date in `supplier release`; answers from suppliers of commercial libraries and components with their judgement, or, for open-source libraries, which have no supplier to ask, the release notes used as the source; and, for bespoke protocols with no published post-quantum path yet, the specialist adviser's view in `next step` and a `next review` date |
+| [Change record](/templates/records/change-record/) | The option, the authority, and the tests on size, interoperability, and older peers |
 
 ## Example
 
@@ -84,6 +81,6 @@ A decision-ready record lists each application with the library and release it u
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
-- [Keep the ability to change again](/migration-practices/changing-algorithms-again/)
-- [Inventory the cryptography](/migration-practices/inventory/)
+- [Keep the ability to change again](/programme/changing-algorithms-again/)
+- [Inventory the cryptography](/programme/inventory/)
 - [HSMs and key management](/technology-options/hsm-kms/)

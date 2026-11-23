@@ -50,4 +50,4 @@ The schedule below is NIST's, for its own standards and guidelines, from [NIST I
 - [Standards](/standards/)
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
-- [Inventory the cryptography](/migration-practices/inventory/)
+- [Inventory the cryptography](/programme/inventory/)

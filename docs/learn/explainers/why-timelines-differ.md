@@ -61,13 +61,13 @@ Large suppliers also publish post-quantum dates, for their own products and serv
 
 Read these with the same questions as any other date. They are commitments a supplier makes for its own services, so they bind no customer, and the supplier can revise them. Their milestone is completion of the supplier's own migration, which makes 2029 earlier than any completion milestone in the table above; they are not comparable with NIST's dates for deprecating and disallowing algorithms.
 
-Supplier targets matter to you in two ways. They set when the services you depend on will change, which belongs in the supplier release column of your [migration plan](/resources/records/migration-plan/) rather than in its timeline and authority column. They also show how large operators read the risk; [The quantum threat](/learn/quantum-threat/#what-remains-uncertain) sets out the evidence they cite.
+Supplier targets matter to you in two ways. They set when the services you depend on will change, which belongs in the supplier release field of your [register](/templates/records/register/) rather than with the dates that apply. They also show how large operators read the risk; [The quantum threat](/learn/quantum-threat/#what-remains-uncertain) sets out the evidence they cite.
 
 ## Why the dates are not interchangeable
 
 The dates above differ because their sources address different audiences and describe different events. A standards body sets when algorithms become deprecated or disallowed under its standards. A government sets requirements for agencies within its remit. National guidance gives organisations target dates for planning and migration, and a regional roadmap coordinates Member States that will implement it through their own arrangements. A supplier sets targets for its own services. Each is a judgement made at a point in time: NIST changed its deprecation schedule between draft and final report, and the US federal deadlines date from June 2026.
 
-So a date only makes sense alongside its source, audience, cryptographic job, milestone, and the date it was set. This page compares selected guidance; it does not replace the source documents. [Plan the migration](/migration-practices/plan/) shows how to work out which timelines apply to your organisation, and to whom, and how to record each one with its authority.
+So a date only makes sense alongside its source, audience, cryptographic job, milestone, and the date it was set. This page compares selected guidance; it does not replace the source documents. [Plan the migration](/programme/plan/) shows how to work out which timelines apply to your organisation, and to whom, and how to record each one with its authority.
 
 ## Sources
 
@@ -85,7 +85,7 @@ So a date only makes sense alongside its source, audience, cryptographic job, mi
 ## Related pages
 
 - [Timelines](/learn/timelines/)
-- [Plan the migration](/migration-practices/plan/)
+- [Plan the migration](/programme/plan/)
 - [US government requirements](/standards/us-government-requirements/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Migration guides](/standards/migration-guides/)

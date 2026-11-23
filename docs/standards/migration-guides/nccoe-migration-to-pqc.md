@@ -33,7 +33,7 @@ The project published three preliminary drafts of NIST Special Publication (SP) 
 
 Because no final versions are planned, treat the SP 1800-38 drafts as background on discovery and laboratory testing rather than as NIST guidance in force. The project's current outputs are [NIST CSWP 39](/standards/transition-and-key-management/nist-cswp-39/) on crypto agility and CSWP 48. The project is cited in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/), NIST's report on the transition to post-quantum standards.
 
-The project material is about process and testing rather than algorithm choice; the algorithms themselves are specified in [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures. For discovery work, pair the project material with the handbook's [Inventory the cryptography](/migration-practices/inventory/) practice and [Inventory record](/resources/records/inventory/).
+The project material is about process and testing rather than algorithm choice; the algorithms themselves are specified in [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures. For discovery work, pair the project material with the handbook's [Inventory the cryptography](/programme/inventory/) practice and the [register](/templates/records/register/).
 
 ## Sources
 
@@ -46,5 +46,5 @@ The project material is about process and testing rather than algorithm choice; 
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [NIST CSWP 39](/standards/transition-and-key-management/nist-cswp-39/)
-- [Inventory the cryptography](/migration-practices/inventory/)
-- [Inventory record](/resources/records/inventory/)
+- [Inventory the cryptography](/programme/inventory/)
+- [Register](/templates/records/register/)

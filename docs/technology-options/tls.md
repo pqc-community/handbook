@@ -10,7 +10,7 @@ description: What good post-quantum TLS looks like for web servers, APIs, load b
 
 Transport Layer Security (TLS) protects web traffic, APIs, load balancers, content delivery networks, and most connections to cloud and SaaS services. It does two jobs:
 
-- **key establishment** in the handshake, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later);
+- **key establishment** in the handshake, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later);
 - **signatures** in the server's certificate chain, which authenticate the server; that job runs on a different clock and is covered on [PKI and certificates](/technology-options/pki/).
 
 ## Post-quantum options and status
@@ -35,11 +35,11 @@ All of these mechanisms are for TLS 1.3. [RFC 9851](https://www.rfc-editor.org/i
 
 ## What good looks like
 
-- Every TLS endpoint you run is on the [inventory](/resources/records/inventory/) with its TLS versions, the post-quantum groups its software supports, and the clients and partners that connect to it.
+- Every TLS endpoint you run is on the [register](/templates/records/register/) with its TLS versions, the post-quantum groups its software supports, and the clients and partners that connect to it.
 - Endpoints, clients, and middleboxes limited to TLS 1.2 are recorded as needing an upgrade or replacement before they can migrate, with an owner and a date.
 - A hybrid group from RFC 10024, or ML-KEM alone recorded as provisional while draft-ietf-tls-mlkem is a draft, chosen by the hybrid and protocol-mechanisms rules on [Choosing an option](/technology-options/choosing/), is offered and preferred wherever the product supports it, and what connections actually negotiate is checked from the client side.
 - Proxies, load balancers, and CDNs that end the TLS connection are recorded with their own support, because each one starts a new handshake.
-- Certificates have their own signatures line on the [migration plan](/resources/records/migration-plan/), with its own milestone, as [PKI and certificates](/technology-options/pki/) describes.
+- Certificates have their own signatures row on the [register](/templates/records/register/), with its own dates, as [PKI and certificates](/technology-options/pki/) describes.
 
 ## What to ask or test
 
@@ -61,16 +61,14 @@ All of these mechanisms are for TLS 1.3. [RFC 9851](https://www.rfc-editor.org/i
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | The key-establishment cell, updated as the change reaches each environment, for example "in transit: X25519MLKEM768 in staging" |
-| [Vendor response log](/resources/records/vendor-response-log/) | The supplier's answer, where a supplier controls the endpoint |
-| [Migration plan](/resources/records/migration-plan/) | A key-establishment line; certificates have their own signatures line |
-| [Change record](/resources/records/change-record/) | The option, the authority, the client-side check as the deployed-state check, and a fallback to classical-only key establishment as a rollback trigger |
+| [Register](/templates/records/register/) | A key-establishment row for each endpoint, with `protected by today` updated as the change reaches each environment, for example "in transit: X25519MLKEM768 in staging", and the supplier's answer and judgement where a supplier controls the endpoint; certificates have their own signatures row |
+| [Change record](/templates/records/change-record/) | The option, the authority, the client-side check as the deployed-state check, and a fallback to classical-only key establishment as a rollback trigger |
 
 ## Example
 
 An insufficient record is "TLS is configured for hybrid key exchange."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 21 October 2026, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/backups-archives/).
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 21 October 2026, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/backups-archives/).
 
 ## Sources
 
@@ -86,4 +84,4 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 - [What changes in a TLS connection](/learn/explainers/tls/)
 - [PKI and certificates](/technology-options/pki/)
 - [Cloud and SaaS](/technology-options/cloud-saas/)
-- [Make and verify one change](/migration-practices/implementation/)
+- [Make and verify one change](/programme/implementation/)

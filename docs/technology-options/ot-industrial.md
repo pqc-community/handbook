@@ -35,11 +35,11 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 ## What good looks like
 
-- An inventory that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/migration-practices/inventory/) describes.
+- A register that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/programme/inventory/) describes.
 - Integrity of commands and sensor data treated as the priority job for fielded devices, with confidentiality judged case by case.
 - Remote access and IT/OT boundaries moved on the enterprise IT timetable.
 - Changes to physical infrastructure planned to coincide with other maintenance and refresh, which the NCSC timelines advise, and post-quantum requirements written into equipment purchases.
-- A written answer from each control-system and device supplier to the questions on the [vendor response log](/resources/records/vendor-response-log/), and a review date for protocols that have no post-quantum path yet.
+- A written answer from each control-system and device supplier to the questions in [Work with suppliers](/programme/suppliers/), judged on the [register](/templates/records/register/), and a review date for protocols that have no post-quantum path yet.
 
 ## What to ask or test
 
@@ -51,7 +51,7 @@ The control-system, device, and protocol suppliers, often within an industry sta
 ## Traps
 
 - **Equipment that outlives the plan.** Controllers and sensors stay in service for decades and may not be upgradeable or easy to reach.
-- **Proprietary or legacy protocols** with no post-quantum path; record them with an owner rather than leaving them off the inventory.
+- **Proprietary or legacy protocols** with no post-quantum path; record them with an owner rather than leaving them off the register.
 - **Internet-connected field devices**, for example for a cloud service, can give attackers a way into control networks; the NCSC timelines flag this.
 - **Resource-constrained devices** may not handle larger keys and signatures.
 
@@ -59,18 +59,15 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | Rows for OT systems and device types, with supplier and protocol in `dependencies` |
-| [Vendor response log](/resources/records/vendor-response-log/) | Supplier answers |
-| [Purchase requirements](/resources/records/purchase-requirements/) | A row per job for each equipment purchase or refresh, with the planned outage or refresh date in `decide by` |
-| [Migration plan](/resources/records/migration-plan/) | One line per job, using `non-updatable verifier` for embedded verifiers, a `milestone` tied to the planned outage or refresh, the device's expected service life in `reason and source`, the purchase that will carry post-quantum requirements in `next action`, and, where no option exists yet, the protocol's next check in `subsequent review` |
-| [Change record](/resources/records/change-record/) | `unknown` and blocked where no option exists yet |
-| [Review log](/resources/records/review-log/) | Exceptions and accepted risks |
+| [Register](/templates/records/register/) | One row per job for each OT system and device type, naming its supplier and protocol, using `non-updatable verifier` for embedded verifiers, with supplier answers and their judgement, the planned outage or refresh in `dates that apply`, the device's expected service life in `why it is here`, the purchase that will carry post-quantum wording in `next step`, and, where no option exists yet, the protocol's next check in `next review`; exceptions and accepted risks, each with an owner and status |
+| [Purchase wording](/templates/records/purchase-wording/) | A row per job for each equipment purchase or refresh, with the planned outage or refresh date in `decide by` |
+| [Change record](/templates/records/change-record/) | `unknown` and blocked where no option exists yet |
 
 ## Example
 
 An insufficient record is "The plant network is isolated, so post-quantum does not apply."
 
-A decision-ready record lists each controller and sensor type with its supplier and protocol on the inventory and its expected service life in the plan line's `reason and source`, separates remote-access links (on the IT timetable) from field protocols (awaiting supplier answers, with review dates), and ties replacements to the next planned outage.
+A decision-ready record lists each controller and sensor type with its supplier, protocol, and expected service life on the register, separates remote-access links (on the IT timetable) from field protocols (awaiting supplier answers, with review dates), and ties replacements to the next planned outage.
 
 ## Sources
 
@@ -81,6 +78,6 @@ A decision-ready record lists each controller and sensor type with its supplier 
 ## Related pages
 
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Hard-to-change systems](/routes/hard-to-change-systems/)
-- [Inventory the cryptography](/migration-practices/inventory/)
-- [Work with suppliers](/migration-practices/suppliers/)
+- [Programme](/programme/)
+- [Inventory the cryptography](/programme/inventory/)
+- [Work with suppliers](/programme/suppliers/)

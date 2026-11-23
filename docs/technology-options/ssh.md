@@ -8,7 +8,7 @@ description: What a good post-quantum SSH deployment looks like for administrati
 
 ## What it is
 
-Secure Shell (SSH) is used to administer servers and network devices, to run automation, and to reach Git repositories. Its key exchange is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later) for anything sensitive sent over the session. Host keys and user keys are a **signatures** job.
+Secure Shell (SSH) is used to administer servers and network devices, to run automation, and to reach Git repositories. Its key exchange is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later) for anything sensitive sent over the session. Host keys and user keys are a **signatures** job.
 
 ## Post-quantum options and status
 
@@ -32,8 +32,8 @@ The SSH implementation's supplier, usually the operating system or the network d
 ## What good looks like
 
 - Servers and clients prefer a hybrid post-quantum key exchange that every applicable authority accepts, and classical-only methods are kept only where a recorded exception needs them.
-- Network devices, appliances, and automation tools with their own SSH library are on the [inventory](/resources/records/inventory/), with the method each one negotiates.
-- Host and user keys have their own signatures line on the [migration plan](/resources/records/migration-plan/), with its own milestone.
+- Network devices, appliances, and automation tools with their own SSH library are on the [register](/templates/records/register/), with the method each one negotiates.
+- Host and user keys have their own signatures row on the [register](/templates/records/register/), with its own dates.
 
 ## What to ask or test
 
@@ -51,11 +51,8 @@ The SSH implementation's supplier, usually the operating system or the network d
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | Rows for SSH servers and for the devices that cannot follow |
-| [Vendor response log](/resources/records/vendor-response-log/) | Answers from the makers of devices and tools with their own SSH library |
-| [Migration plan](/resources/records/migration-plan/) | A key-establishment line, and a separate signatures line for host and user keys |
-| [Change record](/resources/records/change-record/) | Any change to server or client settings, with the negotiated method as the deployed-state check |
-| [Review log](/resources/records/review-log/) | Devices that cannot follow, as exceptions with an owner and the replacement date in `item` |
+| [Register](/templates/records/register/) | A key-establishment row for SSH servers, and a separate signatures row for host and user keys; answers from the makers of devices and tools with their own SSH library, with their judgement; and a row for each device that cannot follow, with an owner, the replacement date, and a `next review` |
+| [Change record](/templates/records/change-record/) | Any change to server or client settings, with the negotiated method as the deployed-state check |
 
 ## Example
 
@@ -74,5 +71,5 @@ A decision-ready record lists the servers by operating-system release with the k
 
 - [Choosing an option](/technology-options/choosing/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
-- [Inventory the cryptography](/migration-practices/inventory/)
+- [Inventory the cryptography](/programme/inventory/)
 - [PKI and certificates](/technology-options/pki/)

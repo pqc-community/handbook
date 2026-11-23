@@ -71,5 +71,5 @@ Continue with [Timelines](/learn/timelines/). For the handshake in more detail, 
 ## Related pages
 
 - [Learn the basics](/learn/)
-- [Inventory the cryptography](/migration-practices/inventory/)
-- [Keep commodity software updated](/migration-practices/commodity-software/)
+- [Inventory the cryptography](/programme/inventory/)
+- [Baseline](/baseline/)

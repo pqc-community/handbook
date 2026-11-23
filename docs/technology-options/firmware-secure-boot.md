@@ -10,7 +10,7 @@ description: "For devices whose boot verifier cannot be updated after shipment: 
 
 Secure boot checks a signature on firmware before it runs, against a trust anchor held in the device, often in boot ROM. If that verifier cannot be updated in the field, the only way to change it is to replace the device. That is the hardest case: **a verifier that cannot be updated**. Where the verifier can be updated, use [Code and software signing](/technology-options/code-signing/).
 
-This card applies when both are true: the verifier cannot be updated in the field, and the device will still be in use while the integrity of its code matters. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says that where signature verification cannot be updated after manufacture, it is important for devices to be designed to require quantum-resistant signatures on their executable code if they may still be in use once a [cryptographically relevant quantum computer](/resources/reference/glossary/#cryptographically-relevant-quantum-computer-crqc) exists. The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed 20 March 2025) ask organisations, by 2028, to build an initial plan that identifies any requirement to migrate long-lived hardware roots of trust; they are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations.
+This card applies when both are true: the verifier cannot be updated in the field, and the device will still be in use while the integrity of its code matters. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says that where signature verification cannot be updated after manufacture, it is important for devices to be designed to require quantum-resistant signatures on their executable code if they may still be in use once a [cryptographically relevant quantum computer](/templates/reference/glossary/#cryptographically-relevant-quantum-computer-crqc) exists. The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed 20 March 2025) ask organisations, by 2028, to build an initial plan that identifies any requirement to migrate long-lived hardware roots of trust; they are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations.
 
 ## Post-quantum options and status
 
@@ -22,11 +22,12 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 ## What good looks like
 
-1. **Ask each shortlisted component supplier in writing** which post-quantum schemes its verifier supports, how the trust anchor is provisioned, and when samples are available; make a `complete` answer a condition of selection.
-2. **Check fit before design freeze**: signature and key sizes against storage, and verification time against boot time.
-3. **Set the design freeze as the deadline, with an escalation point before it**, at least as far ahead as the lead time to change component; this handbook suggests no less than three months. If there is still no supported option, the sponsor decides between another component, a later freeze, or written risk acceptance with a review date, recorded on the [review log](/resources/records/review-log/).
-4. **Track the signing key with the verifier.** It has its own [inventory](/resources/records/inventory/) row, and its plan line moves with the verifier's.
-5. **For devices already shipped**, record a retirement or replacement date as the plan line's `milestone` and any compensating controls in `next action`; their verifier will not change.
+1. **Order verifiers by the earliest design freeze.** Where you have more than one product with a verifier that cannot be updated, the one whose design freeze comes first comes first, as [Decide what to migrate first](/programme/priority/) sets out.
+2. **Ask each shortlisted component supplier in writing** which post-quantum schemes its verifier supports, how the trust anchor is provisioned, and when samples are available; make a `complete` answer a condition of selection.
+3. **Check fit before design freeze**: signature and key sizes against storage, and verification time against boot time.
+4. **Decide before the design freeze, with an escalation point before it**, at least as far ahead as the lead time to change component; this handbook suggests no less than three months. While no supported option exists, record the verifier as blocked with the freeze as the date to resolve by. If there is still no supported option at the escalation point, escalate to the sponsor, who decides between another component, a later freeze, or written risk acceptance with a review date, recorded on the [register](/templates/records/register/), and get specialist advice on alternatives, such as hardware that can accept a new key later. Do not record a blocked verifier as migrated.
+5. **Track the signing key with the verifier.** It has its own [register](/templates/records/register/) row, and that row moves with the verifier's.
+6. **For devices already in service**, record them on the register, ask the maker in writing for an upgrade or replacement route, and plan to have one by the device's end of life. Record the retirement or replacement date and any compensating controls on the verifier's row; their verifier will not change.
 
 ## What to ask or test
 
@@ -44,18 +45,15 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 | Record | What it holds |
 | --- | --- |
-| [Inventory](/resources/records/inventory/) | A row for the device's verifier and one for the signing key, with where the key is held in `dependencies` once known |
-| [Vendor response log](/resources/records/vendor-response-log/) | The supplier's answer, with the job `non-updatable verifier` |
-| [Purchase requirements](/resources/records/purchase-requirements/) | A `non-updatable verifier` row for the component selection, with the design freeze in `decide by` |
-| [Migration plan](/resources/records/migration-plan/) | The verifier line, with the design freeze as `milestone` and the escalation point in `next action`; the signing key's `signatures` line, which moves with it; for devices already shipped, the retirement or replacement date |
-| [Change record](/resources/records/change-record/) | The option and authority, or `unknown` in `option` and blocked in `result`, with the freeze as the date to resolve by |
-| [Review log](/resources/records/review-log/) | Any written risk acceptance, with its review date |
+| [Register](/templates/records/register/) | A `non-updatable verifier` row for the device's verifier, with the supplier's answer, the design freeze in `dates that apply`, the escalation point in `next step`, and blocked as the status until a supported option exists; a `signatures` row for the signing key, which moves with it, recording where the key is held once known; for devices already in service, the retirement or replacement date; and any written risk acceptance, with its review date |
+| [Purchase wording](/templates/records/purchase-wording/) | A `non-updatable verifier` row for the component selection, with the design freeze in `decide by` |
+| [Change record](/templates/records/change-record/) | The option and authority, or `unknown` in `option` and blocked in `result`, with the freeze as the date to resolve by |
 
 ## Example
 
 An insufficient record is "The microcontroller supplier will add post-quantum support."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the product sensor's trust anchor sits in write-protected boot ROM and the sensor will stay in service. Procurement asked the two shortlisted microcontroller suppliers on 5 October 2026; the other has not answered, and the one reply so far, of 30 October 2026, says a post-quantum boot verifier is planned but names no scheme, date, or trust-anchor provisioning, so it is judged `vague`, with a written answer due by 15 December 2026. The milestone is the production design freeze on 30 June 2027, with escalation to the managing director if there is still no supported option by 31 March 2027. The change record shows the option as `unknown` and the change as blocked. The key that signs the sensor's firmware has its own inventory row; where it is held is still to be recorded.
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the product sensor's trust anchor sits in write-protected boot ROM and the sensor will stay in service. Procurement asked the two shortlisted microcontroller suppliers on 5 October 2026; the other has not answered, and the one reply so far, of 30 October 2026, says a post-quantum boot verifier is planned but names no scheme, date, or trust-anchor provisioning, so it is judged `vague`, with a written answer due by 15 December 2026. The date that applies is the production design freeze on 30 June 2027, with escalation to the managing director if there is still no supported option by 31 March 2027. The change record shows the option as `unknown` and the change as blocked. The key that signs the sensor's firmware has its own register row; where it is held is still to be recorded.
 
 ## Sources
 
@@ -67,5 +65,5 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 
 - [Code and software signing](/technology-options/code-signing/)
 - [Choosing an option](/technology-options/choosing/)
-- [Hard-to-change systems](/routes/hard-to-change-systems/)
-- [Plan the migration](/migration-practices/plan/)
+- [Programme](/programme/)
+- [Plan the migration](/programme/plan/)

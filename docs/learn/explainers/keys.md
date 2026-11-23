@@ -8,7 +8,7 @@ displayed_sidebar: learnSidebar
 
 **Question this answers:** if every scheme has a "public key" and a "private key", why do they behave so differently? **Background:** [Public-key cryptography](/learn/public-key-cryptography/).
 
-The names stay the same across schemes, but the operation each key enables changes. Getting this right matters in a migration, because the replacement for each scheme does a different job and is recorded on a different line of the inventory.
+The names stay the same across schemes, but the operation each key enables changes. Getting this right matters in a migration, because the replacement for each scheme does a different job and is recorded on a different line of the [register](/templates/records/register/).
 
 ## Key roles by scheme
 
