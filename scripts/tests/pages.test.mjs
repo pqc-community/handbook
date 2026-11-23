@@ -149,7 +149,9 @@ test('all handbook admonition titles use supported syntax', () => {
 // Reader journey budgets and retired labels. These tests live here because `npm test`
 // lists its test files explicitly; the checks themselves are in scripts/checks/reading.mjs.
 const journeyPage = (text) => `---\ntitle: Journey page\n---\n\n${text}\n\n## Sources\n\n- [A source](/standards/) and more words that are not counted.\n`;
-const words = (n) => Array.from({length: n}, () => 'word').join(' ');
+// Sentences start with a capital, as real prose does; the splitter joins a part that
+// starts in lower case to the sentence before it.
+const words = (n) => ['Word', ...Array.from({length: n - 1}, () => 'word')].join(' ');
 
 const withJourney = (pages) =>
   Object.fromEntries(
@@ -157,9 +159,9 @@ const withJourney = (pages) =>
   );
 const budget = (page) => withRoot(withJourney([journeyPage(page)]), (root) => findJourneyBudgetViolations(root));
 
-test('measures words, internal links, the longest sentence and backticks before Sources', () => {
-  const metrics = readingMetrics(journeyPage('One two three [four](/x/). Five `six` seven. ![img](/i.png) [ext](https://e.org) [rel](other/)'));
-  assert.equal(metrics.words, 10);
+test('measures words, internal links, the longest sentence and backticks before Sources, ignoring image alt text', () => {
+  const metrics = readingMetrics(journeyPage('One two three [four](/x/). Five `six` seven. ![img](/i.png) [Ext](https://e.org) [rel](other/)'));
+  assert.equal(metrics.words, 9);
   assert.equal(metrics.links, 2);
   assert.equal(metrics.longest, 4);
   assert.equal(metrics.backticks, 1);
@@ -168,21 +170,39 @@ test('measures words, internal links, the longest sentence and backticks before 
 test('splits sentences at full stops, not at semicolons, colons or common abbreviations', () => {
   assert.deepEqual(sentences('One; two: three, e.g. four. Five!'), ['One; two: three, e.g. four.', 'Five!']);
   assert.deepEqual(sentences('Passed as H.R. 7535 at 136 Stat. 2389. Done.'), ['Passed as H.R. 7535 at 136 Stat. 2389.', 'Done.']);
+  assert.deepEqual(sentences('See SP 800-57 Rev. 5 and Art. 3 here. Done.'), ['See SP 800-57 Rev. 5 and Art. 3 here.', 'Done.']);
+});
+
+test('splits after closing emphasis, quotes and brackets, and at a real "No." or "etc."', () => {
+  assert.deepEqual(sentences('**Keep it short.** Keep it safe. Done now.'), ['**Keep it short.**', 'Keep it safe.', 'Done now.']);
+  assert.deepEqual(sentences('He said “stop.” Then go. Now (see below.) Next.'), ['He said “stop.”', 'Then go.', 'Now (see below.)', 'Next.']);
+  assert.deepEqual(sentences('Do you need one? No. Most do not. Keys, certs, etc. The next. Use no. 5 here.'), ['Do you need one?', 'No.', 'Most do not.', 'Keys, certs, etc.', 'The next.', 'Use no. 5 here.']);
+});
+
+test('does not split after a quoted question in mid-sentence', () => {
+  assert.deepEqual(sentences('It treats “how is state controlled?” as required. Done.'), ['It treats “how is state controlled?” as required.', 'Done.']);
 });
 
 test('accepts journey pages exactly at their limits', () => {
   assert.deepEqual(budget(`${words(MAX_SENTENCE_WORDS)}.`), []);
   assert.deepEqual(budget(Array.from({length: MAX_WORDS / 20}, () => `${words(20)}.`).join(' ')), []);
+  assert.deepEqual(budget(`[A](/a/) [b](/b/) ${words(18)}. ${Array.from({length: 4}, () => `${words(20)}.`).join(' ')}`), []);
+  assert.deepEqual(budget([words(15), words(15), words(15)].map((s) => `${s}.`).join(' ')), []);
 });
 
 test('flags each budget rule on its own', () => {
-  assert.match(budget(Array.from({length: MAX_WORDS / 20 + 1}, () => `${words(20)}.`).join(' '))[0], /words \(at most/);
-  assert.match(budget('[a](/a/) [b](/b/) [c](/c/) words here.')[0], /internal links per 100 words/);
-  assert.match(budget(`${words(MAX_SENTENCE_WORDS + 1)}.`)[0], /a sentence of 41 words/);
-  assert.match(budget(`${words(25)}; ${words(25)}.`)[0], /a sentence of 50 words/);
-  assert.match(budget(`| Column |\n| --- |\n| ${words(MAX_SENTENCE_WORDS + 5)}. |`)[0], /a sentence of 45 words/);
-  assert.match(budget('Use the `route` field.')[0], /backticked/);
-  assert.match(budget(`${words(8)}. ${words(9)}. ${words(10)}.`)[0], /1 staccato paragraphs/);
+  const only = (page, pattern) => {
+    const violations = budget(page);
+    assert.equal(violations.length, 1, violations.join('; '));
+    assert.match(violations[0], pattern);
+  };
+  only(Array.from({length: MAX_WORDS / 20 + 1}, () => `${words(20)}.`).join(' '), /words \(at most/);
+  only('[a](/a/) [b](/b/) [c](/c/) Words here.', /internal links per 100 words/);
+  only(`${words(MAX_SENTENCE_WORDS + 1)}.`, /a sentence of 41 words/);
+  only(`${words(25)}; ${words(25)}.`, /a sentence of 50 words/);
+  only(`| Column |\n| --- |\n| ${words(MAX_SENTENCE_WORDS + 5)}. |`, /a sentence of 45 words/);
+  only('Use the `route` field.', /backticked/);
+  only(`${words(8)}. ${words(9)}. ${words(10)}.`, /: 1 staccato paragraph \(/);
 });
 
 test('flags staccato paragraphs but not connected prose, short paragraphs, lists or tables', () => {
@@ -192,7 +212,16 @@ test('flags staccato paragraphs but not connected prose, short paragraphs, lists
   assert.equal(choppyParagraphs(journeyPage(`${short(5)} ${short(6)}`)).length, 0);
   assert.equal(choppyParagraphs(journeyPage(`- ${short(5)} ${short(6)} ${short(7)}`)).length, 0);
   assert.equal(choppyParagraphs(journeyPage(`| A |\n| --- |\n| ${short(5)} ${short(6)} ${short(7)} |`)).length, 0);
-  assert.equal(MIN_AVG_SENTENCE_WORDS, 15);
+  for (const notProse of ['> ', '<!-- ', '    ', '1) ', '# ']) {
+    assert.equal(choppyParagraphs(journeyPage(`${notProse}${short(5)} ${short(6)} ${short(7)}`)).length, 0, notProse);
+  }
+});
+
+test('reports staccato paragraphs by line, and reads past a heading that only starts with Sources', () => {
+  const page = `---\ntitle: T\n---\n\nWord here. Word here. Word here.\n\n## Sources of randomness\n\nWord here. Word here. Word here.\n\n## Sources\n\nWord here. Word here. Word here.\n`;
+  assert.deepEqual(choppyParagraphs(page).map((p) => p.line), [5, 9]);
+  assert.equal(readingMetrics(page).choppy, 2);
+  assert.ok(MIN_AVG_SENTENCE_WORDS > 3);
 });
 
 test('finds retired labels with hyphens, line breaks, plurals and any case, once each', () => {
@@ -211,6 +240,20 @@ test('blocks the retired page names Start here and Plan the migration, but not p
   assert.deepEqual(retiredLabelsIn('Go to Start here, then Plan the migration.').map((f) => f.label), ['Start here', 'Plan the migration']);
   assert.deepEqual(retiredLabelsIn('Follow the Baseline.').map((f) => f.label), ['Baseline']);
   assert.deepEqual(retiredLabelsIn('If you are new, start here; then plan the migration with your supplier.'), []);
+});
+
+test('allows the page names at the start of a sentence and in real document names, but not as labels', () => {
+  assert.deepEqual(retiredLabelsIn('Start here if you are new. Plan the migration in phases.\n- Baseline figures help.'), []);
+  assert.deepEqual(retiredLabelsIn('The CA/Browser Forum Baseline Requirements apply.'), []);
+  assert.deepEqual(
+    retiredLabelsIn('See [Start here](/x/) and **Baseline**.\ntitle: Plan the migration').map((f) => f.label),
+    ['Start here', 'Baseline', 'Plan the migration'],
+  );
+});
+
+test('allows "full path" as a file path, but not as the retired label', () => {
+  assert.deepEqual(retiredLabelsIn('Give the full path to the file, the full path of a key, or its full-path name.'), []);
+  assert.deepEqual(retiredLabelsIn('Follow the full path.').map((f) => f.label), ['full path']);
 });
 
 test('checks front matter, section overviews and site files, but not quoting summaries', () => {
@@ -240,8 +283,8 @@ test('the handbook does not use retired routing labels', () => {
 
 test('flags staccato paragraphs on every doc page except the journey pages, and the handbook has none', () => {
   const choppy = '---\ntitle: A record\n---\n\nKeep it short. Keep it safe. Keep it here.\n';
-  withRoot({'docs/templates/records/a.md': choppy, 'docs/plan/index.md': choppy, 'static/c.md': choppy}, (root) => {
-    assert.deepEqual(findStaccatoViolations(root), ['docs/templates/records/a.md: 1 staccato paragraphs (3 or more sentences averaging under 15 words; join related points)']);
+  withRoot({'docs/templates/records/a.md': choppy, 'docs/plan/index.md': choppy}, (root) => {
+    assert.deepEqual(findStaccatoViolations(root), ['docs/templates/records/a.md:5: staccato paragraph (3 or more sentences averaging under 15 words; join related points)']);
   });
   assertNoViolations(findStaccatoViolations(ROOT), 'Staccato paragraphs');
 });

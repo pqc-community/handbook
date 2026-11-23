@@ -20,8 +20,10 @@ const MIN_CHOPPY_SENTENCES = 3;
 // hyphens or a line break. The ordinary words path, route, track and condition stay
 // available; only these labels are blocked. The retired page names "Decide whether to
 // act", "Start here" (now Which plan you need), "Plan the migration" (now Set dates and
-// milestones) and "Baseline" (now Core actions) are matched only with their capital letter,
-// so plain English such as "we decide whether to act" or "start here if" is allowed.
+// milestones) and "Baseline" (now Core actions) are matched only with their capital letter
+// and not at the start of a sentence, so plain English such as "we decide whether to act"
+// or "Start here if you are new" is allowed, as is the document name "Baseline
+// Requirements". "Full path" followed by to, of, or name is an ordinary file path.
 export const RETIRED_LABELS = [
   'short path',
   'full path',
@@ -35,8 +37,16 @@ export const RETIRED_LABELS = [
 ];
 const CASE_SENSITIVE_LABELS = ['Decide whether to act', 'Start here', 'Plan the migration', 'Baseline'];
 
-// Files outside docs/ where navigation and homepage labels live.
+// Files outside docs/ where navigation, homepage, and theme labels live.
 const SITE_FILES = ['src/pages/index.tsx', 'sidebars.ts', 'docusaurus.config.ts'];
+const THEME_DIR = 'src/theme';
+const themeFiles = (root) => {
+  const dir = path.join(root, THEME_DIR);
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, {recursive: true})
+    .filter((name) => /\.(?:tsx?|jsx?)$/.test(name))
+    .map((name) => path.join(dir, name));
+};
 
 // Standards summaries describe other publications and may quote their terms, such as the
 // AIVD handbook's urgent and regular adopters. Section overviews (index.md) are the
@@ -44,34 +54,52 @@ const SITE_FILES = ['src/pages/index.tsx', 'sidebars.ts', 'docusaurus.config.ts'
 const isQuotingSummary = (name) => name.startsWith('docs/standards/') && !name.endsWith('/index.md');
 
 // The body a reader reads: everything after the front matter and before Sources.
+// A heading such as "## Sources of randomness" is ordinary content, not the Sources list.
+const SOURCES_HEADING = /^## Sources[ \t]*$/m;
 function body(text) {
-  return text.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '').split(/^## Sources\b/m)[0];
+  return text.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '').split(SOURCES_HEADING)[0];
 }
 
-const stripLinkTargets = (text) => text.replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1');
+// Images are not read, so their alt text is dropped; links keep their text.
+const stripLinkTargets = (text) => text.replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1');
 const stripHeadingIds = (text) => text.replace(/\{#[\w-]+\}/g, '');
 
-// Splits text into sentences at . ! or ? followed by space, without breaking at common
-// abbreviations.
-const ABBREVIATIONS = /\b(e\.g|i\.e|etc|cf|vs|no|para|sec|stat|h\.r)\.$/i;
+// Splits text into sentences at . ! or ? followed by space, also when closing emphasis,
+// quotes or brackets follow the mark ("**Label.** Text", "said “stop.” Then"). It does not
+// break after common abbreviations, or where a lower-case word follows, as after a quoted
+// question in mid-sentence ("treats “how is state controlled?” as required"); "no." ends a
+// sentence unless a number follows.
+const ABBREVIATIONS = /\b(e\.g|i\.e|cf|vs|para|sec|stat|h\.r|rev|art|fig|vol|pp?|al)\.$/i;
+const continues = (previous, next) =>
+  ABBREVIATIONS.test(previous) || /^[a-z]/.test(next) || (/\bno\.$/i.test(previous) && /^\d/.test(next));
 export function sentences(text) {
-  const parts = text.split(/(?<=[.!?])\s+/);
+  const parts = text.split(/(?<=[.!?][*_)"'”’\]]*)\s+/);
   const out = [];
   for (const part of parts) {
-    if (out.length && ABBREVIATIONS.test(out[out.length - 1])) out[out.length - 1] += ` ${part}`;
+    if (out.length && continues(out[out.length - 1], part)) out[out.length - 1] += ` ${part}`;
     else out.push(part);
   }
   return out.map((s) => s.trim()).filter(Boolean);
 }
 
-// Paragraphs (prose lines that are not list items) that read as staccato.
+const plural = (count, word) => `${count} ${word}${count === 1 ? '' : 's'}`;
+const STACCATO_RULE = `3 or more sentences averaging under ${MIN_AVG_SENTENCE_WORDS} words; join related points`;
+// Lines that are not paragraphs of prose: headings, HTML, blockquotes, list items,
+// and indented code.
+const NOT_A_PARAGRAPH = /^(?:\s*(?:#|<|>|[-*+]\s|\d+[.)]\s)| {4}|\t)/;
+
+// Paragraphs that read as staccato, each with its line number in the file.
 export function choppyParagraphs(text) {
-  return classifyLines(stripHeadingIds(body(text)))
-    .filter((line) => line.kind === 'prose' && !/^\s*(?:[-*+]|\d+\.)\s/.test(line.text))
-    .map((line) => sentences(stripLinkTargets(line.text)).map((sentence) => sentence.split(/\s+/).length))
-    .filter((lengths) => lengths.length >= MIN_CHOPPY_SENTENCES)
-    .map((lengths) => lengths.reduce((total, n) => total + n, 0) / lengths.length)
-    .filter((average) => average < MIN_AVG_SENTENCE_WORDS);
+  const found = [];
+  for (const line of classifyLines(text)) {
+    if (SOURCES_HEADING.test(line.text)) break;
+    if (line.kind !== 'prose' || !line.text.trim() || NOT_A_PARAGRAPH.test(line.text)) continue;
+    const lengths = sentences(stripLinkTargets(stripHeadingIds(line.text))).map((sentence) => sentence.split(/\s+/).length);
+    if (lengths.length < MIN_CHOPPY_SENTENCES) continue;
+    const average = lengths.reduce((total, n) => total + n, 0) / lengths.length;
+    if (average < MIN_AVG_SENTENCE_WORDS) found.push({line: line.number, average});
+  }
+  return found;
 }
 
 export function readingMetrics(text) {
@@ -101,9 +129,8 @@ export function findStaccatoViolations(root = '.') {
     if (!fs.existsSync(dir)) continue;
     for (const file of walkMarkdown(dir)) {
       if (JOURNEY_PAGES.includes(relativePath(root, file))) continue;
-      const count = choppyParagraphs(fs.readFileSync(file, 'utf8')).length;
-      if (count > 0) {
-        violations.push(`${relativePath(root, file)}: ${count} staccato paragraphs (3 or more sentences averaging under ${MIN_AVG_SENTENCE_WORDS} words; join related points)`);
+      for (const {line} of choppyParagraphs(fs.readFileSync(file, 'utf8'))) {
+        violations.push(`${relativePath(root, file)}:${line}: staccato paragraph (${STACCATO_RULE})`);
       }
     }
   }
@@ -125,9 +152,7 @@ export function findJourneyBudgetViolations(root = '.') {
     }
     if (m.longest > MAX_SENTENCE_WORDS) violations.push(`${page}: a sentence of ${m.longest} words (at most ${MAX_SENTENCE_WORDS})`);
     if (m.backticks > 0) violations.push(`${page}: ${m.backticks} backticked terms in prose (none allowed)`);
-    if (m.choppy > 0) {
-      violations.push(`${page}: ${m.choppy} staccato paragraphs (3 or more sentences averaging under ${MIN_AVG_SENTENCE_WORDS} words; join related points)`);
-    }
+    if (m.choppy > 0) violations.push(`${page}: ${plural(m.choppy, 'staccato paragraph')} (${STACCATO_RULE})`);
   }
   return violations;
 }
@@ -136,12 +161,26 @@ const labelSource = (label) => label.split(' ').map((word) => word.replace(/s$/,
 const LABEL_PATTERN = new RegExp(`\\b(${RETIRED_LABELS.map(labelSource).join('|')})s?\\b`, 'gi');
 const CASED_PATTERN = new RegExp(`\\b(${CASE_SENSITIVE_LABELS.map(labelSource).join('|')})\\b`, 'g');
 
+// True when a match begins a sentence: at the start of a line (after any list or quote
+// marker), or after a sentence-ending mark. Link text, bold, and front-matter values do
+// not count, so "[Start here](/x/)", "**Start here**", and "title: Start here" are flagged.
+const startsSentence = (text, start) => {
+  const before = text.slice(text.lastIndexOf('\n', start - 1) + 1, start);
+  return /^\s*(?:[-*+>]\s+|\d+[.)]\s+)?$/.test(before) || /[.!?]["”’)]?\s+$/.test(before);
+};
+
 // Every retired label in a text, with its line number. Matches across line breaks.
 export function retiredLabelsIn(text) {
   const matches = [];
   for (const pattern of [LABEL_PATTERN, CASED_PATTERN]) {
     pattern.lastIndex = 0;
-    for (const match of text.matchAll(pattern)) matches.push({start: match.index, end: match.index + match[0].length, label: match[0]});
+    for (const match of text.matchAll(pattern)) {
+      const start = match.index;
+      const end = start + match[0].length;
+      if (pattern === CASED_PATTERN && (startsSentence(text, start) || /^\s+Requirements\b/.test(text.slice(end)))) continue;
+      if (/^full[\s-]+path$/i.test(match[0]) && /^\s+(?:to|of|name)\b/i.test(text.slice(end))) continue;
+      matches.push({start, end, label: match[0]});
+    }
   }
   // Longest match first, so "short and full paths" is reported once, not also as "full path".
   matches.sort((a, b) => a.start - b.start || b.end - a.end);
@@ -160,6 +199,7 @@ export function findRetiredLabelViolations(root = '.') {
   const files = [
     ...walkMarkdown(path.join(root, 'docs')),
     ...SITE_FILES.map((file) => path.join(root, file)).filter((file) => fs.existsSync(file)),
+    ...themeFiles(root),
   ];
   for (const file of files) {
     const name = relativePath(root, file);
