@@ -14,6 +14,8 @@ Start the register on the first day, with the [baseline](/baseline/): it is the 
 
 system, job, owner, why it is here, protected by today, version or plan, supplier, supplier answer, judgement, dates that apply, supplier release, testing, production deployment, end of support, order, next step, status, next review
 
+**On the baseline**, fill in only system, job, owner, why it is here, version or plan, supplier, supplier answer, judgement, status, and next review; leave the other columns blank until a programme needs them.
+
 Give each system one row per job, with `job` set to `key establishment`, `signatures`, or `non-updatable verifier`, and a qualifier in brackets where one job needs separate work, such as `key establishment (stored data)`. A supported commodity product can share one row for both jobs until something differs between them. Name each system the same way on every record, so its change records and purchase wording can be found from its row.
 
 - **why it is here:** the question on Start here that applies, with the reason and its source, such as "question 1: designs confidential for 15 years (company retention policy)", or `baseline` for a system no question applies to. For a `not sure` answer, name who will confirm it and by when.

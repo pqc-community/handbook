@@ -29,9 +29,9 @@ const outcomes: Node[] = [
     text: 'The baseline for everything you buy in, and a first move this week for each question that applied, then diagnose, plan, and execute.',
   },
   {
-    label: 'Critical, regulated, or a large estate you build',
+    label: 'Critical, regulator-overseen, or a large estate you build',
     title: 'Specialist advice first',
-    to: '/start-here/',
+    to: '/start-here/#what-to-do',
     text: 'Bring in specialist advice and speak to your sector regulator, then follow the baseline and run a full programme.',
   },
 ];

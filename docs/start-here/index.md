@@ -25,7 +25,7 @@ A supplied product that is out of support, or whose supplier has no post-quantum
 | --- | --- |
 | None apply | Follow the [baseline](/baseline/). That is your plan. |
 | Any applies | Follow the baseline for everything you buy in, and run a [programme](/programme/) for what the questions found. Start with its first moves. |
-| You run critical national infrastructure, a regulated service, or a large estate you build yourself | First, bring in specialist advice and speak to your sector regulator or authority. Then follow the baseline and run a full programme. |
+| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | First, bring in specialist advice and speak to your sector regulator or authority. Then follow the baseline and run a full programme. |
 
 ## Which dates apply to you
 
@@ -35,7 +35,7 @@ Dates belong to the authority that set them and the audience it names. There is 
 | --- | --- |
 | A UK organisation | The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (20 March 2025) are aimed primarily at large organisations, operators of critical national infrastructure, and organisations with bespoke IT, and say their core timelines are relevant to all organisations: defined goals, discovery, and an initial plan by 2028; early, highest-priority migration by 2031; and migration completed by 2035. They expect smaller organisations using mainly commodity IT to receive most upgrades from their service providers, and organisations with custom software to follow the same timetable as larger ones. |
 | An EU public administration or critical-infrastructure entity | The EU NIS Cooperation Group's [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025), addressed to Member States, which set national roadmaps from it. |
-| A US federal agency, or a supplier to one | The [US government requirements](/standards/us-government-requirements/), which bind federal agencies. A contractor date applies only if and when the procurement rule EO 14412 directs takes effect. |
+| A US federal agency, or a supplier to one | The [US government requirements](/standards/us-government-requirements/), which bind federal agencies. A contractor date applies only if and when the procurement rule EO 14412 directs takes effect. National security systems follow NSA requirements such as [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/). |
 | Anywhere else | Your national authority, your sector regulator, and your customers' contract dates. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) explains how to read them. |
 
 ## Words used on these pages
