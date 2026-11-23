@@ -11,7 +11,7 @@ type Node = {label?: string; title: string; to: string; text: string};
 const questions = [
   {
     name: 'Data that must stay secret for years',
-    text: 'Information that must stay confidential for ten years or more and is protected by public-key methods. Count how long it must stay secret, not how long you keep it.',
+    text: 'Information that must stay confidential for ten years or more and is protected by public-key methods. Count how long it must stay secret, not how long you keep it; ordinary business records usually fall short.',
   },
   {
     name: 'Devices with a fixed key',
