@@ -1,19 +1,20 @@
 ---
 title: Migration records
+search_title: Post-quantum migration record templates
 sidebar_label: Records
 displayed_sidebar: resourcesSidebar
-description: The linked records a migration lead sets up, fills in, and keeps to show a post-quantum migration's progress, in order of use, with how they connect and a download of the full set.
+description: The linked records a migration lead sets up and keeps to evidence a post-quantum migration, in order of use, with how they connect and a download of the set.
 ---
 
 These are the records a migration lead keeps to show what has been decided, asked, required, changed, and reviewed in a post-quantum migration. Each practice and technology card writes to them, and together they are the evidence: when a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement. [Protect this first](/resources/examples/protect-this-first/) shows the whole set filled in for one fictional organisation.
 
-You do not need every record on day one. An organisation on the short path, as [Decide whether to act](/migration-practices/diagnose/) sets it, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing, and any plan dates and change records that Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section adds; the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
+You do not need every record on day one. An organisation on the short path, as [Decide whether to act](/migration-practices/decide-whether-to-act/) sets it, keeps the decision note, the inventory, purchase requirements, a tracking line on the migration plan, the review log, and the progress report, plus vendor response log rows for any supplier it asks in writing, and any plan dates and change records that Decide whether to act's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route) section adds; the full path uses all nine. [Stay on supplier updates](/resources/examples/stay-on-supplier-updates/) shows the short-path set filled in.
 
 ## The records, in order of use
 
 | Record | Filled by | What it holds | Read next by |
 | --- | --- | --- | --- |
-| [Decision note](/resources/records/decision-note/) | [Decide whether to act](/migration-practices/diagnose/) | One row per asset: the four answers, the urgency category, the path, the route, and the sponsor's acceptance | The charter, for assets on the full path; the inventory, for every asset |
+| [Decision note](/resources/records/decision-note/) | [Decide whether to act](/migration-practices/decide-whether-to-act/) | One row per asset: the four answers, the urgency category, the path, the route, and the sponsor's acceptance | The charter, for assets on the full path; the inventory, for every asset |
 | [Programme charter](/resources/records/programme-charter/) | [Set up the programme](/migration-practices/programme/) | Goal, scope, named roles, first budget line, reporting, and report triggers | The progress report, for its cadence and report triggers |
 | [Inventory record](/resources/records/inventory/) | [Inventory the cryptography](/migration-practices/inventory/), [Keep commodity software updated](/migration-practices/commodity-software/), and every technology card | One row per asset, with its algorithms for each job, dependencies, what a scan cannot see, and confidence | The migration plan, which orders its assets; the vendor log and purchase requirements, for what to ask and require |
 | [Vendor response log](/resources/records/vendor-response-log/) | [Work with suppliers](/migration-practices/suppliers/) and every technology card | One row per supplier answer, product, version, and job, with the judgement and follow-up | The plan's `supplier readiness`; the review log, for follow-ups |
@@ -69,7 +70,7 @@ Each record page has a blank table and a CSV. To set up all nine at once, downlo
 
 ## Starting from a route
 
-Every route starts from the decision note, which [Decide whether to act](/migration-practices/diagnose/) fills. Each [situation route](/routes/) then names the records it produces:
+Every route starts from the decision note, which [Decide whether to act](/migration-practices/decide-whether-to-act/) fills. Each [situation route](/routes/) then names the records it produces:
 
 | Route | Records it produces |
 | --- | --- |

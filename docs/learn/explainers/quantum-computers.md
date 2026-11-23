@@ -1,7 +1,8 @@
 ---
 title: What a quantum computer changes
+search_title: What a quantum computer changes for cryptography
 sidebar_label: What a quantum computer changes
-description: Shor's and Grover's algorithms side by side, how NIST's post-quantum security categories are anchored to AES and SHA, and when harm to encrypted data and signatures can actually occur.
+description: Shor's and Grover's algorithms side by side, how NIST's security categories are anchored to AES and SHA, and when harm to data and signatures can occur.
 displayed_sidebar: learnSidebar
 ---
 

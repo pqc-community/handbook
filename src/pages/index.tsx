@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -159,7 +160,7 @@ function RouteChooser() {
         </p>
 
         <div className={styles.chooser}>
-          <Link className={`${styles.box} ${styles.decide}`} to="/migration-practices/diagnose/">
+          <Link className={`${styles.box} ${styles.decide}`} to="/migration-practices/decide-whether-to-act/">
             <span className={styles.boxLabel}>Start here</span>
             <span className={styles.boxTitle}>Decide whether to act</span>
             <span className={styles.boxText}>
@@ -287,9 +288,28 @@ function Reference() {
   );
 }
 
+const homeTitle = 'PQC Handbook: planning a post-quantum cryptography migration';
+const homeDescription =
+  'Practical, source-backed guidance for planning, prioritising and evidencing a post-quantum cryptography migration without specialist cryptography staff.';
+
+// Names the site for search engines (schema.org WebSite).
+const websiteData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'PQC Handbook',
+  url: 'https://pqchandbook.com/',
+  description: homeDescription,
+  inLanguage: 'en-GB',
+};
+
 export default function Home(): ReactNode {
   return (
-    <Layout description="Practical, source-backed guidance for organisations planning, prioritising, and evidencing a migration to post-quantum cryptography without specialist cryptography staff.">
+    <Layout description={homeDescription}>
+      <Head>
+        <title>{homeTitle}</title>
+        <meta property="og:title" content={homeTitle} />
+        <script type="application/ld+json">{JSON.stringify(websiteData)}</script>
+      </Head>
       <Hero />
       <main>
         <RouteChooser />

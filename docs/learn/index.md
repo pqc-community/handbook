@@ -1,7 +1,7 @@
 ---
 title: Learn the basics of post-quantum cryptography
 sidebar_label: Learn the basics
-description: A ten-lesson grounding in post-quantum cryptography for security, engineering, product, procurement, and risk professionals, with optional explainers for more depth.
+description: Ten short lessons on post-quantum cryptography for professionals without specialist cryptography staff, with optional explainers for more depth.
 displayed_sidebar: learnSidebar
 ---
 
@@ -57,7 +57,7 @@ All ten lessons are short; if you only have time for some, these are the most us
 | Security or risk lead | 3, 9 | [When to start](/learn/explainers/when-to-start/) |
 | Engineering or product | 1, 5, 8 | [What changes in a TLS connection](/learn/explainers/tls/) |
 | Procurement or supplier management | 7, 2 | [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) |
-| Executive sponsor | 3, 9, 10 | [Why migration timelines differ](/learn/explainers/timelines/) |
+| Executive sponsor | 3, 9, 10 | [Why migration timelines differ](/learn/explainers/why-timelines-differ/) |
 
 ## Explainers
 
@@ -73,7 +73,7 @@ Optional explainers expand one distinction each. Read them when a lesson leaves 
 - [What changes in a TLS connection](/learn/explainers/tls/) — the handshake step by step, and why authentication lags key exchange.
 - [From research to deployment](/learn/explainers/research-to-deployment/) — the path from candidate algorithm to something running in your estate.
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) — turning a supplier statement into checkable facts.
-- [Why migration timelines differ](/learn/explainers/timelines/) — NIST, US federal, UK, EU, and Australian dates compared.
+- [Why migration timelines differ](/learn/explainers/why-timelines-differ/) — NIST, US federal, UK, EU, and Australian dates compared.
 
 Use the [glossary](/resources/reference/glossary/) for definitions while reading.
 

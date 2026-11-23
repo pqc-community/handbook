@@ -1,7 +1,8 @@
 ---
 title: From research to deployment
+search_title: From PQC research to deployment
 sidebar_label: From research to deployment
-description: The stages a post-quantum algorithm passes through — candidate, selection, draft, final standard, protocol specification, validated module, product release, deployment — and how to tell which stage a claim refers to.
+description: The stages from candidate algorithm to standard, protocol, validated module, product and deployment, and how to tell which stage a post-quantum claim refers to.
 displayed_sidebar: learnSidebar
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Standardisation
+search_title: How post-quantum standards reach real systems
 sidebar_label: 7. Standardisation
-description: The layers between a published post-quantum algorithm and a protected system — algorithm standard, protocol specification, validated module, product release, and deployment — with their status in November 2026.
+description: "The layers between a published post-quantum algorithm and a protected system: standard, protocol, validated module, product and deployment, with their status."
 displayed_sidebar: learnSidebar
 ---
 
@@ -78,5 +79,5 @@ Continue with [In real systems](/learn/in-real-systems/).
 
 - [Learn the basics](/learn/)
 - [Post-quantum cryptography standards](/standards/post-quantum/)
-- [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/)
-- [Modules, protocols, and certificates](/standards/modules-protocols-identity/)
+- [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/)
+- [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)

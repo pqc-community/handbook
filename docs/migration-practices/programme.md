@@ -1,5 +1,6 @@
 ---
 title: Set up the programme
+search_title: Set up a post-quantum migration programme
 sidebar_label: Set up the programme
 description: Name a sponsor and migration lead, agree roles, scope, budget, and reporting, and tell the people whose work will change.
 displayed_sidebar: migrationPracticesSidebar
@@ -7,7 +8,7 @@ displayed_sidebar: migrationPracticesSidebar
 
 ## When this applies
 
-[Decide whether to act](/migration-practices/diagnose/) put at least one asset on the full path under its [path table](/migration-practices/diagnose/#do-this). That includes regular adopters that operate a public-key infrastructure, sign for others, or run bespoke systems, as well as urgent adopters. On the short path you do not need one, even for a product that follows the Hard-to-change systems steps after failing the fifth of the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route).
+[Decide whether to act](/migration-practices/decide-whether-to-act/) put at least one asset on the full path under its [path table](/migration-practices/decide-whether-to-act/#do-this). That includes regular adopters that operate a public-key infrastructure, sign for others, or run bespoke systems, as well as urgent adopters. On the short path you do not need one, even for a product that follows the Hard-to-change systems steps after failing the fifth of the [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route).
 
 ## Who does what
 
@@ -20,13 +21,13 @@ displayed_sidebar: migrationPracticesSidebar
 
 ## Do this
 
-1. **Write the programme goal in one or two sentences**, based on the decision you recorded in [Decide whether to act](/migration-practices/diagnose/): what is in scope, what is not, and what "done" means for this phase.
+1. **Write the programme goal in one or two sentences**, based on the decision you recorded in [Decide whether to act](/migration-practices/decide-whether-to-act/): what is in scope, what is not, and what "done" means for this phase.
 2. **Assign the roles above by name.** A role with no named person is a gap to resolve, not a default.
 3. **Agree the first budget line** for discovery and supplier engagement. A full migration budget usually cannot be estimated until the inventory exists and the migration plan has an order; say so in the charter and set the date when it will be revisited. When it is, include supplier upgrade charges, replacement of products that cannot be upgraded, testing environments and effort, discovery tooling, and specialist advice.
 4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/migration-practices/subsequent-review/)).
 5. **Tell the people whose work will change**: asset owners, procurement, operations, and suppliers, who should expect written questions about their post-quantum plans. Explain the different jobs — key establishment, signatures, and verifiers that cannot be updated — so teams do not assume one cutover.
 
-Published migration guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) ask organisations to define their migration goals as the first activity.
+Published migration guides start in the same place. The Post-Quantum Cryptography Coalition's [migration roadmap](/standards/migration-guides/pqcc-roadmap/) (May 2025) begins by setting out the organisation's migration aims and its relevance, then assigning a migration lead, identifying stakeholders, and aligning them through strategic messaging; setting a discovery plan and budget follows in its second category. The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) ask organisations to define their migration goals as the first activity.
 
 ## Keep this evidence
 
@@ -49,7 +50,7 @@ The charter assigns responsibility; it does not decide priorities or algorithms.
 
 ## Related pages
 
-- [Decide whether to act](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/decide-whether-to-act/)
 - [Programme charter](/resources/records/programme-charter/)
 - [Organisation-wide](/routes/organisation-wide/)
 - [Migration plan](/resources/records/migration-plan/)

@@ -1,7 +1,7 @@
 ---
 title: Public-key cryptography and the jobs it does
 sidebar_label: 1. Public-key cryptography
-description: How public-key cryptography differs from symmetric cryptography, and why key establishment and digital signatures are separate jobs with separate migration drivers.
+description: How public-key cryptography differs from symmetric cryptography, and why key establishment and signatures are separate jobs with separate migration drivers.
 displayed_sidebar: learnSidebar
 ---
 

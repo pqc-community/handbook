@@ -1,8 +1,9 @@
 ---
 title: DNSSEC
+search_title: Post-quantum DNSSEC
 sidebar_label: DNSSEC
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness looks like for DNSSEC-signed zones and validating resolvers, the status of ML-DSA in DNSSEC, and why validators have to move before signers.
+description: What post-quantum readiness looks like for signed zones and validating resolvers, the status of ML-DSA in DNSSEC, and why validators move before signers.
 ---
 
 ## What it is
@@ -19,7 +20,7 @@ Status as checked on 21 November 2026.
 | Specification | draft-westerbaan-dnssec-mldsa is an individual Internet-Draft, not adopted into an IETF working group or stream |
 | How algorithm recommendations change | [RFC 9904](https://www.rfc-editor.org/info/rfc9904) (Proposed Standard, November 2025) sets the process for updating DNSSEC algorithm recommendations |
 
-So a post-quantum DNSSEC algorithm has a number but not a published standard. Only the ML-DSA-44 parameter set is registered, which may not satisfy every applicable authority: [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/), for example, requires ML-DSA-87 for US national security systems. Under the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/), a draft is used only where the product ships it and no applicable authority advises against it, and it is recorded as provisional. For UK readers, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts. The scheme itself follows the signature-schemes rule on the same page.
+So a post-quantum DNSSEC algorithm has a number but not a published standard. Only the ML-DSA-44 parameter set is registered, which may not satisfy every applicable authority: [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/), for example, requires ML-DSA-87 for US national security systems. Under the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/), a draft is used only where the product ships it and no applicable authority advises against it, and it is recorded as provisional. For UK readers, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts. The scheme itself follows the signature-schemes rule on the same page.
 
 ## Who usually chooses
 

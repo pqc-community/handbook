@@ -1,26 +1,27 @@
 ---
 title: Decision note
+search_title: Post-quantum decision note template
 sidebar_label: Decision note
-description: One row per asset recording the four answers that decide whether to act, the urgency category and path they lead to, who owns the next step, and the sponsor's acceptance.
+description: One row per asset recording the four answers that decide whether to act, the urgency and path they lead to, the next step's owner, and sponsor acceptance.
 displayed_sidebar: resourcesSidebar
 ---
 
 ## When to use it
 
-Use this note when you [decide whether to act](/migration-practices/diagnose/): before any programme exists, and again whenever a new asset raises the question.
+Use this note when you [decide whether to act](/migration-practices/decide-whether-to-act/): before any programme exists, and again whenever a new asset raises the question.
 
 ## Minimum fields
 
 asset, A long-lived confidentiality, B fixed verifier, C others rely on your signatures, D bespoke systems, category, path, route, next step, owner, confirm by, accepted by
 
-Give each asset its own row, because this handbook applies the urgent and regular adopter categories per asset: one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; [Decide whether to act](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) says how an `unknown` answer counts until it is closed. The questions are:
+Give each asset its own row, because this handbook applies the urgent and regular adopter categories per asset: one organisation can be an urgent adopter for one asset and a regular adopter for another. Answer A to D with `yes`, `no`, or `unknown`, and add the reason in brackets; [Decide whether to act](/migration-practices/decide-whether-to-act/#when-you-cannot-answer-or-cannot-choose) says how an `unknown` answer counts until it is closed. The questions are:
 
 - **A.** Is any data protected by public-key cryptography required to stay confidential for many years?
 - **B.** Does any product or device you build or run check signatures with a key it cannot replace after shipment?
 - **C.** Do you operate a public-key infrastructure, or sign code, firmware, or documents that other people or devices rely on?
 - **D.** Do you build or run bespoke systems, rather than only supported commodity software and supplier-hosted services?
 
-Set `category` to `urgent adopter` or `regular adopter` and `path` to `full` or `short`, using the table on [Decide whether to act](/migration-practices/diagnose/). In `route`, name the asset's route as step 3 of [Decide whether to act](/migration-practices/diagnose/) sets it: Vendor-managed software, Long-lived confidentiality, or Hard-to-change systems, with any bracketed addition that step gives. For the vendor-managed route, add "(all five conditions hold)" once you have checked the [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), or name the route the asset moved to. In `accepted by`, give the sponsor's role and the date they accepted the row.
+Set `category` to `urgent adopter` or `regular adopter` and `path` to `full` or `short`, using the table on [Decide whether to act](/migration-practices/decide-whether-to-act/). In `route`, name the asset's route as step 3 of [Decide whether to act](/migration-practices/decide-whether-to-act/) sets it: Vendor-managed software, Long-lived confidentiality, or Hard-to-change systems, with any bracketed addition that step gives. For the vendor-managed route, add "(all five conditions hold)" once you have checked the [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route), or name the route the asset moved to. In `accepted by`, give the sponsor's role and the date they accepted the row.
 
 Record `unknown` in any cell you cannot verify yet. Keep keys, secrets, and personal data out of the file — name the system only.
 
@@ -49,7 +50,7 @@ The note records a decision, not a risk assessment. Where the answers are unclea
 
 ## Related pages
 
-- [Decide whether to act](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/decide-whether-to-act/)
 - [Programme charter](/resources/records/programme-charter/)
 - [Inventory record](/resources/records/inventory/)
 - [Situation routes](/routes/)

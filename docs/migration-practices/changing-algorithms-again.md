@@ -1,5 +1,6 @@
 ---
 title: Keep the ability to change again
+search_title: Keep the ability to change algorithms again
 sidebar_label: Keep the ability to change again
 description: Before treating a system as finished, show evidence of six capabilities that let you change its algorithm again without another emergency programme.
 displayed_sidebar: migrationPracticesSidebar
@@ -28,7 +29,7 @@ Treat the system as finished for this phase only when each capability has verifi
 
 If the supplier will not give a commitment, a notice period, or a plan, record the gap and handle it as a `concerning` answer in [Work with suppliers](/migration-practices/suppliers/) (step 4).
 
-The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises using cryptographic solutions that are crypto-agile, and notes that other bodies encourage organisations to remain cryptographically agile. NIST's [crypto-agility white paper](/standards/transition-and-key-management/cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters.
+The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises using cryptographic solutions that are crypto-agile, and notes that other bodies encourage organisations to remain cryptographically agile. NIST's [crypto-agility white paper](/standards/transition-and-key-management/nist-cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters.
 
 ## Keep this evidence
 

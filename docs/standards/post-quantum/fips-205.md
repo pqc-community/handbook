@@ -1,13 +1,14 @@
 ---
 title: "FIPS 205: Stateless Hash-Based Digital Signature Standard"
+search_title: "FIPS 205: SLH-DSA hash-based signature standard"
 sidebar_label: FIPS 205 (SLH-DSA)
 displayed_sidebar: standardsSidebar
-description: NIST standard specifying SLH-DSA, a stateless hash-based post-quantum signature algorithm, and the SP 800-230 draft of further parameter sets.
+description: NIST standard specifying SLH-DSA (formerly SPHINCS+), a stateless hash-based post-quantum signature algorithm, and the SP 800-230 draft parameter sets.
 ---
 
 ## What it covers
 
-Federal Information Processing Standards Publication 205 (FIPS 205) specifies the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA), derived from the SPHINCS+ submission. It defines parameter sets instantiated with either SHA-2 ([FIPS 180-4](/standards/symmetric-and-primitives/fips-180-4/)) or SHAKE ([FIPS 202](/standards/symmetric-and-primitives/fips-202/)). Its security rests on hash-function properties rather than lattices, and unlike the schemes in [SP 800-208](/standards/post-quantum/sp-800-208/) the signer does not have to track per-signature state.
+Federal Information Processing Standards Publication 205 (FIPS 205) specifies the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA), derived from the SPHINCS+ submission. It defines parameter sets instantiated with either SHA-2 ([FIPS 180-4](/standards/symmetric-and-hash/fips-180-4/)) or SHAKE ([FIPS 202](/standards/symmetric-and-hash/fips-202/)). Its security rests on hash-function properties rather than lattices, and unlike the schemes in [SP 800-208](/standards/post-quantum/sp-800-208/) the signer does not have to track per-signature state.
 
 FIPS 205 is issued by the National Institute of Standards and Technology (NIST). NIST's FIPS compliance FAQ describes FIPS as standards for federal computer systems that are not always mandatory for federal agencies: each FIPS's applicability section says when it is mandatory. FIPS do not apply to national security systems, and private-sector organisations use them voluntarily, although contractors with government contracts must comply with FISMA, which mandates the use of FIPS.
 

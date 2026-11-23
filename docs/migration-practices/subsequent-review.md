@@ -1,5 +1,6 @@
 ---
 title: Review and report
+search_title: Review and report post-quantum migration progress
 sidebar_label: Review and report
 description: Reopen the migration records on a schedule and on triggers, carry unresolved items forward with owners, and report progress to the sponsor.
 displayed_sidebar: migrationPracticesSidebar

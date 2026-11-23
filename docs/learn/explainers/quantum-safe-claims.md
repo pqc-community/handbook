@@ -1,7 +1,7 @@
 ---
 title: Reading "quantum-safe" claims
 sidebar_label: Reading "quantum-safe" claims
-description: How to break a supplier's "quantum-safe" or "PQC-ready" statement into checkable facts about job, algorithm, layer, scope, and date, with insufficient and decision-ready examples.
+description: How to break a supplier's "quantum-safe" or "PQC-ready" claim into checkable facts about job, algorithm, layer, scope and date, with examples.
 displayed_sidebar: learnSidebar
 ---
 

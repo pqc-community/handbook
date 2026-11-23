@@ -1,7 +1,8 @@
 ---
 title: Vendor response log
+search_title: Vendor response log template
 sidebar_label: Vendor response log
-description: One row per supplier answer, with judgement, follow-up, and the decision it supports.
+description: One row per supplier answer to a post-quantum question, with the judgement, the follow-up and the decision it supports, plus a blank CSV to download.
 displayed_sidebar: resourcesSidebar
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Cloud and SaaS
+search_title: Post-quantum readiness of cloud and SaaS
 sidebar_label: Cloud and SaaS
 displayed_sidebar: technologyOptionsSidebar
-description: What good looks like for cloud platforms and software-as-a-service you buy, where post-quantum support is widely available or still arriving, and how to judge and check a provider's answer.
+description: What good looks like for cloud platforms and SaaS you buy, where post-quantum support is available or still arriving, and how to check a provider's answer.
 ---
 
 ## What it is
@@ -11,7 +12,7 @@ Cloud platforms (infrastructure and platform as a service) and software as a ser
 
 ## Post-quantum options and status
 
-The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, lists cloud platform and infrastructure services among categories where products using post-quantum standards are widely available, and software as a service among categories still transitioning. For widely available categories it says organisations should acquire only post-quantum-capable products. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says commodity IT will receive post-quantum support through updates, while owners of enterprise IT should ask their suppliers about their plans.
+The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, lists cloud platform and infrastructure services among categories where products using post-quantum standards are widely available, and software as a service among categories still transitioning. For widely available categories it says organisations should acquire only post-quantum-capable products. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, says commodity IT will receive post-quantum support through updates, while owners of enterprise IT should ask their suppliers about their plans.
 
 ## Who usually chooses
 
@@ -31,7 +32,7 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 | Job | Ask | Check from your side |
 | --- | --- | --- |
 | Connections | Which post-quantum key exchange, from which release, on which endpoints | A client-side handshake check; see [TLS and web services](/technology-options/tls/) |
-| Stored data | Which algorithm protects stored data keys, and how existing data is re-wrapped | Usually only the provider's written answer; see [Backups, archives and storage](/technology-options/stored-data/) |
+| Stored data | Which algorithm protects stored data keys, and how existing data is re-wrapped | Usually only the provider's written answer; see [Backups, archives and storage](/technology-options/backups-archives/) |
 | Signatures | When the service signs and verifies with post-quantum algorithms | The provider's written plan |
 | End of support, asked in the row for each job | When security fixes stop for the release you run | The contract |
 
@@ -49,7 +50,7 @@ Ask separately for each job, in writing, as [Work with suppliers](/migration-pra
 | [Vendor response log](/resources/records/vendor-response-log/) | One row per job, with end of support asked in the row it affects |
 | [Purchase requirements](/resources/records/purchase-requirements/) | A row per job for the contract or renewal, with end of support in `support until` |
 | [Migration plan](/resources/records/migration-plan/) | A line per job, with the provider's readiness and the contract or renewal that will carry the requirement in `next action` |
-| [Change record](/resources/records/change-record/) | Your own client-side checks. While the service follows Vendor-managed software, which keeps no change record, record those checks on its inventory row and the review log instead; if it fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), that section says what it records |
+| [Change record](/resources/records/change-record/) | Your own client-side checks. While the service follows Vendor-managed software, which keeps no change record, record those checks on its inventory row and the review log instead; if it fails the fifth of Decide whether to act's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route), that section says what it records |
 
 ## Example
 
@@ -66,5 +67,5 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 
 - [Work with suppliers](/migration-practices/suppliers/)
 - [TLS and web services](/technology-options/tls/)
-- [Backups, archives and storage](/technology-options/stored-data/)
+- [Backups, archives and storage](/technology-options/backups-archives/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)

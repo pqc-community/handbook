@@ -1,19 +1,20 @@
 ---
 title: Firmware and secure boot
+search_title: Post-quantum firmware signing and secure boot
 sidebar_label: Firmware and secure boot
 displayed_sidebar: technologyOptionsSidebar
-description: For devices whose boot verifier cannot be updated after shipment, what to settle before design freeze, how to choose a scheme the verifier supports, and what to do if none exists.
+description: "For devices whose boot verifier cannot be updated after shipment: what to settle before design freeze, choosing a scheme it supports, and what if none exists."
 ---
 
 ## What it is
 
 Secure boot checks a signature on firmware before it runs, against a trust anchor held in the device, often in boot ROM. If that verifier cannot be updated in the field, the only way to change it is to replace the device. That is the hardest case: **a verifier that cannot be updated**. Where the verifier can be updated, use [Code and software signing](/technology-options/code-signing/).
 
-This card applies when both are true: the verifier cannot be updated in the field, and the device will still be in use while the integrity of its code matters. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says that where signature verification cannot be updated after manufacture, it is important for devices to be designed to require quantum-resistant signatures on their executable code if they may still be in use once a [cryptographically relevant quantum computer](/resources/reference/glossary/#cryptographically-relevant-quantum-computer-crqc) exists. The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025) ask organisations, by 2028, to build an initial plan that identifies any requirement to migrate long-lived hardware roots of trust; they are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations.
+This card applies when both are true: the verifier cannot be updated in the field, and the device will still be in use while the integrity of its code matters. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says that where signature verification cannot be updated after manufacture, it is important for devices to be designed to require quantum-resistant signatures on their executable code if they may still be in use once a [cryptographically relevant quantum computer](/resources/reference/glossary/#cryptographically-relevant-quantum-computer-crqc) exists. The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed 20 March 2025) ask organisations, by 2028, to build an initial plan that identifies any requirement to migrate long-lived hardware roots of trust; they are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations.
 
 ## Post-quantum options and status
 
-The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
+The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
 
 ## Who usually chooses
 

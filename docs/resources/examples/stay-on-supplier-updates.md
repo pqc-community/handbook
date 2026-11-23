@@ -1,15 +1,16 @@
 ---
 title: Stay on supplier updates
+search_title: "Worked example: a small agency on supplier updates"
 sidebar_label: Stay on supplier updates
 displayed_sidebar: resourcesSidebar
-description: The short-path records filled in for one fictional UK marketing agency that runs only supported devices and a hosted email and office suite, from the decision note to the sponsor's report.
+description: The short-path records filled in for a fictional UK agency running only supported devices and a hosted office suite, from decision note to the sponsor's report.
 ---
 
 This worked example shows the short path through the [record set](/resources/records/) for one fictional organisation whose IT is entirely supported devices and supplier-hosted services. It uses the records the short path keeps: the decision note, the inventory, supplier answers, purchase requirements, tracking lines on the migration plan, the review log, and the progress report. For the full path, with a programme charter and change records for every changed asset, see [Protect this first](/resources/examples/protect-this-first/).
 
 The agency is a 25-person marketing agency based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, service plan, roadmap, email, version number, release date, and check result below is invented for illustration.
 
-The UK National Cyber Security Centre's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025) say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration will be more straightforward and should happen seamlessly as their vendors update services. The NCSC names devices and software, not hosted services; the agency's hosted suite is on the short path because this handbook applies the same path to supplier-hosted services, as [Keep commodity software updated](/migration-practices/commodity-software/) explains. The agency's records exist to show that migration is happening through its suppliers, and to catch the point at which it stops.
+The UK National Cyber Security Centre's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed 20 March 2025) say that for small and medium-sized enterprises using mainly commodity IT, such as standard browsers, operating systems, and mobile devices, migration will be more straightforward and should happen seamlessly as their vendors update services. The NCSC names devices and software, not hosted services; the agency's hosted suite is on the short path because this handbook applies the same path to supplier-hosted services, as [Keep commodity software updated](/migration-practices/commodity-software/) explains. The agency's records exist to show that migration is happening through its suppliers, and to catch the point at which it stops.
 
 ## Initial facts
 
@@ -31,7 +32,7 @@ Before the decision, the IT support provider records one row per asset on the [i
 
 ## Decision note
 
-The office manager answers the four questions on the [decision note](/resources/records/decision-note/) for each asset, with the IT support provider. Every asset answers no to all four, so the agency is a regular adopter on the short path. Before the managing director accepted the note on 7 September 2026, the office manager checked the vendor-managed route's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) on Decide whether to act against the inventory: every product is in support, and the suppliers' published roadmaps are the plans the route asks for, each covering the jobs its product performs, so each route cell already records them. For the hosted suite, the roadmap's key-establishment plan covers connections; whether any public-key step protects stored data at all is the open question on its stored-data line, so it is followed up as a supplier question rather than treated as a missing plan.
+The office manager answers the four questions on the [decision note](/resources/records/decision-note/) for each asset, with the IT support provider. Every asset answers no to all four, so the agency is a regular adopter on the short path. Before the managing director accepted the note on 7 September 2026, the office manager checked the vendor-managed route's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route) on Decide whether to act against the inventory: every product is in support, and the suppliers' published roadmaps are the plans the route asks for, each covering the jobs its product performs, so each route cell already records them. For the hosted suite, the roadmap's key-establishment plan covers connections; whether any public-key step protects stored data at all is the open question on its stored-data line, so it is followed up as a supplier question rather than treated as a missing plan.
 
 | asset | A long-lived confidentiality | B fixed verifier | C others rely on your signatures | D bespoke systems | category | path | route | next step | owner | confirm by | accepted by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -77,7 +78,7 @@ On the short path the [migration plan](/resources/records/migration-plan/) holds
 
 ## Connection check
 
-A supplier's statement is not evidence that the agency's own connections use it: a browser policy or an inspection proxy can remove the post-quantum option. On 12 November 2026 the IT support provider opens the hosted suite in the standard browser on one staff laptop and inspects the connection details, which show X25519MLKEM768 negotiated. The agency has made no change of its own, so it keeps no change records, and this is a check of the deployed state for one client, so the result goes on the hosted suite's inventory row and the review log. X25519MLKEM768 combines ML-KEM-768, specified in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, and is one of the groups defined in [RFC 10024](/standards/modules-protocols-identity/rfc-10024/). The check says nothing about stored data or signatures.
+A supplier's statement is not evidence that the agency's own connections use it: a browser policy or an inspection proxy can remove the post-quantum option. On 12 November 2026 the IT support provider opens the hosted suite in the standard browser on one staff laptop and inspects the connection details, which show X25519MLKEM768 negotiated. The agency has made no change of its own, so it keeps no change records, and this is a check of the deployed state for one client, so the result goes on the hosted suite's inventory row and the review log. X25519MLKEM768 combines ML-KEM-768, specified in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, and is one of the groups defined in [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/). The check says nothing about stored data or signatures.
 
 ## Review
 
@@ -120,13 +121,13 @@ The office manager reports to the managing director the same day on the [progres
 
 ## What would change the agency's path or routes
 
-The short path holds while the answers to the four questions stay no, and each asset stays on the vendor-managed route while all five of its conditions on [Decide whether to act](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) hold. The agency reopens its decision note when any of these happens:
+The short path holds while the answers to the four questions stay no, and each asset stays on the vendor-managed route while all five of its conditions on [Decide whether to act](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route) hold. The agency reopens its decision note when any of these happens:
 
 - a client contract requires its files to stay confidential for many years (question A);
 - the agency starts shipping or running a device whose signature check cannot be updated, such as a product it builds for a client (question B);
 - the agency starts signing code or documents that clients rely on, or runs its own certificate authority (question C);
 - the agency starts building or running its own systems, such as a client portal it hosts and configures (question D);
-- a device or service leaves support, or its supplier withdraws its published plan or has none for a job the product performs, which moves it to the [hard-to-change systems route](/routes/hard-to-change-systems/) while the agency stays on the short path, as Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route) section says;
+- a device or service leaves support, or its supplier withdraws its published plan or has none for a job the product performs, which moves it to the [hard-to-change systems route](/routes/hard-to-change-systems/) while the agency stays on the short path, as Decide whether to act's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route) section says;
 - the IT support provider can no longer show the devices' versions and support status.
 
 The NCSC guidance notes that for many organisations, managed service providers are likely to deliver most of their IT capability, and that it is then important to make sure they are also carrying out the discovery and assessment work it describes. Here the IT support provider records the versions and runs the connection check, and the office manager keeps the records.
@@ -143,7 +144,7 @@ The NCSC guidance notes that for many organisations, managed service providers a
 - [Protect this first](/resources/examples/protect-this-first/)
 - [Vendor-managed software route](/routes/vendor-managed-software/)
 - [Hard-to-change systems route](/routes/hard-to-change-systems/)
-- [Decide whether to act](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/decide-whether-to-act/)
 - [Keep commodity software updated](/migration-practices/commodity-software/)
 - [Work with suppliers](/migration-practices/suppliers/)
 - [Review and report](/migration-practices/subsequent-review/)

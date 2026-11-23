@@ -1,5 +1,6 @@
 ---
 title: Programme charter
+search_title: Post-quantum programme charter template
 sidebar_label: Programme charter
 description: A one-page charter naming the programme's goal and scope, who holds each role, the first budget line, how progress is reported, and when the sponsor agreed it.
 displayed_sidebar: resourcesSidebar

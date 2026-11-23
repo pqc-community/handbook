@@ -168,8 +168,8 @@ test('accepts route pages that link Decide whether to act and a record page', ()
   withRoot(
     {
       'docs/resources/records/decision-note.md': routeRecordPage,
-      'docs/routes/index.md': 'See [Decide](/migration-practices/diagnose/) and the [note](/resources/records/decision-note/).\n',
-      'docs/routes/short.md': 'See [Decide](/migration-practices/diagnose/#five-conditions) and the [note](/resources/records/decision-note/#filled-example).\n',
+      'docs/routes/index.md': 'See [Decide](/migration-practices/decide-whether-to-act/) and the [note](/resources/records/decision-note/).\n',
+      'docs/routes/short.md': 'See [Decide](/migration-practices/decide-whether-to-act/#five-conditions) and the [note](/resources/records/decision-note/#filled-example).\n',
     },
     (root) => assert.deepEqual(findRoutePageViolations(root), []),
   );
@@ -184,7 +184,7 @@ test('flags a route page without Decide whether to act or a record, and a missin
     (root) =>
       assert.deepEqual(findRoutePageViolations(root), [
         'docs/routes/index.md is missing',
-        'docs/routes/short.md: does not link Decide whether to act (/migration-practices/diagnose/)',
+        'docs/routes/short.md: does not link Decide whether to act (/migration-practices/decide-whether-to-act/)',
         'docs/routes/short.md: does not link a record page',
       ]),
   );

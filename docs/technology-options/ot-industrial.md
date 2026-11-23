@@ -1,8 +1,9 @@
 ---
 title: OT and industrial systems
+search_title: Post-quantum OT and industrial systems
 sidebar_label: OT and industrial systems
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness looks like for operational technology, industrial control systems and fielded sensors, where standards are missing, and how to plan around long-lived equipment.
+description: Post-quantum readiness for OT, industrial control systems and fielded sensors, where standards are missing, and how to plan around long-lived equipment.
 ---
 
 ## What it is
@@ -13,7 +14,7 @@ Operational technology (OT) runs physical processes: industrial control systems 
 - **signatures** to authenticate commands, data, and users;
 - **verifiers that cannot be updated** in devices built into plant or products, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
-The UK NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) (published and reviewed 20 March 2025), primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, list IoT and ICS devices with a communications function among the systems to discover. They note that for fielded OT devices and sensors the confidentiality of data may not need strong protection, but its integrity is likely to be critical, because faulty readings or commands can make an ICS fail.
+The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed 20 March 2025), primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, list IoT and ICS devices with a communications function among the systems to discover. They note that for fielded OT devices and sensors the confidentiality of data may not need strong protection, but its integrity is likely to be critical, because faulty readings or commands can make an ICS fail.
 
 ## Post-quantum options and status
 
@@ -24,9 +25,9 @@ Status as checked on 21 November 2026: there is no single post-quantum standard 
 | IT zones and remote access into them | Same as enterprise IT: [TLS and web services](/technology-options/tls/), [VPNs and IPsec](/technology-options/vpn-ipsec/), [SSH](/technology-options/ssh/). The NCSC timelines say remote access to ICS IT zones will need to become quantum-secure |
 | Industrial protocols | The NCSC timelines name ICS protocols as one of two areas where post-quantum protocols will be harder to develop, because some legacy protocols have never had modern cryptography and the architectures around them will need to change |
 | Field devices and sensors | Whatever the device and its supplier support; ask in writing |
-| Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, leaves OT and IoT devices out of scope, while saying they should also be transitioning |
+| Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, leaves OT and IoT devices out of scope, while saying they should also be transitioning |
 
-The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says that for the minority of systems with bespoke IT or OT, such as those that implement public-key cryptography in proprietary communications systems, system and risk owners will need to choose which algorithms and protocols are best to use. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols; code you build follows [Libraries and bespoke code](/technology-options/libraries-bespoke-code/).
+The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, says that for the minority of systems with bespoke IT or OT, such as those that implement public-key cryptography in proprietary communications systems, system and risk owners will need to choose which algorithms and protocols are best to use. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols; code you build follows [Libraries and bespoke code](/technology-options/libraries-bespoke-code/).
 
 ## Who usually chooses
 

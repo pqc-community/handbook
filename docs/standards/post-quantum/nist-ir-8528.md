@@ -1,5 +1,6 @@
 ---
 title: "NIST IR 8528: Status Report on the First Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process"
+search_title: "NIST IR 8528: additional signatures, round 1"
 sidebar_label: NIST IR 8528 (Signatures round 1)
 displayed_sidebar: standardsSidebar
 description: NIST status report on the first round of the additional post-quantum signature process, advancing 14 candidates to round two.

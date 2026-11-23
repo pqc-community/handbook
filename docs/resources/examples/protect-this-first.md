@@ -1,8 +1,9 @@
 ---
 title: Protect this first
+search_title: "Worked example: a manufacturer's PQC migration"
 sidebar_label: Protect this first
 displayed_sidebar: resourcesSidebar
-description: Every migration record filled in for one fictional UK manufacturer, from the decision note and charter through inventory, supplier answers, purchase requirements, the plan, a change, review, and the sponsor's report.
+description: Every migration record filled in for one fictional UK manufacturer, from decision note and charter through inventory, suppliers, plan and change to the report.
 ---
 
 This worked example shows every record in the [record set](/resources/records/) filled in for one fictional small manufacturer, in the order the records are used. Each record page's filled example is taken from this page, and each record names the same assets, so you can follow one asset from the decision note to the sponsor's report.
@@ -101,7 +102,7 @@ The plan uses the UK NCSC target dates as planning guidance for this UK-based co
 
 ## Option and authority
 
-The supplier names hybrid key establishment for TLS connections to the workspace: X25519MLKEM768, which combines ML-KEM-768 with the classical X25519 exchange and is one of the groups defined in [RFC 10024](/standards/modules-protocols-identity/rfc-10024/). The manufacturer checks that option against [FIPS 203](/standards/post-quantum/fips-203/), which specifies ML-KEM, and, as a UK company, against the UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026), written for system administrators who configure TLS, which recommends hybrid key exchange as an interim measure and also accepts ML-KEM on its own, and records both as the authority. The letter covers connections, not the key wrapping of stored files, which the manufacturer has asked about separately. This example records the supplier's choice; it does not present it as a universal default or an independently validated implementation. NIST posted a planning note on 17 November 2025 identifying an issue in FIPS 203 for future correction, so a real implementation decision also checks the FIPS 203 page for current errata. The UK NCSC timeline supplies migration-planning targets, not an algorithm selection.
+The supplier names hybrid key establishment for TLS connections to the workspace: X25519MLKEM768, which combines ML-KEM-768 with the classical X25519 exchange and is one of the groups defined in [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/). The manufacturer checks that option against [FIPS 203](/standards/post-quantum/fips-203/), which specifies ML-KEM, and, as a UK company, against the UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026), written for system administrators who configure TLS, which recommends hybrid key exchange as an interim measure and also accepts ML-KEM on its own, and records both as the authority. The letter covers connections, not the key wrapping of stored files, which the manufacturer has asked about separately. This example records the supplier's choice; it does not present it as a universal default or an independently validated implementation. NIST posted a planning note on 17 November 2025 identifying an issue in FIPS 203 for future correction, so a real implementation decision also checks the FIPS 203 page for current errata. The UK NCSC timeline supplies migration-planning targets, not an algorithm selection.
 
 The product sensor remains blocked at option selection. The manufacturer does not choose a firmware-signing scheme until it has evidence about a supported signature, the immutable trust anchor, and the production design constraints. Following [Choosing an option](/technology-options/choosing/) and [Firmware and secure boot](/technology-options/firmware-secure-boot/), it records the option as `unknown` and the change as blocked on the change record below, with the design freeze as the plan milestone.
 
@@ -161,7 +162,7 @@ The operations director reported the outcome to the managing director the same d
 
 ## Rejected alternative
 
-The manufacturer considered a separate cryptographic redesign for its office laptops. It instead tracks supported browsers and operating systems through supplier updates, as the NCSC expects for commodity platforms and the handbook's Vendor-managed software route provides, while keeping the bespoke product sensor in the migration plan. If a laptop fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), the manufacturer follows what that section says for its line.
+The manufacturer considered a separate cryptographic redesign for its office laptops. It instead tracks supported browsers and operating systems through supplier updates, as the NCSC expects for commodity platforms and the handbook's Vendor-managed software route provides, while keeping the bespoke product sensor in the migration plan. If a laptop fails the fifth of Decide whether to act's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route), the manufacturer follows what that section says for its line.
 
 ## Sources
 

@@ -1,5 +1,6 @@
 ---
 title: "NIST IR 8545: Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process"
+search_title: "NIST IR 8545: fourth round report, HQC selected"
 sidebar_label: NIST IR 8545 (Round 4 / HQC)
 displayed_sidebar: standardsSidebar
 description: NIST status report concluding the fourth round of the PQC process and selecting HQC as an additional KEM for standardisation.

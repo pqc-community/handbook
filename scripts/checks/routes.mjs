@@ -8,7 +8,7 @@ import {classifyLines, isDividerRow, pipeCells, relativePath, walkMarkdown} from
 import {recordPages} from './records.mjs';
 
 export const ROUTES_DIR = 'docs/routes';
-export const DECIDE_PATH = '/migration-practices/diagnose/';
+export const DECIDE_PATH = '/migration-practices/decide-whether-to-act/';
 export const ROUTE_NAMES = ['Vendor-managed software', 'Long-lived confidentiality', 'Hard-to-change systems'];
 
 // A decision-note table is recognised by these header cells.
@@ -20,7 +20,7 @@ function linkTargets(text) {
 }
 
 const linksDecide = (targets) =>
-  targets.some((target) => target === DECIDE_PATH || /(^|\/)migration-practices\/diagnose(\.md)?\/?$/.test(target));
+  targets.some((target) => target === DECIDE_PATH || /(^|\/)migration-practices\/decide-whether-to-act(\.md)?\/?$/.test(target));
 
 export function findRoutePageViolations(root = '.') {
   const dir = path.join(root, ROUTES_DIR);

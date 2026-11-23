@@ -1,8 +1,9 @@
 ---
 title: Encrypted email and files
+search_title: Post-quantum encrypted email and files
 sidebar_label: Encrypted email and files
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum move looks like for encrypted email and files sent to named recipients, which formats are published, and what to do about messages already sent.
+description: Post-quantum options for encrypted email and files sent to named recipients, which formats are published, and what to do about messages already sent.
 ---
 
 ## What it is
@@ -43,7 +44,7 @@ The email and encryption software suppliers decide what the product supports. Re
 
 - **Messages already sent cannot be recalled.** Copies held by recipients or mail providers stay protected by the old key exchange; record that exposure rather than assuming re-encryption fixes it.
 - **One classical recipient** in a group can mean the message key is also protected classically.
-- **Archives and journalling** keep encrypted mail for years; they follow [Backups, archives and storage](/technology-options/stored-data/).
+- **Archives and journalling** keep encrypted mail for years; they follow [Backups, archives and storage](/technology-options/backups-archives/).
 
 ## Record it fills
 
@@ -53,7 +54,7 @@ The email and encryption software suppliers decide what the product supports. Re
 | [Vendor response log](/resources/records/vendor-response-log/) | The software suppliers' answers |
 | [Migration plan](/resources/records/migration-plan/) | A key-establishment line |
 | [Change record](/resources/records/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
-| [Review log](/resources/records/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/stored-data/) describes |
+| [Review log](/resources/records/review-log/) | For messages and files already sent, an item recording the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/backups-archives/) describes |
 
 ## Example
 
@@ -71,7 +72,7 @@ A decision-ready record names the email client and gateway releases, the mechani
 
 ## Related pages
 
-- [Backups, archives and storage](/technology-options/stored-data/)
+- [Backups, archives and storage](/technology-options/backups-archives/)
 - [Documents and email signing](/technology-options/document-signing/)
 - [What a KEM is](/learn/explainers/kem/)
 - [Choosing an option](/technology-options/choosing/)

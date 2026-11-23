@@ -1,7 +1,7 @@
 ---
 title: Coordinating a migration across the organisation
 sidebar_label: Organisation-wide
-description: The full path. Run the programme, send each asset to its track, order the work across tracks, and review and report to the sponsor.
+description: "The full path for a post-quantum migration: run the programme, send each asset to its track, order the work across tracks, and report to the sponsor."
 displayed_sidebar: routesSidebar
 ---
 
@@ -9,7 +9,7 @@ This route is the full path through a post-quantum migration. It runs the progra
 
 ## Who it is for
 
-This route is for any organisation with at least one asset whose path is full under the [path table](/migration-practices/diagnose/#do-this) on Decide whether to act. The migration lead usually follows it for the executive sponsor.
+This route is for any organisation with at least one asset whose path is full under the [path table](/migration-practices/decide-whether-to-act/#do-this) on Decide whether to act. The migration lead usually follows it for the executive sponsor.
 
 Each role supplies one input to the plan:
 
@@ -25,10 +25,10 @@ Each role supplies one input to the plan:
 
 ## Steps
 
-1. [Decide whether to act](/migration-practices/diagnose/). Record the path and route for each asset on the [decision note](/resources/records/decision-note/). The first rows go on the [inventory record](/resources/records/inventory/).
+1. [Decide whether to act](/migration-practices/decide-whether-to-act/). Record the path and route for each asset on the [decision note](/resources/records/decision-note/). The first rows go on the [inventory record](/resources/records/inventory/).
 2. [Set up the programme](/migration-practices/programme/). Record the roles, scope, first budget line and reporting on the [programme charter](/resources/records/programme-charter/).
 3. [Inventory the cryptography](/migration-practices/inventory/). Record one row per asset on the inventory record, with unknowns marked. When the inventory finds an asset that raises the question again, answer the four questions for it on the decision note.
-4. **Send each asset to its track.** Each asset follows the route in its [decision note](/resources/records/decision-note/) `route` cell, which [Decide whether to act](/migration-practices/diagnose/), step 3, sets:
+4. **Send each asset to its track.** Each asset follows the route in its [decision note](/resources/records/decision-note/) `route` cell, which [Decide whether to act](/migration-practices/decide-whether-to-act/), step 3, sets:
    - [Long-lived confidentiality](/routes/long-lived-confidentiality/);
    - [Hard-to-change systems](/routes/hard-to-change-systems/);
    - [Vendor-managed software](/routes/vendor-managed-software/).
@@ -49,9 +49,9 @@ ETSI's [TR 104 016](/standards/migration-guides/etsi-tr-104-016/) (October 2024)
 
 ## When to leave
 
-- **At a later review, every asset's path is short again** under the [path table](/migration-practices/diagnose/#do-this), so the organisation is on the short path; follow [Vendor-managed software](/routes/vendor-managed-software/).
+- **At a later review, every asset's path is short again** under the [path table](/migration-practices/decide-whether-to-act/#do-this), so the organisation is on the short path; follow [Vendor-managed software](/routes/vendor-managed-software/).
 - **An asset's answers change.** Re-answer the four questions on the decision note; the asset moves to the track its new answers give.
-- **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
+- **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/decide-whether-to-act/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
 
 ## Worked example
 

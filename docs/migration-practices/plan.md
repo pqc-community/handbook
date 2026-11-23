@@ -1,7 +1,8 @@
 ---
 title: Plan the migration
+search_title: Plan a post-quantum migration
 sidebar_label: Plan the migration
-description: Record which authority timelines apply to you, set milestones per asset and job, and track four separate dates — supplier release, testing, production deployment, and end of support.
+description: Record which authority timelines apply, set milestones per asset and job, and track release, testing, deployment and end-of-support dates separately.
 displayed_sidebar: migrationPracticesSidebar
 ---
 
@@ -19,13 +20,13 @@ The migration plan has an order and you need to turn it into dated, owned milest
 ## Do this
 
 1. **Work out which timelines apply, and to whom.** A date binds or guides only the audience its authority names. Examples include:
-   - the UK NCSC's [2028, 2031 and 2035 milestones](/standards/migration-guides/uk-ncsc-pqc-guidance/) for UK organisations;
+   - the UK NCSC's [2028, 2031 and 2035 milestones](/standards/migration-guides/ncsc-migration-timelines/) for UK organisations;
    - the EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (2026, 2030 and 2035 milestones) for Member States and the entities that follow it;
    - the Australian Signals Directorate's [planning guidance](/standards/migration-guides/asd-planning/) (end-2026, end-2028 and end-2030 milestones) for Australian organisations;
-   - [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/) for US federal agencies, and, through a procurement rule the order directs the Federal Acquisition Regulatory Council to propose, for covered federal contractors;
+   - [EO 14412](/standards/us-government-requirements/eo-14412/) and [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/) for US federal agencies, and, through a procurement rule the order directs the Federal Acquisition Regulatory Council to propose, for covered federal contractors;
    - NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) for US national security systems.
 
-   [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) schedules quantum-vulnerable public-key algorithms for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines. Record the authority and audience beside every date; see [Why migration timelines differ](/learn/explainers/timelines/).
+   [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) schedules quantum-vulnerable public-key algorithms for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines. Record the authority and audience beside every date; see [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 2. **Set a milestone for each asset and job** on the rows [Decide what to migrate first](/migration-practices/priority/) has ordered. Keep one row per asset and job; combine jobs in one row only when they share every date, owner, and milestone. Highest-priority lines get the earliest applicable milestone. Lines that follow supplier updates get a tracking milestone, not a bespoke project.
 3. **Track four separate dates on each row**, because a supplier's release is not your deployment:
    - **supplier release** — when the supplier ships post-quantum support;
@@ -35,7 +36,7 @@ The migration plan has an order and you need to turn it into dated, owned milest
 4. **Record dependencies that can move a date**: a supplier release, a certificate authority, a hardware refresh, a contract renewal, or a product design freeze. A design freeze is a hard deadline: record its date and escalate when an option is still missing as it approaches.
 5. **Re-plan when a date moves.** Replace the superseded date, note why, and check whether a later milestone is now at risk.
 
-The NCSC's [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028 that identifies any requirement to migrate long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. The timelines are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations. NIST IR 8547, addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptographically relevant quantum computer exists, should be designed to require quantum-resistant signatures on their executable code.
+The NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) say that your plan will move as your suppliers evolve theirs. They ask organisations to build an initial migration plan by 2028 that identifies any requirement to migrate long-lived hardware roots of trust, and to carry out their early, highest-priority migration activities by 2031. The timelines are primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, though the NCSC says the core timelines are relevant to all organisations. NIST IR 8547, addressed to US federal agencies, technology providers, standards organisations, and validation laboratories, advises that devices unable to update signature verification in the field, if expected to remain in service once a cryptographically relevant quantum computer exists, should be designed to require quantum-resistant signatures on their executable code.
 
 ## Keep this evidence
 
@@ -64,6 +65,6 @@ The plan records which dates apply; deciding whether a regulation or contract bi
 ## Related pages
 
 - [Migration plan](/resources/records/migration-plan/)
-- [Why migration timelines differ](/learn/explainers/timelines/)
+- [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Work with suppliers](/migration-practices/suppliers/)
 - [Hard-to-change systems](/routes/hard-to-change-systems/)

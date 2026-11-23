@@ -1,7 +1,7 @@
 ---
 title: "When to start: Mosca's inequality"
 sidebar_label: "When to start: Mosca's inequality"
-description: How data confidentiality periods, migration time, and the uncertain arrival of a quantum computer combine into Mosca's inequality, with a worked example and its limits.
+description: How data confidentiality periods, migration time and the uncertain arrival of a quantum computer combine in Mosca's inequality, with a worked example.
 displayed_sidebar: learnSidebar
 ---
 

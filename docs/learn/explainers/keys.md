@@ -1,7 +1,8 @@
 ---
 title: What the keys actually do
+search_title: What public and private keys actually do
 sidebar_label: What the keys actually do
-description: Which job the public key does and which job the private key does in Diffie–Hellman, KEMs, RSA key transport, and digital signatures, and why a valid signature does not identify its signer.
+description: Which job each key does in Diffie–Hellman, KEMs, RSA key transport and digital signatures, and why a valid signature does not identify its signer.
 displayed_sidebar: learnSidebar
 ---
 

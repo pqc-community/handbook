@@ -1,7 +1,8 @@
 ---
 title: The quantum threat
+search_title: The quantum threat to public-key cryptography
 sidebar_label: 3. Quantum threat
-description: What a cryptographically relevant quantum computer would break, why symmetric cryptography is affected far less, how harvest-now, decrypt-later works, and what remains uncertain.
+description: What a cryptographically relevant quantum computer would break, why symmetric cryptography is affected far less, and how harvest-now, decrypt-later works.
 displayed_sidebar: learnSidebar
 ---
 

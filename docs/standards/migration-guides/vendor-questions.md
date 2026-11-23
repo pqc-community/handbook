@@ -1,5 +1,6 @@
 ---
 title: "ASD's ACSC, CISA and NSA: Post-Quantum Questions to Ask Your Vendors"
+search_title: "PQC questions to ask vendors: ACSC, CISA, NSA"
 sidebar_label: Vendor questions
 displayed_sidebar: standardsSidebar
 description: Joint Australian and US guidance giving buyers practical questions to assess a vendor's post-quantum cryptography readiness.

@@ -1,8 +1,9 @@
 ---
 title: "FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard"
+search_title: "FIPS 203: ML-KEM key encapsulation standard"
 sidebar_label: FIPS 203 (ML-KEM)
 displayed_sidebar: standardsSidebar
-description: NIST standard specifying ML-KEM, the only NIST-approved post-quantum public-key key-establishment scheme, with its dates and related guidance.
+description: NIST standard specifying ML-KEM (formerly CRYSTALS-Kyber), the only NIST-approved post-quantum key-establishment scheme, with its dates and related guidance.
 ---
 
 ## What it covers
@@ -31,7 +32,7 @@ FIPS 203 is issued by the National Institute of Standards and Technology (NIST).
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/), finalised in October 2026, states in §4.1.2 that ML-KEM is the only approved post-quantum key-establishment scheme based on public-key cryptography, and that NIST recommends ML-KEM-768 as the default parameter set, with other parameter sets usable where that is impractical or higher security is required. IR 8547 also notes that HQC was selected as an alternative ([NIST IR 8545](/standards/post-quantum/nist-ir-8545/)) and will become approved once its FIPS is published. The quantum-vulnerable key-establishment schemes in [SP 800-56A](/standards/classical-public-key/sp-800-56a/) and [SP 800-56B](/standards/classical-public-key/sp-800-56b/) are scheduled for deprecation after 2030 and disallowance after 2035.
 
-[NIST SP 800-227](/standards/post-quantum/sp-800-227/) gives recommendations for using KEMs and for combining ML-KEM with a classical secret in hybrid key establishment. In protocols, [RFC 10024](/standards/modules-protocols-identity/rfc-10024/) defines hybrid ML-KEM groups for TLS 1.3, while [RFC 9935](https://www.rfc-editor.org/info/rfc9935) and [RFC 9936](https://www.rfc-editor.org/info/rfc9936) (both March 2026) specify ML-KEM in X.509 certificates and in CMS. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-KEM-1024.
+[NIST SP 800-227](/standards/post-quantum/sp-800-227/) gives recommendations for using KEMs and for combining ML-KEM with a classical secret in hybrid key establishment. In protocols, [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/) defines hybrid ML-KEM groups for TLS 1.3, while [RFC 9935](https://www.rfc-editor.org/info/rfc9935) and [RFC 9936](https://www.rfc-editor.org/info/rfc9936) (both March 2026) specify ML-KEM in X.509 certificates and in CMS. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-KEM-1024.
 
 Digital signatures are a separate migration with different drivers, covered by [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/). For the handbook's decision path, see [Technology options](/technology-options/).
 

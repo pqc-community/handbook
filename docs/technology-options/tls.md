@@ -1,8 +1,9 @@
 ---
 title: TLS and web services
+search_title: Post-quantum TLS and web services
 sidebar_label: TLS and web services
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum TLS deployment looks like for web servers, APIs, load balancers and browsers, which mechanisms are published, and the traps that leave connections classical.
+description: What a good post-quantum TLS deployment looks like for web servers, APIs, load balancers and browsers, which mechanisms are published, and the traps.
 ---
 
 ## What it is
@@ -18,11 +19,11 @@ Status as checked on 21 November 2026.
 
 | Part | Mechanism | Status |
 | --- | --- | --- |
-| Key exchange, hybrid | X25519MLKEM768, SecP256r1MLKEM768, SecP384r1MLKEM1024, defined in [RFC 10024](/standards/modules-protocols-identity/rfc-10024/) | Proposed Standard, August 2026 |
+| Key exchange, hybrid | X25519MLKEM768, SecP256r1MLKEM768, SecP384r1MLKEM1024, defined in [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/) | Proposed Standard, August 2026 |
 | Key exchange, ML-KEM alone | draft-ietf-tls-mlkem | Internet-Draft in the RFC Editor queue, intended as Informational |
 | Server authentication | Post-quantum certificates in TLS | Not yet standardised for TLS |
 
-The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (version 1.2, 15 October 2026), written for system administrators who configure TLS, recommends hybrid key exchange as an interim measure and considers ML-KEM on its own acceptable. It notes that the IETF has so far standardised post-quantum algorithms for key exchange in TLS but not for authentication, and that organisations running private PKIs may be able to adopt post-quantum authentication sooner than services relying on the public Web PKI. For US federal systems, NIST has announced that it will revise its TLS guidelines, [SP 800-52](/standards/modules-protocols-identity/sp-800-52/), to add support for post-quantum algorithms (planning note of 19 November 2026). Which form to use follows the hybrid rule on [Choosing an option](/technology-options/choosing/), and drafts follow its protocol-mechanisms rule.
+The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (version 1.2, 15 October 2026), written for system administrators who configure TLS, recommends hybrid key exchange as an interim measure and considers ML-KEM on its own acceptable. It notes that the IETF has so far standardised post-quantum algorithms for key exchange in TLS but not for authentication, and that organisations running private PKIs may be able to adopt post-quantum authentication sooner than services relying on the public Web PKI. For US federal systems, NIST has announced that it will revise its TLS guidelines, [SP 800-52](/standards/modules-protocols-certificates/sp-800-52/), to add support for post-quantum algorithms (planning note of 19 November 2026). Which form to use follows the hybrid rule on [Choosing an option](/technology-options/choosing/), and drafts follow its protocol-mechanisms rule.
 
 ## Who usually chooses
 
@@ -63,7 +64,7 @@ The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-prote
 
 An insufficient record is "TLS is configured for hybrid key exchange."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 21 October 2026, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/stored-data/).
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections to the hosted design workspace in Workspace 4.2. The staging pilot passed on 21 October 2026, checked from the test client's handshake log and confirmed by the supplier's connection log; production rollout is pending, so the change is not closed. The archive's stored files are a separate question, covered on [Backups, archives and storage](/technology-options/backups-archives/).
 
 ## Sources
 

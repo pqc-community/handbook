@@ -1,8 +1,9 @@
 ---
 title: "NSA: Commercial National Security Algorithm Suite 2.0 (CNSA 2.0)"
+search_title: "NSA CNSA 2.0: algorithms and deadlines"
 sidebar_label: NSA CNSA 2.0
 displayed_sidebar: standardsSidebar
-description: The NSA's CNSA 2.0 algorithm suite and dates for US National Security Systems, as set out in the NSA's October 2026 FAQ, including its position on hybrids.
+description: The NSA's CNSA 2.0 algorithm suite for US National Security Systems, with its 2030 and 2031 dates and position on hybrids, from the October 2026 FAQ.
 ---
 
 ## What it covers
@@ -29,11 +30,11 @@ The NSA states that the FAQ clarifies CNSA 2.0 requirements for NSS and gives re
 
 ## Relationship with other standards
 
-CNSA 2.0 selects specific parameter sets from NIST standards. For general-purpose use the FAQ names AES with 256-bit keys ([FIPS 197](/standards/symmetric-and-primitives/fips-197/)), ML-KEM-1024 for key establishment ([FIPS 203](/standards/post-quantum/fips-203/)), ML-DSA-87 for digital signatures in any use case, including firmware and software signing ([FIPS 204](/standards/post-quantum/fips-204/)), and SHA-384 or SHA-512 ([FIPS 180-4](/standards/symmetric-and-primitives/fips-180-4/)). For signing firmware and software, the FAQ also approves the stateful hash-based schemes LMS and XMSS from [NIST SP 800-208](/standards/post-quantum/sp-800-208/). These choices are narrower than the options NIST standards allow: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/), for example, names ML-KEM-768 as its recommended default.
+CNSA 2.0 selects specific parameter sets from NIST standards. For general-purpose use the FAQ names AES with 256-bit keys ([FIPS 197](/standards/symmetric-and-hash/fips-197/)), ML-KEM-1024 for key establishment ([FIPS 203](/standards/post-quantum/fips-203/)), ML-DSA-87 for digital signatures in any use case, including firmware and software signing ([FIPS 204](/standards/post-quantum/fips-204/)), and SHA-384 or SHA-512 ([FIPS 180-4](/standards/symmetric-and-hash/fips-180-4/)). For signing firmware and software, the FAQ also approves the stateful hash-based schemes LMS and XMSS from [NIST SP 800-208](/standards/post-quantum/sp-800-208/). These choices are narrower than the options NIST standards allow: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/), for example, names ML-KEM-768 as its recommended default.
 
 The FAQ states that the NSA has confidence in CNSA 2.0 and will not require NSS developers to use hybrid certified products for security purposes. It acknowledges that product availability and interoperability requirements may lead to hybrid solutions in specific cases, and that some protocols may need hybrid-like constructions to accommodate the sizes of ML-KEM-1024 and ML-DSA-87. Other authorities take different positions on hybrids; see the [comparison of national algorithm positions](/standards/national-algorithm-positions/) and [Hybrid cryptography](/learn/hybrid/).
 
-The dates sit within the wider US framework set by [NSM-10](/standards/us-federal-directives/nsm-10/), which sets a 2035 goal for mitigating as much quantum risk as feasible. The FAQ attributes the dates to CNSSP 15; this summary records them only as the FAQ states them and does not summarise CNSSP 15 itself.
+The dates sit within the wider US framework set by [NSM-10](/standards/us-government-requirements/nsm-10/), which sets a 2035 goal for mitigating as much quantum risk as feasible. The FAQ attributes the dates to CNSSP 15; this summary records them only as the FAQ states them and does not summarise CNSSP 15 itself.
 
 ## Sources
 
@@ -43,7 +44,7 @@ The dates sit within the wider US framework set by [NSM-10](/standards/us-federa
 ## Related pages
 
 - [National algorithm positions](/standards/national-algorithm-positions/)
-- [US government requirements](/standards/us-federal-directives/)
+- [US government requirements](/standards/us-government-requirements/)
 - [Hybrid cryptography](/learn/hybrid/)
 - [Choosing a post-quantum option](/technology-options/choosing/)
 - [Hash-based signatures](/learn/explainers/hash-based-signatures/)

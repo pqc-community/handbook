@@ -8,6 +8,11 @@ const config: Config = {
   tagline:
     'Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration',
   favicon: 'img/favicon.svg',
+  // PNG and Apple touch icons for browsers and platforms that do not use the SVG favicon.
+  headTags: [
+    {tagName: 'link', attributes: {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32.png'}},
+    {tagName: 'link', attributes: {rel: 'apple-touch-icon', sizes: '180x180', href: '/img/apple-touch-icon.png'}},
+  ],
   future: {v4: true},
   url: 'https://pqchandbook.com',
   baseUrl: '/',
@@ -20,7 +25,8 @@ const config: Config = {
     mermaid: true,
     hooks: {onBrokenMarkdownLinks: 'throw'},
   },
-  i18n: {defaultLocale: 'en', locales: ['en']},
+  // British English: sets <html lang>, hreflang and og:locale; the locale key stays 'en' for search.
+  i18n: {defaultLocale: 'en', locales: ['en'], localeConfigs: {en: {htmlLang: 'en-GB'}}},
   presets: [
     [
       'classic',
@@ -28,7 +34,8 @@ const config: Config = {
         docs: {routeBasePath: '/', sidebarPath: './sidebars.ts', rehypePlugins: [rehypeTableLabels]},
         blog: false,
         theme: {customCss: './src/css/custom.css'},
-        sitemap: {changefreq: 'weekly', priority: 0.5, filename: 'sitemap.xml'},
+        // Google ignores changefreq and priority. The search page is not indexed.
+        sitemap: {changefreq: null, priority: null, ignorePatterns: ['/search/**'], filename: 'sitemap.xml'},
       } satisfies Preset.Options,
     ],
   ],
@@ -49,7 +56,16 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    image: 'img/social-card.svg',
+    // Social platforms do not render SVG previews; social-card.svg is the source for this PNG.
+    image: 'img/social-card.png',
+    metadata: [
+      {property: 'og:site_name', content: 'PQC Handbook'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:image:width', content: '1200'},
+      {property: 'og:image:height', content: '630'},
+      {property: 'og:image:alt', content: 'PQC Handbook: practical guidance for a post-quantum cryptography migration'},
+      {name: 'twitter:image:alt', content: 'PQC Handbook: practical guidance for a post-quantum cryptography migration'},
+    ],
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
       title: 'PQC Handbook',
@@ -71,7 +87,7 @@ const config: Config = {
           title: 'Routes',
           items: [
             {label: 'All routes', to: '/routes/'},
-            {label: 'Decide whether to act', to: '/migration-practices/diagnose/'},
+            {label: 'Decide whether to act', to: '/migration-practices/decide-whether-to-act/'},
             {label: 'Short path: vendor-managed', to: '/routes/vendor-managed-software/'},
             {label: 'Full path: organisation-wide', to: '/routes/organisation-wide/'},
             {label: 'Long-lived confidentiality', to: '/routes/long-lived-confidentiality/'},

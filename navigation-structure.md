@@ -26,6 +26,19 @@ Docs are served at the site root rather than under `/docs/`:
 - `docs.routeBasePath`: `/`
 - `trailingSlash`: `true`
 
+URL convention (a page's URL comes from its file path under `docs/`; do not set `slug` in front matter):
+
+- **Characters and length**: lowercase letters, digits, and single hyphens. At most three segments (section, group, page), each at most 32 characters.
+- **Pages**: a slug uses the key words of the page's `title`, or the handbook's established term for the activity (for example `inventory`, `priority`, or `subsequent-review`).
+- **Standards**:
+  - A summary of a document with an identifier uses that identifier as it is commonly cited (`fips-203`, `sp-800-227`, `rfc-9881`), with the issuer as a prefix where the identifier alone is ambiguous (`nist-ir-8547`, `nist-cswp-39`).
+  - A document without an identifier uses its issuer and a short name (`ncsc-migration-timelines`, `cfdir-quantum-readiness`).
+- **Groups**: a group's slug matches its title (`modules-protocols-certificates`, `us-government-requirements`, `symmetric-and-hash`).
+- **No clashes**: no two pages in the same section share a final segment, so a reader cannot confuse them.
+- **Enforced**: `npm test` and `npm run check` fail on a slug that breaks the character, length, or depth rules, on `slug` front matter, or on a shared final segment within a section.
+
+URL stability: the site is in pre-release and has not been submitted to search engines, so URLs may change freely, without redirects, to meet this convention. Once the site is submitted, change a published URL only together with a redirect from the old one, and record the submission date here.
+
 Linking guidance:
 
 - In `docusaurus.config.ts`, React pages (`src/pages/`), and cross-section references, use canonical root paths with trailing slashes (for example, `/migration-practices/inventory/` or `/standards/post-quantum/fips-203/`), never `/docs/...`.
@@ -40,7 +53,7 @@ Homepage Path Chooser (/)
   └── Learn the Basics (/learn/*)  ──► Plain-English lessons + optional Explainers
 ```
 
-- **Path Chooser (`/`) and Routes (`/routes/*`)**: Route visitors into an ordered sequence of reference pages without duplicating those pages into separate silos. `/routes/` shows two paths and three asset tracks. The short path is *vendor-managed software*. The full path is *organisation-wide*, which runs the programme and sends each asset to its track: *vendor-managed software* for commodity assets, *long-lived confidentiality* (driven by the data confidentiality period), or *hard-to-change systems* (driven by change lead time, relying parties, and non-updatable verifiers). Each track page carries its own deadlines and technology cards. [Decide whether to act](/migration-practices/diagnose/) owns every rule that chooses a path or route, including the vendor-managed route's five conditions and what to do when an answer is unknown; route pages link to those rules rather than restating them. Each route page says who it is for, in terms of those answers, its ordered steps (each a practice and the record it fills), its output records, when to leave and where to go, and the worked example that shows it. `npm test` and `npm run check` fail if a route page or the overview does not link Decide whether to act and a record page, or if a decision-note `route` value is not one of the three track names, optionally followed by a bracketed qualifier.
+- **Path Chooser (`/`) and Routes (`/routes/*`)**: Route visitors into an ordered sequence of reference pages without duplicating those pages into separate silos. `/routes/` shows two paths and three asset tracks. The short path is *vendor-managed software*. The full path is *organisation-wide*, which runs the programme and sends each asset to its track: *vendor-managed software* for commodity assets, *long-lived confidentiality* (driven by the data confidentiality period), or *hard-to-change systems* (driven by change lead time, relying parties, and non-updatable verifiers). Each track page carries its own deadlines and technology cards. [Decide whether to act](/migration-practices/decide-whether-to-act/) owns every rule that chooses a path or route, including the vendor-managed route's five conditions and what to do when an answer is unknown; route pages link to those rules rather than restating them. Each route page says who it is for, in terms of those answers, its ordered steps (each a practice and the record it fills), its output records, when to leave and where to go, and the worked example that shows it. `npm test` and `npm run check` fail if a route page or the overview does not link Decide whether to act and a record page, or if a decision-note `route` value is not one of the three track names, optionally followed by a bracketed qualifier.
 - **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding before planning a migration. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to the situation routes, the worked example, and `/resources/reference/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
@@ -74,7 +87,7 @@ Homepage Path Chooser (/)
 /learn/explainers/tls/
 /learn/explainers/research-to-deployment/
 /learn/explainers/quantum-safe-claims/
-/learn/explainers/timelines/
+/learn/explainers/why-timelines-differ/
 
 /routes/
 /routes/vendor-managed-software/
@@ -96,48 +109,48 @@ Homepage Path Chooser (/)
 /standards/transition-and-key-management/nist-ir-8547/
 /standards/transition-and-key-management/sp-800-131a/
 /standards/transition-and-key-management/sp-800-57-part-1/
-/standards/transition-and-key-management/cswp-39/
+/standards/transition-and-key-management/nist-cswp-39/
 /standards/classical-public-key/
 /standards/classical-public-key/fips-186-5/
 /standards/classical-public-key/sp-800-186/
 /standards/classical-public-key/sp-800-56a/
 /standards/classical-public-key/sp-800-56b/
-/standards/symmetric-and-primitives/
-/standards/symmetric-and-primitives/fips-197/
-/standards/symmetric-and-primitives/sp-800-232/
-/standards/symmetric-and-primitives/fips-180-4/
-/standards/symmetric-and-primitives/fips-202/
-/standards/symmetric-and-primitives/sp-800-185/
-/standards/symmetric-and-primitives/fips-198-1/
-/standards/symmetric-and-primitives/sp-800-56c/
-/standards/symmetric-and-primitives/sp-800-108/
-/standards/symmetric-and-primitives/sp-800-132/
-/standards/symmetric-and-primitives/sp-800-90a/
-/standards/modules-protocols-identity/
-/standards/modules-protocols-identity/fips-140-3/
-/standards/modules-protocols-identity/sp-800-52/
-/standards/modules-protocols-identity/rfc-10024/
-/standards/modules-protocols-identity/rfc-9881/
-/standards/modules-protocols-identity/rfc-10073/
-/standards/modules-protocols-identity/fips-201-3/
-/standards/us-federal-directives/
-/standards/us-federal-directives/qccpa/
-/standards/us-federal-directives/nsm-10/
-/standards/us-federal-directives/eo-14306/
-/standards/us-federal-directives/eo-14412/
-/standards/us-federal-directives/omb-m-26-15/
-/standards/us-federal-directives/cisa-pqc-product-categories/
+/standards/symmetric-and-hash/
+/standards/symmetric-and-hash/fips-197/
+/standards/symmetric-and-hash/sp-800-232/
+/standards/symmetric-and-hash/fips-180-4/
+/standards/symmetric-and-hash/fips-202/
+/standards/symmetric-and-hash/sp-800-185/
+/standards/symmetric-and-hash/fips-198-1/
+/standards/symmetric-and-hash/sp-800-56c/
+/standards/symmetric-and-hash/sp-800-108/
+/standards/symmetric-and-hash/sp-800-132/
+/standards/symmetric-and-hash/sp-800-90a/
+/standards/modules-protocols-certificates/
+/standards/modules-protocols-certificates/fips-140-3/
+/standards/modules-protocols-certificates/sp-800-52/
+/standards/modules-protocols-certificates/rfc-10024/
+/standards/modules-protocols-certificates/rfc-9881/
+/standards/modules-protocols-certificates/rfc-10073/
+/standards/modules-protocols-certificates/fips-201-3/
+/standards/us-government-requirements/
+/standards/us-government-requirements/qccpa/
+/standards/us-government-requirements/nsm-10/
+/standards/us-government-requirements/eo-14306/
+/standards/us-government-requirements/eo-14412/
+/standards/us-government-requirements/omb-m-26-15/
+/standards/us-government-requirements/cisa-pqc-product-categories/
 /standards/national-algorithm-positions/
 /standards/national-algorithm-positions/cnsa-2-0/
 /standards/national-algorithm-positions/bsi-tr-02102-1/
 /standards/national-algorithm-positions/anssi-pqc-position/
 /standards/migration-guides/
 /standards/migration-guides/dutch-pqc-handbook/
-/standards/migration-guides/uk-ncsc-pqc-guidance/
+/standards/migration-guides/ncsc-migration-timelines/
 /standards/migration-guides/eu-nis-roadmap/
 /standards/migration-guides/asd-planning/
 /standards/migration-guides/canada-itsm-40-001/
-/standards/migration-guides/canadian-cfdir-guide/
+/standards/migration-guides/cfdir-quantum-readiness/
 /standards/migration-guides/etsi-tr-103-619/
 /standards/migration-guides/etsi-tr-104-016/
 /standards/migration-guides/pqcc-roadmap/
@@ -146,7 +159,7 @@ Homepage Path Chooser (/)
 /standards/migration-guides/vendor-questions/
 
 /migration-practices/
-/migration-practices/diagnose/
+/migration-practices/decide-whether-to-act/
 /migration-practices/commodity-software/
 /migration-practices/programme/
 /migration-practices/inventory/
@@ -172,7 +185,7 @@ Homepage Path Chooser (/)
 /technology-options/firmware-secure-boot/
 /technology-options/document-signing/
 /technology-options/encrypted-files/
-/technology-options/stored-data/
+/technology-options/backups-archives/
 /technology-options/hsm-kms/
 /technology-options/libraries-bespoke-code/
 /technology-options/cloud-saas/

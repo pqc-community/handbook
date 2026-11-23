@@ -1,7 +1,8 @@
 ---
 title: Timelines
+search_title: "Post-quantum migration timelines: reading a date"
 sidebar_label: 9. Timelines
-description: How to read a post-quantum migration date — who set it, for whom, for which cryptographic job, and for which milestone — without treating any one authority's date as universal.
+description: "How to read a post-quantum migration date: who set it, for whom, for which job and which milestone, without treating one authority's date as universal."
 displayed_sidebar: learnSidebar
 ---
 
@@ -10,7 +11,7 @@ Post-quantum guidance is full of dates: 2028, 2030, 2031, 2035. They are easy to
 ## Four questions for any date
 
 1. **Who set it?** A standards body can set when algorithms are deprecated or disallowed *under its standards*. A government can direct its own agencies. A national cyber authority can recommend targets for organisations in its stated audience. A regional body can coordinate Member States. These instruments differ in force and scope.
-2. **For whom?** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §4) sets 2030 for deprecating and 2035 for disallowing quantum-vulnerable public-key algorithms under NIST standards and guidelines. The same report records that US federal high-value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030 and signatures by 31 December 2031, under [Executive Order 14412](/standards/us-federal-directives/eo-14412/) and [OMB Memorandum M-26-15](/standards/us-federal-directives/omb-m-26-15/). The first is a standards horizon; the second binds named federal systems. Neither is a deadline for every organisation.
+2. **For whom?** [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §4) sets 2030 for deprecating and 2035 for disallowing quantum-vulnerable public-key algorithms under NIST standards and guidelines. The same report records that US federal high-value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030 and signatures by 31 December 2031, under [Executive Order 14412](/standards/us-government-requirements/eo-14412/) and [OMB Memorandum M-26-15](/standards/us-government-requirements/omb-m-26-15/). The first is a standards horizon; the second binds named federal systems. Neither is a deadline for every organisation.
 3. **For which job?** Key-establishment and signature dates can differ, as the US federal milestones show.
 4. **Which milestone?** "Complete discovery", "build a plan", "carry out highest-priority activities", "complete migration", "deprecate", and "disallow" are different events. The verb matters as much as the year.
 
@@ -30,7 +31,7 @@ NIST IR 8547 (§4) reflects the first clock directly: systems that protect data 
 
 Meeting a published target does not mean the risk has gone. A date is an authority's planning judgement for its audience. Your own data lifetimes, supplier release dates, and device service lives can make an earlier date necessary — or show that a later one is defensible for low-risk systems. Record the authority and its date alongside your own reasoning.
 
-The [timeline comparison](/learn/explainers/timelines/) sets NIST, US federal, UK, EU, and Australian dates side by side. For recording an applicable timeline against a system, see [Decide what to migrate first](/migration-practices/priority/).
+The [timeline comparison](/learn/explainers/why-timelines-differ/) sets NIST, US federal, UK, EU, and Australian dates side by side. For recording an applicable timeline against a system, see [Decide what to migrate first](/migration-practices/priority/).
 
 ## Check your understanding
 
@@ -49,5 +50,5 @@ Continue with [Crypto-agility](/learn/crypto-agility/).
 ## Related pages
 
 - [Learn the basics](/learn/)
-- [Why migration timelines differ](/learn/explainers/timelines/)
+- [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Decide what to migrate first](/migration-practices/priority/)

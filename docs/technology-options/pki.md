@@ -1,8 +1,9 @@
 ---
 title: PKI and certificates
+search_title: Post-quantum PKI and certificates
 sidebar_label: PKI and certificates
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum move looks like for certification authorities and the certificates they issue, the published X.509 formats, the order in which parties move, and the traps.
+description: What a good post-quantum move looks like for certification authorities and certificates, the published X.509 formats, the order parties move in, and the traps.
 ---
 
 ## What it is
@@ -15,13 +16,13 @@ Status as checked on 21 November 2026. All are Proposed Standards.
 
 | Certificate contents | Specification | Published |
 | --- | --- | --- |
-| [ML-DSA](/resources/reference/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) keys and signatures | [RFC 9881](/standards/modules-protocols-identity/rfc-9881/) | October 2025 |
-| [Composite](/resources/reference/glossary/#composite-signature) ML-DSA with a classical algorithm | [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) | November 2026 |
+| [ML-DSA](/resources/reference/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) keys and signatures | [RFC 9881](/standards/modules-protocols-certificates/rfc-9881/) | October 2025 |
+| [Composite](/resources/reference/glossary/#composite-signature) ML-DSA with a classical algorithm | [RFC 10073](/standards/modules-protocols-certificates/rfc-10073/) | November 2026 |
 | SLH-DSA keys and signatures | [RFC 9909](https://www.rfc-editor.org/info/rfc9909) | December 2025 |
 | HSS and XMSS hash-based signatures | [RFC 9802](https://www.rfc-editor.org/info/rfc9802) | June 2025 |
 | ML-KEM keys, for certificates used in key establishment | [RFC 9935](https://www.rfc-editor.org/info/rfc9935) | March 2026 |
 
-NIST IR 8547, written for US federal agencies and technology providers, among others, says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
+NIST IR 8547, written for US federal agencies and technology providers, among others, says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
 
 ## Who usually chooses
 

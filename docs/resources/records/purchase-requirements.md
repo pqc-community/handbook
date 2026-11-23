@@ -1,7 +1,8 @@
 ---
 title: Purchase requirements record
+search_title: Post-quantum purchase requirements template
 sidebar_label: Purchase requirements
-description: One row per purchase or renewal, job, and candidate supplier, with the post-quantum requirement asked for before signing, the supplier's commitment, the evidence due, and whether the requirement was met.
+description: "One row per purchase or renewal, job and supplier: the post-quantum requirement asked for before signing, the commitment, evidence due and whether it was met."
 displayed_sidebar: resourcesSidebar
 ---
 
@@ -35,7 +36,7 @@ From [Protect this first](/resources/examples/protect-this-first/). The supplier
 
 Download a blank CSV: [purchase-requirements.csv](/downloads/purchase-requirements.csv).
 
-Be strictest where the product cannot change later: for a verifier that cannot be updated, the requirement is a condition of selection, not a request. CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), addressed to organisations generally with specific direction for US federal civilian agencies, shows the categories in which products supporting post-quantum standards are widely available, which helps judge where a requirement is realistic today. CISA notes that most of those categories support post-quantum key establishment rather than signatures, so the list says little about whether a signature requirement, such as one for a boot verifier, is realistic.
+Be strictest where the product cannot change later: for a verifier that cannot be updated, the requirement is a condition of selection, not a request. CISA's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026), addressed to organisations generally with specific direction for US federal civilian agencies, shows the categories in which products supporting post-quantum standards are widely available, which helps judge where a requirement is realistic today. CISA notes that most of those categories support post-quantum key establishment rather than signatures, so the list says little about whether a signature requirement, such as one for a boot verifier, is realistic.
 
 Keep a real record off a public ticket and off an unlocked shared drive: requirements and commitments describe how your systems are protected.
 

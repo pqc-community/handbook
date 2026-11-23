@@ -1,7 +1,8 @@
 ---
 title: Subsequent review log
+search_title: Subsequent review log template
 sidebar_label: Review log
-description: A dated line for each item reviewed, with its owner, whether it is open or closed, and the next review.
+description: A dated line for each item reviewed in a post-quantum migration, with its owner, whether it is open or closed, and the date of the next review.
 displayed_sidebar: resourcesSidebar
 ---
 

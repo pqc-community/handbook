@@ -2,7 +2,7 @@
 title: Choosing a post-quantum option
 sidebar_label: Choosing an option
 displayed_sidebar: technologyOptionsSidebar
-description: Decide who chooses the option, find what every applicable authority accepts, apply the hybrid rule, and record the option and the authority that justifies it on the change record before implementation.
+description: Decide who chooses, find what every applicable authority accepts, apply the hybrid rule, and record the option and the authority behind it before you implement.
 ---
 
 ## When this applies
@@ -48,7 +48,7 @@ If you choose hybrid, record the path away from it under [Keep the ability to ch
 ## Protocol mechanisms
 
 - Use a mechanism the protocol's own specification defines, in the form the hybrid rule settled; do not build your own combination.
-- Prefer a published RFC. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts.
+- Prefer a published RFC. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts.
 - Where an authority's general advice and its later protocol-specific guidance differ, follow the later, specific guidance for that protocol; this is the handbook's rule of thumb.
 - Use a draft mechanism only when the product you run ships it and no applicable authority advises against it for that protocol. Then write "provisional: Internet-Draft" in the change record's `option` cell and add an item to the [review log](/resources/records/review-log/) to revisit it when the specification is published.
 
@@ -78,7 +78,7 @@ The `option` and `authority` cells of the system's [change record](/resources/re
 
 An insufficient record is "Hybrid is required for everyone."
 
-A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-archive supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections. The manufacturer, a UK company, checks it against the UK NCSC's TLS guidance (15 October 2026), written for system administrators who configure TLS, which falls in the second row of the hybrid rule: it recommends hybrid as an interim measure and accepts ML-KEM on its own. It records that guidance, with FIPS 203 (NIST, 13 August 2024; for US federal systems) as the specification of ML-KEM, in the `authority` cell, followed by "hybrid because the supplier ships it". The cards for [TLS and web services](/technology-options/tls/), [Backups, archives and storage](/technology-options/stored-data/), and [Firmware and secure boot](/technology-options/firmware-secure-boot/) carry the rest of the example.
+A decision-ready record, from [Protect this first](/resources/examples/protect-this-first/): the design-archive supplier's letter, judged `complete`, names hybrid X25519MLKEM768 for TLS connections. The manufacturer, a UK company, checks it against the UK NCSC's TLS guidance (15 October 2026), written for system administrators who configure TLS, which falls in the second row of the hybrid rule: it recommends hybrid as an interim measure and accepts ML-KEM on its own. It records that guidance, with FIPS 203 (NIST, 13 August 2024; for US federal systems) as the specification of ML-KEM, in the `authority` cell, followed by "hybrid because the supplier ships it". The cards for [TLS and web services](/technology-options/tls/), [Backups, archives and storage](/technology-options/backups-archives/), and [Firmware and secure boot](/technology-options/firmware-secure-boot/) carry the rest of the example.
 
 ## Limits and next page
 

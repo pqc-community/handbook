@@ -1,18 +1,19 @@
 ---
 title: Standards and official guidance
+search_title: Post-quantum standards and official guidance
 sidebar_label: Standards
 displayed_sidebar: standardsSidebar
-description: Reference summaries of post-quantum standards, government requirements, national algorithm positions, protocol specifications, and migration guides, with status, audience, and dates.
+description: Summaries of post-quantum standards, government requirements, national algorithm positions and migration guides, each with its status, audience and dates.
 ---
 
 Use these reference summaries to find the official text of each standard, government requirement, and migration guide cited in this handbook. Each summary says what the document is for, who issued it, who it applies to, whether it binds that audience or only recommends, and how it relates to the other documents a migration team will meet. Status and dates were last checked against the official sources on 21 November 2026.
 
 ## Start with your question
 
-- **What must we do, and by when?** Binding dates belong to a named authority and audience. US federal agencies are bound by the [US government requirements](/standards/us-federal-directives/). Other organisations usually meet dates through national guidance, sector regulators, or contracts. Compare them in [Why migration timelines differ](/learn/explainers/timelines/).
+- **What must we do, and by when?** Binding dates belong to a named authority and audience. US federal agencies are bound by the [US government requirements](/standards/us-government-requirements/). Other organisations usually meet dates through national guidance, sector regulators, or contracts. Compare them in [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 - **Which algorithms are approved?** Start with the [post-quantum cryptography standards](/standards/post-quantum/), then NIST's transition schedule in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/).
 - **Do authorities agree on hybrid use?** No. Each position is recorded with its audience in [National algorithm positions](/standards/national-algorithm-positions/).
-- **How does an algorithm reach products?** Module validation, protocols, and certificate formats are in [Modules, protocols, and certificates](/standards/modules-protocols-identity/).
+- **How does an algorithm reach products?** Module validation, protocols, and certificate formats are in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/).
 - **How do we run the programme?** Read the [migration guides](/standards/migration-guides/), including supplier question sets.
 
 ## Categories
@@ -22,9 +23,9 @@ Publications are grouped by their role in the transition:
 - **[Post-quantum cryptography](/standards/post-quantum/)**: NIST's approved post-quantum key-encapsulation and signature standards, KEM guidance, standardisation status reports, and what is still in development.
 - **[Transition and key management](/standards/transition-and-key-management/)**: NIST's transition schedule, algorithm and key-length transition rules, key management, and crypto-agility guidance.
 - **[Classical public-key (transitioning)](/standards/classical-public-key/)**: The quantum-vulnerable signature, curve, and key-establishment standards that post-quantum schemes replace.
-- **[Symmetric, hash, and KDF primitives](/standards/symmetric-and-primitives/)**: Block ciphers, hash functions, MACs, key derivation, and random bit generators — largely not replaced, with named exceptions.
-- **[Modules, protocols, and certificates](/standards/modules-protocols-identity/)**: Cryptographic module validation, TLS guidance and hybrid key agreement, post-quantum certificate formats, and federal identity credentials.
-- **[US government requirements](/standards/us-federal-directives/)**: The statute, presidential directives, OMB memorandum, and CISA acquisition guidance that govern US federal agencies.
+- **[Symmetric, hash, and KDF primitives](/standards/symmetric-and-hash/)**: Block ciphers, hash functions, MACs, key derivation, and random bit generators — largely not replaced, with named exceptions.
+- **[Modules, protocols, and certificates](/standards/modules-protocols-certificates/)**: Cryptographic module validation, TLS guidance and hybrid key agreement, post-quantum certificate formats, and federal identity credentials.
+- **[US government requirements](/standards/us-government-requirements/)**: The statute, presidential directives, OMB memorandum, and CISA acquisition guidance that govern US federal agencies.
 - **[National algorithm positions](/standards/national-algorithm-positions/)**: Where national authorities set algorithm choices and expectations on hybrid use.
 - **[Migration guides](/standards/migration-guides/)**: National, ETSI, and consortium guides for programme setup, discovery, and supplier engagement.
 
@@ -46,5 +47,5 @@ Each handbook page's own `Sources` list names the works it uses. Sources are rev
 
 - [Standardisation](/learn/standardisation/)
 - [Timelines](/learn/timelines/)
-- [Why migration timelines differ](/learn/explainers/timelines/)
+- [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Choosing options](/technology-options/choosing/)

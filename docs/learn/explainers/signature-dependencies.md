@@ -1,7 +1,8 @@
 ---
 title: Why post-quantum signatures affect more than the signer
+search_title: Who must move when a signature algorithm changes
 sidebar_label: Why signatures affect more than the signer
-description: A worked map of the signers, authorities, verifiers, and relying parties that must move together when a signature algorithm changes, and the order in which they usually have to move.
+description: A worked map of the signers, authorities, verifiers and relying parties that must move together when a signature algorithm changes, and the usual order.
 displayed_sidebar: learnSidebar
 ---
 

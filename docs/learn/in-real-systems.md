@@ -1,7 +1,7 @@
 ---
 title: Post-quantum cryptography in real systems
 sidebar_label: 8. In real systems
-description: Where key establishment and signatures sit in TLS, VPNs, SSH, email, code signing, PKI, and hardware, and why one product can need several separate post-quantum changes.
+description: Where key establishment and signatures sit in TLS, VPNs, SSH, email, code signing, PKI and hardware, and why one product can need several post-quantum changes.
 displayed_sidebar: learnSidebar
 ---
 

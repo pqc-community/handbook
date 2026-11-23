@@ -72,20 +72,62 @@ Where pages use a worked organisational example, align with the shared fictional
 
 ## 6. Metadata and Naming Lengths
 
-Every Markdown file under `docs/` includes the four front-matter fields below (sidebar ordering is controlled explicitly in `sidebars.ts`):
+Every Markdown file under `docs/` includes the four front-matter fields below, and may add an optional `search_title` (sidebar ordering is controlled explicitly in `sidebars.ts`):
 
 ```yaml
 ---
 title: Inventory the cryptography
-sidebar_label: Inventory
-description: List public-key cryptography across the estate, including embedded and supplier-controlled components a scanner cannot see, before claiming systems have migrated.
+search_title: Build a cryptographic inventory for PQC migration
+sidebar_label: Inventory the cryptography
+description: List public-key cryptography system by system, with several discovery methods, including embedded and supplier-controlled cryptography a scanner misses.
 displayed_sidebar: migrationPracticesSidebar
 ---
 ```
 
-- **Search-intent clarity**: A doc's `title` serves as both its `<h1>` and browser `<title>` (`<title> | PQC Handbook`), and `description` serves as its search snippet. Give each page a distinct title and snippet matching its specific job so routing pages, practice guides, and standard summaries do not compete for the same query.
+### Search titles and descriptions
+
+A result should tell the handbook's audience exactly what the page answers, in the words they would search with. Write for the reader, not for keywords: no keyword stuffing, clickbait, superlatives, questions written to bait clicks, or sales language. The same British English, neutrality, and attribution rules apply as in the page body.
+
+- **Titles**: A doc's `title` is its `<h1>` and sidebar text. Its browser title is its `search_title` if set, otherwise its `title`, followed by ` | PQC Handbook`, and it also feeds Open Graph and Twitter previews. Keep every browser title distinct and within 65 characters in total.
+  - Add `search_title` only where the `title` is too long for a results list (such as a standard's full official title, which stays the `<h1>`) or too vague out of context ("SSH", "Timelines", "Decision note"). It must describe the same page in the same terms and never promise more.
+  - Patterns:
+    - standards: the identifier, then a plain description ("NIST IR 8547: PQC transition, 2030 and 2035");
+    - technology cards: "Post-quantum" plus the technology ("Post-quantum SSH");
+    - records: the record name plus "template";
+    - worked examples: "Worked example:" plus who it is about.
+  - Use sentence case.
+- **Descriptions**: The search snippet. `100–160` characters (aim for about `120–155`), distinct across the site. Say what the page answers or helps the reader do, starting with the content rather than "This page", and make no claim the page does not support. For a standards summary, name the issuer, what the document does, its audience, and a key date where the page gives one.
+- **Distinct jobs**: Give routing pages, practice guides, and standard summaries different titles and snippets so they do not compete for the same query.
+
+### Search vocabulary
+
+Aim at specific, practical queries rather than broad head terms. Use these terms where the page supports them, at most one or two per title or description, and never as a list:
+
+| Reader's term | Where it belongs |
+| --- | --- |
+| **post-quantum cryptography (PQC)**, **post-quantum migration**, **PQC migration** | Learn, routes, practices, and section overviews. Spell out "post-quantum" in titles; use "PQC" for a second mention or where it is part of a document's own name. |
+| **harvest-now, decrypt-later** | Key-establishment pages: the quantum-threat lesson, forward secrecy, when to start, and the long-lived confidentiality route. |
+| **ML-KEM, ML-DSA, SLH-DSA**, with their former names **CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+** | The FIPS 203, 204 and 205 summaries and the algorithms lesson. Use former names in descriptions only, never as the main name. |
+| **Authority plus date** (for example "UK NCSC 2028, 2031 and 2035", "NIST 2030 and 2035", "CNSA 2.0") | Standards and migration-guide descriptions, only for dates the page states, attributed to the authority and its audience. |
+| **cryptographic inventory**, **cryptography bill of materials (CBOM)** | The inventory practice and inventory record. |
+| **crypto-agility** | The crypto-agility lesson, Keep the ability to change again, and CSWP 39. |
+| **hybrid key exchange**, **hybrid TLS** | The hybrid lesson, the TLS explainer and card, and RFC 10024. |
+| **post-quantum** plus a technology (**TLS**, **SSH**, **VPN**, **PKI**, **code signing**, and so on) | Each technology card's `search_title`. |
+| **questions to ask suppliers** or **vendors**, **purchase requirements** | The suppliers practice, vendor response log, purchase requirements record, and the ACSC, CISA and NSA vendor-questions guide. |
+| **template** | Record pages, because readers search for templates. |
+| **without specialist cryptography staff** | The homepage, routes overview, and Learn overview. |
+| **quantum-safe**, **quantum-resistant** | Only where attributed (ETSI uses "quantum-safe") or where the page is about the claim itself. Never as a claim about a product or organisation. |
+| **Q-Day** | Not used: hype vocabulary (see [purpose-and-positioning.md](./purpose-and-positioning.md)). |
+
+### Length bounds
+
+- **Checked by `npm run check`**, with tests in `scripts/tests/search.test.mjs`:
+  - browser title `≤ 65` characters;
+  - description `100–160` characters;
+  - distinct browser titles and descriptions;
+  - no `search_title` that repeats `title`.
 - **UI surface length bounds** (checked by `npm run check`):
-  - Page `title`: `3–160` characters (keep narrative and practice titles concise, typically `≤ 60` characters; `/standards/` pages may carry full official titles).
+  - Page `title`: `3–160` characters (keep narrative and practice titles concise, typically `≤ 60` characters; `/standards/` pages may carry full official titles, with a shorter `search_title`).
   - Sidebar labels (`sidebar_label` and `sidebars.ts` categories): `2–50` characters.
   - Top navbar and footer link labels (`docusaurus.config.ts`): `2–32` characters (`2–24` for footer column headings) so horizontal and mobile navigation never overflow.
 
@@ -99,4 +141,5 @@ Before merging new or revised content, check that the page passes these tests:
 - **Honest sourcing**: Is every date, requirement, and authority recommendation attributed with its source, date, and target audience?
 - **Freshness**: Could a publication status, protocol profile, product capability, or recommendation have changed? If so, is the claim tied to a dated primary source and clearly framed as current at that date?
 - **Actionable evidence**: Does the page show what concrete record or artifact demonstrates the work (rather than vague claims of being *"quantum safe"*)?
+- **Search result**: Read out of context, do the browser title and description tell the reader exactly what the page answers, accurately and without sales language?
 - **Clean checks**: Do `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass?

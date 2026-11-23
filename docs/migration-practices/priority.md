@@ -1,5 +1,6 @@
 ---
 title: Decide what to migrate first
+search_title: Decide what to migrate first to post-quantum
 sidebar_label: Decide what to migrate first
 description: Rank inventory rows within each cryptographic job using one plain rule per job and fixed tiebreakers, without numeric scores.
 displayed_sidebar: migrationPracticesSidebar

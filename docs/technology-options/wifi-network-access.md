@@ -1,8 +1,9 @@
 ---
 title: Wi-Fi and network access control
+search_title: Post-quantum Wi-Fi and network access control
 sidebar_label: Wi-Fi and network access
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness looks like for enterprise Wi-Fi and wired network access using 802.1X and EAP-TLS, why it follows TLS and PKI, and what to ask equipment suppliers.
+description: What post-quantum readiness looks like for enterprise Wi-Fi and wired 802.1X with EAP-TLS, why it follows TLS and PKI, and what to ask equipment suppliers.
 ---
 
 ## What it is

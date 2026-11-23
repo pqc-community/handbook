@@ -1,8 +1,9 @@
 ---
 title: Cryptographic libraries and bespoke code
+search_title: Post-quantum cryptographic libraries and code
 sidebar_label: Libraries and bespoke code
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness looks like for software that calls cryptographic libraries directly or implements its own protocols and formats, and the size, agility, and dependency traps to test for.
+description: Post-quantum readiness for software that calls cryptographic libraries or implements its own protocols and formats, and the size, agility and dependency traps.
 ---
 
 ## What it is
@@ -22,8 +23,8 @@ Status as checked on 21 November 2026.
 | Part | Position |
 | --- | --- |
 | Algorithms | [ML-KEM](/standards/post-quantum/fips-203/) (FIPS 203), [ML-DSA](/standards/post-quantum/fips-204/) (FIPS 204), and [SLH-DSA](/standards/post-quantum/fips-205/) (FIPS 205) are final NIST standards (13 August 2024); LMS and XMSS are specified in [SP 800-208](/standards/post-quantum/sp-800-208/) |
-| Library support | Varies by library and release; check the library's own release notes and, where you need a module validated for US federal use, its [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/) validation |
-| Bespoke protocols and formats | No standard path. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, says that for the minority of systems with bespoke IT or OT, such as those that implement public-key cryptography in proprietary communications systems, system and risk owners will need to choose which algorithms and protocols are best to use |
+| Library support | Varies by library and release; check the library's own release notes and, where you need a module validated for US federal use, its [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/) validation |
+| Bespoke protocols and formats | No standard path. The UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, says that for the minority of systems with bespoke IT or OT, such as those that implement public-key cryptography in proprietary communications systems, system and risk owners will need to choose which algorithms and protocols are best to use |
 
 Choose the algorithm, parameter set, and form with the rules on [Choosing an option](/technology-options/choosing/). Where a published protocol or format already defines a post-quantum mechanism, use it rather than building your own combination, as the protocol-mechanisms rule says.
 

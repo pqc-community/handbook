@@ -1,5 +1,6 @@
 ---
 title: Post-quantum glossary
+search_title: Post-quantum cryptography glossary
 sidebar_label: Glossary
 displayed_sidebar: resourcesSidebar
 description: Terms used across this handbook, from asymmetric cryptography and key encapsulation to hybrid constructions and harvest-now, decrypt-later.
@@ -19,7 +20,7 @@ A symmetric algorithm that encrypts data in fixed-size blocks under one secret k
 
 ### CBOM (cryptography bill of materials)
 
-A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The inventory still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/migration-practices/inventory/).
+A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The inventory still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/migration-practices/inventory/).
 
 ### Certificate
 
@@ -35,7 +36,7 @@ The Commercial National Security Algorithm Suite 2.0: the quantum-resistant algo
 
 ### Composite signature
 
-A single signature object that combines a post-quantum and a classical signature, so both must verify. [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) (November 2026) defines composite ML-DSA for X.509 certificates. NIST IR 8547 treats composite, dual, and hybrid signatures together; see [Dual signature](#dual-signature).
+A single signature object that combines a post-quantum and a classical signature, so both must verify. [RFC 10073](/standards/modules-protocols-certificates/rfc-10073/) (November 2026) defines composite ML-DSA for X.509 certificates. NIST IR 8547 treats composite, dual, and hybrid signatures together; see [Dual signature](#dual-signature).
 
 ### Crypto-agility
 
@@ -193,7 +194,7 @@ RSA and elliptic-curve public-key schemes are the familiar examples. A [block ci
 
 ### Regular adopter
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Decide whether to act](/migration-practices/diagnose/).
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that do not need to react yet as regular adopters. Urgent adopters are the organisations that cannot afford to delay. An organisation on the boundary follows Section 3.2 of that handbook for when to start particular assets. See [Decide whether to act](/migration-practices/decide-whether-to-act/).
 
 ### Relying party
 
@@ -223,7 +224,7 @@ A public key or certificate that a verifier trusts without further proof, and fr
 
 ### Urgent adopter
 
-The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Decide whether to act](/migration-practices/diagnose/).
+The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) classifies organisations that cannot afford to delay as urgent adopters. Long-lived sensitive data sits with that group. Regular adopters do not need to react yet. See [Decide whether to act](/migration-practices/decide-whether-to-act/).
 
 ### Verifier
 
@@ -270,6 +271,6 @@ The component that checks a signature. When every verifier can be updated, the s
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [Inventory the cryptography](/migration-practices/inventory/)
 - [Decide what to migrate first](/migration-practices/priority/)
-- [Decide whether to act](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/decide-whether-to-act/)
 - [Resources](/resources/)
 - [Migration records](/resources/records/)

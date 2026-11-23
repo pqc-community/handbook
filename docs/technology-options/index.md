@@ -43,7 +43,7 @@ Status as checked on 21 November 2026. "Proposed Standard" and "Informational" a
 | Technology | Job | Standardised post-quantum mechanism | Status |
 | --- | --- | --- | --- |
 | [Encrypted email and files](/technology-options/encrypted-files/) | Key establishment (stored data) | KEMs and ML-KEM in CMS (RFC 9629, RFC 9936); post-quantum OpenPGP (RFC 9980) | Published RFCs |
-| [Backups, archives and storage](/technology-options/stored-data/) | Key establishment (stored data) | Depends on the product's key wrapping | Depends on the product |
+| [Backups, archives and storage](/technology-options/backups-archives/) | Key establishment (stored data) | Depends on the product's key wrapping | Depends on the product |
 
 ### Platforms and environments
 
@@ -68,7 +68,7 @@ These last four span several jobs, so each points to the cards for the jobs it d
 
 One product can do several jobs, each on its own clock. Key establishment runs to the data's confidentiality period, because of [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later). Signatures run to the coordination of everyone who verifies them, which [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes takes longer and involves more parties. A verifier that cannot be updated runs to its product's design freeze, the date after which the hardware can no longer change. Record each job on its own line of the [migration plan](/resources/records/migration-plan/).
 
-Commodity products that receive post-quantum support through supplier updates need no option chosen here; see [Keep commodity software updated](/migration-practices/commodity-software/). Algorithms are summarised in [Post-quantum cryptography standards](/standards/post-quantum/), protocols and certificates in [Modules, protocols, and certificates](/standards/modules-protocols-identity/), and authorities' positions in [National algorithm positions](/standards/national-algorithm-positions/).
+Commodity products that receive post-quantum support through supplier updates need no option chosen here; see [Keep commodity software updated](/migration-practices/commodity-software/). Algorithms are summarised in [Post-quantum cryptography standards](/standards/post-quantum/), protocols and certificates in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/), and authorities' positions in [National algorithm positions](/standards/national-algorithm-positions/).
 
 ## Sources
 
@@ -81,5 +81,5 @@ Commodity products that receive post-quantum support through supplier updates ne
 
 - [Choosing an option](/technology-options/choosing/)
 - [Migration practices](/migration-practices/)
-- [Modules, protocols, and certificates](/standards/modules-protocols-identity/)
+- [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
 - [Hybrid cryptography](/learn/hybrid/)

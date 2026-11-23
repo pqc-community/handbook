@@ -1,7 +1,8 @@
 ---
 title: Progress report
+search_title: Post-quantum progress report template
 sidebar_label: Progress report
-description: A one-page report from the migration lead to the sponsor after each review, with progress per job, what is blocked and why, milestones at risk, decisions needed, and the sponsor's response.
+description: "A one-page report from migration lead to sponsor after each review: progress per job, blockers, milestones at risk, decisions needed and the sponsor's response."
 displayed_sidebar: resourcesSidebar
 ---
 

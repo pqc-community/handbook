@@ -1,7 +1,8 @@
 ---
 title: What changes in a TLS connection
+search_title: "Post-quantum TLS: what changes in the handshake"
 sidebar_label: What changes in a TLS connection
-description: A step-by-step TLS 1.3 handshake showing where hybrid post-quantum key exchange happens, where the server is authenticated, and why the two migrate on different timetables.
+description: "A TLS 1.3 handshake step by step: where hybrid post-quantum key exchange happens, where the server is authenticated, and why the two migrate separately."
 displayed_sidebar: learnSidebar
 ---
 
@@ -64,5 +65,5 @@ The NCSC guidance states that, at present, the IETF has standardised post-quantu
 
 - [In real systems](/learn/in-real-systems/)
 - [Forward secrecy and recorded traffic](/learn/explainers/forward-secrecy/)
-- [NIST SP 800-52](/standards/modules-protocols-identity/sp-800-52/)
-- [RFC 10024](/standards/modules-protocols-identity/rfc-10024/)
+- [NIST SP 800-52](/standards/modules-protocols-certificates/sp-800-52/)
+- [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/)

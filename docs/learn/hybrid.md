@@ -1,7 +1,8 @@
 ---
 title: Hybrid cryptography
+search_title: Hybrid post-quantum cryptography
 sidebar_label: 6. Hybrid cryptography
-description: What a hybrid key exchange and a dual signature are, why running old and new algorithms side by side is not the same thing, and how authorities differ on when hybrid is appropriate.
+description: What hybrid key exchange and dual signatures are, why they differ from running old and new algorithms side by side, and where authorities disagree on hybrid.
 displayed_sidebar: learnSidebar
 ---
 

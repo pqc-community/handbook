@@ -1,8 +1,9 @@
 ---
 title: Resources
+search_title: Post-quantum migration resources
 sidebar_label: Overview
 displayed_sidebar: resourcesSidebar
-description: What a migration lead takes away and uses from the handbook — the linked migration records, a worked example of every record filled in, and the glossary.
+description: "What a migration lead takes away and uses: the linked migration records, worked examples of them filled in, and the glossary."
 ---
 
 The rest of the handbook says what to do. This section holds what you take away and use while you do it. It is grouped by what you do with each item, so you can tell from the group whether a page is something to fill in, to follow, or to look up.

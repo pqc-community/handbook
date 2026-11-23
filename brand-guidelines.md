@@ -26,8 +26,8 @@ The PQC Handbook is part of the same open handbook family as the **Secure-by-Des
 | Asset | File | Format / Size | Usage |
 | --- | --- | --- | --- |
 | Header logo | `static/img/logo.svg` | Vector SVG | Site navbar mark, slide headers, and compact brand lockups (`alt="PQC Handbook"`). |
-| Favicon | `static/img/favicon.svg` | Vector SVG | Browser tab and bookmark icon (export `32 × 32` PNG only where an external platform requires raster icons). |
-| Social preview card | `static/img/social-card.svg` | `1200 × 630` SVG | OpenGraph and link-preview card on Deep Teal (`#013B4E`) with Primary Cyan (`#00C5D8`) accent bar and Surface Light (`#F5FCFD`) Inter type (export PNG if a platform does not render SVG previews). |
+| Favicon | `static/img/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Vector SVG; `32 × 32` and `180 × 180` PNG | Browser tab and bookmark icon. The PNGs, rendered from the logo, serve browsers that do not use the SVG; the Apple touch icon sits on Deep Teal. |
+| Social preview card | `static/img/social-card.png` (source `social-card.svg`) | `1200 × 630` PNG | OpenGraph and link-preview card on Deep Teal (`#013B4E`) with Primary Cyan (`#00C5D8`) accent bar and Surface Light (`#F5FCFD`) Inter type. Social platforms do not render SVG previews, so `og:image` points to the PNG; re-export it with Inter loaded whenever the SVG changes. |
 
 Logo usage rules:
 

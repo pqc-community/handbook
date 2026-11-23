@@ -6,6 +6,7 @@ import {findAdmonitionViolations, findNavigationViolations, findPageViolations} 
 import {findPdfLinkLabelViolations, findStandardsLayoutViolations} from './standards.mjs';
 import {findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
 import {findRoutePageViolations, findRouteValueViolations} from './routes.mjs';
+import {findSearchMetadataViolations, findUrlViolations} from './search.mjs';
 
 const docs = (root) => path.join(root, 'docs');
 const standards = (root) => path.join(root, 'docs', 'standards');
@@ -14,6 +15,8 @@ export const CHECKS = [
   {area: 'pages', name: 'page title lengths', run: (root) => findPageViolations(docs(root))},
   {area: 'pages', name: 'navbar, footer and sidebar label lengths', run: (root) => findNavigationViolations(root)},
   {area: 'pages', name: 'admonition title syntax', run: (root) => findAdmonitionViolations(docs(root))},
+  {area: 'search', name: 'search titles and descriptions', run: (root) => findSearchMetadataViolations(docs(root))},
+  {area: 'search', name: 'URL slugs', run: (root) => findUrlViolations(docs(root))},
   {area: 'routes', name: 'route pages link Decide whether to act and a record', run: (root) => findRoutePageViolations(root)},
   {area: 'routes', name: 'decision-note route values are track names', run: (root) => findRouteValueViolations(root)},
   {area: 'standards', name: 'standards summary structure', run: (root) => findStandardsLayoutViolations(standards(root))},

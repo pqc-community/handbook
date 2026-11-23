@@ -1,7 +1,8 @@
 ---
 title: What post-quantum means
+search_title: What post-quantum cryptography means
 sidebar_label: 4. What post-quantum means
-description: Post-quantum cryptography runs on ordinary computers and replaces the hard problems a quantum computer breaks; it is different from quantum cryptography and quantum key distribution.
+description: Post-quantum cryptography runs on ordinary computers and replaces the problems a quantum computer breaks; it is not quantum key distribution.
 displayed_sidebar: learnSidebar
 ---
 

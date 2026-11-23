@@ -1,8 +1,9 @@
 ---
 title: SSH
+search_title: Post-quantum SSH
 sidebar_label: SSH
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum SSH deployment looks like for administration, automation and Git, which key-exchange methods have RFCs, and why host and user keys are a separate question.
+description: What a good post-quantum SSH deployment looks like for administration, automation and Git, which key exchanges have RFCs, and why host and user keys differ.
 ---
 
 ## What it is
@@ -68,6 +69,6 @@ A decision-ready record lists the servers by operating-system release with the k
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
-- [Modules, protocols, and certificates](/standards/modules-protocols-identity/)
+- [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
 - [Inventory the cryptography](/migration-practices/inventory/)
 - [PKI and certificates](/technology-options/pki/)

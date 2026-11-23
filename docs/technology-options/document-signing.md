@@ -1,8 +1,9 @@
 ---
 title: Documents and email signing
+search_title: Post-quantum document and email signing
 sidebar_label: Documents and email signing
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum move looks like for signed email, PDFs and other signed documents, which formats have published specifications, and the traps for recipients and long-lived records.
+description: What a good post-quantum move looks like for signed email, PDFs and other documents, which formats are specified, and the traps for long-lived records.
 ---
 
 ## What it is

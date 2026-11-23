@@ -1,7 +1,8 @@
 ---
 title: What a KEM is
+search_title: What a key-encapsulation mechanism (KEM) is
 sidebar_label: What a KEM is
-description: How a key-encapsulation mechanism produces a shared secret, how that differs from Diffie–Hellman and RSA key transport, why it is not bulk encryption, and how hybrid designs combine two KEM outputs.
+description: How a key-encapsulation mechanism produces a shared secret, how it differs from Diffie–Hellman and RSA key transport, and how hybrid designs combine KEMs.
 displayed_sidebar: learnSidebar
 ---
 

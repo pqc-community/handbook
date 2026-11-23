@@ -1,7 +1,8 @@
 ---
 title: Work with suppliers
+search_title: Post-quantum questions for suppliers and purchases
 sidebar_label: Work with suppliers
-description: Triage suppliers, ask existing and prospective suppliers the same written questions, judge their answers, write post-quantum requirements into purchases and renewals, and escalate when answers fall short.
+description: Triage suppliers, ask them all the same written post-quantum questions, judge the answers, and write requirements into purchases and renewals.
 displayed_sidebar: migrationPracticesSidebar
 ---
 
@@ -43,11 +44,11 @@ Use the handbook's single question set on the [vendor response log](/resources/r
 
 A supplier can be `complete` for key establishment and `vague` for signatures; record two rows. When an answer is `complete`, record the decision it supports in the log and link the source document.
 
-A national milestone that a supplier quotes applies to the audience its authority names, not to every customer; see [Why migration timelines differ](/learn/explainers/timelines/).
+A national milestone that a supplier quotes applies to the audience its authority names, not to every customer; see [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 
 ### 4. Follow up and escalate
 
-Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the asset owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time in the plan; or written risk acceptance by the sponsor, with a review date. Where the answer means a vendor-managed product fails the fifth of Decide whether to act's [five conditions](/migration-practices/diagnose/#five-conditions-for-the-vendor-managed-route), that section also sets its route.
+Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the asset owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time in the plan; or written risk acceptance by the sponsor, with a review date. Where the answer means a vendor-managed product fails the fifth of Decide whether to act's [five conditions](/migration-practices/decide-whether-to-act/#five-conditions-for-the-vendor-managed-route), that section also sets its route.
 
 ### 5. Write requirements into purchases and renewals
 
@@ -64,7 +65,7 @@ Record each requirement, the supplier's commitment, and whether it was met on th
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
-CISA's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web software (web browsers and web servers), in which products supporting post-quantum standards are widely available, and notes that most of these categories support post-quantum key establishment but have not yet widely implemented post-quantum signatures. It shows where such requirements are realistic today. Covered US federal contractors should also watch for the proposed rule that [Executive Order 14412](/standards/us-federal-directives/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to publish, requiring them to comply with NIST's Federal Information Processing Standards by 31 December 2030. It would bind them only once a final rule takes effect; its Standards summary explains.
+CISA's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web software (web browsers and web servers), in which products supporting post-quantum standards are widely available, and notes that most of these categories support post-quantum key establishment but have not yet widely implemented post-quantum signatures. It shows where such requirements are realistic today. Covered US federal contractors should also watch for the proposed rule that [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to publish, requiring them to comply with NIST's Federal Information Processing Standards by 31 December 2030. It would bind them only once a final rule takes effect; its Standards summary explains.
 
 ### 6. Answer your own customers consistently
 
@@ -82,7 +83,7 @@ A decision-ready record, from [Protect this first](/resources/examples/protect-t
 
 ## Limits and next step
 
-The log records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-identity/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the asset's line through the track its decision-note row records, such as [Long-lived confidentiality](/routes/long-lived-confidentiality/) or [Hard-to-change systems](/routes/hard-to-change-systems/). Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/migration-practices/implementation/).
+The log records what suppliers say; it does not validate their products. Validation comes from your own testing and, where relevant, module validation such as [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/). This page does not give contract clauses or legal advice. A supplier's answer is enough on its own only while you wait for a release; when you also have to change configuration or a verifier, take the asset's line through the track its decision-note row records, such as [Long-lived confidentiality](/routes/long-lived-confidentiality/) or [Hard-to-change systems](/routes/hard-to-change-systems/). Next, [choose an option](/technology-options/choosing/) for each system, then [make and verify one change](/migration-practices/implementation/).
 
 ## Sources
 

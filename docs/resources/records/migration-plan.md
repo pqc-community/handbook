@@ -1,5 +1,6 @@
 ---
 title: Migration plan
+search_title: Post-quantum migration plan template
 sidebar_label: Migration plan
 description: One row per asset and job, with its place in the order and why, the applicable timeline, the four separate dates, and the next review.
 displayed_sidebar: resourcesSidebar

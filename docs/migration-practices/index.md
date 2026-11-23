@@ -5,10 +5,10 @@ description: The repeatable practices for running a post-quantum migration, in l
 displayed_sidebar: migrationPracticesSidebar
 ---
 
-Start with [Decide whether to act](/migration-practices/diagnose/). Four questions place you on one of two paths:
+Start with [Decide whether to act](/migration-practices/decide-whether-to-act/). Four questions place you on one of two paths:
 
-- **The short path.** If every asset's path is short under the [path table](/migration-practices/diagnose/#do-this) on Decide whether to act, you mostly need to [keep commodity software updated](/migration-practices/commodity-software/), write post-quantum requirements into purchases and renewals ([Work with suppliers](/migration-practices/suppliers/), step 5), and [review](/migration-practices/subsequent-review/) regularly.
-- **The full path.** If any asset's path is full under the [path table](/migration-practices/diagnose/#do-this) on Decide whether to act, you need a programme. Follow the practices in this order:
+- **The short path.** If every asset's path is short under the [path table](/migration-practices/decide-whether-to-act/#do-this) on Decide whether to act, you mostly need to [keep commodity software updated](/migration-practices/commodity-software/), write post-quantum requirements into purchases and renewals ([Work with suppliers](/migration-practices/suppliers/), step 5), and [review](/migration-practices/subsequent-review/) regularly.
+- **The full path.** If any asset's path is full under the [path table](/migration-practices/decide-whether-to-act/#do-this) on Decide whether to act, you need a programme. Follow the practices in this order:
 
 ```mermaid
 flowchart TD
@@ -34,7 +34,7 @@ The practices are written for organisations without specialist cryptography staf
 
 | Practice | Who leads | Record it produces |
 | --- | --- | --- |
-| [Decide whether to act](/migration-practices/diagnose/) | Executive sponsor with the migration lead | [Decision note](/resources/records/decision-note/) and first [inventory](/resources/records/inventory/) rows |
+| [Decide whether to act](/migration-practices/decide-whether-to-act/) | Executive sponsor with the migration lead | [Decision note](/resources/records/decision-note/) and first [inventory](/resources/records/inventory/) rows |
 | [Keep commodity software updated](/migration-practices/commodity-software/) | Operations | Checked versions in the [inventory record](/resources/records/inventory/) |
 | [Set up the programme](/migration-practices/programme/) | Executive sponsor | [Programme charter](/resources/records/programme-charter/) |
 | [Inventory the cryptography](/migration-practices/inventory/) | Migration lead with asset owners | [Inventory record](/resources/records/inventory/) |
@@ -48,7 +48,7 @@ The practices are written for organisations without specialist cryptography staf
 
 ## Where to start by role
 
-- **Anyone unsure whether this applies.** [Decide whether to act](/migration-practices/diagnose/), which also says what to do when you cannot yet answer or choose.
+- **Anyone unsure whether this applies.** [Decide whether to act](/migration-practices/decide-whether-to-act/), which also says what to do when you cannot yet answer or choose.
 - **IT or operations, on the short path.** [Keep commodity software updated](/migration-practices/commodity-software/).
 - **Procurement or supplier management.** [Work with suppliers](/migration-practices/suppliers/), which covers existing suppliers, purchases, renewals, and customers who ask you.
 - **Owners of systems that must change.** [Inventory the cryptography](/migration-practices/inventory/) and [Make and verify one change](/migration-practices/implementation/).

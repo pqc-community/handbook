@@ -1,8 +1,9 @@
 ---
 title: "FIPS 204: Module-Lattice-Based Digital Signature Standard"
+search_title: "FIPS 204: ML-DSA digital signature standard"
 sidebar_label: FIPS 204 (ML-DSA)
 displayed_sidebar: standardsSidebar
-description: NIST standard specifying ML-DSA, a lattice-based post-quantum digital signature algorithm, with its dates, errata and related formats.
+description: NIST standard specifying ML-DSA (formerly CRYSTALS-Dilithium), a lattice-based post-quantum signature algorithm, with its dates, errata and related formats.
 ---
 
 ## What it covers
@@ -30,7 +31,7 @@ FIPS 204 is issued by the National Institute of Standards and Technology (NIST).
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) lists ML-DSA, alongside SLH-DSA in [FIPS 205](/standards/post-quantum/fips-205/) and the stateful schemes in [SP 800-208](/standards/post-quantum/sp-800-208/), among NIST's approved quantum-resistant digital signature schemes. Separately, IR 8547 schedules the quantum-vulnerable signature algorithms in [FIPS 186-5](/standards/classical-public-key/fips-186-5/) — ECDSA, EdDSA and RSA signatures — for deprecation after 2030 and disallowance after 2035. IR 8547 also says a FIPS for a FALCON-derived signature algorithm is under development, and that dual or composite signatures can be accommodated in FIPS 140 validation if at least one component is approved (§3.2 and §3.2.2).
 
-For certificates, [RFC 9881](/standards/modules-protocols-identity/rfc-9881/) (October 2025) specifies ML-DSA in X.509, and [RFC 10073](/standards/modules-protocols-identity/rfc-10073/) (November 2026) specifies composite ML-DSA. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-DSA-87 for signatures in any use case.
+For certificates, [RFC 9881](/standards/modules-protocols-certificates/rfc-9881/) (October 2025) specifies ML-DSA in X.509, and [RFC 10073](/standards/modules-protocols-certificates/rfc-10073/) (November 2026) specifies composite ML-DSA. For US national security systems, the NSA's [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) FAQ (version 2.2, October 2026) specifies ML-DSA-87 for signatures in any use case.
 
 Signature migration has different drivers from key establishment under [FIPS 203](/standards/post-quantum/fips-203/): what matters is when verifiers must be able to check new signatures, not whether recorded traffic could later be decrypted. Verifiers that cannot be updated in the field need particular care; see [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 

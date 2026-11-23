@@ -1,7 +1,7 @@
 ---
 title: Signatures, certificates, and trust
 sidebar_label: 2. Signatures and trust
-description: How certificates, certificate chains, trust anchors, and verifiers turn a signature into a trust decision, and why a verifier that cannot be updated is its own migration problem.
+description: How certificates, chains, trust anchors and verifiers turn a signature into a trust decision, and why a verifier that cannot be updated is its own problem.
 displayed_sidebar: learnSidebar
 ---
 

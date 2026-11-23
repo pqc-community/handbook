@@ -56,7 +56,7 @@ npm run build
 | --- | --- |
 | `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, routes, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
-| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, admonition syntax, route pages linking Decide whether to act and a record, decision-note route values, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
+| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, route pages linking Decide whether to act and a record, decision-note route values, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
 | `npm run serve` | Serves the production `build/` output locally |
@@ -67,9 +67,10 @@ npm run build
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
 | `src/pages/` | Homepage: hero, route chooser, three clocks, decision-note excerpt, and reference sections (`index.tsx` and `index.module.css`) |
+| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) and `noindex` for the 404 and search pages |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the nine migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
-| `static/img/` | Shared shield logo, favicon, and `1200 × 630` OpenGraph social card |
+| `static/img/` | Shared shield logo, SVG and PNG favicons, Apple touch icon, and the `1200 × 630` OpenGraph social card (PNG, with its SVG source) |
 | `sidebars.ts` | Six hand-written documentation sidebars |
 | `docusaurus.config.ts` | Site configuration, navbar, footer, Mermaid theme, local search, and link policy |
 | `scripts/` | `checks/` holds the site rules by area (`index.mjs` lists them all), `lib/` the shared Markdown and test helpers, `tests/` the tests, `check.mjs` the `npm run check` runner, and `records-zip.mjs` the records zip builder |

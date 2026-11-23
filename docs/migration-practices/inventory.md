@@ -1,7 +1,8 @@
 ---
 title: Inventory the cryptography
+search_title: Build a cryptographic inventory for PQC migration
 sidebar_label: Inventory the cryptography
-description: List public-key cryptography system by system, using several discovery methods, including embedded, supplier-controlled, and stored-data cryptography a scanner cannot see.
+description: List public-key cryptography system by system, with several discovery methods, including embedded and supplier-controlled cryptography a scanner misses.
 displayed_sidebar: migrationPracticesSidebar
 ---
 

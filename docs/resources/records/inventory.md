@@ -1,7 +1,8 @@
 ---
 title: Inventory record
+search_title: Cryptographic inventory template
 sidebar_label: Inventory record
-description: One row per asset that uses public-key cryptography, for the first pass and for the maintained inventory that follows.
+description: One row per asset that uses public-key cryptography, for the first pass and the maintained inventory that follows, with a blank CSV to download.
 displayed_sidebar: resourcesSidebar
 ---
 

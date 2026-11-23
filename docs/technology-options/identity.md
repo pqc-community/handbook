@@ -1,8 +1,9 @@
 ---
 title: Identity and sign-in
+search_title: Post-quantum identity and sign-in
 sidebar_label: Identity and sign-in
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness means for single sign-on, federation tokens, smart cards and other sign-in technology, where standards are still missing, and what to plan now.
+description: What post-quantum readiness means for single sign-on, federation tokens, smart cards and other sign-in, where standards are missing, and what to plan now.
 ---
 
 ## What it is
@@ -16,7 +17,7 @@ Identity and sign-in covers single sign-on and federation (signed assertions and
 | Technology | What to rely on, as checked on 21 November 2026 |
 | --- | --- |
 | Certificates used for sign-in, including smart-card certificates | The published X.509 formats on [PKI and certificates](/technology-options/pki/) |
-| US federal PIV smart cards | [FIPS 201-3](/standards/modules-protocols-identity/fips-201-3/) (January 2022) does not itself specify post-quantum algorithms |
+| US federal PIV smart cards | [FIPS 201-3](/standards/modules-protocols-certificates/fips-201-3/) (January 2022) does not itself specify post-quantum algorithms |
 | Federation tokens and assertions, passkeys, and other sign-in protocols | The supplier's written answer on which signature algorithms it supports and which specification it follows, checked against the signature-schemes rule on [Choosing an option](/technology-options/choosing/) |
 
 ## Who usually chooses
@@ -67,4 +68,4 @@ A decision-ready record names the identity provider and its token-signing algori
 - [PKI and certificates](/technology-options/pki/)
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
 - [Work with suppliers](/migration-practices/suppliers/)
-- [Modules, protocols, and certificates](/standards/modules-protocols-identity/)
+- [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)

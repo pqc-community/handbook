@@ -2,7 +2,7 @@
 title: "PQCC: Post-Quantum Cryptography Migration Roadmap"
 sidebar_label: PQCC roadmap
 displayed_sidebar: standardsSidebar
-description: Post-Quantum Cryptography Coalition roadmap (May 2025) organising migration into preparation, baseline understanding, planning and execution, and monitoring and evaluation.
+description: "PQC Coalition roadmap (May 2025) in four stages: preparation, baseline understanding, planning and execution, and monitoring and evaluation."
 ---
 
 ## What it covers
@@ -29,7 +29,7 @@ The coalition is a non-governmental community of technologists, researchers and 
 
 The roadmap sorts organisations into urgent adopters, which handle highly sensitive data or assets, and regular adopters — the same distinction the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) uses. It cites the NIST post-quantum standards ([FIPS 203](/standards/post-quantum/fips-203/), [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/)), and MITRE's release says it builds on those standards and on the [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/) project. Because it was published in May 2025, it refers to the initial public draft of NIST IR 8547; use the final [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) for NIST's current transition schedule.
 
-The roadmap does not set jurisdiction-specific legal duties or regulator milestones; for those, see the national guides in [Post-quantum migration guides](/standards/migration-guides/) and [Why migration timelines differ](/learn/explainers/timelines/). For a programme method from national authorities, compare [ASD's planning guidance](/standards/migration-guides/asd-planning/) and the [UK NCSC guidance](/standards/migration-guides/uk-ncsc-pqc-guidance/).
+The roadmap does not set jurisdiction-specific legal duties or regulator milestones; for those, see the national guides in [Post-quantum migration guides](/standards/migration-guides/) and [Why migration timelines differ](/learn/explainers/why-timelines-differ/). For a programme method from national authorities, compare [ASD's planning guidance](/standards/migration-guides/asd-planning/) and the [UK NCSC guidance](/standards/migration-guides/ncsc-migration-timelines/).
 
 ## Sources
 
@@ -40,4 +40,4 @@ The roadmap does not set jurisdiction-specific legal duties or regulator milesto
 
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [Dutch PQC Handbook](/standards/migration-guides/dutch-pqc-handbook/)
-- [Decide whether to act](/migration-practices/diagnose/)
+- [Decide whether to act](/migration-practices/decide-whether-to-act/)

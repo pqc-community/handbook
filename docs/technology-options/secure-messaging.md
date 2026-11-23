@@ -1,8 +1,9 @@
 ---
 title: Secure messaging and collaboration
+search_title: Post-quantum secure messaging and collaboration
 sidebar_label: Secure messaging
 displayed_sidebar: technologyOptionsSidebar
-description: What post-quantum readiness looks like for end-to-end encrypted chat and collaboration tools, the status of post-quantum Messaging Layer Security, and what to ask a provider.
+description: What post-quantum readiness looks like for end-to-end encrypted chat and collaboration tools, the status of post-quantum MLS, and what to ask a provider.
 ---
 
 ## What it is
@@ -12,7 +13,7 @@ Secure messaging and collaboration tools protect chat, calls, and shared content
 - **key establishment** for message keys, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/resources/reference/glossary/#harvest-now-decrypt-later) for anything sensitive that is recorded today;
 - **signatures** to authenticate users and devices.
 
-Messages kept in history or exports are also stored data; see [Backups, archives and storage](/technology-options/stored-data/).
+Messages kept in history or exports are also stored data; see [Backups, archives and storage](/technology-options/backups-archives/).
 
 ## Post-quantum options and status
 
@@ -24,7 +25,7 @@ Status as checked on 21 November 2026.
 | Post-quantum MLS, message keys and signatures | ML-KEM and hybrid cipher suites for MLS, draft-ietf-mls-pq-ciphersuites, with either traditional or ML-DSA signatures | Internet-Draft in IETF Last Call (ending 3 December 2026), intended as a Proposed Standard |
 | Proprietary messaging protocols | Each provider's own design | Ask the provider in writing |
 
-The draft registers MLS cipher suites built on ML-KEM, optionally combined with traditional elliptic-curve key encapsulation, paired with either traditional or ML-DSA signatures; it says the suites with traditional signatures address harvest-now, decrypt-later without the cost of post-quantum signatures. Until it is published, apply the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/): use a draft mechanism only where the product ships it and no applicable authority advises against it, and record it as provisional. For UK readers, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/uk-ncsc-pqc-guidance/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts. The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-federal-directives/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, lists collaboration software (chat and messaging) among categories where products using post-quantum standards are widely available.
+The draft registers MLS cipher suites built on ML-KEM, optionally combined with traditional elliptic-curve key encapsulation, paired with either traditional or ML-DSA signatures; it says the suites with traditional signatures address harvest-now, decrypt-later without the cost of post-quantum signatures. Until it is published, apply the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/): use a draft mechanism only where the product ships it and no applicable authority advises against it, and record it as provisional. For UK readers, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, strongly advises that operational systems use protocol implementations based on RFCs, not Internet-Drafts. The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026), which focuses on US federal purchasing, lists collaboration software (chat and messaging) among categories where products using post-quantum standards are widely available.
 
 ## Who usually chooses
 

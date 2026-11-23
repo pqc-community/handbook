@@ -1,5 +1,6 @@
 ---
 title: "ANSSI: Views on the Post-Quantum Cryptography Transition (2023 follow-up)"
+search_title: ANSSI post-quantum position (France, 2023)
 sidebar_label: ANSSI position (France)
 displayed_sidebar: standardsSidebar
 description: France's ANSSI 2023 follow-up position paper on post-quantum cryptography, stressing hybridisation and listing suitable post-quantum algorithms.

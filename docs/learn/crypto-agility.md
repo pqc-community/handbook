@@ -1,7 +1,7 @@
 ---
 title: Crypto-agility and the next transition
 sidebar_label: 10. Crypto-agility
-description: Why the post-quantum migration is unlikely to be the last algorithm change, what crypto-agility means in practice, and how to move from these lessons into planning.
+description: Why post-quantum migration is unlikely to be the last algorithm change, what crypto-agility means in practice, and how to move from the lessons into planning.
 displayed_sidebar: learnSidebar
 ---
 
@@ -42,7 +42,7 @@ You now have the model the rest of the handbook uses:
 - **Dates belong to authorities and audiences**; your data lifetimes and device lifetimes decide which ones bind you, and when.
 - The work is **repeatable**, so build the capability to do it again.
 
-To act on it, start with [Decide whether to act](/migration-practices/diagnose/), which puts each asset on a path, then follow the matching [situation route](/routes/). The worked example in [Protect this first](/resources/examples/protect-this-first/) applies these ideas to one fictional manufacturer. Keep the [glossary](/resources/reference/glossary/) to hand.
+To act on it, start with [Decide whether to act](/migration-practices/decide-whether-to-act/), which puts each asset on a path, then follow the matching [situation route](/routes/). The worked example in [Protect this first](/resources/examples/protect-this-first/) applies these ideas to one fictional manufacturer. Keep the [glossary](/resources/reference/glossary/) to hand.
 
 ## Check your understanding
 

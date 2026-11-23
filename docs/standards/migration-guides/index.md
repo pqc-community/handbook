@@ -5,12 +5,12 @@ displayed_sidebar: standardsSidebar
 description: National, ETSI and consortium guides for running a post-quantum migration programme, building inventories and engaging suppliers.
 ---
 
-These summaries cover guides for running a post-quantum migration programme, finding quantum-vulnerable cryptography and engaging suppliers, rather than individual algorithm specifications. Most are national guidance that recommends action to a stated audience, such as government departments, critical infrastructure or Member States; ETSI's reports are informative technical reports; and the PQCC roadmap is non-governmental. None of them binds organisations outside its stated audience. National milestones such as 2030, 2031 and 2035 apply to the audiences those authorities name; see [Timelines](/learn/explainers/timelines/). For national positions on algorithms and hybrid use, see [National algorithm positions](/standards/national-algorithm-positions/).
+These summaries cover guides for running a post-quantum migration programme, finding quantum-vulnerable cryptography and engaging suppliers, rather than individual algorithm specifications. Most are national guidance that recommends action to a stated audience, such as government departments, critical infrastructure or Member States; ETSI's reports are informative technical reports; and the PQCC roadmap is non-governmental. None of them binds organisations outside its stated audience. National milestones such as 2030, 2031 and 2035 apply to the audiences those authorities name; see [Timelines](/learn/explainers/why-timelines-differ/). For national positions on algorithms and hybrid use, see [National algorithm positions](/standards/national-algorithm-positions/).
 
 ## Which guide do I need?
 
 - Need a full programme methodology? Start with the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) or [ETSI TR 104 016](/standards/migration-guides/etsi-tr-104-016/).
-- Need to know the milestones a national authority has set for its audience? See [UK NCSC](/standards/migration-guides/uk-ncsc-pqc-guidance/), [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/), [ASD planning](/standards/migration-guides/asd-planning/) or [Canada ITSM.40.001](/standards/migration-guides/canada-itsm-40-001/).
+- Need to know the milestones a national authority has set for its audience? See [UK NCSC](/standards/migration-guides/ncsc-migration-timelines/), [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/), [ASD planning](/standards/migration-guides/asd-planning/) or [Canada ITSM.40.001](/standards/migration-guides/canada-itsm-40-001/).
 - Need a short case to brief executives? Use the [CISA, NSA and NIST fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/).
 - Need questions to put to suppliers? Use [Post-quantum questions to ask your vendors](/standards/migration-guides/vendor-questions/).
 - Need background on discovery and interoperability testing? See the [NCCoE Migration to PQC project](/standards/migration-guides/nccoe-migration-to-pqc/).
@@ -20,11 +20,11 @@ These summaries cover guides for running a post-quantum migration programme, fin
 | Publication | Summary | Reference |
 | --- | --- | --- |
 | Dutch PQC Migration Handbook | Diagnose, plan and execute guidance from AIVD with CWI and TNO; extended second edition, 29 November 2024. | [Dutch PQC Handbook](/standards/migration-guides/dutch-pqc-handbook/) |
-| UK NCSC timelines | Recommended 2028, 2031 and 2035 milestones for large organisations, CNI and bespoke IT; version 1.0, 20 March 2025. | [UK NCSC guidance](/standards/migration-guides/uk-ncsc-pqc-guidance/) |
+| UK NCSC timelines | Recommended 2028, 2031 and 2035 milestones for large organisations, CNI and bespoke IT; version 1.0, 20 March 2025. | [UK NCSC guidance](/standards/migration-guides/ncsc-migration-timelines/) |
 | EU NIS Cooperation Group roadmap | Recommendations to Member States with 2026, 2030 and 2035 milestones by risk band; Version 1.1, 11 June 2025. | [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/) |
 | ASD planning publication | ASD guidance for Australian organisations with 2026, 2028 and 2030 milestones; published 6 July 2022, reviewed 22 September 2025. | [ASD planning](/standards/migration-guides/asd-planning/) |
 | Canada ITSM.40.001 | Cyber Centre roadmap for Government of Canada departments, with milestones to 2031 and 2035; effective 23 June 2025. | [Canada ITSM.40.001 roadmap](/standards/migration-guides/canada-itsm-40-001/) |
-| Canadian CFDIR guide | Recommended quantum-readiness best practices from CFDIR's working group; Version 04, 10 July 2024. | [Canadian CFDIR guide](/standards/migration-guides/canadian-cfdir-guide/) |
+| Canadian CFDIR guide | Recommended quantum-readiness best practices from CFDIR's working group; Version 04, 10 July 2024. | [Canadian CFDIR guide](/standards/migration-guides/cfdir-quantum-readiness/) |
 | ETSI TR 103 619 | Informative report on a three-stage migration: inventory, plan, execute; V1.1.1, July 2020. | [ETSI TR 103 619](/standards/migration-guides/etsi-tr-103-619/) |
 | ETSI TR 104 016 | Informative report setting out an 11-step repeatable migration cycle; V1.1.1, October 2024. | [ETSI TR 104 016](/standards/migration-guides/etsi-tr-104-016/) |
 | PQCC migration roadmap | Non-governmental coalition roadmap in four categories, with urgent and regular adopters; May 2025. | [PQCC roadmap](/standards/migration-guides/pqcc-roadmap/) |
@@ -49,5 +49,5 @@ These summaries cover guides for running a post-quantum migration programme, fin
 
 - [Standards](/standards/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
-- [Timelines](/learn/explainers/timelines/)
-- [Decide whether to act](/migration-practices/diagnose/)
+- [Timelines](/learn/explainers/why-timelines-differ/)
+- [Decide whether to act](/migration-practices/decide-whether-to-act/)

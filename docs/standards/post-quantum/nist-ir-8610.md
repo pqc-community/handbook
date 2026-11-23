@@ -1,5 +1,6 @@
 ---
 title: "NIST IR 8610: Status Report on the Second Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process"
+search_title: "NIST IR 8610: additional signatures, round 2"
 sidebar_label: NIST IR 8610 (Signatures round 2)
 displayed_sidebar: standardsSidebar
 description: NIST status report on the second round of the additional post-quantum signature process, advancing nine candidates to round three.

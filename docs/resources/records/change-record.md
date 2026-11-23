@@ -1,5 +1,6 @@
 ---
 title: Change and testing record
+search_title: Change and testing record template
 sidebar_label: Change record
 description: One change to one asset and job, with tests, rollback, a deployed-state check, and the evidence for what has and has not been shown.
 displayed_sidebar: resourcesSidebar

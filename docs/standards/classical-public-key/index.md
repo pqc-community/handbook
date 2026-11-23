@@ -7,7 +7,7 @@ description: NIST classical signature, elliptic-curve and pair-wise key-establis
 
 These NIST publications specify the classical public-key cryptography in use today: RSA, which relies on integer factorisation, and finite-field and elliptic-curve schemes, which rely on discrete logarithms. NIST IR 8547 identifies all of them as vulnerable to Shor's algorithm on a cryptanalytically relevant quantum computer, so they are what post-quantum standards replace. FIPS 186-5 is a Federal Information Processing Standard, whose applicability section says when it is mandatory for federal systems; the SPs are guidance and recommendations for US federal agencies. Others widely use all four as a reference.
 
-The schedule below is NIST's, for its own standards and guidelines, from [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (Tables 2 and 4). It applies at every security strength. US federal high value assets and high-impact systems face earlier deadlines under [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), and other authorities set their own dates; see [Why migration timelines differ](/learn/explainers/timelines/).
+The schedule below is NIST's, for its own standards and guidelines, from [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (Tables 2 and 4). It applies at every security strength. US federal high value assets and high-impact systems face earlier deadlines under [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/), and other authorities set their own dates; see [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 
 | Family | Deprecated | Disallowed under NIST standards and guidelines |
 | --- | --- | --- |
@@ -49,5 +49,5 @@ The schedule below is NIST's, for its own standards and guidelines, from [NIST I
 
 - [Standards](/standards/)
 - [Post-quantum cryptography standards](/standards/post-quantum/)
-- [Why migration timelines differ](/learn/explainers/timelines/)
+- [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Inventory the cryptography](/migration-practices/inventory/)

@@ -1,5 +1,6 @@
 ---
 title: "Canadian Centre for Cyber Security: Roadmap for the Migration to Post-Quantum Cryptography for the Government of Canada (ITSM.40.001)"
+search_title: "Canada ITSM.40.001: federal PQC migration roadmap"
 sidebar_label: Canada ITSM.40.001 roadmap
 displayed_sidebar: standardsSidebar
 description: Canadian Centre for Cyber Security roadmap for Government of Canada departments, with milestones in 2026, 2031 and 2035.
@@ -28,7 +29,7 @@ The Canadian Centre for Cyber Security published the roadmap in June 2025, and i
 
 ## Relationship with other standards
 
-These milestones apply to Government of Canada departments, not to Canadian organisations generally; see [Timelines](/learn/explainers/timelines/). Other Canadian organisations can draw on the [CFDIR quantum-readiness best practices](/standards/migration-guides/canadian-cfdir-guide/), which use their own staged timeline.
+These milestones apply to Government of Canada departments, not to Canadian organisations generally; see [Timelines](/learn/explainers/why-timelines-differ/). Other Canadian organisations can draw on the [CFDIR quantum-readiness best practices](/standards/migration-guides/cfdir-quantum-readiness/), which use their own staged timeline.
 
 The roadmap is a programme plan rather than an algorithm specification. For the standards themselves, see [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures; for how national authorities differ on algorithms and hybrids, see [National algorithm positions](/standards/national-algorithm-positions/).
 
@@ -39,7 +40,7 @@ The roadmap is a programme plan rather than an algorithm specification. For the 
 ## Related pages
 
 - [Post-quantum migration guides](/standards/migration-guides/)
-- [Canadian CFDIR guide](/standards/migration-guides/canadian-cfdir-guide/)
+- [Canadian CFDIR guide](/standards/migration-guides/cfdir-quantum-readiness/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
-- [Timelines](/learn/explainers/timelines/)
+- [Timelines](/learn/explainers/why-timelines-differ/)
 - [Decide what to migrate first](/migration-practices/priority/)

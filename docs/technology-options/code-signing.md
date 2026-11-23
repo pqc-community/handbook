@@ -1,8 +1,9 @@
 ---
 title: Code and software signing
+search_title: Post-quantum code and software signing
 sidebar_label: Code and software signing
 displayed_sidebar: technologyOptionsSidebar
-description: What a good post-quantum move looks like for signing software packages, updates, containers and pipelines, which schemes fit, and why verifiers move before signers.
+description: What a good post-quantum move looks like for signing packages, updates, containers and pipelines, which schemes fit, and why verifiers move before signers.
 ---
 
 ## What it is

@@ -1,7 +1,7 @@
 ---
 title: Data that needs to stay confidential for years
 sidebar_label: Long-lived confidentiality
-description: The track for key establishment protecting data that must stay confidential for years. Its clock, its steps, the deadlines that may apply, and the technology cards to open.
+description: "The track for key establishment protecting data that must stay confidential for years, against harvest-now, decrypt-later: its clock, steps and deadlines."
 displayed_sidebar: routesSidebar
 ---
 
@@ -11,7 +11,7 @@ This track covers key establishment that protects data which must stay confident
 
 ## Who it is for
 
-This track is for assets that answer yes to question A on [Decide whether to act](/migration-practices/diagnose/), whose `route` cell on the [decision note](/resources/records/decision-note/) begins with Long-lived confidentiality. If the same asset also answers yes to question B, C, or D, its signature or verifier line follows [Hard-to-change systems](/routes/hard-to-change-systems/) as well.
+This track is for assets that answer yes to question A on [Decide whether to act](/migration-practices/decide-whether-to-act/), whose `route` cell on the [decision note](/resources/records/decision-note/) begins with Long-lived confidentiality. If the same asset also answers yes to question B, C, or D, its signature or verifier line follows [Hard-to-change systems](/routes/hard-to-change-systems/) as well.
 
 ## Steps
 
@@ -29,14 +29,14 @@ Reviews run for the whole programme, under [Review and report](/migration-practi
 
 ## Deadlines that may apply
 
-Each date binds or guides only the audience its authority names. Record the one that applies to you on the plan row, as step 1 of [Plan the migration](/migration-practices/plan/) describes, and see [Why migration timelines differ](/learn/explainers/timelines/).
+Each date binds or guides only the audience its authority names. Record the one that applies to you on the plan row, as step 1 of [Plan the migration](/migration-practices/plan/) describes, and see [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 
 | Authority | Audience | What it sets for key establishment |
 | --- | --- | --- |
 | EU NIS Cooperation Group, [roadmap](/standards/migration-guides/eu-nis-roadmap/), version 1.1, 11 June 2025 | EU Member States. It says public administrations and critical infrastructure entities, notably those in scope of the NIS2 Directive, should refer to it | Recommends that data needing to stay confidential for at least ten years be protected from quantum attack no later than the end of 2030, and that high-risk use cases complete the transition by then |
 | NIST, [IR 8547](/standards/transition-and-key-management/nist-ir-8547/), October 2026 | A broad audience, including US federal agencies, technology providers, standards organisations, and validation laboratories | Says systems that protect data with long-term confidentiality needs warrant the earliest transitions (§4). Schedules quantum-vulnerable key establishment for deprecation after 2030 and disallowance after 2035 under NIST standards and guidelines, and notes that, to mitigate harvest-now, decrypt-later attacks on network communications, application-specific guidance may require or recommend earlier migration (§4.1.2) |
-| [EO 14412](/standards/us-federal-directives/eo-14412/) and [OMB M-26-15](/standards/us-federal-directives/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies; EO 14412 excludes National Security Systems from the inventory review that precedes these transitions (EO 14412, Sec. 4(b)(i)) | High value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030. Agencies must give the same priority to other systems with highly sensitive data or that are likely to be particularly vulnerable to attack by a cryptanalytically relevant quantum computer, including systems that protect data expected to remain mission-sensitive in 2030 (NIST IR 8547, §4) |
-| UK NCSC, [timelines](/standards/migration-guides/uk-ncsc-pqc-guidance/), published and reviewed 20 March 2025 | Primarily technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | General milestones for every job, not specific to key establishment: defined migration goals, a full discovery exercise, and an initial migration plan by 2028; early, highest-priority activities by 2031; and migration of all systems, services, and products completed by 2035 |
+| [EO 14412](/standards/us-government-requirements/eo-14412/) and [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/), as recorded in NIST IR 8547 | US federal agencies; EO 14412 excludes National Security Systems from the inventory review that precedes these transitions (EO 14412, Sec. 4(b)(i)) | High value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030. Agencies must give the same priority to other systems with highly sensitive data or that are likely to be particularly vulnerable to attack by a cryptanalytically relevant quantum computer, including systems that protect data expected to remain mission-sensitive in 2030 (NIST IR 8547, §4) |
+| UK NCSC, [timelines](/standards/migration-guides/ncsc-migration-timelines/), published and reviewed 20 March 2025 | Primarily technical decision-makers and risk owners in large organisations, operators of critical national infrastructure, and companies with bespoke IT; the NCSC says the core timelines are relevant to all organisations | General milestones for every job, not specific to key establishment: defined migration goals, a full discovery exercise, and an initial migration plan by 2028; early, highest-priority activities by 2031; and migration of all systems, services, and products completed by 2035 |
 
 For the asset's signature lines, use the signature rows of [Deadlines that may apply](/routes/hard-to-change-systems/#deadlines-that-may-apply) on Hard-to-change systems.
 
@@ -45,7 +45,7 @@ For the asset's signature lines, use the signature rows of [Deadlines that may a
 Open the card for each technology that carries the asset's data:
 
 - **Connections:** [TLS and web services](/technology-options/tls/), [VPNs and IPsec](/technology-options/vpn-ipsec/), [SSH](/technology-options/ssh/), [Wi-Fi and network access](/technology-options/wifi-network-access/), and [secure messaging](/technology-options/secure-messaging/).
-- **Stored data:** [encrypted email and files](/technology-options/encrypted-files/), and [backups, archives and storage](/technology-options/stored-data/).
+- **Stored data:** [encrypted email and files](/technology-options/encrypted-files/), and [backups, archives and storage](/technology-options/backups-archives/).
 - **Platforms:** [HSMs and key management](/technology-options/hsm-kms/), and [cloud and SaaS](/technology-options/cloud-saas/).
 
 ## Output records
@@ -60,9 +60,9 @@ A line is planned when its four dates are recorded and its change record exists;
 ## When to leave
 
 - **The data owner confirms a period that changes the answer to question A.** Re-answer on the decision note. The asset moves to the track its new answers give.
-- **Something changes the asset's answer to question B, C, or D.** Re-answer the four questions on the decision note; step 3 of [Decide whether to act](/migration-practices/diagnose/) sets the new route, which may add [Hard-to-change systems](/routes/hard-to-change-systems/).
+- **Something changes the asset's answer to question B, C, or D.** Re-answer the four questions on the decision note; step 3 of [Decide whether to act](/migration-practices/decide-whether-to-act/) sets the new route, which may add [Hard-to-change systems](/routes/hard-to-change-systems/).
 - **A supplier's answer is `missing` or `concerning`.** Follow it up and escalate it under step 4 of [Work with suppliers](/migration-practices/suppliers/#4-follow-up-and-escalate).
-- **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/diagnose/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
+- **You cannot choose a route for an asset, or the system may need a specialist.** Follow [When you cannot answer or cannot choose](/migration-practices/decide-whether-to-act/#when-you-cannot-answer-or-cannot-choose) on Decide whether to act.
 
 ## Worked example
 
