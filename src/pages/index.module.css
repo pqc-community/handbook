@@ -1,8 +1,9 @@
 /* Homepage. Colours come from Infima variables and the --pqc-* variables in
    src/css/custom.css; nothing here is a raw colour value. */
 
-/* Hero: what the handbook is, who needs a plan, and why now on the left; who it is
-   for and its limit on the right. No buttons: the two ways in follow as cards. */
+/* Hero: the site name as a small label, the plan promise as the heading, one paragraph
+   on why and what the work is, and a quiet line on scope. No buttons: the two ways in
+   follow as cards. */
 .hero {
   background-color: var(--pqc-deep-teal);
   color: var(--pqc-surface-light);
@@ -10,50 +11,36 @@
   padding: 2.75rem 0 2.5rem;
 }
 
-.heroGrid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
-  gap: 3rem;
-  align-items: end;
+.heroLabel {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.6rem;
 }
 
 .heroTitle {
   color: var(--pqc-surface-light);
-  font-size: 2.75rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  max-width: 48rem;
+  margin-bottom: 1rem;
 }
 
 .heroLead {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  max-width: 42rem;
-  margin-bottom: 0.75rem;
-}
-
-.heroNext {
-  max-width: 42rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 46rem;
   margin-bottom: 1.25rem;
-}
-
-.heroWhen {
-  max-width: 42rem;
-  font-size: 0.95rem;
-  opacity: 0.9;
-  margin-bottom: 1.25rem;
-}
-
-.heroAside {
-  padding-left: 1rem;
-  border-left: 2px solid var(--ifm-color-primary);
-  font-size: 0.9rem;
-}
-
-.heroAudience {
-  margin-bottom: 0.75rem;
 }
 
 .heroLimit {
+  font-size: 0.9rem;
+  max-width: 46rem;
   margin-bottom: 0;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--ifm-color-primary);
   opacity: 0.85;
 }
 
@@ -237,7 +224,6 @@
 
 /* Narrow screens */
 @media screen and (max-width: 996px) {
-  .heroGrid,
   .choices,
   .situations {
     grid-template-columns: minmax(0, 1fr);
@@ -247,7 +233,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .heroGrid,
   .choices {
     gap: 1.75rem;
   }
@@ -259,7 +244,7 @@
   }
 
   .heroTitle {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
   }
 
   .heroLead {

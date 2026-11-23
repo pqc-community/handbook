@@ -97,33 +97,22 @@ function Hero() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.hero}>
-      <div className={`container ${styles.heroGrid}`}>
-        <div>
-          <Heading as="h1" className={styles.heroTitle}>
-            {siteConfig.title}
-          </Heading>
-          <p className={styles.heroLead}>{siteConfig.tagline}.</p>
-          <p className={styles.heroNext}>
-            Every organisation needs a post-quantum migration plan. For most it is short: suppliers make the changes,
-            and you keep one page of core actions. If you build software, run your own servers, or customers are asking for
-            your plans, you need more; critical and regulated operators also need specialist advice.
-          </p>
-          <p className={styles.heroWhen}>
-            Why now: data recorded today could be decrypted later. The UK NCSC&rsquo;s timelines, aimed mainly at
-            larger organisations, set an initial plan by 2028 and migration completed by 2035. Other authorities set
-            their own.
-          </p>
-        </div>
-        <aside className={styles.heroAside} aria-label="Who this handbook is for">
-          <p className={styles.heroAudience}>
-            <strong>For</strong> security, engineering, product, procurement, and risk professionals responsible for a
-            post-quantum migration without specialist cryptography staff.
-          </p>
-          <p className={styles.heroLimit}>
-            Not a formal risk assessment, and not a substitute for specialist cryptography advice on large bespoke
-            estates, critical national infrastructure, or regulated systems.
-          </p>
-        </aside>
+      <div className="container">
+        <p className={styles.heroLabel}>{siteConfig.title}</p>
+        <Heading as="h1" className={styles.heroTitle}>
+          Every organisation needs a post-quantum migration plan.
+        </Heading>
+        <p className={styles.heroLead}>
+          A future quantum computer could break the public-key cryptography that protects connections and proves
+          software is genuine, and data recorded now could be decrypted later. For most organisations, suppliers will
+          make the changes. The work is to ask them the right questions, keep the records, and recognise the systems
+          that need more. This handbook explains how, for teams without specialist cryptography staff.
+        </p>
+        <p className={styles.heroLimit}>
+          Vendor-neutral and based on published guidance. It is not a formal risk assessment. Operators of critical
+          national infrastructure and regulated services should take specialist advice and speak to their sector
+          regulator.
+        </p>
       </div>
     </header>
   );
