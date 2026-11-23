@@ -7,7 +7,7 @@ description: The US statute, presidential orders, OMB memorandum and CISA guidan
 
 These documents set post-quantum requirements for the US federal government. They bind US federal agencies, not private organisations or other governments, and each has its own audience. A statute, the [Quantum Computing Cybersecurity Preparedness Act](/standards/us-government-requirements/qccpa/), requires agency inventories and migration plans. Presidential direction ([NSM-10](/standards/us-government-requirements/nsm-10/), [EO 14306](/standards/us-government-requirements/eo-14306/) and [EO 14412](/standards/us-government-requirements/eo-14412/)) sets goals and deadlines and assigns work to OMB, NIST, CISA and NSA. [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/) tells executive departments and agencies how to carry out the migration. CISA's [product-category list](/standards/us-government-requirements/cisa-pqc-product-categories/) guides agency acquisition. National security systems are excluded from the statute and the OMB memorandum and follow NSA requirements; see [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/). Contractors are not bound by any of these directly; EO 14412 directs the FAR Council to propose a rule that would change that.
 
-### Which document do I need?
+## Which document do I need?
 
 - What deadlines apply to a federal agency's own systems? → [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/)
 - Where do the 2030 and 2031 deadlines and the proposed contractor rule come from? → [EO 14412](/standards/us-government-requirements/eo-14412/)
@@ -15,7 +15,7 @@ These documents set post-quantum requirements for the US federal government. The
 - In which product categories should a buyer insist on post-quantum support now? → [CISA PQC product categories](/standards/us-government-requirements/cisa-pqc-product-categories/)
 - What does the law require of agencies? → [Quantum Computing Cybersecurity Preparedness Act](/standards/us-government-requirements/qccpa/)
 
-### Key federal dates
+## Key federal dates
 
 - 2 January 2030: federal agencies support TLS 1.3 or a successor (EO 14306; M-26-15 Appendix A).
 - 31 December 2030: post-quantum key establishment in agency high-value assets and high-impact systems (EO 14412; M-26-15 phases agencies' work towards it). The same date is in the contractor FAR rule EO 14412 directs to be proposed; it is not yet a contract requirement.
@@ -24,13 +24,13 @@ These documents set post-quantum requirements for the US federal government. The
 
 These dates are for US federal agencies. Other authorities set their own; see [Timelines](/learn/timelines/).
 
-### Statute
+## Statute
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
 | Public Law 117-260 | Quantum Computing Cybersecurity Preparedness Act: agency inventories and OMB-required migration plans; national security systems exempt. Approved 21 December 2022. | [Quantum Computing Cybersecurity Preparedness Act](/standards/us-government-requirements/qccpa/) |
 
-### Presidential direction
+## Presidential direction
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ These dates are for US federal agencies. Other authorities set their own; see [T
 | EO 14306 | Replaced EO 14144 Section 4(f): CISA product-category list and TLS 1.3 by 2 January 2030. Signed 6 June 2025. | [EO 14306](/standards/us-government-requirements/eo-14306/) |
 | EO 14412 | Securing the Nation Against Advanced Cryptographic Attacks: 2030 and 2031 deadlines, CMVP, CBOM and FAR work. Signed 22 June 2026. | [EO 14412](/standards/us-government-requirements/eo-14412/) |
 
-### OMB execution and CISA guidance
+## OMB execution and CISA guidance
 
 | Publication | Summary | Reference |
 | --- | --- | --- |

@@ -12,7 +12,7 @@ This category records where national authorities set out algorithm choices and e
 - Building products assessed in France? See the [ANSSI position](/standards/national-algorithm-positions/anssi-pqc-position/), and check ANSSI's current material.
 - Following NIST? See [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/).
 
-### Summaries in this category
+## Summaries in this category
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ This category records where national authorities set out algorithm choices and e
 | BSI TR-02102-1 | BSI Technical Guideline of recommended mechanisms and key lengths; Version 2026-01, 23 January 2026. | [BSI TR-02102-1](/standards/national-algorithm-positions/bsi-tr-02102-1/) |
 | ANSSI follow-up position paper | ANSSI views on the post-quantum transition; 21 December 2023. | [ANSSI position](/standards/national-algorithm-positions/anssi-pqc-position/) |
 
-### Positions compared
+## Positions compared
 
 The ASD, UK NCSC and NIST rows link to summaries elsewhere in the Standards section and are included for comparison. A dash means the handbook has not recorded a position for that column.
 

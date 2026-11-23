@@ -7,7 +7,7 @@ description: NIST post-quantum key-establishment and signature standards, statef
 
 These publications specify NIST's approved quantum-resistant public-key algorithms, the guidance for using them, and NIST's reports on the algorithms still in the pipeline. The FIPS are standards for US federal computer systems; NIST's FIPS FAQ says they are not always mandatory for agencies (each FIPS's applicability section says when), do not apply to national security systems, and are used voluntarily elsewhere. The SPs are NIST recommendations, and the IRs are informative reports that impose no requirements. Key establishment and digital signatures are listed separately because their migration drivers differ.
 
-### Which document do I need?
+## Which document do I need?
 
 - Which post-quantum algorithm protects key exchange? → [FIPS 203 (ML-KEM)](/standards/post-quantum/fips-203/)
 - How do I combine ML-KEM with a classical algorithm in a hybrid? → [NIST SP 800-227](/standards/post-quantum/sp-800-227/)
@@ -15,14 +15,14 @@ These publications specify NIST's approved quantum-resistant public-key algorith
 - Can firmware signing use LMS or XMSS? → [NIST SP 800-208](/standards/post-quantum/sp-800-208/)
 - What else is NIST likely to standardise? → [NIST IR 8610](/standards/post-quantum/nist-ir-8610/) and [NIST IR 8545](/standards/post-quantum/nist-ir-8545/)
 
-### Key establishment and KEMs
+## Key establishment and KEMs
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
 | FIPS 203 | ML-KEM, the only NIST-approved post-quantum public-key key-establishment scheme. Final, 13 August 2024. | [FIPS 203](/standards/post-quantum/fips-203/) |
 | NIST SP 800-227 | Recommendations for using KEMs, including key combiners for hybrids. Final, 18 September 2025. | [NIST SP 800-227](/standards/post-quantum/sp-800-227/) |
 
-### Digital signatures
+## Digital signatures
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ These publications specify NIST's approved quantum-resistant public-key algorith
 | FIPS 205 | SLH-DSA, stateless hash-based signatures. Final, 13 August 2024. | [FIPS 205](/standards/post-quantum/fips-205/) |
 | NIST SP 800-208 | Stateful hash-based signatures (LMS, HSS, XMSS, XMSS^MT); not for general use. Final, 29 October 2020. | [NIST SP 800-208](/standards/post-quantum/sp-800-208/) |
 
-### In development (not yet approved)
+## In development (not yet approved)
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ These publications specify NIST's approved quantum-resistant public-key algorith
 | NIST SP 800-230 | Six additional SLH-DSA parameter sets limited to 2^24 signatures per key; not approved for general-purpose use. Initial public draft, 13 April 2026. | [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd) |
 | Additional signature schemes | NIST's on-ramp for further signature algorithms; nine candidates in round three. | [NIST IR 8610](/standards/post-quantum/nist-ir-8610/) |
 
-### Standardisation status reports
+## Standardisation status reports
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
