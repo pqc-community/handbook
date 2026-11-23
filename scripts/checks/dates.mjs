@@ -16,7 +16,7 @@ const MONTHS = [
 // Prose lines that show the ISO format on purpose. Each entry names the file and a
 // phrase from the line, so an exception cannot spread to other lines.
 export const ISO_FORMAT_EXAMPLES = [
-  {file: 'docs/resources/records/index.md', phrase: 'Write dates in record tables as ISO 8601'},
+  {file: 'docs/templates/records/index.md', phrase: 'Write dates in record tables as ISO 8601'},
 ];
 
 export function proseDate(iso) {

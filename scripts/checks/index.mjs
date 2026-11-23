@@ -5,7 +5,7 @@ import {findCsvFieldViolations, findCsvLinkViolations, findRecordsZipViolations,
 import {findAdmonitionViolations, findNavigationViolations, findPageViolations} from './pages.mjs';
 import {findPdfLinkLabelViolations, findStandardsLayoutViolations} from './standards.mjs';
 import {findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
-import {findRoutePageViolations, findRouteValueViolations} from './routes.mjs';
+import {findJourneyBudgetViolations, findRetiredLabelViolations} from './reading.mjs';
 import {findSearchMetadataViolations, findUrlViolations} from './search.mjs';
 
 const docs = (root) => path.join(root, 'docs');
@@ -17,8 +17,8 @@ export const CHECKS = [
   {area: 'pages', name: 'admonition title syntax', run: (root) => findAdmonitionViolations(docs(root))},
   {area: 'search', name: 'search titles and descriptions', run: (root) => findSearchMetadataViolations(docs(root))},
   {area: 'search', name: 'URL slugs', run: (root) => findUrlViolations(docs(root))},
-  {area: 'routes', name: 'route pages link Decide whether to act and a record', run: (root) => findRoutePageViolations(root)},
-  {area: 'routes', name: 'decision-note route values are track names', run: (root) => findRouteValueViolations(root)},
+  {area: 'reading', name: 'journey pages stay within reading budgets', run: (root) => findJourneyBudgetViolations(root)},
+  {area: 'reading', name: 'retired routing labels are not used', run: (root) => findRetiredLabelViolations(root)},
   {area: 'standards', name: 'standards summary structure', run: (root) => findStandardsLayoutViolations(standards(root))},
   {area: 'standards', name: 'standards PDF link labels', run: (root) => findPdfLinkLabelViolations(standards(root))},
   {area: 'records', name: 'record pages link existing CSVs', run: (root) => findCsvLinkViolations(root)},

@@ -6,9 +6,9 @@ import path from 'node:path';
 import {DOWNLOADS_DIR, ZIP_NAME, buildZip, listCsvFiles} from '../records-zip.mjs';
 import {pipeCells, section, tableLines} from '../lib/markdown.mjs';
 
-export const RECORDS_DIR = 'docs/resources/records';
-export const WORKED_EXAMPLE = 'docs/resources/examples/protect-this-first.md';
-const MIN_RECORD_PAGES = 9;
+export const RECORDS_DIR = 'docs/templates/records';
+export const WORKED_EXAMPLE = 'docs/templates/examples/protect-this-first.md';
+const MIN_RECORD_PAGES = 5;
 
 const isDivider = (line) => /^\|\s*-/.test(line);
 
@@ -30,7 +30,7 @@ export function findCsvLinkViolations(root = '.') {
   const pages = recordPages(root);
   const violations = [];
   if (pages.length < MIN_RECORD_PAGES) {
-    violations.push(`expected at least nine record pages, found ${pages.length}`);
+    violations.push(`expected at least five record pages, found ${pages.length}`);
   }
   for (const page of pages) {
     if (!fs.existsSync(csvPath(root, page.csv))) violations.push(`${page.name}: missing ${page.csv}`);

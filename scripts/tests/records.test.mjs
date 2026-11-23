@@ -35,8 +35,8 @@ Download a blank CSV: [sample.csv](/downloads/sample.csv).
 
 function sampleSite({csv = 'asset,owner\n', filled = '| Laptops | IT lead |', worked = '| asset | owner |\n| --- | --- |\n| Laptops | IT lead |'} = {}) {
   return {
-    'docs/resources/records/sample.md': recordPage(filled),
-    'docs/resources/examples/protect-this-first.md': `${worked}\n`,
+    'docs/templates/records/sample.md': recordPage(filled),
+    'docs/templates/examples/protect-this-first.md': `${worked}\n`,
     'static/downloads/sample.csv': csv,
     'static/downloads/pqc-handbook-records.zip': buildZip([{name: 'sample.csv', data: Buffer.from(csv)}]),
   };

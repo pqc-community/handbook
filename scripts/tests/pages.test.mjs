@@ -13,7 +13,7 @@ import {
   findNavigationViolations,
   findPageViolations,
 } from '../checks/pages.mjs';
-import {findRoutePageViolations, findRouteValueViolations, isRouteValue} from '../checks/routes.mjs';
+import {MAX_WORDS, findJourneyBudgetViolations, findRetiredLabelViolations, readingMetrics} from '../checks/reading.mjs';
 import {assertNoViolations, withRoot} from '../lib/test-helpers.mjs';
 
 const ROOT = process.cwd();
@@ -146,81 +146,57 @@ test('all handbook admonition titles use supported syntax', () => {
   assertNoViolations(findAdmonitionViolations(DOCS), 'Admonition titles need bracket syntax');
 });
 
-// Situation routes. These tests live here because `npm test` lists its test files
-// explicitly; the checks themselves are in scripts/checks/routes.mjs.
-const routeRecordPage = `---
-title: Decision note
----
+// Reader journey budgets and retired labels. These tests live here because `npm test`
+// lists its test files explicitly; the checks themselves are in scripts/checks/reading.mjs.
+const journeyPage = (text) => `---\ntitle: Journey page\n---\n\n${text}\n\n## Sources\n\n- [A source](/standards/) and more words that are not counted.\n`;
 
-## Minimum fields
+const withJourney = (pages) =>
+  Object.fromEntries(
+    ['docs/start-here/index.md', 'docs/baseline/index.md', 'docs/programme/index.md'].map((name, index) => [name, pages[index] ?? journeyPage('Short and clear.')]),
+  );
 
-asset, route
+test('measures words, links, the longest sentence and backticks before Sources', () => {
+  const metrics = readingMetrics(journeyPage('One two three [four](/x/). Five `six` seven.'));
+  assert.equal(metrics.words, 7);
+  assert.equal(metrics.links, 1);
+  assert.equal(metrics.longest, 4);
+  assert.equal(metrics.backticks, 1);
+});
 
-Download a blank CSV: [decision-note.csv](/downloads/decision-note.csv).
-`;
+test('accepts journey pages within their reading budgets', () => {
+  withRoot(withJourney([]), (root) => assert.deepEqual(findJourneyBudgetViolations(root), []));
+});
 
-const decisionTable = (route) => `| asset | A long-lived confidentiality | path | route |
-| --- | --- | --- | --- |
-| Laptops | no | short | ${route} |
-`;
+test('flags journey pages that are too long, too linked, too wordy per sentence, or use backticks', () => {
+  const long = journeyPage(Array.from({length: MAX_WORDS + 1}, () => 'word.').join(' '));
+  const linked = journeyPage('[a](/a/) [b](/b/) [c](/c/) words here.');
+  const sentence = journeyPage(`${Array.from({length: 41}, () => 'word').join(' ')}.`);
+  const ticks = journeyPage('Use the `route` field.');
+  withRoot(withJourney([long, linked, sentence]), (root) =>
+    assert.deepEqual(findJourneyBudgetViolations(root).map((v) => v.split(':')[0]), [
+      'docs/start-here/index.md',
+      'docs/baseline/index.md',
+      'docs/programme/index.md',
+    ]),
+  );
+  withRoot(withJourney([ticks]), (root) => assert.match(findJourneyBudgetViolations(root)[0], /backticked/));
+});
 
-test('accepts route pages that link Decide whether to act and a record page', () => {
+test('flags retired routing labels outside standards summaries, but not ordinary words', () => {
   withRoot(
     {
-      'docs/resources/records/decision-note.md': routeRecordPage,
-      'docs/routes/index.md': 'See [Decide](/migration-practices/decide-whether-to-act/) and the [note](/resources/records/decision-note/).\n',
-      'docs/routes/short.md': 'See [Decide](/migration-practices/decide-whether-to-act/#five-conditions) and the [note](/resources/records/decision-note/#filled-example).\n',
+      'docs/a.md': 'Follow the short path here.\n',
+      'docs/b.md': 'The upgrade route and the critical path are fine.\n',
+      'docs/standards/guide.md': 'The AIVD handbook names urgent adopters.\n',
     },
-    (root) => assert.deepEqual(findRoutePageViolations(root), []),
+    (root) => assert.deepEqual(findRetiredLabelViolations(root), ['docs/a.md:1: retired label "short path"']),
   );
 });
 
-test('flags a route page without Decide whether to act or a record, and a missing overview', () => {
-  withRoot(
-    {
-      'docs/resources/records/decision-note.md': routeRecordPage,
-      'docs/routes/short.md': 'See [Programme](/migration-practices/programme/) and the [glossary](/resources/reference/glossary/).\n',
-    },
-    (root) =>
-      assert.deepEqual(findRoutePageViolations(root), [
-        'docs/routes/index.md is missing',
-        'docs/routes/short.md: does not link Decide whether to act (/migration-practices/decide-whether-to-act/)',
-        'docs/routes/short.md: does not link a record page',
-      ]),
-  );
+test('the handbook journey pages stay within their reading budgets', () => {
+  assertNoViolations(findJourneyBudgetViolations(ROOT), 'Journey pages over budget');
 });
 
-test('accepts the three route names, alone or with one bracketed qualifier', () => {
-  for (const value of [
-    'Vendor-managed software',
-    'Vendor-managed software (all five conditions hold)',
-    'Long-lived confidentiality (also Hard-to-change systems)',
-    'Hard-to-change systems',
-  ]) {
-    assert.ok(isRouteValue(value), value);
-  }
-});
-
-test('flags decision-note route values that are not a track name', () => {
-  withRoot(
-    {
-      'docs/a.md': decisionTable('Organisation-wide'),
-      'docs/b.md': decisionTable('Vendor-managed software (all five conditions hold) (checked)'),
-      'docs/c.md': decisionTable('vendor-managed software'),
-      'docs/d.md': `${decisionTable('Hard-to-change systems')}\n| asset | route |\n| --- | --- |\n| Laptops | anything |\n`,
-    },
-    (root) =>
-      assert.deepEqual(
-        findRouteValueViolations(root).map((violation) => violation.split(': route')[0]),
-        ['docs/a.md:3', 'docs/b.md:3', 'docs/c.md:3'],
-      ),
-  );
-});
-
-test('every route page links Decide whether to act and a record page', () => {
-  assertNoViolations(findRoutePageViolations(ROOT), 'Route pages missing a required link');
-});
-
-test('every decision-note route value is a track name', () => {
-  assertNoViolations(findRouteValueViolations(ROOT), 'Decision-note route values');
+test('the handbook does not use retired routing labels', () => {
+  assertNoViolations(findRetiredLabelViolations(ROOT), 'Retired routing labels');
 });
