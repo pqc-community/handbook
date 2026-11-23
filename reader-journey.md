@@ -37,10 +37,10 @@ Start here asks four questions about the organisation as a whole. A question app
 
 | # | Question | Why it is asked |
 | --- | --- | --- |
-| 1 | **Data that must stay secret for years.** Information that must stay confidential for many years and is protected in transit or at rest by public-key methods. | Recorded traffic and wrapped keys can be decrypted later, so the exposure has already started. |
-| 2 | **Devices with a fixed key.** Products or devices, made or run, that check signatures with a key or method that cannot be changed after shipment, in hardware or software. | The design freeze, then the device's service life, sets the deadline. |
+| 1 | **Data that must stay secret for years.** Information that must stay confidential for many years and is protected in transit or at rest by public-key methods. Measured by how long it must stay secret, not how long it is kept. | Recorded traffic and wrapped keys can be decrypted later, so the exposure has already started. |
+| 2 | **Devices with a fixed key.** Products or devices, made or run, that check signatures with a key or method that cannot be changed after shipment, in hardware or software. A key a normal update can replace is not fixed. | The design freeze, then the device's service life, sets the deadline. |
 | 3 | **Signatures others rely on.** A certificate authority, public or internal, or code, firmware, or document signing that other people or devices check. | Everyone who checks the signatures has to move with the signer. |
-| 4 | **Systems you build or configure.** Software the organisation builds, or cryptography it sets up on its own servers, load balancers, VPNs, or applications. One such system is enough. | Only the organisation can change it, on its own release cycle. |
+| 4 | **Systems you build or configure.** Software the organisation builds, or cryptography it sets up on its own servers, load balancers, VPNs, or applications. One such system is enough. Set-up an IT provider does and keeps updated counts as supplied. | Only the organisation can change it, on its own release cycle. |
 
 Rules for the questions:
 
@@ -72,7 +72,7 @@ The programme page opens with **first moves**: one row per question, naming the 
 
 The programme has two sizes:
 
-- **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sponsor's sign-off, keeps the register, and adds a change record for each change. No charter or progress report.
+- **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sponsor's sign-off, keeps the register, and adds a change record for each change. No charter or progress report; reviews every six months unless a fixed date falls within a year.
 - **Full programme**: anything larger, any device with a fixed key, or any organisation in the specialist outcome. A named sponsor and lead, a one-page programme charter, and a progress report at each review.
 
 After the first moves, the existing migration practices run in three phases: **Diagnose** (set up, find the cryptography), **Plan** (order the work within each job, record the dates that apply, work with suppliers), and **Execute** (choose an option from the technology card, make and verify each change, keep the ability to change again, review and report). The page also says what to do when no option exists before a fixed date, and that suppliers asked by their customers answer from the register.

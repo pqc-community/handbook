@@ -6,11 +6,11 @@ description: "First moves for each question that applied, small and full program
 displayed_sidebar: journeySidebar
 ---
 
-Run a programme when any of the four questions on [Start here](/start-here/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (baseline action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator.
+Run a programme when any of the four questions on [Start here](/start-here/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (baseline action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator. Ask the regulator which requirements and dates apply to you, and what evidence it expects to see.
 
 ## First moves
 
-Take the first move for each question that applied, this week. Each one is a separate line on the register, because each runs on its own clock.
+Take the first move for each question that applied, this week. Each one is a separate line on the register, because each runs on its own clock. A line is one register row: one system and one job.
 
 | What applied | Its clock | First move |
 | --- | --- | --- |
@@ -23,7 +23,9 @@ If customers are asking about your post-quantum plans, answer from the register:
 
 ## Size
 
-- **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sponsor's sign-off, keeps the register, and adds a change record for each change. No charter or progress report.
+Count a system as one service or product with one owner, such as a portal and its servers, or one device model, not each server or site.
+
+- **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeps the register, and adds a change record for each change. No charter or progress report.
 - **Full programme**: anything larger, any device with a fixed key, or any organisation Start here sends to a specialist and regulator first. A named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
 
 ## Diagnose, plan, execute
@@ -46,7 +48,7 @@ The practices run in three phases. They overlap: supplier questions start during
 - [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
 - [Make and verify one change](/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
 - [Keep the ability to change again](/programme/changing-algorithms-again/).
-- [Review and report](/programme/subsequent-review/): every three months while a line is first in its order or a fixed date falls within a year, and every six months otherwise. A programme's reviews replace the baseline's: check the baseline items at the same time.
+- [Review and report](/programme/subsequent-review/): every three months while a line is ranked first for its job or a fixed date falls within a year, and every six months otherwise. A small programme reviews every six months unless a fixed date falls within a year. A programme's reviews replace the baseline's: check the baseline items at the same time.
 
 ## When no option exists in time
 

@@ -12,10 +12,10 @@ Post-quantum cryptography replaces the public-key methods that a future quantum 
 
 Answer for the organisation as a whole. A question applies if any system, service, or product you run fits it. **Not sure counts as yes** until someone who knows confirms it: write down who will confirm, and by when, on the [register](/templates/records/register/). Do not wait for a complete inventory before answering: one system that fits is enough.
 
-1. **Data that must stay secret for years.** Do you hold information that must stay confidential for many years and that travels over networks, or is stored, under public-key protection? An attacker can record it now and decrypt it later. As this handbook's guide, treat ten years or more as many years.
-2. **Devices with a fixed key.** Do you make or run products or devices that check signatures with a key or method that cannot be changed after they ship, whether in hardware or in software? Supported laptops and phones that their maker updates do not count.
+1. **Data that must stay secret for years.** Do you hold information that must stay confidential for many years and that travels over networks, or is stored, under public-key protection? An attacker can record it now and decrypt it later. Count how long it must stay secret, not how long you keep it. This handbook treats ten years or more as many years.
+2. **Devices with a fixed key.** Do you make or run products or devices that check signatures with a key or method that cannot be changed after they ship, whether in hardware or in software? A key that a normal update can replace is not fixed. Supported laptops and phones that their maker updates do not count.
 3. **Signatures others rely on.** Do you run a certificate authority, public or internal, or sign code, firmware, or documents that other people or devices check? Signing through a supplier's e-signature service is supplied IT, on the baseline.
-4. **Systems you build or configure.** Do you build software or firmware, or set up the cryptography yourself on your own servers, load balancers, VPNs, or applications? One such system is enough, even if you buy in everything else.
+4. **Systems you build or configure.** Do you build software or firmware, or set up the cryptography yourself on your own servers, load balancers, VPNs, or applications? One such system is enough, even if you buy in everything else. If an IT provider sets these up and keeps them updated for you, treat them as supplied, and ask the provider.
 
 A supplied product that is out of support, or whose supplier has no post-quantum plan, is not a reason for a programme on its own. The baseline replaces it.
 
@@ -24,8 +24,8 @@ A supplied product that is out of support, or whose supplier has no post-quantum
 | Your answers | What to do |
 | --- | --- |
 | None apply | Follow the [baseline](/baseline/). That is your plan. |
-| Any applies | Follow the baseline for everything you buy in, and run a [programme](/programme/) for what the questions found. Start with its first moves. |
-| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | First, bring in specialist advice and speak to your sector regulator or authority. Then follow the baseline and run a full programme. |
+| Any applies | Follow the baseline for everything you buy in, and run a [programme](/programme/) for what the questions found. Name an owner, then take its first moves. |
+| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. Then follow the baseline and run a full programme. |
 
 ## Which dates apply to you
 
