@@ -39,13 +39,13 @@ Read these in order. Each takes about five minutes and ends with a short self-ch
 
 1. [Public-key cryptography](/learn/public-key-cryptography/) — the jobs public-key cryptography does, and how it differs from symmetric cryptography.
 2. [Signatures, certificates, and trust](/learn/signatures-and-trust/) — certificates, chains, trust anchors, and verifiers that cannot be updated.
-3. [The quantum threat](/learn/quantum-threat/) — what a quantum computer breaks, what it does not, and harvest-now, decrypt-later.
+3. [The quantum threat](/learn/quantum-threat/) — what a quantum computer breaks, what it does not, harvest-now, decrypt-later, and what decides when to act.
 4. [What post-quantum means](/learn/what-post-quantum-means/) — post-quantum versus quantum cryptography, and what "quantum-resistant" promises.
 5. [Post-quantum algorithms](/learn/algorithms/) — ML-KEM, ML-DSA, SLH-DSA, LMS and XMSS, and what is coming next.
 6. [Hybrid cryptography](/learn/hybrid/) — hybrid key exchange, dual signatures, and differing authority positions.
 7. [Standardisation](/learn/standardisation/) — the five layers between a standard and a protected system, with current status.
 8. [In real systems](/learn/in-real-systems/) — where each job sits in TLS, VPNs, email, code signing, PKI, and hardware.
-9. [Timelines](/learn/timelines/) — four questions for any date, and the three clocks.
+9. [Timelines](/learn/timelines/) — five questions for any date, the three clocks, and dates that bind someone else.
 10. [Crypto-agility](/learn/crypto-agility/) — why this is not the last transition, and how to move into planning.
 
 ## Reading by role

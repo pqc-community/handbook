@@ -34,21 +34,27 @@ The risk applies to **confidentiality**, through key establishment and public-ke
 flowchart TD
     T1[Today: data encrypted with classical key establishment] --> R[Attacker records ciphertext]
     R --> W[Stored for years]
-    W --> Q[CRQC becomes available]
+    W --> Q[Attacker gains access to a CRQC]
     Q --> X[Session keys recovered and data read]
 ```
 
 ## What remains uncertain
 
-Nobody can say when a CRQC will exist. The NCSC whitepaper says it is hard to predict because many engineering and physical challenges remain. The EU NIS Cooperation Group [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) (version 1.1, 11 June 2025) reports that an updated study for Germany's BSI considered such a machine likely to be feasible within at most 16 years (by 2040 or earlier), and possibly within 10 if current heuristics are fully verified. Treat such estimates as planning inputs from named studies, not forecasts the handbook endorses.
+Nobody can say when a CRQC will exist. The NCSC whitepaper says it is hard to predict because many engineering and physical challenges remain. The EU NIS Cooperation Group [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) (version 1.1, 11 June 2025) reports that a 2024 update of a study for Germany's BSI judged such a machine likely to be feasible by 2040 or earlier, and possibly within ten years of that update if current error-correction heuristics are fully verified. Treat such estimates as planning inputs from named studies, not forecasts the handbook endorses. They describe when a machine may become feasible, not when you would learn that one exists.
 
-Migration decisions do not depend on knowing the date precisely. They depend on how long your data must stay confidential, how long the migration will take, and how long your devices will be in service. [When to start](/learn/explainers/when-to-start/) shows how those three numbers combine.
+Some of the largest operators have moved faster than the authority schedules. On 25 March 2026 Google ([Quantum frontiers may be closer than they appear](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/)) set 2029 as its post-quantum migration target, citing progress in quantum hardware, error correction, and estimates of the resources needed to factor RSA keys, and said it now prioritises authentication services. On 31 March Google Research [reported](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) that a superconducting CRQC with fewer than 500,000 physical qubits could solve the 256-bit elliptic-curve discrete-logarithm problem in minutes, publishing a zero-knowledge proof of the result instead of the attack circuits. Cloudflare ([Cloudflare targets 2029 for full post-quantum security](https://blog.cloudflare.com/post-quantum-roadmap/), 7 April 2026) then set 2029 for its own services, citing that result among other new estimates, and made post-quantum authentication its top priority. These are targets the companies set for their own services, not dates that bind anyone else. They show that published resource estimates have fallen, and that the products and services you depend on will change on their suppliers' schedule, not yours.
+
+So the arrival date is not the whole decision. Three things decide when you act:
+
+- **Your exposure.** How long your data must stay confidential, how long the migration will take, and how long your devices will be in service. [When to start](/learn/explainers/when-to-start/) shows how those numbers combine.
+- **The dates that apply to you.** Some authorities set dates without waiting for a CRQC. NIST will deprecate quantum-vulnerable public-key algorithms under its standards after 2030 and disallow them after 2035 (IR 8547 §4). The UK NCSC's [timelines for migration](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) set milestones in 2028, 2031, and 2035 for large organisations, critical national infrastructure, and organisations with bespoke IT. The NCSC bases its 2035 target on how long it expects standards, products, and uptake to take, and warns that organisations which do not migrate in time will end up running significant legacy estates. [Timelines](/learn/timelines/) explains how to tell which dates govern you.
+- **Your threat level.** The NCSC whitepaper says harvest-now, decrypt-later is only likely to be worthwhile for very high-value information. [The PQC Migration Handbook](https://english.aivd.nl/documents/2024/12/3/the-pqc-migration-handbook) (AIVD, CWI, and TNO, December 2024) asks how realistic it is that an attacker with a quantum computer would choose to target your organisation. Cloudflare's roadmap expects progress towards a CRQC to leave the public eye; if it does, the first capable machine may not be announced. Data that would interest a well-resourced adversary argues for planning against the earlier estimates and moving it early in the order set in [Decide what to migrate first](/migration-practices/priority/). Keeping lower-value data later in that order is a decision for legal or risk to accept, recorded with its reasons.
 
 ## Check your understanding
 
 - Why does doubling an RSA key size not solve the quantum threat, when larger symmetric keys are not even necessary?
 - Which job is exposed to harvest-now, decrypt-later, and which is not?
-- What three quantities matter more to your planning than a predicted CRQC date?
+- Apart from when a CRQC might exist, what three things decide when you should act?
 
 Continue with [What post-quantum means](/learn/what-post-quantum-means/). For the timing of harm to encrypted data and signatures, read [What a quantum computer changes](/learn/explainers/quantum-computers/).
 
@@ -56,7 +62,12 @@ Continue with [What post-quantum means](/learn/what-post-quantum-means/). For th
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§1, §2.1, §3, §4.1.3). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
+- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025 (§5). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
+- AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024 (PQC personas, threat level). [Handbook](https://english.aivd.nl/documents/2024/12/3/the-pqc-migration-handbook)
+- Google, Quantum frontiers may be closer than they appear, 25 March 2026. [Google blog](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/)
+- Google Research, Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly, 31 March 2026. [Google Research blog](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/)
+- Cloudflare, Cloudflare targets 2029 for full post-quantum security, 7 April 2026. [Cloudflare blog](https://blog.cloudflare.com/post-quantum-roadmap/)
 
 ## Related pages
 

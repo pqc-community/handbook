@@ -47,7 +47,7 @@ NIST IR 8547 (§3.1.2) states that an authentication system remains secure as lo
 
 ## What remains uncertain
 
-No one knows when a cryptographically relevant quantum computer will exist; NIST IR 8547 (§3) states that none exists today. Authorities therefore set migration targets based on how long migration takes rather than on a predicted arrival date. [When to start](/learn/explainers/when-to-start/) shows how.
+No one knows when a cryptographically relevant quantum computer will exist; NIST IR 8547 (§3) states that none exists today. Because migration takes years, the arrival date is only one input. The UK NCSC, for example, bases its 2035 target on how long it expects standards, products, and uptake to take. [The quantum threat](/learn/quantum-threat/#what-remains-uncertain) sets out what else decides when you act, and [When to start](/learn/explainers/when-to-start/) shows how your own numbers combine.
 
 ## Sources
 

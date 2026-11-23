@@ -15,7 +15,7 @@ The reasoning most authorities use is named after the researcher Michele Mosca. 
 - **Y** — how many years it will take to complete the transition;
 - **Z** — how many years until a cryptanalytically relevant quantum computer exists.
 
-If **X + Y** is greater than **Z**, some data will still need protecting after a quantum computer can read it. Organisations need to start before X + Y exceeds Z. [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) adds that the closer X + Y is to Z, the more urgent the migration.
+If **X + Y** is greater than **Z**, some data will still need protecting after a quantum computer can read it. Organisations need to start before X + Y exceeds Z. [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) adds that the closer X + Y is to Z, the more urgent the migration. The inequality shows when your own exposure begins. It does not replace published dates that govern you, which can fall earlier; [Timelines](/learn/timelines/) explains how to tell which apply.
 
 ```mermaid
 ---
@@ -46,7 +46,7 @@ In this illustration, X + Y is 16 years and Z is 14, so the last data protected 
 
 **Y is usually longer than expected.** NIST IR 8547 (§1) observes that moving from algorithm standardisation to full integration has historically taken 10 to 20 years; the EU roadmap estimates 5 to 10 years to migrate all relevant systems. Your Y depends on supplier release dates, hardware refresh cycles, and change windows — the subject of [Plan the migration](/migration-practices/plan/).
 
-**Z is not knowable, so use a range.** The EU roadmap reports a BSI-commissioned study judging a capable machine likely within at most 16 years of 2024 (by 2040 or earlier), and possibly within 10. The Dutch handbook reports expert-survey estimates, with a conservative reading of 2040. These are inputs from named studies, not handbook predictions. A sensible approach is to test whether your conclusion changes across a plausible range of Z rather than pick a single year.
+**Z is not knowable, so use a range.** The EU roadmap reports a BSI-commissioned study judging a capable machine likely within at most 16 years of 2024 (by 2040 or earlier), and possibly within 10. The Dutch handbook reports expert-survey estimates, with a conservative reading of 2040. These are inputs from named studies, not handbook predictions. A sensible approach is to test whether your conclusion changes across a plausible range of Z rather than pick a single year. Give the earlier end of that range real weight: published resource estimates have fallen since the BSI update. Google and Cloudflare have both set 2029 to finish migrating their own services, a target for their migration rather than an estimate of Z; [The quantum threat](/learn/quantum-threat/#what-remains-uncertain) explains why.
 
 ## A worked example
 
