@@ -30,32 +30,41 @@ const questions = [
 const outcomes: Node[] = [
   {
     label: 'If none apply',
-    title: 'Baseline',
-    to: '/baseline/',
-    text: 'Seven actions, starting with naming an owner and listing what you use. Your suppliers make the changes; the baseline is your plan.',
+    title: 'Your plan: the baseline',
+    to: '/plan/baseline/',
+    text: 'Seven actions on one page, starting with naming an owner and listing what you use. Your suppliers make the changes.',
   },
   {
     label: 'If any applies',
-    title: 'Baseline and a programme',
-    to: '/programme/',
+    title: 'Your plan: the baseline and a programme',
+    to: '/plan/programme/',
     text: 'The baseline for everything you buy in. Name an owner, then take a first move this week for each question that applied.',
   },
   {
     label: 'If you run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself',
-    title: 'Specialist advice and a full programme',
-    to: '/start-here/#what-to-do',
+    title: 'Your plan: specialist advice and a full programme',
+    to: '/plan/#your-plan',
     text: "Bring in specialist advice and speak to your sector regulator. Meanwhile, take the programme's first moves, which only gather facts.",
+  },
+];
+
+// The two ways in, side by side under the hero.
+const choices: Node[] = [
+  {
+    title: 'Learn the basics',
+    to: '/learn/',
+    text: 'Short lessons on what the quantum threat is, what changes, and why timelines differ.',
+  },
+  {
+    title: 'Plan your migration',
+    to: '/plan/',
+    text: 'Four questions give you your plan. For most organisations it is seven actions on one page; for some, a programme as well.',
   },
 ];
 
 // Reference sections, each naming a few of the pages inside so a returning reader can
 // see where to go.
 const reference: Node[] = [
-  {
-    title: 'Learn the basics',
-    to: '/learn/',
-    text: 'Short lessons: the quantum threat, the new algorithms, hybrid, signatures, and timelines.',
-  },
   {
     title: 'Technology options',
     to: '/technology-options/',
@@ -94,17 +103,15 @@ function Hero() {
           </Heading>
           <p className={styles.heroLead}>{siteConfig.tagline}.</p>
           <p className={styles.heroNext}>
-            Most organisations will not change any cryptography themselves: their suppliers will. If you build
-            software, run your own servers, or customers are asking for your plans, you have more to do. Four
-            questions tell you which.
+            Every organisation needs a post-quantum migration plan. For most it is short: suppliers make the changes,
+            and you keep a one-page baseline. If you build software, run your own servers, or customers are asking for
+            your plans, you need more; critical and regulated operators also need specialist advice.
           </p>
           <p className={styles.heroWhen}>
             Why now: data recorded today could be decrypted later. The UK NCSC&rsquo;s timelines, aimed mainly at
-            larger organisations, set an initial plan by 2028 and migration completed by 2035. Other authorities set their own.
+            larger organisations, set an initial plan by 2028 and migration completed by 2035. Other authorities set
+            their own.
           </p>
-          <Link className={styles.heroLink} to="#start">
-            Answer the four questions
-          </Link>
         </div>
         <aside className={styles.heroAside} aria-label="Who this handbook is for">
           <p className={styles.heroAudience}>
@@ -121,14 +128,28 @@ function Hero() {
   );
 }
 
-function StartHere() {
+function Choices() {
   return (
-    <section className={`${styles.section} ${styles.start}`} aria-labelledby="start">
+    <section className={`${styles.section} ${styles.choicesSection}`} aria-label="Two ways in">
+      <div className="container">
+        <div className={styles.choices}>
+          {choices.map((node) => (
+            <Box key={node.to} node={node} className={styles.choice} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function WhichPlan() {
+  return (
+    <section className={`${styles.section} ${styles.start}`} aria-labelledby="which-plan">
       <div className="container">
         <div className={styles.chooser}>
           <div>
-            <Heading as="h2" id="start">
-              Start here: four questions
+            <Heading as="h2" id="which-plan">
+              Which plan you need
             </Heading>
             <p className={styles.intro}>
               Answer for the organisation as a whole. A question applies if any system you run fits it.{' '}
@@ -143,13 +164,13 @@ function StartHere() {
               ))}
             </ol>
             <p className={styles.after}>
-              <Link to="/start-here/">Read the questions in full</Link>, with the dates that apply to you.
+              <Link to="/plan/">Read the questions in full</Link>, with the dates that apply to you.
             </p>
           </div>
 
           <div>
             <Heading as="h3" className={styles.outcomeHeading}>
-              What to do
+              Your plan
             </Heading>
             <div className={styles.outcomes}>
               {outcomes.map((outcome) => (
@@ -208,7 +229,8 @@ export default function Home(): ReactNode {
       </Head>
       <Hero />
       <main>
-        <StartHere />
+        <Choices />
+        <WhichPlan />
         <Reference />
       </main>
     </Layout>

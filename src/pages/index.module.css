@@ -1,8 +1,8 @@
 /* Homepage. Colours come from Infima variables and the --pqc-* variables in
    src/css/custom.css; nothing here is a raw colour value. */
 
-/* Hero: what the handbook is and the next step on the left; who it is for and its
-   limit on the right. One text link, no buttons. */
+/* Hero: what the handbook is, who needs a plan, and why now on the left; who it is
+   for and its limit on the right. No buttons: the two ways in follow as cards. */
 .hero {
   background-color: var(--pqc-deep-teal);
   color: var(--pqc-surface-light);
@@ -33,24 +33,6 @@
 .heroNext {
   max-width: 42rem;
   margin-bottom: 1.25rem;
-}
-
-.heroLink {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--ifm-color-primary);
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
-}
-
-.heroLink::after {
-  content: ' \2193';
-}
-
-.heroLink:hover,
-.heroLink:focus-visible {
-  color: var(--pqc-surface-light);
 }
 
 .heroWhen {
@@ -148,7 +130,27 @@
   font-size: 0.95rem;
 }
 
-/* Start here: the four questions on the left, the three outcomes stacked on the right */
+/* The two ways in: Learn the basics and Plan your migration, equal weight */
+.choicesSection {
+  padding-top: 2rem;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.choice {
+  border-top: 4px solid var(--ifm-color-primary);
+  padding: 1.1rem 1.25rem;
+}
+
+.choice .boxTitle {
+  font-size: 1.25rem;
+}
+
+/* Which plan you need: the four questions on the left, the three outcomes stacked on the right */
 .start {
   padding-top: 2.5rem;
 }
@@ -216,7 +218,7 @@
 /* Reference: four compact cards that name what each section holds */
 .refGrid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -234,7 +236,8 @@
 /* Narrow screens */
 @media screen and (max-width: 996px) {
   .heroGrid,
-  .chooser {
+  .chooser,
+  .choices {
     grid-template-columns: minmax(0, 1fr);
   }
 
