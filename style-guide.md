@@ -18,7 +18,7 @@ Write in a calm, practical, neutral, and evidence-led **briefing register** for 
 
 - **British English**: Use British spelling consistently — *organisation*, *programme* (for a planned set of activities; *program* only for computer code), *prioritise*, *standardisation*, *labelled*, *recognise*.
 - **Direct, natural prose**: Prefer active voice and clear sentence structure. Use second person (*you*) for steps a practitioner carries out directly, and name specific organisational roles — *executive sponsor*, *migration lead*, *asset owner*, *procurement*, *legal or risk*, *operations*, or *supplier* — when responsibilities sit across functions.
-- **Acronyms**: Spell out abbreviations on first use on a page — for example, *post-quantum cryptography (PQC)*, *key-encapsulation mechanism (KEM)*, *cryptography bill of materials (CBOM)* — unless the short form is universally clearer in a heading or table and explained immediately in text or the [Glossary](./docs/resources/reference/glossary.md).
+- **Acronyms**: Spell out abbreviations on first use on a page — for example, *post-quantum cryptography (PQC)*, *key-encapsulation mechanism (KEM)*, *cryptography bill of materials (CBOM)* — unless the short form is universally clearer in a heading or table and explained immediately in text or the [Glossary](./docs/templates/reference/glossary.md).
 - **Dates**: Write dates in British day–month–year order in prose (*5 November 2026*) and ISO 8601 (`2026-11-10`) in front matter and structured record tables. `npm test` and `npm run check` fail on an ISO date in prose; a deliberate format example needs an entry in `ISO_FORMAT_EXAMPLES` in `scripts/checks/dates.mjs`.
 
 ### Preferred Domain Terms
@@ -46,14 +46,14 @@ Structure pages around the reader's job rather than forcing every topic into ide
 | Page type | Reader job & structural guidance |
 | --- | --- |
 | **Learn lessons & explainers** (`/learn/`) | Build conceptual understanding in plain prose before planning begins. Keep lessons focused on one core distinction without mixing in migration checklists or parameter tables; use optional explainers (and diagrams where helpful) to explain a related distinction in more detail. |
-| **Situation routes** (`/routes/`) | Help readers confirm whether a route fits their estate (calling out exceptions clearly), follow a short ordered reading path into the reference sections, and see which record they will produce. |
-| **Practice & option guides** (`/migration-practices/`, `/technology-options/`) | Walk through when the step applies, what to do or evaluate, what evidence to retain, a concrete contrast between an insufficient and a decision-ready record, and what remains for the next step. |
-| **Records** (`/resources/records/`) | Explain when to use the record, list its fields, show a realistic filled example alongside a blank template and downloadable CSV (`/downloads/*.csv`), and state handling rules (`unknown` for unverified cells rather than guesses; no keys, secrets, or personal data; access controls matching the sensitivity of an asset register). |
+| **Journey pages** (`/start-here/`, `/baseline/`, `/programme/`) | Take the reader from the four questions to a first action, readable alone, within the reading budgets and writing rules in [reader-journey.md](./reader-journey.md). Each outcome ends in an action with who does it; special cases sit at the end of the page. |
+| **Practice & option guides** (`/programme/*`, `/technology-options/`) | Walk through when the step applies, what to do or evaluate, what evidence to retain, a concrete contrast between an insufficient and a decision-ready record, and what remains for the next step. |
+| **Records** (`/templates/records/`) | Explain when to use the record, list its fields, show a realistic filled example alongside a blank template and downloadable CSV (`/downloads/*.csv`), and state handling rules (`unknown` for unverified cells rather than guesses; no keys, secrets, or personal data; access controls matching the sensitivity of an asset register). |
 | **Standards & guidance summaries** (`/standards/`) | Open with what the source covers; use a focused callout to link its official texts, adding context only to distinguish editions, drafts, or errata; show key dates in a compact two-column table with dates kept on one line; and explain its relationship to other standards and guidance. |
-| **Worked examples** (`/resources/examples/`) | Fill the records one fictional organisation keeps, using the fictional organisation conventions set out after this table: every record for the full path in Protect this first, whose rows each record page's filled example must match verbatim, and the short-path set in Stay on supplier updates. |
+| **Worked examples** (`/templates/examples/`) | Fill the records one fictional organisation keeps, using the fictional organisation conventions set out after this table: all five records for a full programme in Protect this first, whose rows each record page's filled example must match verbatim, and the baseline's two records in Stay on supplier updates. |
 | **Reference indexes & glossary** (`index.md`, `glossary.md`) | Route readers cleanly without duplicating full guides. Keep glossary entries alphabetical and concise, naming the standard directly in prose where a formal definition is cited. |
 
-Where pages use a worked organisational example, align with the shared fictional UK manufacturer in [Protect this first](./docs/resources/examples/protect-this-first.md) (the short-path agency in [Stay on supplier updates](./docs/resources/examples/stay-on-supplier-updates.md) stays on its own page), keep its invented facts and event dates explicit, and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
+Where pages use a worked organisational example, align with the shared fictional UK manufacturer in [Protect this first](./docs/templates/examples/protect-this-first.md) (the baseline agency in [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) stays on its own page), keep its invented facts and event dates explicit, and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
 
 ## 5. Sourcing and Citations
 
@@ -89,7 +89,7 @@ displayed_sidebar: migrationPracticesSidebar
 A result should tell the handbook's audience exactly what the page answers, in the words they would search with. Write for the reader, not for keywords: no keyword stuffing, clickbait, superlatives, questions written to bait clicks, or sales language. The same British English, neutrality, and attribution rules apply as in the page body.
 
 - **Titles**: A doc's `title` is its `<h1>` and sidebar text. Its browser title is its `search_title` if set, otherwise its `title`, followed by ` | PQC Handbook`, and it also feeds Open Graph and Twitter previews. Keep every browser title distinct and within 65 characters in total.
-  - Add `search_title` only where the `title` is too long for a results list (such as a standard's full official title, which stays the `<h1>`) or too vague out of context ("SSH", "Timelines", "Decision note"). It must describe the same page in the same terms and never promise more.
+  - Add `search_title` only where the `title` is too long for a results list (such as a standard's full official title, which stays the `<h1>`) or too vague out of context ("SSH", "Timelines", "Register"). It must describe the same page in the same terms and never promise more.
   - Patterns:
     - standards: the identifier, then a plain description ("NIST IR 8547: PQC transition, 2030 and 2035");
     - technology cards: "Post-quantum" plus the technology ("Post-quantum SSH");
@@ -105,8 +105,8 @@ Aim at specific, practical queries rather than broad head terms. Use these terms
 
 | Reader's term | Where it belongs |
 | --- | --- |
-| **post-quantum cryptography (PQC)**, **post-quantum migration**, **PQC migration** | Learn, routes, practices, and section overviews. Spell out "post-quantum" in titles; use "PQC" for a second mention or where it is part of a document's own name. |
-| **harvest-now, decrypt-later** | Key-establishment pages: the quantum-threat lesson, forward secrecy, when to start, and the long-lived confidentiality route. |
+| **post-quantum cryptography (PQC)**, **post-quantum migration**, **PQC migration** | Learn, the journey pages, practices, and section overviews. Spell out "post-quantum" in titles; use "PQC" for a second mention or where it is part of a document's own name. |
+| **harvest-now, decrypt-later** | Key-establishment pages: the quantum-threat lesson, forward secrecy, when to start, Start here, and the programme's first moves. |
 | **ML-KEM, ML-DSA, SLH-DSA**, with their former names **CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+** | The FIPS 203, 204 and 205 summaries and the algorithms lesson. Use former names in descriptions only, never as the main name. |
 | **Authority plus date** (for example "UK NCSC 2028, 2031 and 2035", "NIST 2030 and 2035", "CNSA 2.0") | Standards and migration-guide descriptions, only for dates the page states, attributed to the authority and its audience. |
 | **cryptographic inventory**, **cryptography bill of materials (CBOM)** | The inventory practice and inventory record. |
@@ -115,7 +115,7 @@ Aim at specific, practical queries rather than broad head terms. Use these terms
 | **post-quantum** plus a technology (**TLS**, **SSH**, **VPN**, **PKI**, **code signing**, and so on) | Each technology card's `search_title`. |
 | **questions to ask suppliers** or **vendors**, **purchase requirements** | The suppliers practice, vendor response log, purchase requirements record, and the ACSC, CISA and NSA vendor-questions guide. |
 | **template** | Record pages, because readers search for templates. |
-| **without specialist cryptography staff** | The homepage, routes overview, and Learn overview. |
+| **without specialist cryptography staff** | The homepage, Start here, and the Learn overview. |
 | **quantum-safe**, **quantum-resistant** | Only where attributed (ETSI uses "quantum-safe") or where the page is about the claim itself. Never as a claim about a product or organisation. |
 | **Q-Day** | Not used: hype vocabulary (see [purpose-and-positioning.md](./purpose-and-positioning.md)). |
 

@@ -2,7 +2,7 @@
 
 How a reader moves from first arrival to their first useful action, why the handbook routes readers this way, and the rules that keep the journey simple. Mission and audience: [purpose-and-positioning.md](./purpose-and-positioning.md). Sections, URLs, and sidebars: [navigation-structure.md](./navigation-structure.md). Voice: [style-guide.md](./style-guide.md). Visual identity: [brand-guidelines.md](./brand-guidelines.md).
 
-**Status**: Adopted on 23 November 2026. Implementation is pending; until it lands, [navigation-structure.md](./navigation-structure.md) describes the routing model the live site still uses (situation routes, two paths, and three asset tracks), and this guide describes the model that replaces it.
+**Status**: Adopted and implemented on 23 November 2026. It replaced the situation routes, the two paths and three asset tracks, Decide whether to act, and the nine-record set.
 
 ## The Journey in One Picture
 
@@ -98,7 +98,7 @@ The register replaces the decision note, inventory record, migration plan, vendo
 
 ## Writing Rules for Journey Pages
 
-Start here, Baseline, and Programme are held to reading budgets, checked by `npm run check` once implemented:
+Start here, Baseline, and the Programme overview are held to reading budgets, checked by `npm test` and `npm run check` (`scripts/checks/reading.mjs`):
 
 - At most `900` words per page.
 - At most `2` internal links per `100` words.
@@ -116,7 +116,7 @@ How the rules work in practice:
 
 The previous routing grew more complex one careful fix at a time: each review checked for contradictions and missing exits, and each fix added a clause. These rules stop that recurring:
 
-- **Measure before and after**: Every change to a journey page reports its reading metrics (words, links per 100 words, longest sentence, backticked terms, retired labels) before and after the change. A fix that raises a budget needs a stated reason.
+- **Measure before and after**: Every change to a journey page reports its reading metrics (words, links per 100 words, longest sentence, backticked terms, retired labels) before and after the change, using `npm run metrics`. A fix that raises a budget needs a stated reason.
 - **Test with readers**: Before a change to the questions, outcomes, or first moves merges, fresh readers given only the changed pages and one persona brief each say what they would do first and which records they would keep. The five personas are a small firm on supplied software; a manufacturer with long-lived data and devices with fixed keys; a software supplier asked by its customers; a public body with one in-house system; and a regulated critical-infrastructure operator. Every programme decision must be right, and every edge case must land where this guide says.
 - **Count what a rule change touches**: Changing a question should touch Start here, one first-move row, and the register template. If it touches more, the journey has started to grow a routing layer again.
 

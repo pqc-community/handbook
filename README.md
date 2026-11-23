@@ -13,7 +13,7 @@ The PQC Handbook is built with [Docusaurus 3](https://docusaurus.io/) and is a s
 Read these five root documents before changing structure, prose, or styling:
 
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, audience, editorial thesis, sister-site boundaries, and non-goals
-- [Navigation Structure](./navigation-structure.md) — URL policy, navbar and six sidebars, complete sitemap, and situation-route journeys
+- [Navigation Structure](./navigation-structure.md) — URL policy, navbar and five sidebars, complete sitemap, homepage and footer
 - [Reader Journey](./reader-journey.md) — How readers are routed from Start here to a first action, the baseline and programme, the records, the rules that keep the journey simple, and why it was chosen
 - [Style Guide](./style-guide.md) — Editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
 - [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
@@ -21,11 +21,11 @@ Read these five root documents before changing structure, prose, or styling:
 ### Handbook Content (`docs/`)
 
 - [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
-- [Situation Routes](./docs/routes/index.md) (`docs/routes/`) — Two paths (short: vendor-managed software; full: organisation-wide) and the asset tracks the full path sends each asset to, entered from the homepage path chooser
+- [Start here](./docs/start-here/index.md), [Baseline](./docs/baseline/index.md), and [Programme](./docs/programme/index.md) — The reader journey: four questions, the baseline every organisation follows, and the programme with its first moves and practices in three phases (diagnose, plan, execute)
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
-- [Migration Practices](./docs/migration-practices/index.md) — Procedures for diagnosis, commodity software updates, inventory, prioritisation, release dates, supplier plans, pilot implementation, cryptographic agility, and subsequent reviews
+- [Programme practices](./docs/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/programme/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
-- [Resources](./docs/resources/index.md) — What a migration lead takes away and uses, in three groups: the [migration records](./docs/resources/records/index.md), nine CSV-backed records in order of use, with how they connect and a zip of every blank CSV; the [Protect this first](./docs/resources/examples/protect-this-first.md) and [Stay on supplier updates](./docs/resources/examples/stay-on-supplier-updates.md) worked examples, for the full and short paths; and the [Glossary](./docs/resources/reference/glossary.md)
+- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the baseline and a full programme; and the [Glossary](./docs/templates/reference/glossary.md)
 
 ## Getting Started
 
@@ -55,9 +55,10 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, routes, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
+| `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, reading, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
-| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, route pages linking Decide whether to act and a record, decision-note route values, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
+| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
+| `npm run metrics` | Reports reading load per page and section (words, internal links per 100 words, backticked terms, longest sentence, retired routing vocabulary) with `scripts/measure-reading.py`; needs Python 3 |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
 | `npm run serve` | Serves the production `build/` output locally |
@@ -67,14 +68,14 @@ npm run build
 | Path | Purpose |
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
-| `src/pages/` | Homepage: hero, route chooser, three clocks, decision-note excerpt, and reference sections (`index.tsx` and `index.module.css`) |
+| `src/pages/` | Homepage: hero, the four Start here questions and their outcomes, three clocks, a register excerpt, and reference sections (`index.tsx` and `index.module.css`) |
 | `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) and `noindex` for the 404 and search pages |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
-| `static/downloads/` | Header-only CSVs for the nine migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
+| `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
 | `static/img/` | Shared shield logo, SVG and PNG favicons, Apple touch icon, and the `1200 × 630` OpenGraph social card (PNG, with its SVG source) |
-| `sidebars.ts` | Six hand-written documentation sidebars |
+| `sidebars.ts` | Five hand-written documentation sidebars |
 | `docusaurus.config.ts` | Site configuration, navbar, footer, Mermaid theme, local search, and link policy |
-| `scripts/` | `checks/` holds the site rules by area (`index.mjs` lists them all), `lib/` the shared Markdown and test helpers, `tests/` the tests, `check.mjs` the `npm run check` runner, and `records-zip.mjs` the records zip builder |
+| `scripts/` | `checks/` holds the site rules by area (`index.mjs` lists them all), `lib/` the shared Markdown and test helpers, `tests/` the tests, `check.mjs` the `npm run check` runner, `records-zip.mjs` the records zip builder, and `measure-reading.py` the reading-metrics report |
 
 *(If present locally, `.ai-helper-files/` holds gitignored private drafting material and must never be linked or cited on public pages.)*
 
