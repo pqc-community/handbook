@@ -41,7 +41,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next step
 
-The charter assigns responsibility; it does not decide priorities or algorithms. Large or regulated organisations will usually need a formal governance structure and specialist input beyond this page. Next, [inventory the cryptography](/plan/programme/inventory/).
+The charter assigns responsibility without deciding priorities or algorithms, and large or regulated organisations will usually need a formal governance structure and specialist input beyond this page. Next, [inventory the cryptography](/plan/programme/inventory/).
 
 ## Sources
 

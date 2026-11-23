@@ -25,7 +25,7 @@ None of these schemes encrypts the web page, file, or message itself. Symmetric 
 
 ## Signatures are not "encryption in reverse"
 
-A common shorthand says a signature is "encrypting with the private key". It is misleading for every modern scheme and simply wrong for ML-DSA and SLH-DSA. The private key runs a signing algorithm; the public key runs a separate verification algorithm that returns accept or reject. Verification does not decrypt anything, recover the data, or reveal the private key.
+A common shorthand says a signature is "encrypting with the private key", which is misleading for every modern scheme and simply wrong for ML-DSA and SLH-DSA. The private key runs a signing algorithm; the public key runs a separate verification algorithm that returns accept or reject. Verification does not decrypt anything, recover the data, or reveal the private key.
 
 ```mermaid
 sequenceDiagram

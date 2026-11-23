@@ -10,7 +10,7 @@ description: December 2022 US law requiring federal agencies to inventory quantu
 
 The Quantum Computing Cybersecurity Preparedness Act (QCCPA) is the US federal law behind agency post-quantum planning. Section 4 requires the Director of OMB, within 180 days of enactment, to issue guidance requiring each agency to keep a current, prioritised inventory of information technology vulnerable to decryption by quantum computers; requires agency heads, within one year of enactment and on an ongoing basis, to provide those inventories to OMB, CISA and the National Cyber Director; and requires OMB, within one year after NIST issues post-quantum cryptography standards, to issue guidance requiring agencies to prioritise systems and develop migration plans (Section 4(c)). It also requires OMB reports to Congress on strategy, funding and agency progress.
 
-Congress passed the Act as H.R. 7535 and it was approved on 21 December 2022 as Public Law 117-260 (136 Stat. 2389). It is a statute binding on US federal agencies as the Act defines them, which includes executive departments, military departments and independent regulatory agencies. Section 5 states that the Act "shall not apply to any national security system". It places no direct obligations on private organisations or contractors.
+Congress passed the Act as H.R. 7535, and it was approved on 21 December 2022 as Public Law 117-260 (136 Stat. 2389). It is a statute binding on US federal agencies as the Act defines them, which includes executive departments, military departments and independent regulatory agencies, although Section 5 states that the Act "shall not apply to any national security system". It places no direct obligations on private organisations or contractors.
 
 :::info[Official texts]
 

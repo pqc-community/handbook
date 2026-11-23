@@ -26,7 +26,7 @@ NIST IR 8547, written for US federal agencies and technology providers, among ot
 
 ## Who usually chooses
 
-You choose for a private PKI, within what your CA software and hardware security modules support. Public certificates follow the public Web PKI's rules and the browsers that trust it. Any verifier that cannot be updated moves to [Firmware and secure boot](/technology-options/firmware-secure-boot/).
+You choose for a private PKI, within what your CA software and hardware security modules support, whereas public certificates follow the public Web PKI's rules and the browsers that trust it. Any verifier that cannot be updated moves to [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
 ## What good looks like
 

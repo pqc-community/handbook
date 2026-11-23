@@ -23,13 +23,13 @@ You do not need to understand how post-quantum algorithms work internally to pla
 
 ## What each one is for
 
-**ML-KEM** is the general-purpose post-quantum key-establishment algorithm. NIST IR 8547 (§4.1.2) states that it is, for now, the only approved post-quantum public-key key-establishment scheme and recommends **ML-KEM-768** as the default parameter set. It establishes a shared secret; it does not encrypt application data. [What a KEM is](/learn/explainers/kem/) explains the mechanism.
+**ML-KEM** is the general-purpose post-quantum key-establishment algorithm. NIST IR 8547 (§4.1.2) states that it is, for now, the only approved post-quantum public-key key-establishment scheme and recommends **ML-KEM-768** as the default parameter set. ML-KEM establishes a shared secret rather than encrypting application data, and [What a KEM is](/learn/explainers/kem/) explains the mechanism.
 
 **ML-DSA** is the general-purpose post-quantum signature algorithm, the expected replacement for RSA and ECDSA signatures in certificates, documents, and code signing.
 
 **SLH-DSA** is a second, independent signature design that relies on hash functions rather than lattices. The NCSC whitepaper notes that hash-based signatures are large and not suitable for general-purpose use, so SLH-DSA tends to be considered where a design independent of lattice assumptions is wanted and signature size matters less. NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (13 April 2026) proposes additional SLH-DSA parameter sets for uses with a strict limit on the number of signatures per key.
 
-**LMS and XMSS** are *stateful* hash-based signatures. The signer must never reuse a one-time key, so it has to track state reliably. NIST IR 8547 (§2.1.1) says they are not intended for general use but may be useful for software and firmware signing. [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains why.
+**LMS and XMSS** are *stateful* hash-based signatures, which means the signer must never reuse a one-time key and so has to track state reliably. NIST IR 8547 (§2.1.1) says they are not intended for general use but may be useful for software and firmware signing, and [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains why.
 
 The UK NCSC's [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) whitepaper (August 2024) recommends ML-KEM-768 and ML-DSA-65 as giving appropriate security and efficiency for most use cases. Other authorities may prefer other parameter sets for their audiences; record the one your applicable authority names.
 

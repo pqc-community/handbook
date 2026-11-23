@@ -8,7 +8,7 @@ description: Where Kerberos and directory sign-in depend on public-key cryptogra
 
 ## What it is
 
-Kerberos is a sign-in protocol used by many enterprise directory services. Its core exchanges use **symmetric** cryptography: tickets are protected with shared keys derived from passwords or long-term secrets. Public-key cryptography enters in two places:
+Kerberos is a sign-in protocol used by many enterprise directory services, and its core exchanges use **symmetric** cryptography, with tickets protected by shared keys derived from passwords or long-term secrets. Public-key cryptography enters in two places:
 
 - **certificate and smart-card logon**, using Public Key Cryptography for Initial Authentication in Kerberos (PKINIT), which does **key establishment** and **signatures**;
 - **directory connections** protected by TLS, such as LDAP over TLS, which follow [TLS and web services](/technology-options/tls/).

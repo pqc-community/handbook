@@ -9,7 +9,7 @@ A post-quantum migration replaces public-key cryptography, not all cryptography.
 
 ## Two families of cryptography
 
-**Symmetric cryptography** uses one shared secret key. The same key encrypts and decrypts, or creates and checks a message authentication code. AES and the SHA-2 and SHA-3 hash functions belong to this family. Symmetric algorithms are fast and protect almost all the bulk data that moves through a network or sits in storage. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) lists encryption, data authentication, key derivation, key wrapping, and random bit generation as their uses.
+**Symmetric cryptography** uses one shared secret key, and that same key encrypts and decrypts, or creates and checks a message authentication code. AES and the SHA-2 and SHA-3 hash functions belong to this family. Symmetric algorithms are fast and protect almost all the bulk data that moves through a network or sits in storage. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026) lists encryption, data authentication, key derivation, key wrapping, and random bit generation as their uses.
 
 Symmetric cryptography has one hard problem: both parties need the same secret before they start. Two systems that have never met cannot simply send a key across an open network.
 
@@ -25,7 +25,7 @@ Symmetric cryptography has one hard problem: both parties need the same secret b
 
 NIST describes the first two as separate parts of the transition in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) §2.1, and the rest of this handbook keeps them separate: key establishment protects **confidentiality**; signatures protect **authenticity and integrity**.
 
-Key establishment is not the same as encrypting the data. The public-key step agrees a secret; symmetric algorithms derived from that secret then protect the traffic or file. The diagram shows that division of labour in a typical secure connection.
+Key establishment is not the same as encrypting the data, because the public-key step agrees a secret and symmetric algorithms derived from that secret then protect the traffic or file. The diagram shows that division of labour in a typical secure connection.
 
 ```mermaid
 flowchart TD
@@ -35,7 +35,7 @@ flowchart TD
     C[Digital signature and certificate] -->|authenticates| A
 ```
 
-A digital signature works the other way round from encryption. The private key creates the signature; the public key checks it. A valid check shows that the data has not changed and that it was signed with the private key matching that public key. It does not, on its own, tell you *who* holds that key. That link comes from certificates and trust decisions, covered in the next lesson.
+A digital signature works the other way round from encryption, in that the private key creates the signature and the public key checks it. A valid check shows that the data has not changed and that it was signed with the private key matching that public key. It does not, on its own, tell you *who* holds that key, because that link comes from certificates and trust decisions, covered in the next lesson.
 
 ## Where these jobs appear
 

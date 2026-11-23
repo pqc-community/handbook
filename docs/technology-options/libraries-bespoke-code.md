@@ -30,7 +30,7 @@ Choose the algorithm, parameter set, and form with the rules on [Choosing an opt
 
 ## Who usually chooses
 
-You do, as the developer or product owner, within what your libraries support. Library maintainers and suppliers decide which algorithms are available and from which release. A specialist adviser should review bespoke protocols before release.
+You do, as the developer or product owner, within what your libraries support, while library maintainers and suppliers decide which algorithms are available and from which release. A specialist adviser should review bespoke protocols before release.
 
 ## What good looks like
 

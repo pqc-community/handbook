@@ -8,7 +8,7 @@ displayed_sidebar: learnSidebar
 
 **Question this answers:** why do different authorities and suppliers give different post-quantum dates, and which apply to me? **Background:** [Timelines](/learn/timelines/).
 
-Post-quantum migration dates look inconsistent because they come from documents with different jobs. Some set a transition horizon for standards. Others direct government agencies, recommend targets for organisations in a country, or coordinate Member States. Suppliers set targets for their own services. The dates also mark different milestones: planning, completing discovery, carrying out priority work, completing a transition, or stopping approval of an algorithm.
+Post-quantum migration dates look inconsistent because they come from documents with different jobs. Some set a transition horizon for standards, while others direct government agencies, recommend targets for organisations in a country, or coordinate Member States, and suppliers set targets for their own services. The dates also mark different milestones: planning, completing discovery, carrying out priority work, completing a transition, or stopping approval of an algorithm.
 
 The examples below show how those differences affect what a date means. They are not one combined deadline for every organisation.
 

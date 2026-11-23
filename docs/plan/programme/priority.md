@@ -42,7 +42,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 ## Limits and next step
 
-This rubric deliberately avoids numeric scoring; it is not a formal risk assessment. Regulated and critical systems may need the sector authority's method. Next, [set dates and milestones](/plan/programme/dates/).
+This rubric deliberately avoids numeric scoring and is not a formal risk assessment, so regulated and critical systems may need the sector authority's method. Next, [set dates and milestones](/plan/programme/dates/).
 
 ## Sources
 

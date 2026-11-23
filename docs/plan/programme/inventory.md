@@ -57,7 +57,7 @@ Every algorithm the manufacturer has not verified is `unknown`, and each row nam
 
 ## Limits and next step
 
-The inventory records what exists; it does not decide order or algorithms. Large estates may need specialist discovery tooling and support. Next, [decide what to migrate first](/plan/programme/priority/).
+The inventory records what exists rather than deciding order or algorithms, and large estates may need specialist discovery tooling and support. Next, [decide what to migrate first](/plan/programme/priority/).
 
 ## Sources
 

@@ -57,7 +57,7 @@ npm run build
 | --- | --- |
 | `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, reading, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
-| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets, staccato paragraphs on journey pages and in Templates, and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
+| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets, staccato paragraphs, and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
 | `npm run metrics` | Reports reading load per section, for the three journey pages, and for any page with a retired routing label (words, internal links per 100 words, backticked terms, longest sentence), using the same measures as the reading check |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |

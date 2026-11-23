@@ -167,6 +167,7 @@ test('measures words, internal links, the longest sentence and backticks before 
 
 test('splits sentences at full stops, not at semicolons, colons or common abbreviations', () => {
   assert.deepEqual(sentences('One; two: three, e.g. four. Five!'), ['One; two: three, e.g. four.', 'Five!']);
+  assert.deepEqual(sentences('Passed as H.R. 7535 at 136 Stat. 2389. Done.'), ['Passed as H.R. 7535 at 136 Stat. 2389.', 'Done.']);
 });
 
 test('accepts journey pages exactly at their limits', () => {
@@ -237,9 +238,9 @@ test('the handbook does not use retired routing labels', () => {
   assertNoViolations(findRetiredLabelViolations(ROOT), 'Retired routing labels');
 });
 
-test('flags staccato paragraphs in checked sections, and the handbook has none there', () => {
+test('flags staccato paragraphs on every doc page except the journey pages, and the handbook has none', () => {
   const choppy = '---\ntitle: A record\n---\n\nKeep it short. Keep it safe. Keep it here.\n';
-  withRoot({'docs/templates/records/a.md': choppy, 'docs/learn/b.md': choppy}, (root) => {
+  withRoot({'docs/templates/records/a.md': choppy, 'docs/plan/index.md': choppy, 'static/c.md': choppy}, (root) => {
     assert.deepEqual(findStaccatoViolations(root), ['docs/templates/records/a.md: 1 staccato paragraphs (3 or more sentences averaging under 15 words; join related points)']);
   });
   assertNoViolations(findStaccatoViolations(ROOT), 'Staccato paragraphs');

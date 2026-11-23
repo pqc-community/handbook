@@ -53,7 +53,7 @@ const stripHeadingIds = (text) => text.replace(/\{#[\w-]+\}/g, '');
 
 // Splits text into sentences at . ! or ? followed by space, without breaking at common
 // abbreviations.
-const ABBREVIATIONS = /\b(e\.g|i\.e|etc|cf|vs|no|para|sec)\.$/i;
+const ABBREVIATIONS = /\b(e\.g|i\.e|etc|cf|vs|no|para|sec|stat|h\.r)\.$/i;
 export function sentences(text) {
   const parts = text.split(/(?<=[.!?])\s+/);
   const out = [];
@@ -90,9 +90,9 @@ export function readingMetrics(text) {
   return {words, links, linksPer100: words ? (100 * links) / words : 0, longest, backticks, choppy: choppyParagraphs(text).length};
 }
 
-// Sections beyond the journey pages where staccato paragraphs are also blocked. Extend
-// this list as each section is rewritten (style-guide.md, "Connected, not staccato").
-export const STACCATO_SECTIONS = ['docs/templates'];
+// Staccato paragraphs are blocked across every doc page (style-guide.md, "Connected, not
+// staccato"). The journey pages are reported by their budget check instead, once.
+export const STACCATO_SECTIONS = ['docs'];
 
 export function findStaccatoViolations(root = '.') {
   const violations = [];
@@ -100,6 +100,7 @@ export function findStaccatoViolations(root = '.') {
     const dir = path.join(root, section);
     if (!fs.existsSync(dir)) continue;
     for (const file of walkMarkdown(dir)) {
+      if (JOURNEY_PAGES.includes(relativePath(root, file))) continue;
       const count = choppyParagraphs(fs.readFileSync(file, 'utf8')).length;
       if (count > 0) {
         violations.push(`${relativePath(root, file)}: ${count} staccato paragraphs (3 or more sentences averaging under ${MIN_AVG_SENTENCE_WORDS} words; join related points)`);

@@ -8,7 +8,7 @@ description: What post-quantum readiness looks like for enterprise Wi-Fi and wir
 
 ## What it is
 
-Network access control decides which devices may join a wired or wireless network. Enterprise Wi-Fi and wired 802.1X commonly use the Extensible Authentication Protocol with TLS (EAP-TLS), where the authentication server, and normally the device, prove themselves with certificates. It does two jobs:
+Network access control decides which devices may join a wired or wireless network. Enterprise Wi-Fi and wired 802.1X commonly use the Extensible Authentication Protocol with TLS (EAP-TLS), where the authentication server, and normally the device, prove themselves with certificates; EAP-TLS does two jobs:
 
 - **key establishment** in the TLS handshake inside EAP, whose derived keys protect the traffic, so a recording of it is exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later);
 - **signatures** in the device and server certificates.

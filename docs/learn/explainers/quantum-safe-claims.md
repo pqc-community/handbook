@@ -5,9 +5,9 @@ description: How to break a supplier's "quantum-safe" or "PQC-ready" claim into 
 displayed_sidebar: learnSidebar
 ---
 
-**Question this answers:** a supplier says their product is "quantum-safe". What should you record, and what should you ask? **Background:** [Standardisation](/learn/standardisation/), [Hybrid cryptography](/learn/hybrid/).
+**Question this answers:** when a supplier says their product is "quantum-safe", what should you record, and what should you ask? **Background:** [Standardisation](/learn/standardisation/), [Hybrid cryptography](/learn/hybrid/).
 
-"Quantum-safe", "quantum-ready", "PQC-enabled", and "quantum-resistant" have no agreed definition. None of them tells you which cryptographic job changed, in which version, or whether it is switched on. Treat them as an invitation to ask questions, not as an answer.
+"Quantum-safe", "quantum-ready", "PQC-enabled", and "quantum-resistant" have no agreed definition. None of them tells you which cryptographic job changed, in which version, or whether it is switched on, so treat them as an invitation to ask questions, not as an answer.
 
 ## Five questions
 

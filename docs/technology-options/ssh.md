@@ -27,7 +27,7 @@ No post-quantum signature method for SSH host or user keys is published: RFC 100
 
 ## Who usually chooses
 
-The SSH implementation's supplier, usually the operating system or the network device maker, decides which methods exist and which are preferred by default. You choose what servers and clients allow. Both ends must share a method.
+The SSH implementation's supplier, usually the operating system or the network device maker, decides which methods exist and which are preferred by default. You choose what servers and clients allow, but both ends must share a method.
 
 ## What good looks like
 

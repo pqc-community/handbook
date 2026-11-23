@@ -10,7 +10,7 @@ description: Canadian Forum for Digital Infrastructure Resilience best practices
 
 The Canadian National Quantum-Readiness Best Practices and Guidelines set out governance, inventory, risk-assessment and supply-chain steps that organisations, particularly owners and operators of critical and digital infrastructure, can take to prepare for post-quantum cryptography. They arrange the work in stages: Stage I covers phases 0 to 2 in 2024, and Stage II covers implementation from 2025.
 
-The document is produced by the Quantum-Readiness Working Group (QRWG) of the Canadian Forum for Digital Infrastructure Resilience (CFDIR). The current edition is Version 04, dated 10 July 2024. It presents recommended best practices; it does not impose obligations on any audience.
+The document is produced by the Quantum-Readiness Working Group (QRWG) of the Canadian Forum for Digital Infrastructure Resilience (CFDIR), and the current edition is Version 04, dated 10 July 2024. It presents recommended best practices rather than imposing obligations on any audience.
 
 :::info[Official texts]
 
