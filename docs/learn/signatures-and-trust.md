@@ -27,7 +27,7 @@ flowchart TD
 
 ## Why signatures run on a different clock
 
-Signatures are not exposed to harvest-now, decrypt-later: a recorded signature does not leak any secret later. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) §3.1.2 states that an authentication system stays secure as long as its algorithms are secure *at the time the check is performed*. The same report (§3) still calls the signature transition urgent, because it takes longer, is more complex, and needs more parties to coordinate. A CA cannot switch until relying parties can check its new signatures; relying parties gain nothing until CAs and signers issue them.
+Signatures are not exposed to harvest-now, decrypt-later: a recorded signature does not leak any secret later. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) §3.1.2 states that an authentication system stays secure as long as its algorithms are secure *at the time the check is performed*. A signature on a record that is checked years later, such as an archived contract, is checked at that later time, so long-lived signed records need their own plan; see [Documents and email signing](/technology-options/document-signing/). NIST IR 8547 (§3) still calls the signature transition urgent, because it takes longer, is more complex, and needs more parties to coordinate. A CA cannot switch until relying parties can check its new signatures; relying parties gain nothing until CAs and signers issue them.
 
 ## Verifiers that cannot be updated
 

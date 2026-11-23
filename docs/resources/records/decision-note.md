@@ -33,7 +33,7 @@ From [Protect this first](/resources/examples/protect-this-first/). The dates ar
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product-design archive in supplier-hosted workspace | yes (15 years under the company retention policy) | no | no | no (supplier-hosted service) | urgent adopter | full | Long-lived confidentiality | set up the programme | operations director | 2026-08-03 | managing director, 2026-07-13 |
 | Firmware verifier for product sensor | no (the verifier holds no confidential data) | yes (boot ROM trust anchor) | yes (the manufacturer signs the sensor's firmware) | yes (own product) | urgent adopter | full | Hard-to-change systems | set up the programme | operations director | 2026-08-03 | managing director, 2026-07-13 |
-| Office laptops | no (design files are kept in the archive; period for the IT lead to confirm) | no | no | no (supported commodity software) | regular adopter | short | Vendor-managed software | keep commodity software updated | IT lead | 2026-08-03 | managing director, 2026-07-13 |
+| Office laptops | no (the laptops hold office records, not the long-lived designs, which are kept in the archive; exact period for the IT lead to confirm) | no | no | no (supported commodity software) | regular adopter | short | Vendor-managed software | keep commodity software updated | IT lead | 2026-08-03 | managing director, 2026-07-13 |
 
 ## Blank template
 

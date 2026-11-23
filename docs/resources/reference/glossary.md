@@ -146,6 +146,8 @@ The sender chooses the secret and sends it. In [key agreement](#key-agreement), 
 
 A wrapping key that the parties already share protects another key. The method hides that key and checks that it was not altered. [Key transport](#key-transport) is a different procedure: the sender selects a secret and sends it protected by the receiver's public key. Wrapping does not establish a shared secret, and it is not a [digital signature](#digital-signature). AES Key Wrap is the familiar example. A [block cipher](#block-cipher) such as AES supplies the symmetric algorithm underneath.
 
+A stored-data product can also protect the wrapping key itself with a public-key step, such as [key transport](#key-transport) to a recipient's public key or a key-encapsulation step. A classical public-key step of that kind is quantum-vulnerable, and it is what the stored-data rows on the [vendor response log](/resources/records/vendor-response-log/) ask about; the symmetric wrap underneath does not need replacing. Keep a stored-data row `unknown` until the supplier says in writing whether such a step exists and, if so, which algorithm it uses.
+
 ## Message authentication code (MAC)
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines a message authentication code as a cryptographic checksum on data that uses a symmetric key to detect both accidental and intentional modifications of data. It lists data authentication with a block-cipher mode, and data authentication with a keyed hash, among the uses of symmetric-key algorithms. It says the existing standards for symmetric cryptography are less vulnerable to attacks by quantum computers, and NIST does not expect to need to transition away from these standards as part of the post-quantum migration.

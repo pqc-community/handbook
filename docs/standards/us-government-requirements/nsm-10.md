@@ -26,7 +26,7 @@ The President signed NSM-10 on 4 May 2022. It is presidential direction to US fe
 | --- | --- |
 | <time dateTime="2022-05-04">2022&#8209;05&#8209;04</time> | The President signed NSM-10, setting the federal quantum-risk mitigation goal and starting annual FCEB agency cryptographic inventories. |
 | <time dateTime="2022-12-21">2022&#8209;12&#8209;21</time> | The Quantum Computing Cybersecurity Preparedness Act (Public Law 117-260) was approved, putting federal agency inventory and migration planning into statute. |
-| <time dateTime="2026-06-24">2026&#8209;06&#8209;24</time> | OMB issued M-26-15, setting earlier deadlines for priority federal systems while keeping 2035 as the date for full migration. |
+| <time dateTime="2026-06-24">2026&#8209;06&#8209;24</time> | OMB issued M-26-15, phasing agencies' work towards the earlier EO 14412 deadlines for priority federal systems while keeping 2035 as the date for full migration. |
 | <time dateTime="2035">2035</time> | Target year in NSM-10 Section 3(a) for mitigating as much quantum risk as feasible across federal systems. |
 
 ## Relationship with other standards

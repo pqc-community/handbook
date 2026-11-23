@@ -43,7 +43,7 @@ The practical difference between attacks on encryption and on signatures is *whe
 | A signature is checked by a verifier | Once the signature scheme can be broken, forge signatures that a verifier still accepts | Only from the point a quantum computer exists and only against verifiers still accepting the old algorithm |
 | A device trusts a classical public key it cannot replace | Forge firmware or credentials the device accepts | From the point a quantum computer exists, for the rest of the device's service life |
 
-NIST IR 8547 (§3.1.2) states that an authentication system remains secure as long as its algorithms and keys are secure *when the authentication is performed*, and that systems will need to transition immediately once capable quantum computers become available. That is why signatures carry no historical exposure, but leave no time to react if verifiers are not ready.
+NIST IR 8547 (§3.1.2) states that an authentication system remains secure as long as its algorithms and keys are secure *when the authentication is performed*, and that systems will need to transition immediately once capable quantum computers become available. That is why recorded signatures give an attacker nothing to exploit before a capable quantum computer exists, but leave no time to react if verifiers are not ready. Signed records that must still be trusted after that point, such as contracts or approvals kept for years, are the exception: they are checked at that later time, so they need a plan to stay verifiable; see [Documents and email signing](/technology-options/document-signing/).
 
 ## What remains uncertain
 
