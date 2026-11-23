@@ -6,7 +6,7 @@ description: "First moves for each question that applied, small and full program
 displayed_sidebar: journeySidebar
 ---
 
-Run a programme when any of the four questions on [Start here](/start-here/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first.
+Run a programme when any of the four questions on [Start here](/start-here/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (baseline action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator.
 
 ## First moves
 
@@ -16,7 +16,7 @@ Take the first move for each question that applied, this week. Each one is a sep
 | --- | --- | --- |
 | Data that must stay secret for years | How long the data must stay secret | Ask the supplier, or the team that runs the system, in writing which method protects connections and which protects stored data, and when each changes. Keep connections and stored data as separate lines. |
 | Devices with a fixed key | The design freeze, then the device's service life | For products you make: ask component suppliers in writing which post-quantum signature the boot verifier supports, and make one a condition of selection before the next design freeze. For devices you have already shipped: keep their signing key protected for the fleet's life, tell customers when a replacement is planned, and record the date. For devices you run: ask the maker for an upgrade or replacement route, and plan by end of life. |
-| Signatures others rely on | How long you and everyone who checks your signatures take to move together | List who checks your signatures. Their verifiers must accept new signatures before you switch. |
+| Signatures others rely on | How long you and everyone who checks your signatures take to move together | List who checks your signatures. Their verifiers must accept new signatures before you switch. Where a verifier can never change, treat it as a device with a fixed key; where another party controls it, such as an operating system, record its plan and date. |
 | Systems you build or configure | Your own release cycle | Record each system's cryptographic library, protocols, and versions. |
 
 If customers are asking about your post-quantum plans, answer from the register: the dates you can stand behind, and what is still unknown.
@@ -46,7 +46,7 @@ The practices run in three phases. They overlap: supplier questions start during
 - [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
 - [Make and verify one change](/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
 - [Keep the ability to change again](/programme/changing-algorithms-again/).
-- [Review and report](/programme/subsequent-review/): every three months while a line is first in its order or a fixed date falls within a year, and every six months otherwise.
+- [Review and report](/programme/subsequent-review/): every three months while a line is first in its order or a fixed date falls within a year, and every six months otherwise. A programme's reviews replace the baseline's: check the baseline items at the same time.
 
 ## When no option exists in time
 
