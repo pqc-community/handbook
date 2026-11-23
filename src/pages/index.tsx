@@ -8,57 +8,58 @@ import styles from './index.module.css';
 
 type Node = {label?: string; title: string; to: string; text: string};
 
-const questions = [
-  {
-    name: 'Data that must stay secret for years',
-    text: 'Information that must stay confidential for ten years or more and is protected by public-key methods. Count how long it must stay secret, not how long you keep it; ordinary business records usually fall short.',
-  },
-  {
-    name: 'Devices with a fixed key',
-    text: 'Products or devices you make or run that check signatures with a key that cannot change after they ship. Laptops and phones their maker updates do not count.',
-  },
-  {
-    name: 'Signatures others rely on',
-    text: 'A certificate authority, public or internal, or code, firmware, or documents you sign that others check.',
-  },
-  {
-    name: 'Systems you build or configure',
-    text: 'Software or firmware you build, or cryptography you set up on your own servers, VPNs, or applications.',
-  },
+// The two ways in. Each card shows what is inside it, so a first-time reader can choose.
+const firstLessons = [
+  {title: 'Public-key cryptography', to: '/learn/public-key-cryptography/'},
+  {title: 'Signatures and trust', to: '/learn/signatures-and-trust/'},
+  {title: 'Quantum threat', to: '/learn/quantum-threat/'},
 ];
 
-const outcomes: Node[] = [
-  {
-    label: 'If none apply',
-    title: 'Your plan: the core actions',
-    to: '/plan/core-actions/',
-    text: 'Seven actions on one page, starting with naming an owner and listing what you use. Your suppliers make the changes.',
-  },
-  {
-    label: 'If any applies',
-    title: 'Your plan: the core actions and a programme',
-    to: '/plan/programme/',
-    text: 'The core actions for everything you buy in. Name an owner, then take a first move this week for each question that applied.',
-  },
-  {
-    label: 'If you run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself',
-    title: 'Your plan: specialist advice and a full programme',
-    to: '/plan/#your-plan',
-    text: "Bring in specialist advice and speak to your sector regulator. Meanwhile, take the programme's first moves, which only gather facts.",
-  },
+const questionNames = [
+  'data that must stay secret for years',
+  'devices with a fixed key',
+  'signatures others rely on',
+  'systems you build or configure',
 ];
 
-// The two ways in, side by side under the hero.
-const choices: Node[] = [
+// Why people arrive, each with where to go. Keep it to six lines; the questions and
+// outcomes themselves live only on Which plan you need.
+const situations: {when: string; then: string; to: string; link: string}[] = [
   {
-    title: 'Learn the basics',
-    to: '/learn/',
-    text: 'Short lessons on what the quantum threat is, what changes, and why timelines differ.',
-  },
-  {
-    title: 'Plan your migration',
+    when: 'Someone asked whether you are “ready for quantum”, or whether you need to do anything',
+    then: 'Answer the four questions. Most organisations need only the core actions.',
     to: '/plan/',
-    text: 'Four questions give you your plan. For most organisations it is seven actions on one page; for some, a programme as well.',
+    link: 'Which plan you need',
+  },
+  {
+    when: 'Your board wants a plan',
+    then: 'Answer the four questions, then report on the plan with the progress report.',
+    to: '/templates/records/progress-report/',
+    link: 'Progress report',
+  },
+  {
+    when: 'Customers are sending post-quantum questionnaires',
+    then: 'Start your register and answer from it: the dates you can stand behind, and what is still unknown.',
+    to: '/templates/records/register/',
+    link: 'Register',
+  },
+  {
+    when: 'You run critical national infrastructure or a regulated service',
+    then: "Bring in specialist advice and speak to your sector regulator. Take the programme's first moves meanwhile; they only gather facts.",
+    to: '/plan/#your-plan',
+    link: 'Your plan',
+  },
+  {
+    when: 'You need the card for a technology, such as VPN, TLS, or SSH',
+    then: 'Each card gives the job it does, its post-quantum status, and what to ask.',
+    to: '/technology-options/',
+    link: 'Technology options',
+  },
+  {
+    when: 'You need the dates that apply to you',
+    then: 'Each authority’s dates, with the audience it names.',
+    to: '/plan/#which-dates-apply-to-you',
+    link: 'Which dates apply to you',
   },
 ];
 
@@ -133,56 +134,79 @@ function Choices() {
     <section className={`${styles.section} ${styles.choicesSection}`} aria-label="Two ways in">
       <div className="container">
         <div className={styles.choices}>
-          {choices.map((node) => (
-            <Box key={node.to} node={node} className={styles.choice} />
-          ))}
+          <div className={styles.choice}>
+            <Heading as="h2" className={styles.choiceTitle}>
+              <Link to="/learn/">Learn the basics</Link>
+            </Heading>
+            <p>Ten short lessons. No mathematics assumed. Start with:</p>
+            <ol className={styles.steps}>
+              {firstLessons.map((lesson) => (
+                <li key={lesson.to}>
+                  <Link to={lesson.to}>{lesson.title}</Link>
+                </li>
+              ))}
+            </ol>
+            <p>
+              Then what post-quantum means, the new algorithms, hybrid cryptography, standardisation, post-quantum in
+              real systems, timelines, and crypto-agility. Optional explainers go deeper on topics such as TLS, keys,
+              and hash-based signatures.
+            </p>
+            <p className={styles.choiceNext}>
+              <Link to="/learn/public-key-cryptography/">Start the first lesson</Link>
+            </p>
+          </div>
+
+          <div className={styles.choice}>
+            <Heading as="h2" className={styles.choiceTitle}>
+              <Link to="/plan/">Plan your migration</Link>
+            </Heading>
+            <p>Three steps:</p>
+            <ol className={styles.steps}>
+              <li>
+                <strong>Answer four questions</strong>: {questionNames.join('; ')}.
+              </li>
+              <li>
+                <strong>Follow the core actions</strong>: seven actions for everything you buy in. In a small
+                organisation, about a day to set up, then an hour or two at each review.
+              </li>
+              <li>
+                <strong>Add a programme if a question applied</strong>: small, for one or two systems you run
+                yourself, or full, for devices with a fixed key or a larger or regulated estate. A full programme
+                has a named sponsor and lead, a one-page charter, and a progress report at each review.
+              </li>
+            </ol>
+            <p className={styles.choiceNext}>
+              <Link to="/plan/">Answer the four questions</Link>
+            </p>
+            <p className={styles.choiceExamples}>
+              Worked examples: <Link to="/templates/examples/stay-on-supplier-updates/">a small agency under the core
+              actions</Link> and <Link to="/templates/examples/protect-this-first/">a manufacturer running a full
+              programme</Link>.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-function WhichPlan() {
+function Situations() {
   return (
-    <section className={`${styles.section} ${styles.start}`} aria-labelledby="which-plan">
+    <section className={styles.section} aria-labelledby="why-here">
       <div className="container">
-        <div className={styles.chooser}>
-          <div>
-            <Heading as="h2" id="which-plan">
-              Which plan you need
-            </Heading>
-            <p className={styles.intro}>
-              Answer for the organisation as a whole. A question applies if any system you run fits it.{' '}
-              <strong>Not sure counts as yes</strong> until someone confirms.
-            </p>
-            <ol className={styles.questions}>
-              {questions.map((q) => (
-                <li key={q.name}>
-                  <span className={styles.boxTitle}>{q.name}</span>
-                  <span className={styles.boxText}>{q.text}</span>
-                </li>
-              ))}
-            </ol>
-            <p className={styles.after}>
-              <Link to="/plan/">Read the questions in full</Link>, with the dates that apply to you.
-            </p>
-          </div>
-
-          <div>
-            <Heading as="h3" className={styles.outcomeHeading}>
-              Your plan
-            </Heading>
-            <div className={styles.outcomes}>
-              {outcomes.map((outcome) => (
-                <Box key={outcome.title} node={outcome} className={styles.outcome} />
-              ))}
-            </div>
-            <p className={styles.after}>
-              Worked examples: <Link to="/templates/examples/protect-this-first/">a manufacturer&rsquo;s programme</Link>{' '}
-              and <Link to="/templates/examples/stay-on-supplier-updates/">a small agency under the core actions</Link>.
-            </p>
-          </div>
-        </div>
+        <Heading as="h2" id="why-here">
+          Why you might be here
+        </Heading>
+        <ul className={styles.situations}>
+          {situations.map((s) => (
+            <li key={s.when}>
+              <span className={styles.situationWhen}>{s.when}</span>
+              <span className={styles.situationThen}>
+                {s.then} <Link to={s.to}>{s.link}</Link>
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -230,7 +254,7 @@ export default function Home(): ReactNode {
       <Hero />
       <main>
         <Choices />
-        <WhichPlan />
+        <Situations />
         <Reference />
       </main>
     </Layout>

@@ -130,7 +130,8 @@
   font-size: 0.95rem;
 }
 
-/* The two ways in: Learn the basics and Plan your migration, equal weight */
+/* The two ways in: Learn the basics and Plan your migration, equal weight. Each card shows
+   what is inside it; the card is not one big link, so the lessons and steps can link too. */
 .choicesSection {
   padding-top: 2rem;
 }
@@ -139,80 +140,80 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  align-items: stretch;
 }
 
 .choice {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-top: 4px solid var(--ifm-color-primary);
-  padding: 1.1rem 1.25rem;
+  border-radius: var(--ifm-card-border-radius);
 }
 
-.choice .boxTitle {
-  font-size: 1.25rem;
+.choice p {
+  margin-bottom: 0.5rem;
 }
 
-/* Which plan you need: the four questions on the left, the three outcomes stacked on the right */
-.start {
-  padding-top: 2.5rem;
+.section .choice h2.choiceTitle {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
 }
 
-.chooser {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 2.5rem;
-  align-items: start;
+.choiceTitle a {
+  color: var(--ifm-heading-color);
+  text-decoration: none;
 }
 
-.questions {
-  counter-reset: question;
+.choiceTitle a:hover,
+.choiceTitle a:focus-visible {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+}
+
+.steps {
+  margin: 0 0 0.75rem;
+  padding-left: 1.4rem;
+}
+
+.steps li {
+  margin-bottom: 0.4rem;
+}
+
+.choiceNext {
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.choiceExamples {
+  font-size: 0.9rem;
+}
+
+/* Why you might be here: one row per situation, the situation then where to go */
+.situations {
   list-style: none;
-  margin: 0;
+  margin: 0.75rem 0 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
 }
 
-.questions li {
-  counter-increment: question;
-  position: relative;
-  padding: 0.7rem 0 0.7rem 2.75rem;
+.situations li {
+  padding: 0.75rem 0;
   border-top: 1px solid var(--ifm-color-emphasis-300);
 }
 
-.questions li:last-child {
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
-}
-
-.questions li::before {
-  content: counter(question);
-  position: absolute;
-  left: 0;
-  top: 0.75rem;
-  width: 1.85rem;
-  height: 1.85rem;
-  border: 2px solid var(--ifm-color-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.questions li > span {
+.situationWhen {
   display: block;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
 }
 
-.outcomeHeading {
-  font-size: 1.15rem;
-  margin: 0.4rem 0 0.75rem;
-}
-
-.outcomes {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.outcome {
-  border-left: 4px solid var(--ifm-color-primary);
+.situationThen {
+  display: block;
+  font-size: 0.95rem;
 }
 
 /* Reference: four compact cards that name what each section holds */
@@ -229,15 +230,16 @@
 /* Light theme: Deep Teal headings and card titles instead of body grey */
 [data-theme='light'] .section h2,
 [data-theme='light'] .boxTitle,
-[data-theme='light'] .outcomeHeading {
+[data-theme='light'] .choiceTitle a,
+[data-theme='light'] .situationWhen {
   color: var(--pqc-deep-teal);
 }
 
 /* Narrow screens */
 @media screen and (max-width: 996px) {
   .heroGrid,
-  .chooser,
-  .choices {
+  .choices,
+  .situations {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -246,7 +248,7 @@
   }
 
   .heroGrid,
-  .chooser {
+  .choices {
     gap: 1.75rem;
   }
 }

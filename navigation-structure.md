@@ -47,7 +47,7 @@ Linking guidance:
 ## Site Model
 
 ```text
-Homepage (/) — Learn the basics or Plan your migration; the four questions and three outcomes
+Homepage (/) — Learn the basics or Plan your migration, then why you might be here
   ├── Plan your migration: Which plan you need (/plan/) ──► Core actions (/plan/core-actions/)
   │                              └► Programme (/plan/programme/ and /plan/programme/*)
   ├── Learn the basics (/learn/*) ──► lessons and optional explainers
@@ -202,7 +202,7 @@ Homepage (/) — Learn the basics or Plan your migration; the four questions and
 ```
 ## Homepage and Footer Routing
 
-- **Homepage (`src/pages/index.tsx`)**: A calm reference entry point, not a product landing page. A Deep Teal hero gives the tagline, who has work to do, why now with the UK NCSC's dates and their audience, the audience, and the specialist-advice limit. Below it: the four Which plan you need questions beside their three outcomes, so a first-time reader is one page from a first action, with links to both worked examples; then four compact reference cards (Learn the basics, Technology options, Standards, Templates), each naming pages inside it. The jobs-and-clocks thesis lives in the Timelines lesson and the programme's first moves, and the register in the worked examples, not on the homepage. No sales copy, feature grids, large or repeated buttons, gradients, or imagery.
+- **Homepage (`src/pages/index.tsx`)**: A calm reference entry point, not a product landing page. A Deep Teal hero gives the tagline, that every organisation needs a migration plan and that for most it is short, why now with the UK NCSC's dates and their audience, the audience, and the specialist-advice limit. Below it: two equal cards, Learn the basics (its first three lessons) and Plan your migration (three steps, with the core actions' effort and the two programme sizes, and both worked examples); then Why you might be here, at most six situations, each linked to the page that answers it; then three reference cards (Technology options, Standards, Templates). The four questions and outcomes live on Which plan you need, not on the homepage, so they cannot drift.
 - **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Learn**, **Plan your migration**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
 ## Section Placement and Expansion Rules
 
