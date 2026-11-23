@@ -66,7 +66,7 @@ npm run build
 | Path | Purpose |
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
-| `src/pages/` | Situation-chooser homepage (`index.tsx` and `index.module.css`) |
+| `src/pages/` | Homepage: hero, route chooser, three clocks, decision-note excerpt, and reference sections (`index.tsx` and `index.module.css`) |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the nine migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
 | `static/img/` | Shared shield logo, favicon, and `1200 × 630` OpenGraph social card |

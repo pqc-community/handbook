@@ -42,6 +42,11 @@
   --ifm-navbar-background-color: #013b4e;
   --ifm-footer-background-color: #f5fcfd;
   --ifm-code-background: #eef9fb;
+  /* Primary Cyan text on Surface Light is about 2:1. Text links and active
+     sidebar items use the darker link teal instead (brand-guidelines.md). */
+  --ifm-link-color: var(--pqc-link-on-light);
+  --ifm-link-hover-color: var(--pqc-deep-teal);
+  --ifm-menu-color-active: var(--pqc-link-on-light);
 }
 
 .footer--dark {
@@ -130,4 +135,60 @@
 
 [data-theme='dark'] .navbar--dark {
   --ifm-navbar-background-color: #012a38;
+}
+
+/* Light mode: the active breadcrumb and table-of-contents entry are Primary Cyan
+   text in Infima, about 2:1 on Surface Light. Use the darker link teal. */
+[data-theme='light'] .breadcrumbs__item--active .breadcrumbs__link,
+[data-theme='light'] .table-of-contents__link:hover,
+[data-theme='light'] .table-of-contents__link--active {
+  color: var(--pqc-link-on-light);
+}
+
+/* Keep the desktop navbar on one line. Below 1366px the five section labels,
+   GitHub, the theme toggle and search no longer fit beside the title, so the
+   labels wrapped onto two lines and the title was cut to "PQC Handb…". Show the
+   logo alone (its alt text names the site) and tighten the item padding; below
+   1100px also narrow the search box and drop its shortcut hint. The ranges start exactly where Docusaurus's
+   mobile menu (max-width: 996px) ends, so zoomed widths such as 996.8px are
+   covered; the mobile menu keeps the title. */
+.navbar__item {
+  white-space: nowrap;
+}
+
+@media (996px < width <= 1365px) {
+  .navbar__brand {
+    flex-shrink: 0;
+  }
+
+  .navbar__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .navbar__item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (996px < width <= 1100px) {
+  .navbar__item {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .navbar .navbar__search-input {
+    width: 8rem;
+  }
+
+  /* The narrowed box has no room for the "ctrl K" hint; the shortcut still works */
+  .navbar__search [class*='searchHintContainer'] {
+    display: none;
+  }
 }

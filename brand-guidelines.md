@@ -41,7 +41,8 @@ The site uses the handbook-family teal-and-cyan palette across light and dark mo
 
 | Role | Hex | Usage |
 | --- | --- | --- |
-| Primary Cyan | `#00C5D8` | Interactive accents, links, active states, card hover borders, and focal highlights (`--ifm-color-primary`). |
+| Primary Cyan | `#00C5D8` | Interactive accents, card hover borders, and focal highlights (`--ifm-color-primary`); links and active states in dark mode. |
+| Link Teal | `#006B78` | Light-mode text links, active sidebar, breadcrumb and table-of-contents entries, and focus outlines on Surface Light, where Primary Cyan is too pale for text (`--pqc-link-on-light`). |
 | Deep Teal | `#013B4E` | Light-mode navbar, dark footer, hero background, social card canvas, and dark-mode page background. |
 | Darker Teal | `#012A38` | Dark-mode navbar background for subtle elevation against Deep Teal pages. |
 | Surface Light | `#F5FCFD` | Light-mode page background and dark-mode primary foreground text. |
@@ -53,6 +54,7 @@ Colour and accessibility rules:
 
 - Never convey meaning, priority, or status by colour alone; always pair colour with clear text or structural labels.
 - Maintain WCAG AA contrast (`#5E6E75` on `#F5FCFD` in light mode; `#F5FCFD` on `#013B4E` in dark mode).
+- Never set text in Primary Cyan on Surface Light: it is about 2:1. Use Link Teal (`#006B78`, about 5.9:1) for light-mode links and active states.
 - Reference Infima variables in `src/css/custom.css` rather than hardcoding hex values inside components.
 
 ## Typography
@@ -69,10 +71,10 @@ Always retain system sans-serif and monospace fallbacks. Code blocks use high-co
 
 | Element | Visual guidance |
 | --- | --- |
-| Navbar | Deep Teal (`#013B4E` in light mode, `#012A38` in dark mode) with light text and restrained top-level items. |
+| Navbar | Deep Teal (`#013B4E` in light mode, `#012A38` in dark mode) with light text and restrained top-level items on one line; between `997px` and `1365px` the logo stands without the title so the items do not wrap. |
 | Footer | Deep Teal (`#013B4E`) with Surface Light (`#F5FCFD`) links and safe wrapping on narrow mobile viewports (`.footer__link-item { max-width: 100%; }`). |
 | Cards | Outlined surface cards with subtle `1px` borders that highlight in Primary Cyan (`#00C5D8`) on hover and stack cleanly to one column on mobile (`≤ 768px`). |
-| Homepage | Calm, utilitarian entry point: a concise Deep Teal hero header followed by clean card grids and structured reference tables rather than promotional banners or decorative splash graphics. |
+| Homepage | Calm reference entry point, not a product landing page: a concise Deep Teal hero header (title, tagline, audience, and the limit as a quiet bordered note, with no buttons), then outlined cards drawn as a route chooser, a three-column grid of facts, an excerpt from a real record, and a reference grid. No promotional banners, button pairs, feature grids, gradients, or decorative splash graphics. |
 | Tables | Clean borders, subtle header shading, and scannable cell density suitable for both desktop and mobile screens. On phone screens, 3- and 4-column tables become stacked cards, one per row, with each cell labelled by its column heading; wider record tables scroll inside the page. |
 
 ## Diagrams and Illustrations

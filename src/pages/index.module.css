@@ -64,10 +64,6 @@
   text-decoration: underline;
 }
 
-[data-theme='light'] .section p a {
-  color: var(--pqc-link-on-light);
-}
-
 [data-theme='light'] .box:focus-visible {
   outline-color: var(--pqc-link-on-light);
 }
