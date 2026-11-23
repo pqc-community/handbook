@@ -42,7 +42,7 @@ You now have the model the rest of the handbook uses:
 - **Dates belong to authorities and audiences**; your data lifetimes and device lifetimes decide which ones bind you, and when.
 - The work is **repeatable**, so build the capability to do it again.
 
-To act on it, go to [Plan your migration](/plan/): four questions decide whether the baseline is enough or you also need a programme. Two worked examples then apply these ideas: [Protect this first](/templates/examples/protect-this-first/) follows a fictional manufacturer through a programme, and [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) follows a fictional agency through the baseline. Keep the [glossary](/templates/reference/glossary/) to hand.
+To act on it, go to [Plan your migration](/plan/): four questions decide whether the core actions are enough or you also need a programme. Two worked examples then apply these ideas: [Protect this first](/templates/examples/protect-this-first/) follows a fictional manufacturer through a programme, and [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) follows a fictional agency through the core actions. Keep the [glossary](/templates/reference/glossary/) to hand.
 
 ## Check your understanding
 

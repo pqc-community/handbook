@@ -3,7 +3,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   journeySidebar: [
     'plan/index',
-    'plan/baseline',
+    'plan/core-actions',
     {
       type: 'category',
       label: 'Programme',

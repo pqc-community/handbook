@@ -51,7 +51,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 - **the supplier-hosted product-design archive:** 15-year confidentiality under company policy, with cryptography supplier-hosted and not visible to a scan, and separate rows for connections, stored data, and signatures;
 - **the product sensor's firmware verifier:** a single non-updatable verifier row, with a boot ROM trust anchor a scan cannot see;
 - **the key that signs the sensor's firmware:** its own row, because step 3 lists firmware-signing keys among the keys to find, with where it is held still to record;
-- **the office laptops:** one row for both jobs, tracked on the baseline.
+- **the office laptops:** one row for both jobs, tracked under the core actions.
 
 Every algorithm the manufacturer has not verified is `unknown`, and each row names its owner.
 

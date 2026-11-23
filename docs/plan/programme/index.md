@@ -6,7 +6,7 @@ description: "First moves for each question that applied, small and full program
 displayed_sidebar: journeySidebar
 ---
 
-Run a programme when any of the four questions in [Which plan you need](/plan/) applies. Keep following the baseline for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (baseline action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator. Ask the regulator which requirements and dates apply to you, and what evidence it expects to see.
+Run a programme when any of the four questions in [Which plan you need](/plan/) applies. Keep following the core actions for everything you buy in; the programme covers only what the questions found. If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and speak to your sector regulator first. Name the owner (core action 1) before the first moves; the first moves only gather facts, so they need not wait for the regulator. Ask the regulator which requirements and dates apply to you, and what evidence it expects to see.
 
 ## First moves
 
@@ -48,7 +48,7 @@ The practices run in three phases. They overlap: supplier questions start during
 - [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
 - [Make and verify one change](/plan/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
 - [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
-- [Review and report](/plan/programme/subsequent-review/): every three months while a line is ranked first for its job or a fixed date falls within a year, and every six months otherwise. A small programme reviews every six months unless a fixed date falls within a year. A programme's reviews replace the baseline's: check the baseline items at the same time.
+- [Review and report](/plan/programme/subsequent-review/): every three months while a line is ranked first for its job or a fixed date falls within a year, and every six months otherwise. A small programme reviews every six months unless a fixed date falls within a year. A programme's reviews replace the core actions': check the core actions at the same time.
 
 ## When no option exists in time
 
@@ -65,6 +65,6 @@ This page sets out the handbook's own method. The practices it links cite the au
 ## Related pages
 
 - [Which plan you need](/plan/)
-- [Baseline](/plan/baseline/)
+- [Core actions](/plan/core-actions/)
 - [Technology options](/technology-options/)
 - [Templates](/templates/)

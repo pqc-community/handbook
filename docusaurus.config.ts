@@ -91,7 +91,7 @@ const config: Config = {
           title: 'Plan your migration',
           items: [
             {label: 'Which plan you need', to: '/plan/'},
-            {label: 'Baseline', to: '/plan/baseline/'},
+            {label: 'Core actions', to: '/plan/core-actions/'},
             {label: 'Programme', to: '/plan/programme/'},
           ],
         },

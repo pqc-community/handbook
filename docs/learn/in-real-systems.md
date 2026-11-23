@@ -72,4 +72,4 @@ Continue with [Timelines](/learn/timelines/). For the handshake in more detail, 
 
 - [Learn the basics](/learn/)
 - [Inventory the cryptography](/plan/programme/inventory/)
-- [Baseline](/plan/baseline/)
+- [Core actions](/plan/core-actions/)

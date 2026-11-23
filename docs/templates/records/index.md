@@ -8,7 +8,7 @@ description: The five records that evidence a post-quantum migration, who keeps 
 
 These records show what you have decided, asked, required, changed, and reviewed. When a sponsor, auditor, or customer asks whether a system has migrated, the answer is in these rows, not in a statement.
 
-Most organisations keep two of them. The [baseline](/plan/baseline/) keeps the register and the purchase wording. A [programme](/plan/programme/) adds a change record for each change, and a full programme adds the charter and a progress report at each review.
+Most organisations keep two of them. The [core actions](/plan/core-actions/) keep the register and the purchase wording. A [programme](/plan/programme/) adds a change record for each change, and a full programme adds the charter and a progress report at each review.
 
 ## The records
 
@@ -53,7 +53,7 @@ Each record page has a blank table and a CSV. To set up all five at once, downlo
 
 ## Worked examples
 
-- [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) fills in the baseline's two records for a fictional marketing agency.
+- [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) fills in the core actions' two records for a fictional marketing agency.
 - [Protect this first](/templates/examples/protect-this-first/) fills in all five for a fictional manufacturer running a full programme.
 
 ## Sources
@@ -62,6 +62,6 @@ The records set out the handbook's own method; the practices that fill them cite
 
 ## Related pages
 
-- [Baseline](/plan/baseline/)
+- [Core actions](/plan/core-actions/)
 - [Programme](/plan/programme/)
 - [Templates](/templates/)

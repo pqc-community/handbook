@@ -8,7 +8,7 @@ Mission, audience, editorial stance, sister-site boundaries, and scope exclusion
 
 A vendor-neutral handbook (`https://pqchandbook.com`) for security, engineering, product, procurement, and risk professionals transitioning public-key cryptography to post-quantum standards without in-house cryptographers.
 
-- **Promise**: A reader journey that starts with four questions, gives every organisation a short baseline and a programme only when it needs one, with repeatable practices, sourced authority positions, and downloadable records so leads can plan, prioritise, and evidence a migration. The journey is specified in [reader-journey.md](./reader-journey.md).
+- **Promise**: A reader journey that starts with four questions, gives every organisation short core actions and a programme only when it needs one, with repeatable practices, sourced authority positions, and downloadable records so leads can plan, prioritise, and evidence a migration. The journey is specified in [reader-journey.md](./reader-journey.md).
 - **Limit**: Not a formal risk assessment, and not a substitute for specialist cryptography advice on large bespoke estates, CNI, or regulated systems. Pages surface this boundary and route hard cases to the organisation's risk owner, sector authority, or specialist.
 
 ## Audience
@@ -25,7 +25,7 @@ Migration is an ongoing operational capability, not a single cutover:
 - **Standards are not universal deadlines** — a FIPS standardises an algorithm; milestones belong to named authorities and audiences.
 - **Vendor release is not deployment** — release, buyer testing, cutover, and end of support are separate dates; unanswered items stay `unknown` until a subsequent review.
 
-Use one fictional **UK-based small manufacturer** across [Protect this first](./docs/templates/examples/protect-this-first.md) and the record pages' filled examples. A second fictional **UK marketing agency** in [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) illustrates the baseline only; do not reuse it on other pages. Both are business illustrations, not sector-specific or critical-infrastructure guidance; all company and supplier facts, product versions, and event dates are fictional.
+Use one fictional **UK-based small manufacturer** across [Protect this first](./docs/templates/examples/protect-this-first.md) and the record pages' filled examples. A second fictional **UK marketing agency** in [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) illustrates the core actions only; do not reuse it on other pages. Both are business illustrations, not sector-specific or critical-infrastructure guidance; all company and supplier facts, product versions, and event dates are fictional.
 
 ## Sister Sites
 

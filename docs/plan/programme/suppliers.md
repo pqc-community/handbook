@@ -19,7 +19,7 @@ Any system on your register depends on a supplier's product or service, you are 
 
 ## Do this
 
-On the [baseline](/plan/baseline/), step 5 applies: put post-quantum wording into every purchase and renewal, and judge the supplier's answer as in step 3. The baseline replaces a product that is out of support, or whose supplier has no post-quantum plan, with a date on the register. Steps 1 to 4 apply in full to suppliers behind the systems a programme covers.
+Under the [core actions](/plan/core-actions/), step 5 applies: put post-quantum wording into every purchase and renewal, and judge the supplier's answer as in step 3. The core actions replace a product that is out of support, or whose supplier has no post-quantum plan, with a date on the register. Steps 1 to 4 apply in full to suppliers behind the systems a programme covers.
 
 ### 1. Triage suppliers
 
@@ -27,9 +27,9 @@ Build the supplier list from the register, not from the purchasing system alone.
 
 - **Tier 1:** suppliers behind the rows that come first in their job's order on the register, such as key establishment for long-lived confidential data, verifiers that cannot be updated, or signatures with many relying parties.
 - **Tier 2:** suppliers whose contract renews or ends within your planning period. The handbook suggests looking at least two years ahead, because a renewal is the cheapest point to add post-quantum wording.
-- **Tier 3:** suppliers of supported commodity products, tracked on the baseline.
+- **Tier 3:** suppliers of supported commodity products, tracked under the core actions.
 
-Ask tier 1 first and individually, and tier 2 in batches. Do not send tier 3 suppliers questions while their products stay in support: rely on their published support and release information, as the baseline does, and put the post-quantum wording to them at renewal. A product that leaves support is replaced, with a date on the register. Add each supplier's renewal or contract end date to the register, so a renewal triggers the wording rather than an automatic extension.
+Ask tier 1 first and individually, and tier 2 in batches. Do not send tier 3 suppliers questions while their products stay in support: rely on their published support and release information, as the core actions do, and put the post-quantum wording to them at renewal. A product that leaves support is replaced, with a date on the register. Add each supplier's renewal or contract end date to the register, so a renewal triggers the wording rather than an automatic extension.
 
 ### 2. Ask the same questions in writing
 
@@ -55,7 +55,7 @@ A national milestone that a supplier quotes applies to the audience its authorit
 
 ### 4. Follow up and escalate
 
-Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the system owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time on the register; or written risk acceptance by the sponsor, with a review date. Where a supplied product on the baseline has no post-quantum plan, the baseline replaces it, with a date on the register; that alone is not a reason for a programme.
+Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the system owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time on the register; or written risk acceptance by the sponsor, with a review date. Where a supplied product under the core actions has no post-quantum plan, the core actions replace it, with a date on the register; that alone is not a reason for a programme.
 
 ### 5. Put wording into purchases and renewals
 
@@ -68,7 +68,7 @@ For anything new or renewed that uses public-key cryptography, ask before signin
 - a support period;
 - the evidence you will receive.
 
-Record the wording, the supplier's commitment, and whether it was met on the [purchase wording](/templates/records/purchase-wording/) record, one row per purchase or renewal, job, and candidate supplier. The [baseline](/plan/baseline/#wording-for-purchases-and-renewals) has a sentence to copy and adapt.
+Record the wording, the supplier's commitment, and whether it was met on the [purchase wording](/templates/records/purchase-wording/) record, one row per purchase or renewal, job, and candidate supplier. The [core actions](/plan/core-actions/#wording-for-purchases-and-renewals) have a sentence to copy and adapt.
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
@@ -102,6 +102,6 @@ The register records what suppliers say; it does not validate their products. Va
 
 - [Register](/templates/records/register/)
 - [Purchase wording](/templates/records/purchase-wording/)
-- [Baseline](/plan/baseline/)
+- [Core actions](/plan/core-actions/)
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/)
 - [Vendor questions guide](/standards/migration-guides/vendor-questions/)

@@ -6,26 +6,26 @@ How a reader moves from first arrival to their first useful action, why the hand
 
 ## The Journey in One Picture
 
-Four questions about the organisation, a baseline that everyone follows, and a programme only when the questions find something that cannot wait for suppliers.
+Four questions about the organisation, core actions that everyone follows, and a programme only when the questions find something that cannot wait for suppliers.
 
 ```text
 Which plan you need: four questions about the organisation
 (yes / no / not sure; not sure counts as yes until someone confirms)
- ├── None apply ─────────────► Baseline
- ├── Any applies ────────────► Baseline + Programme
+ ├── None apply ─────────────► Core actions
+ ├── Any applies ────────────► Core actions + Programme
  │                              ├── First moves, one per question that applied
  │                              └── Diagnose → Order and schedule → Execute
  └── Critical, regulated, or ──► Specialist advice and the sector regulator first,
-     a large estate you build      then Baseline + Programme
+     a large estate you build      then Core actions + Programme
 ```
 
-The reader learns three terms to act: **baseline**, **programme**, and **register**. Key establishment, signatures, verifier, hybrid, and relying parties are glossed in one line where they first appear.
+The reader learns three terms to act: **core actions**, **programme**, and **register**. Key establishment, signatures, verifier, hybrid, and relying parties are glossed in one line where they first appear.
 
 ## Principles
 
 - **Ask only what changes the outcome**: Each question exists because its answer changes what the reader does next. If a rule fits on the page, state it there instead of asking a question.
-- **Serve the majority first**: Most readers buy in their technology and need a short, complete plan. The baseline is that plan, written so a reader who needs nothing more can stop there with confidence.
-- **Everyone does the baseline**: Programme organisations keep doing the baseline for everything they buy in. The programme covers only what the four questions found.
+- **Serve the majority first**: Most readers buy in their technology and need a short, complete plan. The core actions are that plan, written so a reader who needs nothing more can stop there with confidence.
+- **Everyone does the core actions**: Programme organisations keep doing the core actions for everything they buy in. The programme covers only what the four questions found.
 - **Separate jobs where their clocks differ**: Key establishment, signatures, and verifiers that cannot be updated each get their own first move, register line, and ordering rule. Job separation lives in the programme, not in the routing.
 - **A first move, not a framework**: Every outcome ends in an action the reader can take this week, named with who does it.
 - **Hand off as an action**: Where the handbook reaches its limit, the page tells the reader whom to contact first, rather than noting a caveat.
@@ -46,18 +46,18 @@ Rules for the questions:
 
 - **Not sure counts as yes** until a named person confirms, by a named date. Record both on the register.
 - **Many years**: As this handbook's guide, treat ten years or more as many years. Where an authority sets a threshold for its audience, such as the EU NIS Cooperation Group roadmap for Member States, cite it with that audience.
-- **Out-of-support products are not a trigger.** A supplied product with no updates or no post-quantum plan is a baseline item with a replacement date, never a reason on its own to start a programme.
-- **Three outcomes only**: none apply (baseline); any applies (baseline and programme); critical, regulated, or a large self-built estate (specialist advice and the sector regulator first, then baseline and programme).
+- **Out-of-support products are not a trigger.** A supplied product with no updates or no post-quantum plan is a core-actions item with a replacement date, never a reason on its own to start a programme.
+- **Three outcomes only**: none apply (core actions); any applies (core actions and programme); critical, regulated, or a large self-built estate (specialist advice and the sector regulator first, then baseline and programme).
 
 Which plan you need also carries a short **Which dates apply to you** table: each authority's milestones, the audience the authority names, and what to record when no authority addresses the reader. It never presents one authority's dates as universal.
 
-## Baseline
+## Core actions
 
-The baseline is about seven actions, each marked **you** or **ask** (your IT provider or supplier), with the time it takes. It covers naming an owner, listing what is in use, keeping it supported and updated, replacing what is out of support (with interim limits until replaced), post-quantum wording for purchases and renewals, not counting anything as migrated without evidence, and a review every six months.
+The core actions are seven actions, each marked **you** or **ask** (your IT provider or supplier), with the time it takes. It covers naming an owner, listing what is in use, keeping it supported and updated, replacing what is out of support (with interim limits until replaced), post-quantum wording for purchases and renewals, not counting anything as migrated without evidence, and a review every six months.
 
 - Purchase wording is given as a sentence the reader can copy, with each standard named once and glossed.
-- The baseline keeps two records: the register and the purchase wording.
-- The baseline is the whole plan for organisations where no question applies. It says so plainly.
+- The core actions keep two records: the register and the purchase wording.
+- The core actions are the whole plan for organisations where no question applies. The page says so plainly.
 
 ## Programme
 
@@ -91,20 +91,20 @@ The register replaces the decision note, inventory record, migration plan, vendo
 
 ## Navigation and Placement
 
-- **Navbar**: Learn the basics and Plan your migration lead, as the two ways in: one to understand, one to act. Technology options, Standards, and Templates follow. Baseline and Programme sit inside Plan your migration, under `/plan/`, with Which plan you need as its first page, so a reader sees one home for the plan.
+- **Navbar**: Learn the basics and Plan your migration lead, as the two ways in: one to understand, one to act. Technology options, Standards, and Templates follow. Core actions and Programme sit inside Plan your migration, under `/plan/`, with Which plan you need as its first page, so a reader sees one home for the plan.
 - **Homepage**: The hero says every organisation needs a migration plan and that for most it is short. Two equal cards follow, Learn the basics and Plan your migration. The four questions and three outcomes, each worded as "Your plan: …", appear on the homepage itself, so a first-time reader is one page from a first action. Three reference cards follow; nothing else. A November 2026 persona review found readers skipped or were slowed by the jobs-and-clocks section and the register excerpt, so the thesis lives in the Timelines lesson and the first moves, and the register in the worked examples.
 - **Retired**: Situation routes, the short and full paths, the three asset tracks, Decide whether to act, the five conditions, and the urgent and regular adopter categories. Their unique content moves to the page that uses it: deadline tables to Which dates apply to you and Set dates and milestones, stored-data rules to the backups and archives card, and verifier rules to the firmware and secure boot card.
 - **Reference sections stay**: Technology options are linked from the programme by job; Learn holds the concepts the journey glosses; Standards holds the sources the journey cites.
 
 ## Writing Rules for Journey Pages
 
-Which plan you need, Baseline, and the Programme overview are held to reading budgets, checked by `npm test` and `npm run check` (`scripts/checks/reading.mjs`):
+Which plan you need, Core actions, and the Programme overview are held to reading budgets, checked by `npm test` and `npm run check` (`scripts/checks/reading.mjs`):
 
 - At most `900` words per page.
 - At most `2` internal links per `100` words.
 - No sentence longer than `40` words.
 - No backticked record field names in prose.
-- The retired routing labels (short path, full path, situation route, asset track, five conditions, urgent adopter, regular adopter) and the retired page names (Decide whether to act, Start here, Plan the migration) do not appear as labels anywhere on the site, except where quoting a source. The ordinary words path, route, track, and condition remain available.
+- The retired routing labels (short path, full path, situation route, asset track, five conditions, urgent adopter, regular adopter) and the retired page names (Decide whether to act, Start here, Plan the migration, Baseline) do not appear as labels anywhere on the site, except where quoting a source. The ordinary words path, route, track, and condition remain available.
 
 How the rules work in practice:
 
@@ -132,7 +132,7 @@ A survey of authorities, industry bodies, vendors, and routing exemplars outside
 
 - **Few serve the majority.** The [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (20 March 2025) are aimed primarily at large organisations, critical national infrastructure, and bespoke IT, and say that for organisations using mainly commodity IT, upgrades are likely to be delivered by their service providers. The AIVD, CWI, and TNO [PQC Migration Handbook](https://ir.cwi.nl/pub/34604/34604D.pdf) (December 2024) gives regular adopters about a page. Singapore CSA's [advisory for organisations](https://www.csa.gov.sg/alerts-and-advisories/advisories/advisory-on-quantum-safe-migration-for-organisations/) (14 October 2026) is the exception, with short steps for organisations generally.
 - **Good triage is short and changes the outcome.** The GOV.UK Design System advises against a questionnaire when the rules fit on a start page and allows a "not sure" answer where valid ([check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/), [question pages](https://design-system.service.gov.uk/patterns/question-pages/)).
-- **Small organisations get a baseline.** UK [Cyber Essentials](https://www.ncsc.gov.uk/cyberessentials/overview) and CISA's [Cyber Essentials](https://www.cisa.gov/cyber-essentials) give a short fixed list, and CISA splits actions between the leader and what to take to IT.
+- **Small organisations get a short list of core actions.** UK [Cyber Essentials](https://www.ncsc.gov.uk/cyberessentials/overview) and CISA's [Cyber Essentials](https://www.cisa.gov/cyber-essentials) give a short fixed list, and CISA splits actions between the leader and what to take to IT.
 - **Separating jobs is rare and valuable.** Few journeys keep key establishment, signatures, and long-lived devices apart; the handbook keeps that distinction inside the programme.
 
 ### What was tested
@@ -170,7 +170,18 @@ The first journey page was called Start here. It sorted readers rather than intr
 
 The test bundled the name, the navbar, and the hero copy, so much of the gain comes from one home for the plan and the reassuring hero. Keep all three together.
 
+### Why Core actions
+
+The page every organisation follows was called Baseline. On its own the word already means something else to this handbook's readers: a security configuration or control baseline (CIS Benchmarks, NIST SP 800-53), a current-state inventory (the PQC Coalition roadmap's "Baseline Understanding" category, NIST SP 1800-38), a product certification (the AIVD's Baseline Security Product Assessment), or a project baseline. Third-party guides have no shared name for supplier-led migration: the UK NCSC describes commodity IT upgraded by service providers, and the AIVD and the EU NIS Cooperation Group use "no-regret moves" for early steps that include inventory.
+
+Two persona tests in November 2026 chose the replacement:
+
+- **The name alone and in context**: Eight readers compared Baseline with five alternatives. From the name alone, none expected a plan behind Baseline; all eight expected an assessment, an inventory, or a minimum standard. In context, Supplier-led plan (28 points) and Core actions (27) led and Baseline came last (12). Supplier-led plan misled the software supplier, who read it as guidance for suppliers.
+- **Paired with the programme**: Eight readers compared five pairs. Size-based pairs failed: seven of eight read Mini-plan and Full programme, and eight of eight read Light plan and Full plan, as tiers to choose between, so programme organisations would drop the actions for what they buy in. Beside Programme, Baseline read well as a floor, but that context is lost wherever the word stands alone. Core actions was never ranked last in either test, and every reader saw that it applied to them.
+
+Name the page by what it is, not by its size. Keep Programme.
+
 ## Open Questions
 
 - **Suppliers' urgency**: Whether a supplier with no long-lived data or systems of its own should take its urgency from customers who are urgent. No test covered that case.
-- **Section names**: Baseline may still read as a certification term to some readers. "Migration" in Plan your migration felt heavy to the newcomer persona, who is served by Learn the basics.
+- **Section names**: "Migration" in Plan your migration felt heavy to the newcomer persona, who is served by Learn the basics.

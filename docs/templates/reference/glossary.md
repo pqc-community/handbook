@@ -12,10 +12,6 @@ Keep the glossary open while working through [Learn the basics](/learn/). Formal
 
 Cryptography that uses a matched pair of keys. The public key can be shared, and the private key stays secret, because the two keys do different jobs. In key establishment the public key is used to create a shared secret and the private key recovers it. In signing, the private key creates the signature and the public key checks it, and that check does not reverse the signature. [Symmetric cryptography](#symmetric-cryptography) is the other family: one shared secret protects the bulk of the traffic once the public-key step is finished. The lessons call this [public-key cryptography](#public-key-cryptography). See [Public-key cryptography](/learn/public-key-cryptography/).
 
-## Baseline
-
-The short plan every organisation follows, whether or not it also runs a programme. It is seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the baseline is the whole plan. It keeps two records: the [register](#register) and the purchase wording. See [Baseline](/plan/baseline/).
-
 ## Block cipher
 
 A symmetric algorithm that encrypts data in fixed-size blocks under one secret key. The same key decrypts those blocks. AES is the familiar example. A block cipher encrypts one block at a time, and the protocol decides how those blocks are combined for a longer message. It is not [public-key cryptography](#public-key-cryptography), which uses a matched pair of keys, and it is not a key-encapsulation mechanism, which only establishes a shared secret. A stream cipher is the neighbouring symmetric algorithm: it encrypts a stream of bits rather than a fixed-size block. In the lessons, a protocol such as TLS derives symmetric keys from a shared secret, and a block cipher is one way those keys protect the bulk of the traffic. See [Public-key cryptography](/learn/public-key-cryptography/).
@@ -41,6 +37,10 @@ The Commercial National Security Algorithm Suite 2.0: the quantum-resistant algo
 ## Composite signature
 
 A single signature object that combines a post-quantum and a classical signature, so both must verify. [RFC 10073](/standards/modules-protocols-certificates/rfc-10073/) (November 2026) defines composite ML-DSA for X.509 certificates. NIST IR 8547 treats composite, dual, and hybrid signatures together; see [Dual signature](#dual-signature).
+
+## Core actions
+
+The short plan every organisation follows, whether or not it also runs a programme. It is seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the core actions are the whole plan. They keep two records: the [register](#register) and the purchase wording. See [Core actions](/plan/core-actions/).
 
 ## Crypto-agility
 
@@ -182,7 +182,7 @@ The public-key infrastructure that issues and checks certificates. A certificate
 
 ## Programme
 
-The work an organisation runs, on top of the [baseline](#baseline), for what the four questions in [Which plan you need](#which-plan-you-need) found. It opens with one first move for each question that applied, then runs in three phases: diagnose, plan, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/plan/programme/).
+The work an organisation runs, on top of the [core actions](#core-actions), for what the four questions in [Which plan you need](#which-plan-you-need) found. It opens with one first move for each question that applied, then runs in three phases: diagnose, plan, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/plan/programme/).
 
 ## Public-key cryptography
 
@@ -204,7 +204,7 @@ RSA and elliptic-curve public-key schemes are the familiar examples. A [block ci
 
 ## Register
 
-The one record every organisation keeps. It has one row per system and job, giving the owner, what protects it today, the supplier's answer and its judgement, the dates that apply, the next step, the status, and the next review. The [baseline](#baseline) starts it, and a [programme](#programme) adds its order and dates. See [Register](/templates/records/register/).
+The one record every organisation keeps. It has one row per system and job, giving the owner, what protects it today, the supplier's answer and its judgement, the dates that apply, the next step, the status, and the next review. The [core actions](#core-actions) start it, and a [programme](#programme) adds its order and dates. See [Register](/templates/records/register/).
 
 ## Relying party
 
@@ -238,7 +238,7 @@ The component that checks a signature. When every verifier can be updated, the s
 
 ## Which plan you need
 
-Four questions about the organisation as a whole that decide whether the [baseline](#baseline) is enough or a [programme](#programme) is also needed: data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a programme. See [Which plan you need](/plan/).
+Four questions about the organisation as a whole that decide whether the [core actions](#core-actions) are enough or a [programme](#programme) is also needed: data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a programme. See [Which plan you need](/plan/).
 
 ## Sources
 
@@ -282,7 +282,7 @@ Four questions about the organisation as a whole that decide whether the [baseli
 - [Inventory the cryptography](/plan/programme/inventory/)
 - [Decide what to migrate first](/plan/programme/priority/)
 - [Which plan you need](/plan/)
-- [Baseline](/plan/baseline/)
+- [Core actions](/plan/core-actions/)
 - [Programme](/plan/programme/)
 - [Templates](/templates/)
 - [Migration records](/templates/records/)

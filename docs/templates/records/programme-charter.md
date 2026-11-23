@@ -25,7 +25,7 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 | field | entry |
 | --- | --- |
 | goal | Keep product designs confidential against future quantum attack, secure the product sensor's signature path before production design freeze, and keep office IT on supported supplier updates. |
-| in scope | product-design archive; product sensor firmware verifier and its signing key; office laptops, on the baseline |
+| in scope | product-design archive; product sensor firmware verifier and its signing key; office laptops, under the core actions |
 | out of scope | systems not yet on the register, until the first-pass inventory is complete |
 | done for this phase | register rows for the archive, the sensor's firmware verifier and firmware-signing key, and the laptops; written supplier answers for the archive; a supported signature option for the sensor, or an escalation to the sponsor, before production design freeze on 2027-06-30 |
 | executive sponsor | managing director |

@@ -1,12 +1,12 @@
 // Reader journey rules (reader-journey.md, "Writing Rules for Journey Pages"):
-// Which plan you need, Baseline and the Programme overview stay within reading budgets, and the
+// Which plan you need, Core actions and the Programme overview stay within reading budgets, and the
 // retired routing labels do not reappear as labels anywhere on the site, except where a
 // Standards summary quotes a source.
 import fs from 'node:fs';
 import path from 'node:path';
 import {classifyLines, isDividerRow, pipeCells, relativePath, walkMarkdown} from '../lib/markdown.mjs';
 
-export const JOURNEY_PAGES = ['docs/plan/index.md', 'docs/plan/baseline.md', 'docs/plan/programme/index.md'];
+export const JOURNEY_PAGES = ['docs/plan/index.md', 'docs/plan/core-actions.md', 'docs/plan/programme/index.md'];
 export const MAX_WORDS = 900;
 export const MAX_LINKS_PER_100_WORDS = 2;
 export const MAX_SENTENCE_WORDS = 40;
@@ -14,9 +14,9 @@ export const MAX_SENTENCE_WORDS = 40;
 // Labels from the retired routing model. Words inside a label may be joined by spaces,
 // hyphens or a line break. The ordinary words path, route, track and condition stay
 // available; only these labels are blocked. The retired page names "Decide whether to
-// act", "Start here" (now Which plan you need) and "Plan the migration" (now Set dates and
-// milestones) are matched only with their capital letter, so plain English such as "we
-// decide whether to act" or "start here if" is allowed.
+// act", "Start here" (now Which plan you need), "Plan the migration" (now Set dates and
+// milestones) and "Baseline" (now Core actions) are matched only with their capital letter,
+// so plain English such as "we decide whether to act" or "start here if" is allowed.
 export const RETIRED_LABELS = [
   'short path',
   'full path',
@@ -28,7 +28,7 @@ export const RETIRED_LABELS = [
   'urgent adopter',
   'regular adopter',
 ];
-const CASE_SENSITIVE_LABELS = ['Decide whether to act', 'Start here', 'Plan the migration'];
+const CASE_SENSITIVE_LABELS = ['Decide whether to act', 'Start here', 'Plan the migration', 'Baseline'];
 
 // Files outside docs/ where navigation and homepage labels live.
 const SITE_FILES = ['src/pages/index.tsx', 'sidebars.ts', 'docusaurus.config.ts'];

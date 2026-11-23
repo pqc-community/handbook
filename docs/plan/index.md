@@ -2,11 +2,11 @@
 title: Which plan you need
 search_title: Plan your post-quantum migration
 sidebar_label: Which plan you need
-description: "Four questions decide which post-quantum migration plan you need: the baseline alone, or the baseline and a programme, and which dates apply to you."
+description: "Four questions decide which post-quantum migration plan you need: the core actions alone, or the core actions and a programme, and which dates apply to you."
 displayed_sidebar: journeySidebar
 ---
 
-Post-quantum cryptography replaces the public-key methods that a future quantum computer could break. Every organisation needs a migration plan. For most it is short: suppliers make the changes, and you keep the [baseline](/plan/baseline/). Four questions decide whether your plan also needs a [programme](/plan/programme/).
+Post-quantum cryptography replaces the public-key methods that a future quantum computer could break. Every organisation needs a migration plan. For most it is short: suppliers make the changes, and you keep the [core actions](/plan/core-actions/). Four questions decide whether your plan also needs a [programme](/plan/programme/).
 
 ## Four questions
 
@@ -14,18 +14,18 @@ Answer for the organisation as a whole. A question applies if any system, servic
 
 1. **Data that must stay secret for years.** Do you hold information that must stay confidential for many years and that travels over networks, or is stored, under public-key protection? An attacker can record it now and decrypt it later. Count how long it must stay secret, not how long you keep it. This handbook treats ten years or more as many years. Ordinary business records, such as accounts, client files, and staff records, usually fall short; long-lived product designs, health records, and security-sensitive files often do not.
 2. **Devices with a fixed key.** Do you make or run products or devices that check signatures with a key or method that cannot be changed after they ship, whether in hardware or in software? A key that a normal update can replace is not fixed. Supported laptops and phones that their maker updates do not count.
-3. **Signatures others rely on.** Do you run a certificate authority, public or internal, or sign code, firmware, or documents that other people or devices check? Signing through a supplier's e-signature service is supplied IT, on the baseline.
+3. **Signatures others rely on.** Do you run a certificate authority, public or internal, or sign code, firmware, or documents that other people or devices check? Signing through a supplier's e-signature service is supplied IT, under the core actions.
 4. **Systems you build or configure.** Do you build software or firmware, or set up the cryptography yourself on your own servers, load balancers, VPNs, or applications? One such system is enough, even if you buy in everything else. If an IT provider sets these up and keeps them updated for you, treat them as supplied, and ask the provider.
 
-A supplied product that is out of support, or whose supplier has no post-quantum plan, is not a reason for a programme on its own. The baseline replaces it.
+A supplied product that is out of support, or whose supplier has no post-quantum plan, is not a reason for a programme on its own. The core actions replace it.
 
 ## Your plan
 
 | Your answers | Your plan |
 | --- | --- |
-| None apply | The [baseline](/plan/baseline/): seven actions, on one page. |
-| Any applies | The baseline for everything you buy in, and a [programme](/plan/programme/) for what the questions found. Name an owner, then take its first moves. |
-| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. Then the baseline and a full programme. |
+| None apply | The [core actions](/plan/core-actions/): seven actions, on one page. |
+| Any applies | The core actions for everything you buy in, and a [programme](/plan/programme/) for what the questions found. Name an owner, then take its first moves. |
+| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. Then the core actions and a full programme. |
 
 ## Which dates apply to you
 
@@ -58,7 +58,7 @@ Dates belong to the authority that set them and the audience it names. There is 
 
 ## Related pages
 
-- [Baseline](/plan/baseline/)
+- [Core actions](/plan/core-actions/)
 - [Programme](/plan/programme/)
 - [Register](/templates/records/register/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)

@@ -14,18 +14,18 @@ Read these five root documents before changing structure, prose, or styling:
 
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, audience, editorial thesis, sister-site boundaries, and non-goals
 - [Navigation Structure](./navigation-structure.md) — URL policy, navbar and five sidebars, complete sitemap, homepage and footer
-- [Reader Journey](./reader-journey.md) — How readers are routed from Plan your migration to a first action, the baseline and programme, the records, the rules that keep the journey simple, and why it was chosen
+- [Reader Journey](./reader-journey.md) — How readers are routed from Plan your migration to a first action, the core actions and programme, the records, the rules that keep the journey simple, and why it was chosen
 - [Style Guide](./style-guide.md) — Editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
 - [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
 
 ### Handbook Content (`docs/`)
 
 - [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
-- [Which plan you need](./docs/plan/index.md), [Baseline](./docs/plan/baseline.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the baseline every organisation follows, and the programme with its first moves and practices in three phases (diagnose, plan, execute)
+- [Which plan you need](./docs/plan/index.md), [Core actions](./docs/plan/core-actions.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the core actions every organisation follows, and the programme with its first moves and practices in three phases (diagnose, plan, execute)
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Programme practices](./docs/plan/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/programme/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
-- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the baseline and a full programme; and the [Glossary](./docs/templates/reference/glossary.md)
+- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the core actions and a full programme; and the [Glossary](./docs/templates/reference/glossary.md)
 
 ## Getting Started
 

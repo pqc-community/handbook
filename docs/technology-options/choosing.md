@@ -72,7 +72,7 @@ The authority check can change the answer:
 
 ## Keep this evidence
 
-The `option` and `authority` cells of the system's [change record](/templates/records/change-record/), as step 7 describes. Update what the system's [register](/templates/records/register/) row records as protecting it today as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Supplied products tracked on the [baseline](/plan/baseline/) need no option recorded here.
+The `option` and `authority` cells of the system's [change record](/templates/records/change-record/), as step 7 describes. Update what the system's [register](/templates/records/register/) row records as protecting it today as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Supplied products tracked under the [core actions](/plan/core-actions/) need no option recorded here.
 
 ## Example
 

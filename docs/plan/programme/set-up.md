@@ -8,7 +8,7 @@ displayed_sidebar: journeySidebar
 
 ## When this applies
 
-At least one of the four questions in [Which plan you need](/plan/) applies, and you need a full programme: any device with a fixed key is involved, the programme covers more than one or two systems, or your answers sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/plan/programme/#size). A product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: the [baseline](/plan/baseline/) replaces it, with a date on the register.
+At least one of the four questions in [Which plan you need](/plan/) applies, and you need a full programme: any device with a fixed key is involved, the programme covers more than one or two systems, or your answers sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/plan/programme/#size). A product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: the [core actions](/plan/core-actions/) replace it, with a date on the register.
 
 ## Who does what
 

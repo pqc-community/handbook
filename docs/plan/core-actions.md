@@ -1,12 +1,12 @@
 ---
-title: Baseline
-search_title: Post-quantum baseline for supplied IT
-sidebar_label: Baseline
+title: Core actions
+search_title: Post-quantum core actions for supplied IT
+sidebar_label: Core actions
 description: Seven actions every organisation takes for post-quantum migration, each marked as yours or your supplier's, with the time it takes and the two records to keep.
 displayed_sidebar: journeySidebar
 ---
 
-Every organisation follows this baseline, including those that also run a [programme](/plan/programme/). Where none of the four questions in [Which plan you need](/plan/) applies, the baseline is your whole plan. In a small organisation one person can own it: about a day to set up, then an hour or two at each review. For a smaller organisation on commodity IT, this handbook treats a kept baseline as its migration plan, including for the UK NCSC's 2028 milestone.
+Every organisation follows these core actions, including those that also run a [programme](/plan/programme/). Where none of the four questions in [Which plan you need](/plan/) applies, the core actions are your whole plan. In a small organisation one person can own them: about a day to set up, then an hour or two at each review. For a smaller organisation on commodity IT, this handbook treats kept core actions as its migration plan, including for the UK NCSC's 2028 milestone.
 
 Each action says who does it: **you**, or **ask** your IT provider or supplier.
 
@@ -32,7 +32,7 @@ ML-KEM is the post-quantum key-establishment method NIST standardised in [FIPS 2
 
 ## Records
 
-Two records: the [register](/templates/records/register/), one row for each system you use, with the columns the register page marks for the baseline, and the [purchase wording](/templates/records/purchase-wording/) for each purchase or renewal. The [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) example shows both filled in for a small agency.
+Two records: the [register](/templates/records/register/), one row for each system you use, with the columns the register page marks for the core actions, and the [purchase wording](/templates/records/purchase-wording/) for each purchase or renewal. The [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) example shows both filled in for a small agency.
 
 ## Special cases
 

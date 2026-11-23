@@ -13,7 +13,7 @@ Top navigation leads with the two ways in, Learn the basics and Plan your migrat
 5. **Templates** (`templatesSidebar`)
 6. **GitHub**
 
-`journeySidebar` holds the Plan your migration section: Which plan you need, Baseline, and the Programme overview, with the programme's practices grouped as **Diagnose**, **Order and schedule**, and **Execute**. Baseline and Programme are reached from it, not from the navbar. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
+`journeySidebar` holds the Plan your migration section: Which plan you need, Core actions, and the Programme overview, with the programme's practices grouped as **Diagnose**, **Order and schedule**, and **Execute**. Core actions and Programme are reached from it, not from the navbar. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
 
 Do not use standards-body or algorithm names (such as NIST, ETSI, ML-KEM, or FIPS) as top-level navigation labels; organise top-level navigation around reader jobs.
 ## URL and Linking Conventions
@@ -48,19 +48,19 @@ Linking guidance:
 
 ```text
 Homepage (/) — Learn the basics or Plan your migration; the four questions and three outcomes
-  ├── Plan your migration: Which plan you need (/plan/) ──► Baseline (/plan/baseline/)
+  ├── Plan your migration: Which plan you need (/plan/) ──► Core actions (/plan/core-actions/)
   │                              └► Programme (/plan/programme/ and /plan/programme/*)
   ├── Learn the basics (/learn/*) ──► lessons and optional explainers
   └── Reference ──► Technology options, Standards, Templates
 ```
 
-- **Journey (`/plan/`, `/plan/baseline/`, `/plan/programme/`)**: The reader journey specified in [reader-journey.md](./reader-journey.md). Which plan you need asks four questions and gives three outcomes and a Which dates apply to you table. The baseline is the plan every organisation follows. The programme overview gives a first move for each question that applied, the small and full sizes, and the practices in three phases. Journey pages are held to the reading budgets in reader-journey.md, and `npm test` and `npm run check` fail if one is exceeded or a retired routing label appears outside the Standards summaries.
+- **Journey (`/plan/`, `/plan/core-actions/`, `/plan/programme/`)**: The reader journey specified in [reader-journey.md](./reader-journey.md). Which plan you need asks four questions and gives three outcomes and a Which dates apply to you table. The core actions are the plan every organisation follows. The programme overview gives a first move for each question that applied, the small and full sizes, and the practices in three phases. Journey pages are held to the reading budgets in reader-journey.md, and `npm test` and `npm run check` fail if one is exceeded or a retired routing label appears outside the Standards summaries.
 - **Programme practices (`/plan/programme/*`)**: Reusable operating practices in three phases: **Diagnose** (set up the programme, inventory the cryptography), **Order and schedule** (decide what to migrate first, plan the migration, work with suppliers), and **Execute** (choose an option in Technology options, make and verify one change, keep the ability to change again, review and report). Each practice names who leads it and the record it fills.
 - **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to Which plan you need, the worked examples, and `/templates/reference/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections, certificates and identity, signing, stored data, and platforms and environments. Process stays in the programme, positions in Standards, and concepts in Learn.
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
-  - **Templates (`/templates/`)** — What the reader fills in and keeps, grouped by what they do with it. **Records** (`/templates/records/`) are the five migration records: the register, purchase wording, programme charter, change record, and progress report, with one zip of every blank CSV. **Examples** (`/templates/examples/`) hold two worked examples: a marketing agency on the baseline and a manufacturer running a full programme. **Reference** (`/templates/reference/`) holds the glossary. Practices and technology cards write to the records; each record page names who keeps it.
+  - **Templates (`/templates/`)** — What the reader fills in and keeps, grouped by what they do with it. **Records** (`/templates/records/`) are the five migration records: the register, purchase wording, programme charter, change record, and progress report, with one zip of every blank CSV. **Examples** (`/templates/examples/`) hold two worked examples: a marketing agency under the core actions and a manufacturer running a full programme. **Reference** (`/templates/reference/`) holds the glossary. Practices and technology cards write to the records; each record page names who keeps it.
 ## Sitemap
 
 ```text
@@ -68,7 +68,7 @@ Homepage (/) — Learn the basics or Plan your migration; the four questions and
 
 /plan/
 
-/plan/baseline/
+/plan/core-actions/
 
 /plan/programme/
 /plan/programme/changing-algorithms-again/

@@ -30,15 +30,15 @@ const questions = [
 const outcomes: Node[] = [
   {
     label: 'If none apply',
-    title: 'Your plan: the baseline',
-    to: '/plan/baseline/',
+    title: 'Your plan: the core actions',
+    to: '/plan/core-actions/',
     text: 'Seven actions on one page, starting with naming an owner and listing what you use. Your suppliers make the changes.',
   },
   {
     label: 'If any applies',
-    title: 'Your plan: the baseline and a programme',
+    title: 'Your plan: the core actions and a programme',
     to: '/plan/programme/',
-    text: 'The baseline for everything you buy in. Name an owner, then take a first move this week for each question that applied.',
+    text: 'The core actions for everything you buy in. Name an owner, then take a first move this week for each question that applied.',
   },
   {
     label: 'If you run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself',
@@ -104,7 +104,7 @@ function Hero() {
           <p className={styles.heroLead}>{siteConfig.tagline}.</p>
           <p className={styles.heroNext}>
             Every organisation needs a post-quantum migration plan. For most it is short: suppliers make the changes,
-            and you keep a one-page baseline. If you build software, run your own servers, or customers are asking for
+            and you keep one page of core actions. If you build software, run your own servers, or customers are asking for
             your plans, you need more; critical and regulated operators also need specialist advice.
           </p>
           <p className={styles.heroWhen}>
@@ -179,7 +179,7 @@ function WhichPlan() {
             </div>
             <p className={styles.after}>
               Worked examples: <Link to="/templates/examples/protect-this-first/">a manufacturer&rsquo;s programme</Link>{' '}
-              and <Link to="/templates/examples/stay-on-supplier-updates/">a small agency on the baseline</Link>.
+              and <Link to="/templates/examples/stay-on-supplier-updates/">a small agency under the core actions</Link>.
             </p>
           </div>
         </div>
