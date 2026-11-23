@@ -53,7 +53,7 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 An insufficient record is "Our HSMs are quantum-ready."
 
-From [Protect this first](/templates/examples/protect-this-first/): where the key that signs the product sensor's firmware is held is still to be recorded. A decision-ready record would name the HSM, its firmware release, the post-quantum signature schemes it supports and their validation status, and whether it can manage state if the sensor's verifier needs LMS or XMSS.
+From [Protect this first](/templates/examples/protect-this-first/): the HSM that holds the product sensor's firmware-signing key is not yet recorded. A decision-ready record would name the HSM, its firmware release, the post-quantum signature schemes it supports and their validation status, and whether it can manage state if the sensor's verifier needs LMS or XMSS.
 
 ## Sources
 

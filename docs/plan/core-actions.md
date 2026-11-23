@@ -6,7 +6,7 @@ description: Seven actions every organisation takes for post-quantum migration, 
 displayed_sidebar: journeySidebar
 ---
 
-Every organisation follows these core actions, including those that also run a [programme](/plan/programme/). Where none of the four questions in [Which plan you need](/plan/) applies, the core actions are your whole plan. In a small organisation one person can own them: about a day to set up, then an hour or two at each review. For a smaller organisation on commodity IT, this handbook treats kept core actions as its migration plan, including for the UK NCSC's 2028 milestone.
+Every organisation follows these core actions, including those that also run a [programme](/plan/programme/). If you answered no to all [four questions](/plan/), the core actions are your whole plan. In a small organisation one person can own them: about a day to set up, then an hour or two at each review. For a smaller organisation on commodity IT, this handbook treats the core actions, kept up to date, as the organisation's migration plan, including for the UK NCSC's 2028 milestone.
 
 Each action says who does it: **you**, or **ask** your IT provider or supplier.
 

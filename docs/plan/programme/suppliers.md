@@ -19,7 +19,7 @@ Any system on your register depends on a supplier's product or service, you are 
 
 ## Do this
 
-Under the [core actions](/plan/core-actions/), step 5 applies: put post-quantum wording into every purchase and renewal, and judge the supplier's answer as in step 3. The core actions replace a product that is out of support, or whose supplier has no post-quantum plan, with a date on the register. Steps 1 to 4 apply in full to suppliers behind the systems a programme covers.
+If you follow only the [core actions](/plan/core-actions/), use step 5 of this page for purchase wording, and judge each answer as in step 3. Replace a product that is out of support, or whose supplier has no post-quantum plan, under core action 4, with a date on the register. Steps 1 to 4 apply in full to suppliers behind the systems a programme covers.
 
 ### 1. Triage suppliers
 
@@ -27,7 +27,7 @@ Build the supplier list from the register, not from the purchasing system alone.
 
 - **Tier 1:** suppliers behind the rows that come first in their job's order on the register, such as key establishment for long-lived confidential data, verifiers that cannot be updated, or signatures with many relying parties.
 - **Tier 2:** suppliers whose contract renews or ends within your planning period. The handbook suggests looking at least two years ahead, because a renewal is the cheapest point to add post-quantum wording.
-- **Tier 3:** suppliers of supported commodity products, tracked under the core actions.
+- **Tier 3:** suppliers of supported commodity products, covered by the core actions.
 
 Ask tier 1 first and individually, and tier 2 in batches. Do not send tier 3 suppliers questions while their products stay in support: rely on their published support and release information, as the core actions do, and put the post-quantum wording to them at renewal. A product that leaves support is replaced, with a date on the register. Add each supplier's renewal or contract end date to the register, so a renewal triggers the wording rather than an automatic extension.
 
@@ -55,7 +55,7 @@ A national milestone that a supplier quotes applies to the audience its authorit
 
 ### 4. Follow up and escalate
 
-Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the system owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time on the register; or written risk acceptance by the sponsor, with a review date. Where a supplied product under the core actions has no post-quantum plan, the core actions replace it, with a date on the register; that alone is not a reason for a programme.
+Ask a `vague` supplier for the missing items in writing. Give a `missing` answer a firm follow-up date and name who will escalate it; if nothing arrives, the system is not counted as migrated. For a `concerning` answer, procurement and the system owner decide with legal or risk between: a contract remedy or a new commitment; a compensating control while the gap remains; replacement, recording the replacement lead time on the register; or written risk acceptance by the sponsor, with a review date. Where a supplied product covered by the core actions has no post-quantum plan, replace it under core action 4, with a date on the register; that alone is not a reason for a programme.
 
 ### 5. Put wording into purchases and renewals
 
@@ -72,7 +72,7 @@ Record the wording, the supplier's commitment, and whether it was met on the [pu
 
 Be strictest where the product cannot change later: for devices and components whose verifier cannot be updated, make a post-quantum signature option a condition of selection before design freeze (see [Firmware and secure boot](/technology-options/firmware-secure-boot/)).
 
-CISA's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web software (web browsers and web servers), in which products supporting post-quantum standards are widely available, and notes that most of these categories support post-quantum key establishment but have not yet widely implemented post-quantum signatures. It shows where such wording is realistic today. Covered US federal contractors should also watch for the proposed rule that [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to publish, requiring them to comply with NIST's Federal Information Processing Standards by 31 December 2030. It would bind them only once a final rule takes effect; its Standards summary explains.
+CISA's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026) names categories, such as web software (web browsers and web servers), in which products supporting post-quantum standards are widely available, and notes that most of these categories support post-quantum key establishment but have not yet widely implemented post-quantum signatures. It shows where such wording is realistic today. Covered US federal contractors should also watch for the proposed rule that [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs the Federal Acquisition Regulatory Council to publish, requiring them to comply with NIST's Federal Information Processing Standards by 31 December 2030. It would bind them only once a final rule takes effect, as the EO 14412 summary explains.
 
 ### 6. Answer your own customers consistently
 

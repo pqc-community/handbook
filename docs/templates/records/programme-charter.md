@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Use this charter when you [set up the programme](/plan/programme/set-up/): once [Which plan you need](/plan/) shows you need a full programme, and again when the scope, roles, or budget change.
+Use this charter when you [set up the programme](/plan/programme/set-up/): once the four questions in [Which plan you need](/plan/) show that a full programme is required, and again when the scope, roles, or budget change.
 
 ## Minimum fields
 
@@ -25,7 +25,7 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 | field | entry |
 | --- | --- |
 | goal | Keep product designs confidential against future quantum attack, secure the product sensor's signature path before production design freeze, and keep office IT on supported supplier updates. |
-| in scope | product-design archive; product sensor firmware verifier and its signing key; office laptops, under the core actions |
+| in scope | product-design archive; product sensor firmware verifier and its signing key; office laptops, covered by the core actions |
 | out of scope | systems not yet on the register, until the first-pass inventory is complete |
 | done for this phase | register rows for the archive, the sensor's firmware verifier and firmware-signing key, and the laptops; written supplier answers for the archive; a supported signature option for the sensor, or an escalation to the sponsor, before production design freeze on 2027-06-30 |
 | executive sponsor | managing director |
@@ -36,7 +36,7 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 | operations | IT lead |
 | first budget line | discovery and supplier engagement, from the operations budget |
 | budget revisit | at the first quarterly review after the register has an order |
-| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while any line is first in its job's order |
+| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while any register row is first in its job's order |
 | report triggers | the workspace supplier's release date moves; no supported sensor signature option three months before design freeze |
 | people told | system owners, procurement, and IT by 2026-08-14; the workspace supplier and shortlisted microcontroller suppliers by written question |
 | agreed by | managing director, 2026-08-03 |

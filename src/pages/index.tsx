@@ -27,7 +27,7 @@ const situations: {when: string; then: string; to: string; link: string}[] = [
   },
   {
     when: 'Your board wants a plan',
-    then: 'Answer the four questions, then report on the plan with the progress report.',
+    then: 'Answer the four questions to find which plan you need. The progress report shows how to report on a programme.',
     to: '/templates/records/progress-report/',
     link: 'Progress report',
   },
@@ -51,7 +51,7 @@ const situations: {when: string; then: string; to: string; link: string}[] = [
   },
   {
     when: 'You need the dates that apply to you',
-    then: 'Each authority’s dates, with the audience it names.',
+    then: 'Each authority’s dates are listed with the audience it names.',
     to: '/plan/#which-dates-apply-to-you',
     link: 'Which dates apply to you',
   },
@@ -116,7 +116,7 @@ function Choices() {
             <Heading as="h2" className={styles.choiceTitle}>
               <Link to="/learn/">Learn the basics</Link>
             </Heading>
-            <p>Ten short lessons. No mathematics assumed. Start with:</p>
+            <p>Ten short lessons, with no mathematics assumed. Start with:</p>
             <ol className={styles.steps}>
               {firstLessons.map((lesson) => (
                 <li key={lesson.to}>
@@ -153,7 +153,7 @@ function Choices() {
               </li>
             </ol>
             <p className={styles.choiceExamples}>
-              Worked examples: <Link to="/templates/examples/stay-on-supplier-updates/">a small agency under the core
+              Worked examples: <Link to="/templates/examples/stay-on-supplier-updates/">a small agency following the core
               actions</Link> and <Link to="/templates/examples/protect-this-first/">a manufacturer running a full
               programme</Link>.
             </p>

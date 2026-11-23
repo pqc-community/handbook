@@ -27,7 +27,7 @@ The provider. Your job is to ask the right questions, judge the answer, write re
 
 ## What to ask or test
 
-For a service that no question in [Which plan you need](/plan/) applies to, the [core actions](/plan/core-actions/) are enough: ask when the service comes up for renewal or leaves support. A service a question applies to, such as one holding data that must stay secret for years, joins the [programme](/plan/programme/). Either way, ask separately for each job, in writing, as [Work with suppliers](/plan/programme/suppliers/) describes:
+If none of the four questions in [Which plan you need](/plan/) applies to a service, the [core actions](/plan/core-actions/) are enough: ask the provider about its post-quantum plans at renewal or end of support. If one does apply, for example because the service holds data that must stay secret for years, the service joins the [programme](/plan/programme/). Either way, ask separately for each job, in writing, as [Work with suppliers](/plan/programme/suppliers/) describes:
 
 | Job | Ask | Check from your side |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ For a service that no question in [Which plan you need](/plan/) applies to, the 
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A row per job for the service, with the provider as supplier, the provider's answer and its judgement, end of support asked in the row it affects, and the contract or renewal that will carry the wording in `next step`. A service under the core actions is tracked, not ranked; record your own client-side checks on its row |
+| [Register](/templates/records/register/) | A row per job for the service, with the provider as supplier, the provider's answer and its judgement, end of support asked in the row it affects, and the contract or renewal that will carry the wording in `next step`. A service covered by the core actions is tracked, not ranked; record your own client-side checks on its row |
 | [Purchase wording](/templates/records/purchase-wording/) | A row per job for the contract or renewal, with end of support in `support until` |
 | [Change record](/templates/records/change-record/) | Your own client-side checks, for a service the programme covers. A service that is out of support, or whose provider has no post-quantum plan, is replaced, with a date on the register, as the core actions describe |
 

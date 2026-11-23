@@ -19,7 +19,7 @@ A system has a row on the [register](/templates/records/register/), and you need
 
 ## Do this
 
-1. **Read the facts you already hold.** The system's register row gives who controls the software, the job, including `non-updatable verifier`, why it is here, including any data confidentiality period, and the dates that apply. Resolve any `unknown` that changes the steps below.
+1. **Read the facts you already hold.** The system's register row gives who controls the software, the job (which may be `non-updatable verifier`), `why it is here` (including any data confidentiality period), and `dates that apply`. Resolve any `unknown` that changes the steps below.
 2. **Decide who chooses.**
    - **The supplier controls the software:** its named algorithm or scheme is the proposed option once its answer is judged `complete` on the [register](/templates/records/register/); follow up a `vague` or `missing` answer under [Work with suppliers](/plan/programme/suppliers/). If the option conflicts with an applicable authority, judge the answer `concerning` and escalate it there.
    - **You configure or build it:** you choose, using steps 3 to 5.
@@ -72,7 +72,7 @@ The authority check can change the answer:
 
 ## Keep this evidence
 
-The `option` and `authority` cells of the system's [change record](/templates/records/change-record/), as step 7 describes. Update what the system's [register](/templates/records/register/) row records as protecting it today as the change reaches each environment, naming it, for example "X25519MLKEM768 in staging". Supplied products tracked under the [core actions](/plan/core-actions/) need no option recorded here.
+The `option` and `authority` cells of the system's [change record](/templates/records/change-record/), as step 7 describes. As the change reaches each environment, update `protected by today` on the system's [register](/templates/records/register/) row, for example "X25519MLKEM768 in staging". Supplied products covered by the [core actions](/plan/core-actions/) need no option recorded here.
 
 ## Example
 

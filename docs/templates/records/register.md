@@ -8,13 +8,13 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Start the register on the first day, with the [core actions](/plan/core-actions/): it is the one record every organisation keeps. List each system, service, or product you rely on, and add a row for each job it does once you know. A [programme](/plan/programme/) adds rows for the systems the four questions in [Which plan you need](/plan/) found, and keeps their order and dates here.
+Start the register on the first day, with the [core actions](/plan/core-actions/): it is the one record every organisation keeps. List each system, service, or product you rely on, and add a row for each job it does once you know. A [programme](/plan/programme/) adds rows for the systems identified by the four questions in [Which plan you need](/plan/), and keeps their order and dates here.
 
 ## Minimum fields
 
 system, job, owner, why it is here, protected by today, version or plan, supplier, supplier answer, judgement, dates that apply, supplier release, testing, production deployment, end of support, order, next step, status, next review
 
-**Under the core actions**, fill in system, job, owner, why it is here, version or plan (with the date checked), supplier, supplier answer, judgement, dates that apply, end of support, next step (such as a replacement date), status, and next review. Fill in the other columns when you have the facts or when a programme needs them.
+If you follow only the core actions, fill in system, job, owner, why it is here, version or plan (with the date checked), supplier, supplier answer, judgement, dates that apply, end of support, next step (such as a replacement date), status, and next review. Fill in the other columns when you have the facts or when a programme needs them.
 
 Give each system one row per job, with `job` set to `key establishment`, `signatures`, or `non-updatable verifier`, and a qualifier in brackets where one job needs separate work, such as `key establishment (stored data)`. A supported commodity product can share one row for both jobs until something differs between them. Name each system the same way on every record, so its change records and purchase wording can be found from its row.
 

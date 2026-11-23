@@ -41,7 +41,7 @@ The identity provider, token maker, or platform supplier. You choose when to req
 
 - **Hardware lead times.** Tokens, cards, and readers are replaced over years; a card bought now may still be in use when the algorithm must change.
 - **Verifiers you do not control.** Every application that trusts the identity provider has to accept the new signatures before the provider switches.
-- **Assuming no urgency means no action.** Authentication has time, but the register and the purchase wording do not.
+- **Assuming no urgency means no action.** Authentication is less urgent than key establishment, but register entries and purchase wording take time to put in place, so start them now.
 
 ## Record it fills
 

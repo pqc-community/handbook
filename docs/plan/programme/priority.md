@@ -20,15 +20,15 @@ A first-pass or maintained inventory exists on the register and you need to deci
 ## Do this
 
 1. **Check that each system has a row per job.** A system can need key establishment, signatures, and a verifier that cannot be updated. Give each job its own row, because each has a different clock.
-2. **Take supplied products under the core actions out of the ranking.** Commodity products that will receive post-quantum support through normal updates are tracked, not ranked: record their order as tracked, not ranked (core actions), and move on (see the [core actions](/plan/core-actions/)).
-3. **Order the remaining lines within each job**, using one rule per job:
+2. **Take supplied products out of the ranking.** Commodity products that will receive post-quantum support through normal updates follow the [core actions](/plan/core-actions/): record their order as `tracked, not ranked (core actions)` and move on.
+3. **Order the remaining rows within each job**, using one rule per job:
    - **Key establishment:** longest data confidentiality period first; treat an `unknown` period as long until the data owner confirms it. Data that must stay confidential for longer is exposed to recording now and decrypting later, and a long migration lead time adds to that exposure; [Mosca's inequality](/learn/explainers/when-to-start/) adds the two. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says harvest-now, decrypt-later threatens confidentiality rather than signatures. The EU NIS Cooperation Group [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025) treats a confidentiality use case as high-risk, for the Member States it addresses, when compromise after ten years or more would still cause significant damage.
    - **Verifiers that cannot be updated:** earliest design freeze or production date first. Decide each one before that date.
    - **Other signatures:** most relying parties that must change together first, because coordination sets the lead time. A signing key whose signatures a non-updatable verifier checks moves with that verifier's line, because the signer must switch to the scheme the verifier accepts.
 4. **Break ties within a job in this order:** the earliest fixed date (design freeze, contract renewal, or end of support); then the longest lead time; then the greater impact if the protection fails; then systems exposed to other organisations or the internet before internal ones. These tiebreakers are this handbook's rule of thumb; replace them with your sector authority's method where one exists.
 5. **Allow ties across jobs.** Two systems can both rank first when their jobs differ. Supplier readiness — the judgement of the supplier's answer on the register (complete, vague, missing, or concerning) — does not change the order; it changes when work can start. A lower-ranked line with a complete answer can start in parallel, and a higher-ranked line with a missing answer goes to [Work with suppliers](/plan/programme/suppliers/) for escalation.
 6. **Keep unknown rows on the list** under their owner; do not drop them to make the order look complete.
-7. **Write the order on the register row**, with the reason and its source in why it is here, and set its next review.
+7. **Write the order on the register row**, with the reason and its source in `why it is here`, and set its next review.
 
 ## Keep this evidence
 
@@ -38,11 +38,11 @@ The [register](/templates/records/register/): one row per system and job, with t
 
 An insufficient record is "We will migrate all cryptography in one programme" or a numeric risk score with no reason.
 
-A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the product sensor's firmware verifier first for a non-updatable verifier because its boot ROM trust anchor cannot change after shipment. The key that signs the sensor's firmware comes first for signatures and moves with the verifier line. The archive's signature row is tracked, not ranked, because it follows the supplier, and the laptops' combined row is tracked, not ranked, under the core actions. The archive's jobs are recorded separately so neither is dropped, and the laptops share one row because both jobs follow the same supplier updates. Each first place stands because the jobs differ.
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/), places the product-design archive first for key establishment because the company's retention policy requires 15 years of confidentiality, and places the sensor's firmware verifier first among verifiers that cannot be updated, because its boot ROM trust anchor cannot change after shipment. The key that signs the sensor's firmware comes first for signatures and moves with the verifier row. The archive's signature row is tracked, not ranked, because it follows the supplier, and the laptops' combined row is tracked, not ranked, as part of the core actions. The archive's jobs are recorded separately so neither is dropped, and the laptops share one row because both jobs follow the same supplier updates. Several rows can rank first because their jobs differ.
 
 ## Limits and next step
 
-This rubric deliberately avoids numeric scoring; it is not a formal risk assessment. Regulated and critical systems may need the sector authority's method. Next, [plan the migration](/plan/programme/dates/).
+This rubric deliberately avoids numeric scoring; it is not a formal risk assessment. Regulated and critical systems may need the sector authority's method. Next, [set dates and milestones](/plan/programme/dates/).
 
 ## Sources
 

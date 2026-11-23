@@ -64,7 +64,7 @@ The core actions are seven actions, each marked **you** or **ask** (your IT prov
 
 The programme page opens by saying who runs one and in what order: name the owner (core action 1) first, then take the first moves. Organisations in the specialist outcome bring in specialist advice and speak to their regulator, but the first moves only gather facts, so they need not wait.
 
-The **first moves** are one row per question, naming the clock it runs on and the action to take this week. A reader who answered yes to two questions does two first moves. Each is a separate line on the register; a line is one register row, for one system and one job.
+The **first moves** are one row per question, naming the clock it runs on and the action to take this week. A reader who answered yes to two questions does two first moves. Each is its own register row, for one system and one job.
 
 | Question that applied | First move |
 | --- | --- |

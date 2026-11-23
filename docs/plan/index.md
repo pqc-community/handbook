@@ -6,7 +6,7 @@ description: "Four questions decide which post-quantum migration plan you need: 
 displayed_sidebar: journeySidebar
 ---
 
-Post-quantum cryptography replaces the public-key methods that a future quantum computer could break. Every organisation needs a migration plan. For most it is short: suppliers make the changes, and you keep the [core actions](/plan/core-actions/). Four questions decide whether your plan also needs a [programme](/plan/programme/).
+Post-quantum cryptography replaces the public-key methods that a future quantum computer could break. Every organisation needs a migration plan. For most it is short: suppliers make the changes, and you follow the [core actions](/plan/core-actions/). Four questions decide whether your plan also needs a [programme](/plan/programme/).
 
 ## Four questions
 
@@ -14,18 +14,18 @@ Answer for the organisation as a whole. A question applies if any system, servic
 
 1. **Data that must stay secret for years.** Do you hold information that must stay confidential for many years and that travels over networks, or is stored, under public-key protection? An attacker can record it now and decrypt it later. Count how long it must stay secret, not how long you keep it. This handbook treats ten years or more as many years. Ordinary business records, such as accounts, client files, and staff records, usually fall short; long-lived product designs, health records, and security-sensitive files often do not.
 2. **Devices with a fixed key.** Do you make or run products or devices that check signatures with a key or method that cannot be changed after they ship, whether in hardware or in software? A key that a normal update can replace is not fixed. Supported laptops and phones that their maker updates do not count.
-3. **Signatures others rely on.** Do you run a certificate authority, public or internal, or sign code, firmware, or documents that other people or devices check? Signing through a supplier's e-signature service is supplied IT, under the core actions.
+3. **Signatures others rely on.** Do you run a certificate authority, public or internal, or sign code, firmware, or documents that other people or devices check? Signing through a supplier's e-signature service is supplied IT, covered by the core actions.
 4. **Systems you build or configure.** Do you build software or firmware, or set up the cryptography yourself on your own servers, load balancers, VPNs, or applications? One such system is enough, even if you buy in everything else. If an IT provider sets these up and keeps them updated for you, treat them as supplied, and ask the provider.
 
-A supplied product that is out of support, or whose supplier has no post-quantum plan, is not a reason for a programme on its own. The core actions replace it.
+A supplied product that is out of support, or whose supplier has no post-quantum plan, is not, on its own, a reason for a programme. Replace it under core action 4, with a date on the register.
 
 ## Your plan
 
 | Your answers | Your plan |
 | --- | --- |
 | None apply | The [core actions](/plan/core-actions/): seven actions, on one page. |
-| Any applies | The core actions for everything you buy in, and a [programme](/plan/programme/) for what the questions found. Name an owner, then take its first moves. |
-| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. Then the core actions and a full programme. |
+| Any applies | The core actions for everything you buy in, and a [programme](/plan/programme/) for what the questions found. Name an owner, then take the programme's first moves. |
+| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts. After that, follow the core actions and run a full programme. |
 
 ## Which dates apply to you
 
@@ -33,7 +33,7 @@ Dates belong to the authority that set them and the audience it names. There is 
 
 | If you are | Dates to record |
 | --- | --- |
-| A UK organisation | The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (20 March 2025) are aimed primarily at large organisations, operators of critical national infrastructure, and organisations with bespoke IT. The NCSC says the core timelines are relevant to all organisations: defined goals, discovery, and an initial plan by 2028; early, highest-priority migration by 2031; and migration completed by 2035. They expect smaller organisations using mainly commodity IT to receive most upgrades from their service providers, and organisations with custom software to follow the same timetable as larger ones. |
+| A UK organisation | The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (20 March 2025) are aimed primarily at large organisations, operators of critical national infrastructure, and organisations with bespoke IT. The NCSC says the core timelines are relevant to all organisations: defined goals, discovery, and an initial plan by 2028; early, highest-priority migration by 2031; and migration completed by 2035. It expects smaller organisations using mainly commodity IT to receive most upgrades from their service providers, and organisations with custom software to follow the same timetable as larger ones. |
 | An EU public administration or critical-infrastructure entity | The EU NIS Cooperation Group's [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025), addressed to Member States, which set national roadmaps from it. Its milestones: first steps and initial national roadmaps by the end of 2026; high-risk use cases transitioned by the end of 2030; medium-risk use cases, and low-risk ones as far as feasible, by the end of 2035. |
 | A US federal agency, or a supplier to one | The [US government requirements](/standards/us-government-requirements/), which bind federal agencies. Under EO 14412 and OMB M-26-15, high value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030, and post-quantum signatures by 31 December 2031. A contractor date applies only if and when the procurement rule EO 14412 directs takes effect. National security systems follow NSA requirements such as [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/). |
 | Anywhere else | Your national authority, your sector regulator, and your customers' contract dates. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) explains how to read them. |

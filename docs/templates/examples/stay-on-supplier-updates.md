@@ -6,7 +6,7 @@ displayed_sidebar: templatesSidebar
 description: The core actions followed by a fictional UK marketing agency on supported devices and a hosted suite, with its register and purchase wording filled in.
 ---
 
-This worked example follows one fictional organisation whose IT is entirely supported devices and supplier-hosted services through the [core actions](/plan/core-actions/). It keeps the core actions' two records: the [register](/templates/records/register/) and the [purchase wording](/templates/records/purchase-wording/). For a full programme, see [Protect this first](/templates/examples/protect-this-first/).
+This worked example follows one fictional organisation through the [core actions](/plan/core-actions/). Its IT consists entirely of supported devices and supplier-hosted services. It keeps the two records the core actions call for: the [register](/templates/records/register/) and the [purchase wording](/templates/records/purchase-wording/). For a full programme, see [Protect this first](/templates/examples/protect-this-first/).
 
 The agency is a 25-person marketing agency based in the United Kingdom. It is not a critical-infrastructure operator or a regulated-sector case. Every company fact, supplier, service plan, roadmap, email, version number, release date, and check result below is invented for illustration.
 
@@ -18,7 +18,7 @@ The agency is a 25-person marketing agency based in the United Kingdom. It is no
 - **Hosted email and office suite**: Email, documents, and file storage on a supplier-hosted service whose cryptography the supplier controls. The supplier's published security roadmap of 14 May 2026 states hybrid post-quantum key establishment for connections and gives 2028 as the target for post-quantum signatures, without naming an algorithm. The annual subscription renews on 1 March 2027, and the contract requires notice by 1 February 2027 not to renew.
 - **Data**: Client work is confidential until a campaign launches, usually within a year. The records policy keeps client contracts, finance, and staff records for up to six years.
 
-## Which plan you need
+## The four questions
 
 On 7 September 2026 the office manager answered the four questions in [Which plan you need](/plan/) with the IT support provider, and the managing director agreed:
 
@@ -30,17 +30,17 @@ So the core actions are the agency's whole plan.
 
 ## Core actions in practice
 
-- **Owner named**: the office manager, told to the IT support provider on 7 September 2026.
+- **Owner named**: the office manager, as notified to the IT support provider on 7 September 2026.
 - **What is in use**: the IT support provider listed the devices and the hosted suite on the register from the device-management console and the suppliers' published documentation.
 - **Supported and updated**: every device is on a supported version, and the IT support provider applies updates.
 - **Out of support**: nothing is out of support.
-- **Purchase wording**: the hosted suite comes up for renewal, so the office manager asked its supplier in writing on 12 October 2026, one question per job, and put post-quantum wording into the renewal.
-- **Not counted as done**: a supplier's statement is not evidence that the agency's own connections use it, because a browser policy or an inspection proxy can remove the post-quantum option. On 12 November 2026 the IT support provider opened the hosted suite in the standard browser on one staff laptop and saw X25519MLKEM768 negotiated. X25519MLKEM768 combines ML-KEM-768, specified in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, and is one of the groups defined in [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/). The check says nothing about stored data or signatures.
-- **Review**: the office manager reviewed on 16 November 2026, and brought the next review forward to 18 January 2027, before the renewal notice date.
+- **Purchase wording**: the hosted suite was due for renewal, so the office manager asked its supplier in writing on 12 October 2026, one question per job, and put post-quantum wording into the renewal.
+- **Not counted as migrated without evidence**: a supplier's statement is not evidence that the agency's own connections use it, because a browser policy or an inspection proxy can remove the post-quantum option. On 12 November 2026 the IT support provider opened the hosted suite in the standard browser on one staff laptop and saw X25519MLKEM768 negotiated. X25519MLKEM768 combines ML-KEM-768, specified in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, and is one of the groups defined in [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/). The check says nothing about stored data or signatures.
+- **Review**: the office manager held the review on 16 November 2026, and brought the next one forward to 18 January 2027, before the renewal notice date.
 
 ## Register
 
-The register after the review on 16 November 2026. The devices share one row each for both jobs, because nothing about them differs by job yet. The hosted suite has a row per job, and a separate row for stored data, because the supplier's answers and follow-up dates differ. The agency also filled some columns the core actions do not require, such as protected by today and order, where the facts were to hand.
+The register below is as updated at the review on 16 November 2026. The devices share one row each for both jobs, because nothing about them differs by job yet. The hosted suite has a row per job, and a separate row for stored data, because the supplier's answers and follow-up dates differ. The agency also filled some columns the core actions do not require, such as `protected by today` and `order`, where the facts were to hand.
 
 | system | job | owner | why it is here | protected by today | version or plan | supplier | supplier answer | judgement | dates that apply | supplier release | testing | production deployment | end of support | order | next step | status | next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ The register after the review on 16 November 2026. The devices share one row eac
 
 ## Purchase wording
 
-Because the subscription renews on 1 March 2027, the office manager puts post-quantum wording into the renewal, one row per job, and sends it with the questions. The supplier's email of 2 November 2026 describes how the service works today; it does not commit to keeping it, so no row is agreed.
+Because the subscription renews on 1 March 2027, the office manager put post-quantum wording into the renewal, one row per job, and sent it with the questions. The supplier's email of 2 November 2026 describes how the service works today; it does not commit to keeping it, so no row is agreed.
 
 | system | job | purchase or renewal | supplier | product and version | wording | decide by | supplier commitment | support until | evidence | owner | status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Because the subscription renews on 1 March 2027, the office manager puts post-qu
 | Hosted email and office suite | key establishment (stored data) | annual renewal of the Business plan on 2027-03-01 (fictional) | Fictional office-suite supplier | Business plan (fictional) | a written statement of whether any public-key step protects the keys for stored mail and documents and, if so, a dated plan to move it to a standards-based post-quantum algorithm or scheme, naming the standard it follows; updates applied and tested by the supplier, with written notice; keys or trust anchors fixed in hardware: not applicable (supplier-hosted); a stated support period for the Business plan | 2027-02-01 (renewal notice date, fictional) | none yet; the reply of 2026-11-02 is vague (fictional supplier email) | no announced end of support (fictional supplier email, 2026-11-02) | a written statement from the supplier | office manager | sent, 2026-10-12 |
 | Hosted email and office suite | signatures | annual renewal of the Business plan on 2027-03-01 (fictional) | Fictional office-suite supplier | Business plan (fictional) | a dated plan for post-quantum signatures on the service's certificates and sign-in tokens, naming the algorithm or scheme and the standard it follows; updates applied and tested by the supplier, with written notice; keys or trust anchors fixed in hardware: not applicable (supplier-hosted); a stated support period for the Business plan | 2027-02-01 (renewal notice date, fictional) | none yet; the reply of 2026-11-02 gives a 2028 target with no algorithm (fictional supplier email) | no announced end of support (fictional supplier email, 2026-11-02) | a written, dated signature plan naming the algorithm or scheme | office manager | sent, 2026-10-12 |
 
-If a row is still without a commitment when the notice date passes, it becomes not met, and the managing director's decision to renew anyway goes on the register as a risk acceptance.
+If a row still has no commitment when the notice date passes, its status becomes `not met`, and the managing director's decision to renew anyway goes on the register as a risk acceptance.
 
 ## What would start a programme
 
@@ -71,9 +71,9 @@ The core actions stay the agency's whole plan while none of the four questions a
 - the agency starts signing code or documents that clients rely on, or runs its own certificate authority (question 3);
 - the agency starts building or configuring its own systems, such as a client portal it hosts (question 4).
 
-A device or service that leaves support, or whose supplier withdraws its plan, does not start a programme: the core actions' replacement action applies.
+A device or service that leaves support, or whose supplier withdraws its plan, does not start a programme: the core action to replace what is out of support applies.
 
-The NCSC guidance notes that for many organisations, managed service providers are likely to deliver most of their IT capability, and that it is then important to make sure they are also carrying out the discovery and assessment work it describes. Here the IT support provider records the versions and runs the connection check, and the office manager keeps the records.
+The UK NCSC's migration timelines (20 March 2025) note that for many organisations, managed service providers are likely to deliver most of their IT capability, and that it is then important to make sure they are also carrying out the discovery and assessment work it describes. Here the IT support provider records the versions and runs the connection check, and the office manager keeps the records.
 
 ## Sources
 

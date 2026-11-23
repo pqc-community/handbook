@@ -18,13 +18,13 @@ A next review date on the register has arrived, or something has happened that m
 
 ## Do this
 
-**Set a cadence.** Use the cadence your sector or authorities require. Where nothing sets one, this handbook suggests reviewing a programme at least every six months, and every three months while any line is first in its job's order or a design freeze, contract renewal, or end of support on the register falls within the next year. A small programme, as [Programme](/plan/programme/#size) defines it, is reviewed every six months unless such a date falls within the next year. The [core actions](/plan/core-actions/) are reviewed every six months, and when a product is renewed or leaves support. This is the handbook's suggestion, not an authority's requirement.
+**Set a cadence.** Use the cadence your sector or authorities require. Where nothing sets one, this handbook suggests reviewing a programme at least every six months, and every three months while any register row is first in its job's order or a design freeze, contract renewal, or end of support on the register falls within the next year. A small programme, as [Programme](/plan/programme/#size) defines it, is reviewed every six months unless such a date falls within the next year. The [core actions](/plan/core-actions/) are reviewed every six months, and when a product is renewed or leaves support. This is the handbook's suggestion, not an authority's requirement.
 
 **Bring the review forward** when any of these happens:
 
 - a supplier changes the algorithm, scheme, or date you recorded;
 - an authority republishes or amends a timeline you rely on;
-- a standard you rely on changes status, such as a draft becoming final or an errata notice;
+- a standard you rely on changes, such as a draft becoming final or an errata notice being published;
 - an `unknown` that affects the order is resolved, such as a data confidentiality period or whether a verifier can be updated;
 - a deployed-state check fails after cutover, or connections fall back to classical-only cryptography;
 - a new attack or implementation flaw is published for an algorithm or product you use;
@@ -48,7 +48,7 @@ The [register](/templates/records/register/), with each reviewed row's status, n
 
 An insufficient record is "The migration project is closed."
 
-A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/), opens the review on 10 November 2026 and reopens the register, the purchase wording, and both change records. It updates the archive's connections row to show X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirms that design files are opened from the archive rather than stored on laptops, and records the installed versions; the laptops' row stays open under the core actions, with its next review on 10 February 2027. Five programme rows stay open, each with its own owner and next review:
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/), opens the review on 10 November 2026 and reopens the register, the purchase wording, and both change records. It updates the archive's connections row to show X25519MLKEM768 in staging, with production still on Workspace 4.1. The IT lead confirms that design files are opened from the archive rather than stored on laptops, and records the installed versions; the laptops' row stays open covered by the core actions, with its next review on 10 February 2027. Five programme rows stay open, each with its own owner and next review:
 
 - **archive signatures:** product engineering lead, 1 December 2026, when the supplier's written signature plan is due;
 - **archive stored data:** product engineering lead, 1 December 2026, when the stored-data key wrapping answer and Workspace 4.1 end of support are due, with the archive's agility questions in the same follow-up;

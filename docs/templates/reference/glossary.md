@@ -40,7 +40,7 @@ A single signature object that combines a post-quantum and a classical signature
 
 ## Core actions
 
-The short plan every organisation follows, whether or not it also runs a programme. It is seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the core actions are the whole plan. They keep two records: the [register](#register) and the purchase wording. See [Core actions](/plan/core-actions/).
+The short plan every organisation follows, whether or not it also runs a programme. It has seven actions: name an owner, list what is in use, keep it supported and updated, replace what is out of support, put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the core actions are the whole plan. An organisation following them keeps two records: the [register](#register) and the purchase wording. See [Core actions](/plan/core-actions/).
 
 ## Crypto-agility
 
@@ -182,7 +182,7 @@ The public-key infrastructure that issues and checks certificates. A certificate
 
 ## Programme
 
-The work an organisation runs, on top of the [core actions](#core-actions), for what the four questions in [Which plan you need](#which-plan-you-need) found. It opens with one first move for each question that applied, then runs in three phases: diagnose, plan, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/plan/programme/).
+The work an organisation runs, in addition to the [core actions](#core-actions), for the systems the four questions in [Which plan you need](#which-plan-you-need) identified. It opens with one first move for each question that applied, then runs in three phases: diagnose, order and schedule, and execute. A small programme covers one or two systems with no device that has a fixed key; anything larger, or any such device, needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/plan/programme/).
 
 ## Public-key cryptography
 

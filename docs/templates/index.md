@@ -13,7 +13,7 @@ description: "What you fill in and keep during a post-quantum migration: five re
 | Group | What you do with it | Start with |
 | --- | --- | --- |
 | [Records](/templates/records/) | Fill in and keep. Five records show what has been decided, asked, required, changed, and reviewed. Each has a blank table and a CSV, and one download holds them all. | The [register](/templates/records/register/), which every organisation keeps |
-| [Examples](/templates/examples/) | Follow. Two fictional organisations fill in the records: a marketing agency under the core actions, and a manufacturer running a full programme. | [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) for the core actions; [Protect this first](/templates/examples/protect-this-first/) for a programme |
+| [Examples](/templates/examples/) | Follow. Two fictional organisations fill in the records: a marketing agency following the core actions, and a manufacturer running a full programme. | [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) for the core actions; [Protect this first](/templates/examples/protect-this-first/) for a programme |
 | [Reference](/templates/reference/) | Look up. Plain-language definitions of the terms the records and pages use. | [Glossary](/templates/reference/glossary/) |
 
 ## What is not here
