@@ -6,7 +6,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-type Node = {label?: string; title: string; to: string; text: string};
+type Node = {title: string; to: string; text: string};
 
 // The two ways in. Each card shows what is inside it, so a first-time reader can choose.
 const firstLessons = [
@@ -15,25 +15,24 @@ const firstLessons = [
   {title: 'Quantum threat', to: '/learn/quantum-threat/'},
 ];
 
-
 // Why people arrive, each with where to go. Keep it to six lines; the questions and
 // outcomes themselves live only on Which plan you need.
 const situations: {when: string; then: string; to: string; link: string}[] = [
   {
     when: 'Someone asked whether you are “ready for quantum”, or whether you need to do anything',
-    then: 'Answer the four questions. Most organisations need only the core actions.',
+    then: 'Answer the four questions. Many organisations need only the core actions.',
     to: '/plan/',
     link: 'Which plan you need',
   },
   {
     when: 'Your board wants a plan',
-    then: 'Answer the four questions to find which plan you need. The progress report shows how to report on a programme.',
-    to: '/templates/records/progress-report/',
-    link: 'Progress report',
+    then: 'Answer the four questions to find which plan you need, and give the board the register; a full programme also reports with the progress report.',
+    to: '/plan/',
+    link: 'Which plan you need',
   },
   {
     when: 'Customers are sending post-quantum questionnaires',
-    then: 'Start your register and answer from it: the dates you can stand behind, and what is still unknown.',
+    then: 'Answer the four questions, then start your register and answer from it with the dates you can stand behind and what is still unknown.',
     to: '/templates/records/register/',
     link: 'Register',
   },
@@ -80,7 +79,6 @@ const reference: Node[] = [
 function Box({node, className}: {node: Node; className?: string}) {
   return (
     <Link className={`${styles.box} ${className ?? ''}`} to={node.to}>
-      {node.label ? <span className={styles.boxLabel}>{node.label}</span> : null}
       <span className={styles.boxTitle}>{node.title}</span>
       <span className={styles.boxText}>{node.text}</span>
     </Link>
@@ -97,7 +95,7 @@ function Hero() {
           Every organisation needs a post-quantum migration plan.
         </Heading>
         <p className={styles.heroLead}>
-          A future quantum computer could break the public-key cryptography in use today. For most organisations,
+          A future quantum computer could break the public-key cryptography in use today. For many organisations,
           suppliers make the changes and the plan is a short list of core actions. Some also need a migration
           programme. This handbook helps you work out which plan you need.
         </p>
@@ -177,10 +175,10 @@ function Situations() {
         <ul className={styles.situations}>
           {situations.map((s) => (
             <li key={s.when}>
-              <span className={styles.situationWhen}>{s.when}</span>
-              <span className={styles.situationThen}>
+              <p className={styles.situationWhen}>{s.when}.</p>
+              <p className={styles.situationThen}>
                 {s.then} <Link to={s.to}>{s.link}</Link>
-              </span>
+              </p>
             </li>
           ))}
         </ul>

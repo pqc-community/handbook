@@ -58,16 +58,6 @@
   margin-bottom: 0.5rem;
 }
 
-.intro {
-  max-width: 46rem;
-  margin-bottom: 1.5rem;
-}
-
-.after {
-  margin: 1rem 0 0;
-  max-width: 46rem;
-}
-
 .section p a {
   text-decoration: underline;
 }
@@ -99,12 +89,6 @@
 .box:focus-visible {
   outline: 2px solid var(--ifm-color-primary);
   outline-offset: 2px;
-}
-
-.boxLabel {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  color: var(--ifm-color-emphasis-700);
 }
 
 .boxTitle {
@@ -193,17 +177,17 @@
 }
 
 .situationWhen {
-  display: block;
+  margin: 0;
   font-weight: 700;
   color: var(--ifm-heading-color);
 }
 
 .situationThen {
-  display: block;
+  margin: 0;
   font-size: 0.95rem;
 }
 
-/* Reference: four compact cards that name what each section holds */
+/* Reference: three compact cards that name what each section holds */
 .refGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -230,7 +214,7 @@
   }
 
   .refGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .choices {
@@ -258,4 +242,15 @@
   .refGrid {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+/* Links inside lists rely on more than colour, and the light-theme heading colour must not
+   cancel the hover colour on the choice cards. */
+.section li a {
+  text-decoration: underline;
+}
+
+[data-theme='light'] .choiceTitle a:hover,
+[data-theme='light'] .choiceTitle a:focus-visible {
+  color: var(--ifm-color-primary);
 }
