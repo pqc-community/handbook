@@ -153,7 +153,7 @@ const words = (n) => Array.from({length: n}, () => 'word').join(' ');
 
 const withJourney = (pages) =>
   Object.fromEntries(
-    ['docs/start-here/index.md', 'docs/baseline/index.md', 'docs/programme/index.md'].map((name, index) => [name, pages[index] ?? journeyPage('Short and clear.')]),
+    ['docs/plan/index.md', 'docs/plan/baseline.md', 'docs/plan/programme/index.md'].map((name, index) => [name, pages[index] ?? journeyPage('Short and clear.')]),
   );
 const budget = (page) => withRoot(withJourney([journeyPage(page)]), (root) => findJourneyBudgetViolations(root));
 
@@ -193,6 +193,11 @@ test('finds retired labels with hyphens, line breaks, plurals and any case, once
 test('allows ordinary words and plain-English uses that are not the retired labels', () => {
   assert.deepEqual(retiredLabelsIn('The upgrade route, the critical path, a track record; we decide whether to act.'), []);
   assert.deepEqual(retiredLabelsIn('See Decide whether to act.').map((f) => f.label), ['Decide whether to act']);
+});
+
+test('blocks the retired page names Start here and Plan the migration, but not plain English', () => {
+  assert.deepEqual(retiredLabelsIn('Go to Start here, then Plan the migration.').map((f) => f.label), ['Start here', 'Plan the migration']);
+  assert.deepEqual(retiredLabelsIn('If you are new, start here; then plan the migration with your supplier.'), []);
 });
 
 test('checks front matter, section overviews and site files, but not quoting summaries', () => {
