@@ -4,18 +4,16 @@ Information architecture, URL conventions, and routing model for `https://pqchan
 
 ## Top-Level Navigation and Sidebars
 
-Top navigation leads with the reader journey, then the reference sections, then GitHub (alongside search and theme toggle). The logo and **PQC Handbook** title link to `/`.
+Top navigation leads with the two ways in, Learn the basics and Plan your migration, then the reference sections, then GitHub (alongside search and theme toggle). The logo and **PQC Handbook** title link to `/`.
 
-1. **Start here** (`journeySidebar`)
-2. **Baseline** (`journeySidebar`)
-3. **Programme** (`journeySidebar`)
-4. **Learn** (`learnSidebar`)
-5. **Technology options** (`technologyOptionsSidebar`)
-6. **Standards** (`standardsSidebar`)
-7. **Templates** (`templatesSidebar`)
-8. **GitHub**
+1. **Learn the basics** (`learnSidebar`)
+2. **Plan your migration** (`journeySidebar`, opening on Which plan you need)
+3. **Technology options** (`technologyOptionsSidebar`)
+4. **Standards** (`standardsSidebar`)
+5. **Templates** (`templatesSidebar`)
+6. **GitHub**
 
-`journeySidebar` holds Start here, Baseline, and the Programme overview, with the programme's practices grouped as **Diagnose**, **Plan**, and **Execute**. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
+`journeySidebar` holds the Plan your migration section: Which plan you need, Baseline, and the Programme overview, with the programme's practices grouped as **Diagnose**, **Order and schedule**, and **Execute**. Baseline and Programme are reached from it, not from the navbar. Every Markdown file under `docs/` sets `displayed_sidebar` to the sidebar that owns it in `sidebars.ts`.
 
 Do not use standards-body or algorithm names (such as NIST, ETSI, ML-KEM, or FIPS) as top-level navigation labels; organise top-level navigation around reader jobs.
 ## URL and Linking Conventions
@@ -42,23 +40,23 @@ URL stability: the site is in pre-release and has not been submitted to search e
 
 Linking guidance:
 
-- In `docusaurus.config.ts`, React pages (`src/pages/`), and cross-section references, use canonical root paths with trailing slashes (for example, `/programme/inventory/` or `/standards/post-quantum/fips-203/`), never `/docs/...`.
+- In `docusaurus.config.ts`, React pages (`src/pages/`), and cross-section references, use canonical root paths with trailing slashes (for example, `/plan/programme/inventory/` or `/standards/post-quantum/fips-203/`), never `/docs/...`.
 - Within the same `docs/` directory, relative Markdown links (such as `./priority.md`) and canonical root paths both work cleanly; broken links, anchors, and Markdown links fail `npm run build`.
 - Downloadable work-product CSVs live in `static/downloads/` and resolve at `/downloads/*.csv` (for example, `/downloads/register.csv`). `/downloads/pqc-handbook-records.zip` holds every blank CSV; rebuild it with `npm run records-zip` after changing a CSV, and `npm test` fails if it is out of date or if a CSV header no longer matches its page.
 
 ## Site Model
 
 ```text
-Homepage (/) — the four Start here questions and three outcomes
-  ├── Start here (/start-here/) ──► Baseline (/baseline/)
-  │                              └► Programme (/programme/ and /programme/*)
+Homepage (/) — Learn the basics or Plan your migration; the four questions and three outcomes
+  ├── Plan your migration: Which plan you need (/plan/) ──► Baseline (/plan/baseline/)
+  │                              └► Programme (/plan/programme/ and /plan/programme/*)
   ├── Learn the basics (/learn/*) ──► lessons and optional explainers
   └── Reference ──► Technology options, Standards, Templates
 ```
 
-- **Journey (`/start-here/`, `/baseline/`, `/programme/`)**: The reader journey specified in [reader-journey.md](./reader-journey.md). Start here asks four questions and gives three outcomes and a Which dates apply to you table. The baseline is the plan every organisation follows. The programme overview gives a first move for each question that applied, the small and full sizes, and the practices in three phases. Journey pages are held to the reading budgets in reader-journey.md, and `npm test` and `npm run check` fail if one is exceeded or a retired routing label appears outside the Standards summaries.
-- **Programme practices (`/programme/*`)**: Reusable operating practices in three phases: **Diagnose** (set up the programme, inventory the cryptography), **Plan** (decide what to migrate first, plan the migration, work with suppliers), and **Execute** (choose an option in Technology options, make and verify one change, keep the ability to change again, review and report). Each practice names who leads it and the record it fills.
-- **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to Start here, the worked examples, and `/templates/reference/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
+- **Journey (`/plan/`, `/plan/baseline/`, `/plan/programme/`)**: The reader journey specified in [reader-journey.md](./reader-journey.md). Which plan you need asks four questions and gives three outcomes and a Which dates apply to you table. The baseline is the plan every organisation follows. The programme overview gives a first move for each question that applied, the small and full sizes, and the practices in three phases. Journey pages are held to the reading budgets in reader-journey.md, and `npm test` and `npm run check` fail if one is exceeded or a retired routing label appears outside the Standards summaries.
+- **Programme practices (`/plan/programme/*`)**: Reusable operating practices in three phases: **Diagnose** (set up the programme, inventory the cryptography), **Order and schedule** (decide what to migrate first, plan the migration, work with suppliers), and **Execute** (choose an option in Technology options, make and verify one change, keep the ability to change again, review and report). Each practice names who leads it and the record it fills.
+- **Learn the Basics (`/learn/*`)**: An introductory track of ten numbered core lessons for visitors who want conceptual grounding. Each lesson ends with a short self-check; the final lesson (`/learn/crypto-agility/`) hands off to Which plan you need, the worked examples, and `/templates/reference/glossary/`. Optional **Explainers** under `/learn/explainers/*` each answer one question in more depth and link back to the lesson that introduces it.
 - **Reference Sections**:
   - **Technology options (`/technology-options/`)**: Reference cards organised by technology, so a reader starts from the system in front of them: an overview table of each technology's job and the status of its post-quantum mechanism; *choosing* (who decides, the authority check, the hybrid rule of thumb, protocol mechanisms, signature schemes, and what to record); then cards grouped as connections, certificates and identity, signing, stored data, and platforms and environments. Process stays in the programme, positions in Standards, and concepts in Learn.
   - **Standards (`/standards/`)** — Reference summaries of standards, government requirements, national algorithm positions, protocol specifications, and external migration guides, grouped by their role in the transition. Each summary states its audience and whether it binds or recommends.
@@ -68,19 +66,19 @@ Homepage (/) — the four Start here questions and three outcomes
 ```text
 /
 
-/start-here/
+/plan/
 
-/baseline/
+/plan/baseline/
 
-/programme/
-/programme/changing-algorithms-again/
-/programme/implementation/
-/programme/inventory/
-/programme/plan/
-/programme/priority/
-/programme/set-up/
-/programme/subsequent-review/
-/programme/suppliers/
+/plan/programme/
+/plan/programme/changing-algorithms-again/
+/plan/programme/implementation/
+/plan/programme/inventory/
+/plan/programme/dates/
+/plan/programme/priority/
+/plan/programme/set-up/
+/plan/programme/subsequent-review/
+/plan/programme/suppliers/
 
 /learn/
 /learn/algorithms/
@@ -204,8 +202,8 @@ Homepage (/) — the four Start here questions and three outcomes
 ```
 ## Homepage and Footer Routing
 
-- **Homepage (`src/pages/index.tsx`)**: A calm reference entry point, not a product landing page. A Deep Teal hero gives the tagline, who has work to do, why now with the UK NCSC's dates and their audience, the audience, and the specialist-advice limit. Below it: the four Start here questions beside their three outcomes, so a first-time reader is one page from a first action, with links to both worked examples; then four compact reference cards (Learn the basics, Technology options, Standards, Templates), each naming pages inside it. The jobs-and-clocks thesis lives in the Timelines lesson and the programme's first moves, and the register in the worked examples, not on the homepage. No sales copy, feature grids, large or repeated buttons, gradients, or imagery.
-- **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Start**, **Learn**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
+- **Homepage (`src/pages/index.tsx`)**: A calm reference entry point, not a product landing page. A Deep Teal hero gives the tagline, who has work to do, why now with the UK NCSC's dates and their audience, the audience, and the specialist-advice limit. Below it: the four Which plan you need questions beside their three outcomes, so a first-time reader is one page from a first action, with links to both worked examples; then four compact reference cards (Learn the basics, Technology options, Standards, Templates), each naming pages inside it. The jobs-and-clocks thesis lives in the Timelines lesson and the programme's first moves, and the register in the worked examples, not on the homepage. No sales copy, feature grids, large or repeated buttons, gradients, or imagery.
+- **Footer (`docusaurus.config.ts`)**: Exposes three columns — **Learn**, **Plan your migration**, and **Reference**. Keep footer link labels concise (`≤ 32` characters, checked by `npm run check`) so columns fit cleanly on mobile viewports, whereas `sidebars.ts` labels can be slightly fuller (`≤ 50` characters).
 ## Section Placement and Expansion Rules
 
 Add new pages only when there is enough distinct, decision-useful material that cannot be served cleanly on an existing page, and place them by reader job:
@@ -213,6 +211,6 @@ Add new pages only when there is enough distinct, decision-useful material that 
 - **Conceptual primers or deeper technical distinctions** belong in `/learn/` or `/learn/explainers/`.
 - **Changes to how readers are routed** (the questions, outcomes, first moves, or programme sizes) belong in the journey pages and must follow [reader-journey.md](./reader-journey.md); do not add a new routing layer, category, path, or track.
 - **Individual cryptographic standards, government directives, and external migration guides** belong under `/standards/`, grouped by transition role (*post-quantum*, *transition and key management*, *classical*, *symmetric*, *modules, protocols, and certificates*, *US government requirements*, *national algorithm positions*, *migration guides*) rather than by issuing organisation.
-- **Lifecycle operating activities** belong in `/programme/`, in the Diagnose, Plan, or Execute group; each practice fills at least one record in `/templates/records/` or states its evidence on the page.
+- **Lifecycle operating activities** belong in `/plan/programme/`, in the Diagnose, Order and schedule, or Execute group; each practice fills at least one record in `/templates/records/` or states its evidence on the page.
 - **What good looks like for a specific technology** belongs in `/technology-options/`, as a short reference card per technology that keeps the cryptographic jobs distinct, rather than one narrative page per algorithm.
 - **What a reader fills in and keeps** belongs in `/templates/`, in a group named for what the reader does with it: records to fill in (`/templates/records/`), worked examples to follow (`/templates/examples/`), and reference to look up (`/templates/reference/`). Add a record only when a practice produces it and no existing record holds it. Add a new group, such as briefings or tools, only when its first page is written, and give each group a landing page: a written overview once it holds several pages, or a generated index from `sidebars.ts` while it holds one. Keep the hierarchy to section, group, and page; add a record only when the register cannot hold it, because every extra record is more for a reader to keep. Send lists of cited works to `/standards/`, and keep material about the handbook itself (changes, citation, editions) out of `/templates/`.

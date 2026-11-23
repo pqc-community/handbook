@@ -9,12 +9,12 @@ How a reader moves from first arrival to their first useful action, why the hand
 Four questions about the organisation, a baseline that everyone follows, and a programme only when the questions find something that cannot wait for suppliers.
 
 ```text
-Start here: four questions about the organisation
+Which plan you need: four questions about the organisation
 (yes / no / not sure; not sure counts as yes until someone confirms)
  ├── None apply ─────────────► Baseline
  ├── Any applies ────────────► Baseline + Programme
  │                              ├── First moves, one per question that applied
- │                              └── Diagnose → Plan → Execute
+ │                              └── Diagnose → Order and schedule → Execute
  └── Critical, regulated, or ──► Specialist advice and the sector regulator first,
      a large estate you build      then Baseline + Programme
 ```
@@ -33,7 +33,7 @@ The reader learns three terms to act: **baseline**, **programme**, and **registe
 
 ## Start Here
 
-Start here asks four questions about the organisation as a whole. A question applies if any system, service, or product the organisation runs fits it.
+Which plan you need asks four questions about the organisation as a whole. A question applies if any system, service, or product the organisation runs fits it.
 
 | # | Question | Why it is asked |
 | --- | --- | --- |
@@ -49,7 +49,7 @@ Rules for the questions:
 - **Out-of-support products are not a trigger.** A supplied product with no updates or no post-quantum plan is a baseline item with a replacement date, never a reason on its own to start a programme.
 - **Three outcomes only**: none apply (baseline); any applies (baseline and programme); critical, regulated, or a large self-built estate (specialist advice and the sector regulator first, then baseline and programme).
 
-Start here also carries a short **Which dates apply to you** table: each authority's milestones, the audience the authority names, and what to record when no authority addresses the reader. It never presents one authority's dates as universal.
+Which plan you need also carries a short **Which dates apply to you** table: each authority's milestones, the audience the authority names, and what to record when no authority addresses the reader. It never presents one authority's dates as universal.
 
 ## Baseline
 
@@ -75,7 +75,7 @@ The programme has two sizes:
 - **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sponsor's sign-off, keeps the register, and adds a change record for each change. No charter or progress report; reviews every six months unless a fixed date falls within a year.
 - **Full programme**: anything larger, any device with a fixed key, or any organisation in the specialist outcome. A named sponsor and lead, a one-page programme charter, and a progress report at each review.
 
-After the first moves, the existing migration practices run in three phases: **Diagnose** (set up, find the cryptography), **Plan** (order the work within each job, record the dates that apply, work with suppliers), and **Execute** (choose an option from the technology card, make and verify each change, keep the ability to change again, review and report). The page also says what to do when no option exists before a fixed date, and that suppliers asked by their customers answer from the register.
+After the first moves, the existing migration practices run in three phases: **Diagnose** (set up, find the cryptography), **Order and schedule** (order the work within each job, record the dates that apply, work with suppliers), and **Execute** (choose an option from the technology card, make and verify each change, keep the ability to change again, review and report). The page also says what to do when no option exists before a fixed date, and that suppliers asked by their customers answer from the register.
 
 ## Records
 
@@ -91,20 +91,20 @@ The register replaces the decision note, inventory record, migration plan, vendo
 
 ## Navigation and Placement
 
-- **Navbar**: Start here, Baseline, and Programme lead, followed by Learn, Technology options, Standards, and Templates (the renamed Resources section).
-- **Homepage**: The four questions and three outcomes appear on the homepage itself, so a first-time reader is one page from a first action. The hero comes first and the reference cards follow; nothing else. A November 2026 persona review found readers skipped or were slowed by the jobs-and-clocks section and the register excerpt, so the thesis lives in the Timelines lesson and the first moves, and the register in the worked examples.
-- **Retired**: Situation routes, the short and full paths, the three asset tracks, Decide whether to act, the five conditions, and the urgent and regular adopter categories. Their unique content moves to the page that uses it: deadline tables to Which dates apply to you and the plan step, stored-data rules to the backups and archives card, and verifier rules to the firmware and secure boot card.
+- **Navbar**: Learn the basics and Plan your migration lead, as the two ways in: one to understand, one to act. Technology options, Standards, and Templates follow. Baseline and Programme sit inside Plan your migration, under `/plan/`, with Which plan you need as its first page, so a reader sees one home for the plan.
+- **Homepage**: The hero says every organisation needs a migration plan and that for most it is short. Two equal cards follow, Learn the basics and Plan your migration. The four questions and three outcomes, each worded as "Your plan: …", appear on the homepage itself, so a first-time reader is one page from a first action. Three reference cards follow; nothing else. A November 2026 persona review found readers skipped or were slowed by the jobs-and-clocks section and the register excerpt, so the thesis lives in the Timelines lesson and the first moves, and the register in the worked examples.
+- **Retired**: Situation routes, the short and full paths, the three asset tracks, Decide whether to act, the five conditions, and the urgent and regular adopter categories. Their unique content moves to the page that uses it: deadline tables to Which dates apply to you and Set dates and milestones, stored-data rules to the backups and archives card, and verifier rules to the firmware and secure boot card.
 - **Reference sections stay**: Technology options are linked from the programme by job; Learn holds the concepts the journey glosses; Standards holds the sources the journey cites.
 
 ## Writing Rules for Journey Pages
 
-Start here, Baseline, and the Programme overview are held to reading budgets, checked by `npm test` and `npm run check` (`scripts/checks/reading.mjs`):
+Which plan you need, Baseline, and the Programme overview are held to reading budgets, checked by `npm test` and `npm run check` (`scripts/checks/reading.mjs`):
 
 - At most `900` words per page.
 - At most `2` internal links per `100` words.
 - No sentence longer than `40` words.
 - No backticked record field names in prose.
-- The retired routing labels (short path, full path, situation route, asset track, five conditions, urgent adopter, regular adopter) do not appear as labels anywhere on the site, except where quoting a source. The ordinary words path, route, track, and condition remain available.
+- The retired routing labels (short path, full path, situation route, asset track, five conditions, urgent adopter, regular adopter) and the retired page names (Decide whether to act, Start here, Plan the migration) do not appear as labels anywhere on the site, except where quoting a source. The ordinary words path, route, track, and condition remain available.
 
 How the rules work in practice:
 
@@ -118,7 +118,7 @@ The previous routing grew more complex one careful fix at a time: each review ch
 
 - **Measure before and after**: Every change to a journey page reports its reading metrics (words, links per 100 words, longest sentence, backticked terms, retired labels) before and after the change, using `npm run metrics`. A fix that raises a budget needs a stated reason.
 - **Test with readers**: Before a change to the questions, outcomes, or first moves merges, fresh readers given only the changed pages and one persona brief each say what they would do first and which records they would keep. The five personas are a small firm on supplied software; a manufacturer with long-lived data and devices with fixed keys; a software supplier asked by its customers; a public body with one in-house system; and a regulated critical-infrastructure operator. Every programme decision must be right, and every edge case must land where this guide says.
-- **Count what a rule change touches**: Changing a question should touch Start here, one first-move row, and the register template. If it touches more, the journey has started to grow a routing layer again.
+- **Count what a rule change touches**: Changing a question should touch Which plan you need, one first-move row, and the register template. If it touches more, the journey has started to grow a routing layer again.
 
 ## Why This Journey
 
@@ -161,7 +161,16 @@ Only this journey, in both runs, scoped the public body to a small programme, ha
 
 The test readers were language models acting from persona briefs, not people. Their results show where pages mislead an attentive first-time reader, not how real readers behave. Differences in accuracy between the shortlisted designs are indicative; the reduction in reading effort and the per-system-clocks failure were consistent across every run.
 
+### Why Plan your migration
+
+The first journey page was called Start here. It sorted readers rather than introducing the subject, so a reader who wanted the basics first was sent to the wrong place. Two persona tests in November 2026 chose its replacement:
+
+- **The name alone**: Seven readers compared three names as a choice beside Learn the basics. What applies to you led and Work out what to do came close; Plan your migration came last, because four readers took "migration" for a project their suppliers would run, and one could not tell it from Programme beside it in the navbar.
+- **The name with its structure**: The same readers then compared two whole versions. One kept What applies to you beside Baseline and Programme in the navbar. The other put Baseline and Programme inside Plan your migration and opened the hero with "Every organisation needs a post-quantum migration plan. For most it is short." Six of seven preferred the second; all seven were unsure where their plan was in the first; none felt excluded by the second.
+
+The test bundled the name, the navbar, and the hero copy, so much of the gain comes from one home for the plan and the reassuring hero. Keep all three together.
+
 ## Open Questions
 
 - **Suppliers' urgency**: Whether a supplier with no long-lived data or systems of its own should take its urgency from customers who are urgent. No test covered that case.
-- **Section names**: Start here, Baseline, Programme, and Templates are working names. Baseline may read as a certification term to some readers.
+- **Section names**: Baseline may still read as a certification term to some readers. "Migration" in Plan your migration felt heavy to the newcomer persona, who is served by Learn the basics.

@@ -14,16 +14,16 @@ Read these five root documents before changing structure, prose, or styling:
 
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, audience, editorial thesis, sister-site boundaries, and non-goals
 - [Navigation Structure](./navigation-structure.md) — URL policy, navbar and five sidebars, complete sitemap, homepage and footer
-- [Reader Journey](./reader-journey.md) — How readers are routed from Start here to a first action, the baseline and programme, the records, the rules that keep the journey simple, and why it was chosen
+- [Reader Journey](./reader-journey.md) — How readers are routed from Plan your migration to a first action, the baseline and programme, the records, the rules that keep the journey simple, and why it was chosen
 - [Style Guide](./style-guide.md) — Editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
 - [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
 
 ### Handbook Content (`docs/`)
 
 - [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
-- [Start here](./docs/start-here/index.md), [Baseline](./docs/baseline/index.md), and [Programme](./docs/programme/index.md) — The reader journey: four questions, the baseline every organisation follows, and the programme with its first moves and practices in three phases (diagnose, plan, execute)
+- [Which plan you need](./docs/plan/index.md), [Baseline](./docs/plan/baseline.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the baseline every organisation follows, and the programme with its first moves and practices in three phases (diagnose, plan, execute)
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
-- [Programme practices](./docs/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/programme/`
+- [Programme practices](./docs/plan/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/programme/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
 - [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the baseline and a full programme; and the [Glossary](./docs/templates/reference/glossary.md)
 
@@ -40,7 +40,7 @@ npm install
 npm start
 ```
 
-Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/programme/inventory/`).
+Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/plan/programme/inventory/`).
 
 ## Verification and Build
 
@@ -68,7 +68,7 @@ npm run build
 | Path | Purpose |
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
-| `src/pages/` | Homepage: hero, the four Start here questions and their outcomes, and reference cards (`index.tsx` and `index.module.css`) |
+| `src/pages/` | Homepage: hero, two ways in (Learn the basics and Plan your migration), the four questions and their outcomes, and reference cards (`index.tsx` and `index.module.css`) |
 | `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) and `noindex` for the 404 and search pages |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
