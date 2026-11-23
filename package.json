@@ -13,7 +13,7 @@
     "test": "node --test scripts/tests/pages.test.mjs scripts/tests/standards.test.mjs scripts/tests/records.test.mjs scripts/tests/dates.test.mjs scripts/tests/search.test.mjs",
     "check": "node scripts/check.mjs",
     "records-zip": "node scripts/records-zip.mjs",
-    "metrics": "python3 -I scripts/measure-reading.py docs --pages"
+    "metrics": "node scripts/reading-metrics.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",

@@ -40,7 +40,7 @@ npm install
 npm start
 ```
 
-Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/migration-practices/inventory/`).
+Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/programme/inventory/`).
 
 ## Verification and Build
 
@@ -58,7 +58,7 @@ npm run build
 | `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, reading, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
 | `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
-| `npm run metrics` | Reports reading load per page and section (words, internal links per 100 words, backticked terms, longest sentence, retired routing vocabulary) with `scripts/measure-reading.py`; needs Python 3 |
+| `npm run metrics` | Reports reading load per section, for the three journey pages, and for any page with a retired routing label (words, internal links per 100 words, backticked terms, longest sentence), using the same measures as the reading check |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
 | `npm run serve` | Serves the production `build/` output locally |
@@ -75,7 +75,7 @@ npm run build
 | `static/img/` | Shared shield logo, SVG and PNG favicons, Apple touch icon, and the `1200 × 630` OpenGraph social card (PNG, with its SVG source) |
 | `sidebars.ts` | Five hand-written documentation sidebars |
 | `docusaurus.config.ts` | Site configuration, navbar, footer, Mermaid theme, local search, and link policy |
-| `scripts/` | `checks/` holds the site rules by area (`index.mjs` lists them all), `lib/` the shared Markdown and test helpers, `tests/` the tests, `check.mjs` the `npm run check` runner, `records-zip.mjs` the records zip builder, and `measure-reading.py` the reading-metrics report |
+| `scripts/` | `checks/` holds the site rules by area (`index.mjs` lists them all), `lib/` the shared Markdown and test helpers, `tests/` the tests, `check.mjs` the `npm run check` runner, `records-zip.mjs` the records zip builder, and `reading-metrics.mjs` the reading-metrics report |
 
 *(If present locally, `.ai-helper-files/` holds gitignored private drafting material and must never be linked or cited on public pages.)*
 

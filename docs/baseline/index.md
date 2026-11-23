@@ -18,8 +18,8 @@ Each action says who does it: **you**, or **ask** your IT provider or supplier.
 | 2 | **List what you use** on the [register](/templates/records/register/): devices, operating systems, hosted services, and products, with the version or service plan and the date checked. Servers, load balancers, and applications you configure yourself are your own systems: if you have any, question 4 on Start here applies. | You, with your IT provider | Half a day |
 | 3 | **Keep everything in support and updated.** The UK NCSC expects smaller organisations using mainly commodity IT to receive most post-quantum upgrades from their service providers. | Ask | Ongoing |
 | 4 | **Replace what is out of support**, with a date on the register. A product that gets no updates, or whose supplier has no post-quantum plan, will not migrate on its own. Until it is replaced, keep it off the internet where you can and limit what it holds. | You decide; ask for options | An hour |
-| 5 | **Put post-quantum wording into every purchase and renewal**, and keep the wording and the supplier's answer on the [purchase wording](/templates/records/purchase-wording/) record. | You | Reuse the same wording |
-| 6 | **Do not count anything as done** on the strength of an update alone. Updated products can still fall back to classical methods, and some settings or proxies switch post-quantum methods off. Ask the supplier, or check a connection, before recording a system as migrated. | Ask | At each review |
+| 5 | **Put post-quantum wording into every purchase and renewal**, and keep the wording and the supplier's commitment on the [purchase wording](/templates/records/purchase-wording/) record. | You | Reuse the same wording |
+| 6 | **Do not count anything as done** on the strength of an update alone. Updated products can still fall back to classical methods, and some settings or proxies switch post-quantum methods off. Updates usually reach key establishment before signatures, so record each job separately. Ask the supplier, or check a connection, before recording a system as migrated. | Ask | At each review |
 | 7 | **Review every six months**, and when a product is renewed or leaves support. Answer the four questions on Start here again: if one now applies, start a programme. | You | An hour or two |
 
 ## Wording for purchases and renewals
@@ -32,7 +32,7 @@ ML-KEM is the post-quantum key-establishment method NIST standardised in [FIPS 2
 
 ## Records
 
-Two records: the [register](/templates/records/register/), one row for each system you use, filling in only the ten columns the register page marks for the baseline, and the [purchase wording](/templates/records/purchase-wording/) for each purchase or renewal. The [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) example shows both filled in for a small agency.
+Two records: the [register](/templates/records/register/), one row for each system you use, with the columns the register page marks for the baseline, and the [purchase wording](/templates/records/purchase-wording/) for each purchase or renewal. The [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) example shows both filled in for a small agency.
 
 ## Special cases
 

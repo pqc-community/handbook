@@ -15,7 +15,7 @@ Take the first move for each question that applied, this week. Each one is a sep
 | What applied | Its clock | First move |
 | --- | --- | --- |
 | Data that must stay secret for years | How long the data must stay secret | Ask the supplier, or the team that runs the system, in writing which method protects connections and which protects stored data, and when each changes. Keep connections and stored data as separate lines. |
-| Devices with a fixed key | The design freeze, then the device's service life | For products you make: ask component suppliers in writing which post-quantum signature the boot verifier supports, and make one a condition of selection before the next design freeze. For devices already in service: record them, ask the maker for an upgrade or replacement route, and plan by end of life. |
+| Devices with a fixed key | The design freeze, then the device's service life | For products you make: ask component suppliers in writing which post-quantum signature the boot verifier supports, and make one a condition of selection before the next design freeze. For devices you have already shipped: keep their signing key protected for the fleet's life, tell customers when a replacement is planned, and record the date. For devices you run: ask the maker for an upgrade or replacement route, and plan by end of life. |
 | Signatures others rely on | How long you and everyone who checks your signatures take to move together | List who checks your signatures. Their verifiers must accept new signatures before you switch. |
 | Systems you build or configure | Your own release cycle | Record each system's cryptographic library, protocols, and versions. |
 
@@ -24,7 +24,7 @@ If customers are asking about your post-quantum plans, answer from the register:
 ## Size
 
 - **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sponsor's sign-off, keeps the register, and adds a change record for each change. No charter or progress report.
-- **Full programme**: anything larger, or any device with a fixed key. A named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
+- **Full programme**: anything larger, any device with a fixed key, or any organisation Start here sends to a specialist and regulator first. A named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
 
 ## Diagnose, plan, execute
 
@@ -43,7 +43,7 @@ The practices run in three phases. They overlap: supplier questions start during
 
 **Execute**
 
-- [Choose an option](/technology-options/choosing/), using the technology card for the system, such as TLS, PKI, or firmware and secure boot.
+- [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
 - [Make and verify one change](/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
 - [Keep the ability to change again](/programme/changing-algorithms-again/).
 - [Review and report](/programme/subsequent-review/): every three months while a line is first in its order or a fixed date falls within a year, and every six months otherwise.

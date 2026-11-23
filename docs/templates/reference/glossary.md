@@ -110,7 +110,7 @@ A key-encapsulation mechanism that NIST selected in [NIST IR 8545](https://csrc.
 
 ## Hybrid
 
-[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes a classical algorithm and a post-quantum algorithm used together so the exchange or the signature still holds if either one fails. The construction is secure if at least one component is secure. The same report says hybrid solutions add complexity and, when used, are typically temporary measures leading to a second transition to post-quantum-only cryptography.
+[NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, describes hybrid solutions as quantum-vulnerable and quantum-resistant algorithms used together to establish keys or generate signatures, or several post-quantum algorithms built on different mathematical assumptions. They are typically designed to remain secure if at least one component algorithm is secure. The same report says hybrid solutions add complexity and, when used, are typically temporary measures leading to a second transition to post-quantum-only cryptography.
 
 Hybrid key establishment combines a classical and a post-quantum exchange into one shared secret; the signature form is a [dual signature](#dual-signature). Supporting two algorithms and negotiating one per session is not hybrid. Authorities differ on when hybrid is appropriate. See [Hybrid cryptography](/learn/hybrid/).
 
@@ -238,7 +238,7 @@ A public key or certificate that a verifier trusts without further proof, and fr
 
 ## Verifier
 
-The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, use [Firmware and secure boot](/technology-options/firmware-secure-boot/) instead. Record the blocked change on the change record. See [PKI and certificates](/technology-options/pki/).
+The component that checks a signature. When every verifier can be updated, the signature algorithm can change in a later release. When a verifier cannot be updated later, the algorithm has to be right before the design is frozen; see [Firmware and secure boot](/technology-options/firmware-secure-boot/). If no supported option exists in time, record the change as blocked on the change record. For verifiers that can be updated, see [PKI and certificates](/technology-options/pki/).
 
 ## Sources
 

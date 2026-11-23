@@ -10,7 +10,7 @@ Post-quantum cryptography replaces the public-key methods that a future quantum 
 
 ## Four questions
 
-Answer for the organisation as a whole. A question applies if any system, service, or product you run fits it. **Not sure counts as yes** until someone who knows confirms it: write down who will confirm, and by when, on the [register](/templates/records/register/).
+Answer for the organisation as a whole. A question applies if any system, service, or product you run fits it. **Not sure counts as yes** until someone who knows confirms it: write down who will confirm, and by when, on the [register](/templates/records/register/). Do not wait for a complete inventory before answering: one system that fits is enough.
 
 1. **Data that must stay secret for years.** Do you hold information that must stay confidential for many years and that travels over networks, or is stored, under public-key protection? An attacker can record it now and decrypt it later. As this handbook's guide, treat ten years or more as many years.
 2. **Devices with a fixed key.** Do you make or run products or devices that check signatures with a key or method that cannot be changed after they ship, whether in hardware or in software?
@@ -33,9 +33,9 @@ Dates belong to the authority that set them and the audience it names. There is 
 
 | If you are | Dates to record |
 | --- | --- |
-| A UK organisation | The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (20 March 2025) are aimed primarily at large organisations, operators of critical national infrastructure, and organisations with bespoke IT, and say their core timelines are relevant to all organisations: defined goals, discovery, and an initial plan by 2028; early, highest-priority migration by 2031; and migration completed by 2035. They expect smaller organisations using mainly commodity IT to receive most upgrades from their service providers, and organisations with custom software to follow the same timetable as larger ones. |
-| An EU public administration or critical-infrastructure entity | The EU NIS Cooperation Group's [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025), addressed to Member States, which set national roadmaps from it. |
-| A US federal agency, or a supplier to one | The [US government requirements](/standards/us-government-requirements/), which bind federal agencies. A contractor date applies only if and when the procurement rule EO 14412 directs takes effect. National security systems follow NSA requirements such as [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/). |
+| A UK organisation | The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (20 March 2025) are aimed primarily at large organisations, operators of critical national infrastructure, and organisations with bespoke IT. The NCSC says the core timelines are relevant to all organisations: defined goals, discovery, and an initial plan by 2028; early, highest-priority migration by 2031; and migration completed by 2035. They expect smaller organisations using mainly commodity IT to receive most upgrades from their service providers, and organisations with custom software to follow the same timetable as larger ones. |
+| An EU public administration or critical-infrastructure entity | The EU NIS Cooperation Group's [roadmap](/standards/migration-guides/eu-nis-roadmap/) (version 1.1, 11 June 2025), addressed to Member States, which set national roadmaps from it. Its milestones: first steps and initial national roadmaps by the end of 2026; high-risk use cases transitioned by the end of 2030; medium-risk use cases, and low-risk ones as far as feasible, by the end of 2035. |
+| A US federal agency, or a supplier to one | The [US government requirements](/standards/us-government-requirements/), which bind federal agencies. High value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030, and post-quantum signatures by 31 December 2031. A contractor date applies only if and when the procurement rule EO 14412 directs takes effect. National security systems follow NSA requirements such as [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/). |
 | Anywhere else | Your national authority, your sector regulator, and your customers' contract dates. [Why migration timelines differ](/learn/explainers/why-timelines-differ/) explains how to read them. |
 
 ## Words used on these pages
@@ -43,6 +43,8 @@ Dates belong to the authority that set them and the audience it names. There is 
 - **Key establishment**: how two systems agree a secret key, and how stored data keys are protected.
 - **Signatures**: how software, firmware, documents, and certificates prove who made them.
 - **Verifier**: the part of a device or program that checks a signature, such as a boot loader.
+- **Trust anchor**: the key a verifier trusts first, often fixed in a device's hardware.
+- **Design freeze**: the date after which a product's hardware design cannot change.
 - **Hybrid**: a post-quantum method and a classical one used together.
 - **Relying parties**: the people and devices that check your signatures.
 

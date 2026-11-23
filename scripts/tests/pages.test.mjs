@@ -13,7 +13,7 @@ import {
   findNavigationViolations,
   findPageViolations,
 } from '../checks/pages.mjs';
-import {MAX_WORDS, findJourneyBudgetViolations, findRetiredLabelViolations, readingMetrics} from '../checks/reading.mjs';
+import {MAX_SENTENCE_WORDS, MAX_WORDS, findJourneyBudgetViolations, findRetiredLabelViolations, readingMetrics, retiredLabelsIn, sentences} from '../checks/reading.mjs';
 import {assertNoViolations, withRoot} from '../lib/test-helpers.mjs';
 
 const ROOT = process.cwd();
@@ -149,47 +149,66 @@ test('all handbook admonition titles use supported syntax', () => {
 // Reader journey budgets and retired labels. These tests live here because `npm test`
 // lists its test files explicitly; the checks themselves are in scripts/checks/reading.mjs.
 const journeyPage = (text) => `---\ntitle: Journey page\n---\n\n${text}\n\n## Sources\n\n- [A source](/standards/) and more words that are not counted.\n`;
+const words = (n) => Array.from({length: n}, () => 'word').join(' ');
 
 const withJourney = (pages) =>
   Object.fromEntries(
     ['docs/start-here/index.md', 'docs/baseline/index.md', 'docs/programme/index.md'].map((name, index) => [name, pages[index] ?? journeyPage('Short and clear.')]),
   );
+const budget = (page) => withRoot(withJourney([journeyPage(page)]), (root) => findJourneyBudgetViolations(root));
 
-test('measures words, links, the longest sentence and backticks before Sources', () => {
-  const metrics = readingMetrics(journeyPage('One two three [four](/x/). Five `six` seven.'));
-  assert.equal(metrics.words, 7);
-  assert.equal(metrics.links, 1);
+test('measures words, internal links, the longest sentence and backticks before Sources', () => {
+  const metrics = readingMetrics(journeyPage('One two three [four](/x/). Five `six` seven. ![img](/i.png) [ext](https://e.org) [rel](other/)'));
+  assert.equal(metrics.words, 10);
+  assert.equal(metrics.links, 2);
   assert.equal(metrics.longest, 4);
   assert.equal(metrics.backticks, 1);
 });
 
-test('accepts journey pages within their reading budgets', () => {
-  withRoot(withJourney([]), (root) => assert.deepEqual(findJourneyBudgetViolations(root), []));
+test('splits sentences at full stops, not at semicolons, colons or common abbreviations', () => {
+  assert.deepEqual(sentences('One; two: three, e.g. four. Five!'), ['One; two: three, e.g. four.', 'Five!']);
 });
 
-test('flags journey pages that are too long, too linked, too wordy per sentence, or use backticks', () => {
-  const long = journeyPage(Array.from({length: MAX_WORDS + 1}, () => 'word.').join(' '));
-  const linked = journeyPage('[a](/a/) [b](/b/) [c](/c/) words here.');
-  const sentence = journeyPage(`${Array.from({length: 41}, () => 'word').join(' ')}.`);
-  const ticks = journeyPage('Use the `route` field.');
-  withRoot(withJourney([long, linked, sentence]), (root) =>
-    assert.deepEqual(findJourneyBudgetViolations(root).map((v) => v.split(':')[0]), [
-      'docs/start-here/index.md',
-      'docs/baseline/index.md',
-      'docs/programme/index.md',
-    ]),
+test('accepts journey pages exactly at their limits', () => {
+  assert.deepEqual(budget(`${words(MAX_SENTENCE_WORDS)}.`), []);
+  assert.deepEqual(budget(Array.from({length: MAX_WORDS / 10}, () => `${words(10)}.`).join(' ')), []);
+});
+
+test('flags each budget rule on its own', () => {
+  assert.match(budget(Array.from({length: MAX_WORDS / 10 + 1}, () => `${words(10)}.`).join(' '))[0], /words \(at most/);
+  assert.match(budget('[a](/a/) [b](/b/) [c](/c/) words here.')[0], /internal links per 100 words/);
+  assert.match(budget(`${words(MAX_SENTENCE_WORDS + 1)}.`)[0], /a sentence of 41 words/);
+  assert.match(budget(`${words(25)}; ${words(25)}.`)[0], /a sentence of 50 words/);
+  assert.match(budget(`| Column |\n| --- |\n| ${words(MAX_SENTENCE_WORDS + 5)}. |`)[0], /a sentence of 45 words/);
+  assert.match(budget('Use the `route` field.')[0], /backticked/);
+});
+
+test('finds retired labels with hyphens, line breaks, plurals and any case, once each', () => {
+  assert.deepEqual(
+    retiredLabelsIn('a short-path b\nthe Short\npath\nfive-condition test\nthe short and full paths\nUrgent Adopters').map((f) => `${f.line}:${f.label}`),
+    ['1:short-path', '2:Short path', '4:five-condition', '5:short and full paths', '6:Urgent Adopters'],
   );
-  withRoot(withJourney([ticks]), (root) => assert.match(findJourneyBudgetViolations(root)[0], /backticked/));
 });
 
-test('flags retired routing labels outside standards summaries, but not ordinary words', () => {
+test('allows ordinary words and plain-English uses that are not the retired labels', () => {
+  assert.deepEqual(retiredLabelsIn('The upgrade route, the critical path, a track record; we decide whether to act.'), []);
+  assert.deepEqual(retiredLabelsIn('See Decide whether to act.').map((f) => f.label), ['Decide whether to act']);
+});
+
+test('checks front matter, section overviews and site files, but not quoting summaries', () => {
   withRoot(
     {
-      'docs/a.md': 'Follow the short path here.\n',
-      'docs/b.md': 'The upgrade route and the critical path are fine.\n',
+      'docs/a.md': '---\ntitle: The Short Path\n---\n\nBody.\n',
+      'docs/standards/index.md': 'Our overview mentions regular adopters.\n',
       'docs/standards/guide.md': 'The AIVD handbook names urgent adopters.\n',
+      'sidebars.ts': "export default {s: [{label: 'Asset tracks'}]};\n",
     },
-    (root) => assert.deepEqual(findRetiredLabelViolations(root), ['docs/a.md:1: retired label "short path"']),
+    (root) =>
+      assert.deepEqual(findRetiredLabelViolations(root), [
+        'docs/a.md:2: retired label "Short Path"',
+        'docs/standards/index.md:1: retired label "regular adopters"',
+        'sidebars.ts:1: retired label "Asset tracks"',
+      ]),
   );
 });
 

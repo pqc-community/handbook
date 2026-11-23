@@ -9,9 +9,9 @@ import styles from './index.module.css';
 type Node = {label?: string; title: string; to: string; text: string};
 
 const questions = [
-  {name: 'Data that must stay secret for years', text: 'Information that must stay confidential for ten years or more and is protected by public-key methods.'},
-  {name: 'Devices with a fixed key', text: 'Products or devices that check signatures with a key or method that cannot change after they ship.'},
-  {name: 'Signatures others rely on', text: 'A certificate authority, or code, firmware, or documents you sign that others check.'},
+  {name: 'Data that must stay secret for years', text: 'Information that must stay confidential for many years (as a guide, ten or more) and is protected by public-key methods.'},
+  {name: 'Devices with a fixed key', text: 'Products or devices you make or run that check signatures with a key or method that cannot change after they ship.'},
+  {name: 'Signatures others rely on', text: 'A certificate authority, public or internal, or code, firmware, or documents you sign that others check.'},
   {name: 'Systems you build or configure', text: 'Software you build, or cryptography you set up on your own servers, VPNs, or applications.'},
 ];
 
@@ -20,7 +20,7 @@ const outcomes: Node[] = [
     label: 'None apply',
     title: 'Baseline',
     to: '/baseline/',
-    text: 'Seven actions: list what you use, keep it supported, replace what is not, put post-quantum wording into purchases, and review every six months.',
+    text: 'Seven actions, starting with naming an owner and listing what you use: keep it supported, replace what is not, put post-quantum wording into purchases, and review every six months.',
   },
   {
     label: 'Any applies',

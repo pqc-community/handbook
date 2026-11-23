@@ -26,7 +26,12 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Execute',
           collapsed: false,
-          items: ['programme/implementation', 'programme/changing-algorithms-again', 'programme/subsequent-review'],
+          items: [
+            {type: 'link', label: 'Choose an option', href: '/technology-options/choosing/'},
+            'programme/implementation',
+            'programme/changing-algorithms-again',
+            'programme/subsequent-review',
+          ],
         },
       ],
     },

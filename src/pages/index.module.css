@@ -109,7 +109,7 @@
   font-size: 0.95rem;
 }
 
-/* Route chooser */
+/* Start here: the questions box and the three outcomes */
 .chooser {
   display: flex;
   flex-direction: column;
@@ -167,9 +167,11 @@
 }
 
 .questions li {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 0.6rem;
+}
+
+.questions li > span {
+  display: block;
 }
 
 .questions li:last-child {

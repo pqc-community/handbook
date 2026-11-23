@@ -73,7 +73,7 @@ The programme page opens with **first moves**: one row per question, naming the 
 The programme has two sizes:
 
 - **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sponsor's sign-off, keeps the register, and adds a change record for each change. No charter or progress report.
-- **Full programme**: anything larger, or any device with a fixed key. A named sponsor and lead, a one-page programme charter, and a progress report at each review.
+- **Full programme**: anything larger, any device with a fixed key, or any organisation in the specialist outcome. A named sponsor and lead, a one-page programme charter, and a progress report at each review.
 
 After the first moves, the existing migration practices run in three phases: **Diagnose** (set up, find the cryptography), **Plan** (order the work within each job, record the dates that apply, work with suppliers), and **Execute** (choose an option from the technology card, make and verify each change, keep the ability to change again, review and report). The page also says what to do when no option exists before a fixed date, and that suppliers asked by their customers answer from the register.
 
@@ -82,7 +82,7 @@ After the first moves, the existing migration practices run in three phases: **D
 | Record | Holds | Kept by |
 | --- | --- | --- |
 | **Register** | One row per system and job: owner, what protects it today, the supplier's answer and its judgement (complete, vague, missing, or concerning), the dates that matter, the next step, status, and the next review | Everyone |
-| **Purchase wording** | The requirement used in each purchase or renewal, and the supplier's answer | Everyone who buys or renews |
+| **Purchase wording** | The requirement used in each purchase or renewal, and the supplier's commitment; the supplier's answer and its judgement go on the register | Everyone who buys or renews |
 | **Programme charter** | Sponsor, lead, scope, first budget line, and reporting | Full programmes |
 | **Change record** | One change to one system and job: option and authority, tests, rollback, and the check that it is live | Anyone making a change |
 | **Progress report** | What moved, what is blocked, decisions needed, and the next review | Full programmes |

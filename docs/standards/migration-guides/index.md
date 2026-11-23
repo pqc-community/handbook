@@ -27,7 +27,7 @@ These summaries cover guides for running a post-quantum migration programme, fin
 | Canadian CFDIR guide | Recommended quantum-readiness best practices from CFDIR's working group; Version 04, 10 July 2024. | [Canadian CFDIR guide](/standards/migration-guides/cfdir-quantum-readiness/) |
 | ETSI TR 103 619 | Informative report on a three-stage migration: inventory, plan, execute; V1.1.1, July 2020. | [ETSI TR 103 619](/standards/migration-guides/etsi-tr-103-619/) |
 | ETSI TR 104 016 | Informative report setting out an 11-step repeatable migration cycle; V1.1.1, October 2024. | [ETSI TR 104 016](/standards/migration-guides/etsi-tr-104-016/) |
-| PQCC migration roadmap | Non-governmental coalition roadmap in four categories, with urgent and regular adopters; May 2025. | [PQCC roadmap](/standards/migration-guides/pqcc-roadmap/) |
+| PQCC migration roadmap | Non-governmental coalition roadmap in four categories, using the AIVD handbook's two adopter categories; May 2025. | [PQCC roadmap](/standards/migration-guides/pqcc-roadmap/) |
 
 ### Discovery, readiness and supplier guides
 

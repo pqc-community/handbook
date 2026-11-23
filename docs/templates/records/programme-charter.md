@@ -36,7 +36,7 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 | operations | IT lead |
 | first budget line | discovery and supplier engagement, from the operations budget |
 | budget revisit | at the first quarterly review after the register has an order |
-| reporting | monthly report from the migration lead to the sponsor; quarterly review while any line is first in its job's order |
+| reporting | progress report from the migration lead to the sponsor at each review; reviews every three months while any line is first in its job's order |
 | report triggers | the workspace supplier's release date moves; no supported sensor signature option three months before design freeze |
 | people told | system owners, procurement, and IT by 2026-08-14; the workspace supplier and shortlisted microcontroller suppliers by written question |
 | agreed by | managing director, 2026-08-03 |

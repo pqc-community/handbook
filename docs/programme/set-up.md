@@ -8,7 +8,7 @@ displayed_sidebar: journeySidebar
 
 ## When this applies
 
-At least one of the four questions on [Start here](/start-here/) applies, and you need a full programme: any device with a fixed key is involved, or the programme covers more than one or two systems. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, and the [register](/templates/records/register/); see [Programme](/programme/#size). A product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: the [baseline](/baseline/) replaces it, with a date on the register.
+At least one of the four questions on [Start here](/start-here/) applies, and you need a full programme: any device with a fixed key is involved, the programme covers more than one or two systems, or Start here sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/programme/#size). A product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: the [baseline](/baseline/) replaces it, with a date on the register.
 
 ## Who does what
 
@@ -37,7 +37,7 @@ A one-page [programme charter](/templates/records/programme-charter/): goal and 
 
 An insufficient record is "IT will handle post-quantum."
 
-A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the fictional manufacturer's charter, agreed on 3 August 2026, names the managing director as sponsor and the operations director as migration lead, and names the product engineering lead, product security lead, and IT lead as owners of the archive, the product sensor, and the office laptops. The first phase covers discovery, supplier answers for the design archive, and a decision on the sensor's firmware verifier before production design freeze. The migration lead reports monthly, and immediately if the supplier's release date moves or there is still no supported sensor signature option three months before design freeze.
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the fictional manufacturer's charter, agreed on 3 August 2026, names the managing director as sponsor and the operations director as migration lead, and names the product engineering lead, product security lead, and IT lead as owners of the archive, the product sensor, and the office laptops. The first phase covers discovery, supplier answers for the design archive, and a decision on the sensor's firmware verifier before production design freeze. The migration lead reports to the sponsor at each review, and immediately if the supplier's release date moves or there is still no supported sensor signature option three months before design freeze.
 
 ## Limits and next step
 

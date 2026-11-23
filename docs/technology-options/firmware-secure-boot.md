@@ -14,7 +14,7 @@ This card applies when both are true: the verifier cannot be updated in the fiel
 
 ## Post-quantum options and status
 
-The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's [post-quantum whitepaper](/standards/migration-guides/ncsc-migration-timelines/) (version 2.0, August 2024), for system and risk owners, lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
+The option is whatever the device's boot verifier supports. Choose from those with the signature-schemes rule on [Choosing an option](/technology-options/choosing/); for firmware, the UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, lists SLH-DSA, LMS, and XMSS for use cases such as signing firmware alongside the general-purpose ML-DSA, and LMS or XMSS need signing state controlled for the life of the key. Because the choice cannot change after shipment, prefer a scheme every applicable authority accepts for the device's whole service life.
 
 ## Who usually chooses
 
@@ -28,6 +28,7 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 4. **Decide before the design freeze, with an escalation point before it**, at least as far ahead as the lead time to change component; this handbook suggests no less than three months. While no supported option exists, record the verifier as blocked with the freeze as the date to resolve by. If there is still no supported option at the escalation point, escalate to the sponsor, who decides between another component, a later freeze, or written risk acceptance with a review date, recorded on the [register](/templates/records/register/), and get specialist advice on alternatives, such as hardware that can accept a new key later. Do not record a blocked verifier as migrated.
 5. **Track the signing key with the verifier.** It has its own [register](/templates/records/register/) row, and that row moves with the verifier's.
 6. **For devices already in service**, record them on the register, ask the maker in writing for an upgrade or replacement route, and plan to have one by the device's end of life. Record the retirement or replacement date and any compensating controls on the verifier's row; their verifier will not change.
+7. **For devices you have already shipped**, their verifier keeps accepting only the classical signatures it was built for. Keep the current signing key protected and usable for every update you will ship to that fleet, for as long as you support it. Tell customers in writing how long the fleet will get updates and when a post-quantum replacement is planned, and record the fleet, its end of support, and the replacement date on the [register](/templates/records/register/).
 
 ## What to ask or test
 
