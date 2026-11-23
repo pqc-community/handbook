@@ -15,12 +15,6 @@ const firstLessons = [
   {title: 'Quantum threat', to: '/learn/quantum-threat/'},
 ];
 
-const questionNames = [
-  'data that must stay secret for years',
-  'devices with a fixed key',
-  'signatures others rely on',
-  'systems you build or configure',
-];
 
 // Why people arrive, each with where to go. Keep it to six lines; the questions and
 // outcomes themselves live only on Which plan you need.
@@ -147,16 +141,15 @@ function Choices() {
             <p>Three steps:</p>
             <ol className={styles.steps}>
               <li>
-                <strong>Answer four questions</strong>: {questionNames.join('; ')}.
+                <strong>Answer four questions</strong> about your data, devices, signatures, and systems.
               </li>
               <li>
-                <strong>Follow the core actions</strong>: seven actions for everything you buy in. In a small
-                organisation, about a day to set up, then an hour or two at each review.
+                <strong>Follow the core actions</strong> for everything you buy in: in a small organisation, a day to
+                set up and an hour or two at each review.
               </li>
               <li>
-                <strong>Add a programme if a question applied</strong>: small, for one or two systems you run
-                yourself, or full, for devices with a fixed key or a larger or regulated estate. A full programme
-                has a named sponsor and lead, a one-page charter, and a progress report at each review.
+                <strong>Add a programme</strong> if a question applied: small for one or two systems you run, full for
+                devices with fixed keys or a larger or regulated estate.
               </li>
             </ol>
             <p className={styles.choiceExamples}>
