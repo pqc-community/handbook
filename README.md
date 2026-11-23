@@ -68,7 +68,7 @@ npm run build
 | Path | Purpose |
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
-| `src/pages/` | Homepage: hero, the four Start here questions and their outcomes, three clocks, a register excerpt, and reference sections (`index.tsx` and `index.module.css`) |
+| `src/pages/` | Homepage: hero, the four Start here questions and their outcomes, and reference cards (`index.tsx` and `index.module.css`) |
 | `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) and `noindex` for the 404 and search pages |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |

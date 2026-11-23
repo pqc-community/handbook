@@ -1,12 +1,20 @@
 /* Homepage. Colours come from Infima variables and the --pqc-* variables in
    src/css/custom.css; nothing here is a raw colour value. */
 
-/* Hero */
+/* Hero: what the handbook is and the next step on the left; who it is for and its
+   limit on the right. One text link, no buttons. */
 .hero {
   background-color: var(--pqc-deep-teal);
   color: var(--pqc-surface-light);
   border-bottom: 3px solid var(--ifm-color-primary);
-  padding: 3rem 0 2.5rem;
+  padding: 2.75rem 0 2.5rem;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: end;
 }
 
 .heroTitle {
@@ -22,18 +30,49 @@
   margin-bottom: 0.75rem;
 }
 
-.heroAudience {
+.heroNext {
   max-width: 42rem;
   margin-bottom: 1.25rem;
 }
 
-.heroLimit {
-  font-size: 0.875rem;
+.heroLink {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.heroLink::after {
+  content: ' \2193';
+}
+
+.heroLink:hover,
+.heroLink:focus-visible {
+  color: var(--pqc-surface-light);
+}
+
+.heroWhen {
   max-width: 42rem;
-  margin-bottom: 0;
-  padding-left: 0.75rem;
-  border-left: 2px solid var(--ifm-color-primary);
+  font-size: 0.95rem;
   opacity: 0.9;
+  margin-bottom: 1.25rem;
+}
+
+.heroAside {
+  padding-left: 1rem;
+  border-left: 2px solid var(--ifm-color-primary);
+  font-size: 0.9rem;
+}
+
+.heroAudience {
+  margin-bottom: 0.75rem;
+}
+
+.heroLimit {
+  margin-bottom: 0;
+  opacity: 0.85;
 }
 
 /* Sections */
@@ -109,180 +148,103 @@
   font-size: 0.95rem;
 }
 
-/* Start here: the questions box and the three outcomes */
+/* Start here: the four questions on the left, the three outcomes stacked on the right */
+.start {
+  padding-top: 2.5rem;
+}
+
 .chooser {
-  display: flex;
-  flex-direction: column;
-}
-
-.decide {
-  max-width: 40rem;
-  height: auto;
-  border-left: 4px solid var(--ifm-color-primary);
-  background-color: var(--pqc-row-hover);
-}
-
-.connector {
-  width: 2px;
-  height: 1.25rem;
-  margin-left: 2rem;
-  background-color: var(--ifm-color-primary);
-}
-
-/* The connector branches into the three outcomes: a rule across the top of the row,
-   with a short drop into each column. */
-.outcomeRow {
-  border-top: 2px solid var(--ifm-color-primary);
-  padding-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
 }
 
-.pathCol {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.pathCol::before {
-  content: '';
-  position: absolute;
-  top: -1rem;
-  left: 2rem;
-  width: 2px;
-  height: 1rem;
-  background-color: var(--ifm-color-primary);
-}
-
-.pathCol > .box {
-  flex: 1;
-}
-
-/* The four questions, numbered, inside the Start here box. */
 .questions {
+  counter-reset: question;
+  list-style: none;
   margin: 0;
-  padding-left: 2.5rem;
+  padding: 0;
 }
 
 .questions li {
-  margin-bottom: 0.6rem;
+  counter-increment: question;
+  position: relative;
+  padding: 0.7rem 0 0.7rem 2.75rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.questions li:last-child {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.questions li::before {
+  content: counter(question);
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .questions li > span {
   display: block;
 }
 
-.questions li:last-child {
-  margin-bottom: 0;
-}
-
-/* Three clocks */
-.clockGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.clock {
-  padding: 1rem 1.1rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-top: 3px solid var(--ifm-color-primary);
-  border-radius: var(--ifm-card-border-radius);
-}
-
-.clockName {
+.outcomeHeading {
   font-size: 1.15rem;
-  margin-bottom: 0.15rem;
+  margin: 0.4rem 0 0.75rem;
 }
 
-.clockJob {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--ifm-color-emphasis-700);
-  margin-bottom: 0.75rem;
+.outcomes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.clockFacts {
-  margin: 0;
+.outcome {
+  border-left: 4px solid var(--ifm-color-primary);
 }
 
-.clockFacts dt {
-  font-size: 0.8125rem;
-  font-weight: 700;
-}
-
-.clockFacts dd {
-  margin: 0 0 0.6rem;
-  font-size: 0.95rem;
-}
-
-/* Record excerpt */
-.tableWrap {
-  max-width: 100%;
-}
-
-.record {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0;
-}
-
-.record caption {
-  caption-side: top;
-  text-align: left;
-  font-size: 0.875rem;
-  font-weight: 700;
-  padding-bottom: 0.5rem;
-}
-
-.record th,
-.record td {
-  border: 1px solid var(--ifm-color-emphasis-300);
-  padding: 0.6rem 0.75rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.record thead th {
-  background-color: var(--pqc-row-hover);
-  font-size: 0.875rem;
-}
-
-.record tbody th {
-  font-weight: 700;
-}
-
-/* Reference: Learn the basics leads, then the three reference sections */
+/* Reference: four compact cards that name what each section holds */
 .refGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.refGrid > .ref:first-child {
-  grid-column: 1 / -1;
-  border-left: 4px solid var(--ifm-color-primary);
+.ref .boxText {
+  font-size: 0.9rem;
 }
 
 /* Light theme: Deep Teal headings and card titles instead of body grey */
 [data-theme='light'] .section h2,
 [data-theme='light'] .boxTitle,
-[data-theme='light'] .clockName {
+[data-theme='light'] .outcomeHeading {
   color: var(--pqc-deep-teal);
 }
 
 /* Narrow screens */
 @media screen and (max-width: 996px) {
-  .outcomeRow,
-  .clockGrid {
+  .heroGrid,
+  .chooser {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .refGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .heroGrid,
+  .chooser {
+    gap: 1.75rem;
   }
 }
 
@@ -305,48 +267,5 @@
 
   .refGrid {
     grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .record thead {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-
-  .record,
-  .record tbody,
-  .record tr,
-  .record th,
-  .record td {
-    display: block;
-  }
-
-  .record caption {
-    display: block;
-  }
-
-  .record tr {
-    margin-bottom: 0.75rem;
-    border: 1px solid var(--ifm-color-emphasis-300);
-    border-radius: var(--ifm-global-radius);
-  }
-
-  .record th,
-  .record td {
-    border: 0;
-    padding: 0.35rem 0.75rem;
-  }
-
-  .record td::before {
-    content: attr(data-label);
-    display: block;
-    font-size: 0.8125rem;
-    font-weight: 700;
-    color: var(--ifm-color-emphasis-700);
   }
 }

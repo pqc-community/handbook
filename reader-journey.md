@@ -92,7 +92,7 @@ The register replaces the decision note, inventory record, migration plan, vendo
 ## Navigation and Placement
 
 - **Navbar**: Start here, Baseline, and Programme lead, followed by Learn, Technology options, Standards, and Templates (the renamed Resources section).
-- **Homepage**: The four questions and three outcomes appear on the homepage itself, so a first-time reader is one page from a first action. The hero, the jobs-and-clocks thesis, and the reference cards follow.
+- **Homepage**: The four questions and three outcomes appear on the homepage itself, so a first-time reader is one page from a first action. The hero comes first and the reference cards follow; nothing else. A November 2026 persona review found readers skipped or were slowed by the jobs-and-clocks section and the register excerpt, so the thesis lives in the Timelines lesson and the first moves, and the register in the worked examples.
 - **Retired**: Situation routes, the short and full paths, the three asset tracks, Decide whether to act, the five conditions, and the urgent and regular adopter categories. Their unique content moves to the page that uses it: deadline tables to Which dates apply to you and the plan step, stored-data rules to the backups and archives card, and verifier rules to the firmware and secure boot card.
 - **Reference sections stay**: Technology options are linked from the programme by job; Learn holds the concepts the journey glosses; Standards holds the sources the journey cites.
 
