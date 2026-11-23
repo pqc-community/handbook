@@ -12,7 +12,7 @@ If you run critical national infrastructure, a regulated service, or a large est
 
 ## First moves
 
-Take the first move for each question that applied this week. Record each as its own register row, for one system and one job, because each runs on its own clock.
+This week, take the first move for each question that applied. Record each as its own register row, for one system and one job, because each runs on its own clock.
 
 | What applied | Its clock | First move |
 | --- | --- | --- |
