@@ -8,6 +8,7 @@ This repository contains the source for the PQC Handbook, a Docusaurus site. Tre
 - For page placement, URLs, links, or sidebars, read [navigation-structure.md](navigation-structure.md) and check `sidebars.ts` and `docusaurus.config.ts` as needed.
 - For how readers are routed (Which plan you need, the core actions, the programme, records, or the homepage path), read [reader-journey.md](reader-journey.md).
 - For visual or UI changes, read [brand-guidelines.md](brand-guidelines.md).
+- For a periodic review of the site, or a change to how reviews run, read [periodic-review.md](periodic-review.md).
 - Check nearby pages and existing patterns before adding new content or components.
 
 ## Content requirements

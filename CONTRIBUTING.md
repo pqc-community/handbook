@@ -20,6 +20,7 @@ Read the maintainer guides in the repository root. They are the source of truth 
 - [Navigation structure](navigation-structure.md) covers URLs, sidebars, and where a page belongs.
 - [Reader journey](reader-journey.md) covers how readers are routed from the four questions to their plan.
 - [Brand guidelines](brand-guidelines.md) covers visual and UI changes.
+- [Periodic review](periodic-review.md) covers the monthly review that keeps sources, dates, and guidance current.
 
 In short, write in British English, keep guidance vendor-neutral, attribute every date and obligation to its primary source and the audience it names, and keep key establishment and digital signatures separate where their migration drivers differ. Do not add vendor endorsements or promotional material, and disclose any affiliation relevant to your change in the pull request.
 
