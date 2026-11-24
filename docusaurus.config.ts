@@ -104,6 +104,7 @@ const config: Config = {
           ],
         },
       ],
+      copyright: `Copyright © ${new Date().getFullYear()} PQC Handbook contributors. Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.`,
     },
     prism: {theme: prismThemes.github, darkTheme: prismThemes.dracula},
     mermaid: {

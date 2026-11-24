@@ -56,6 +56,12 @@
   --ifm-footer-title-color: #f5fcfd;
 }
 
+/* The copyright line's licence link sits on Deep Teal in both modes, so it uses the footer link colour, underlined */
+.footer__copyright a {
+  color: var(--ifm-footer-link-color);
+  text-decoration: underline;
+}
+
 /* Prevent Infima's mobile `width: max-content` on `.footer__link-item` from overflowing narrow viewports */
 .footer__link-item {
   max-width: 100%;

@@ -44,7 +44,7 @@ Starts the local development server with hot reloading. Markdown pages under `do
 
 ## Verification and Build
 
-Run the full check suite locally before opening a pull request or pushing to `main`:
+Run the full check suite locally before opening a pull request or pushing to `main`. The [GitHub Actions workflow](./.github/workflows/deploy.yml) runs the same four commands on every pull request and on every push to `main`, and deploys to GitHub Pages only when they all pass:
 
 ```bash
 npm test
@@ -55,7 +55,7 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node tests in `scripts/tests/`: for each area (pages, reading, standards, records, dates), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site |
+| `npm test` | Runs the Node tests in `scripts/tests/`: for each tested area (pages, standards, records, dates, search), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site. The reading rules run only in `npm run check` |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
 | `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets, staccato paragraphs, and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
 | `npm run metrics` | Reports reading load per section, for the three journey pages, and for any page with a retired routing label (words, internal links per 100 words, backticked terms, longest sentence), using the same measures as the reading check |
@@ -69,7 +69,7 @@ npm run build
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
 | `src/pages/` | Homepage: hero, two ways in (Learn the basics and Plan your migration), why you might be here, and reference cards (`index.tsx` and `index.module.css`) |
-| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) and `noindex` for the 404 and search pages |
+| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) the 404 page's wording and links back into the handbook, and `noindex` for the 404 and search pages |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
 | `static/img/` | Shared shield logo, SVG and PNG favicons, Apple touch icon, and the `1200 × 630` OpenGraph social card (PNG, with its SVG source) |
@@ -84,11 +84,13 @@ npm run build
 Pushes to `main` automatically build and deploy the site to GitHub Pages via [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml):
 
 - **Live site**: [https://pqchandbook.com](https://pqchandbook.com) (`static/CNAME`)
-- **CI steps**: Node 20 setup, `npm ci`, `npm run typecheck`, `npm run build`, and GitHub Pages artifact deployment (run `npm test` and `npm run check` locally before merging)
+- **CI steps**: Node 24 setup, `npm ci`, `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` on every pull request and push; on a push to `main`, GitHub Pages artifact upload and deployment follow only if every step passed
 
-## Contributing and Reporting Issues
+## Contributing, Security, and Licence
 
 Contributions from migration leads, security practitioners, procurement and risk teams, and standards reviewers are welcome:
 
 - **Report a stale reference or issue**: Open an issue on [github.com/pqc-community/handbook/issues](https://github.com/pqc-community/handbook/issues)
-- **Propose content or structural changes**: Follow the sourcing, voice, and navigation rules in [style-guide.md](./style-guide.md) and [navigation-structure.md](./navigation-structure.md), and verify `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass locally
+- **Propose content or structural changes**: Follow [CONTRIBUTING.md](./CONTRIBUTING.md), the sourcing, voice, and navigation rules in [style-guide.md](./style-guide.md) and [navigation-structure.md](./navigation-structure.md), and verify `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass locally
+- **Report a security vulnerability**: Report it privately as described in [SECURITY.md](./SECURITY.md)
+- **Licence**: The handbook is licensed under [CC BY-SA 4.0](./LICENSE), the same licence as its sister sites
