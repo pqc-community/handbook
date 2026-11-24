@@ -7,7 +7,7 @@ description: Dutch guidelines for migrating to post-quantum cryptography from AI
 
 ## What it covers
 
-The PQC Migration Handbook (Guidelines for migrating to post-quantum cryptography) organises transition work into three stages — diagnose, plan and execute — and distinguishes urgent adopters, regular adopters and cryptography suppliers so organisations can match programme effort to their risk profile. A [companion Dutch government resource list](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/) points to national and international quantum-safe resources.
+The PQC Migration Handbook (Guidelines for migrating to post-quantum cryptography) organises transition work into three stages: diagnose, plan and execute. It distinguishes urgent adopters, regular adopters and cryptography experts (organisations that supply cryptographic standards or infrastructure), so that organisations can match programme effort to their risk profile. A [companion Dutch government resource list](https://www.nldigitalgovernment.nl/overview/quantum-safe-cryptography/useful-resources/) points to national and international quantum-safe resources.
 
 The Netherlands General Intelligence and Security Service (AIVD) published the extended second edition with the research institutes CWI and TNO; its document page is dated 29 November 2024 and the accompanying news release 3 December 2024. It is guidance for organisations planning a migration, not a legal requirement.
 
