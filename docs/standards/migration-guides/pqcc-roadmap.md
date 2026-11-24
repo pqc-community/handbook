@@ -23,7 +23,8 @@ The coalition is a non-governmental community of technologists, researchers and 
 
 | Date | Event |
 | --- | --- |
-| <time dateTime="2025-05-28">2025&#8209;05&#8209;28</time> | The Post-Quantum Cryptography Coalition released its PQC Migration Roadmap (dated May 2025), announced by MITRE. |
+| <time dateTime="2025-05-16">2025&#8209;05&#8209;16</time> | The Post-Quantum Cryptography Coalition announced its PQC Migration Roadmap (dated May 2025) on its website. |
+| <time dateTime="2025-05-28">2025&#8209;05&#8209;28</time> | MITRE announced the roadmap's release. |
 
 ## Relationship with other standards
 
