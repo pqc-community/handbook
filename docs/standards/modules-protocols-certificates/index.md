@@ -55,6 +55,7 @@ These IETF documents are not summarised in the handbook. Follow the links for cu
 | RFC 9941 | SSH key exchange with sntrup761x25519. Informational, April 2026. | [RFC 9941](https://www.rfc-editor.org/info/rfc9941) |
 | RFC 10042 | SSH hybrid key exchange with ML-KEM: mlkem768x25519-sha256, mlkem768nistp256-sha256 and mlkem1024nistp384-sha384. Informational, August 2026. | [RFC 10042](https://www.rfc-editor.org/info/rfc10042) |
 | RFC 9370 | Multiple key exchanges in IKEv2. Proposed Standard, May 2023. | [RFC 9370](https://www.rfc-editor.org/info/rfc9370) |
+| RFC 9867 | Mixing pre-shared keys into the IKEv2 intermediate and child SA exchanges for post-quantum security. Proposed Standard, November 2025. | [RFC 9867](https://www.rfc-editor.org/info/rfc9867) |
 | draft-ietf-ipsecme-ikev2-mlkem | ML-KEM in IKEv2. Internet-Draft in the RFC Editor queue. | [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/) |
 | RFC 9980 | Post-quantum cryptography in OpenPGP. Proposed Standard, June 2026. | [RFC 9980](https://www.rfc-editor.org/info/rfc9980) |
 | RFC 9794 | Terminology for post-quantum/traditional hybrid schemes. Informational, June 2025. | [RFC 9794](https://www.rfc-editor.org/info/rfc9794) |

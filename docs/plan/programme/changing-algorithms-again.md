@@ -29,7 +29,7 @@ Treat the system as finished for this phase only when each capability has verifi
 
 If the supplier will not give a commitment, a notice period, or a plan, record the gap and handle it as a `concerning` answer in [Work with suppliers](/plan/programme/suppliers/) (step 4).
 
-The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises using cryptographic solutions that are crypto-agile, and notes that other bodies encourage organisations to remain cryptographically agile. NIST's [crypto-agility white paper](/standards/transition-and-key-management/nist-cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters.
+The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (AIVD, CWI, and TNO, December 2024) advises using cryptographic solutions that are crypto-agile, and notes that other bodies encourage organisations to remain cryptographically agile. NIST's [crypto-agility white paper](/standards/transition-and-key-management/nist-cswp-39/) (CSWP 39, updated 29 June 2026) discusses strategies and practices for building that capability. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) describes hybrid constructions as typically temporary steps that lead to a second transition, which is one reason a deprecation path matters. France's ANSSI, in [its views on crypto agility](/standards/national-algorithm-positions/anssi-pqc-position/) (19 January 2026), for developers and system architects, recommends two things the configuration and test evidence can show: that negotiation or configuration cannot settle on an unwanted algorithm, with deprecated algorithms not allowed in new systems, and that the system works with the largest keys and signatures, and the slowest performance, that any option it can negotiate would produce.
 
 ## Keep this evidence
 
@@ -48,6 +48,7 @@ Agility is a property you evidence, not a product you buy; this page does not ch
 ## Sources
 
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [The PQC Migration Handbook (PDF)](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
+- ANSSI, ANSSI views on crypto agility, 19 January 2026. [ANSSI crypto-agility note (PDF)](https://messervices.cyber.gouv.fr/documents-guides/ANSSI-views-on-crypto-agility.pdf)
 - NIST, Considerations for Achieving Crypto Agility: Strategies and Practices, CSWP 39, 19 December 2025, updated 29 June 2026. [CSWP 39 upd1](https://csrc.nist.gov/pubs/cswp/39/upd1/considerations-for-achieving-crypto-agility/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 

@@ -34,6 +34,7 @@ The microcontroller, secure element, or boot-code supplier decides what the veri
 
 - Whether signature and key sizes fit the device's storage, and verification fits its boot time, tested on supplier samples.
 - For LMS or XMSS, how the signing side will control state for the whole life of the key.
+- How update signing keys are protected and whether updates are protected against replay. France's ANSSI, in its [views on crypto agility](/standards/national-algorithm-positions/anssi-pqc-position/) (19 January 2026) for developers and system architects, recommends the most trusted mechanisms for updates, naming hash-based signatures first and hybrid signatures as a good alternative, update keys that are not shared across devices and are held in a hardware security element, and replay protection.
 - For devices already shipped, whether any field update path for the verifier exists at all, confirmed with the supplier rather than assumed; if one does, the device moves to [Code and software signing](/technology-options/code-signing/).
 
 ## Traps
@@ -61,6 +62,7 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- ANSSI, ANSSI views on crypto agility, 19 January 2026 (Recommendations 4 and 5). [ANSSI crypto-agility note (PDF)](https://messervices.cyber.gouv.fr/documents-guides/ANSSI-views-on-crypto-agility.pdf)
 
 ## Related pages
 

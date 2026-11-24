@@ -59,6 +59,10 @@ eu:
   label: EU
   permalink: /eu
   description: Posts about the European Union and its member states acting together.
+france:
+  label: France
+  permalink: /france
+  description: Posts about French authorities, including ANSSI.
 germany:
   label: Germany
   permalink: /germany

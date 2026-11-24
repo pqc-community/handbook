@@ -33,7 +33,7 @@ A dash means the technology does not do that job, or another card covers it. Ver
 
 | Technology | Key establishment | Signatures and verification |
 | --- | --- | --- |
-| [PKI and certificates](/technology-options/pki/) | **Published.** ML-KEM keys in certificates used for key establishment (RFC 9935, March 2026) | **Published.** ML-DSA (RFC 9881), composite ML-DSA (RFC 10073), SLH-DSA (RFC 9909), and HSS and XMSS (RFC 9802) in X.509 |
+| [PKI and certificates](/technology-options/pki/) | **Published.** ML-KEM keys in certificates used for key establishment (RFC 9935, March 2026) | **Published.** ML-DSA (RFC 9881), composite ML-DSA (RFC 10073), SLH-DSA (RFC 9909), and HSS and XMSS (RFC 9802) in X.509; for public certificates, Chrome plans Merkle Tree Certificates, still a draft, rather than ML-DSA chains |
 | [DNSSEC](/technology-options/dnssec/) | — | **Draft.** ML-DSA-44 has DNSSEC algorithm number 18 from IANA, but its specification is an individual Internet-Draft |
 | [Identity and sign-in](/technology-options/identity/) | **Follows** the protocol underneath, where sign-in establishes keys | **Follows** [PKI](/technology-options/pki/) for certificates; **Supplier** for federation tokens, passkeys, and other sign-in protocols |
 | [Kerberos and directory sign-in](/technology-options/kerberos/) | **None yet** for certificate logon: PKINIT (RFC 4556) predates post-quantum; the core is symmetric | **Follows** [PKI](/technology-options/pki/) for smart-card logon certificates |
@@ -89,6 +89,7 @@ Commodity products that receive post-quantum support through supplier updates ne
 - IETF Datatracker, [draft-ietf-tls-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/), [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) and [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/).
 - IETF Datatracker, [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/) and [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/).
 
+- Google, Chrome Quantum-resistant Root Program, Frequently Asked Questions. [Chrome Quantum-resistant Root Program FAQ (HTML)](https://googlechrome.github.io/chromerootprogram/cqrp/faq/)
 - Post-Quantum Cryptography Coalition, State of the Migration, June 2026 heatmap. [PQCC heatmap](https://pqcc.org/learn-more/state-of-the-migration/)
 
 ## Related pages
