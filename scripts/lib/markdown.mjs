@@ -1,5 +1,5 @@
 // Shared helpers for reading the handbook's Markdown. Every check uses these,
-// so front matter, code blocks and tables are recognised the same way everywhere.
+// so front matter, code blocks and tables are recognized the same way everywhere.
 import fs from 'node:fs';
 import path from 'node:path';
 

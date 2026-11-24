@@ -9,7 +9,7 @@ These documents sit between the algorithm standards and the products a migration
 
 ## Which document do I need?
 
-- Does a product's cryptography carry a recognised validation? → [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/)
+- Does a product's cryptography carry a recognized validation? → [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/)
 - How should TLS be configured, and when will NIST cover post-quantum TLS? → [NIST SP 800-52](/standards/modules-protocols-certificates/sp-800-52/)
 - Which hybrid key exchange groups does post-quantum TLS 1.3 use? → [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/)
 - How are ML-DSA keys and signatures put in certificates, alone or paired with a classical algorithm? → [RFC 9881](/standards/modules-protocols-certificates/rfc-9881/) and [RFC 10073](/standards/modules-protocols-certificates/rfc-10073/)
@@ -19,13 +19,13 @@ These documents sit between the algorithm standards and the products a migration
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
-| FIPS 140-3 | Security requirements for cryptographic modules validated under the CMVP. Final, 22 March 2019; effective 22 September 2019. | [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/) |
+| FIPS 140-3 | Security requirements for cryptographic modules validated under the CMVP. Final, March 22, 2019; effective September 22, 2019. | [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/) |
 
 ### Protocols
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
-| NIST SP 800-52 Rev. 2 | Guidelines for selecting and configuring TLS. Final, 29 August 2019; revision with post-quantum support planned (note of 19 November 2026). | [NIST SP 800-52](/standards/modules-protocols-certificates/sp-800-52/) |
+| NIST SP 800-52 Rev. 2 | Guidelines for selecting and configuring TLS. Final, August 29, 2019; revision with post-quantum support planned (note of November 19, 2026). | [NIST SP 800-52](/standards/modules-protocols-certificates/sp-800-52/) |
 | RFC 10024 | Hybrid ML-KEM and elliptic-curve key agreement groups for TLS 1.3. Proposed Standard, August 2026. | [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/) |
 
 ### Certificates and identity
@@ -34,11 +34,11 @@ These documents sit between the algorithm standards and the products a migration
 | --- | --- | --- |
 | RFC 9881 | ML-DSA algorithm identifiers and encodings for X.509 certificates and CRLs. Proposed Standard, October 2025. | [RFC 9881](/standards/modules-protocols-certificates/rfc-9881/) |
 | RFC 10073 | Composite signatures pairing ML-DSA with a classical algorithm in X.509. Proposed Standard, November 2026. | [RFC 10073](/standards/modules-protocols-certificates/rfc-10073/) |
-| FIPS 201-3 | Personal Identity Verification (PIV) of US federal employees and contractors. Final, 24 January 2022. | [FIPS 201-3](/standards/modules-protocols-certificates/fips-201-3/) |
+| FIPS 201-3 | Personal Identity Verification (PIV) of US federal employees and contractors. Final, January 24, 2022. | [FIPS 201-3](/standards/modules-protocols-certificates/fips-201-3/) |
 
 ### Other post-quantum protocol and format specifications
 
-These IETF documents are not summarised in the handbook. Follow the links for current status.
+These IETF documents are not summarized in the handbook. Follow the links for current status.
 
 | Specification | Summary | Reference |
 | --- | --- | --- |
@@ -63,7 +63,7 @@ These IETF documents are not summarised in the handbook. Follow the links for cu
 ## Sources
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated July 3, 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - RFC Editor information pages for each RFC listed. [RFC Editor](https://www.rfc-editor.org/)
 
 ## Related pages

@@ -25,7 +25,7 @@ Symmetric cryptography has one hard problem: both parties need the same secret b
 
 NIST describes the first two as separate parts of the transition in [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) §2.1, and the rest of this handbook keeps them separate: key establishment protects **confidentiality**; signatures protect **authenticity and integrity**.
 
-Key establishment is not the same as encrypting the data, because the public-key step agrees a secret and symmetric algorithms derived from that secret then protect the traffic or file. The diagram shows that division of labour in a typical secure connection.
+Key establishment is not the same as encrypting the data, because the public-key step agrees a secret and symmetric algorithms derived from that secret then protect the traffic or file. The diagram shows that division of labor in a typical secure connection.
 
 ```mermaid
 flowchart TD
@@ -61,7 +61,7 @@ Continue with [Signatures, certificates, and trust](/learn/signatures-and-trust/
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1, §3.1.4). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - NIST, Digital Signature Standard, FIPS 186-5, February 2023. [FIPS 186-5](https://csrc.nist.gov/pubs/fips/186-5/final)
 - NIST, Recommendation for Pair-Wise Key-Establishment Schemes Using Discrete Logarithm Cryptography, SP 800-56A Rev. 3, April 2018. [SP 800-56A Rev. 3](https://csrc.nist.gov/pubs/sp/800/56/a/r3/final)
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, August 13, 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
 - IETF, PKCS #1: RSA Cryptography Specifications Version 2.2, RFC 8017, November 2016. [RFC 8017](https://www.rfc-editor.org/rfc/rfc8017)
 
 ## Related pages

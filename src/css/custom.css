@@ -12,7 +12,7 @@
   --ifm-font-weight-semibold: 700;
   --ifm-color-warning: #ff9f45;
   --ifm-code-font-size: 95%;
-  /* Homepage brand colours (brand-guidelines.md): Deep Teal hero, Surface Light text,
+  /* Homepage brand colors (brand-guidelines.md): Deep Teal hero, Surface Light text,
      and a darker teal for text links on Surface Light, where Primary Cyan is too pale. */
   --pqc-deep-teal: #013b4e;
   --pqc-surface-light: #f5fcfd;
@@ -56,7 +56,7 @@
   --ifm-footer-title-color: #f5fcfd;
 }
 
-/* The copyright line's licence link sits on Deep Teal in both modes, so it uses the footer link colour, underlined */
+/* The copyright line's license link sits on Deep Teal in both modes, so it uses the footer link color, underlined */
 .footer__copyright a {
   color: var(--ifm-footer-link-color);
   text-decoration: underline;
@@ -80,7 +80,7 @@
 }
 
 /* On phone screens, show 3- and 4-column tables as stacked cards, one per row,
-   with each cell labelled by its column heading (labels come from
+   with each cell labeled by its column heading (labels come from
    src/plugins/rehype-table-labels.mjs). Wider record tables still scroll. */
 @media (max-width: 576px) {
   .markdown table.table--stack {
@@ -133,7 +133,7 @@
 
 
 /* navbar.style 'dark' (docusaurus.config.ts) applies Infima's .navbar--dark, which sets its
-   own charcoal background. Restore the brand navbar colours (brand-guidelines.md):
+   own charcoal background. Restore the brand navbar colors (brand-guidelines.md):
    Deep Teal in light mode, Darker Teal in dark mode. */
 [data-theme='light'] .navbar--dark {
   --ifm-navbar-background-color: var(--pqc-deep-teal);

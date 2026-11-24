@@ -26,7 +26,7 @@ Post-quantum migration does not happen to "the cryptography" as a single switch.
 Three patterns follow from the table:
 
 - **Dependencies run downwards.** Applications cannot use an algorithm their library or HSM lacks, and NIST IR 8547 (§2.2) notes that infrastructure such as PKI may need to change before applications can.
-- **Key establishment is moving first.** NIST IR 8547 (§4.2) expects application guidance to prioritise quantum-resistant key establishment in interactive protocols such as TLS and IKE, because of harvest-now, decrypt-later.
+- **Key establishment is moving first.** NIST IR 8547 (§4.2) expects application guidance to prioritize quantum-resistant key establishment in interactive protocols such as TLS and IKE, because of harvest-now, decrypt-later.
 - **Identity and hardware move slowest.** NIST IR 8547 (§4.2) points to personal identity credentials, whose cards, readers, middleware, and PKI all need updating on multi-year cycles.
 
 ## One device, two changes
@@ -45,14 +45,14 @@ flowchart TD
 
 The device checks the server during the TLS connection, then separately checks the publisher's signature on the firmware image.
 
-- Moving the **download connection** to hybrid or post-quantum key exchange protects the image in transit against harvest-now, decrypt-later. The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) recommends post-quantum key-exchange profiles for TLS 1.3 while noting that post-quantum authentication in TLS is still being standardised, so the server certificate may stay classical for now.
+- Moving the **download connection** to hybrid or post-quantum key exchange protects the image in transit against harvest-now, decrypt-later. The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (October 15, 2026) recommends post-quantum key-exchange profiles for TLS 1.3 while noting that post-quantum authentication in TLS is still being standardized, so the server certificate may stay classical for now.
 - Moving the **firmware signature** requires a post-quantum signing key at the publisher *and* a verifier on the device that understands it. If that verifier lives in immutable boot code, no TLS change can help; that is the [long-lived verifier](/learn/signatures-and-trust/) case.
 
 Updating TLS does not update the firmware verifier, and updating the signing pipeline does not protect the download. Record them as two changes with two owners.
 
 ## Supplier release versus your configuration
 
-For most organisations, the work is not writing cryptography but getting it from suppliers and turning it on. The [Standardisation](/learn/standardisation/) layers apply here: configuration can enable support a product already ships; it cannot add support that is absent from the build. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (20 March 2025) expect that, for smaller organisations using commodity IT, migration will largely arrive as services are updated by their vendors — while bespoke software follows the same timetable as for larger organisations.
+For most organizations, the work is not writing cryptography but getting it from suppliers and turning it on. The [Standardization](/learn/standardization/) layers apply here: configuration can enable support a product already ships; it cannot add support that is absent from the build. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (March 20, 2025) expect that, for smaller organizations using commodity IT, migration will largely arrive as services are updated by their vendors — while bespoke software follows the same timetable as for larger organizations.
 
 ## Check your understanding
 
@@ -65,11 +65,11 @@ Continue with [Timelines](/learn/timelines/). For the handshake in more detail, 
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.2, §3.1, §4.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Using Transport Layer Security to protect data, 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
-- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK National Cyber Security Centre, Using Transport Layer Security to protect data, October 15, 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published March 20, 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 
 - [Learn the basics](/learn/)
-- [Inventory the cryptography](/plan/programme/inventory/)
+- [Inventory the cryptography](/plan/program/inventory/)
 - [Core actions](/plan/core-actions/)

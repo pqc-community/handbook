@@ -5,7 +5,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 
 // Writes the given files into a temporary folder, runs the callback with that
-// folder's path, and removes the folder afterwards.
+// folder's path, and removes the folder afterward.
 export function withRoot(files, run) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'pqc-check-'));
   for (const [name, body] of Object.entries(files)) {

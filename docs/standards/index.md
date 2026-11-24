@@ -10,42 +10,42 @@ Use these reference summaries to find the official text of each standard, govern
 
 ## Start with your question
 
-- **What must we do, and by when?** Binding dates belong to a named authority and audience. US federal agencies are bound by the [US government requirements](/standards/us-government-requirements/). Other organisations usually meet dates through national guidance, sector regulators, or contracts. Compare them in [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
+- **What must we do, and by when?** Binding dates belong to a named authority and audience. US federal agencies are bound by the [US government requirements](/standards/us-government-requirements/). Other organizations usually meet dates through national guidance, sector regulators, or contracts. Compare them in [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 - **Which algorithms are approved?** Start with the [post-quantum cryptography standards](/standards/post-quantum/), then NIST's transition schedule in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/).
 - **Do authorities agree on hybrid use?** No. Each position is recorded with its audience in [National algorithm positions](/standards/national-algorithm-positions/).
 - **How does an algorithm reach products?** Module validation, protocols, and certificate formats are in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/).
-- **How do we run the programme?** Read the [migration guides](/standards/migration-guides/), including supplier question sets.
+- **How do we run the program?** Read the [migration guides](/standards/migration-guides/), including supplier question sets.
 
 ## Categories
 
 Publications are grouped by their role in the transition:
 
-- **[Post-quantum cryptography](/standards/post-quantum/)**: NIST's approved post-quantum key-encapsulation and signature standards, KEM guidance, standardisation status reports, and what is still in development.
+- **[Post-quantum cryptography](/standards/post-quantum/)**: NIST's approved post-quantum key-encapsulation and signature standards, KEM guidance, standardization status reports, and what is still in development.
 - **[Transition and key management](/standards/transition-and-key-management/)**: NIST's transition schedule, algorithm and key-length transition rules, key management, and crypto-agility guidance.
 - **[Classical public-key (transitioning)](/standards/classical-public-key/)**: The quantum-vulnerable signature, curve, and key-establishment standards that post-quantum schemes replace.
 - **[Symmetric, hash, and KDF primitives](/standards/symmetric-and-hash/)**: Block ciphers, hash functions, MACs, key derivation, and random bit generators — largely not replaced, with named exceptions.
 - **[Modules, protocols, and certificates](/standards/modules-protocols-certificates/)**: Cryptographic module validation, TLS guidance and hybrid key agreement, post-quantum certificate formats, and federal identity credentials.
 - **[US government requirements](/standards/us-government-requirements/)**: The statute, presidential directives, OMB memorandum, and CISA acquisition guidance that govern US federal agencies.
 - **[National algorithm positions](/standards/national-algorithm-positions/)**: Where national authorities set algorithm choices and expectations on hybrid use.
-- **[Migration guides](/standards/migration-guides/)**: National, ETSI, and consortium guides for programme setup, discovery, and supplier engagement.
+- **[Migration guides](/standards/migration-guides/)**: National, ETSI, and consortium guides for program setup, discovery, and supplier engagement.
 
 ## How to read status
 
-- **Final** standards and RFCs can be cited as published; **drafts** can change and are labelled as drafts. **Selected** algorithms are not yet standards.
+- **Final** standards and RFCs can be cited as published; **drafts** can change and are labeled as drafts. **Selected** algorithms are not yet standards.
 - A NIST FIPS is not automatically mandatory for every federal system. NIST's FIPS compliance FAQ says each FIPS's applicability section sets when it is mandatory, and that FIPS do not apply to national security systems.
-- NIST Special Publications and Internal Reports, IETF RFCs, ETSI reports, and national guides recommend or inform. They bind an organisation only where a law, directive, regulator, or contract makes them do so.
+- NIST Special Publications and Internal Reports, IETF RFCs, ETSI reports, and national guides recommend or inform. They bind an organization only where a law, directive, regulator, or contract makes them do so.
 - Standards publication is not product release or deployment. See [From research to deployment](/learn/explainers/research-to-deployment/).
 
 Each handbook page's own `Sources` list names the works it uses. Sources are reviewed when a cited publication is updated; report a stale link or superseded edition on the [GitHub issue tracker](https://github.com/pqc-community/handbook/issues).
 
 ## Sources
 
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated July 3, 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 
-- [Standardisation](/learn/standardisation/)
+- [Standardization](/learn/standardization/)
 - [Timelines](/learn/timelines/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Choosing options](/technology-options/choosing/)

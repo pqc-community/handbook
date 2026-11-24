@@ -39,7 +39,7 @@ Verifiers generally have to move *before* signers switch, or signatures will be 
 
 ## Why urgency comes from time, not data
 
-Recorded signatures do not leak secrets later, so there is no harvest-now, decrypt-later pressure. NIST IR 8547 (§3) still calls the signature transition urgent because it lasts longer, is more complex, and involves more parties. Section 3.1.2 adds a sharper edge: authentication systems can keep using quantum-vulnerable algorithms until a capable quantum computer is available, at which point they would need to transition *immediately*. An organisation that has not prepared its verifiers cannot do that.
+Recorded signatures do not leak secrets later, so there is no harvest-now, decrypt-later pressure. NIST IR 8547 (§3) still calls the signature transition urgent because it lasts longer, is more complex, and involves more parties. Section 3.1.2 adds a sharper edge: authentication systems can keep using quantum-vulnerable algorithms until a capable quantum computer is available, at which point they would need to transition *immediately*. An organization that has not prepared its verifiers cannot do that.
 
 ## Worked example
 
@@ -49,7 +49,7 @@ The fictional manufacturer in [Protect this first](/templates/examples/protect-t
 
 - Count verifiers, not just signers; the slowest verifier sets the pace.
 - Infrastructure (HSMs, CAs, trust stores) usually has to move before applications.
-- Plan signature migrations as multi-party programmes with an agreed order and rollback.
+- Plan signature migrations as multi-party programs with an agreed order and rollback.
 
 ## Sources
 

@@ -1,13 +1,13 @@
 ---
-title: Programme
-search_title: Run a post-quantum migration programme
+title: Program
+search_title: Run a post-quantum migration program
 sidebar_label: Overview
-pagination_label: Programme
-description: "First moves for each question that applied, small and full programme sizes, and the practices in three phases: diagnose, order and schedule, and execute."
+pagination_label: Program
+description: "First moves for each question that applied, small and full program sizes, and the practices in three phases: diagnose, order and schedule, and execute."
 displayed_sidebar: journeySidebar
 ---
 
-Run a programme when any of the [four questions](/plan/) applies, and keep following the core actions for everything you buy in, because the programme covers only what the questions found. Start by naming the owner, which is core action 1.
+Run a program when any of the [four questions](/plan/) applies, and keep following the core actions for everything you buy in, because the program covers only what the questions found. Start by naming the owner, which is core action 1.
 
 If you run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself, bring in specialist advice. Ask your sector regulator which requirements and dates apply to you and what evidence it expects. The first moves only gather facts, so they need not wait for the regulator's answer.
 
@@ -28,8 +28,8 @@ If customers are asking about your post-quantum plans, answer from the register:
 
 Count a system as one service or product with one owner, such as a portal and its servers, a hosted service a supplier runs for you, or one device model, not each server or site.
 
-- **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeping the register and a change record for each change, but needs no charter or progress report.
-- **Full programme**: anything larger, any device with a fixed key, or any organisation whose answers send it to a specialist and regulator first. It needs a named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
+- **Small program**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeping the register and a change record for each change, but needs no charter or progress report.
+- **Full program**: anything larger, any device with a fixed key, or any organization whose answers send it to a specialist and regulator first. It needs a named sponsor and migration lead, a one-page program charter, and a progress report at each review.
 
 ## Diagnose, order and schedule, execute
 
@@ -37,21 +37,21 @@ The practices run in three phases, which overlap, because supplier questions sta
 
 **Diagnose**
 
-- [Set up the programme](/plan/programme/set-up/): for a full programme, the sponsor, lead, scope, and a first budget line.
-- [Inventory the cryptography](/plan/programme/inventory/): find where public-key cryptography is used, starting with the systems the questions found.
+- [Set up the program](/plan/program/set-up/): for a full program, the sponsor, lead, scope, and a first budget line.
+- [Inventory the cryptography](/plan/program/inventory/): find where public-key cryptography is used, starting with the systems the questions found.
 
 **Order and schedule**
 
-- [Decide what to migrate first](/plan/programme/priority/): order the rows within each job, with key establishment going by the longest confidentiality period, devices with a fixed key by the earliest design freeze, and other signatures by the most relying parties.
-- [Set dates and milestones](/plan/programme/dates/): the dates that apply, and four dates for each row.
-- [Work with suppliers](/plan/programme/suppliers/): written questions, judged answers, and purchase wording.
+- [Decide what to migrate first](/plan/program/priority/): order the rows within each job, with key establishment going by the longest confidentiality period, devices with a fixed key by the earliest design freeze, and other signatures by the most relying parties.
+- [Set dates and milestones](/plan/program/dates/): the dates that apply, and four dates for each row.
+- [Work with suppliers](/plan/program/suppliers/): written questions, judged answers, and purchase wording.
 
 **Execute**
 
 - [Choose an option](/technology-options/choosing/), using the technology card for the system. For key establishment, start with TLS, VPN and IPsec, SSH, or backups and archives; for signatures, PKI, code signing, or document signing; for devices with a fixed key, firmware and secure boot.
-- [Make and verify one change](/plan/programme/implementation/): pilot, rollback trigger, and a check that the new method is live.
-- [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
-- [Review and report](/plan/programme/subsequent-review/): every six months, and every three months while a fixed date, such as a design freeze or end of support, falls within the next year. A programme review replaces the separate six-monthly review of the core actions, so check them at the same time.
+- [Make and verify one change](/plan/program/implementation/): pilot, rollback trigger, and a check that the new method is live.
+- [Keep the ability to change again](/plan/program/changing-algorithms-again/).
+- [Review and report](/plan/program/subsequent-review/): every six months, and every three months while a fixed date, such as a design freeze or end of support, falls within the next year. A program review replaces the separate six-monthly review of the core actions, so check them at the same time.
 
 ## When no option exists in time
 
@@ -59,7 +59,7 @@ If no supported option exists before a fixed date, such as a design freeze or th
 
 ## Records
 
-Every programme keeps the register and a change record for each change you make, and a full programme adds the programme charter and a progress report at each review. [Protect this first](/templates/examples/protect-this-first/) shows a full programme for a fictional manufacturer, and [Templates](/templates/) has every record.
+Every program keeps the register and a change record for each change you make, and a full program adds the program charter and a progress report at each review. [Protect this first](/templates/examples/protect-this-first/) shows a full program for a fictional manufacturer, and [Templates](/templates/) has every record.
 
 ## Sources
 

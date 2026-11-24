@@ -3,7 +3,7 @@ title: "NIST CSWP 39: Considerations for Achieving Crypto Agility"
 search_title: "NIST CSWP 39: achieving crypto agility"
 sidebar_label: CSWP 39 (Crypto agility)
 displayed_sidebar: standardsSidebar
-description: NIST white paper on the capabilities, strategies and practices organisations need to replace and adapt cryptographic algorithms without disrupting operations.
+description: NIST white paper on the capabilities, strategies and practices organizations need to replace and adapt cryptographic algorithms without disrupting operations.
 ---
 
 ## What it covers
@@ -30,20 +30,20 @@ NIST published the paper, written by NIST staff with co-authors from outside NIS
 
 ## Relationship with other standards
 
-CSWP 39 addresses the capability behind the schedules in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/): IR 8547 says a smooth transition requires building long-term cryptographic agility into organisational infrastructure so that updates can follow as post-quantum standards evolve. Where IR 8547 and [SP 800-131A](/standards/transition-and-key-management/sp-800-131a/) say which algorithms are deprecated or disallowed and when, CSWP 39 is about being able to make such changes in practice, now and in later transitions. The NIST National Cybersecurity Center of Excellence (NCCoE) says in its Migration to PQC FAQ (updated 18 November 2026) that the project is now using NIST Cybersecurity White Papers, including CSWP 39 and CSWP 48, to share progress.
+CSWP 39 addresses the capability behind the schedules in [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/): IR 8547 says a smooth transition requires building long-term cryptographic agility into organizational infrastructure so that updates can follow as post-quantum standards evolve. Where IR 8547 and [SP 800-131A](/standards/transition-and-key-management/sp-800-131a/) say which algorithms are deprecated or disallowed and when, CSWP 39 is about being able to make such changes in practice, now and in later transitions. The NIST National Cybersecurity Center of Excellence (NCCoE) says in its Migration to PQC FAQ (updated November 18, 2026) that the project is now using NIST Cybersecurity White Papers, including CSWP 39 and CSWP 48, to share progress.
 
-Agility needs to be planned separately for key establishment, for digital signatures and for long-lived verifiers such as roots of trust, because each changes on a different path. For the handbook's practical treatment, see [Crypto-agility and the next transition](/learn/crypto-agility/) and [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
+Agility needs to be planned separately for key establishment, for digital signatures and for long-lived verifiers such as roots of trust, because each changes on a different path. For the handbook's practical treatment, see [Crypto-agility and the next transition](/learn/crypto-agility/) and [Keep the ability to change again](/plan/program/changing-algorithms-again/).
 
 ## Sources
 
-- NIST, Considerations for Achieving Crypto Agility: Strategies and Practices, NIST CSWP 39 upd1, published 19 December 2025, includes updates as of 29 June 2026. [CSRC publication page](https://csrc.nist.gov/pubs/cswp/39/upd1/considerations-for-achieving-crypto-agility/final) / [DOI](https://doi.org/10.6028/NIST.CSWP.39-upd1)
-- NIST, Considerations for Achieving Cryptographic Agility: Strategies and Practices, NIST CSWP 39 (withdrawn 29 June 2026; drafts 5 March 2025 and 17 July 2025). [CSRC publication page](https://csrc.nist.gov/pubs/cswp/39/considerations-for-achieving-cryptographic-agility/final)
+- NIST, Considerations for Achieving Crypto Agility: Strategies and Practices, NIST CSWP 39 upd1, published December 19, 2025, includes updates as of June 29, 2026. [CSRC publication page](https://csrc.nist.gov/pubs/cswp/39/upd1/considerations-for-achieving-crypto-agility/final) / [DOI](https://doi.org/10.6028/NIST.CSWP.39-upd1)
+- NIST, Considerations for Achieving Cryptographic Agility: Strategies and Practices, NIST CSWP 39 (withdrawn June 29, 2026; drafts March 5, 2025, and July 17, 2025). [CSRC publication page](https://csrc.nist.gov/pubs/cswp/39/considerations-for-achieving-cryptographic-agility/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST NCCoE, Frequently Asked Questions about Post-Quantum Cryptography, last updated 18 November 2026. [FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
+- NIST NCCoE, Frequently Asked Questions about Post-Quantum Cryptography, last updated November 18, 2026. [FAQ (HTML)](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)
 
 ## Related pages
 
 - [Transition and key-management publications](/standards/transition-and-key-management/)
 - [Crypto-agility and the next transition](/learn/crypto-agility/)
-- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/program/changing-algorithms-again/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)

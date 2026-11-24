@@ -5,7 +5,7 @@ displayed_sidebar: standardsSidebar
 description: NIST publications that set the schedule for retiring quantum-vulnerable cryptography, record approval status, guide key management and describe crypto agility.
 ---
 
-These NIST publications explain when quantum-vulnerable algorithms leave NIST standards, how NIST records changes in algorithm approval status, how keys should be managed through their lifecycle, and how organisations can build the agility to change algorithms again. None of them is binding on its own: NIST SPs are guidance and recommendations for US federal agencies, and NIST IRs and white papers are informative. Binding US federal deadlines come from directives such as [EO 14412](/standards/us-government-requirements/eo-14412/) and [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/).
+These NIST publications explain when quantum-vulnerable algorithms leave NIST standards, how NIST records changes in algorithm approval status, how keys should be managed through their lifecycle, and how organizations can build the agility to change algorithms again. None of them is binding on its own: NIST SPs are guidance and recommendations for US federal agencies, and NIST IRs and white papers are informative. Binding US federal deadlines come from directives such as [EO 14412](/standards/us-government-requirements/eo-14412/) and [OMB M-26-15](/standards/us-government-requirements/omb-m-26-15/).
 
 ## Which document do I need?
 
@@ -18,15 +18,15 @@ These NIST publications explain when quantum-vulnerable algorithms leave NIST st
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
-| NIST IR 8547 | Final, 27 October 2026. NIST's schedule: quantum-vulnerable public-key algorithms deprecated after 2030 and disallowed under NIST standards and guidelines after 2035; also records earlier US federal deadlines. | [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) |
-| NIST SP 800-131A | Rev. 2 final, 21 March 2019; Rev. 3 initial public draft 21 October 2024, still a draft. Records approval status of algorithms and key lengths. | [NIST SP 800-131A](/standards/transition-and-key-management/sp-800-131a/) |
+| NIST IR 8547 | Final, October 27, 2026. NIST's schedule: quantum-vulnerable public-key algorithms deprecated after 2030 and disallowed under NIST standards and guidelines after 2035; also records earlier US federal deadlines. | [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) |
+| NIST SP 800-131A | Rev. 2 final, March 21, 2019; Rev. 3 initial public draft October 21, 2024, still a draft. Records approval status of algorithms and key lengths. | [NIST SP 800-131A](/standards/transition-and-key-management/sp-800-131a/) |
 
 ### Key management and agility
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
-| NIST SP 800-57 Part 1 | Rev. 5 final, 4 May 2020; Rev. 6 initial public draft 5 December 2025, still a draft. General key-management guidance and comparable security strengths. | [NIST SP 800-57 Part 1](/standards/transition-and-key-management/sp-800-57-part-1/) |
-| NIST CSWP 39 | Upd1 final, published 19 December 2025 with updates as of 29 June 2026. White paper on strategies and practices for crypto agility. | [NIST CSWP 39](/standards/transition-and-key-management/nist-cswp-39/) |
+| NIST SP 800-57 Part 1 | Rev. 5 final, May 4, 2020; Rev. 6 initial public draft December 5, 2025, still a draft. General key-management guidance and comparable security strengths. | [NIST SP 800-57 Part 1](/standards/transition-and-key-management/sp-800-57-part-1/) |
+| NIST CSWP 39 | Upd1 final, published December 19, 2025, with updates as of June 29, 2026. White paper on strategies and practices for crypto agility. | [NIST CSWP 39](/standards/transition-and-key-management/nist-cswp-39/) |
 
 ## Sources
 
@@ -40,4 +40,4 @@ These NIST publications explain when quantum-vulnerable algorithms leave NIST st
 - [Standards](/standards/)
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/)
 - [Crypto-agility and the next transition](/learn/crypto-agility/)
-- [Decide what to migrate first](/plan/programme/priority/)
+- [Decide what to migrate first](/plan/program/priority/)

@@ -10,7 +10,7 @@ description: The NSA's CNSA 2.0 algorithm suite for US National Security Systems
 
 The Commercial National Security Algorithm Suite 2.0 (CNSA 2.0) is the set of public-standard algorithms that the US National Security Agency (NSA) specifies for protecting National Security Systems (NSS) against both classical and quantum-capable attackers. This summary follows the NSA's frequently asked questions document (October 2026, Version 2.2), which sets out the algorithms, the transition dates and the NSA's view on hybrid use.
 
-The NSA states that the FAQ clarifies CNSA 2.0 requirements for NSS and gives recommended guidance for the Department of War and the Defense Industrial Base. The NSA adds that it may be useful more generally, especially for those who interact with NSS, Department of War or Defense Industrial Base systems. Organisations outside that audience are not bound by CNSA 2.0 and should read it as one authority's position for its own systems.
+The NSA states that the FAQ clarifies CNSA 2.0 requirements for NSS and gives recommended guidance for the Department of War and the Defense Industrial Base. The NSA adds that it may be useful more generally, especially for those who interact with NSS, Department of War or Defense Industrial Base systems. Organizations outside that audience are not bound by CNSA 2.0 and should read it as one authority's position for its own systems.
 
 :::info[Official texts]
 
@@ -34,7 +34,7 @@ CNSA 2.0 selects specific parameter sets from NIST standards. For general-purpos
 
 The FAQ states that the NSA has confidence in CNSA 2.0 and will not require NSS developers to use hybrid certified products for security purposes. It acknowledges that product availability and interoperability requirements may lead to hybrid solutions in specific cases, and that some protocols may need hybrid-like constructions to accommodate the sizes of ML-KEM-1024 and ML-DSA-87. Other authorities take different positions on hybrids; see the [comparison of national algorithm positions](/standards/national-algorithm-positions/) and [Hybrid cryptography](/learn/hybrid/).
 
-The dates sit within the wider US framework set by [NSM-10](/standards/us-government-requirements/nsm-10/), which sets a 2035 goal for mitigating as much quantum risk as feasible. The FAQ attributes the dates to CNSSP 15; this summary records them only as the FAQ states them and does not summarise CNSSP 15 itself.
+The dates sit within the wider US framework set by [NSM-10](/standards/us-government-requirements/nsm-10/), which sets a 2035 goal for mitigating as much quantum risk as feasible. The FAQ attributes the dates to CNSSP 15; this summary records them only as the FAQ states them and does not summarize CNSSP 15 itself.
 
 ## Sources
 

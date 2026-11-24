@@ -14,17 +14,17 @@ Cryptography that uses a matched pair of keys, which the lessons call [public-ke
 
 ## Block cipher
 
-A symmetric algorithm that encrypts data in fixed-size blocks under one secret key. The same key decrypts those blocks. AES is the familiar example. A block cipher encrypts one block at a time, and the protocol decides how those blocks are combined for a longer message. It is not [public-key cryptography](#public-key-cryptography), which uses a matched pair of keys, and it is not a key-encapsulation mechanism, which only establishes a shared secret. A stream cipher is the neighbouring symmetric algorithm: it encrypts a stream of bits rather than a fixed-size block. In the lessons, a protocol such as TLS derives symmetric keys from a shared secret, and a block cipher is one way those keys protect the bulk of the traffic. See [Public-key cryptography](/learn/public-key-cryptography/).
+A symmetric algorithm that encrypts data in fixed-size blocks under one secret key. The same key decrypts those blocks. AES is the familiar example. A block cipher encrypts one block at a time, and the protocol decides how those blocks are combined for a longer message. It is not [public-key cryptography](#public-key-cryptography), which uses a matched pair of keys, and it is not a key-encapsulation mechanism, which only establishes a shared secret. A stream cipher is the neighboring symmetric algorithm: it encrypts a stream of bits rather than a fixed-size block. In the lessons, a protocol such as TLS derives symmetric keys from a shared secret, and a block cipher is one way those keys protect the bulk of the traffic. See [Public-key cryptography](/learn/public-key-cryptography/).
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, names Grover's algorithm as the more limited threat, which does not by itself retire [symmetric cryptography](#symmetric-cryptography) on the same timetable. See [The quantum threat](/learn/quantum-threat/).
 
 ## CBOM (cryptography bill of materials)
 
-A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (22 June 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The [register](#register) still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/plan/programme/inventory/).
+A list of the cryptographic components in a product, on the same idea as a software bill of materials. NIST SP 1800-38B ([preliminary draft](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf), December 2023) describes it as a developing model, and it is not a requirement of this handbook. In the United States, [Executive Order 14412](/standards/us-government-requirements/eo-14412/) (June 22, 2026) directs CISA, with NIST, to publish guidance on the minimum elements of a CBOM within 270 days. The [register](#register) still needs one row per system, including cryptography a scan cannot see. See [Inventory the cryptography](/plan/program/inventory/).
 
 ## Certificate
 
-A signed binding between a name and a public key. The issuer signs that binding, and a verifier checks the signature before it trusts the key for the named site, device, or organisation. The certificate does not contain the private key, and one certificate is not the whole chain. The leaf certificate is the one for the site or the device. The [certificate chain](#certificate-chain) runs from that leaf, through an intermediate, to a trust anchor the verifier already holds. A new signature algorithm has to be accepted by the issuer and by the verifiers, not only written onto the leaf. See [PKI and certificates](/technology-options/pki/) and [In real systems](/learn/in-real-systems/).
+A signed binding between a name and a public key. The issuer signs that binding, and a verifier checks the signature before it trusts the key for the named site, device, or organization. The certificate does not contain the private key, and one certificate is not the whole chain. The leaf certificate is the one for the site or the device. The [certificate chain](#certificate-chain) runs from that leaf, through an intermediate, to a trust anchor the verifier already holds. A new signature algorithm has to be accepted by the issuer and by the verifiers, not only written onto the leaf. See [PKI and certificates](/technology-options/pki/) and [In real systems](/learn/in-real-systems/).
 
 ## Certificate chain
 
@@ -32,7 +32,7 @@ The linked certificates from the leaf certificate for a site or a device, throug
 
 ## CNSA 2.0
 
-The Commercial National Security Algorithm Suite 2.0: the quantum-resistant algorithms the US National Security Agency approves for national security systems. NSA's CNSA 2.0 FAQ (version 2.2, October 2026) names AES-256, ML-KEM-1024, ML-DSA-87, SHA-384 or SHA-512, and, for firmware and software signing, LMS and XMSS. It applies to national security systems and the suppliers to them, not to organisations in general. See [NSA CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/).
+The Commercial National Security Algorithm Suite 2.0: the quantum-resistant algorithms the US National Security Agency approves for national security systems. NSA's CNSA 2.0 FAQ (version 2.2, October 2026) names AES-256, ML-KEM-1024, ML-DSA-87, SHA-384 or SHA-512, and, for firmware and software signing, LMS and XMSS. It applies to national security systems and the suppliers to them, not to organizations in general. See [NSA CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/).
 
 ## Composite signature
 
@@ -40,15 +40,15 @@ A single signature object that combines a post-quantum and a classical signature
 
 ## Core actions
 
-The short plan every organisation follows, whether or not it also runs a programme. Of its seven actions, the first four are to name an owner, list what is in use, keep it supported and updated, and replace what is out of support. The other three are to put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the core actions are the whole plan. An organisation following them keeps two records: the [register](#register) and the purchase wording. See [Core actions](/plan/core-actions/).
+The short plan every organization follows, whether or not it also runs a program. Of its seven actions, the first four are to name an owner, list what is in use, keep it supported and updated, and replace what is out of support. The other three are to put post-quantum wording into purchases and renewals, count nothing as migrated without evidence, and review every six months. Where no question in [Which plan you need](#which-plan-you-need) applies, the core actions are the whole plan. An organization following them keeps two records: the [register](#register) and the purchase wording. See [Core actions](/plan/core-actions/).
 
 ## Crypto-agility
 
-The ability to change algorithms again after this migration, because choosing a construction now does not close the programme. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/plan/programme/changing-algorithms-again/).
+The ability to change algorithms again after this migration, because choosing a construction now does not close the program. Configuration, an owner, dependencies, tests, a change window, and a deprecation path still have to exist so a later construction can replace the one in use. The [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) tells stakeholders to remain cryptographically agile so they can adapt. See [Keep the ability to change again](/plan/program/changing-algorithms-again/).
 
 ## Cryptographic module
 
-The [Cryptographic Module Validation Program](https://csrc.nist.gov/projects/cryptographic-module-validation-program) (CMVP), a joint programme of NIST and the Canadian Centre for Cyber Security, validates modules to [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final), March 2019. The [NIST glossary](https://csrc.nist.gov/glossary/term/cryptographic_module), citing that standard, defines a cryptographic module as the set of hardware, software, and/or firmware that implements approved security functions, including cryptographic algorithms and key generation, and is contained within the cryptographic boundary.
+The [Cryptographic Module Validation Program](https://csrc.nist.gov/projects/cryptographic-module-validation-program) (CMVP), a joint program of NIST and the Canadian Centre for Cyber Security, validates modules to [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final), March 2019. The [NIST glossary](https://csrc.nist.gov/glossary/term/cryptographic_module), citing that standard, defines a cryptographic module as the set of hardware, software, and/or firmware that implements approved security functions, including cryptographic algorithms and key generation, and is contained within the cryptographic boundary.
 
 The module is that implementation, not the name of an algorithm, so ML-KEM is not a cryptographic module. A library, a chip, or a firmware image can be one when those functions sit inside its cryptographic boundary. A claim that a product is FIPS 140 validated names that module, but it does not say the product has moved to a post-quantum algorithm. See [Algorithms](/learn/algorithms/) and [Choosing an option](/technology-options/choosing/).
 
@@ -66,7 +66,7 @@ Origin authenticity means the check shows that the holder of the private key app
 
 ## Discovery
 
-Finding where cryptography is used, including what a scan cannot see, since a scan of libraries and configurations finds some of it but misses embedded and hardware-bound cryptography and cryptography inside a supplier's product. Those gaps stay on the [register](#register) as unknown until each job's row names the construction that protects it today. See [Inventory the cryptography](/plan/programme/inventory/).
+Finding where cryptography is used, including what a scan cannot see, since a scan of libraries and configurations finds some of it but misses embedded and hardware-bound cryptography and cryptography inside a supplier's product. Those gaps stay on the [register](#register) as unknown until each job's row names the construction that protects it today. See [Inventory the cryptography](/plan/program/inventory/).
 
 ## Dual signature
 
@@ -74,7 +74,7 @@ Finding where cryptography is used, including what a scan cannot see, since a sc
 
 ## Encryption
 
-A transformation that hides data so it can be read again only with the matching key, and its reversal is decryption. A [digital signature](#digital-signature) does not do this job, because the signature shows that the holder of the private key approved the message, and checking it does not recover a hidden message. Symmetric encryption uses one shared secret both to encrypt and to decrypt, and that step carries the bulk of the traffic once a key has been established. A [block cipher](#block-cipher) is one symmetric algorithm that does it. Public-key encryption uses the public key to encrypt and the private key to decrypt, but [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) do not standardise public-key encryption. A key-encapsulation mechanism establishes a shared secret and does not encrypt the message. See [Public-key cryptography](/learn/public-key-cryptography/) and [Algorithms](/learn/algorithms/).
+A transformation that hides data so it can be read again only with the matching key, and its reversal is decryption. A [digital signature](#digital-signature) does not do this job, because the signature shows that the holder of the private key approved the message, and checking it does not recover a hidden message. Symmetric encryption uses one shared secret both to encrypt and to decrypt, and that step carries the bulk of the traffic once a key has been established. A [block cipher](#block-cipher) is one symmetric algorithm that does it. Public-key encryption uses the public key to encrypt and the private key to decrypt, but [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) do not standardize public-key encryption. A key-encapsulation mechanism establishes a shared secret and does not encrypt the message. See [Public-key cryptography](/learn/public-key-cryptography/) and [Algorithms](/learn/algorithms/).
 
 ## eXtendable-Output Function (XOF)
 
@@ -84,13 +84,13 @@ A [hash function](#hash-function) such as SHA3-256 produces one fixed-length dig
 
 ## FIPS (Federal Information Processing Standard)
 
-A standard NIST issues for US federal computer systems, such as FIPS 203 for ML-KEM. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (content last updated 3 July 2024) says FIPS are not always mandatory for federal agencies: each FIPS's applicability section says when it is. FIPS do not apply to national security systems, and many private-sector organisations use them voluntarily. See [How to read status](/standards/#how-to-read-status).
+A standard NIST issues for US federal computer systems, such as FIPS 203 for ML-KEM. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (content last updated July 3, 2024) says FIPS are not always mandatory for federal agencies: each FIPS's applicability section says when it is. FIPS do not apply to national security systems, and many private-sector organizations use them voluntarily. See [How to read status](/standards/#how-to-read-status).
 
 ## Forward secrecy
 
 [NIST SP 800-52 Rev. 2](https://csrc.nist.gov/pubs/sp/800/52/r2/final), August 2019, describes perfect forward secrecy as the condition in which the compromise of a long-term private key, after it has been used to establish a session key, does not cause the compromise of that session key. Cipher suites that use ephemeral Diffie-Hellman provide that property.
 
-The long-term private key is the one a certificate holds. The session key is a fresh secret for one connection, established with an ephemeral private key that is then discarded. A later theft of the long-term private key does not recover those session keys. A static key pair reused across connections does not give that property. Forward secrecy is not a defence against [harvest-now, decrypt-later](#harvest-now-decrypt-later): an attacker who recorded the handshake can still recover the session key later if the ephemeral key-establishment algorithm itself is broken. See [The quantum threat](/learn/quantum-threat/) and [Technology options](/technology-options/).
+The long-term private key is the one a certificate holds. The session key is a fresh secret for one connection, established with an ephemeral private key that is then discarded. A later theft of the long-term private key does not recover those session keys. A static key pair reused across connections does not give that property. Forward secrecy is not a defense against [harvest-now, decrypt-later](#harvest-now-decrypt-later): an attacker who recorded the handshake can still recover the session key later if the ephemeral key-establishment algorithm itself is broken. See [The quantum threat](/learn/quantum-threat/) and [Technology options](/technology-options/).
 
 ## Harvest-now, decrypt-later
 
@@ -106,7 +106,7 @@ With SHA-256 as the familiar example, the same message always produces the same 
 
 ## HQC
 
-A key-encapsulation mechanism that NIST selected in [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final) (March 2025) as an alternative to ML-KEM. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says a FIPS specifying it is under development and that it will become an approved scheme once published, so until then it is selected, not standardised. See [Post-quantum algorithms](/learn/algorithms/).
+A key-encapsulation mechanism that NIST selected in [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final) (March 2025) as an alternative to ML-KEM. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, says a FIPS specifying it is under development and that it will become an approved scheme once published, so until then it is selected, not standardized. See [Post-quantum algorithms](/learn/algorithms/).
 
 ## Hybrid
 
@@ -178,17 +178,17 @@ The public-key infrastructure that issues and checks certificates. A certificate
 
 ## Post-quantum cryptography (PQC)
 
-[Public-key cryptography](#public-key-cryptography) intended to stay secure against a cryptographically relevant quantum computer, if one is built, with algorithms that run on ordinary computers. Parties still use public keys, private keys, key establishment, and signatures, and the hard problems are chosen so that known quantum attacks on today's RSA and elliptic-curve schemes do not apply on the same terms. It is not a guarantee against every future attack, and it is not quantum key distribution, which uses specialised quantum channels rather than public-key cryptography on ordinary networks. See [What post-quantum means](/learn/what-post-quantum-means/).
+[Public-key cryptography](#public-key-cryptography) intended to stay secure against a cryptographically relevant quantum computer, if one is built, with algorithms that run on ordinary computers. Parties still use public keys, private keys, key establishment, and signatures, and the hard problems are chosen so that known quantum attacks on today's RSA and elliptic-curve schemes do not apply on the same terms. It is not a guarantee against every future attack, and it is not quantum key distribution, which uses specialized quantum channels rather than public-key cryptography on ordinary networks. See [What post-quantum means](/learn/what-post-quantum-means/).
 
-## Programme
+## Program
 
-The work an organisation runs, in addition to the [core actions](#core-actions), for the systems the four questions in [Which plan you need](#which-plan-you-need) identified. It opens with one first move for each question that applied, then runs in three phases: diagnose, order and schedule, and execute. A small programme covers one or two systems with no device that has a fixed key. Anything larger, any such device, or an organisation sent to specialist advice and its regulator first needs a full programme with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Programme](/plan/programme/).
+The work an organization runs, in addition to the [core actions](#core-actions), for the systems the four questions in [Which plan you need](#which-plan-you-need) identified. It opens with one first move for each question that applied, then runs in three phases: diagnose, order and schedule, and execute. A small program covers one or two systems with no device that has a fixed key. Anything larger, any such device, or an organization sent to specialist advice and its regulator first needs a full program with a named sponsor and migration lead, a one-page charter, and a progress report at each review. See [Program](/plan/program/).
 
 ## Public-key cryptography
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547), October 2026, defines public-key cryptography as cryptography that uses two separate keys to exchange data, one to encrypt or digitally sign the data and one to decrypt the data or verify the digital signature. It says this is also known as [asymmetric cryptography](#asymmetric-cryptography).
 
-These lessons use that name for the same matched pair of keys, in which the public key can be shared and the private key stays secret. The jobs in these lessons are [key establishment](#key-establishment) and a [digital signature](#digital-signature), and [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) do not standardise public-key encryption of the message. [Symmetric cryptography](#symmetric-cryptography) uses one shared secret for the bulk of the traffic once that public-key step is finished. [Post-quantum cryptography](#post-quantum-cryptography-pqc) is public-key cryptography aimed at a quantum computer. A [PKI](#pki-public-key-infrastructure) issues the certificates, but it is not the cryptography itself. See [Asymmetric cryptography](#asymmetric-cryptography) and [Public-key cryptography](/learn/public-key-cryptography/).
+These lessons use that name for the same matched pair of keys, in which the public key can be shared and the private key stays secret. The jobs in these lessons are [key establishment](#key-establishment) and a [digital signature](#digital-signature), and [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) do not standardize public-key encryption of the message. [Symmetric cryptography](#symmetric-cryptography) uses one shared secret for the bulk of the traffic once that public-key step is finished. [Post-quantum cryptography](#post-quantum-cryptography-pqc) is public-key cryptography aimed at a quantum computer. A [PKI](#pki-public-key-infrastructure) issues the certificates, but it is not the cryptography itself. See [Asymmetric cryptography](#asymmetric-cryptography) and [Public-key cryptography](/learn/public-key-cryptography/).
 
 ## Quantum-resistant algorithm
 
@@ -204,7 +204,7 @@ RSA and elliptic-curve public-key schemes are the familiar examples, whereas a [
 
 ## Register
 
-The one record every organisation keeps, which the [core actions](#core-actions) start and to which a [programme](#programme) adds its order and dates. It has one row per system and job, giving the owner, what protects it today, the supplier's answer and its judgement, the dates that apply, the next step, the status, and the next review. See [Register](/templates/records/register/).
+The one record every organization keeps, which the [core actions](#core-actions) start and to which a [program](#program) adds its order and dates. It has one row per system and job, giving the owner, what protects it today, the supplier's answer and its judgment, the dates that apply, the next step, the status, and the next review. See [Register](/templates/records/register/).
 
 ## Relying party
 
@@ -238,25 +238,25 @@ The component that checks a signature. When every verifier can be updated, the s
 
 ## Which plan you need
 
-Four questions about the organisation as a whole that decide whether the [core actions](#core-actions) are enough or a [programme](#programme) is also needed. They cover data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a programme. See [Which plan you need](/plan/).
+Four questions about the organization as a whole that decide whether the [core actions](#core-actions) are enough or a [program](#program) is also needed. They cover data that must stay secret for years, devices with a fixed key, signatures others rely on, and systems you build or configure. Not sure counts as yes until a named person confirms by a named date. A supplied product that is out of support is not, on its own, a reason for a program. See [Which plan you need](/plan/).
 
 ## Sources
 
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
-- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, 13 August 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
-- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, August 13, 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, August 13, 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
+- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, August 13, 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
 - NIST, SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions, FIPS 202, August 2015. [FIPS 202](https://csrc.nist.gov/pubs/fips/202/final)
-- NIST, Security Requirements for Cryptographic Modules, FIPS 140-3, 22 March 2019. [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final)
+- NIST, Security Requirements for Cryptographic Modules, FIPS 140-3, March 22, 2019. [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final)
 - NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
 - NIST, Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations, SP 800-52 Rev. 2, August 2019. [SP 800-52 Rev. 2](https://csrc.nist.gov/pubs/sp/800/52/r2/final)
 - IETF, Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in X.509 Public Key Infrastructure, RFC 10073, November 2026. [RFC 10073](https://www.rfc-editor.org/info/rfc10073)
-- The White House, Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks, 22 June 2026. [EO 14412](https://www.govinfo.gov/app/details/DCPD-202600417)
+- The White House, Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks, June 22, 2026. [EO 14412](https://www.govinfo.gov/app/details/DCPD-202600417)
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
-- NIST, Migration to Post-Quantum Cryptography, Volume B: Approach, Architecture, and Security Characteristics of Public Key Application Discovery Tools, SP 1800-38B preliminary draft, 19 December 2023. [SP 1800-38B (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf)
+- NIST, Migration to Post-Quantum Cryptography, Volume B: Approach, Architecture, and Security Characteristics of Public Key Application Discovery Tools, SP 1800-38B preliminary draft, December 19, 2023. [SP 1800-38B (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38b-preliminary-draft.pdf)
 - NIST, Cryptographic Module Validation Program. [CMVP](https://csrc.nist.gov/projects/cryptographic-module-validation-program)
 - NIST Computer Security Resource Center glossary, cryptographic module. [NIST glossary](https://csrc.nist.gov/glossary/term/cryptographic_module)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated July 3, 2024. [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NSA, Commercial National Security Algorithm Suite 2.0 and Quantum Computing FAQ, version 2.2, October 2026. [CNSA 2.0 FAQ (PDF)](https://media.defense.gov/2022/Sep/07/2003071836/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
@@ -271,18 +271,18 @@ Four questions about the organisation as a whole that decide whether the [core a
 - [In real systems](/learn/in-real-systems/)
 - [Hybrid cryptography](/learn/hybrid/)
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
-- [Standardisation](/learn/standardisation/)
+- [Standardization](/learn/standardization/)
 - [Homepage](/)
-- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/program/changing-algorithms-again/)
 - [Standards](/standards/)
 - [Choosing an option](/technology-options/choosing/)
 - [Technology options](/technology-options/)
 - [PKI and certificates](/technology-options/pki/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Inventory the cryptography](/plan/programme/inventory/)
-- [Decide what to migrate first](/plan/programme/priority/)
+- [Inventory the cryptography](/plan/program/inventory/)
+- [Decide what to migrate first](/plan/program/priority/)
 - [Which plan you need](/plan/)
 - [Core actions](/plan/core-actions/)
-- [Programme](/plan/programme/)
+- [Program](/plan/program/)
 - [Templates](/templates/)
 - [Migration records](/templates/records/)

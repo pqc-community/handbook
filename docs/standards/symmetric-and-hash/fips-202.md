@@ -10,7 +10,7 @@ description: NIST standard specifying the SHA-3 hash functions and the SHAKE128 
 
 FIPS 202 specifies the Keccak-based SHA-3 family: four hash functions (SHA3-224, SHA3-256, SHA3-384 and SHA3-512) and two extendable-output functions (XOFs), SHAKE128 and SHAKE256, whose output can be as long as an application needs. SHA-3 is an alternative to SHA-2 with a different internal design, and SHAKE is a building block inside several of the new post-quantum standards.
 
-FIPS 202 is issued by NIST. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (content last updated 3 July 2024) describes FIPS as standards for federal computer systems that are not always mandatory for federal agencies (each FIPS's applicability section says when it is), notes that FIPS do not apply to national security systems, and says private-sector organisations use them voluntarily, although companies with government contracts must comply with FISMA, which mandates the use of FIPS.
+FIPS 202 is issued by NIST. NIST's [FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips) (content last updated July 3, 2024) describes FIPS as standards for federal computer systems that are not always mandatory for federal agencies (each FIPS's applicability section says when it is), notes that FIPS do not apply to national security systems, and says private-sector organizations use them voluntarily, although companies with government contracts must comply with FISMA, which mandates the use of FIPS.
 
 :::info[Official texts]
 
@@ -34,9 +34,9 @@ SHAKE128 and SHAKE256 are used inside ML-KEM ([FIPS 203](/standards/post-quantum
 
 ## Sources
 
-- NIST, SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions, FIPS 202, published 4 August 2015; planning note of 13 March 2025. [FIPS 202 (PDF)](https://doi.org/10.6028/NIST.FIPS.202), [CSRC publication page](https://csrc.nist.gov/pubs/fips/202/final)
+- NIST, SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions, FIPS 202, published August 4, 2015; planning note of March 13, 2025. [FIPS 202 (PDF)](https://doi.org/10.6028/NIST.FIPS.202), [CSRC publication page](https://csrc.nist.gov/pubs/fips/202/final)
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated July 3, 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 
 ## Related pages
 

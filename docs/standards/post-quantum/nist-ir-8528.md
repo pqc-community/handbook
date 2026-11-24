@@ -28,19 +28,19 @@ IR 8528 is an informative report from the National Institute of Standards and Te
 
 ## Relationship with other standards
 
-IR 8528 has been followed by [NIST IR 8610](/standards/post-quantum/nist-ir-8610/), which is now the current status report for this track. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) cites IR 8528 when noting that NIST is evaluating further signature algorithms for possible standardisation, separately from the FALCON-derived signature FIPS it says is under development.
+IR 8528 has been followed by [NIST IR 8610](/standards/post-quantum/nist-ir-8610/), which is now the current status report for this track. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) cites IR 8528 when noting that NIST is evaluating further signature algorithms for possible standardization, separately from the FALCON-derived signature FIPS it says is under development.
 
-Approved post-quantum signatures today are [FIPS 204](/standards/post-quantum/fips-204/), [FIPS 205](/standards/post-quantum/fips-205/) and [SP 800-208](/standards/post-quantum/sp-800-208/). Candidates in this track are useful for horizon scanning and for planning for [changing algorithms again](/plan/programme/changing-algorithms-again/), not for procurement requirements.
+Approved post-quantum signatures today are [FIPS 204](/standards/post-quantum/fips-204/), [FIPS 205](/standards/post-quantum/fips-205/) and [SP 800-208](/standards/post-quantum/sp-800-208/). Candidates in this track are useful for horizon scanning and for planning for [changing algorithms again](/plan/program/changing-algorithms-again/), not for procurement requirements.
 
 ## Sources
 
-- NIST, Status Report on the First Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8528, 24 October 2024. [NIST IR 8528 publication page](https://csrc.nist.gov/pubs/ir/8528/final), [NIST IR 8528 (PDF)](https://doi.org/10.6028/NIST.IR.8528)
-- NIST, Status Report on the Second Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8610, 14 May 2026. [NIST IR 8610 publication page](https://csrc.nist.gov/pubs/ir/8610/final)
+- NIST, Status Report on the First Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8528, October 24, 2024. [NIST IR 8528 publication page](https://csrc.nist.gov/pubs/ir/8528/final), [NIST IR 8528 (PDF)](https://doi.org/10.6028/NIST.IR.8528)
+- NIST, Status Report on the Second Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8610, May 14, 2026. [NIST IR 8610 publication page](https://csrc.nist.gov/pubs/ir/8610/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 
 - [Post-quantum cryptography standards](/standards/post-quantum/)
 - [NIST IR 8610](/standards/post-quantum/nist-ir-8610/)
-- [Standardisation](/learn/standardisation/)
-- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
+- [Standardization](/learn/standardization/)
+- [Keep the ability to change again](/plan/program/changing-algorithms-again/)

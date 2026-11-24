@@ -36,13 +36,13 @@ sequenceDiagram
 
 [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024) (August 2026, Proposed Standard) defines three hybrid key-agreement groups for TLS 1.3: X25519MLKEM768, SecP256r1MLKEM768, and SecP384r1MLKEM1024. A separate specification for ML-KEM on its own (draft-ietf-tls-mlkem) is in the RFC Editor queue.
 
-The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) recommends a hybrid profile using X25519MLKEM768 or SecP256r1MLKEM768, recommends hybrid schemes as an interim measure when migrating, and considers pure ML-KEM acceptable for TLS. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §4.2) calls TLS an early priority because it is a primary target for harvest-now, decrypt-later collection, describes TLS 1.3 as a practical near-term path to quantum-resistant key establishment including hybrid mechanisms, and says the next revision of NIST SP 800-52 will reflect this.
+The UK NCSC's [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (October 15, 2026) recommends a hybrid profile using X25519MLKEM768 or SecP256r1MLKEM768, recommends hybrid schemes as an interim measure when migrating, and considers pure ML-KEM acceptable for TLS. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §4.2) calls TLS an early priority because it is a primary target for harvest-now, decrypt-later collection, describes TLS 1.3 as a practical near-term path to quantum-resistant key establishment including hybrid mechanisms, and says the next revision of NIST SP 800-52 will reflect this.
 
 Because the key-share format is negotiated, clients and servers can offer both classical and hybrid groups; a connection uses whichever both sides support. That is coexistence, not a hybrid in itself — see [Hybrid cryptography](/learn/hybrid/).
 
 ## Where authentication stands
 
-The NCSC guidance states that, at present, the IETF has standardised post-quantum algorithms only for key exchange in TLS, that work is ongoing to standardise post-quantum authentication in TLS and the wider Web PKI, and that until then organisations should continue using ECDSA and RSA. Certificates are a many-party system — CAs, browsers, trust stores, servers — so this layer moves more slowly, as [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/) explains.
+The NCSC guidance states that, at present, the IETF has standardized post-quantum algorithms only for key exchange in TLS, that work is ongoing to standardize post-quantum authentication in TLS and the wider Web PKI, and that until then organizations should continue using ECDSA and RSA. Certificates are a many-party system — CAs, browsers, trust stores, servers — so this layer moves more slowly, as [Why signatures affect more than the signer](/learn/explainers/signature-dependencies/) explains.
 
 ## Reading a claim about TLS
 
@@ -59,7 +59,7 @@ The NCSC guidance states that, at present, the IETF has standardised post-quantu
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024)
 - IETF Datatracker, ML-KEM Post-Quantum Key Agreement for TLS 1.3, draft-ietf-tls-mlkem-11. [Datatracker](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§3.1.3, §4.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Using Transport Layer Security to protect data, 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+- UK National Cyber Security Centre, Using Transport Layer Security to protect data, October 15, 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 
 ## Related pages
 

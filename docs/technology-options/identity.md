@@ -47,7 +47,7 @@ The identity provider, token maker, or platform supplier. You choose when to req
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A signatures row for the identity provider and each token type, naming the applications that verify it, with supplier answers and their judgement, and the purchase or renewal at which post-quantum signing will be required, under [Work with suppliers](/plan/programme/suppliers/), in `next step` |
+| [Register](/templates/records/register/) | A signatures row for the identity provider and each token type, naming the applications that verify it, with supplier answers and their judgment, and the purchase or renewal at which post-quantum signing will be required, under [Work with suppliers](/plan/program/suppliers/), in `next step` |
 | [Purchase wording](/templates/records/purchase-wording/) | A signatures row for the next purchase or renewal of the identity provider and each token type, requiring post-quantum signing |
 
 ## Example
@@ -65,5 +65,5 @@ A decision-ready record names the identity provider and its token-signing algori
 
 - [PKI and certificates](/technology-options/pki/)
 - [Signatures, certificates, and trust](/learn/signatures-and-trust/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Work with suppliers](/plan/program/suppliers/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)

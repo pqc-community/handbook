@@ -6,7 +6,7 @@ import rehypeTableLabels from './src/plugins/rehype-table-labels.mjs';
 const config: Config = {
   title: 'PQC Handbook',
   tagline:
-    'Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration',
+    'Practical, source-backed guidance for planning, prioritizing, and evidencing a post-quantum cryptography migration',
   favicon: 'img/favicon.svg',
   // PNG and Apple touch icons for browsers and platforms that do not use the SVG favicon.
   headTags: [
@@ -25,8 +25,8 @@ const config: Config = {
     mermaid: true,
     hooks: {onBrokenMarkdownLinks: 'throw'},
   },
-  // British English: sets <html lang>, hreflang and og:locale; the locale key stays 'en' for search.
-  i18n: {defaultLocale: 'en', locales: ['en'], localeConfigs: {en: {htmlLang: 'en-GB'}}},
+  // US English: sets <html lang>, hreflang and og:locale; the locale key stays 'en' for search.
+  i18n: {defaultLocale: 'en', locales: ['en'], localeConfigs: {en: {htmlLang: 'en-US'}}},
   presets: [
     [
       'classic',
@@ -56,7 +56,7 @@ const config: Config = {
             description:
               'Dated news and analysis on the post-quantum transition, with authority updates as a main focus.',
             copyright: `Copyright © ${new Date().getFullYear()} PQC Handbook contributors. CC BY-SA 4.0.`,
-            language: 'en-GB',
+            language: 'en-US',
             // Every post, not the default 20.
             limit: false,
           },
@@ -130,7 +130,7 @@ const config: Config = {
           items: [
             {label: 'Which plan you need', to: '/plan/'},
             {label: 'Core actions', to: '/plan/core-actions/'},
-            {label: 'Programme', to: '/plan/programme/'},
+            {label: 'Program', to: '/plan/program/'},
           ],
         },
         {

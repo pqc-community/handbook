@@ -1,6 +1,6 @@
 # PQC Handbook - Brand Guidelines
 
-These guidelines define the visual identity, brand assets, colour palette, typography, and presentation standards for the PQC Handbook across the website, social previews, diagrams, and external materials. CSS tokens and assets live in `src/css/custom.css` and `static/img/`.
+These guidelines define the visual identity, brand assets, color palette, typography, and presentation standards for the PQC Handbook across the website, social previews, diagrams, and external materials. CSS tokens and assets live in `src/css/custom.css` and `static/img/`.
 
 ## Brand Essence
 
@@ -8,15 +8,15 @@ These guidelines define the visual identity, brand assets, colour palette, typog
 | --- | --- |
 | Name | **PQC Handbook** |
 | Domain | `pqchandbook.com` |
-| Tagline | Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration |
+| Tagline | Practical, source-backed guidance for planning, prioritizing, and evidencing a post-quantum cryptography migration |
 | Personality | Practical, neutral, standards-aware, and evidence-led |
 | Visual tone | Calm, utilitarian, and readable — an engineering and governance reference, not a marketing site |
 
-The PQC Handbook is part of the same open handbook family as the **Secure-by-Design Handbook** and the **Supply Chain Security Handbook**. It shares their teal-and-cyan visual system and shield mark so readers recognise the family immediately, while keeping an independent editorial identity focused on post-quantum cryptography transition.
+The PQC Handbook is part of the same open handbook family as the **Secure-by-Design Handbook** and the **Supply Chain Security Handbook**. It shares their teal-and-cyan visual system and shield mark so readers recognize the family immediately, while keeping an independent editorial identity focused on post-quantum cryptography transition.
 
 ## Naming
 
-- Always refer to the publication as **PQC Handbook** (capitalised, no "The" inside titles or lockups).
+- Always refer to the publication as **PQC Handbook** (capitalized, no "The" inside titles or lockups).
 - Use **post-quantum cryptography** (or **PQC** after first mention) for the discipline itself.
 - Keep naming vendor-neutral and jurisdiction-neutral: avoid phrasing or sub-brands that imply endorsement by a government agency, standards body, or commercial supplier.
 - For editorial tone and prose mechanics, follow [style-guide.md](./style-guide.md).
@@ -33,9 +33,9 @@ Logo usage rules:
 
 - Use the approved shared family shield in `static/img/`; do not create a separate mark or redraw strokes.
 - Keep clear space of at least `0.5×` the logo height on all sides and maintain legibility down to `24 px` height.
-- Do not stretch, skew, outline, add drop shadows, recolour arbitrarily, or alter stroke weights.
+- Do not stretch, skew, outline, add drop shadows, recolor arbitrarily, or alter stroke weights.
 
-## Colour Palette
+## Color Palette
 
 The site uses the handbook-family teal-and-cyan palette across light and dark modes (`prefers-color-scheme` aware).
 
@@ -46,13 +46,13 @@ The site uses the handbook-family teal-and-cyan palette across light and dark mo
 | Deep Teal | `#013B4E` | Light-mode navbar, dark footer, hero background, social card canvas, and dark-mode page background. |
 | Darker Teal | `#012A38` | Dark-mode navbar background for subtle elevation against Deep Teal pages. |
 | Surface Light | `#F5FCFD` | Light-mode page background and dark-mode primary foreground text. |
-| Mid Grey | `#5E6E75` | Light-mode body copy on Surface Light. |
+| Mid Gray | `#5E6E75` | Light-mode body copy on Surface Light. |
 | Code Surface | `#EEF9FB` / `#024C63` | Inline code and code-block backgrounds in light mode (`#EEF9FB`) and dark mode (`#024C63`). |
 | Highlight Orange | `#FF9F45` | Warnings or rare emphasis only (`--ifm-color-warning`). |
 
-Colour and accessibility rules:
+Color and accessibility rules:
 
-- Never convey meaning, priority, or status by colour alone; always pair colour with clear text or structural labels.
+- Never convey meaning, priority, or status by color alone; always pair color with clear text or structural labels.
 - Maintain WCAG AA contrast (`#5E6E75` on `#F5FCFD` in light mode; `#F5FCFD` on `#013B4E` in dark mode).
 - Never set text in Primary Cyan on Surface Light: it is about 2:1. Use Link Teal (`#006B78`, about 5.9:1) for light-mode links and active states.
 - Reference Infima variables in `src/css/custom.css` rather than hardcoding hex values inside components.
@@ -74,14 +74,14 @@ Always retain system sans-serif and monospace fallbacks. Code blocks use high-co
 | Navbar | Deep Teal (`#013B4E` in light mode, `#012A38` in dark mode) with light text and restrained top-level items on one line; between `997px` and `1365px` the logo stands without the title so the items do not wrap. |
 | Footer | Deep Teal (`#013B4E`) with Surface Light (`#F5FCFD`) links and safe wrapping on narrow mobile viewports (`.footer__link-item { max-width: 100%; }`). |
 | Cards | Outlined surface cards with subtle `1px` borders that highlight in Primary Cyan (`#00C5D8`) on hover and stack cleanly to one column on mobile (`≤ 768px`). |
-| Homepage | Calm reference entry point, not a product landing page. A concise Deep Teal hero header: the site name as a small cyan label; the heading "Every organisation needs a post-quantum migration plan."; one short paragraph of four full sentences: why, that most organisations need only core actions, that some also need a programme, and what the handbook does; and one quiet bordered sentence saying the guidance is vendor-neutral and not a formal risk assessment. Keep the hero short; detail belongs in the cards below. No dates in the hero, no fragments or slogans, and no buttons; it follows the briefing register in the style guide. Then two equal outlined cards that show what is inside them: **Learn the basics** with its first three lessons, and **Plan your migration** in three short steps (the four questions, the core actions with their effort, and the two programme sizes), kept short enough that both cards end level, each ending in one text link. Then **Why you might be here**: at most six rows, each a situation readers arrive with and where to go. Then four compact cards under **Reference and news**: Technology options, Standards, Templates, and News and analysis, four across on wide screens, two by two below `1200px`, and stacked on narrow screens. The news card names no dates or posts, so it never looks stale. The four questions and three outcomes are not on the homepage; they live on Which plan you need. No promotional banners, button pairs, feature grids, gradients, or decorative splash graphics. |
-| News and analysis | The listing and posts use the standard page, card, and table styles, with post dates shown in British day–month–year order. The site's locale key stays `en` for search, which would render dates in US order, so `src/theme/BlogPostItem/Header/Info` formats them as `en-GB` and omits reading time. No hero images, per-post illustrations, or promotional banners on posts or the listing; posts share the site's social preview card. On the homepage it appears only as the fourth reference card, never as a latest-post panel or a "Stay updated" button. |
-| Tables | Clean borders, subtle header shading, and scannable cell density suitable for both desktop and mobile screens. On phone screens, 3- and 4-column tables become stacked cards, one per row, with each cell labelled by its column heading; wider record tables scroll inside the page. |
+| Homepage | Calm reference entry point, not a product landing page. A concise Deep Teal hero header: the site name as a small cyan label; the heading "Every organization needs a post-quantum migration plan."; one short paragraph of four full sentences: why, that most organizations need only core actions, that some also need a program, and what the handbook does; and one quiet bordered sentence saying the guidance is vendor-neutral and not a formal risk assessment. Keep the hero short; detail belongs in the cards below. No dates in the hero, no fragments or slogans, and no buttons; it follows the briefing register in the style guide. Then two equal outlined cards that show what is inside them: **Learn the basics** with its first three lessons, and **Plan your migration** in three short steps (the four questions, the core actions with their effort, and the two program sizes), kept short enough that both cards end level, each ending in one text link. Then **Why you might be here**: at most six rows, each a situation readers arrive with and where to go. Then four compact cards under **Reference and news**: Technology options, Standards, Templates, and News and analysis, four across on wide screens, two by two below `1200px`, and stacked on narrow screens. The news card names no dates or posts, so it never looks stale. The four questions and three outcomes are not on the homepage; they live on Which plan you need. No promotional banners, button pairs, feature grids, gradients, or decorative splash graphics. |
+| News and analysis | The listing and posts use the standard page, card, and table styles, with post dates shown in US month–day–year order: `src/theme/BlogPostItem/Header/Info` formats them as `en-US` in UTC and omits reading time. No hero images, per-post illustrations, or promotional banners on posts or the listing; posts share the site's social preview card. On the homepage it appears only as the fourth reference card, never as a latest-post panel or a "Stay updated" button. |
+| Tables | Clean borders, subtle header shading, and scannable cell density suitable for both desktop and mobile screens. On phone screens, 3- and 4-column tables become stacked cards, one per row, with each cell labeled by its column heading; wider record tables scroll inside the page. |
 
 ## Diagrams and Illustrations
 
 - Keep diagrams and illustrations functional, clean, and low-noise — every visual should clarify a technical relationship, workflow, or decision boundary.
-- Mermaid diagrams use the `neutral` theme in light mode and `dark` theme in dark mode so diagrams stay legible in both colour schemes.
+- Mermaid diagrams use the `neutral` theme in light mode and `dark` theme in dark mode so diagrams stay legible in both color schemes.
 - When introducing vector illustrations or icons, prefer flat-vector or consistent `~2 px` stroke line work, using Primary Cyan (`#00C5D8`) selectively as an accent rather than filling entire graphics.
 - Avoid decorative stock art, glowing "quantum" clichés, or seal/badge motifs that suggest certification, legal authority, or compliance approval.
 

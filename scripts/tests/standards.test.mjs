@@ -46,11 +46,11 @@ test('keeps authority, publication, and status metadata out of the official text
 test('requires PDF links to identify the format in their link text', () => {
   const problems = withRoot(
     {
-      'fips/labelled.md': validSummary.replace(
+      'fips/labeled.md': validSummary.replace(
         '[official publication](https://example.org/standard)',
         '[official publication (PDF)](https://example.org/standard.pdf)',
       ),
-      'fips/unlabelled.md': validSummary.replace(
+      'fips/unlabeled.md': validSummary.replace(
         '[official publication](https://example.org/standard)',
         '[read the standard](https://example.org/standard.pdf)',
       ),
@@ -63,7 +63,7 @@ test('requires PDF links to identify the format in their link text', () => {
   );
   assert.deepEqual(problems, [
     'nist-doi.md: PDF link text must include (PDF)',
-    'unlabelled.md: PDF link text must include (PDF)',
+    'unlabeled.md: PDF link text must include (PDF)',
   ]);
 });
 

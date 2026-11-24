@@ -1,12 +1,12 @@
 // Reader journey rules (reader-journey.md, "Writing Rules for Journey Pages"):
-// Which plan you need, Core actions and the Programme overview stay within reading budgets, and the
+// Which plan you need, Core actions and the Program overview stay within reading budgets, and the
 // retired routing labels do not reappear as labels anywhere on the site, except where a
 // Standards summary quotes a source.
 import fs from 'node:fs';
 import path from 'node:path';
 import {classifyLines, isDividerRow, pipeCells, relativePath, walkMarkdown} from '../lib/markdown.mjs';
 
-export const JOURNEY_PAGES = ['docs/plan/index.md', 'docs/plan/core-actions.md', 'docs/plan/programme/index.md'];
+export const JOURNEY_PAGES = ['docs/plan/index.md', 'docs/plan/core-actions.md', 'docs/plan/program/index.md'];
 export const MAX_WORDS = 900;
 export const MAX_LINKS_PER_100_WORDS = 2;
 export const MAX_SENTENCE_WORDS = 40;

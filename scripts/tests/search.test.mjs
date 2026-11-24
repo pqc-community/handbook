@@ -92,7 +92,7 @@ test('accepts readable slugs within the depth and length limits', () => {
       'docs/standards/post-quantum/fips-203.md': page(),
       'docs/standards/post-quantum/index.md': page(),
       [`docs/learn/${'a'.repeat(MAX_SLUG_LENGTH)}.md`]: page(),
-      'docs/plan/programme/inventory.md': page(),
+      'docs/plan/program/inventory.md': page(),
       'docs/templates/records/inventory.md': page(),
     }),
     [],

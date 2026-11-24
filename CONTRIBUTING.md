@@ -13,7 +13,7 @@ For a small fix, open a pull request. For anything larger, such as a new page or
 
 ## Before you write
 
-Read the maintainer guides in the repository root. They are the source of truth for how the handbook is written and organised:
+Read the maintainer guides in the repository root. They are the source of truth for how the handbook is written and organized:
 
 - [Purpose and positioning](purpose-and-positioning.md) covers the audience, the editorial thesis, and what the handbook deliberately does not cover.
 - [Style guide](style-guide.md) covers voice, terminology, attribution, page patterns, and sourcing.
@@ -22,7 +22,7 @@ Read the maintainer guides in the repository root. They are the source of truth 
 - [Brand guidelines](brand-guidelines.md) covers visual and UI changes.
 - [Periodic review](periodic-review.md) covers the monthly review that keeps sources, dates, and guidance current.
 
-In short, write in British English, keep guidance vendor-neutral, attribute every date and obligation to its primary source and the audience it names, and keep key establishment and digital signatures separate where their migration drivers differ. Do not add vendor endorsements or promotional material, and disclose any affiliation relevant to your change in the pull request.
+In short, write in US English, keep guidance vendor-neutral, attribute every date and obligation to its primary source and the audience it names, and keep key establishment and digital signatures separate where their migration drivers differ. Do not add vendor endorsements or promotional material, and disclose any affiliation relevant to your change in the pull request.
 
 ## Working locally
 
@@ -46,6 +46,6 @@ npm run build
 
 Keep each pull request to one change, explain what it changes and why, and link the primary source for any factual change.
 
-## Licence
+## License
 
-By contributing, you agree that your contributions are licensed under the same [CC BY-SA 4.0](LICENSE) licence as the rest of the project.
+By contributing, you agree that your contributions are licensed under the same [CC BY-SA 4.0](LICENSE) license as the rest of the project.

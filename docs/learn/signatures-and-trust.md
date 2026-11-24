@@ -33,14 +33,14 @@ Signatures are not exposed to harvest-now, decrypt-later: a recorded signature d
 
 The hardest case is a verifier fixed in hardware or immutable boot code. If a device checks its firmware against a classical public key burned in at manufacture, no software update can teach it a new algorithm. NIST IR 8547 §3.1.1 advises that, where verification code cannot be updated after manufacture and the device may still be in use once a cryptanalytically relevant quantum computer exists, the device should be designed to require quantum-resistant signatures on its code from the start.
 
-National guidance reflects this. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (20 March 2025) ask organisations to identify any requirement to migrate long-lived hardware roots of trust in their initial plan by 2028. The EU NIS Cooperation Group [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) (version 1.1, 11 June 2025) highly recommends that products with an expected lifetime beyond 2030 be upgradable to post-quantum cryptography, with update mechanisms that use post-quantum signatures.
+National guidance reflects this. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (March 20, 2025) ask organizations to identify any requirement to migrate long-lived hardware roots of trust in their initial plan by 2028. The EU NIS Cooperation Group [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) (version 1.1, June 11, 2025) highly recommends that products with an expected lifetime beyond 2030 be upgradable to post-quantum cryptography, with update mechanisms that use post-quantum signatures.
 
 This is why the handbook treats three jobs, not two:
 
 | Job | What drives urgency | Typical coordination |
 | --- | --- | --- |
 | Key establishment | How long the protected data must stay confidential | Usually the two ends of a connection |
-| Signatures (updatable verifiers) | Time needed to move signers, CAs, and relying parties together | Many parties, often across organisations |
+| Signatures (updatable verifiers) | Time needed to move signers, CAs, and relying parties together | Many parties, often across organizations |
 | Long-lived or non-updatable verifiers | Whether the device will outlive the classical algorithm it trusts | Decided at design and procurement, not later |
 
 ## Check your understanding
@@ -54,8 +54,8 @@ Continue with [The quantum threat](/learn/quantum-threat/). For a worked list of
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.2, §2.2.4, §3, §3.1.1, §3.1.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
-- EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025 (published by the European Commission on 23 June 2025). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
+- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published March 20, 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, June 11, 2025 (published by the European Commission on June 23, 2025). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
 
 ## Related pages
 

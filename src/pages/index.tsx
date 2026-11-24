@@ -20,25 +20,25 @@ const firstLessons = [
 const situations: {when: string; then: string; to: string; link: string}[] = [
   {
     when: 'Someone asked whether you are “ready for quantum”, or whether you need to do anything',
-    then: 'Answer the four questions. Many organisations need only the core actions.',
+    then: 'Answer the four questions. Many organizations need only the core actions.',
     to: '/plan/',
     link: 'Which plan you need',
   },
   {
     when: 'Your board wants a plan',
-    then: 'Answer the four questions to find which plan you need, and give the board the register; a full programme also reports with the progress report.',
+    then: 'Answer the four questions to find which plan you need, and give the board the register; a full program also reports with the progress report.',
     to: '/plan/',
     link: 'Which plan you need',
   },
   {
     when: 'Customers are sending post-quantum questionnaires',
     then: 'Answer the four questions, then start your register and answer from it with the dates you can stand behind and what is still unknown.',
-    to: '/plan/programme/suppliers/#6-answer-your-own-customers-consistently',
+    to: '/plan/program/suppliers/#6-answer-your-own-customers-consistently',
     link: 'Answer your customers',
   },
   {
     when: 'You run critical national infrastructure, or a service whose security a sector regulator oversees',
-    then: "Bring in specialist advice and speak to your sector regulator; a professional body, a data protection authority, or a governance-only regulator does not count. Take the programme's first moves meanwhile; they only gather facts.",
+    then: "Bring in specialist advice and speak to your sector regulator; a professional body, a data protection authority, or a governance-only regulator does not count. Take the program's first moves meanwhile; they only gather facts.",
     to: '/plan/#your-plan',
     link: 'Your plan',
   },
@@ -98,12 +98,12 @@ function Hero() {
       <div className="container">
         <p className={styles.heroLabel}>{siteConfig.title}</p>
         <Heading as="h1" className={styles.heroTitle}>
-          Every organisation needs a post-quantum migration plan.
+          Every organization needs a post-quantum migration plan.
         </Heading>
         <p className={styles.heroLead}>
-          A future quantum computer could break the public-key cryptography in use today. For many organisations,
+          A future quantum computer could break the public-key cryptography in use today. For many organizations,
           suppliers make the changes and the plan is a short list of core actions. Some also need a migration
-          programme. This handbook helps you work out which plan you need.
+          program. This handbook helps you work out which plan you need.
         </p>
         <p className={styles.heroLimit}>The guidance is vendor-neutral and is not a formal risk assessment.</p>
       </div>
@@ -129,7 +129,7 @@ function Choices() {
               ))}
             </ol>
             <p>
-              Then what post-quantum means, the new algorithms, hybrid cryptography, standardisation, post-quantum in
+              Then what post-quantum means, the new algorithms, hybrid cryptography, standardization, post-quantum in
               real systems, timelines, and crypto-agility. Optional explainers go deeper on topics such as TLS, keys,
               and hash-based signatures.
             </p>
@@ -148,18 +148,18 @@ function Choices() {
                 <strong>Answer four questions</strong> about your data, devices, signatures, and systems.
               </li>
               <li>
-                <strong>Follow the core actions</strong> for everything you buy in: in a small organisation, a day to
+                <strong>Follow the core actions</strong> for everything you buy in: in a small organization, a day to
                 set up and an hour or two at each review.
               </li>
               <li>
-                <strong>Add a programme</strong> if a question applied: small for one or two systems, full for
+                <strong>Add a program</strong> if a question applied: small for one or two systems, full for
                 devices with fixed keys or a larger or regulated estate.
               </li>
             </ol>
             <p className={styles.choiceExamples}>
               Worked examples: <Link to="/templates/examples/stay-on-supplier-updates/">a small agency following the core
               actions</Link> and <Link to="/templates/examples/protect-this-first/">a manufacturer running a full
-              programme</Link>.
+              program</Link>.
             </p>
             <p className={styles.choiceNext}>
               <Link to="/plan/">Answer the four questions</Link>
@@ -212,7 +212,7 @@ function Reference() {
 
 const homeTitle = 'PQC Handbook: planning a post-quantum cryptography migration';
 const homeDescription =
-  'Practical, source-backed guidance for planning, prioritising and evidencing a post-quantum cryptography migration without specialist cryptography staff.';
+  'Practical, source-backed guidance for planning, prioritizing and evidencing a post-quantum cryptography migration without specialist cryptography staff.';
 
 // Names the site for search engines (schema.org WebSite).
 const websiteData = {
@@ -221,7 +221,7 @@ const websiteData = {
   name: 'PQC Handbook',
   url: 'https://pqchandbook.com/',
   description: homeDescription,
-  inLanguage: 'en-GB',
+  inLanguage: 'en-US',
 };
 
 export default function Home(): ReactNode {

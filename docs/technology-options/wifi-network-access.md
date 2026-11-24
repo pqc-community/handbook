@@ -47,7 +47,7 @@ The suppliers of the authentication server and the device operating systems deci
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A key-establishment row for the EAP-TLS handshake of the authentication service and each device class, with the EAP method as a labelled value in `protected by today` (for example "EAP-TLS 1.3: X25519"), the private certification authority named, and supplier answers with their judgement; certificates stay on the PKI's signatures row; and a row for each device that cannot follow, with an owner, the replacement date, and a `next review` |
+| [Register](/templates/records/register/) | A key-establishment row for the EAP-TLS handshake of the authentication service and each device class, with the EAP method as a labeled value in `protected by today` (for example "EAP-TLS 1.3: X25519"), the private certification authority named, and supplier answers with their judgment; certificates stay on the PKI's signatures row; and a row for each device that cannot follow, with an owner, the replacement date, and a `next review` |
 | [Change record](/templates/records/change-record/) | The negotiated group as the deployed-state check |
 
 ## Example
@@ -65,5 +65,5 @@ A decision-ready record lists device classes with their EAP method and supplican
 
 - [TLS and web services](/technology-options/tls/)
 - [PKI and certificates](/technology-options/pki/)
-- [Inventory the cryptography](/plan/programme/inventory/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Inventory the cryptography](/plan/program/inventory/)
+- [Work with suppliers](/plan/program/suppliers/)

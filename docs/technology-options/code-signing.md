@@ -51,7 +51,7 @@ You choose for your own pipeline, within what your signing tools and [HSMs](/tec
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | The signatures row for each signing key, recording where it is held, such as the HSM, with the verifiers listed in the order they move and answers from platform owners and from signing-tool and HSM suppliers with their judgement |
+| [Register](/templates/records/register/) | The signatures row for each signing key, recording where it is held, such as the HSM, with the verifiers listed in the order they move and answers from platform owners and from signing-tool and HSM suppliers with their judgment |
 | [Change record](/templates/records/change-record/) | The scheme, the authority, and tests on each class of verifier |
 
 ## Example
@@ -63,9 +63,9 @@ A decision-ready record names the signing key and the HSM that holds it, lists t
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, 13 August 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
-- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
-- NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, 29 October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
+- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, August 13, 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
+- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, August 13, 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
+- NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 29, 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
 - IETF, Use of the ML-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9882, October 2025. [RFC 9882](https://www.rfc-editor.org/info/rfc9882)
 - IETF, Use of the HSS/LMS Hash-Based Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9708, January 2025. [RFC 9708](https://www.rfc-editor.org/info/rfc9708)
 - IETF, Use of the SLH-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9814, July 2025. [RFC 9814](https://www.rfc-editor.org/info/rfc9814)

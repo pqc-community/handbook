@@ -48,13 +48,13 @@ The backup, archive, or storage supplier for products you buy; you for formats a
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A `key establishment (stored data)` row, separate from the connections row, with the algorithm that protects stored data keys in `protected by today`, the confidentiality period and its source in `why it is here`, the supplier's answer and its judgement, re-wrapping or re-encrypting data already stored as the `next step`, and exposures of copies outside your control with the sponsor's decision |
+| [Register](/templates/records/register/) | A `key establishment (stored data)` row, separate from the connections row, with the algorithm that protects stored data keys in `protected by today`, the confidentiality period and its source in `why it is here`, the supplier's answer and its judgment, re-wrapping or re-encrypting data already stored as the `next step`, and exposures of copies outside your control with the sponsor's decision |
 
 ## Example
 
 An insufficient record is "Backups are encrypted, so they are fine."
 
-A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the algorithm that protects the key wrapping of the design archive's stored files is `unknown`, the supplier's answer is `missing`, and a written answer is due by 1 December 2026, so stored-data protection is not counted as migrated. Because the designs must stay confidential for 15 years, files already stored under Workspace 4.1 need the same protection; once the answer arrives, the manufacturer decides whether to re-wrap or re-encrypt them and records that work on the stored-data row.
+A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/): the algorithm that protects the key wrapping of the design archive's stored files is `unknown`, the supplier's answer is `missing`, and a written answer is due by December 1, 2026, so stored-data protection is not counted as migrated. Because the designs must stay confidential for 15 years, files already stored under Workspace 4.1 need the same protection; once the answer arrives, the manufacturer decides whether to re-wrap or re-encrypt them and records that work on the stored-data row.
 
 ## Sources
 

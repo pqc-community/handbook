@@ -14,7 +14,7 @@ Domain Name System Security Extensions (DNSSEC) let a resolver check that DNS an
 
 | Part | Position |
 | --- | --- |
-| Algorithm number for ML-DSA in DNSSEC | The IANA DNSSEC algorithm registry (last updated 10 August 2026) lists ML-DSA-44 as algorithm 18, marked MAY for use and implementation in signing and validation, with draft-westerbaan-dnssec-mldsa as its reference |
+| Algorithm number for ML-DSA in DNSSEC | The IANA DNSSEC algorithm registry (last updated August 10, 2026) lists ML-DSA-44 as algorithm 18, marked MAY for use and implementation in signing and validation, with draft-westerbaan-dnssec-mldsa as its reference |
 | Specification | draft-westerbaan-dnssec-mldsa is an individual Internet-Draft, not adopted into an IETF working group or stream |
 | How algorithm recommendations change | [RFC 9904](https://www.rfc-editor.org/info/rfc9904) (Proposed Standard, November 2025) sets the process for updating DNSSEC algorithm recommendations |
 
@@ -46,7 +46,7 @@ Your DNS hosting provider or DNS software chooses which algorithms it can sign w
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A signatures row for each signed zone and each validating resolver you run, with the DNS provider and registrar named as suppliers, their answers and judgement, and a `next review` to revisit the draft mechanism when it is published |
+| [Register](/templates/records/register/) | A signatures row for each signed zone and each validating resolver you run, with the DNS provider and registrar named as suppliers, their answers and judgment, and a `next review` to revisit the draft mechanism when it is published |
 | [Change record](/templates/records/change-record/) | If you rely on the draft mechanism, "provisional: Internet-Draft" in `option` |
 
 ## Example
@@ -57,7 +57,7 @@ A decision-ready record lists each signed zone with its DNS provider, current al
 
 ## Sources
 
-- IANA, Domain Name System Security (DNSSEC) Algorithm Numbers registry, last updated 10 August 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
+- IANA, Domain Name System Security (DNSSEC) Algorithm Numbers registry, last updated August 10, 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
 - IETF Datatracker, draft-westerbaan-dnssec-mldsa, Module-Lattice Digital Signature Algorithm for DNSSEC. [draft-westerbaan-dnssec-mldsa](https://datatracker.ietf.org/doc/draft-westerbaan-dnssec-mldsa/)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - IETF, DNSSEC Cryptographic Algorithm Recommendation Update Process, RFC 9904, November 2025. [RFC 9904](https://www.rfc-editor.org/info/rfc9904)
@@ -67,4 +67,4 @@ A decision-ready record lists each signed zone with its DNS provider, current al
 - [PKI and certificates](/technology-options/pki/)
 - [Choosing an option](/technology-options/choosing/)
 - [Why post-quantum signatures affect more than the signer](/learn/explainers/signature-dependencies/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Work with suppliers](/plan/program/suppliers/)

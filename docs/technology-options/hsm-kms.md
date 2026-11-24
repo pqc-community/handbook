@@ -12,7 +12,7 @@ Hardware security modules (HSMs), cloud key management services (KMS), and Trust
 
 ## Post-quantum options and status
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says hardware modules such as HSMs and TPMs must be upgraded or redesigned to support post-quantum algorithms, and that, given long lead times for hardware, it is a high priority for vendors to start integrating support now. Module validation for US federal use is under [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/) (22 March 2019); NIST IR 8547 says NIST will accommodate hybrid key establishment and dual signatures in FIPS 140 validation when they are suitably combined with a NIST-approved scheme.
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says hardware modules such as HSMs and TPMs must be upgraded or redesigned to support post-quantum algorithms, and that, given long lead times for hardware, it is a high priority for vendors to start integrating support now. Module validation for US federal use is under [FIPS 140-3](/standards/modules-protocols-certificates/fips-140-3/) (March 22, 2019); NIST IR 8547 says NIST will accommodate hybrid key establishment and dual signatures in FIPS 140 validation when they are suitably combined with a NIST-approved scheme.
 
 | What to establish | Why |
 | --- | --- |
@@ -47,7 +47,7 @@ The HSM or cloud provider decides what the module supports and when; you decide 
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | Each HSM, KMS, or TPM, with its model and firmware or service release, named on the row of every key and system that relies on it, rather than given its own row; the module supplier's answer on algorithms, releases, and validation, with its judgement, recorded as a further supplier and answer on those same rows; and the module's upgrade or replacement as the `next step` on the rows it blocks |
+| [Register](/templates/records/register/) | Each HSM, KMS, or TPM, with its model and firmware or service release, named on the row of every key and system that relies on it, rather than given its own row; the module supplier's answer on algorithms, releases, and validation, with its judgment, recorded as a further supplier and answer on those same rows; and the module's upgrade or replacement as the `next step` on the rows it blocks |
 
 ## Example
 
@@ -58,11 +58,11 @@ From [Protect this first](/templates/examples/protect-this-first/): the HSM that
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST, Security Requirements for Cryptographic Modules, FIPS 140-3, 22 March 2019. [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final)
+- NIST, Security Requirements for Cryptographic Modules, FIPS 140-3, March 22, 2019. [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final)
 
 ## Related pages
 
 - [PKI and certificates](/technology-options/pki/)
 - [Code and software signing](/technology-options/code-signing/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Work with suppliers](/plan/program/suppliers/)

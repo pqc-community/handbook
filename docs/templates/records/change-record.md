@@ -22,7 +22,7 @@ Record `unknown` in any cell you cannot verify yet. Where a cell holds several t
 
 | system | job | change | option | authority | pilot scope | tests | rollback trigger | who can roll back | deployed-state check | result | evidence | owner | date |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Product-design archive in supplier-hosted workspace | key establishment | test the supplier's key-establishment update in staging | hybrid X25519MLKEM768 (ML-KEM-768 with X25519) for TLS connections | FIPS 203 (NIST, 13 August 2024; for US federal systems) for ML-KEM; UK NCSC TLS guidance (15 October 2026; for system administrators) for the hybrid form; hybrid because the supplier ships it | Workspace 4.2 staging workspace with sample files and one test client | the test client connects and its handshake log shows X25519MLKEM768 negotiated, confirmed by the supplier's connection log; an authorised test account retrieves the sample files | sample retrieval fails, or either log shows classical-only key establishment | product engineering lead with supplier support | staging: client handshake log inspected on 2026-10-21; production: repeat the client check against the production workspace after rollout | staging pilot passed with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated | test client handshake log inspected 2026-10-21, with the supplier connection log as corroboration (fictional); fictional supplier letter, 2026-09-04 | product engineering lead | 2026-10-21 |
+| Product-design archive in supplier-hosted workspace | key establishment | test the supplier's key-establishment update in staging | hybrid X25519MLKEM768 (ML-KEM-768 with X25519) for TLS connections | FIPS 203 (NIST, August 13, 2024; for US federal systems) for ML-KEM; UK NCSC TLS guidance (October 15, 2026; for system administrators) for the hybrid form; hybrid because the supplier ships it | Workspace 4.2 staging workspace with sample files and one test client | the test client connects and its handshake log shows X25519MLKEM768 negotiated, confirmed by the supplier's connection log; an authorized test account retrieves the sample files | sample retrieval fails, or either log shows classical-only key establishment | product engineering lead with supplier support | staging: client handshake log inspected on 2026-10-21; production: repeat the client check against the production workspace after rollout | staging pilot passed with X25519MLKEM768 negotiated; production rollout pending, so production is not migrated | test client handshake log inspected 2026-10-21, with the supplier connection log as corroboration (fictional); fictional supplier letter, 2026-09-04 | product engineering lead | 2026-10-21 |
 
 The firmware row is blocked: implementation does not start while the option is unknown.
 
@@ -41,11 +41,11 @@ Keep real change records off a public ticket and off an unlocked shared drive: t
 
 ## Sources
 
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, published 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
-- UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, published August 13, 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published October 15, 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 
 ## Related pages
 
-- [Make and verify one change](/plan/programme/implementation/)
-- [Programme](/plan/programme/)
+- [Make and verify one change](/plan/program/implementation/)
+- [Program](/plan/program/)
 - [Protect this first](/templates/examples/protect-this-first/)

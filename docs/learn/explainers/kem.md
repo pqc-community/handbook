@@ -53,7 +53,7 @@ A hybrid key exchange runs a classical exchange and a KEM side by side and combi
 
 ## Sources
 
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, August 13, 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
 - NIST, Recommendations for Key-Encapsulation Mechanisms, SP 800-227, September 2025. [SP 800-227](https://csrc.nist.gov/pubs/sp/800/227/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1.2, §2.2.1, §3.2.1). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 

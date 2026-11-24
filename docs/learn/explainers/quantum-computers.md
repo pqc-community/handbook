@@ -12,7 +12,7 @@ displayed_sidebar: learnSidebar
 
 | | Shor's algorithm | Grover's algorithm |
 | --- | --- | --- |
-| Problem it speeds up | Factorisation and discrete logarithms | Unstructured search, such as guessing a key |
+| Problem it speeds up | Factorization and discrete logarithms | Unstructured search, such as guessing a key |
 | Size of the speed-up | Turns an infeasible problem into a feasible one | Much smaller; NIST describes its symmetric standards as significantly less vulnerable |
 | Affected cryptography | RSA, finite-field and elliptic-curve Diffie–Hellman, ECDSA, EdDSA | Symmetric ciphers and hash functions, in principle |
 | Fix | Replace the algorithm | None needed for approved primitives of at least 128-bit strength, per NIST and the NCSC |

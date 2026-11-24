@@ -28,7 +28,7 @@ The directory and operating-system supplier decides what the domain controllers 
 ## What good looks like
 
 - A register that separates password-based Kerberos (symmetric) from certificate and smart-card logon (public-key).
-- Older, weaker encryption types removed in favour of AES, which is good practice regardless of post-quantum work.
+- Older, weaker encryption types removed in favor of AES, which is good practice regardless of post-quantum work.
 - A written supplier answer on post-quantum PKINIT and certificate support, and a requirement in the next renewal.
 - Smart cards and readers tracked with their replacement cycle, as on [Identity and sign-in](/technology-options/identity/).
 
@@ -49,7 +49,7 @@ The directory and operating-system supplier decides what the domain controllers 
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A row per job for the directory service, with labelled values in `protected by today`, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman; directory connections: see TLS", the issuing CA named on the row, the supplier's answer and judgement, and, for certificate logon, the renewal that will carry the wording in `next step` |
+| [Register](/templates/records/register/) | A row per job for the directory service, with labeled values in `protected by today`, for example key establishment "password logon: not applicable (symmetric); certificate logon: Diffie-Hellman; directory connections: see TLS", the issuing CA named on the row, the supplier's answer and judgment, and, for certificate logon, the renewal that will carry the wording in `next step` |
 | [Purchase wording](/templates/records/purchase-wording/) | For certificate logon, a key-establishment row requiring post-quantum PKINIT and a signatures row requiring post-quantum logon certificates, both for the next renewal of the directory service |
 
 ## Example
@@ -70,4 +70,4 @@ A decision-ready record notes that password-based Kerberos uses AES encryption t
 - [Identity and sign-in](/technology-options/identity/)
 - [PKI and certificates](/technology-options/pki/)
 - [TLS and web services](/technology-options/tls/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Work with suppliers](/plan/program/suppliers/)

@@ -1,7 +1,8 @@
 // Date rules (style-guide.md §2 and §5, and the Standards page pattern):
-// - doc pages do not say when the handbook checked a source ("checked 24 November 2026",
+// - doc pages do not say when the handbook checked a source ("checked November 24, 2026",
 //   "Status as checked on …", "accessed …"): the monthly review in periodic-review.md does that;
-// - prose dates, in doc pages and news posts, are written day–month–year (5 November 2026); ISO 8601 belongs only
+// - dates in doc pages and news posts are written month–day–year (November 5, 2026), never day–month–year;
+//   in prose, ISO 8601 belongs only
 //   in front matter, code and tables;
 // - full ISO dates in a Standards timeline use non-breaking hyphens (&#8209;) so
 //   they never wrap inside the narrow Date column.
@@ -23,7 +24,7 @@ export const ISO_FORMAT_EXAMPLES = [
 
 export function proseDate(iso) {
   const [year, month, day] = iso.split('-');
-  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`;
+  return `${MONTHS[Number(month) - 1]} ${Number(day)}, ${year}`;
 }
 
 // Every ISO date on a prose line: {line, iso, text}.
@@ -43,6 +44,38 @@ export function findProseDateViolations(rootDir, exceptions = ISO_FORMAT_EXAMPLE
     for (const hit of findProseIsoDates(fs.readFileSync(file, 'utf8'))) {
       const excepted = exceptions.some((e) => e.file === rel && hit.text.includes(e.phrase));
       if (!excepted) violations.push(`${rel}:${hit.line}: ${hit.iso} → write "${proseDate(hit.iso)}"`);
+    }
+  }
+  return violations;
+}
+
+// Day–month–year dates ("5 November 2026", "5–7 November") anywhere outside code blocks,
+// front matter included. A source's own title that dates itself that way keeps it; each
+// exception names the file and a phrase from the line, as ISO_FORMAT_EXAMPLES does.
+const EU_RECOMMENDATION = 'Commission Recommendation (EU) 2024/1101 of 11 April 2024';
+export const DAY_MONTH_EXAMPLES = [
+  {file: 'blog/2024/eu-pqc-recommendation.md', phrase: EU_RECOMMENDATION},
+  {file: 'blog/2025/eu-nis-pqc-roadmap.md', phrase: EU_RECOMMENDATION},
+  {file: 'docs/standards/migration-guides/eu-nis-roadmap.md', phrase: EU_RECOMMENDATION},
+];
+const DAY_MONTH = new RegExp(`\\b\\d{1,2}(?:–\\d{1,2})? (?:${MONTHS.join('|')})\\b`, 'g');
+
+export function findDayMonthDates(text) {
+  return classifyLines(text)
+    .filter((line) => line.kind !== 'fence')
+    .flatMap((line) => [...line.text.replace(/https?:\/\/\S+/g, '').matchAll(DAY_MONTH)].map((match) => (
+      {line: line.number, date: match[0], text: line.text}
+    )));
+}
+
+export function findDayMonthViolations(rootDir, exceptions = DAY_MONTH_EXAMPLES) {
+  const violations = [];
+  const files = ['docs', 'blog'].flatMap((dir) => walkMarkdown(path.join(rootDir, dir)));
+  for (const file of files) {
+    const rel = relativePath(rootDir, file);
+    for (const hit of findDayMonthDates(fs.readFileSync(file, 'utf8'))) {
+      const excepted = exceptions.some((e) => e.file === rel && hit.text.includes(e.phrase));
+      if (!excepted) violations.push(`${rel}:${hit.line}: "${hit.date}" → write the month first ("November 5, 2026")`);
     }
   }
   return violations;
@@ -68,13 +101,13 @@ export function findTimelineDateViolations(standardsDir) {
 }
 
 // Doc pages: a phrase saying when the handbook checked, accessed or verified a source, or a
-// status line, heading or table heading pinned to a date ("Status (24 November 2026)",
-// "## Status on 24 November 2026", "where each stood on 24 November 2026"). Dates that are
+// status line, heading or table heading pinned to a date ("Status (November 24, 2026)",
+// "## Status on November 24, 2026", "where each stood on November 24, 2026"). Dates that are
 // facts about a document (published, revised, reviewed, "as of" in the document's own dating)
 // are fine. The worked examples and records are excepted: their dates are fictional events,
 // such as the date a record says something was checked.
 const MONTH = `(?:${MONTHS.join('|')})`;
-const ANY_DATE = `(?:\\d{1,2}\\s+${MONTH}\\s+\\d{4}|${MONTH}\\s+\\d{4}|\\d{4}-\\d{2}-\\d{2})`;
+const ANY_DATE = `(?:${MONTH}\\s+\\d{1,2},\\s*\\d{4}|\\d{1,2}\\s+${MONTH}\\s+\\d{4}|${MONTH}\\s+\\d{4}|\\d{4}-\\d{2}-\\d{2})`;
 const CHECKED_DATE_PATTERNS = [
   new RegExp(`\\b(?:checked|accessed|verified)\\b[^.;|]{0,40}?\\b(?:on|in|at|:)?\\s*${ANY_DATE}`, 'i'),
   new RegExp(`\\bstatus\\s*(?:\\(|on\\s+|as\\s+(?:of|at)\\s+|at\\s+)\\s*${ANY_DATE}`, 'i'),

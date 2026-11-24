@@ -156,7 +156,7 @@ const words = (n) => ['Word', ...Array.from({length: n - 1}, () => 'word')].join
 
 const withJourney = (pages) =>
   Object.fromEntries(
-    ['docs/plan/index.md', 'docs/plan/core-actions.md', 'docs/plan/programme/index.md'].map((name, index) => [name, pages[index] ?? journeyPage('Short and clear.')]),
+    ['docs/plan/index.md', 'docs/plan/core-actions.md', 'docs/plan/program/index.md'].map((name, index) => [name, pages[index] ?? journeyPage('Short and clear.')]),
   );
 const budget = (page) => withRoot(withJourney([journeyPage(page)]), (root) => findJourneyBudgetViolations(root));
 

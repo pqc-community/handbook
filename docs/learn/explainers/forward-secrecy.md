@@ -11,7 +11,7 @@ displayed_sidebar: learnSidebar
 
 [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §3.1.3) explains that modern network security protocols use separate asymmetric keys for key establishment and authentication. The long-term key authenticates the server; the key-establishment keys are used briefly, usually for a single exchange, and then discarded. That gives **forward secrecy**: if the long-term key is stolen later, sessions that happened before the theft stay protected, because their session keys never depended on it.
 
-Forward secrecy is a real and valuable defence against a common attack: an adversary who records traffic and later steals or compels disclosure of a server's private key.
+Forward secrecy is a real and valuable defense against a common attack: an adversary who records traffic and later steals or compels disclosure of a server's private key.
 
 ## Why it does not stop harvest-now, decrypt-later
 

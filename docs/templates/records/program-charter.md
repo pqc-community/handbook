@@ -1,14 +1,14 @@
 ---
-title: Programme charter
-search_title: Post-quantum programme charter template
-sidebar_label: Programme charter
-description: A one-page charter naming the programme's goal and scope, who holds each role, the first budget line, how progress is reported, and when the sponsor agreed it.
+title: Program charter
+search_title: Post-quantum program charter template
+sidebar_label: Program charter
+description: A one-page charter naming the program's goal and scope, who holds each role, the first budget line, how progress is reported, and when the sponsor agreed it.
 displayed_sidebar: templatesSidebar
 ---
 
 ## When to use it
 
-Use this charter when you [set up the programme](/plan/programme/set-up/): once the four questions in [Which plan you need](/plan/) show that you need a programme and the [size rule](/plan/programme/#size) makes it a full one, and again when the scope, roles, or budget change.
+Use this charter when you [set up the program](/plan/program/set-up/): once the four questions in [Which plan you need](/plan/) show that you need a program and the [size rule](/plan/program/#size) makes it a full one, and again when the scope, roles, or budget change.
 
 ## Minimum fields
 
@@ -20,7 +20,7 @@ Record `unknown` in any field you cannot settle yet, keep keys, secrets, and per
 
 ## Filled example
 
-From [Protect this first](/templates/examples/protect-this-first/). The organisation, roles, and dates are fictional.
+From [Protect this first](/templates/examples/protect-this-first/). The organization, roles, and dates are fictional.
 
 | field | entry |
 | --- | --- |
@@ -62,17 +62,17 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 | people told | |
 | agreed by | |
 
-Download a blank CSV: [programme-charter.csv](/downloads/programme-charter.csv).
+Download a blank CSV: [program-charter.csv](/downloads/program-charter.csv).
 
-The charter assigns responsibility; it does not decide priorities or algorithms. Large or regulated organisations will usually need a formal governance structure beyond one page.
+The charter assigns responsibility; it does not decide priorities or algorithms. Large or regulated organizations will usually need a formal governance structure beyond one page.
 
 ## Sources
 
 - Post-Quantum Cryptography Coalition, Post-Quantum Cryptography (PQC) Migration Roadmap, May 2025. [PQC Migration Roadmap (PDF)](https://pqcc.org/wp-content/uploads/2025/05/PQC-Migration-Roadmap-PQCC-2.pdf)
-- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed March 20, 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 
-- [Set up the programme](/plan/programme/set-up/)
-- [Programme](/plan/programme/)
+- [Set up the program](/plan/program/set-up/)
+- [Program](/plan/program/)
 - [Register](/templates/records/register/)

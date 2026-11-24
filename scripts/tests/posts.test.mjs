@@ -26,7 +26,7 @@ const post = ({
   marker = TRUNCATE_MARKER,
   ending = '## Sources\n\n- A source.\n\n## Related pages\n\n- [Plan](/plan/)\n',
   desc = description(),
-  body = 'See [the plan](/plan/), [core actions](/plan/core-actions/) and [the programme](/plan/programme/).',
+  body = 'See [the plan](/plan/), [core actions](/plan/core-actions/) and [the program](/plan/program/).',
 } = {}) =>
   `---\ntitle: ${title}\ndescription: ${desc}\ndate: ${date}\n${slug ? `slug: ${slug}\n` : ''}authors: [pqc_handbook]\n---\n\n${teaser}\n\n${marker}\n\n## What happened\n\n${body}\n\n${ending}`;
 
@@ -100,7 +100,7 @@ test('prose date and staccato rules cover posts', () => {
   };
   assert.deepEqual(
     withRoot(files, (root) => findProseDateViolations(root)),
-    [`blog/2025/iso.md:8: 2025-03-20 → write "20 March 2025"`],
+    [`blog/2025/iso.md:8: 2025-03-20 → write "March 20, 2025"`],
   );
   assert.equal(withRoot(files, (root) => findStaccatoViolations(root)).length, 1);
 });

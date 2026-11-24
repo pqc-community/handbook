@@ -19,9 +19,9 @@ Secure Shell (SSH) is used to administer servers and network devices, to run aut
 | Host and user keys, composite | Composite ML-DSA signatures, draft-ietf-sshm-composite-sigs | Working-group Internet-Draft at an early stage |
 | Host and user keys, ML-DSA alone | draft-sfluhrer-ssh-mldsa | Individual Internet-Draft, not adopted by a working group |
 
-Both key-exchange methods are hybrids that keep a classical exchange alongside the post-quantum one. They are Informational RFCs, which document a method without making it an IETF standard. NTRU Prime is not one of NIST's standardised algorithms: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) names ML-KEM as, at this time, NIST's only approved post-quantum key-establishment scheme. So check sntrup761x25519 against the authorities that apply to you, as [Choosing an option](/technology-options/choosing/) describes, before relying on it. France's ANSSI, in its [technical note on SSHv2](/standards/national-algorithm-positions/anssi-pqc-position/) (2 February 2026), a non-normative note for developers, administrators and security managers, recommends hybridisation for both the key exchange and host and client authentication. It points out that SSHv2, unlike TLS 1.3 and IPsec, has no pre-shared-key mechanism, so the interim pre-shared-key route ANSSI allows for those protocols does not exist for SSH.
+Both key-exchange methods are hybrids that keep a classical exchange alongside the post-quantum one. They are Informational RFCs, which document a method without making it an IETF standard. NTRU Prime is not one of NIST's standardized algorithms: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) names ML-KEM as, at this time, NIST's only approved post-quantum key-establishment scheme. So check sntrup761x25519 against the authorities that apply to you, as [Choosing an option](/technology-options/choosing/) describes, before relying on it. France's ANSSI, in its [technical note on SSHv2](/standards/national-algorithm-positions/anssi-pqc-position/) (February 2, 2026), a non-normative note for developers, administrators and security managers, recommends hybridization for both the key exchange and host and client authentication. It points out that SSHv2, unlike TLS 1.3 and IPsec, has no pre-shared-key mechanism, so the interim pre-shared-key route ANSSI allows for those protocols does not exist for SSH.
 
-No post-quantum signature method for SSH host or user keys is standardised: RFC 10042 and RFC 9941 define key exchange only, and the signature drafts are at an early stage, but implementations are moving ahead of the standards: according to its release notes, OpenSSH 10.6 (6 October 2026) enables a hybrid ML-DSA-44 and Ed25519 signature algorithm, ssh-mldsa44-ed25519, and OpenSSH 10.6p2 (5 November 2026) also allows it for signing certificates, while keys made with the project's earlier experimental version must be regenerated. That is the risk of building on a draft, so ask the SSH supplier what it ships, on which draft, and apply the protocol-mechanisms rule on the same page.
+No post-quantum signature method for SSH host or user keys is standardized: RFC 10042 and RFC 9941 define key exchange only, and the signature drafts are at an early stage, but implementations are moving ahead of the standards: according to its release notes, OpenSSH 10.6 (October 6, 2026) enables a hybrid ML-DSA-44 and Ed25519 signature algorithm, ssh-mldsa44-ed25519, and OpenSSH 10.6p2 (November 5, 2026) also allows it for signing certificates, while keys made with the project's earlier experimental version must be regenerated. That is the risk of building on a draft, so ask the SSH supplier what it ships, on which draft, and apply the protocol-mechanisms rule on the same page.
 
 ## Who usually chooses
 
@@ -49,7 +49,7 @@ The SSH implementation's supplier, usually the operating system or the network d
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A key-establishment row for SSH servers, and a separate signatures row for host and user keys; answers from the makers of devices and tools with their own SSH library, with their judgement; and a row for each device that cannot follow, with an owner, the replacement date, and a `next review` |
+| [Register](/templates/records/register/) | A key-establishment row for SSH servers, and a separate signatures row for host and user keys; answers from the makers of devices and tools with their own SSH library, with their judgment; and a row for each device that cannot follow, with an owner, the replacement date, and a `next review` |
 | [Change record](/templates/records/change-record/) | Any change to server or client settings, with the negotiated method as the deployed-state check |
 
 ## Example
@@ -63,13 +63,13 @@ A decision-ready record lists the servers by operating-system release with the k
 - IETF, Post-Quantum/Traditional Hybrid Key Exchange with the Module-Lattice-Based Key-Encapsulation Mechanism for Use in SSH, RFC 10042, August 2026. [RFC 10042](https://www.rfc-editor.org/info/rfc10042)
 - IETF, Secure Shell (SSH) Key Exchange Method Using Hybrid Streamlined NTRU Prime sntrup761 and X25519 with SHA-512: sntrup761x25519-sha512, RFC 9941, April 2026. [RFC 9941](https://www.rfc-editor.org/info/rfc9941)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- ANSSI, Transition post-quantique de SSHv2, ANSSI-FT-116, version 1.0, 2 February 2026 (§3, §4). [ANSSI SSHv2 note (PDF)](https://messervices.cyber.gouv.fr/documents-guides/transition_post_quantique_ssh_v2.pdf)
-- OpenSSH, OpenSSH 10.6 release notes, 6 October 2026, and OpenSSH 10.6p2 release notes, 5 November 2026. [OpenSSH 10.6 (TXT)](https://www.openssh.org/txt/release-10.6) / [OpenSSH 10.6p2 (TXT)](https://www.openssh.org/txt/release-10.6p2)
+- ANSSI, Transition post-quantique de SSHv2, ANSSI-FT-116, version 1.0, February 2, 2026 (§3, §4). [ANSSI SSHv2 note (PDF)](https://messervices.cyber.gouv.fr/documents-guides/transition_post_quantique_ssh_v2.pdf)
+- OpenSSH, OpenSSH 10.6 release notes, October 6, 2026, and OpenSSH 10.6p2 release notes, November 5, 2026. [OpenSSH 10.6 (TXT)](https://www.openssh.org/txt/release-10.6) / [OpenSSH 10.6p2 (TXT)](https://www.openssh.org/txt/release-10.6p2)
 - IETF Datatracker, Post-Quantum Composite Signatures in SSH, draft-ietf-sshm-composite-sigs-01, and SSH Support of ML-DSA, draft-sfluhrer-ssh-mldsa-08. [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/) / [draft-sfluhrer-ssh-mldsa](https://datatracker.ietf.org/doc/draft-sfluhrer-ssh-mldsa/)
 
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
-- [Inventory the cryptography](/plan/programme/inventory/)
+- [Inventory the cryptography](/plan/program/inventory/)
 - [PKI and certificates](/technology-options/pki/)

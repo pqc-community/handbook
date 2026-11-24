@@ -8,19 +8,19 @@ displayed_sidebar: journeySidebar
 
 ## When this applies
 
-At least one of the [four questions](/plan/) applies, and you need to know where public-key cryptography is used before prioritising, planning, or claiming that anything has migrated. Start with the systems the questions found.
+At least one of the [four questions](/plan/) applies, and you need to know where public-key cryptography is used before prioritizing, planning, or claiming that anything has migrated. Start with the systems the questions found.
 
 ## Who does what
 
 - The **migration lead** sets the scope, keeps the [register](/templates/records/register/), and chases unknowns.
 - **System owners** confirm each row for their systems.
 - **Operations** runs scans, log reviews, and configuration checks.
-- **Procurement** asks suppliers for what cannot be seen from inside the organisation (see [Work with suppliers](/plan/programme/suppliers/)).
+- **Procurement** asks suppliers for what cannot be seen from inside the organization (see [Work with suppliers](/plan/program/suppliers/)).
 
 ## Do this
 
 1. **Start where the risk is.** List each system that holds sensitive or long-lived data, exposes an external connection, operates signing infrastructure, or contains a device or product that verifies signatures. Add the rest later, including collaboration tools and services teams bought without IT, which a supplier list from IT often misses.
-2. **Make a minimum first pass before anything else.** For each system from step 1, ask its owner what it does with public-key cryptography; export the certificate list from your certificate authority or certificate manager, if you have one; and, where a supplier controls the system, send the supplier the questions in [Work with suppliers](/plan/programme/suppliers/). Mark everything you cannot confirm as unknown. That is enough to start deciding what to migrate first; supplier answers can follow, and the methods below fill the gaps over time.
+2. **Make a minimum first pass before anything else.** For each system from step 1, ask its owner what it does with public-key cryptography; export the certificate list from your certificate authority or certificate manager, if you have one; and, where a supplier controls the system, send the supplier the questions in [Work with suppliers](/plan/program/suppliers/). Mark everything you cannot confirm as unknown. That is enough to start deciding what to migrate first; supplier answers can follow, and the methods below fill the gaps over time.
 3. **Add further discovery methods as you go**, because each one misses something:
    - **connections**: certificate and TLS scans, plus server or load-balancer logs that show which key-exchange groups and signature algorithms are actually negotiated;
    - **certificates**: internal certificate authority issuance records and certificate transparency logs for public certificates;
@@ -31,12 +31,12 @@ At least one of the [four questions](/plan/) applies, and you need to know where
 4. **Record one row per system and job** on the register, naming each system, service, product, or key the same way on every row, and giving key establishment and signatures separate rows. In each row, record what protects that job today. A cell can hold several values: a TLS endpoint's key-establishment row may list its key-exchange groups, and its signature row its handshake signature and certificate-chain algorithms. A system that does only one job, such as a firmware verifier that only checks signatures, has only that row.
 5. **Give a public-key infrastructure you operate its own rows.** A certificate authority, its signing keys and hardware security modules, and the services that publish revocation information have their own algorithms and lifetimes. For a certificate authority you only consume, or a shared library, name it in the next step of the rows that depend on it, so a change to it is not missed.
 6. **Record what decides urgency**: who controls the software (`supplier`), the data confidentiality period (`why it is here`), the renewal or refresh date (`dates that apply`), and the version where known.
-7. **Mark what a scan cannot see**, including embedded firmware, hardware-bound keys, boot trust anchors, keys held offline, such as a root certificate authority's, keys in formats your tools do not recognise, and cryptography inside a supplier's product or hosted service.
+7. **Mark what a scan cannot see**, including embedded firmware, hardware-bound keys, boot trust anchors, keys held offline, such as a root certificate authority's, keys in formats your tools do not recognize, and cryptography inside a supplier's product or hosted service.
 8. **Be honest about what is known.** Treat a row as known only when what protects it today names a specific algorithm or scheme, such as X25519MLKEM768 or ECDSA P-256, rather than "TLS" or "encrypted"; otherwise record unknown. An unknown row stays on the register with an owner.
 
-A first list of rows is a **first-pass inventory**. With a named owner and a next review date on each row, it becomes a **maintained inventory** that the rest of the programme can rely on. Keep a note of the discovery methods used for each system, so a reviewer can judge coverage.
+A first list of rows is a **first-pass inventory**. With a named owner and a next review date on each row, it becomes a **maintained inventory** that the rest of the program can rely on. Keep a note of the discovery methods used for each system, so a reviewer can judge coverage.
 
-The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of 17 August 2023) urges organisations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it.
+The CISA, NSA, and NIST [Quantum-Readiness fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/) (as of August 17, 2023) urges organizations to build an inventory of quantum-vulnerable cryptography and to ask technology vendors about it.
 
 ## Keep this evidence
 
@@ -57,15 +57,15 @@ Every algorithm the manufacturer has not verified is `unknown`, and each row nam
 
 ## Limits and next step
 
-The inventory records what exists rather than deciding order or algorithms, and large estates may need specialist discovery tooling and support. Next, [decide what to migrate first](/plan/programme/priority/).
+The inventory records what exists rather than deciding order or algorithms, and large estates may need specialist discovery tooling and support. Next, [decide what to migrate first](/plan/program/priority/).
 
 ## Sources
 
-- CISA, NSA, and NIST, Quantum-Readiness: Migration to Post-Quantum Cryptography, as of 17 August 2023. [Fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
+- CISA, NSA, and NIST, Quantum-Readiness: Migration to Post-Quantum Cryptography, as of August 17, 2023. [Fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 
 ## Related pages
 
 - [Register](/templates/records/register/)
-- [Decide what to migrate first](/plan/programme/priority/)
+- [Decide what to migrate first](/plan/program/priority/)
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
 - [NCCoE Migration to PQC](/standards/migration-guides/nccoe-migration-to-pqc/)

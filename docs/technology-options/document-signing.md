@@ -50,7 +50,7 @@ The email and document software suppliers decide what their products sign with a
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | The signatures row for the signing service and the signer certificates, naming the recipient groups that verify them, with the software suppliers' answers and judgement |
+| [Register](/templates/records/register/) | The signatures row for the signing service and the signer certificates, naming the recipient groups that verify them, with the software suppliers' answers and judgment |
 | [Change record](/templates/records/change-record/) | Verification tests for each recipient group |
 
 ## Example

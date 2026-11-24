@@ -24,7 +24,7 @@ function crc32(buf) {
   return (c ^ 0xffffffff) >>> 0;
 }
 
-// 1 January 2026, 00:00, in MS-DOS date and time format.
+// January 1, 2026, 00:00, in MS-DOS date and time format.
 const DOS_TIME = 0;
 const DOS_DATE = ((2026 - 1980) << 9) | (1 << 5) | 1;
 

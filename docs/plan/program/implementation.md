@@ -24,7 +24,7 @@ An option has been chosen for one system, with the standard or authority it foll
    - **interoperability** with every party that connects, including clients and partners you do not manage;
    - **network equipment in the path**: load balancers, firewalls, inspection proxies, and intrusion-detection systems may mishandle larger handshakes or strip unfamiliar options;
    - **performance and size effects**: handshake size and latency, CPU and hardware security module throughput, certificate chain size, and, for firmware, image size and boot time;
-   - **failure behaviour**: what a client does when the new option is refused.
+   - **failure behavior**: what a client does when the new option is refused.
 3. **Write the rollback trigger and who may invoke it** before the pilot starts, including a silent fallback to classical-only cryptography as a trigger, not just an outage.
 4. **Write how you will check the deployed state**, by your own inspection rather than a supplier statement. Examples: server or load-balancer logs showing the negotiated key-exchange group, a client-side check against the production endpoint, certificate inspection, or the verifier's accepted-key list. For a supplier-hosted service you cannot inspect from the inside, use a client-side check from your own systems; the supplier's logs can support it but do not replace it.
 5. **Run the pilot.** Record each test's result. If a rollback trigger fires, roll back, record why, and fix the cause before trying again.
@@ -48,26 +48,26 @@ An insufficient record is "We enabled PQC."
 
 A decision-ready record, from [Protect this first](/templates/examples/protect-this-first/), shows the product-design archive's staging pilot of Workspace 4.2:
 
-- **option:** hybrid X25519MLKEM768 for TLS connections, with the authority recorded as FIPS 203 for ML-KEM and the UK NCSC's TLS guidance (15 October 2026), written for system administrators, for the hybrid form;
-- **pilot:** a test client connects and its own handshake log shows X25519MLKEM768 negotiated, the supplier's connection log agrees, and an authorised test account retrieves sample files;
+- **option:** hybrid X25519MLKEM768 for TLS connections, with the authority recorded as FIPS 203 for ML-KEM and the UK NCSC's TLS guidance (October 15, 2026), written for system administrators, for the hybrid form;
+- **pilot:** a test client connects and its own handshake log shows X25519MLKEM768 negotiated, the supplier's connection log agrees, and an authorized test account retrieves sample files;
 - **rollback triggers:** failed retrieval, or a classical-only connection;
-- **result:** the staging pilot passed on 21 October 2026. Production rollout is pending, so the change is not closed; the same client check will be run against the production workspace after rollout.
+- **result:** the staging pilot passed on October 21, 2026. Production rollout is pending, so the change is not closed; the same client check will be run against the production workspace after rollout.
 
-A blocked record is the product sensor's firmware verifier, whose signature and trust-root option is `unknown`, so no test is claimed. Rollback is `not applicable`, because the boot ROM cannot change after shipment, and the change stays blocked until a supported option can be tested before the design freeze on 30 June 2027.
+A blocked record is the product sensor's firmware verifier, whose signature and trust-root option is `unknown`, so no test is claimed. Rollback is `not applicable`, because the boot ROM cannot change after shipment, and the change stays blocked until a supported option can be tested before the design freeze on June 30, 2027.
 
 ## Limits and next step
 
-Protocol and product configuration belong in product documentation and specialist hands; this page records the change and how it was proved, not the settings. Next, [keep the ability to change again](/plan/programme/changing-algorithms-again/).
+Protocol and product configuration belong in product documentation and specialist hands; this page records the change and how it was proved, not the settings. Next, [keep the ability to change again](/plan/program/changing-algorithms-again/).
 
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
-- UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, August 13, 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published October 15, 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/info/rfc10024)
 
 ## Related pages
 
 - [Change record](/templates/records/change-record/)
 - [Choosing an option](/technology-options/choosing/)
-- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/program/changing-algorithms-again/)

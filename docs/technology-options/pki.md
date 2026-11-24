@@ -22,9 +22,9 @@ All are Proposed Standards.
 | HSS and XMSS hash-based signatures | [RFC 9802](https://www.rfc-editor.org/info/rfc9802) | June 2025 |
 | ML-KEM keys, for certificates used in key establishment | [RFC 9935](https://www.rfc-editor.org/info/rfc9935) | March 2026 |
 
-NIST IR 8547, written for US federal agencies and technology providers, among others, says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (15 October 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
+NIST IR 8547, written for US federal agencies and technology providers, among others, says PKI components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and stresses backward compatibility during the transition; it also says existing NIST standards accommodate dual signatures provided at least one component is NIST-approved. The UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, notes that hybrid authentication in a PKI needs either a PKI that signs with both kinds of algorithm or two parallel PKIs, and prefers a single migration to a fully post-quantum PKI. Its later [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data) (October 15, 2026) says private PKIs may be able to adopt post-quantum authentication sooner than the public Web PKI.
 
-The public Web PKI is taking a different path from ML-DSA certificate chains, at least in Chrome. Google's [Chrome Quantum-resistant Root Program FAQ](https://googlechrome.github.io/chromerootprogram/cqrp/faq/) says Chrome supports ML-DSA in private PKI hierarchies from Chrome 150, for local and enterprise testing, but will not accept ML-DSA in its quantum-resistant root store, because full post-quantum chains and transparency proofs in every handshake would cost too much bandwidth and latency. Chrome instead plans to use Merkle Tree Certificates, being developed in the IETF PLANTS working group, and targets public issuance from the first quarter of 2027 and a quantum-resistant root store from the third quarter of 2027. Those are one browser's targets for its own root programme, not an authority's deadline, and other root programmes set their own rules.
+The public Web PKI is taking a different path from ML-DSA certificate chains, at least in Chrome. Google's [Chrome Quantum-resistant Root Program FAQ](https://googlechrome.github.io/chromerootprogram/cqrp/faq/) says Chrome supports ML-DSA in private PKI hierarchies from Chrome 150, for local and enterprise testing, but will not accept ML-DSA in its quantum-resistant root store, because full post-quantum chains and transparency proofs in every handshake would cost too much bandwidth and latency. Chrome instead plans to use Merkle Tree Certificates, being developed in the IETF PLANTS working group, and targets public issuance from the first quarter of 2027 and a quantum-resistant root store from the third quarter of 2027. Those are one browser's targets for its own root program, not an authority's deadline, and other root programs set their own rules.
 
 ## Who usually chooses
 
@@ -43,7 +43,7 @@ You choose for a private PKI, within what your CA software and hardware security
 - Whether each trust store and relying party verifies a certificate from a test chain that uses the new algorithm.
 - Whether revocation services (CRLs and OCSP responders) can sign with the new algorithm.
 - Whether larger certificates and chains still fit the protocols and devices that carry them.
-- For public certificates, what your certification authority and the browser root programmes have published about post-quantum certificates, including whether they expect Merkle Tree Certificates rather than ML-DSA chains.
+- For public certificates, what your certification authority and the browser root programs have published about post-quantum certificates, including whether they expect Merkle Tree Certificates rather than ML-DSA chains.
 
 ## Traps
 
@@ -56,7 +56,7 @@ You choose for a private PKI, within what your CA software and hardware security
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A signatures row for each certification authority, naming its HSM, with answers from CA software and HSM suppliers and their judgement, the parties that must move listed in the order they move, the applicable timeline and its authority in `dates that apply`, and the date the old chain stops being issued |
+| [Register](/templates/records/register/) | A signatures row for each certification authority, naming its HSM, with answers from CA software and HSM suppliers and their judgment, the parties that must move listed in the order they move, the applicable timeline and its authority in `dates that apply`, and the date the old chain stops being issued |
 | [Change record](/templates/records/change-record/) | Tests against every class of verifier, and the rollback trigger |
 
 ## Example
@@ -74,7 +74,7 @@ A decision-ready record names the private CA and its HSM, lists the relying part
 - IETF, Use of the HSS and XMSS Hash-Based Signature Algorithms in Internet X.509 Public Key Infrastructure, RFC 9802, June 2025. [RFC 9802](https://www.rfc-editor.org/info/rfc9802)
 - IETF, Internet X.509 Public Key Infrastructure - Algorithm Identifiers for the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM), RFC 9935, March 2026. [RFC 9935](https://www.rfc-editor.org/info/rfc9935)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
-- UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+- UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published October 15, 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 - Google, Chrome Quantum-resistant Root Program, Frequently Asked Questions. [Chrome Quantum-resistant Root Program FAQ (HTML)](https://googlechrome.github.io/chromerootprogram/cqrp/faq/)
 - IETF Datatracker, Merkle Tree Certificates, draft-ietf-plants-merkle-tree-certs-08. [draft-ietf-plants-merkle-tree-certs](https://datatracker.ietf.org/doc/draft-ietf-plants-merkle-tree-certs/)
 

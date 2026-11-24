@@ -5,7 +5,7 @@ description: How to break a supplier's "quantum-safe" or "PQC-ready" claim into 
 displayed_sidebar: learnSidebar
 ---
 
-**Question this answers:** when a supplier says their product is "quantum-safe", what should you record, and what should you ask? **Background:** [Standardisation](/learn/standardisation/), [Hybrid cryptography](/learn/hybrid/).
+**Question this answers:** when a supplier says their product is "quantum-safe", what should you record, and what should you ask? **Background:** [Standardization](/learn/standardization/), [Hybrid cryptography](/learn/hybrid/).
 
 "Quantum-safe", "quantum-ready", "PQC-enabled", and "quantum-resistant" have no agreed definition. None of them tells you which cryptographic job changed, in which version, or whether it is switched on, so treat them as an invitation to ask questions, not as an answer.
 
@@ -19,13 +19,13 @@ displayed_sidebar: learnSidebar
 | **4. Where, exactly?** | Coverage is often partial | Which interfaces, hops, services, and client types |
 | **5. When, and on whose authority?** | Release dates slip; deadlines belong to named authorities | A release date, and any authority the supplier is aligning with |
 
-The questions follow the handbook's model: separate jobs, separate [layers](/learn/standardisation/), and dates that belong to [named authorities](/learn/timelines/). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.2) supports the layer question: libraries, hardware modules, protocols, and PKI each need their own updates before an application can use post-quantum algorithms.
+The questions follow the handbook's model: separate jobs, separate [layers](/learn/standardization/), and dates that belong to [named authorities](/learn/timelines/). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.2) supports the layer question: libraries, hardware modules, protocols, and PKI each need their own updates before an application can use post-quantum algorithms.
 
 ## Insufficient and decision-ready
 
 An insufficient record: *"Vendor confirms the platform is quantum-safe."*
 
-A decision-ready record, from the fictional [Protect this first](/templates/examples/protect-this-first/) example: *"The supplier's letter of 4 September 2026 states that Workspace 4.2, scheduled for 1 October 2026, uses hybrid key establishment, X25519MLKEM768 (ML-KEM-768 from FIPS 203 combined with X25519), for TLS connections to the hosted archive and does not include post-quantum signing changes. Staging pilot of Workspace 4.2 passed on 21 October 2026; production rollout pending. Stored-data key wrapping not answered and not counted as migrated. Signatures and stored data tracked separately: written answers due 1 December 2026."*
+A decision-ready record, from the fictional [Protect this first](/templates/examples/protect-this-first/) example: *"The supplier's letter of September 4, 2026, states that Workspace 4.2, scheduled for October 1, 2026, uses hybrid key establishment, X25519MLKEM768 (ML-KEM-768 from FIPS 203 combined with X25519), for TLS connections to the hosted archive and does not include post-quantum signing changes. Staging pilot of Workspace 4.2 passed on October 21, 2026; production rollout pending. Stored-data key wrapping not answered and not counted as migrated. Signatures and stored data tracked separately: written answers due December 1, 2026."*
 
 The second record names the job, the algorithm and its standard, the version, the evidence, and what is still open. It can be tested, compared with an authority's timeline, and revisited.
 
@@ -33,22 +33,22 @@ The second record names the job, the algorithm and its standard, the version, th
 
 - A claim covers "the product" without naming a job or interface.
 - Only symmetric key sizes are mentioned ("we use AES-256, so we are quantum-safe"). NIST IR 8547 (§4.1.3) and the UK NCSC treat symmetric cryptography as largely unaffected; the public-key jobs are what need to change.
-- Quantum key distribution is offered as the answer. The UK NCSC's [paper on quantum networking technologies](https://www.ncsc.gov.uk/paper/quantum-networking-technologies) (5 August 2025) states that post-quantum cryptography is the best mitigation and that it will not support QKD for government or military applications.
+- Quantum key distribution is offered as the answer. The UK NCSC's [paper on quantum networking technologies](https://www.ncsc.gov.uk/paper/quantum-networking-technologies) (August 5, 2025) states that post-quantum cryptography is the best mitigation and that it will not support QKD for government or military applications.
 - An unpublished or proprietary algorithm is presented as equivalent to a NIST or IETF standard.
 - "Compliant with" a standard that is still a draft, or with a date that is really another jurisdiction's deadline.
 
 ## Where this goes next
 
-Record each answer, and your judgement of it, on the system's row in the [register](/templates/records/register/), and judge it with [Work with suppliers](/plan/programme/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
+Record each answer, and your judgment of it, on the system's row in the [register](/templates/records/register/), and judge it with [Work with suppliers](/plan/program/suppliers/). For question lists published by authorities, see the [supplier question guides](/standards/migration-guides/vendor-questions/).
 
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.2, §4.1.3). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024)
-- UK National Cyber Security Centre, Quantum networking technologies, 5 August 2025. [NCSC paper](https://www.ncsc.gov.uk/paper/quantum-networking-technologies)
+- UK National Cyber Security Centre, Quantum networking technologies, August 5, 2025. [NCSC paper](https://www.ncsc.gov.uk/paper/quantum-networking-technologies)
 
 ## Related pages
 
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Work with suppliers](/plan/program/suppliers/)
 - [Register](/templates/records/register/)
 - [From research to deployment](/learn/explainers/research-to-deployment/)

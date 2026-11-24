@@ -20,7 +20,7 @@ The building block is a **one-time signature**: a key pair that can safely sign 
 
 | | Stateful: LMS, HSS, XMSS, XMSS^MT | Stateless: SLH-DSA |
 | --- | --- | --- |
-| Standard | [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final), October 2020 | [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final), 13 August 2024 |
+| Standard | [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final), October 2020 | [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final), August 13, 2024 |
 | How one-time keys are chosen | The signer tracks which ones have been used and must never reuse one | Chosen in a way that makes reuse risk negligible without tracking |
 | Operational burden | High: state must be stored, protected, and never rolled back or cloned | Low: behaves like an ordinary signature key |
 | Intended use (NIST IR 8547) | Not for general use; may suit software and firmware signing | General use where its size is acceptable |
@@ -40,9 +40,9 @@ Each can cause a one-time key to be reused. This is why the handbook treats "how
 
 ## Why firmware signing is the sweet spot
 
-Firmware and boot code are signed rarely, by a small, tightly controlled team, often in an offline HSM — exactly the setting where state can be managed, and NIST IR 8547 (§2.1.1) names software and firmware signing as the uses where stateful schemes may be useful. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (20 March 2025) list LMS and XMSS for a more limited set of uses and note that some vendors have already developed secure boot solutions based on them.
+Firmware and boot code are signed rarely, by a small, tightly controlled team, often in an offline HSM — exactly the setting where state can be managed, and NIST IR 8547 (§2.1.1) names software and firmware signing as the uses where stateful schemes may be useful. The UK NCSC's [migration timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines) (March 20, 2025) list LMS and XMSS for a more limited set of uses and note that some vendors have already developed secure boot solutions based on them.
 
-NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (13 April 2026) proposes additional SLH-DSA parameter sets for limited-signature uses, establishing a strict limit of 2^24 signatures per key; if finalised, it would offer another option for the same niche without stateful tracking.
+NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (April 13, 2026) proposes additional SLH-DSA parameter sets for limited-signature uses, establishing a strict limit of 2^24 signatures per key; if finalized, it would offer another option for the same niche without stateful tracking.
 
 ## What to take away
 
@@ -54,10 +54,10 @@ NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (13 April 2
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1.1, §4.1.3). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
-- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
-- NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), 13 April 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
+- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, August 13, 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
+- NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), April 13, 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
-- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published March 20, 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 

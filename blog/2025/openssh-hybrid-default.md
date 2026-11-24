@@ -6,13 +6,13 @@ authors: [pqc_handbook]
 tags: [deployment-milestones, key-establishment, signatures]
 ---
 
-On 9 April 2025 the OpenSSH project released [OpenSSH 10.0](https://www.openssh.org/txt/release-10.0), which makes the hybrid post-quantum key exchange mlkem768x25519-sha256 the default for key agreement. The change matters to anyone who runs servers, network equipment or automation over [SSH](/technology-options/ssh/), because what a session negotiates now depends on whether both ends are recent enough to share the new method.
+On April 9, 2025, the OpenSSH project released [OpenSSH 10.0](https://www.openssh.org/txt/release-10.0), which makes the hybrid post-quantum key exchange mlkem768x25519-sha256 the default for key agreement. The change matters to anyone who runs servers, network equipment or automation over [SSH](/technology-options/ssh/), because what a session negotiates now depends on whether both ends are recent enough to share the new method.
 
 {/* truncate */}
 
 ## What OpenSSH changed
 
-The release notes say the hybrid algorithm mlkem768x25519-sha256 is now used by default for key agreement, and describe it as no less strong than the classical curve25519-sha256 method and considerably faster than the previous default. It combines ML-KEM, the key-encapsulation mechanism NIST standardised in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, so a session stays at least as strong as the classical exchange alone even if the post-quantum part were to fail; the [hybrid lesson](/learn/hybrid/) explains that design.
+The release notes say the hybrid algorithm mlkem768x25519-sha256 is now used by default for key agreement, and describe it as no less strong than the classical curve25519-sha256 method and considerably faster than the previous default. It combines ML-KEM, the key-encapsulation mechanism NIST standardized in [FIPS 203](/standards/post-quantum/fips-203/), with the classical X25519 exchange, so a session stays at least as strong as the classical exchange alone even if the post-quantum part were to fail; the [hybrid lesson](/learn/hybrid/) explains that design.
 
 This is not OpenSSH's first post-quantum default: according to the project's [post-quantum page](https://www.openssh.org/pq.html), OpenSSH 9.0, released in April 2022, made the hybrid sntrup761x25519-sha512 exchange the default, and OpenSSH 9.9 added mlkem768x25519-sha256, so version 10.0 moves the default from the first of those methods to the second.
 
@@ -30,11 +30,11 @@ Network devices, appliances, out-of-band controllers and automation tools often 
 
 ## Sources
 
-- OpenSSH, OpenSSH 10.0 release notes, 9 April 2025. [Release notes (TXT)](https://www.openssh.org/txt/release-10.0)
-- OpenSSH, Post-Quantum Cryptography, checked 24 November 2026. [Project page (HTML)](https://www.openssh.org/pq.html)
+- OpenSSH, OpenSSH 10.0 release notes, April 9, 2025. [Release notes (TXT)](https://www.openssh.org/txt/release-10.0)
+- OpenSSH, Post-Quantum Cryptography, checked November 24, 2026. [Project page (HTML)](https://www.openssh.org/pq.html)
 
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
-- [Inventory the cryptography](/plan/programme/inventory/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Inventory the cryptography](/plan/program/inventory/)
+- [Work with suppliers](/plan/program/suppliers/)

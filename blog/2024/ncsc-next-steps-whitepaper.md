@@ -6,7 +6,7 @@ authors: [pqc_handbook]
 tags: [authority-updates, uk, key-establishment, signatures]
 ---
 
-On 14 August 2024 the UK National Cyber Security Centre (NCSC) published version 2.0 of its whitepaper [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography), first published in November 2023. Written for system and risk owners in commercial enterprises, public sector organisations and critical national infrastructure, it follows NIST's final standards of the previous day with NCSC's algorithm, parameter and hybrid recommendations.
+On August 14, 2024, the UK National Cyber Security Centre (NCSC) published version 2.0 of its whitepaper [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography), first published in November 2023. Written for system and risk owners in commercial enterprises, public sector organizations and critical national infrastructure, it follows NIST's final standards of the previous day with NCSC's algorithm, parameter and hybrid recommendations.
 
 {/* truncate */}
 
@@ -22,13 +22,13 @@ NCSC accepts that hybrid schemes, which combine a post-quantum algorithm with a 
 
 ## What it means for your plan
 
-The whitepaper recommends rather than requires, and it applies to NCSC's stated audience. For commodity IT such as standard browsers and operating systems, NCSC expects post-quantum support to arrive through software updates, so keeping supported products up to date, as in the [core actions](/plan/core-actions/), is the main task. Owners of enterprise IT should ask their suppliers about their plans for post-quantum support; [Work with suppliers](/plan/programme/suppliers/) shows how to record the answers.
+The whitepaper recommends rather than requires, and it applies to NCSC's stated audience. For commodity IT such as standard browsers and operating systems, NCSC expects post-quantum support to arrive through software updates, so keeping supported products up to date, as in the [core actions](/plan/core-actions/), is the main task. Owners of enterprise IT should ask their suppliers about their plans for post-quantum support; [Work with suppliers](/plan/program/suppliers/) shows how to record the answers.
 
 For bespoke systems and operational technology, NCSC expects system and risk owners to choose algorithms and protocols themselves, and it advises owners of both enterprise and bespoke IT to begin financial planning, timing upgrades with broader technology refreshes. Long-lived signing keys and roots of trust deserve early attention, as the [firmware and secure boot card](/technology-options/firmware-secure-boot/) explains.
 
 ## Sources
 
-- UK NCSC, Next steps in preparing for post-quantum cryptography, whitepaper version 2.0, 14 August 2024 (first published November 2023). [Whitepaper (HTML)](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
+- UK NCSC, Next steps in preparing for post-quantum cryptography, whitepaper version 2.0, August 14, 2024 (first published November 2023). [Whitepaper (HTML)](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 
 ## Related pages
 

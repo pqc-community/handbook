@@ -2,7 +2,7 @@
 
 How the handbook is kept current: a full review of the whole site, run once a month from Claude Code with `/goal`, that finds new developments, rechecks every cited source and page, and leaves a dated report. Mission and news scope: [purpose-and-positioning.md](./purpose-and-positioning.md). Sourcing, freshness, and post rules: [style-guide.md](./style-guide.md). Placement and linking: [navigation-structure.md](./navigation-structure.md). Journey rules: [reader-journey.md](./reader-journey.md).
 
-**Status**: Adopted on 24 November 2026; first run in November 2026 (see [reviews/2026-11.md](./reviews/2026-11.md)).
+**Status**: Adopted on November 24, 2026; first run in November 2026 (see [reviews/2026-11.md](./reviews/2026-11.md)).
 
 ## Principles
 
@@ -22,8 +22,8 @@ A run answers six questions in order. The report has one section for each.
 
 Check each publisher the handbook cites for anything issued since the last report, and for anything older that the handbook does not yet reflect: new or revised publications, drafts that became final, opened or closed comment periods, withdrawn documents, and changed positions or dates. The watchlist is derived, not kept by hand:
 
-- every body whose document is summarised under `docs/standards/` (NIST, the US government and CISA, NSA, NCSC, BSI, ANSSI, AIVD and the Dutch government, ASD, the Canadian Centre for Cyber Security, CFDIR, CSA Singapore, ETSI, the European Commission, and PQCC);
-- every IETF working group whose draft or RFC is cited in `docs/` (on 24 November 2026: tls, lamps, ipsecme, sshm, and mls), found through the IETF Datatracker;
+- every body whose document is summarized under `docs/standards/` (NIST, the US government and CISA, NSA, NCSC, BSI, ANSSI, AIVD and the Dutch government, ASD, the Canadian Centre for Cyber Security, CFDIR, CSA Singapore, ETSI, the European Commission, and PQCC);
+- every IETF working group whose draft or RFC is cited in `docs/` (on November 24, 2026: tls, lamps, ipsecme, sshm, and mls), found through the IETF Datatracker;
 - the platforms cited for deployment milestones on Technology options and Learn pages.
 
 For each development, decide whether it changes anything the handbook states or should state. If it does, write the news post and make every page change in the same run; the post is dated at the development, as the style guide's *Post date* rule says, even when the run finds it months later. If it does not, record it in one line with the reason, so the next run knows it was seen. A publisher whose pages cannot be fetched is recorded as could not verify, like a source. On the first run the developments that mattered most were older than the window, so the look-back is not optional.
@@ -64,7 +64,7 @@ Read each section as its audience would, against the developments found in quest
 
 ### 6. Is the site healthy?
 
-Run the four checks in [README.md](./README.md#verification-and-build) (`npm test`, `npm run check`, `npm run typecheck`, and `npm run build`). The build already fails on broken internal links and anchors, and `npm run check` on an out-of-date records zip. Also run `npm outdated` and `npm audit`, and record any build warnings. Apply dependency updates, including major versions and fixes for security advisories, one package or related group at a time, keeping each only if all four checks still pass afterwards and the built site still renders its homepage, a doc page, and a post correctly. Revert any update that fails, and record it in the report with the failure.
+Run the four checks in [README.md](./README.md#verification-and-build) (`npm test`, `npm run check`, `npm run typecheck`, and `npm run build`). The build already fails on broken internal links and anchors, and `npm run check` on an out-of-date records zip. Also run `npm outdated` and `npm audit`, and record any build warnings. Apply dependency updates, including major versions and fixes for security advisories, one package or related group at a time, keeping each only if all four checks still pass afterward and the built site still renders its homepage, a doc page, and a post correctly. Revert any update that fails, and record it in the report with the failure.
 
 News posts are not rechecked as current, because each is a snapshot at its date. Where a development found in question 1 supersedes what a post reported, add the later-update note the style guide describes.
 
@@ -77,12 +77,12 @@ News posts are not rechecked as current, because each is a snapshot at its date.
 
 ## Fetching Sources
 
-Some publishers block automated requests, and which ones do varies by run and by network. A test on 24 November 2026 from one connection could not fetch 13 of 195 cited URLs, among them pages from ANSSI, EUR-Lex, ASD, CISA, NSA, NIST's NCCoE, and PQCC.
+Some publishers block automated requests, and which ones do varies by run and by network. A test on November 24, 2026, from one connection could not fetch 13 of 195 cited URLs, among them pages from ANSSI, EUR-Lex, ASD, CISA, NSA, NIST's NCCoE, and PQCC.
 
-- **Be polite**: Fetch one page at a time from each site, use the tools' normal behaviour, and never solve a challenge, rotate addresses, or otherwise try to get past bot protection.
+- **Be polite**: Fetch one page at a time from each site, use the tools' normal behavior, and never solve a challenge, rotate addresses, or otherwise try to get past bot protection.
 - **Detect blocking by response, not keywords**: Treat a `403`, `429`, `202` with no content, a connection failure, or a page whose title is not the cited document as could not verify. Do not search the page body for words such as *captcha*: in a test run that flagged about 40 NIST pages that had loaded correctly.
 - **Use the issuer's own alternative route**: Where the issuing body offers another official route to the same facts (such as its publication listing, a DOI record, an IETF Datatracker page, or another official host: ANSSI's documents site loaded when its main site did not), confirming through it counts. A third-party copy, cache, or archive does not.
-- **Hand-check afterwards**: After the goal finishes, Claude lists each could-not-verify source with what to confirm. The maintainer opens them in Chrome and adds the tabs to the Claude session's tab group, which Claude can read (it cannot read tabs outside that group), or saves a PDF into `.ai-helper-files/`. Claude checks the claims and records each result as confirmed, updated, or replaced, with "checked by hand" in its note. Copies in `.ai-helper-files/` are read only to verify the official URL, which stays the citation; they are never cited or linked. Anything still unverified stays so.
+- **Hand-check afterward**: After the goal finishes, Claude lists each could-not-verify source with what to confirm. The maintainer opens them in Chrome and adds the tabs to the Claude session's tab group, which Claude can read (it cannot read tabs outside that group), or saves a PDF into `.ai-helper-files/`. Claude checks the claims and records each result as confirmed, updated, or replaced, with "checked by hand" in its note. Copies in `.ai-helper-files/` are read only to verify the official URL, which stays the citation; they are never cited or linked. Anything still unverified stays so.
 - **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report for the maintainer to decide on, with the claims that rest on it and any other official copy from the same issuer that might be tried. The run does not reword or remove those claims: a blocked fetch is not evidence that a claim is wrong, so the page stays as it is until the maintainer decides.
 
 ## Running the Review

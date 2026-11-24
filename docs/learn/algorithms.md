@@ -6,15 +6,15 @@ description: What ML-KEM (formerly Kyber), ML-DSA (formerly Dilithium), SLH-DSA 
 displayed_sidebar: learnSidebar
 ---
 
-You do not need to understand how post-quantum algorithms work internally to plan a migration. You do need to recognise their names, know which job each one does, and know why they behave differently from the algorithms they replace. This lesson gives that working knowledge; parameter tables stay in the standards.
+You do not need to understand how post-quantum algorithms work internally to plan a migration. You do need to recognize their names, know which job each one does, and know why they behave differently from the algorithms they replace. This lesson gives that working knowledge; parameter tables stay in the standards.
 
 ## The algorithms by job
 
 | Algorithm | Standard | Job | Basis | Status |
 | --- | --- | --- | --- | --- |
-| **ML-KEM** | [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) | Key establishment (a key-encapsulation mechanism) | Module lattices | Final, 13 August 2024 |
-| **ML-DSA** | [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) | Digital signatures | Module lattices | Final, 13 August 2024 |
-| **SLH-DSA** | [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) | Digital signatures | Hash functions, stateless | Final, 13 August 2024 |
+| **ML-KEM** | [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) | Key establishment (a key-encapsulation mechanism) | Module lattices | Final, August 13, 2024 |
+| **ML-DSA** | [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) | Digital signatures | Module lattices | Final, August 13, 2024 |
+| **SLH-DSA** | [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) | Digital signatures | Hash functions, stateless | Final, August 13, 2024 |
 | **LMS / HSS and XMSS / XMSS^MT** | [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final) | Digital signatures for limited uses | Hash functions, stateful | Final, October 2020 |
 | **HQC** | NIST IR 8545 selection | Key establishment, alternative to ML-KEM | See IR 8545 | Selected March 2025; FIPS under development |
 | FALCON-derived signature | — | Digital signatures | See NIST project pages | FIPS under development |
@@ -27,7 +27,7 @@ You do not need to understand how post-quantum algorithms work internally to pla
 
 **ML-DSA** is the general-purpose post-quantum signature algorithm, the expected replacement for RSA and ECDSA signatures in certificates, documents, and code signing.
 
-**SLH-DSA** is a second, independent signature design that relies on hash functions rather than lattices. The NCSC whitepaper notes that hash-based signatures are large and not suitable for general-purpose use, so SLH-DSA tends to be considered where a design independent of lattice assumptions is wanted and signature size matters less. NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (13 April 2026) proposes additional SLH-DSA parameter sets for uses with a strict limit on the number of signatures per key.
+**SLH-DSA** is a second, independent signature design that relies on hash functions rather than lattices. The NCSC whitepaper notes that hash-based signatures are large and not suitable for general-purpose use, so SLH-DSA tends to be considered where a design independent of lattice assumptions is wanted and signature size matters less. NIST's draft [SP 800-230](https://csrc.nist.gov/pubs/sp/800/230/ipd) (April 13, 2026) proposes additional SLH-DSA parameter sets for uses with a strict limit on the number of signatures per key.
 
 **LMS and XMSS** are *stateful* hash-based signatures, which means the signer must never reuse a one-time key and so has to track state reliably. NIST IR 8547 (§2.1.1) says they are not intended for general use but may be useful for software and firmware signing, and [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains why.
 
@@ -54,11 +54,11 @@ Continue with [Hybrid cryptography](/learn/hybrid/).
 
 ## Sources
 
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
-- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, 13 August 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
-- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, August 13, 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)
+- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, August 13, 2024. [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final)
+- NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, August 13, 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
 - NIST, Recommendation for Stateful Hash-Based Signature Schemes, SP 800-208, October 2020. [SP 800-208](https://csrc.nist.gov/pubs/sp/800/208/final)
-- NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), 13 April 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
+- NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), April 13, 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
 - NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1, §2.2, §4.1.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)

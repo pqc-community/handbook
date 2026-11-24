@@ -16,7 +16,7 @@ The aim, in NIST's words, is a construction designed to remain secure if at leas
 
 ## Hybrid key establishment
 
-In a hybrid key exchange, both algorithms run and their outputs are combined into one secret. NIST IR 8547 (§3.2.1) describes the generic approach NIST allows: concatenate the two shared secrets and feed the result into an approved key-derivation function. TLS 1.3 now has standardised hybrids: [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024) (August 2026) defines X25519MLKEM768, SecP256r1MLKEM768, and SecP384r1MLKEM1024, each pairing an elliptic-curve exchange with ML-KEM.
+In a hybrid key exchange, both algorithms run and their outputs are combined into one secret. NIST IR 8547 (§3.2.1) describes the generic approach NIST allows: concatenate the two shared secrets and feed the result into an approved key-derivation function. TLS 1.3 now has standardized hybrids: [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024) (August 2026) defines X25519MLKEM768, SecP256r1MLKEM768, and SecP384r1MLKEM1024, each pairing an elliptic-curve exchange with ML-KEM.
 
 ```mermaid
 flowchart LR
@@ -38,8 +38,8 @@ During the transition, most systems will support old and new algorithms at the s
 | Authority | Position |
 | --- | --- |
 | NIST (US), IR 8547, October 2026 | Hybrids add complexity, cost, and potential risk; when used they are typically temporary, leading to a second transition to post-quantum-only. NIST leaves the decision to each application and accommodates hybrid key establishment and dual signatures in FIPS 140 validation. |
-| UK NCSC, [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography), August 2024; [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data), 15 October 2026 | Hybrid may sometimes be needed (for interoperability, implementation security, or protocol constraints) and, if chosen, should be an interim measure. For TLS 1.3 it recommends hybrid profiles as an interim measure and considers pure ML-KEM acceptable. |
-| EU NIS Cooperation Group, [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) v1.1, 11 June 2025 | Recommends standardised and tested hybrid solutions whenever feasible and suitable. |
+| UK NCSC, [Next steps](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography), August 2024; [TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data), October 15, 2026 | Hybrid may sometimes be needed (for interoperability, implementation security, or protocol constraints) and, if chosen, should be an interim measure. For TLS 1.3 it recommends hybrid profiles as an interim measure and considers pure ML-KEM acceptable. |
+| EU NIS Cooperation Group, [roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) v1.1, June 11, 2025 | Recommends standardized and tested hybrid solutions whenever feasible and suitable. |
 | AIVD, CWI, and TNO, [PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf), December 2024 | Reports that Germany, France, and the Netherlands advocate hybrid deployment, while the UK recommends it only when necessary. |
 
 None of these positions is universal. Record which one applies to the system and why; [Choosing an option](/technology-options/choosing/) shows how.
@@ -50,16 +50,16 @@ None of these positions is universal. Record which one applies to the system and
 - Why is a hybrid signature harder to deploy than a hybrid key exchange?
 - If a supplier says "we use hybrid", what two follow-up questions would you ask?
 
-Continue with [Standardisation](/learn/standardisation/).
+Continue with [Standardization](/learn/standardization/).
 
 ## Sources
 
 - IETF, Terminology for Post-Quantum Traditional Hybrid Schemes, RFC 9794, June 2025. [RFC 9794](https://www.rfc-editor.org/rfc/rfc9794)
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§3.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025. [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
+- EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, June 11, 2025. [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
-- UK National Cyber Security Centre, Using Transport Layer Security to protect data, 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
+- UK National Cyber Security Centre, Using Transport Layer Security to protect data, October 15, 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages

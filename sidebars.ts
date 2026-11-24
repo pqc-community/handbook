@@ -6,21 +6,21 @@ const sidebars: SidebarsConfig = {
     'plan/core-actions',
     {
       type: 'category',
-      label: 'Programme',
-      link: {type: 'doc', id: 'plan/programme/index'},
+      label: 'Program',
+      link: {type: 'doc', id: 'plan/program/index'},
       collapsed: false,
       items: [
         {
           type: 'category',
           label: 'Diagnose',
           collapsed: false,
-          items: ['plan/programme/set-up', 'plan/programme/inventory'],
+          items: ['plan/program/set-up', 'plan/program/inventory'],
         },
         {
           type: 'category',
           label: 'Order and schedule',
           collapsed: false,
-          items: ['plan/programme/priority', 'plan/programme/dates', 'plan/programme/suppliers'],
+          items: ['plan/program/priority', 'plan/program/dates', 'plan/program/suppliers'],
         },
         {
           type: 'category',
@@ -28,9 +28,9 @@ const sidebars: SidebarsConfig = {
           collapsed: false,
           items: [
             {type: 'link', label: 'Choose an option', href: '/technology-options/choosing/'},
-            'plan/programme/implementation',
-            'plan/programme/changing-algorithms-again',
-            'plan/programme/subsequent-review',
+            'plan/program/implementation',
+            'plan/program/changing-algorithms-again',
+            'plan/program/subsequent-review',
           ],
         },
       ],
@@ -44,7 +44,7 @@ const sidebars: SidebarsConfig = {
     'learn/what-post-quantum-means',
     'learn/algorithms',
     'learn/hybrid',
-    'learn/standardisation',
+    'learn/standardization',
     'learn/in-real-systems',
     'learn/timelines',
     'learn/crypto-agility',
@@ -97,7 +97,7 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
-          label: 'Standardisation status reports',
+          label: 'Standardization status reports',
           collapsed: true,
           items: [
             'standards/post-quantum/nist-ir-8528',
@@ -231,7 +231,7 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'category',
-          label: 'Programme and strategy guides',
+          label: 'Program and strategy guides',
           collapsed: false,
           items: [
             'standards/migration-guides/dutch-pqc-handbook',
@@ -323,7 +323,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'templates/records/register',
         'templates/records/purchase-wording',
-        'templates/records/programme-charter',
+        'templates/records/program-charter',
         'templates/records/change-record',
         'templates/records/progress-report',
       ],
@@ -334,7 +334,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: 'generated-index',
         title: 'Examples',
-        description: 'Worked examples that show the handbook\'s records and practices applied to a fictional organisation.',
+        description: 'Worked examples that show the handbook\'s records and practices applied to a fictional organization.',
         slug: '/templates/examples/',
       },
       collapsed: false,

@@ -4,7 +4,7 @@ import path from 'node:path';
 import {findCsvFieldViolations, findCsvLinkViolations, findRecordsZipViolations, findWorkedExampleViolations} from './records.mjs';
 import {findAdmonitionViolations, findFrontMatterViolations, findNavigationViolations, findPageViolations} from './pages.mjs';
 import {findPdfLinkLabelViolations, findStandardsLayoutViolations} from './standards.mjs';
-import {findCheckedDateViolations, findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
+import {findCheckedDateViolations, findDayMonthViolations, findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
 import {findJourneyBudgetViolations, findRetiredLabelViolations, findStaccatoViolations} from './reading.mjs';
 import {findSearchMetadataViolations, findUrlViolations} from './search.mjs';
 import {findPostViolations} from './posts.mjs';
@@ -30,7 +30,8 @@ export const CHECKS = [
   {area: 'records', name: 'filled examples match Protect this first', run: (root) => findWorkedExampleViolations(root)},
   {area: 'records', name: 'records zip is current', run: (root) => findRecordsZipViolations(root)},
   {area: 'posts', name: 'news post location, metadata, teaser and ending', run: (root) => findPostViolations(root)},
-  {area: 'dates', name: 'prose dates are day–month–year', run: (root) => findProseDateViolations(root)},
+  {area: 'dates', name: 'prose dates are not ISO', run: (root) => findProseDateViolations(root)},
+  {area: 'dates', name: 'dates are month–day–year', run: (root) => findDayMonthViolations(root)},
   {area: 'dates', name: 'timeline dates use non-breaking hyphens', run: (root) => findTimelineDateViolations(standards(root))},
   {area: 'dates', name: 'doc pages carry no checked dates', run: (root) => findCheckedDateViolations(root)},
 ];

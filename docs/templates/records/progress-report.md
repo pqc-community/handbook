@@ -8,13 +8,13 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-A full programme uses this record at the end of each review, as the charter's `reporting` field sets out and [Review and report](/plan/programme/subsequent-review/) describes, and whenever a report trigger named in the [programme charter](/templates/records/programme-charter/) fires; a small programme reports through the register instead. It is written from the records reviewed, chiefly the [register](/templates/records/register/), so it adds no new facts: every statement in it should be traceable to a row in those records.
+A full program uses this record at the end of each review, as the charter's `reporting` field sets out and [Review and report](/plan/program/subsequent-review/) describes, and whenever a report trigger named in the [program charter](/templates/records/program-charter/) fires; a small program reports through the register instead. It is written from the records reviewed, chiefly the [register](/templates/records/register/), so it adds no new facts: every statement in it should be traceable to a row in those records.
 
 ## Minimum fields
 
 date, reported by, reported to, records reviewed, key establishment, signatures, non-updatable verifier, blocked, milestones at risk, decisions needed, next review, sponsor response
 
-Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the systems by their register names and say what moved since the last report and what has not, in the words the [change record](/templates/records/change-record/) uses, such as "staging passed; production not migrated". Write `not applicable` in a job field the programme does not cover.
+Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the systems by their register names and say what moved since the last report and what has not, in the words the [change record](/templates/records/change-record/) uses, such as "staging passed; production not migrated". Write `not applicable` in a job field the program does not cover.
 
 Where you can count it, give a number in each job's field, such as the share of connections whose logs show post-quantum key establishment, or the rows migrated out of the rows in scope, so the sponsor can see the trend from one report to the next. The UK NCSC suggests metrics of this kind, such as how many of your software clients use post-quantum cryptography.
 
@@ -23,11 +23,11 @@ Where you can count it, give a number in each job's field, such as the share of 
 - **decisions needed:** escalations, budget, or risk acceptances the sponsor needs to decide, or `none`, with any escalation date already set on the register.
 - **sponsor response:** what was decided, by whom, and when. A decision such as a risk acceptance also goes on the register, with its own review date.
 
-Record `unknown` in any field you cannot settle yet, and keep keys, secrets, and personal data out of the file. Store each report with the register rather than overwriting the last one, so that the reports form the programme's history.
+Record `unknown` in any field you cannot settle yet, and keep keys, secrets, and personal data out of the file. Store each report with the register rather than overwriting the last one, so that the reports form the program's history.
 
 ## Filled example
 
-From [Protect this first](/templates/examples/protect-this-first/). The organisation, roles, and dates are fictional.
+From [Protect this first](/templates/examples/protect-this-first/). The organization, roles, and dates are fictional.
 
 | field | entry |
 | --- | --- |
@@ -63,14 +63,14 @@ From [Protect this first](/templates/examples/protect-this-first/). The organisa
 
 Download a blank CSV: [progress-report.csv](/downloads/progress-report.csv).
 
-The report summarises the records rather than replacing them, so where a regulator, board, or customer asks for evidence, give them the register and change records behind it. Keep real reports off public tickets and unlocked shared drives, because they describe how your systems are protected.
+The report summarizes the records rather than replacing them, so where a regulator, board, or customer asks for evidence, give them the register and change records behind it. Keep real reports off public tickets and unlocked shared drives, because they describe how your systems are protected.
 
 ## Sources
 
-- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed March 20, 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 
-- [Review and report](/plan/programme/subsequent-review/)
+- [Review and report](/plan/program/subsequent-review/)
 - [Register](/templates/records/register/)
-- [Programme charter](/templates/records/programme-charter/)
+- [Program charter](/templates/records/program-charter/)

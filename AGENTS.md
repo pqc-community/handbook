@@ -6,7 +6,7 @@ This repository contains the source for the PQC Handbook, a Docusaurus site. Tre
 
 - For changes to handbook content, read [style-guide.md](style-guide.md) and [purpose-and-positioning.md](purpose-and-positioning.md). For news posts under `blog/`, read their News and analysis sections.
 - For page placement, URLs, links, or sidebars, read [navigation-structure.md](navigation-structure.md) and check `sidebars.ts` and `docusaurus.config.ts` as needed.
-- For how readers are routed (Which plan you need, the core actions, the programme, records, or the homepage path), read [reader-journey.md](reader-journey.md).
+- For how readers are routed (Which plan you need, the core actions, the program, records, or the homepage path), read [reader-journey.md](reader-journey.md).
 - For visual or UI changes, read [brand-guidelines.md](brand-guidelines.md).
 - For a periodic review of the site, or a change to how reviews run, read [periodic-review.md](periodic-review.md).
 - Check nearby pages and existing patterns before adding new content or components.
@@ -16,7 +16,7 @@ This repository contains the source for the PQC Handbook, a Docusaurus site. Tre
 - Write for experienced security, engineering, product, procurement, and risk professionals who may not have specialist cryptography staff.
 - Keep guidance vendor-neutral, practical, and evidence-led. Attribute dates, obligations, and recommendations to the relevant primary source and its audience; do not present one authority's timeline as universal.
 - Keep key establishment, digital signatures, and long-lived verifiers distinct where their migration drivers differ.
-- Use British English and the page metadata, sourcing, and linking conventions in the style and navigation guides.
+- Use US English and the page metadata, sourcing, and linking conventions in the style and navigation guides.
 - Never link to or cite `.ai-helper-files/`; it contains private local drafting material, not public sources.
 
 ## Implementation and verification

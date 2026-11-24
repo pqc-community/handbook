@@ -1,5 +1,5 @@
-/* Homepage. Colours come from Infima variables and the --pqc-* variables in
-   src/css/custom.css; nothing here is a raw colour value. */
+/* Homepage. Colors come from Infima variables and the --pqc-* variables in
+   src/css/custom.css; nothing here is a raw color value. */
 
 /* Hero: the site name as a small label, the plan promise as the heading, one paragraph
    on why and what the work is, and a quiet line on scope. No buttons: the two ways in
@@ -205,7 +205,7 @@
   font-size: 0.9rem;
 }
 
-/* Light theme: Deep Teal headings and card titles instead of body grey */
+/* Light theme: Deep Teal headings and card titles instead of body gray */
 [data-theme='light'] .section h2,
 [data-theme='light'] .boxTitle,
 [data-theme='light'] .choiceTitle a,
@@ -251,8 +251,8 @@
   }
 }
 
-/* Links inside lists rely on more than colour, and the light-theme heading colour must not
-   cancel the hover colour on the choice cards. */
+/* Links inside lists rely on more than color, and the light-theme heading color must not
+   cancel the hover color on the choice cards. */
 .section li a {
   text-decoration: underline;
 }

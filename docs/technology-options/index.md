@@ -5,7 +5,7 @@ displayed_sidebar: technologyOptionsSidebar
 description: Find your technology and see, for key establishment and for signatures separately, which post-quantum mechanism exists and how mature it is.
 ---
 
-Start with the technology in front of you. Each page below gives the job the technology does, the standardised post-quantum mechanism and its status, who usually chooses, what good looks like, what to ask or test, the traps, the record it fills, and an example. [Choosing an option](/technology-options/choosing/) holds the rules that apply to every technology: who chooses, how to check the authorities that apply to you, the hybrid rule of thumb, and what to record. The process for making the change is in the [programme](/plan/programme/).
+Start with the technology in front of you. Each page below gives the job the technology does, the standardized post-quantum mechanism and its status, who usually chooses, what good looks like, what to ask or test, the traps, the record it fills, and an example. [Choosing an option](/technology-options/choosing/) holds the rules that apply to every technology: who chooses, how to check the authorities that apply to you, the hybrid rule of thumb, and what to record. The process for making the change is in the [program](/plan/program/).
 
 ## Technologies at a glance
 
@@ -64,13 +64,13 @@ These last four span several jobs, so each points to the cards for the jobs it d
 | [Cloud and SaaS](/technology-options/cloud-saas/) | **Supplier.** The provider's choice | **Supplier.** The provider's choice |
 | [OT and industrial systems](/technology-options/ot-industrial/) | **Follows** TLS, VPNs, and SSH for IT zones and remote access; **None yet** for many industrial protocols | **Supplier.** Field devices support whatever their supplier provides; integrity usually comes first |
 
-The Post-Quantum Cryptography Coalition, a non-governmental community whose [migration roadmap](/standards/migration-guides/pqcc-roadmap/) is summarised in Standards, publishes a [State of the Migration](https://pqcc.org/learn-more/state-of-the-migration/) heatmap. It scores each protocol's standardisation separately for post-quantum confidentiality and authentication, in pure and hybrid forms. Its latest heatmap is for June 2026. It is a useful second view of the same split; where it differs from the cards, they cite the primary source.
+The Post-Quantum Cryptography Coalition, a non-governmental community whose [migration roadmap](/standards/migration-guides/pqcc-roadmap/) is summarized in Standards, publishes a [State of the Migration](https://pqcc.org/learn-more/state-of-the-migration/) heatmap. It scores each protocol's standardization separately for post-quantum confidentiality and authentication, in pure and hybrid forms. Its latest heatmap is for June 2026. It is a useful second view of the same split; where it differs from the cards, they cite the primary source.
 
 ## Technology not listed?
 
 1. **Name the jobs it does**: does it agree or wrap keys (key establishment), sign or check signatures (signatures), or check code with a verifier that cannot be updated?
 2. **Find the protocol or format underneath.** Many products run on TLS, SSH, IPsec, X.509 certificates, CMS, or OpenPGP; use that card for that job.
-3. **If a supplier controls it**, ask in writing for each job, as [Work with suppliers](/plan/programme/suppliers/) describes; the questions on [Cloud and SaaS](/technology-options/cloud-saas/) work for most bought-in products.
+3. **If a supplier controls it**, ask in writing for each job, as [Work with suppliers](/plan/program/suppliers/) describes; the questions on [Cloud and SaaS](/technology-options/cloud-saas/) work for most bought-in products.
 4. **If you build it**, use [Libraries and bespoke code](/technology-options/libraries-bespoke-code/).
 5. **Then apply** [Choosing an option](/technology-options/choosing/) and record each job on its own line.
 
@@ -78,12 +78,12 @@ The Post-Quantum Cryptography Coalition, a non-governmental community whose [mig
 
 One product can do several jobs, each on its own clock. Key establishment runs to the data's confidentiality period, because of [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later). Signatures run to the coordination of everyone who verifies them, which [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes takes longer and involves more parties. A verifier that cannot be updated runs to its product's design freeze, the date after which the hardware can no longer change. Record each job on its own row of the [register](/templates/records/register/).
 
-Commodity products that receive post-quantum support through supplier updates need no option chosen here; the [core actions](/plan/core-actions/) cover them. Algorithms are summarised in [Post-quantum cryptography standards](/standards/post-quantum/), protocols and certificates in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/), and authorities' positions in [National algorithm positions](/standards/national-algorithm-positions/).
+Commodity products that receive post-quantum support through supplier updates need no option chosen here; the [core actions](/plan/core-actions/) cover them. Algorithms are summarized in [Post-quantum cryptography standards](/standards/post-quantum/), protocols and certificates in [Modules, protocols, and certificates](/standards/modules-protocols-certificates/), and authorities' positions in [National algorithm positions](/standards/national-algorithm-positions/).
 
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- IANA, DNSSEC Algorithm Numbers registry, last updated 10 August 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
+- IANA, DNSSEC Algorithm Numbers registry, last updated August 10, 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
 - RFC Editor information pages for [RFC 10024](https://www.rfc-editor.org/info/rfc10024), [RFC 9370](https://www.rfc-editor.org/info/rfc9370), [RFC 10042](https://www.rfc-editor.org/info/rfc10042), [RFC 9941](https://www.rfc-editor.org/info/rfc9941), [RFC 9881](https://www.rfc-editor.org/info/rfc9881), [RFC 10073](https://www.rfc-editor.org/info/rfc10073), [RFC 10082](https://www.rfc-editor.org/info/rfc10082), [RFC 9629](https://www.rfc-editor.org/info/rfc9629), [RFC 9936](https://www.rfc-editor.org/info/rfc9936) and [RFC 9980](https://www.rfc-editor.org/info/rfc9980).
 - RFC Editor information pages for [RFC 9935](https://www.rfc-editor.org/info/rfc9935), [RFC 9909](https://www.rfc-editor.org/info/rfc9909), [RFC 9802](https://www.rfc-editor.org/info/rfc9802) and [RFC 9190](https://www.rfc-editor.org/info/rfc9190), as cited on the PKI and Wi-Fi cards, and [RFC 9851](https://www.rfc-editor.org/info/rfc9851).
 - IETF Datatracker, [draft-ietf-tls-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/), [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) and [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/).
@@ -95,6 +95,6 @@ Commodity products that receive post-quantum support through supplier updates ne
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
-- [Programme](/plan/programme/)
+- [Program](/plan/program/)
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
 - [Hybrid cryptography](/learn/hybrid/)

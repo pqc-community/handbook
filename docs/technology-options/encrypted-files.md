@@ -50,7 +50,7 @@ The email and encryption software suppliers decide what the product supports. Re
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | A key-establishment row for the encryption service, with the value in `protected by today` labelled "stored files:", the recipient groups named, and the software suppliers' answers and judgement; for messages and files already sent, the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/backups-archives/) describes |
+| [Register](/templates/records/register/) | A key-establishment row for the encryption service, with the value in `protected by today` labeled "stored files:", the recipient groups named, and the software suppliers' answers and judgment; for messages and files already sent, the exposure and the sponsor's decision, as [Backups, archives and storage](/technology-options/backups-archives/) describes |
 | [Change record](/templates/records/change-record/) | The rule for recipients without a post-quantum key, with the mechanism a sample message showed as the deployed-state check |
 
 ## Example

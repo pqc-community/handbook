@@ -10,7 +10,7 @@ description: NIST standard specifying ML-DSA (formerly CRYSTALS-Dilithium), a la
 
 Federal Information Processing Standards Publication 204 (FIPS 204) specifies the Module-Lattice-Based Digital Signature Algorithm (ML-DSA), derived from the CRYSTALS-Dilithium submission. It defines key generation, signing and verification across three parameter sets — ML-DSA-44, ML-DSA-65 and ML-DSA-87 — for protecting data integrity and authenticating the signer.
 
-FIPS 204 is issued by the National Institute of Standards and Technology (NIST). NIST's FIPS compliance FAQ describes FIPS as standards for federal computer systems that are not always mandatory for federal agencies: each FIPS's applicability section says when it is mandatory. FIPS do not apply to national security systems, and private-sector organisations use them voluntarily, although contractors with government contracts must comply with FISMA, which mandates the use of FIPS.
+FIPS 204 is issued by the National Institute of Standards and Technology (NIST). NIST's FIPS compliance FAQ describes FIPS as standards for federal computer systems that are not always mandatory for federal agencies: each FIPS's applicability section says when it is mandatory. FIPS do not apply to national security systems, and private-sector organizations use them voluntarily, although contractors with government contracts must comply with FISMA, which mandates the use of FIPS.
 
 :::info[Official texts]
 
@@ -37,8 +37,8 @@ Signature migration has different drivers from key establishment under [FIPS 203
 
 ## Sources
 
-- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, 13 August 2024; planning note of 31 July 2026. [FIPS 204 publication page](https://csrc.nist.gov/pubs/fips/204/final), [FIPS 204 (PDF)](https://doi.org/10.6028/NIST.FIPS.204)
-- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
+- NIST, Module-Lattice-Based Digital Signature Standard, FIPS 204, August 13, 2024; planning note of July 31, 2026. [FIPS 204 publication page](https://csrc.nist.gov/pubs/fips/204/final), [FIPS 204 (PDF)](https://doi.org/10.6028/NIST.FIPS.204)
+- NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated July 3, 2024. [NIST FIPS FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - NSA, Commercial National Security Algorithm Suite 2.0 and Quantum Computing FAQ, version 2.2, October 2026. [CNSA 2.0 FAQ (PDF)](https://media.defense.gov/2022/Sep/07/2003071836/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF)
 - IETF, RFC 9881, ML-DSA in the Internet X.509 Public Key Infrastructure, October 2025. [RFC 9881](https://www.rfc-editor.org/info/rfc9881)

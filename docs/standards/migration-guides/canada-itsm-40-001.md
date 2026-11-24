@@ -10,7 +10,7 @@ description: Canadian Centre for Cyber Security roadmap for Government of Canada
 
 ITSM.40.001 sets out a roadmap for Government of Canada departments to migrate their systems to post-quantum cryptography: preparing a departmental migration plan, reporting progress each year, and completing migration in two waves, high-priority systems first and remaining systems later.
 
-The Canadian Centre for Cyber Security published the roadmap in June 2025, and it took effect on 23 June 2025. It is written for IT directors and managers in federal departments. It is a recommended roadmap; the Cyber Centre notes that the Treasury Board of Canada Secretariat (TBS) is to issue policy instruments, which are the vehicle for any binding requirements.
+The Canadian Centre for Cyber Security published the roadmap in June 2025, and it took effect on June 23, 2025. It is written for IT directors and managers in federal departments. It is a recommended roadmap; the Cyber Centre notes that the Treasury Board of Canada Secretariat (TBS) is to issue policy instruments, which are the vehicle for any binding requirements.
 
 :::info[Official texts]
 
@@ -29,13 +29,13 @@ The Canadian Centre for Cyber Security published the roadmap in June 2025, and i
 
 ## Relationship with other standards
 
-These milestones apply to Government of Canada departments, not to Canadian organisations generally; see [Timelines](/learn/explainers/why-timelines-differ/). Other Canadian organisations can draw on the [CFDIR quantum-readiness best practices](/standards/migration-guides/cfdir-quantum-readiness/), which use their own staged timeline.
+These milestones apply to Government of Canada departments, not to Canadian organizations generally; see [Timelines](/learn/explainers/why-timelines-differ/). Other Canadian organizations can draw on the [CFDIR quantum-readiness best practices](/standards/migration-guides/cfdir-quantum-readiness/), which use their own staged timeline.
 
-The roadmap is a programme plan rather than an algorithm specification. For the standards themselves, see [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures; for how national authorities differ on algorithms and hybrids, see [National algorithm positions](/standards/national-algorithm-positions/).
+The roadmap is a program plan rather than an algorithm specification. For the standards themselves, see [FIPS 203](/standards/post-quantum/fips-203/) for key establishment and [FIPS 204](/standards/post-quantum/fips-204/) and [FIPS 205](/standards/post-quantum/fips-205/) for signatures; for how national authorities differ on algorithms and hybrids, see [National algorithm positions](/standards/national-algorithm-positions/).
 
 ## Sources
 
-- Canadian Centre for Cyber Security, Roadmap for the migration to post-quantum cryptography for the Government of Canada, ITSM.40.001, June 2025, effective 23 June 2025. [Guidance page (HTML)](https://www.cyber.gc.ca/en/guidance/roadmap-migration-post-quantum-cryptography-government-canada-itsm40001)
+- Canadian Centre for Cyber Security, Roadmap for the migration to post-quantum cryptography for the Government of Canada, ITSM.40.001, June 2025, effective June 23, 2025. [Guidance page (HTML)](https://www.cyber.gc.ca/en/guidance/roadmap-migration-post-quantum-cryptography-government-canada-itsm40001)
 
 ## Related pages
 
@@ -43,4 +43,4 @@ The roadmap is a programme plan rather than an algorithm specification. For the 
 - [Canadian CFDIR guide](/standards/migration-guides/cfdir-quantum-readiness/)
 - [National algorithm positions](/standards/national-algorithm-positions/)
 - [Timelines](/learn/explainers/why-timelines-differ/)
-- [Decide what to migrate first](/plan/programme/priority/)
+- [Decide what to migrate first](/plan/program/priority/)

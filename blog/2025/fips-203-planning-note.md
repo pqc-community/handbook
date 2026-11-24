@@ -1,12 +1,12 @@
 ---
 title: NIST flags a FIPS 203 issue for future correction
-description: A NIST planning note of 17 November 2025 identifies an issue in FIPS 203 (ML-KEM) to be corrected in a future update, with details in a spreadsheet.
+description: A NIST planning note of November 17, 2025, identifies an issue in FIPS 203 (ML-KEM) to be corrected in a future update, with details in a spreadsheet.
 date: 2025-11-17
 authors: [pqc_handbook]
 tags: [standards-and-protocols, nist, key-establishment]
 ---
 
-On 17 November 2025 NIST posted a planning note on the [FIPS 203 publication page](https://csrc.nist.gov/pubs/fips/203/final) saying it has identified an issue that will be corrected in a future update or revision of the standard, which specifies the ML-KEM key-encapsulation mechanism. NIST points readers to an "Errata (potential updates)" spreadsheet for details. FIPS 203 itself, published on 13 August 2024, has not changed.
+On November 17, 2025, NIST posted a planning note on the [FIPS 203 publication page](https://csrc.nist.gov/pubs/fips/203/final) saying it has identified an issue that will be corrected in a future update or revision of the standard, which specifies the ML-KEM key-encapsulation mechanism. NIST points readers to an "Errata (potential updates)" spreadsheet for details. FIPS 203 itself, published on August 13, 2024, has not changed.
 
 {/* truncate */}
 
@@ -22,19 +22,19 @@ FIPS 203 remains the published standard for ML-KEM, and the note does not withdr
 
 ## What it means for your plan
 
-Most organisations get ML-KEM from their suppliers, inside TLS libraries, operating systems, VPNs and hardware security modules, so the practical step is a question rather than a code change. Where a supplier has told you that a product supports ML-KEM, ask whether it has reviewed NIST's potential-updates spreadsheet for FIPS 203, whether anything in it applies to the product, and, if so, which release will address it. [Work with suppliers](/plan/programme/suppliers/) covers how to ask for a named product and version and how to judge the answer.
+Most organizations get ML-KEM from their suppliers, inside TLS libraries, operating systems, VPNs and hardware security modules, so the practical step is a question rather than a code change. Where a supplier has told you that a product supports ML-KEM, ask whether it has reviewed NIST's potential-updates spreadsheet for FIPS 203, whether anything in it applies to the product, and, if so, which release will address it. [Work with suppliers](/plan/program/suppliers/) covers how to ask for a named product and version and how to judge the answer.
 
-Record the answer against the relevant key-establishment rows of your [register](/templates/records/register/), and add the eventual revision of FIPS 203 as a trigger for a [subsequent review](/plan/programme/subsequent-review/), so the record is reopened when NIST publishes the correction. If you implement ML-KEM yourself, the engineering team that owns the implementation should read the spreadsheet directly.
+Record the answer against the relevant key-establishment rows of your [register](/templates/records/register/), and add the eventual revision of FIPS 203 as a trigger for a [subsequent review](/plan/program/subsequent-review/), so the record is reopened when NIST publishes the correction. If you implement ML-KEM yourself, the engineering team that owns the implementation should read the spreadsheet directly.
 
-A published standard being corrected is the kind of change the [programme](/plan/programme/) expects, which is why it treats keeping the ability to change algorithms and their implementations as lasting work rather than a one-off migration.
+A published standard being corrected is the kind of change the [program](/plan/program/) expects, which is why it treats keeping the ability to change algorithms and their implementations as lasting work rather than a one-off migration.
 
 ## Sources
 
-- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024; planning note of 17 November 2025. [Publication page (HTML)](https://csrc.nist.gov/pubs/fips/203/final), [Full text (PDF)](https://doi.org/10.6028/NIST.FIPS.203)
-- NIST, FIPS 203 Errata (potential updates), spreadsheet listed on the FIPS 203 publication page with the planning note of 17 November 2025. [Spreadsheet (XLSX)](https://csrc.nist.gov/files/pubs/fips/203/final/docs/fips-203-potential-updates.xlsx)
+- NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, August 13, 2024; planning note of November 17, 2025. [Publication page (HTML)](https://csrc.nist.gov/pubs/fips/203/final), [Full text (PDF)](https://doi.org/10.6028/NIST.FIPS.203)
+- NIST, FIPS 203 Errata (potential updates), spreadsheet listed on the FIPS 203 publication page with the planning note of November 17, 2025. [Spreadsheet (XLSX)](https://csrc.nist.gov/files/pubs/fips/203/final/docs/fips-203-potential-updates.xlsx)
 
 ## Related pages
 
 - [Key encapsulation explained](/learn/explainers/kem/)
 - [NIST SP 800-227](/standards/post-quantum/sp-800-227/)
-- [Keep the ability to change again](/plan/programme/changing-algorithms-again/)
+- [Keep the ability to change again](/plan/program/changing-algorithms-again/)

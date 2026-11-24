@@ -10,7 +10,7 @@ description: NIST report setting out its schedule for deprecating and disallowin
 
 NIST Internal Report (IR) 8547 sets out NIST's approach to moving from quantum-vulnerable public-key cryptography to post-quantum key establishment and digital signatures. It identifies the quantum-vulnerable algorithms in existing NIST standards, the post-quantum standards that replace them, migration considerations by use case, NIST's position on hybrid constructions, and the schedule on which NIST will deprecate and then disallow quantum-vulnerable algorithms in its own standards and guidelines.
 
-NIST issued the report for federal agencies, technology providers, standards organisations and Cryptographic Module Validation Program (CMVP) laboratories (§1.2), and describes it as a blueprint for critical infrastructure owners and operators and other organisations making the same shift (§1.1). It supports the implementation of [Executive Order 14412](/standards/us-government-requirements/eo-14412/) and [OMB Memorandum M-26-15](/standards/us-government-requirements/omb-m-26-15/). As a NIST IR it is an informative report and does not itself impose requirements; binding federal deadlines come from EO 14412 and M-26-15, which the report records.
+NIST issued the report for federal agencies, technology providers, standards organizations and Cryptographic Module Validation Program (CMVP) laboratories (§1.2), and describes it as a blueprint for critical infrastructure owners and operators and other organizations making the same shift (§1.1). It supports the implementation of [Executive Order 14412](/standards/us-government-requirements/eo-14412/) and [OMB Memorandum M-26-15](/standards/us-government-requirements/omb-m-26-15/). As a NIST IR it is an informative report and does not itself impose requirements; binding federal deadlines come from EO 14412 and M-26-15, which the report records.
 
 :::info[Official texts]
 
@@ -32,7 +32,7 @@ NIST issued the report for federal agencies, technology providers, standards org
 
 NIST will deprecate quantum-vulnerable public-key cryptography after 2030 and disallow its use under NIST standards and guidelines after 2035 (§4). The same dates apply at every security strength, for signatures (ECDSA, EdDSA and RSA in [FIPS 186-5](/standards/classical-public-key/fips-186-5/), Table 2) and for key establishment (finite-field and elliptic-curve Diffie-Hellman and MQV in [SP 800-56A](/standards/classical-public-key/sp-800-56a/), and RSA in [SP 800-56B](/standards/classical-public-key/sp-800-56b/), Table 4). The report says the 2030–2035 window accommodates lower-risk systems and legacy constraints, and that it does not alter earlier deadlines set elsewhere.
 
-The report records those earlier US federal deadlines. Under EO 14412 and M-26-15, federal high value assets and high-impact systems must adopt post-quantum key establishment by 31 December 2030 and post-quantum digital signatures by 31 December 2031; agencies must also support TLS 1.3 no later than 2 January 2030, as required by EO 14306 and M-26-15 (§4). These dates bind US federal agencies, not other organisations. Other authorities set their own timelines; see [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
+The report records those earlier US federal deadlines. Under EO 14412 and M-26-15, federal high value assets and high-impact systems must adopt post-quantum key establishment by December 31, 2030, and post-quantum digital signatures by December 31, 2031; agencies must also support TLS 1.3 no later than January 2, 2030, as required by EO 14306 and M-26-15 (§4). These dates bind US federal agencies, not other organizations. Other authorities set their own timelines; see [Why migration timelines differ](/learn/explainers/why-timelines-differ/).
 
 ## Hybrid position
 
@@ -46,7 +46,7 @@ Key establishment and signatures carry different drivers. Harvest-now, decrypt-l
 
 ## Sources
 
-- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, final 27 October 2026 (initial public draft 12 November 2024). [CSRC publication page](https://csrc.nist.gov/pubs/ir/8547/final) / [Full text (PDF)](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, final October 27, 2026 (initial public draft November 12, 2024). [CSRC publication page](https://csrc.nist.gov/pubs/ir/8547/final) / [Full text (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 

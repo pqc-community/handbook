@@ -1,6 +1,6 @@
 # PQC Handbook
 
-**Practical, source-backed guidance for planning, prioritising, and evidencing a post-quantum cryptography migration.**
+**Practical, source-backed guidance for planning, prioritizing, and evidencing a post-quantum cryptography migration.**
 
 This repository contains the source for [pqchandbook.com](https://pqchandbook.com), a vendor-neutral handbook for security, engineering, product, procurement, and risk teams transitioning public-key cryptography to post-quantum standards without specialist cryptography staff in-house.
 
@@ -14,20 +14,20 @@ Read these five root documents before changing structure, prose, or styling, and
 
 - [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and specialist boundary, audience, editorial thesis, sister-site boundaries, and non-goals
 - [Navigation Structure](./navigation-structure.md) — URL policy, navbar and five sidebars, complete sitemap, homepage and footer
-- [Reader Journey](./reader-journey.md) — How readers are routed from Plan your migration to a first action, the core actions and programme, the records, the rules that keep the journey simple, and why it was chosen
+- [Reader Journey](./reader-journey.md) — How readers are routed from Plan your migration to a first action, the core actions and program, the records, the rules that keep the journey simple, and why it was chosen
 - [Style Guide](./style-guide.md) — Editorial voice, terminology, prose attribution, page patterns, sourcing principles, and review checklist
-- [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, colour palette, typography, UI styling, and diagram/illustration guidance
+- [Brand Guidelines](./brand-guidelines.md) — Visual identity, logo assets, color palette, typography, UI styling, and diagram/illustration guidance
 - [Periodic Review](./periodic-review.md) — The monthly full-site review run from Claude Code with `/goal`: what it checks, how blocked sources are handled, the goal to paste, and the report it leaves under `reviews/`
 
 ### Handbook Content (`docs/`)
 
 - [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background, optional explainers, and the [Glossary](./docs/learn/glossary.md)
-- [Which plan you need](./docs/plan/index.md), [Core actions](./docs/plan/core-actions.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the core actions every organisation follows, and the programme with its first moves and practices in three phases (diagnose, order and schedule, execute)
+- [Which plan you need](./docs/plan/index.md), [Core actions](./docs/plan/core-actions.md), and [Program](./docs/plan/program/index.md) — The reader journey: four questions, the core actions every organization follows, and the program with its first moves and practices in three phases (diagnose, order and schedule, execute)
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
-- [Programme practices](./docs/plan/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/programme/`
+- [Program practices](./docs/plan/program/index.md) — Set up, inventory, prioritization, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/program/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
 - [News and analysis](./blog/) — Dated posts on authority updates, standards and protocols, deployment milestones, and analysis, served at `/news/`; each links inline to the handbook pages that hold the lasting guidance
-- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the core actions and a full programme
+- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the core actions and a full program
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ npm install
 npm start
 ```
 
-Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/plan/programme/inventory/`).
+Starts the local development server with hot reloading. Markdown pages under `docs/` are served directly from the site root with trailing slashes (for example, `/plan/program/inventory/`).
 
 ## Verification and Build
 
@@ -72,8 +72,8 @@ npm run build
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
 | `blog/` | News and analysis posts at `blog/<year>/<slug>.md`, served at `/news/<year>/<slug>/` with RSS and Atom feeds at `/news/rss.xml` and `/news/atom.xml`; `tags.yml` and `authors.yml` hold the only tags and author a post may use |
 | `src/pages/` | Homepage: hero, two ways in (Learn the basics and Plan your migration), why you might be here, and reference and news cards (`index.tsx` and `index.module.css`) |
-| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) the 404 page's wording and links back into the handbook, `noindex` for the 404 and search pages, and `BlogPostItem/Header/Info` (post dates in British day–month–year order) |
-| `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
+| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) the 404 page's wording and links back into the handbook, `noindex` for the 404 and search pages, and `BlogPostItem/Header/Info` (post dates in US month–day–year order) |
+| `src/css/custom.css` | Infima color palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
 | `static/img/` | Shared shield logo, SVG and PNG favicons, Apple touch icon, and the `1200 × 630` OpenGraph social card (PNG, with its SVG source) |
 | `sidebars.ts` | Five hand-written documentation sidebars |
@@ -89,11 +89,11 @@ Pushes to `main` automatically build and deploy the site to GitHub Pages via [`.
 - **Live site**: [https://pqchandbook.com](https://pqchandbook.com) (`static/CNAME`)
 - **CI steps**: Node 24 setup, `npm ci`, `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` on every pull request and push; on a push to `main`, GitHub Pages artifact upload and deployment follow only if every step passed
 
-## Contributing, Security, and Licence
+## Contributing, Security, and License
 
 Contributions from migration leads, security practitioners, procurement and risk teams, and standards reviewers are welcome:
 
 - **Report a stale reference or issue**: Open an issue on [github.com/pqc-community/handbook/issues](https://github.com/pqc-community/handbook/issues)
 - **Propose content or structural changes**: Follow [CONTRIBUTING.md](./CONTRIBUTING.md), the sourcing, voice, and navigation rules in [style-guide.md](./style-guide.md) and [navigation-structure.md](./navigation-structure.md), and verify `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass locally
 - **Report a security vulnerability**: Report it privately as described in [SECURITY.md](./SECURITY.md)
-- **Licence**: The handbook is licensed under [CC BY-SA 4.0](./LICENSE), the same licence as its sister sites
+- **License**: The handbook is licensed under [CC BY-SA 4.0](./LICENSE), the same license as its sister sites

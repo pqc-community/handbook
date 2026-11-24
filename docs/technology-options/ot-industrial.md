@@ -14,7 +14,7 @@ Operational technology (OT) runs physical processes: industrial control systems 
 - **signatures** to authenticate commands, data, and users;
 - **verifiers that cannot be updated** in devices built into plant or products, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 
-The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed 20 March 2025), primarily aimed at large organisations, operators of critical national infrastructure, and companies with bespoke IT, list IoT and ICS devices with a communications function among the systems to discover. They note that for fielded OT devices and sensors the confidentiality of data may not need strong protection, but its integrity is likely to be critical, because faulty readings or commands can make an ICS fail.
+The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/) (published and reviewed March 20, 2025), primarily aimed at large organizations, operators of critical national infrastructure, and companies with bespoke IT, list IoT and ICS devices with a communications function among the systems to discover. They note that for fielded OT devices and sensors the confidentiality of data may not need strong protection, but its integrity is likely to be critical, because faulty readings or commands can make an ICS fail.
 
 ## Post-quantum options and status
 
@@ -25,7 +25,7 @@ There is no single post-quantum standard for OT. What exists depends on the laye
 | IT zones and remote access into them | Same as enterprise IT: [TLS and web services](/technology-options/tls/), [VPNs and IPsec](/technology-options/vpn-ipsec/), [SSH](/technology-options/ssh/). The NCSC timelines say remote access to ICS IT zones will need to become quantum-secure |
 | Industrial protocols | The NCSC timelines name ICS protocols as one of two areas where post-quantum protocols will be harder to develop, because some legacy protocols have never had modern cryptography and the architectures around them will need to change |
 | Field devices and sensors | Whatever the device and its supplier support; ask in writing |
-| Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (23 January 2026), addressed to organisations generally with specific direction for US federal civilian agencies, leaves OT and IoT devices out of scope, while saying they should also be transitioning |
+| Product categories | The US Cybersecurity and Infrastructure Security Agency's [product categories list](/standards/us-government-requirements/cisa-pqc-product-categories/) (January 23, 2026), addressed to organizations generally with specific direction for US federal civilian agencies, leaves OT and IoT devices out of scope, while saying they should also be transitioning |
 
 The UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, says that for the minority of systems with bespoke IT or OT, such as those that implement public-key cryptography in proprietary communications systems, system and risk owners will need to choose which algorithms and protocols are best to use. Apply the rules on [Choosing an option](/technology-options/choosing/), with a specialist adviser for bespoke or proprietary protocols; code you build follows [Libraries and bespoke code](/technology-options/libraries-bespoke-code/).
 
@@ -35,11 +35,11 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 ## What good looks like
 
-- A register that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/plan/programme/inventory/) describes.
+- A register that includes OT and ICS devices with a communications function, including what a scan cannot see, as [Inventory the cryptography](/plan/program/inventory/) describes.
 - Integrity of commands and sensor data treated as the priority job for fielded devices, with confidentiality judged case by case.
 - Remote access and IT/OT boundaries moved on the enterprise IT timetable.
 - Changes to physical infrastructure planned to coincide with other maintenance and refresh, which the NCSC timelines advise, and post-quantum requirements written into equipment purchases.
-- A written answer from each control-system and device supplier to the questions in [Work with suppliers](/plan/programme/suppliers/), judged on the [register](/templates/records/register/), and a review date for protocols that have no post-quantum path yet.
+- A written answer from each control-system and device supplier to the questions in [Work with suppliers](/plan/program/suppliers/), judged on the [register](/templates/records/register/), and a review date for protocols that have no post-quantum path yet.
 
 ## What to ask or test
 
@@ -59,7 +59,7 @@ The control-system, device, and protocol suppliers, often within an industry sta
 
 | Record | What it holds |
 | --- | --- |
-| [Register](/templates/records/register/) | One row per job for each OT system and device type, naming its supplier and protocol, using `non-updatable verifier` for embedded verifiers, with supplier answers and their judgement, the planned outage or refresh in `dates that apply`, the device's expected service life in `why it is here`, the purchase that will carry post-quantum wording in `next step`, and, where no option exists yet, the protocol's next check in `next review`; exceptions and accepted risks, each with an owner and status |
+| [Register](/templates/records/register/) | One row per job for each OT system and device type, naming its supplier and protocol, using `non-updatable verifier` for embedded verifiers, with supplier answers and their judgment, the planned outage or refresh in `dates that apply`, the device's expected service life in `why it is here`, the purchase that will carry post-quantum wording in `next step`, and, where no option exists yet, the protocol's next check in `next review`; exceptions and accepted risks, each with an owner and status |
 | [Purchase wording](/templates/records/purchase-wording/) | A row per job for each equipment purchase or refresh, with the planned outage or refresh date in `decide by` |
 | [Change record](/templates/records/change-record/) | `unknown` and blocked where no option exists yet |
 
@@ -71,13 +71,13 @@ A decision-ready record lists each controller and sensor type with its supplier,
 
 ## Sources
 
-- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
+- UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published and reviewed March 20, 2025. [NCSC guidance](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
-- Cybersecurity and Infrastructure Security Agency, Product Categories for Technologies That Use Post-Quantum Cryptography Standards, 23 January 2026. [CISA product categories](https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards)
+- Cybersecurity and Infrastructure Security Agency, Product Categories for Technologies That Use Post-Quantum Cryptography Standards, January 23, 2026. [CISA product categories](https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards)
 
 ## Related pages
 
 - [Firmware and secure boot](/technology-options/firmware-secure-boot/)
-- [Programme](/plan/programme/)
-- [Inventory the cryptography](/plan/programme/inventory/)
-- [Work with suppliers](/plan/programme/suppliers/)
+- [Program](/plan/program/)
+- [Inventory the cryptography](/plan/program/inventory/)
+- [Work with suppliers](/plan/program/suppliers/)

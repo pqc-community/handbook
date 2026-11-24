@@ -43,7 +43,7 @@ Read these in order. Each takes about five minutes and ends with a short self-ch
 4. [What post-quantum means](/learn/what-post-quantum-means/) — post-quantum versus quantum cryptography, and what "quantum-resistant" promises.
 5. [Post-quantum algorithms](/learn/algorithms/) — ML-KEM, ML-DSA, SLH-DSA, LMS and XMSS, and what is coming next.
 6. [Hybrid cryptography](/learn/hybrid/) — hybrid key exchange, dual signatures, and differing authority positions.
-7. [Standardisation](/learn/standardisation/) — the five layers between a standard and a protected system, with current status.
+7. [Standardization](/learn/standardization/) — the five layers between a standard and a protected system, with current status.
 8. [In real systems](/learn/in-real-systems/) — where each job sits in TLS, VPNs, email, code signing, PKI, and hardware.
 9. [Timelines](/learn/timelines/) — five questions for any date, the three clocks, and dates that bind someone else.
 10. [Crypto-agility](/learn/crypto-agility/) — why this is not the last transition, and how to move into planning.
