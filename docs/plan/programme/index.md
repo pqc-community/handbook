@@ -2,6 +2,7 @@
 title: Programme
 search_title: Run a post-quantum migration programme
 sidebar_label: Overview
+pagination_label: Programme
 description: "First moves for each question that applied, small and full programme sizes, and the practices in three phases: diagnose, order and schedule, and execute."
 displayed_sidebar: journeySidebar
 ---
