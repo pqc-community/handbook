@@ -29,7 +29,7 @@ Host and user keys are a signatures job with their own clock, separate from the 
 - OpenSSH, OpenSSH 10.4 release notes, 6 July 2026. [Release notes (TXT)](https://www.openssh.org/txt/release-10.4)
 - OpenSSH, OpenSSH 10.6 release notes, 6 October 2026. [Release notes (TXT)](https://www.openssh.org/txt/release-10.6)
 - OpenSSH, OpenSSH 10.6p2 release notes, 5 November 2026. [Release notes (TXT)](https://www.openssh.org/txt/release-10.6p2)
-- IETF Datatracker, Post-Quantum Composite Signatures in SSH, draft-ietf-sshm-composite-sigs-01. [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/)
+- IETF Datatracker, Post-Quantum Composite Signatures in SSH, draft-ietf-sshm-composite-sigs. [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/)
 
 ## Related pages
 
