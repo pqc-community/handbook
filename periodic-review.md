@@ -74,7 +74,7 @@ Some publishers block automated requests, and which ones do varies by run and by
 - **Detect blocking by response, not keywords**: Treat a `403`, `429`, `202` with no content, a connection failure, or a page whose title is not the cited document as could not verify. Do not search the page body for words such as *captcha*: in a test run that flagged about 40 NIST pages that had loaded correctly.
 - **Use the issuer's own alternative route**: Where the issuing body offers another official route to the same facts (such as its publication listing, a DOI record, or an IETF Datatracker page), confirming through it counts. A third-party copy, cache, or archive does not.
 - **Hand-check afterwards**: After the goal finishes, a maintainer opens each could-not-verify source in a browser, and Claude records the result in the report as confirmed, updated, or replaced, with "checked by hand" in its note. Anything still unverified stays so.
-- **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report. Look for another official copy from the same issuer; if none can be checked, reword or remove the claim so the page states only what a reachable official source supports, and record the decision, so the handbook never presents an unchecked claim as current.
+- **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report for the maintainer to decide on, with the claims that rest on it and any other official copy from the same issuer that might be tried. The run does not reword or remove those claims: a blocked fetch is not evidence that a claim is wrong, so the page stays as it is until the maintainer decides.
 
 ## Running the Review
 
@@ -96,7 +96,7 @@ The goal stays under the 4,000-character limit. The evaluator that decides wheth
 Each run writes `reviews/YYYY-MM.md`, which is the review log. It is not part of the site and is not linked from it. It holds, in order:
 
 - the run date, the branch, the commit, and the closing summary counts;
-- sources that could not be verified in the previous report as well as this one, if any;
+- sources that could not be verified in the previous report as well as this one, if any, with the claims that rest on them, for the maintainer to decide on;
 - one section for each of the six questions, with sources as a table of URL, citing pages, status, and note, and pages listed by sidebar section;
 - every decision the run made beyond a straight correction (relevance changes, new or moved pages, journey changes and their reader-test results, dependency updates kept or reverted, and changes held back with the rule that held them), each with its reason and source;
 - the hand-check results, added after the goal ends.
