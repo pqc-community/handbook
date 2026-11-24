@@ -10,6 +10,7 @@ import {
   MAX_FOOTER_LABEL_LENGTH,
   MAX_SIDEBAR_LABEL_LENGTH,
   findAdmonitionViolations,
+  findFrontMatterViolations,
   findNavigationViolations,
   findPageViolations,
 } from '../checks/pages.mjs';
@@ -287,4 +288,21 @@ test('flags staccato paragraphs on every doc page except the journey pages, and 
     assert.deepEqual(findStaccatoViolations(root), ['docs/templates/records/a.md:5: staccato paragraph (3 or more sentences averaging under 15 words; join related points)']);
   });
   assertNoViolations(findStaccatoViolations(ROOT), 'Staccato paragraphs');
+});
+
+test('flags front matter that does not parse as YAML', () => {
+  const violations = withRoot(
+    {
+      'docs/colon.md': '---\ntitle: Page\ndescription: Notes in 2026: hybrid preferred.\n---\n',
+      'docs/quoted.md': '---\ntitle: Page\ndescription: "Notes in 2026: hybrid preferred."\n---\n',
+      'blog/2026/post.md': '---\ntitle: Post\ndescription: Fine without a colon.\n---\n',
+    },
+    (root) => findFrontMatterViolations(root),
+  );
+  assert.equal(violations.length, 1);
+  assert.match(violations[0], /^docs\/colon\.md: front matter is not valid YAML/);
+});
+
+test('every page and post has front matter that parses as YAML', () => {
+  assertNoViolations(findFrontMatterViolations(ROOT));
 });

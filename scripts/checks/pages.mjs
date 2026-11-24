@@ -1,10 +1,11 @@
 // Page and navigation rules: title lengths, navbar, footer and sidebar label
-// lengths, and admonition title syntax.
+// lengths, admonition title syntax, and front matter that parses as YAML.
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import path from 'node:path';
 import vm from 'node:vm';
 import ts from 'typescript';
+import yaml from 'js-yaml';
 import {classifyLines, frontMatterField, relativePath, walkMarkdown} from '../lib/markdown.mjs';
 
 export const MIN_TITLE_LENGTH = 3;
@@ -193,4 +194,20 @@ export function findAdmonitionViolations(docsDir) {
     }
   }
   return violations;
+}
+
+// Doc pages and posts: front matter must parse as YAML, as the build requires. An unquoted
+// value containing ": " (such as a description with a colon) breaks the build but not the
+// field-by-field reads the other checks use.
+export function findFrontMatterViolations(rootDir) {
+  return ['docs', 'blog'].flatMap((dir) => walkMarkdown(path.join(rootDir, dir))).flatMap((file) => {
+    const match = fs.readFileSync(file, 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (!match) return [];
+    try {
+      yaml.load(match[1]);
+      return [];
+    } catch (error) {
+      return [`${relativePath(rootDir, file)}: front matter is not valid YAML (${error.reason}); quote values that contain ": "`];
+    }
+  });
 }

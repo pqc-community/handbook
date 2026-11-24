@@ -2,7 +2,7 @@
 // runs its own area's checks against the site as well as against small samples.
 import path from 'node:path';
 import {findCsvFieldViolations, findCsvLinkViolations, findRecordsZipViolations, findWorkedExampleViolations} from './records.mjs';
-import {findAdmonitionViolations, findNavigationViolations, findPageViolations} from './pages.mjs';
+import {findAdmonitionViolations, findFrontMatterViolations, findNavigationViolations, findPageViolations} from './pages.mjs';
 import {findPdfLinkLabelViolations, findStandardsLayoutViolations} from './standards.mjs';
 import {findCheckedDateViolations, findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
 import {findJourneyBudgetViolations, findRetiredLabelViolations, findStaccatoViolations} from './reading.mjs';
@@ -14,6 +14,7 @@ const standards = (root) => path.join(root, 'docs', 'standards');
 const posts = (root) => path.join(root, 'blog');
 
 export const CHECKS = [
+  {area: 'pages', name: 'front matter parses as YAML', run: (root) => findFrontMatterViolations(root)},
   {area: 'pages', name: 'page title lengths', run: (root) => findPageViolations(docs(root))},
   {area: 'pages', name: 'navbar, footer and sidebar label lengths', run: (root) => findNavigationViolations(root)},
   {area: 'pages', name: 'admonition title syntax', run: (root) => [...findAdmonitionViolations(docs(root)), ...findAdmonitionViolations(posts(root))]},

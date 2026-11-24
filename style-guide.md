@@ -102,6 +102,8 @@ displayed_sidebar: journeySidebar
 ---
 ```
 
+Front matter must parse as YAML, so quote any value that contains a colon followed by a space, such as a description with a colon in it. `npm test` and `npm run check` fail on front matter in `docs/` or `blog/` that does not parse (`scripts/checks/pages.mjs`).
+
 ### Search titles and descriptions
 
 A result should tell the handbook's audience exactly what the page answers, in the words they would search with. Write for the reader, not for keywords: no keyword stuffing, clickbait, superlatives, questions written to bait clicks, or sales language. The same British English, neutrality, and attribution rules apply as in the page body.
