@@ -17,11 +17,14 @@ Status as checked on 23 November 2026.
 | Part | Mechanism | Status |
 | --- | --- | --- |
 | Adding a post-quantum exchange to IKEv2 | Multiple key exchanges in IKEv2, [RFC 9370](https://www.rfc-editor.org/info/rfc9370) | Proposed Standard, May 2023 |
+| Mixing a post-quantum preshared key into IKEv2 | Mixing Preshared Keys in IKEv2 for Post-quantum Security, [RFC 8784](https://www.rfc-editor.org/info/rfc8784) | Proposed Standard, June 2020 |
 | ML-KEM in IKEv2 | draft-ietf-ipsecme-ikev2-mlkem | Internet-Draft in the RFC Editor queue, intended as a Proposed Standard |
 | Post-quantum authentication in IKEv2 | ML-DSA and SLH-DSA signatures, draft-ietf-ipsecme-ikev2-pqc-auth | Internet-Draft in the RFC Editor queue, intended as a Proposed Standard |
 | Composite signatures in IKEv2 | draft-ietf-ipsecme-pq-hybrid-auth | Working-group Internet-Draft at an early stage |
 
 RFC 9370 lets IKEv2 run additional key exchanges alongside the classical one, which is how a post-quantum exchange is added in hybrid form. The UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, gives the need to avoid IP-layer fragmentation in IKEv2 as an example of a protocol constraint that can make it difficult to drop the classical algorithm. [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) says NIST expects to prioritise quantum-resistant key establishment in interactive protocols such as TLS and IKE. The authentication draft uses IKEv2's existing digital-signature method to carry ML-DSA or SLH-DSA, so gateways can authenticate with post-quantum certificates once both ends support it. Because these mechanisms are still drafts, apply the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/).
+
+RFC 8784 protects key establishment with a secret both peers already hold, configured out of band, so it suits a small number of fully controlled peers rather than remote-access clients or partners. The Dutch [PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) (December 2024) recommends a pre-shared key over a hybrid only where the system and its peers are fully controlled and rarely change.
 
 ## Who usually chooses
 
@@ -30,7 +33,7 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 ## What good looks like
 
 - Every tunnel and remote-access client is on the [register](/templates/records/register/) with its peer, and both ends support the same post-quantum key exchange before you require it.
-- The post-quantum exchange is added under RFC 9370, using the draft ML-KEM method, or a supplier-specific one, only under the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/), and recorded as provisional until it is published.
+- The post-quantum exchange is added under RFC 9370, using the draft ML-KEM method, or a supplier-specific one, only under the protocol-mechanisms rule on [Choosing an option](/technology-options/choosing/), and recorded as provisional until it is published. Between a few fully controlled sites, a preshared key under RFC 8784 is an alternative, recorded with where the key is held and how it is replaced.
 - Each peer's negotiated key exchange is confirmed from the gateway logs, and peers that cannot follow have an owner and a date.
 - Gateway certificates have their own signatures row on the [register](/templates/records/register/), with its own dates, as [PKI and certificates](/technology-options/pki/) describes.
 
@@ -53,7 +56,7 @@ The VPN gateway supplier decides what the product supports; you choose what to e
 | Record | What it holds |
 | --- | --- |
 | [Register](/templates/records/register/) | A key-establishment row for each gateway, naming its peers, with the gateway supplier's answer and judgement; gateway certificates have their own signatures row; a row for each peer still on classical key exchange, with an owner and the date it moves; and a `next review` to revisit the draft mechanism when it is published |
-| [Change record](/templates/records/change-record/) | The negotiated key exchange as the deployed-state check and, if a draft mechanism is used, "provisional: Internet-Draft" in `option` |
+| [Change record](/templates/records/change-record/) | The negotiated key exchange as the deployed-state check and, if a draft mechanism is used, "provisional: Internet-Draft" in `option`; for a preshared key, where the key is held and how it is replaced |
 
 ## Example
 
@@ -64,6 +67,7 @@ A decision-ready record names the gateway model and release, the key exchange ne
 ## Sources
 
 - IETF, Multiple Key Exchanges in the Internet Key Exchange Protocol Version 2 (IKEv2), RFC 9370, May 2023. [RFC 9370](https://www.rfc-editor.org/info/rfc9370)
+- IETF, Mixing Preshared Keys in the Internet Key Exchange Protocol Version 2 (IKEv2) for Post-quantum Security, RFC 8784, June 2020. [RFC 8784](https://www.rfc-editor.org/info/rfc8784)
 - IETF Datatracker, draft-ietf-ipsecme-ikev2-mlkem, checked 21 November 2026. [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/)
 - IETF Datatracker, Signature Authentication in IKEv2 using PQC, draft-ietf-ipsecme-ikev2-pqc-auth-12, and Use of Composite Signatures in IKEv2, draft-ietf-ipsecme-pq-hybrid-auth-01, checked 23 November 2026. [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) / [draft-ietf-ipsecme-pq-hybrid-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-pq-hybrid-auth/)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)

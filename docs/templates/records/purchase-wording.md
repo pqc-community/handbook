@@ -22,7 +22,7 @@ Record `unknown` in any cell you cannot verify yet, and keep keys, secrets, and 
 
 ## Filled example
 
-From [Protect this first](/templates/examples/protect-this-first/). The supplier, product, and dates are fictional.
+From [Protect this first](/templates/examples/protect-this-first/), with a fictional supplier, product, and dates. For a renewal of a hosted service, [Stay on supplier updates](/templates/examples/stay-on-supplier-updates/) shows the wording a small agency used.
 
 | system | job | purchase or renewal | supplier | product and version | wording | decide by | supplier commitment | support until | evidence | owner | status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

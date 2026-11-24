@@ -8,7 +8,7 @@ displayed_sidebar: journeySidebar
 
 ## When this applies
 
-At least one of the [four questions](/plan/) applies, and you need a full programme: any device with a fixed key is involved, the programme covers more than one or two systems, or your answers sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/plan/programme/#size).
+This page is for a full programme. You need one when any of the [four questions](/plan/) applies and the programme covers more than one or two systems or includes a device with a fixed key, or when your answers sent you to a specialist and regulator first. A small programme, such as a single in-house portal, needs only a named owner, the sponsor's sign-off, the [register](/templates/records/register/), and a change record for each change; see [Programme](/plan/programme/#size).
 
 ## Who does what
 
@@ -23,7 +23,7 @@ At least one of the [four questions](/plan/) applies, and you need a full progra
 
 1. **Write the programme goal in one or two sentences**, based on your answers to the four questions: what is in scope, what is not, and what "done" means for this phase.
 2. **Assign the roles above by name.** A role with no named person is a gap to resolve, not a default.
-3. **Agree the first budget line** for discovery and supplier engagement. A full migration budget usually cannot be estimated until the inventory exists and the register has an order; say so in the charter and set the date when it will be revisited. When it is, include supplier upgrade charges, replacement of products that cannot be upgraded, testing environments and effort, discovery tooling, and specialist advice.
+3. **Agree the first budget line** for discovery and supplier engagement. A full migration budget usually cannot be estimated until the inventory exists and the register has an order; say so in the charter and set the date when it will be revisited. When it is, include supplier upgrade charges, replacement of products that cannot be upgraded, testing environments and effort, discovery tooling, training for the people who will make the changes, and specialist advice.
 4. **Set the reporting cadence**: what the migration lead reports to the sponsor, how often, and which triggers bring a report forward (see [Review and report](/plan/programme/subsequent-review/)).
 5. **Tell the people whose work will change**: system owners, procurement, operations, and suppliers, who should expect written questions about their post-quantum plans. Explain the different jobs — key establishment, signatures, and verifiers that cannot be updated — so teams do not assume one cutover.
 

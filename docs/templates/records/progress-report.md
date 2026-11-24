@@ -16,6 +16,8 @@ date, reported by, reported to, records reviewed, key establishment, signatures,
 
 Like the charter, the report is one document, so the fields run down the page. Report each job in its own field, because their urgency and coordination differ: in each, name the systems by their register names and say what moved since the last report and what has not, in the words the [change record](/templates/records/change-record/) uses, such as "staging passed; production not migrated". Write `not applicable` in a job field the programme does not cover.
 
+Where you can count it, give a number in each job's field, such as the share of connections whose logs show post-quantum key establishment, or the rows migrated out of the rows in scope, so the sponsor can see the trend from one report to the next. The UK NCSC suggests metrics of this kind, such as how many of your software clients use post-quantum cryptography.
+
 - **blocked:** each blocked system and job, why, and the date by which it has to be resolved.
 - **milestones at risk:** each date on the register that may be missed, with its authority, such as the UK NCSC target dates, or `none`. A target date belongs to the authority that set it and the audience it addresses, not to every system.
 - **decisions needed:** escalations, budget, or risk acceptances the sponsor needs to decide, or `none`, with any escalation date already set on the register.

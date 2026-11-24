@@ -78,6 +78,8 @@ CISA's [product categories list](/standards/us-government-requirements/cisa-pqc-
 
 If you supply products, your customers will send you the same questions. Answer from the register: the rows and change records for the product concerned, with the dates you can stand behind and what is still unknown.
 
+The UK NCSC suggests sharing a statement of intent with your customers and suppliers, covering your recognition of the threat, your planned response, your level of ambition and timelines, and the end state you aim for. Build it from the register, so that every date in it is one you can stand behind.
+
 ## Keep this evidence
 
 The [register](/templates/records/register/) — one row per system and job, with the supplier, the product and version, the supplier's answer with its date and source document, your judgement, the follow-up or decision as the next step, and the status — plus the [purchase wording](/templates/records/purchase-wording/) record: the wording used in each purchase or renewal and the commitment the supplier agreed.
@@ -97,6 +99,7 @@ The register records what suppliers say; it does not validate their products. Va
 - CISA, NSA, and NIST, Quantum-Readiness: Migration to Post-Quantum Cryptography, as of 17 August 2023. [Fact sheet (PDF)](https://www.nccoe.nist.gov/sites/default/files/2023-08/quantum-readiness-fact-sheet.pdf)
 - CISA, Product Categories for Technologies That Use Post-Quantum Cryptography Standards, 23 January 2026. [CISA product categories](https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards)
 - The White House, Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks, 22 June 2026. [EO 14412](https://www.govinfo.gov/app/details/DCPD-202600417)
+- UK NCSC, Timelines for migration to post-quantum cryptography, published and reviewed 20 March 2025. [Timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 
 ## Related pages
 
