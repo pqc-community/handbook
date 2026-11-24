@@ -38,6 +38,7 @@ You keep two records: the [register](/templates/records/register/), with one row
 
 - **A supplier will not answer.** Record the question, the date asked, and missing as the judgement, and ask again at renewal; until it answers, do not record the system as migrated.
 - **A product cannot be replaced yet.** Keep it on the register with the reason and the earliest replacement date, and limit what it holds and who can reach it.
+- **A client, customer, or board asks whether you are ready.** Answer from the register, adapting this wording: "We rely on our suppliers for post-quantum upgrades and keep everything we use supported and updated. We ask for post-quantum support in every purchase and renewal, review progress every six months, and do not count a system as migrated until we have checked it." Add any dates your suppliers have committed to.
 
 ## Sources
 

@@ -15,9 +15,9 @@ Answer for the organisation as a whole: a question applies if any system, servic
 1. **Data that must stay secret for years.** Do you hold information that must stay confidential for many years and that travels over networks, or is stored, under public-key protection? It matters now because an attacker can record it today and decrypt it later. Count how long it must stay secret rather than how long you keep it; this handbook treats ten years or more as many years. Ordinary business records, such as accounts, client files, and staff records, usually fall short, while long-lived product designs, health records, and security-sensitive files often do not.
 2. **Devices with a fixed key.** Do you make or run products or devices that check signatures with a key or method that cannot be changed after they ship, whether in hardware or in software? A key that a normal update can replace is not fixed, so supported laptops and phones do not count.
 3. **Signatures others rely on.** Do you run a certificate authority, public or internal, or sign code, firmware, or documents that other people or devices check? Signing through a supplier's e-signature service does not count, as that is supplied IT.
-4. **Systems you build or configure.** Do you build software or firmware, or set up the cryptography yourself on your own servers, load balancers, VPNs, or applications? One such system is enough, but if an IT provider sets these up and keeps them updated for you, treat them as supplied and ask the provider.
+4. **Systems you build or configure.** Do you build software or firmware, or set up the cryptography yourself on your own servers, load balancers, VPNs, or applications? If an IT provider sets these up and keeps them updated for you, treat them as supplied and ask the provider.
 
-A supplied product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: replace it under core action 4, with a date on the register.
+A supplied product that is out of support, or whose supplier has no post-quantum plan, is not on its own a reason for a programme: replace it under core action 4.
 
 ## Your plan
 
@@ -25,11 +25,11 @@ A supplied product that is out of support, or whose supplier has no post-quantum
 | --- | --- |
 | None apply | The [core actions](/plan/core-actions/): seven actions on one page. |
 | Any applies | The core actions for everything you buy in, and a [programme](/plan/programme/) for what the questions found. Start by naming an owner, then take the programme's first moves. |
-| You run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. While you do, name an owner and take the programme's first moves, which only gather facts, and then follow the core actions and run a full programme. |
+| You run critical national infrastructure, a service whose security a sector regulator oversees (not a professional body, a data protection authority, or a governance-only regulator), or a large estate you build yourself | Bring in specialist advice and speak to your sector regulator or authority. Meanwhile, name an owner and take the programme's first moves, which only gather facts, then follow the core actions and a full programme. |
 
 ## Which dates apply to you
 
-Each date belongs to the authority that set it and the audience it names, so there is no single global deadline. Record the dates that apply to you on the register, each with its authority.
+Each date belongs to the authority that set it and the audience it names, so there is no single global deadline. Record those that apply on the register with their authority; [Set dates and milestones](/plan/programme/dates/#dates-that-may-apply-by-job) lists them by job.
 
 | If you are | Dates to record |
 | --- | --- |

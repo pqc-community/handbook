@@ -33,12 +33,12 @@ const situations: {when: string; then: string; to: string; link: string}[] = [
   {
     when: 'Customers are sending post-quantum questionnaires',
     then: 'Answer the four questions, then start your register and answer from it with the dates you can stand behind and what is still unknown.',
-    to: '/templates/records/register/',
-    link: 'Register',
+    to: '/plan/programme/suppliers/#6-answer-your-own-customers-consistently',
+    link: 'Answer your customers',
   },
   {
-    when: 'You run critical national infrastructure or a regulated service',
-    then: "Bring in specialist advice and speak to your sector regulator. Take the programme's first moves meanwhile; they only gather facts.",
+    when: 'You run critical national infrastructure, or a service whose security a sector regulator oversees',
+    then: "Bring in specialist advice and speak to your sector regulator; a professional body, a data protection authority, or a governance-only regulator does not count. Take the programme's first moves meanwhile; they only gather facts.",
     to: '/plan/#your-plan',
     link: 'Your plan',
   },

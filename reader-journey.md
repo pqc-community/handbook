@@ -40,7 +40,7 @@ Which plan you need asks four questions about the organisation as a whole. A que
 | 1 | **Data that must stay secret for years.** Information that must stay confidential for many years and is protected in transit or at rest by public-key methods. Measured by how long it must stay secret, not how long it is kept. | Recorded traffic and wrapped keys can be decrypted later, so the exposure has already started. |
 | 2 | **Devices with a fixed key.** Products or devices, made or run, that check signatures with a key or method that cannot be changed after shipment, in hardware or software. A key a normal update can replace is not fixed. | The design freeze, then the device's service life, sets the deadline. |
 | 3 | **Signatures others rely on.** A certificate authority, public or internal, or code, firmware, or document signing that other people or devices check. Signing through a supplier's e-signature service is supplied IT. | Everyone who checks the signatures has to move with the signer. |
-| 4 | **Systems you build or configure.** Software or firmware the organisation builds, or cryptography it sets up on its own servers, load balancers, VPNs, or applications. One such system is enough. Set-up an IT provider does and keeps updated counts as supplied. | Only the organisation can change it, on its own release cycle. |
+| 4 | **Systems you build or configure.** Software or firmware the organisation builds, or cryptography it sets up on its own servers, load balancers, VPNs, or applications. Set-up an IT provider does and keeps updated counts as supplied. | Only the organisation can change it, on its own release cycle. |
 
 Rules for the questions:
 
@@ -48,7 +48,7 @@ Rules for the questions:
 - **Do not wait for a complete inventory.** One system that fits is enough to answer yes.
 - **Many years**: This handbook treats ten years or more as many years. The page says that ordinary business records, such as accounts, client files, and staff records, usually fall short, and long-lived designs, health records, and security-sensitive files often do not; without that line, a small firm answered not sure and was sent to a programme. Where an authority sets a threshold for its audience, such as the EU NIS Cooperation Group roadmap for Member States, cite it with that audience.
 - **Out-of-support products are not a trigger.** A supplied product with no updates or no post-quantum plan is a core-actions item with a replacement date, never a reason on its own to start a programme.
-- **Three outcomes only**: none apply (core actions); any applies (core actions and a programme); critical, regulated, or a large self-built estate (specialist advice and the sector regulator first, then core actions and a full programme).
+- **Three outcomes only**: none apply (core actions); any applies (core actions and a programme); critical, regulated, or a large self-built estate (specialist advice and the sector regulator first, then core actions and a full programme); a professional body, a data protection authority, or a governance-only regulator does not make a service regulated.
 
 The page also carries a short **Which dates apply to you** table: each authority's milestones, the audience the authority names, and what to record when no authority addresses the reader. It never presents one authority's dates as universal.
 
@@ -59,6 +59,7 @@ The core actions are seven actions, each marked **you** or **ask** (your IT prov
 - Purchase wording is given as a sentence the reader can copy, with each standard named once and glossed.
 - The core actions keep two records: the register and the purchase wording.
 - The core actions are the whole plan for organisations where no question applies. The page says so plainly.
+- A last special case gives a short statement the organisation can send to a client, customer, or board, built from the register: what it relies on suppliers for, what it requires in purchases, when it reviews, and that it claims nothing as migrated without checking.
 
 ## Programme
 

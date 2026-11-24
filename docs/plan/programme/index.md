@@ -8,7 +8,7 @@ displayed_sidebar: journeySidebar
 
 Run a programme when any of the [four questions](/plan/) applies, and keep following the core actions for everything you buy in, because the programme covers only what the questions found. Start by naming the owner, which is core action 1.
 
-If you run critical national infrastructure, a regulated service, or a large estate you build yourself, bring in specialist advice and ask your sector regulator which requirements and dates apply to you and what evidence it expects. The first moves only gather facts, so they need not wait for the regulator's answer.
+If you run critical national infrastructure, a service whose security a sector regulator oversees, or a large estate you build yourself, bring in specialist advice. Ask your sector regulator which requirements and dates apply to you and what evidence it expects. The first moves only gather facts, so they need not wait for the regulator's answer.
 
 ## First moves
 
@@ -21,7 +21,7 @@ This week, take the first move for each question that applied. Record each as it
 | Signatures others rely on | How long you and everyone who checks your signatures take to move together | List who checks your signatures, because their verifiers have to accept new signatures before you switch. Treat a verifier that can never change as a device with a fixed key, and where another party controls one, such as an operating system, record that party's plan and date. |
 | Systems you build or configure | Your own release cycle | Record each system's cryptographic library, protocols, and versions. |
 
-If customers are asking about your post-quantum plans, answer from the register: the dates you can stand behind, and what is still unknown.
+If customers are asking about your post-quantum plans, answer from the register: the dates you can stand behind, and what is still unknown. If you supply technology, note that [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/), written for technology providers among others, deprecates quantum-vulnerable public-key algorithms under NIST standards after 2030 and disallows them after 2035.
 
 ## Size
 
@@ -63,6 +63,8 @@ Every programme keeps the register and a change record for each change you make,
 ## Sources
 
 This page sets out the handbook's own method. The practices it links cite the authorities they draw on.
+
+- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 
 ## Related pages
 

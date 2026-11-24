@@ -82,7 +82,7 @@ title: Inventory the cryptography
 search_title: Build a cryptographic inventory for PQC migration
 sidebar_label: Inventory the cryptography
 description: List public-key cryptography system by system, with several discovery methods, including embedded and supplier-controlled cryptography a scanner misses.
-displayed_sidebar: migrationPracticesSidebar
+displayed_sidebar: journeySidebar
 ---
 ```
 
@@ -111,11 +111,11 @@ Aim at specific, practical queries rather than broad head terms. Use these terms
 | **harvest-now, decrypt-later** | Key-establishment pages: the quantum-threat lesson, forward secrecy, when to start, Which plan you need, and the programme's first moves. |
 | **ML-KEM, ML-DSA, SLH-DSA**, with their former names **CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+** | The FIPS 203, 204 and 205 summaries and the algorithms lesson. Use former names in descriptions only, never as the main name. |
 | **Authority plus date** (for example "UK NCSC 2028, 2031 and 2035", "NIST 2030 and 2035", "CNSA 2.0") | Standards and migration-guide descriptions, only for dates the page states, attributed to the authority and its audience. |
-| **cryptographic inventory**, **cryptography bill of materials (CBOM)** | The inventory practice and inventory record. |
+| **cryptographic inventory**, **cryptography bill of materials (CBOM)** | The inventory practice and the register. |
 | **crypto-agility** | The crypto-agility lesson, Keep the ability to change again, and CSWP 39. |
 | **hybrid key exchange**, **hybrid TLS** | The hybrid lesson, the TLS explainer and card, and RFC 10024. |
 | **post-quantum** plus a technology (**TLS**, **SSH**, **VPN**, **PKI**, **code signing**, and so on) | Each technology card's `search_title`. |
-| **questions to ask suppliers** or **vendors**, **purchase requirements** | The suppliers practice, vendor response log, purchase requirements record, and the ACSC, CISA and NSA vendor-questions guide. |
+| **questions to ask suppliers** or **vendors**, **purchase requirements** | The suppliers practice, the purchase wording record, and the ACSC, CISA and NSA vendor-questions guide. |
 | **template** | Record pages, because readers search for templates. |
 | **without specialist cryptography staff** | The homepage, Which plan you need, and the Learn overview. |
 | **quantum-safe**, **quantum-resistant** | Only where attributed (ETSI uses "quantum-safe") or where the page is about the claim itself. Never as a claim about a product or organisation. |
