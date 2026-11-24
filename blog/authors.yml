@@ -1,0 +1,4 @@
+# Post authors (style-guide.md, News and analysis posts). Inline authors fail the build.
+pqc_handbook:
+  name: PQC Handbook contributors
+  url: https://github.com/pqc-community/handbook

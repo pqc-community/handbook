@@ -239,6 +239,7 @@ const sidebars: SidebarsConfig = {
             'standards/migration-guides/asd-planning',
             'standards/migration-guides/canada-itsm-40-001',
             'standards/migration-guides/cfdir-quantum-readiness',
+            'standards/migration-guides/csa-quantum-safe-advisory',
             'standards/migration-guides/etsi-tr-103-619',
             'standards/migration-guides/etsi-tr-104-016',
             'standards/migration-guides/pqcc-roadmap',

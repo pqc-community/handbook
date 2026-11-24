@@ -10,7 +10,7 @@ These summaries cover guides for running a post-quantum migration programme, fin
 ## Which guide do I need?
 
 - Need a full programme methodology? Start with the [Dutch PQC Migration Handbook](/standards/migration-guides/dutch-pqc-handbook/) or [ETSI TR 104 016](/standards/migration-guides/etsi-tr-104-016/).
-- Need to know the milestones a national authority has set for its audience? See [UK NCSC](/standards/migration-guides/ncsc-migration-timelines/), [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/), [ASD planning](/standards/migration-guides/asd-planning/) or [Canada ITSM.40.001](/standards/migration-guides/canada-itsm-40-001/).
+- Need to know the milestones a national authority has set for its audience? See [UK NCSC](/standards/migration-guides/ncsc-migration-timelines/), [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/), [ASD planning](/standards/migration-guides/asd-planning/), [Canada ITSM.40.001](/standards/migration-guides/canada-itsm-40-001/) or [Singapore CSA](/standards/migration-guides/csa-quantum-safe-advisory/).
 - Need a short case to brief executives? Use the [CISA, NSA and NIST fact sheet](/standards/migration-guides/cisa-nsa-nist-fact-sheet/).
 - Need questions to put to suppliers? Use [Post-quantum questions to ask your vendors](/standards/migration-guides/vendor-questions/).
 - Need background on discovery and interoperability testing? See the [NCCoE Migration to PQC project](/standards/migration-guides/nccoe-migration-to-pqc/).
@@ -24,6 +24,7 @@ These summaries cover guides for running a post-quantum migration programme, fin
 | EU NIS Cooperation Group roadmap | Recommendations to Member States with 2026, 2030 and 2035 milestones by risk band; Version 1.1, 11 June 2025. | [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/) |
 | ASD planning publication | ASD guidance for Australian organisations with 2026, 2028 and 2030 milestones; published 6 July 2022, reviewed 22 September 2025. | [ASD planning](/standards/migration-guides/asd-planning/) |
 | Canada ITSM.40.001 | Cyber Centre roadmap for Government of Canada departments, with milestones to 2031 and 2035; effective 23 June 2025. | [Canada ITSM.40.001 roadmap](/standards/migration-guides/canada-itsm-40-001/) |
+| Singapore CSA advisory | Recommendations for organisations generally: a migration plan by end 2027 and migration encouraged by 2035, with a 2031 target for CII owners; 14 October 2026. | [Singapore CSA advisory](/standards/migration-guides/csa-quantum-safe-advisory/) |
 | Canadian CFDIR guide | Recommended quantum-readiness best practices from CFDIR's working group; Version 04, 10 July 2024. | [Canadian CFDIR guide](/standards/migration-guides/cfdir-quantum-readiness/) |
 | ETSI TR 103 619 | Informative report on a three-stage migration: inventory, plan, execute; V1.1.1, July 2020. | [ETSI TR 103 619](/standards/migration-guides/etsi-tr-103-619/) |
 | ETSI TR 104 016 | Informative report setting out an 11-step repeatable migration cycle; V1.1.1, October 2024. | [ETSI TR 104 016](/standards/migration-guides/etsi-tr-104-016/) |

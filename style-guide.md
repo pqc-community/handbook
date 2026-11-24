@@ -54,8 +54,21 @@ Structure pages around the reader's job rather than forcing every topic into ide
 | **Standards & guidance summaries** (`/standards/`) | Open with what the source covers; use a focused callout to link its official texts, adding context only to distinguish editions, drafts, or errata; show key dates in a compact two-column table with dates kept on one line; and explain its relationship to other standards and guidance. |
 | **Worked examples** (`/templates/examples/`) | Fill the records one fictional organisation keeps, using the fictional organisation conventions set out after this table: all five records for a full programme in Protect this first, whose rows each record page's filled example must match verbatim, and the core actions' two records in Stay on supplier updates. |
 | **Reference indexes & glossary** (`index.md`, `glossary.md`) | Route readers cleanly without duplicating full guides. Keep glossary entries alphabetical and concise, naming the standard directly in prose where a formal definition is cited. |
+| **News and analysis posts** (`/news/`) | Report one development, or connect several in an analysis piece, and say what it means for the reader's plan; follow [News and analysis posts](#news-and-analysis-posts) below. |
 
 Where pages use a worked organisational example, align with the shared fictional UK manufacturer in [Protect this first](./docs/templates/examples/protect-this-first.md) (the core actions agency in [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) stays on its own page), keep its invented facts and event dates explicit, and keep downloadable CSV headers in `static/downloads/` matched to their page tables.
+
+### News and analysis posts
+
+Scope, focus areas, and exclusions are in [purpose-and-positioning.md](./purpose-and-positioning.md#news-and-analysis); the voice, attribution, and sourcing rules in this guide apply to posts as they do to doc pages. `npm test` and `npm run check` enforce the location, title, description, teaser, inline-link, and ending rules below (`scripts/checks/posts.mjs`), and the build fails on a missing truncate marker or an inline tag or author.
+
+- **Teaser**: Open with a teaser of `45–75` words that states the development, who published it, and why it matters to the handbook's audience, then the truncate marker. Posts are compiled as MDX, so write the marker as `{/* truncate */}`, not as an HTML comment, and use inline Markdown links before it, because excerpts may not resolve reference-style links defined later in the post.
+- **Authority updates**: Say what was published, by whom, and when; whose audience it applies to; whether it binds, recommends, or is a draft; what changed from the previous position; and what a reader on the core actions or a programme should do, if anything. Then link the handbook pages updated in the same change.
+- **Analysis voice**: Analysis is the handbook's own view, so write it as unattributed handbook guidance, as on doc pages, while keeping each authority's position attributed to it in prose. Where authorities differ, set their positions side by side rather than choosing between them, and do not use the bold sentence-prefix labels that section 3 rules out.
+- **Freshness**: A post is current at its date. Do not rewrite a published post to say something new. Add a `:::note[Correction, <date>]` or `:::note[Later update]` admonition after the body and before `## Sources`, giving the date and, where a later post supersedes this one, a link to it.
+- **Front matter**: `title`, `description` (`100–160` characters, as for doc pages), `date` (ISO 8601), `authors`, and `tags`, drawn from `blog/authors.yml` and `blog/tags.yml`. Tags name a focus area, a cryptographic job (key establishment, signatures, verifiers), or an authority or jurisdiction; never a vendor or product.
+- **Inline links**: Link at least three handbook pages inline in the body, at the point where each helps the reader. Link the Standards summary where the post names the publication, unless that page now describes a later version (then list it under Related pages, so the body stays as at the post's date), and in the part that says what the post means for a plan, link the plan, programme practice, record, technology card, or Learn page that holds the lasting guidance. This is the pattern the sister sites use, and it sends readers from a dated post to the page that stays current.
+- **Ending**: End with `## Sources` and then a short `## Related pages` of two to four further pages, without repeating every inline link.
 
 ## 5. Sourcing and Citations
 
@@ -70,6 +83,7 @@ Where pages use a worked organisational example, align with the shared fictional
   - Cite final publications rather than superseded initial public drafts, and explicitly label preliminary or draft documents as drafts when referencing them.
   - Link rather than rewrite external handbooks and standards; keep parameter tables in the underlying FIPS/standards documents.
   - Treat links to the **Secure-by-Design Handbook** and **Supply Chain Security Handbook** as onward engineering or assurance reading, not as authorities for PQC dates or obligations.
+  - Never make a news post the only home of a date or obligation: update the Standards summary and any page that states it in the same change, and cite the primary source on those pages, not the post.
   - Never cite or link local drafting files under `.ai-helper-files/` or unverified survey/marketing claims.
 
 ## 6. Metadata and Naming Lengths
@@ -143,5 +157,6 @@ Before merging new or revised content, check that the page passes these tests:
 - **Honest sourcing**: Is every date, requirement, and authority recommendation attributed with its source, date, and target audience?
 - **Freshness**: Could a publication status, protocol profile, product capability, or recommendation have changed? If so, is the claim tied to a dated primary source and clearly framed as current at that date?
 - **Actionable evidence**: Does the page show what concrete record or artifact demonstrates the work (rather than vague claims of being *"quantum safe"*)?
+- **Posts**: Does a news post that changes a date or obligation ship with the reference-page change, and does its teaser say whom the development applies to?
 - **Search result**: Read out of context, do the browser title and description tell the reader exactly what the page answers, accurately and without sales language?
 - **Clean checks**: Do `npm test`, `npm run check`, `npm run typecheck`, and `npm run build` pass?

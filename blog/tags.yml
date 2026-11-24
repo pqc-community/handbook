@@ -1,0 +1,77 @@
+# The only tags a post may use (style-guide.md, News and analysis posts): a focus area,
+# a cryptographic job, or an authority or jurisdiction. Never a vendor or product.
+# Inline tags fail the build.
+
+# Focus areas (purpose-and-positioning.md, News and Analysis)
+authority-updates:
+  label: Authority updates
+  permalink: /authority-updates
+  description: New or revised publications from authorities that set or change a date, an obligation, a standard's status, or a position.
+standards-and-protocols:
+  label: Standards and protocols
+  permalink: /standards-and-protocols
+  description: Final and draft standards, RFCs, and protocol or certificate profiles that change what can be specified or deployed.
+deployment-milestones:
+  label: Deployment milestones
+  permalink: /deployment-milestones
+  description: Widely used protocols, platforms, or services changing a default, reported because it changes what readers buy in or test.
+analysis:
+  label: Analysis
+  permalink: /analysis
+  description: Longer pieces that connect developments to the handbook's jobs, dates, and records.
+
+# Cryptographic jobs
+key-establishment:
+  label: Key establishment
+  permalink: /key-establishment
+  description: Posts about key establishment, where urgency follows how long data must stay confidential.
+signatures:
+  label: Signatures
+  permalink: /signatures
+  description: Posts about digital signatures, where urgency follows relying parties and PKI coordination.
+verifiers:
+  label: Long-lived verifiers
+  permalink: /verifiers
+  description: Posts about verifiers that cannot be updated, such as hardware and firmware roots of trust.
+crypto-agility:
+  label: Crypto-agility
+  permalink: /crypto-agility
+  description: Posts about keeping the ability to change cryptography again.
+
+# Authorities and jurisdictions
+nist:
+  label: NIST
+  permalink: /nist
+  description: Posts about publications from the US National Institute of Standards and Technology.
+ietf:
+  label: IETF
+  permalink: /ietf
+  description: Posts about Internet Engineering Task Force RFCs and drafts.
+us-federal:
+  label: US federal
+  permalink: /us-federal
+  description: Posts about requirements and direction for US federal agencies.
+uk:
+  label: UK
+  permalink: /uk
+  description: Posts about UK authorities, including the National Cyber Security Centre.
+eu:
+  label: EU
+  permalink: /eu
+  description: Posts about the European Union and its member states acting together.
+netherlands:
+  label: Netherlands
+  permalink: /netherlands
+  description: Posts about Dutch authorities and research institutes.
+canada:
+  label: Canada
+  permalink: /canada
+  description: Posts about Canadian authorities.
+australia:
+  label: Australia
+  permalink: /australia
+  description: Posts about Australian authorities, including ASD's ACSC.
+singapore:
+  label: Singapore
+  permalink: /singapore
+  description: Posts about Singapore's Cyber Security Agency.

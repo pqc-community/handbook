@@ -25,6 +25,7 @@ Read these five root documents before changing structure, prose, or styling:
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Programme practices](./docs/plan/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/programme/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
+- [News and analysis](./blog/) — Dated posts on authority updates, standards and protocols, deployment milestones, and analysis, served at `/news/`; each links inline to the handbook pages that hold the lasting guidance
 - [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the core actions and a full programme; and the [Glossary](./docs/templates/reference/glossary.md)
 
 ## Getting Started
@@ -55,9 +56,9 @@ npm run build
 
 | Command | Description |
 | --- | --- |
-| `npm test` | Runs the Node tests in `scripts/tests/`: for each tested area (pages, standards, records, dates, search), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site. The reading rules run only in `npm run check` |
+| `npm test` | Runs the Node tests in `scripts/tests/`: for each tested area (pages, standards, records, dates, search, posts), sample cases that prove each rule catches what it should, plus a run of the rule against the whole site. The reading rules run only in `npm run check` |
 | `npm run records-zip` | Rebuilds `static/downloads/pqc-handbook-records.zip` from the blank CSVs |
-| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets, staccato paragraphs, and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, and date formats |
+| `npm run check` | Runs every whole-site rule in `scripts/checks/` and lists any violations by rule: page titles and navigation labels, search titles and descriptions, URL slugs, admonition syntax, journey-page reading budgets, staccato paragraphs, and retired routing labels, Standards page structure and PDF labels, record CSVs and the records zip, news post location, metadata, teaser, inline links and ending, and date formats (in doc pages and posts) |
 | `npm run metrics` | Reports reading load per section, for the three journey pages, and for any page with a retired routing label (words, internal links per 100 words, backticked terms, longest sentence), using the same measures as the reading check |
 | `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
 | `npm run build` | Builds static files and the local search index into `build/` (broken links, anchors, and Markdown links fail the build) |
@@ -68,8 +69,9 @@ npm run build
 | Path | Purpose |
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
+| `blog/` | News and analysis posts at `blog/<year>/<slug>.md`, served at `/news/<year>/<slug>/` with RSS and Atom feeds at `/news/rss.xml` and `/news/atom.xml`; `tags.yml` and `authors.yml` hold the only tags and author a post may use |
 | `src/pages/` | Homepage: hero, two ways in (Learn the basics and Plan your migration), why you might be here, and reference cards (`index.tsx` and `index.module.css`) |
-| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) the 404 page's wording and links back into the handbook, and `noindex` for the 404 and search pages |
+| `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) the 404 page's wording and links back into the handbook, `noindex` for the 404 and search pages, and `BlogPostItem/Header/Info` (post dates in British day–month–year order) |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |
 | `static/img/` | Shared shield logo, SVG and PNG favicons, Apple touch icon, and the `1200 × 630` OpenGraph social card (PNG, with its SVG source) |

@@ -32,10 +32,44 @@ const config: Config = {
       'classic',
       {
         docs: {routeBasePath: '/', sidebarPath: './sidebars.ts', rehypePlugins: [rehypeTableLabels]},
-        blog: false,
+        // News and analysis (purpose-and-positioning.md). Posts live at blog/<year>/<slug>.md
+        // with their date in front matter, so URLs are /news/<year>/<slug>/.
+        blog: {
+          path: 'blog',
+          routeBasePath: 'news',
+          blogTitle: 'News and analysis',
+          blogDescription:
+            'Dated news and analysis on the post-quantum transition: authority updates, standards, and deployment milestones, linked to the handbook.',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 10,
+          archiveBasePath: null,
+          showReadingTime: false,
+          authorsMapPath: 'authors.yml',
+          tags: 'tags.yml',
+          onInlineTags: 'throw',
+          onInlineAuthors: 'throw',
+          onUntruncatedBlogPosts: 'throw',
+          feedOptions: {
+            type: ['rss', 'atom'],
+            title: 'PQC Handbook: News and analysis',
+            description:
+              'Dated news and analysis on the post-quantum transition, with authority updates as a main focus.',
+            copyright: `Copyright © ${new Date().getFullYear()} PQC Handbook contributors. CC BY-SA 4.0.`,
+            language: 'en-GB',
+            // Every post, not the default 20.
+            limit: false,
+          },
+        },
         theme: {customCss: './src/css/custom.css'},
-        // Google ignores changefreq and priority. The search page is not indexed.
-        sitemap: {changefreq: null, priority: null, ignorePatterns: ['/search/**'], filename: 'sitemap.xml'},
+        // Google ignores changefreq and priority. The search page and the blog's tag
+        // and author listings are not indexed.
+        sitemap: {
+          changefreq: null,
+          priority: null,
+          ignorePatterns: ['/search/**', '/news/tags/**', '/news/authors/**'],
+          filename: 'sitemap.xml',
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -50,6 +84,7 @@ const config: Config = {
         hashed: true,
         language: ['en'],
         indexDocs: true,
+        // News posts are dated snapshots, so site search stays on the reference pages.
         indexBlog: false,
         docsRouteBasePath: '/',
       },
@@ -101,6 +136,7 @@ const config: Config = {
             {label: 'Technology options', to: '/technology-options/'},
             {label: 'Standards', to: '/standards/'},
             {label: 'Templates', to: '/templates/'},
+            {label: 'News and analysis', to: '/news/'},
           ],
         },
       ],

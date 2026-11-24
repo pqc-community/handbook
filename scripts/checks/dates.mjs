@@ -1,5 +1,5 @@
 // Date formatting rules (style-guide.md §2 and the Standards page pattern):
-// - prose dates are written day–month–year (5 November 2026); ISO 8601 belongs only
+// - prose dates, in doc pages and news posts, are written day–month–year (5 November 2026); ISO 8601 belongs only
 //   in front matter, code and tables;
 // - full ISO dates in a Standards timeline use non-breaking hyphens (&#8209;) so
 //   they never wrap inside the narrow Date column.
@@ -34,9 +34,9 @@ export function findProseIsoDates(text) {
 }
 
 export function findProseDateViolations(rootDir, exceptions = ISO_FORMAT_EXAMPLES) {
-  const docsDir = path.join(rootDir, 'docs');
   const violations = [];
-  for (const file of walkMarkdown(docsDir)) {
+  const files = ['docs', 'blog'].flatMap((dir) => walkMarkdown(path.join(rootDir, dir)));
+  for (const file of files) {
     const rel = relativePath(rootDir, file);
     for (const hit of findProseIsoDates(fs.readFileSync(file, 'utf8'))) {
       const excepted = exceptions.some((e) => e.file === rel && hit.text.includes(e.phrase));

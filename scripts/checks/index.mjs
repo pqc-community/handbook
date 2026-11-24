@@ -7,14 +7,16 @@ import {findPdfLinkLabelViolations, findStandardsLayoutViolations} from './stand
 import {findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
 import {findJourneyBudgetViolations, findRetiredLabelViolations, findStaccatoViolations} from './reading.mjs';
 import {findSearchMetadataViolations, findUrlViolations} from './search.mjs';
+import {findPostViolations} from './posts.mjs';
 
 const docs = (root) => path.join(root, 'docs');
 const standards = (root) => path.join(root, 'docs', 'standards');
+const posts = (root) => path.join(root, 'blog');
 
 export const CHECKS = [
   {area: 'pages', name: 'page title lengths', run: (root) => findPageViolations(docs(root))},
   {area: 'pages', name: 'navbar, footer and sidebar label lengths', run: (root) => findNavigationViolations(root)},
-  {area: 'pages', name: 'admonition title syntax', run: (root) => findAdmonitionViolations(docs(root))},
+  {area: 'pages', name: 'admonition title syntax', run: (root) => [...findAdmonitionViolations(docs(root)), ...findAdmonitionViolations(posts(root))]},
   {area: 'search', name: 'search titles and descriptions', run: (root) => findSearchMetadataViolations(docs(root))},
   {area: 'search', name: 'URL slugs', run: (root) => findUrlViolations(docs(root))},
   {area: 'reading', name: 'journey pages stay within reading budgets', run: (root) => findJourneyBudgetViolations(root)},
@@ -26,6 +28,7 @@ export const CHECKS = [
   {area: 'records', name: 'record CSVs match their pages', run: (root) => findCsvFieldViolations(root)},
   {area: 'records', name: 'filled examples match Protect this first', run: (root) => findWorkedExampleViolations(root)},
   {area: 'records', name: 'records zip is current', run: (root) => findRecordsZipViolations(root)},
+  {area: 'posts', name: 'news post location, metadata, teaser and ending', run: (root) => findPostViolations(root)},
   {area: 'dates', name: 'prose dates are day–month–year', run: (root) => findProseDateViolations(root)},
   {area: 'dates', name: 'timeline dates use non-breaking hyphens', run: (root) => findTimelineDateViolations(standards(root))},
 ];

@@ -120,7 +120,7 @@ export function readingMetrics(text) {
 
 // Staccato paragraphs are blocked across every doc page (style-guide.md, "Connected, not
 // staccato"). The journey pages are reported by their budget check instead, once.
-export const STACCATO_SECTIONS = ['docs'];
+export const STACCATO_SECTIONS = ['docs', 'blog'];
 
 export function findStaccatoViolations(root = '.') {
   const violations = [];
@@ -198,6 +198,7 @@ export function findRetiredLabelViolations(root = '.') {
   const violations = [];
   const files = [
     ...walkMarkdown(path.join(root, 'docs')),
+    ...walkMarkdown(path.join(root, 'blog')),
     ...SITE_FILES.map((file) => path.join(root, file)).filter((file) => fs.existsSync(file)),
     ...themeFiles(root),
   ];
