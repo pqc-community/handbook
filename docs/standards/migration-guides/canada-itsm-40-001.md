@@ -23,7 +23,7 @@ The Canadian Centre for Cyber Security published the roadmap in June 2025, and i
 | Date | Event |
 | --- | --- |
 | <time dateTime="2025-06-23">2025&#8209;06&#8209;23</time> | ITSM.40.001, published in June 2025, took effect. |
-| <time dateTime="2026-04">2026&#8209;04</time> | Roadmap milestone: departments prepare an initial departmental PQC migration plan, and annual progress reporting begins. |
+| <time dateTime="2026-04">2026&#8209;04</time> | Roadmap milestone: departments were to prepare an initial departmental PQC migration plan and begin annual progress reporting. |
 | <time dateTime="2031">2031</time> | Roadmap milestone: by the end of 2031, high-priority systems migrated. |
 | <time dateTime="2035">2035</time> | Roadmap milestone: by the end of 2035, remaining systems migrated. |
 

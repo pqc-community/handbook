@@ -18,8 +18,6 @@ Where your code uses a standard protocol through a library, such as TLS or SSH, 
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026.
-
 | Part | Position |
 | --- | --- |
 | Algorithms | [ML-KEM](/standards/post-quantum/fips-203/) (FIPS 203), [ML-DSA](/standards/post-quantum/fips-204/) (FIPS 204), and [SLH-DSA](/standards/post-quantum/fips-205/) (FIPS 205) are final NIST standards (13 August 2024); LMS and XMSS are specified in [SP 800-208](/standards/post-quantum/sp-800-208/) |

@@ -17,8 +17,6 @@ Messages kept in history or exports are also stored data; see [Backups, archives
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026.
-
 | Part | Mechanism | Status |
 | --- | --- | --- |
 | Standard group messaging protocol | Messaging Layer Security (MLS), [RFC 9420](https://www.rfc-editor.org/info/rfc9420) | Proposed Standard, July 2023 |
@@ -65,7 +63,7 @@ A decision-ready record names the product and release, the provider's written an
 ## Sources
 
 - IETF, The Messaging Layer Security (MLS) Protocol, RFC 9420, July 2023. [RFC 9420](https://www.rfc-editor.org/info/rfc9420)
-- IETF Datatracker, draft-ietf-mls-pq-ciphersuites, ML-KEM and Hybrid Cipher Suites for Messaging Layer Security, checked 21 November 2026. [draft-ietf-mls-pq-ciphersuites](https://datatracker.ietf.org/doc/draft-ietf-mls-pq-ciphersuites/)
+- IETF Datatracker, draft-ietf-mls-pq-ciphersuites, ML-KEM and Hybrid Cipher Suites for Messaging Layer Security. [draft-ietf-mls-pq-ciphersuites](https://datatracker.ietf.org/doc/draft-ietf-mls-pq-ciphersuites/)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - Cybersecurity and Infrastructure Security Agency, Product Categories for Technologies That Use Post-Quantum Cryptography Standards, 23 January 2026. [CISA product categories](https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards)
 

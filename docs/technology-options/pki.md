@@ -12,7 +12,7 @@ A public-key infrastructure (PKI) issues and checks certificates: public certifi
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026. All are Proposed Standards.
+All are Proposed Standards.
 
 | Certificate contents | Specification | Published |
 | --- | --- | --- |

@@ -6,7 +6,7 @@ description: "The layers from a published post-quantum algorithm to a protected 
 displayed_sidebar: learnSidebar
 ---
 
-"NIST has standardised post-quantum cryptography" is true, and it is often read as "products now support it". The two statements are several layers apart. Each layer is produced by a different body, on a different schedule, and a system is protected only when every layer it depends on is in place. This lesson names the layers and shows where each stood on 20 November 2026.
+"NIST has standardised post-quantum cryptography" is true, and it is often read as "products now support it". The two statements are several layers apart. Each layer is produced by a different body, on a different schedule, and a system is protected only when every layer it depends on is in place. This lesson names the layers and shows where each stood on 24 November 2026.
 
 ## Five layers
 
@@ -26,7 +26,7 @@ flowchart TD
 
 A draft at any layer is not final, and a final standard at one layer does not imply anything about the next.
 
-## Status on 20 November 2026
+## Status on 24 November 2026
 
 | Item | Layer | Status | Source |
 | --- | --- | --- | --- |
@@ -40,11 +40,11 @@ A draft at any layer is not final, and a final standard at one layer does not im
 | ML-KEM-only key agreement for TLS 1.3 | Protocol | Internet-Draft in the RFC Editor queue (draft-ietf-tls-mlkem-11, 16 September 2026) | IETF Datatracker |
 | ML-DSA in X.509 certificates | Format | RFC 9881, Proposed Standard, October 2025 | IETF |
 | Post-quantum authentication in TLS and the Web PKI | Protocol | Still being standardised, according to the UK NCSC (15 October 2026) | NCSC TLS guidance |
-| ML-DSA authentication in TLS 1.3 | Protocol | Internet-Draft in the RFC Editor queue (draft-ietf-tls-mldsa-06, 11 September 2026) | IETF Datatracker, checked 23 November 2026 |
+| ML-DSA authentication in TLS 1.3 | Protocol | Internet-Draft in the RFC Editor queue (draft-ietf-tls-mldsa-06, 11 September 2026) | IETF Datatracker |
 | Post-quantum cryptography in TLS 1.2 | Protocol | Will not be specified: TLS 1.2 is in feature freeze (RFC 9851, Proposed Standard, July 2026) | IETF |
 | NIST TLS guidance (SP 800-52) | Profile | Next revision to cover quantum-resistant and hybrid key exchange (IR 8547 §4.2) | NIST IR 8547 |
 
-Statuses change independently. Check NIST's [post-quantum publications list](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/publications), the IETF Datatracker, and your supplier's release notes before relying on any row. For a second view of layer 2, the Post-Quantum Cryptography Coalition, a non-governmental community, publishes a [State of the Migration](https://pqcc.org/learn-more/state-of-the-migration/) heatmap scoring each protocol separately for post-quantum confidentiality and authentication; when checked on 23 November 2026 its latest was for June 2026. [Technology options](/technology-options/) gives the same split for each technology. [From research to deployment](/learn/explainers/research-to-deployment/) explains each stage in more detail.
+Statuses change independently. Check NIST's [post-quantum publications list](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/publications), the IETF Datatracker, and your supplier's release notes before relying on any row. For a second view of layer 2, the Post-Quantum Cryptography Coalition, a non-governmental community, publishes a [State of the Migration](https://pqcc.org/learn-more/state-of-the-migration/) heatmap scoring each protocol separately for post-quantum confidentiality and authentication; its latest is for June 2026. [Technology options](/technology-options/) gives the same split for each technology. [From research to deployment](/learn/explainers/research-to-deployment/) explains each stage in more detail.
 
 ## What this means in practice
 
@@ -71,14 +71,14 @@ Continue with [In real systems](/learn/in-real-systems/).
 - NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.1, §3, §4.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - NIST, Security Requirements for Cryptographic Modules, FIPS 140-3, 22 March 2019. [FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final)
-- NIST, Post-Quantum Cryptography publications list, accessed 20 November 2026. [NIST publications list](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/publications)
+- NIST, Post-Quantum Cryptography publications list. [NIST publications list](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/publications)
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024)
 - IETF, Internet X.509 Public Key Infrastructure — Algorithm Identifiers for the Module-Lattice-Based Digital Signature Algorithm (ML-DSA), RFC 9881, October 2025. [RFC 9881](https://www.rfc-editor.org/rfc/rfc9881)
-- IETF Datatracker, ML-KEM Post-Quantum Key Agreement for TLS 1.3, draft-ietf-tls-mlkem-11, accessed 20 November 2026. [Datatracker](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/)
+- IETF Datatracker, ML-KEM Post-Quantum Key Agreement for TLS 1.3, draft-ietf-tls-mlkem-11. [Datatracker](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/)
 - UK National Cyber Security Centre, Using Transport Layer Security to protect data, 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 - IETF, TLS 1.2 is in Feature Freeze, RFC 9851, July 2026. [RFC 9851](https://www.rfc-editor.org/info/rfc9851)
-- IETF Datatracker, Use of ML-DSA in TLS 1.3, draft-ietf-tls-mldsa-06, accessed 23 November 2026. [Datatracker](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/)
-- Post-Quantum Cryptography Coalition, State of the Migration, June 2026 heatmap, checked 23 November 2026. [PQCC heatmap](https://pqcc.org/learn-more/state-of-the-migration/)
+- IETF Datatracker, Use of ML-DSA in TLS 1.3, draft-ietf-tls-mldsa-06. [Datatracker](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/)
+- Post-Quantum Cryptography Coalition, State of the Migration, June 2026 heatmap. [PQCC heatmap](https://pqcc.org/learn-more/state-of-the-migration/)
 
 ## Related pages
 

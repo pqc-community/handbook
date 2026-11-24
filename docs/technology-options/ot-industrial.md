@@ -18,7 +18,7 @@ The UK NCSC's [timelines](/standards/migration-guides/ncsc-migration-timelines/)
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026: there is no single post-quantum standard for OT. What exists depends on the layer:
+There is no single post-quantum standard for OT. What exists depends on the layer:
 
 | Layer | Position |
 | --- | --- |

@@ -15,7 +15,7 @@ A signature check proves that data matches a public key. Systems need more than 
 - A **verifier** is the code that performs the checks: the browser's certificate validation, a server checking client certificates, or the boot ROM that checks firmware before it runs.
 - A **relying party** is whoever acts on the result — the user, the service, or the device.
 
-Every link in that chain carries a signature. Replacing the signature algorithm therefore means new keys and certificates at the CA, new signing in the publisher's pipeline, and verifiers everywhere that understand the new algorithm. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.2.4) notes that public-key infrastructure (PKI) components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and that infrastructure may need to change *before* the applications that depend on it can migrate.
+Every link in that chain carries a signature. Replacing the signature algorithm therefore means new keys and certificates at the CA, new signing in the publisher's pipeline, and verifiers everywhere that understand the new algorithm. [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547) (October 2026, §2.2 and §2.2.4) notes that public-key infrastructure (PKI) components must be updated to issue certificates and sign revocation information with post-quantum algorithms, and that infrastructure may need to change *before* the applications that depend on it can migrate.
 
 ```mermaid
 flowchart TD
@@ -53,7 +53,7 @@ Continue with [The quantum threat](/learn/quantum-threat/). For a worked list of
 
 ## Sources
 
-- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.2.4, §3, §3.1.1, §3.1.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
+- NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.2, §2.2.4, §3, §3.1.1, §3.1.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - UK National Cyber Security Centre, Timelines for migration to post-quantum cryptography, published 20 March 2025. [UK NCSC timelines](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines)
 - EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025 (published by the European Commission on 23 June 2025). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
 

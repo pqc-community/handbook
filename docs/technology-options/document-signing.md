@@ -12,12 +12,12 @@ Signed email (S/MIME or OpenPGP), signed PDFs, and other signed documents prove 
 
 ## Post-quantum options and status
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that email, PDF files, and document signing commonly use RSA and ECDSA, and names S/MIME and OpenPGP as standards for public-key encryption and signing of email. Status as checked on 21 November 2026:
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that email, PDF files, and document signing commonly use RSA and ECDSA, and names S/MIME and OpenPGP as standards for public-key encryption and signing of email. The table gives each mechanism's status:
 
 | Format | Mechanism | Status |
 | --- | --- | --- |
 | OpenPGP | Post-quantum signatures and encryption, [RFC 9980](https://www.rfc-editor.org/info/rfc9980) | Proposed Standard, June 2026 |
-| S/MIME and other CMS-based signatures | ML-DSA ([RFC 9882](https://www.rfc-editor.org/info/rfc9882)), SLH-DSA ([RFC 9814](https://www.rfc-editor.org/info/rfc9814)), HSS/LMS ([RFC 9708](https://www.rfc-editor.org/info/rfc9708)) | Proposed Standards, 2025 |
+| S/MIME and other CMS-based signatures | ML-DSA ([RFC 9882](https://www.rfc-editor.org/info/rfc9882)), SLH-DSA ([RFC 9814](https://www.rfc-editor.org/info/rfc9814)), HSS/LMS ([RFC 9708](https://www.rfc-editor.org/info/rfc9708)), and composite ML-DSA, which pairs ML-DSA with RSA, ECDSA, or EdDSA ([RFC 10082](https://www.rfc-editor.org/info/rfc10082)) | Proposed Standards: 2025, and November 2026 for composite ML-DSA |
 | Signer certificates | ML-DSA and other algorithms in X.509 | See [PKI and certificates](/technology-options/pki/) |
 | PDF and other document formats | Depends on the format and the reader | Ask the software supplier |
 
@@ -66,6 +66,7 @@ A decision-ready record names the signing software and release, the algorithm in
 - IETF, Use of the ML-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9882, October 2025. [RFC 9882](https://www.rfc-editor.org/info/rfc9882)
 - IETF, Use of the SLH-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9814, July 2025. [RFC 9814](https://www.rfc-editor.org/info/rfc9814)
 - IETF, Use of the HSS/LMS Hash-Based Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9708, January 2025. [RFC 9708](https://www.rfc-editor.org/info/rfc9708)
+- IETF, Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in the Cryptographic Message Syntax (CMS), RFC 10082, November 2026. [RFC 10082](https://www.rfc-editor.org/info/rfc10082)
 
 ## Related pages
 

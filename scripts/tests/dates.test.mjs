@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
+  findCheckedDates,
+  findCheckedDateViolations,
   findProseDateViolations,
   findProseIsoDates,
   findTimelineDateViolations,
@@ -31,6 +33,37 @@ test('finds ISO dates in prose but not in front matter, code or tables', () => {
     findProseIsoDates(sample).map(({line, iso}) => [line, iso]),
     [[4, '2026-11-16'], [12, '2027-01-18']],
   );
+});
+
+test('finds checked and accessed dates but not document dates', () => {
+  const sample = [
+    '---',
+    'description: checked 1 May 2026',
+    '---',
+    'Status as checked on 24 November 2026.',
+    '- IETF Datatracker, draft-ietf-tls-mlkem, checked 24 November 2026. [Datatracker](https://example.org/)',
+    '| Technology | What to rely on, as checked on 3 March 2026 |',
+    '- NIST, publications list, accessed 2 June 2026. [List](https://example.org/)',
+    '- CISA, NSA and NIST, fact sheet, as of 17 August 2023. [Fact sheet (PDF)](https://example.org/)',
+    'NIST published the final version on 13 August 2024.',
+    '- NCSC, Timelines, published and reviewed 20 March 2025. [Timelines](https://example.org/)',
+    '```',
+    'checked 24 November 2026',
+    '```',
+  ].join('\n');
+  assert.deepEqual(findCheckedDates(sample).map(({line}) => line), [4, 5, 6, 7]);
+});
+
+test('flags checked dates on doc pages only', () => {
+  const violations = withRoot(
+    {
+      'docs/page.md': 'Status as checked on 24 November 2026.\n',
+      'blog/2026/post.md': 'Checked 24 November 2026.\n',
+    },
+    (root) => findCheckedDateViolations(root),
+  );
+  assert.equal(violations.length, 1);
+  assert.match(violations[0], /^docs\/page\.md:1: /);
 });
 
 test('suggests the day–month–year form', () => {
@@ -73,4 +106,8 @@ test('standards timeline dates use non-breaking hyphens', () => {
     findTimelineDateViolations(path.join(ROOT, 'docs', 'standards')),
     'Standards timeline dates that can wrap; write them with &#8209;',
   );
+});
+
+test('the site has no checked dates on doc pages', () => {
+  assertNoViolations(findCheckedDateViolations(ROOT));
 });

@@ -1,4 +1,6 @@
-// Date formatting rules (style-guide.md §2 and the Standards page pattern):
+// Date rules (style-guide.md §2 and §5, and the Standards page pattern):
+// - doc pages do not say when the handbook checked a source ("checked 24 November 2026",
+//   "Status as checked on …", "accessed …"): the monthly review in periodic-review.md does that;
 // - prose dates, in doc pages and news posts, are written day–month–year (5 November 2026); ISO 8601 belongs only
 //   in front matter, code and tables;
 // - full ISO dates in a Standards timeline use non-breaking hyphens (&#8209;) so
@@ -63,4 +65,25 @@ export function findTimelineDateViolations(standardsDir) {
     if (wraps) violations.push(`${relativePath(standardsDir, file)}: full ISO dates must use nonbreaking hyphens`);
   }
   return violations;
+}
+
+// Doc pages: a phrase saying when the handbook checked or accessed a source. Dates that are
+// facts about a document (published, revised, "as of" in the document's own dating) are fine.
+const CHECKED_DATE = new RegExp(
+  `\\b(?:checked|accessed)\\s+(?:on\\s+)?\\d{1,2}\\s+(?:${MONTHS.join('|')})\\s+\\d{4}\\b`,
+  'i',
+);
+
+export function findCheckedDates(text) {
+  return classifyLines(text)
+    .filter((line) => line.kind !== 'fence' && line.kind !== 'front-matter')
+    .filter((line) => CHECKED_DATE.test(line.text))
+    .map((line) => ({line: line.number, text: line.text}));
+}
+
+export function findCheckedDateViolations(rootDir) {
+  return walkMarkdown(path.join(rootDir, 'docs')).flatMap((file) =>
+    findCheckedDates(fs.readFileSync(file, 'utf8')).map(
+      (hit) => `${relativePath(rootDir, file)}:${hit.line}: remove the checked date; the monthly review records when sources were checked`,
+    ));
 }

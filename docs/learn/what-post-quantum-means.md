@@ -29,7 +29,7 @@ A post-quantum algorithm is designed to resist the attacks known today, from bot
 
 Authorities are sceptical of relying on it:
 
-- The UK NCSC's paper on [quantum networking technologies](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies) (5 August 2025) states that it will not support the use of QKD for government or military applications and that post-quantum cryptography is the best mitigation to the quantum threat. It notes that QKD does not provide authentication and should not be solely relied on for generating and distributing keys in other sectors.
+- The UK NCSC's paper on [quantum networking technologies](https://www.ncsc.gov.uk/paper/quantum-networking-technologies) (5 August 2025) states that it will not support the use of QKD for government or military applications and that post-quantum cryptography is the best mitigation to the quantum threat. It notes that QKD does not provide authentication and should not be solely relied on for generating and distributing keys in other sectors.
 - [The PQC Migration Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf) (AIVD, CWI, and TNO, December 2024) describes QKD as a partial solution and reports that many security agencies currently recommend only post-quantum cryptography.
 
 This handbook therefore covers post-quantum cryptography and sets QKD aside, as those authorities do.
@@ -57,7 +57,7 @@ Continue with [Post-quantum algorithms](/learn/algorithms/).
 - NIST, Stateless Hash-Based Digital Signature Standard, FIPS 205, 13 August 2024. [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§3.2). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
-- UK National Cyber Security Centre, Quantum networking technologies, 5 August 2025. [NCSC paper](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
+- UK National Cyber Security Centre, Quantum networking technologies, 5 August 2025. [NCSC paper](https://www.ncsc.gov.uk/paper/quantum-networking-technologies)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024. [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages

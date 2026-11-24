@@ -33,7 +33,7 @@ The second record names the job, the algorithm and its standard, the version, th
 
 - A claim covers "the product" without naming a job or interface.
 - Only symmetric key sizes are mentioned ("we use AES-256, so we are quantum-safe"). NIST IR 8547 (§4.1.3) and the UK NCSC treat symmetric cryptography as largely unaffected; the public-key jobs are what need to change.
-- Quantum key distribution is offered as the answer. The UK NCSC's [paper on quantum networking technologies](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies) (5 August 2025) states that post-quantum cryptography is the best mitigation and that it will not support QKD for government or military applications.
+- Quantum key distribution is offered as the answer. The UK NCSC's [paper on quantum networking technologies](https://www.ncsc.gov.uk/paper/quantum-networking-technologies) (5 August 2025) states that post-quantum cryptography is the best mitigation and that it will not support QKD for government or military applications.
 - An unpublished or proprietary algorithm is presented as equivalent to a NIST or IETF standard.
 - "Compliant with" a standard that is still a draft, or with a date that is really another jurisdiction's deadline.
 
@@ -45,7 +45,7 @@ Record each answer, and your judgement of it, on the system's row in the [regist
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§2.2, §4.1.3). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/rfc/rfc10024)
-- UK National Cyber Security Centre, Quantum networking technologies, 5 August 2025. [NCSC paper](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
+- UK National Cyber Security Centre, Quantum networking technologies, 5 August 2025. [NCSC paper](https://www.ncsc.gov.uk/paper/quantum-networking-technologies)
 
 ## Related pages
 

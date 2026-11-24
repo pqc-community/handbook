@@ -12,8 +12,6 @@ Secure Shell (SSH) is used to administer servers and network devices, to run aut
 
 ## Post-quantum options and status
 
-Status as checked on 23 November 2026.
-
 | Part | Mechanism | Status |
 | --- | --- | --- |
 | Key exchange with ML-KEM | mlkem768x25519-sha256, mlkem768nistp256-sha256, mlkem1024nistp384-sha384, defined in [RFC 10042](https://www.rfc-editor.org/info/rfc10042) | Informational RFC, August 2026 |
@@ -23,7 +21,7 @@ Status as checked on 23 November 2026.
 
 Both key-exchange methods are hybrids that keep a classical exchange alongside the post-quantum one. They are Informational RFCs, which document a method without making it an IETF standard. NTRU Prime is not one of NIST's standardised algorithms: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) names ML-KEM as, at this time, NIST's only approved post-quantum key-establishment scheme. So check sntrup761x25519 against the authorities that apply to you, as [Choosing an option](/technology-options/choosing/) describes, before relying on it.
 
-No post-quantum signature method for SSH host or user keys is published: RFC 10042 and RFC 9941 define key exchange only, and the signature drafts are at an early stage. Ask the SSH supplier what it ships, on which draft, and apply the protocol-mechanisms rule on the same page.
+No post-quantum signature method for SSH host or user keys is standardised: RFC 10042 and RFC 9941 define key exchange only, and the signature drafts are at an early stage. Implementations are moving ahead of the standards. According to its release notes, OpenSSH 10.6 (6 October 2026) enables a hybrid ML-DSA-44 and Ed25519 signature algorithm, ssh-mldsa44-ed25519, and OpenSSH 10.6p2 (5 November 2026) also allows it for signing certificates, while keys made with the project's earlier experimental version must be regenerated. That is the risk of building on a draft, so ask the SSH supplier what it ships, on which draft, and apply the protocol-mechanisms rule on the same page.
 
 ## Who usually chooses
 
@@ -38,7 +36,7 @@ The SSH implementation's supplier, usually the operating system or the network d
 ## What to ask or test
 
 - Which post-quantum key-exchange methods each SSH server and client supports and prefers, by version.
-- What a session actually negotiates; most clients show the key-exchange method in verbose output.
+- What a session actually negotiates; most clients show the key-exchange method in verbose output, and from OpenSSH 10.6 the server also logs, by default, any session whose key agreement is not post-quantum safe.
 - Which devices and automation tools use their own SSH library: network equipment, appliances, and scripts often lag the operating system.
 
 ## Traps
@@ -65,7 +63,8 @@ A decision-ready record lists the servers by operating-system release with the k
 - IETF, Post-Quantum/Traditional Hybrid Key Exchange with the Module-Lattice-Based Key-Encapsulation Mechanism for Use in SSH, RFC 10042, August 2026. [RFC 10042](https://www.rfc-editor.org/info/rfc10042)
 - IETF, Secure Shell (SSH) Key Exchange Method Using Hybrid Streamlined NTRU Prime sntrup761 and X25519 with SHA-512: sntrup761x25519-sha512, RFC 9941, April 2026. [RFC 9941](https://www.rfc-editor.org/info/rfc9941)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
-- IETF Datatracker, Post-Quantum Composite Signatures in SSH, draft-ietf-sshm-composite-sigs-01, and SSH Support of ML-DSA, draft-sfluhrer-ssh-mldsa-08, checked 23 November 2026. [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/) / [draft-sfluhrer-ssh-mldsa](https://datatracker.ietf.org/doc/draft-sfluhrer-ssh-mldsa/)
+- OpenSSH, OpenSSH 10.6 release notes, 6 October 2026, and OpenSSH 10.6p2 release notes, 5 November 2026. [OpenSSH 10.6 (TXT)](https://www.openssh.org/txt/release-10.6) / [OpenSSH 10.6p2 (TXT)](https://www.openssh.org/txt/release-10.6p2)
+- IETF Datatracker, Post-Quantum Composite Signatures in SSH, draft-ietf-sshm-composite-sigs-01, and SSH Support of ML-DSA, draft-sfluhrer-ssh-mldsa-08. [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/) / [draft-sfluhrer-ssh-mldsa](https://datatracker.ietf.org/doc/draft-sfluhrer-ssh-mldsa/)
 
 ## Related pages
 

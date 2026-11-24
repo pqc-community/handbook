@@ -12,8 +12,6 @@ Domain Name System Security Extensions (DNSSEC) let a resolver check that DNS an
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026.
-
 | Part | Position |
 | --- | --- |
 | Algorithm number for ML-DSA in DNSSEC | The IANA DNSSEC algorithm registry (last updated 10 August 2026) lists ML-DSA-44 as algorithm 18, marked MAY for use and implementation in signing and validation, with draft-westerbaan-dnssec-mldsa as its reference |
@@ -60,7 +58,7 @@ A decision-ready record lists each signed zone with its DNS provider, current al
 ## Sources
 
 - IANA, Domain Name System Security (DNSSEC) Algorithm Numbers registry, last updated 10 August 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
-- IETF Datatracker, draft-westerbaan-dnssec-mldsa, Module-Lattice Digital Signature Algorithm for DNSSEC, checked 21 November 2026. [draft-westerbaan-dnssec-mldsa](https://datatracker.ietf.org/doc/draft-westerbaan-dnssec-mldsa/)
+- IETF Datatracker, draft-westerbaan-dnssec-mldsa, Module-Lattice Digital Signature Algorithm for DNSSEC. [draft-westerbaan-dnssec-mldsa](https://datatracker.ietf.org/doc/draft-westerbaan-dnssec-mldsa/)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - IETF, DNSSEC Cryptographic Algorithm Recommendation Update Process, RFC 9904, November 2025. [RFC 9904](https://www.rfc-editor.org/info/rfc9904)
 

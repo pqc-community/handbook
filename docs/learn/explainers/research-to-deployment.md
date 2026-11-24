@@ -23,7 +23,7 @@ flowchart TD
     RL --> DP[Deployed]
 ```
 
-| Stage | What it means | Example (status checked 20 November 2026) |
+| Stage | What it means | Example |
 | --- | --- | --- |
 | **Candidate** | Submitted to a public evaluation process and analysed in rounds | NIST's additional digital signature schemes; NIST IR 8610 (14 May 2026) reports on the second round |
 | **Selected** | Chosen for standardisation at the end of evaluation; not yet specified as a standard | HQC, selected in NIST IR 8545 (March 2025) as an alternative to ML-KEM |
@@ -48,7 +48,7 @@ When a supplier, colleague, or article says something "supports" or "is complian
 
 ## Sources
 
-- NIST, Post-Quantum Cryptography publications list, accessed 20 November 2026. [NIST publications list](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/publications)
+- NIST, Post-Quantum Cryptography publications list. [NIST publications list](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography/publications)
 - NIST, Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process, NIST IR 8545, March 2025. [NIST IR 8545](https://csrc.nist.gov/pubs/ir/8545/final)
 - NIST, Additional SLH-DSA Parameter Sets for Limited Signature Use Cases, SP 800-230 (initial public draft), 13 April 2026. [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd)
 - NIST, Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203, 13 August 2024. [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final)

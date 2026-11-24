@@ -38,7 +38,7 @@ These documents sit between the algorithm standards and the products a migration
 
 ### Other post-quantum protocol and format specifications
 
-These IETF documents are not summarised in the handbook. Statuses were checked on 21 November 2026; follow the links for current status.
+These IETF documents are not summarised in the handbook. Follow the links for current status.
 
 | Specification | Summary | Reference |
 | --- | --- | --- |
@@ -46,6 +46,7 @@ These IETF documents are not summarised in the handbook. Statuses were checked o
 | RFC 9936 | ML-KEM in CMS. Proposed Standard, March 2026. | [RFC 9936](https://www.rfc-editor.org/info/rfc9936) |
 | RFC 9814 | SLH-DSA in CMS. Proposed Standard, July 2025. | [RFC 9814](https://www.rfc-editor.org/info/rfc9814) |
 | RFC 9708 | HSS/LMS hash-based signatures in CMS. Proposed Standard, January 2025. | [RFC 9708](https://www.rfc-editor.org/info/rfc9708) |
+| RFC 10082 | Composite signatures pairing ML-DSA with a classical algorithm in CMS. Proposed Standard, November 2026. | [RFC 10082](https://www.rfc-editor.org/info/rfc10082) |
 | RFC 9909 | SLH-DSA in X.509. Proposed Standard, December 2025. | [RFC 9909](https://www.rfc-editor.org/info/rfc9909) |
 | RFC 9935 | ML-KEM in X.509. Proposed Standard, March 2026. | [RFC 9935](https://www.rfc-editor.org/info/rfc9935) |
 | RFC 9802 | HSS and XMSS hash-based signatures in X.509. Proposed Standard, June 2025. | [RFC 9802](https://www.rfc-editor.org/info/rfc9802) |
@@ -62,7 +63,7 @@ These IETF documents are not summarised in the handbook. Statuses were checked o
 
 - NIST IR 8547, Transition to Post-Quantum Cryptography Standards, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - NIST, Compliance FAQs: Federal Information Processing Standards (FIPS), content last updated 3 July 2024. [NIST FIPS compliance FAQ](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips)
-- RFC Editor information pages for each RFC listed, checked 21 November 2026. [RFC Editor](https://www.rfc-editor.org/)
+- RFC Editor information pages for each RFC listed. [RFC Editor](https://www.rfc-editor.org/)
 
 ## Related pages
 

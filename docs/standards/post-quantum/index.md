@@ -34,8 +34,8 @@ These publications specify NIST's approved quantum-resistant public-key algorith
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
-| FALCON-derived signature FIPS | Under development according to NIST IR 8547 (§2.1); no draft on CSRC as of 21 November 2026. | [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) |
-| HQC-KEM FIPS | Under development according to NIST IR 8547; no draft on CSRC as of 21 November 2026. | [NIST IR 8545](/standards/post-quantum/nist-ir-8545/) |
+| FALCON-derived signature FIPS | Under development according to NIST IR 8547 (§2.1.1); no draft has been published on CSRC. | [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) |
+| HQC-KEM FIPS | Under development according to NIST IR 8547 (§2.1.2); no draft has been published on CSRC. | [NIST IR 8545](/standards/post-quantum/nist-ir-8545/) |
 | NIST SP 800-230 | Six additional SLH-DSA parameter sets limited to 2^24 signatures per key; not approved for general-purpose use. Initial public draft, 13 April 2026. | [SP 800-230 draft](https://csrc.nist.gov/pubs/sp/800/230/ipd) |
 | Additional signature schemes | NIST's on-ramp for further signature algorithms; nine candidates in round three. | [NIST IR 8610](/standards/post-quantum/nist-ir-8610/) |
 

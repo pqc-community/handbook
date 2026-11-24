@@ -9,7 +9,7 @@ Start with the technology in front of you. Each page below gives the job the tec
 
 ## Technologies at a glance
 
-Status as checked on 21 November 2026, and on 23 November 2026 for TLS, VPNs, and SSH, with one column for each job. Each cell starts with where the post-quantum mechanism for that job stands:
+The table has one column for each job. Each cell starts with where the post-quantum mechanism for that job stands:
 
 - **Published**: a final NIST standard or a published RFC. "Proposed Standard" and "Informational" are IETF RFC categories, and the card says which applies.
 - **Draft**: an Internet-Draft, which can still change.
@@ -42,9 +42,9 @@ A dash means the technology does not do that job, or another card covers it. Ver
 
 | Technology | Key establishment | Signatures and verification |
 | --- | --- | --- |
-| [Code and software signing](/technology-options/code-signing/) | — | **Published.** ML-DSA, SLH-DSA, LMS, and XMSS are final; ML-DSA, SLH-DSA, and HSS/LMS in CMS are Proposed Standards (2025); platform formats are set by each platform |
+| [Code and software signing](/technology-options/code-signing/) | — | **Published.** ML-DSA, SLH-DSA, LMS, and XMSS are final; ML-DSA, SLH-DSA, and HSS/LMS in CMS are Proposed Standards (2025), as is composite ML-DSA in CMS (RFC 10082, November 2026); platform formats are set by each platform |
 | [Firmware and secure boot](/technology-options/firmware-secure-boot/) | — | **Supplier.** Whatever the device's boot verifier supports, which may not change after shipment |
-| [Documents and email signing](/technology-options/document-signing/) | — (see [Encrypted email and files](/technology-options/encrypted-files/)) | **Published.** Post-quantum OpenPGP (RFC 9980); ML-DSA and hash-based signatures in CMS; PDF and other formats depend on the supplier |
+| [Documents and email signing](/technology-options/document-signing/) | — (see [Encrypted email and files](/technology-options/encrypted-files/)) | **Published.** Post-quantum OpenPGP (RFC 9980); ML-DSA, composite ML-DSA, and hash-based signatures in CMS; PDF and other formats depend on the supplier |
 
 ### Stored data
 
@@ -64,7 +64,7 @@ These last four span several jobs, so each points to the cards for the jobs it d
 | [Cloud and SaaS](/technology-options/cloud-saas/) | **Supplier.** The provider's choice | **Supplier.** The provider's choice |
 | [OT and industrial systems](/technology-options/ot-industrial/) | **Follows** TLS, VPNs, and SSH for IT zones and remote access; **None yet** for many industrial protocols | **Supplier.** Field devices support whatever their supplier provides; integrity usually comes first |
 
-The Post-Quantum Cryptography Coalition, a non-governmental community whose [migration roadmap](/standards/migration-guides/pqcc-roadmap/) is summarised in Standards, publishes a [State of the Migration](https://pqcc.org/learn-more/state-of-the-migration/) heatmap. It scores each protocol's standardisation separately for post-quantum confidentiality and authentication, in pure and hybrid forms. When checked on 23 November 2026 its latest heatmap was for June 2026. It is a useful second view of the same split; where it differs from the cards, they cite the primary source and a later check.
+The Post-Quantum Cryptography Coalition, a non-governmental community whose [migration roadmap](/standards/migration-guides/pqcc-roadmap/) is summarised in Standards, publishes a [State of the Migration](https://pqcc.org/learn-more/state-of-the-migration/) heatmap. It scores each protocol's standardisation separately for post-quantum confidentiality and authentication, in pure and hybrid forms. Its latest heatmap is for June 2026. It is a useful second view of the same split; where it differs from the cards, they cite the primary source.
 
 ## Technology not listed?
 
@@ -84,12 +84,12 @@ Commodity products that receive post-quantum support through supplier updates ne
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 - IANA, DNSSEC Algorithm Numbers registry, last updated 10 August 2026. [IANA registry](https://www.iana.org/assignments/dns-sec-alg-numbers/dns-sec-alg-numbers.xhtml)
-- RFC Editor information pages for [RFC 10024](https://www.rfc-editor.org/info/rfc10024), [RFC 9370](https://www.rfc-editor.org/info/rfc9370), [RFC 10042](https://www.rfc-editor.org/info/rfc10042), [RFC 9941](https://www.rfc-editor.org/info/rfc9941), [RFC 9881](https://www.rfc-editor.org/info/rfc9881), [RFC 10073](https://www.rfc-editor.org/info/rfc10073), [RFC 9629](https://www.rfc-editor.org/info/rfc9629), [RFC 9936](https://www.rfc-editor.org/info/rfc9936) and [RFC 9980](https://www.rfc-editor.org/info/rfc9980), checked 21 November 2026.
-- RFC Editor information pages for [RFC 9935](https://www.rfc-editor.org/info/rfc9935), [RFC 9909](https://www.rfc-editor.org/info/rfc9909), [RFC 9802](https://www.rfc-editor.org/info/rfc9802) and [RFC 9190](https://www.rfc-editor.org/info/rfc9190), as cited on the PKI and Wi-Fi cards, checked 21 November 2026, and [RFC 9851](https://www.rfc-editor.org/info/rfc9851).
-- IETF Datatracker, [draft-ietf-tls-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/), [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) and [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/), checked 23 November 2026.
-- IETF Datatracker, [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/) and [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/), checked 21 November 2026.
+- RFC Editor information pages for [RFC 10024](https://www.rfc-editor.org/info/rfc10024), [RFC 9370](https://www.rfc-editor.org/info/rfc9370), [RFC 10042](https://www.rfc-editor.org/info/rfc10042), [RFC 9941](https://www.rfc-editor.org/info/rfc9941), [RFC 9881](https://www.rfc-editor.org/info/rfc9881), [RFC 10073](https://www.rfc-editor.org/info/rfc10073), [RFC 10082](https://www.rfc-editor.org/info/rfc10082), [RFC 9629](https://www.rfc-editor.org/info/rfc9629), [RFC 9936](https://www.rfc-editor.org/info/rfc9936) and [RFC 9980](https://www.rfc-editor.org/info/rfc9980).
+- RFC Editor information pages for [RFC 9935](https://www.rfc-editor.org/info/rfc9935), [RFC 9909](https://www.rfc-editor.org/info/rfc9909), [RFC 9802](https://www.rfc-editor.org/info/rfc9802) and [RFC 9190](https://www.rfc-editor.org/info/rfc9190), as cited on the PKI and Wi-Fi cards, and [RFC 9851](https://www.rfc-editor.org/info/rfc9851).
+- IETF Datatracker, [draft-ietf-tls-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/), [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) and [draft-ietf-sshm-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-sshm-composite-sigs/).
+- IETF Datatracker, [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/) and [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/).
 
-- Post-Quantum Cryptography Coalition, State of the Migration, June 2026 heatmap, checked 23 November 2026. [PQCC heatmap](https://pqcc.org/learn-more/state-of-the-migration/)
+- Post-Quantum Cryptography Coalition, State of the Migration, June 2026 heatmap. [PQCC heatmap](https://pqcc.org/learn-more/state-of-the-migration/)
 
 ## Related pages
 

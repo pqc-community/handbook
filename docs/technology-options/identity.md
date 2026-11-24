@@ -14,7 +14,7 @@ Identity and sign-in covers single sign-on and federation (signed assertions and
 
 [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026), written for US federal agencies and technology providers, among others, says an authentication system stays secure as long as its algorithms and keys are secure when the authentication is performed, so authentication is not exposed to harvest-now, decrypt-later. It adds that moving authentication to quantum-resistant algorithms needs upgrades to both the system performing and the system accepting the authentication, to supporting infrastructure such as a PKI, and possibly new hardware tokens.
 
-| Technology | What to rely on, as checked on 21 November 2026 |
+| Technology | What to rely on |
 | --- | --- |
 | Certificates used for sign-in, including smart-card certificates | The published X.509 formats on [PKI and certificates](/technology-options/pki/) |
 | US federal PIV smart cards | [FIPS 201-3](/standards/modules-protocols-certificates/fips-201-3/) (January 2022) does not itself specify post-quantum algorithms |

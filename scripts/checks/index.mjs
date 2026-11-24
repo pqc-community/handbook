@@ -4,7 +4,7 @@ import path from 'node:path';
 import {findCsvFieldViolations, findCsvLinkViolations, findRecordsZipViolations, findWorkedExampleViolations} from './records.mjs';
 import {findAdmonitionViolations, findNavigationViolations, findPageViolations} from './pages.mjs';
 import {findPdfLinkLabelViolations, findStandardsLayoutViolations} from './standards.mjs';
-import {findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
+import {findCheckedDateViolations, findProseDateViolations, findTimelineDateViolations} from './dates.mjs';
 import {findJourneyBudgetViolations, findRetiredLabelViolations, findStaccatoViolations} from './reading.mjs';
 import {findSearchMetadataViolations, findUrlViolations} from './search.mjs';
 import {findPostViolations} from './posts.mjs';
@@ -31,6 +31,7 @@ export const CHECKS = [
   {area: 'posts', name: 'news post location, metadata, teaser and ending', run: (root) => findPostViolations(root)},
   {area: 'dates', name: 'prose dates are day–month–year', run: (root) => findProseDateViolations(root)},
   {area: 'dates', name: 'timeline dates use non-breaking hyphens', run: (root) => findTimelineDateViolations(standards(root))},
+  {area: 'dates', name: 'doc pages carry no checked dates', run: (root) => findCheckedDateViolations(root)},
 ];
 
 export function runChecks(root, area) {

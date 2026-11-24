@@ -25,14 +25,14 @@ These NIST publications explain when quantum-vulnerable algorithms leave NIST st
 
 | Publication | Summary | Reference |
 | --- | --- | --- |
-| NIST SP 800-57 Part 1 | Rev. 5 final, 4 May 2020. General key-management guidance and comparable security strengths. | [NIST SP 800-57 Part 1](/standards/transition-and-key-management/sp-800-57-part-1/) |
+| NIST SP 800-57 Part 1 | Rev. 5 final, 4 May 2020; Rev. 6 initial public draft 5 December 2025, still a draft. General key-management guidance and comparable security strengths. | [NIST SP 800-57 Part 1](/standards/transition-and-key-management/sp-800-57-part-1/) |
 | NIST CSWP 39 | Upd1 final, published 19 December 2025 with updates as of 29 June 2026. White paper on strategies and practices for crypto agility. | [NIST CSWP 39](/standards/transition-and-key-management/nist-cswp-39/) |
 
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [CSRC publication page](https://csrc.nist.gov/pubs/ir/8547/final)
 - NIST, SP 800-131A Rev. 2, March 2019, and Rev. 3 initial public draft, October 2024. [Rev. 2](https://csrc.nist.gov/pubs/sp/800/131/a/r2/final) / [Rev. 3 draft](https://csrc.nist.gov/pubs/sp/800/131/a/r3/ipd)
-- NIST, SP 800-57 Part 1 Rev. 5, May 2020. [CSRC publication page](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final)
+- NIST, SP 800-57 Part 1 Rev. 5, May 2020, and Rev. 6 initial public draft, December 2025. [Rev. 5](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final) / [Rev. 6 draft](https://csrc.nist.gov/pubs/sp/800/57/pt1/r6/ipd)
 - NIST, CSWP 39 upd1, Considerations for Achieving Crypto Agility. [CSRC publication page](https://csrc.nist.gov/pubs/cswp/39/upd1/considerations-for-achieving-crypto-agility/final)
 
 ## Related pages

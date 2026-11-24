@@ -15,8 +15,6 @@ Transport Layer Security (TLS) protects web traffic, APIs, load balancers, conte
 
 ## Post-quantum options and status
 
-Status as checked on 23 November 2026.
-
 | Part | Mechanism | Status |
 | --- | --- | --- |
 | Key exchange, hybrid | X25519MLKEM768, SecP256r1MLKEM768, SecP384r1MLKEM1024, defined in [RFC 10024](/standards/modules-protocols-certificates/rfc-10024/) | Proposed Standard, August 2026 |
@@ -74,8 +72,8 @@ A decision-ready record, from [Protect this first](/templates/examples/protect-t
 
 - IETF, Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3, RFC 10024, August 2026. [RFC 10024](https://www.rfc-editor.org/info/rfc10024)
 - IETF, TLS 1.2 is in Feature Freeze, RFC 9851, July 2026. [RFC 9851](https://www.rfc-editor.org/info/rfc9851)
-- IETF Datatracker, draft-ietf-tls-mlkem, checked 21 November 2026. [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/)
-- IETF Datatracker, Use of ML-DSA in TLS 1.3, draft-ietf-tls-mldsa-06, and Use of Composite ML-DSA in TLS 1.3, draft-ietf-tls-composite-mldsa-00, checked 23 November 2026. [draft-ietf-tls-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/) / [draft-ietf-tls-composite-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-composite-mldsa/)
+- IETF Datatracker, draft-ietf-tls-mlkem. [draft-ietf-tls-mlkem](https://datatracker.ietf.org/doc/draft-ietf-tls-mlkem/)
+- IETF Datatracker, Use of ML-DSA in TLS 1.3, draft-ietf-tls-mldsa-06, and Use of Composite ML-DSA in TLS 1.3, draft-ietf-tls-composite-mldsa-00. [draft-ietf-tls-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-mldsa/) / [draft-ietf-tls-composite-mldsa](https://datatracker.ietf.org/doc/draft-ietf-tls-composite-mldsa/)
 - UK National Cyber Security Centre, Using TLS to protect data, version 1.2, published 15 October 2026. [NCSC TLS guidance](https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data)
 - NIST, Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations, SP 800-52 Rev. 2, August 2019, planning note of 19 November 2026. [SP 800-52 Rev. 2](https://csrc.nist.gov/pubs/sp/800/52/r2/final)
 

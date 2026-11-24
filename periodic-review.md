@@ -18,7 +18,7 @@ A run answers six questions in order. The report has one section for each.
 
 ### 1. What is new?
 
-Check each publisher the handbook cites for anything issued since the last report (or, for the first run, since the date in the "last checked" sentence on the Standards overview): new or revised publications, drafts that became final, opened or closed comment periods, withdrawn documents, and changed positions or dates. The watchlist is derived, not kept by hand:
+Check each publisher the handbook cites for anything issued since the last report (or, for the first run, since 21 November 2026): new or revised publications, drafts that became final, opened or closed comment periods, withdrawn documents, and changed positions or dates. The watchlist is derived, not kept by hand:
 
 - every body whose document is summarised under `docs/standards/` (NIST, the US government and CISA, NSA, NCSC, BSI, ANSSI, AIVD and the Dutch government, ASD, the Canadian Centre for Cyber Security, CFDIR, CSA Singapore, ETSI, the European Commission, and PQCC);
 - every IETF working group whose draft or RFC is cited in `docs/` (on 24 November 2026: tls, lamps, ipsecme, sshm, and mls), found through the IETF Datatracker;
@@ -50,7 +50,7 @@ Fetch each source and confirm that it is the document cited and that what the ci
 
 ### 3. Is it still current?
 
-Read every page for text that time alone has made wrong: deadlines, comment periods, and expected publication dates now in the past; words such as *recently*, *new*, *upcoming*, *this year*, *next year*, *currently*, and *expected* that no longer hold at the run date; and dates in the worked examples and the records' filled examples that are presented as still to come but are now past. Update the "last checked against the official sources" sentence on the [Standards overview](./docs/standards/index.md) to the run date, in prose date format.
+Read every page for text that time alone has made wrong: deadlines, comment periods, and expected publication dates now in the past; words such as *recently*, *new*, *upcoming*, *this year*, *next year*, *currently*, and *expected* that no longer hold at the run date; and dates in the worked examples and the records' filled examples that are presented as still to come but are now past. Pages carry no checked or accessed dates ([style-guide.md](./style-guide.md#5-sourcing-and-citations)), so a run never adds or moves one: a status that still holds stays as it is, and the report records when it was checked.
 
 ### 4. Is it consistent?
 
@@ -74,7 +74,7 @@ Some publishers block automated requests, and which ones do varies by run and by
 - **Detect blocking by response, not keywords**: Treat a `403`, `429`, `202` with no content, a connection failure, or a page whose title is not the cited document as could not verify. Do not search the page body for words such as *captcha*: in a test run that flagged about 40 NIST pages that had loaded correctly.
 - **Use the issuer's own alternative route**: Where the issuing body offers another official route to the same facts (such as its publication listing, a DOI record, or an IETF Datatracker page), confirming through it counts. A third-party copy, cache, or archive does not.
 - **Hand-check afterwards**: After the goal finishes, a maintainer opens each could-not-verify source in a browser, and Claude records the result in the report as confirmed, updated, or replaced, with "checked by hand" in its note. Anything still unverified stays so.
-- **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report. Look for another official copy from the same issuer; if none can be checked, add "last confirmed on [date]" next to the claim on the page, so the handbook never presents an unchecked claim as current.
+- **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report. Look for another official copy from the same issuer; if none can be checked, reword or remove the claim so the page states only what a reachable official source supports, and record the decision, so the handbook never presents an unchecked claim as current.
 
 ## Running the Review
 

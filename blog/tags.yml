@@ -59,6 +59,10 @@ eu:
   label: EU
   permalink: /eu
   description: Posts about the European Union and its member states acting together.
+germany:
+  label: Germany
+  permalink: /germany
+  description: Posts about German authorities, including the BSI.
 netherlands:
   label: Netherlands
   permalink: /netherlands

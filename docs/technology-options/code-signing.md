@@ -12,12 +12,12 @@ Code signing proves that software packages, updates, scripts, and container imag
 
 ## Post-quantum options and status
 
-[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) treats code signing as a key use case and notes that the devices installing the code need to be able to verify the new signatures. Status as checked on 21 November 2026:
+[NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) treats code signing as a key use case and notes that the devices installing the code need to be able to verify the new signatures. The table gives each mechanism's status:
 
 | Part | Option | Status |
 | --- | --- | --- |
 | Signature algorithm | ML-DSA ([FIPS 204](/standards/post-quantum/fips-204/)), SLH-DSA ([FIPS 205](/standards/post-quantum/fips-205/)), LMS and XMSS ([SP 800-208](/standards/post-quantum/sp-800-208/)) | Final NIST standards |
-| Signatures in CMS-based formats | ML-DSA ([RFC 9882](https://www.rfc-editor.org/info/rfc9882)), SLH-DSA ([RFC 9814](https://www.rfc-editor.org/info/rfc9814)), HSS/LMS ([RFC 9708](https://www.rfc-editor.org/info/rfc9708)) | Proposed Standards, 2025 |
+| Signatures in CMS-based formats | ML-DSA ([RFC 9882](https://www.rfc-editor.org/info/rfc9882)), SLH-DSA ([RFC 9814](https://www.rfc-editor.org/info/rfc9814)), HSS/LMS ([RFC 9708](https://www.rfc-editor.org/info/rfc9708)), and composite ML-DSA, which pairs ML-DSA with RSA, ECDSA, or EdDSA ([RFC 10082](https://www.rfc-editor.org/info/rfc10082)) | Proposed Standards: 2025, and November 2026 for composite ML-DSA |
 | Platform-specific formats | App stores, package managers, container signing | Set by each platform; ask the platform owner |
 
 Pick the scheme with the signature-schemes rule on [Choosing an option](/technology-options/choosing/): ML-DSA unless an applicable authority requires a hash-based scheme or every verifier supports only one; among hash-based schemes, SLH-DSA unless you can control signing state for LMS or XMSS.
@@ -69,6 +69,7 @@ A decision-ready record names the signing key and the HSM that holds it, lists t
 - IETF, Use of the ML-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9882, October 2025. [RFC 9882](https://www.rfc-editor.org/info/rfc9882)
 - IETF, Use of the HSS/LMS Hash-Based Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9708, January 2025. [RFC 9708](https://www.rfc-editor.org/info/rfc9708)
 - IETF, Use of the SLH-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS), RFC 9814, July 2025. [RFC 9814](https://www.rfc-editor.org/info/rfc9814)
+- IETF, Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in the Cryptographic Message Syntax (CMS), RFC 10082, November 2026. [RFC 10082](https://www.rfc-editor.org/info/rfc10082)
 
 ## Related pages
 

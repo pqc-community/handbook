@@ -73,6 +73,7 @@ Scope, focus areas, and exclusions are in [purpose-and-positioning.md](./purpose
 ## 5. Sourcing and Citations
 
 - **Cite primary public sources**: Attribute dates, duties, algorithm properties, and inter-authority differences to primary publications — naming the issuing body, document title, publication or modification date, and official `https://` URL. Every doc page ends with `## Sources` (containing Markdown links to the works used) followed by curated `## Related pages`.
+- **No checked dates**: Do not say on a doc page when the handbook checked or accessed a source, whether in prose (*"when checked on 24 November 2026"*), a status line (*"Status as checked on…"*), a table heading, or a Sources entry (*"checked 24 November 2026"*, *"accessed…"*). Every page is rechecked against its sources each month under [periodic-review.md](./periodic-review.md), whose report records what was checked and when, so state a status in the present tense. Dates that are facts about a document stay: publication, revision, and review dates the issuer gives, an *as of* date in the document's own dating, and comment-period closes. `npm test` and `npm run check` fail on a checked or accessed date in `docs/` (`scripts/checks/dates.mjs`). News posts are current at their date and need none.
 - **Source hierarchy**: When ordering multi-source lists, list sources from most authoritative downward:
   1. Standards and legal requirements
   2. National cyber guidance
@@ -155,7 +156,7 @@ Before merging new or revised content, check that the page passes these tests:
 - **Decision clarity**: Does the page open on a real migration decision, constraint, or timeline rather than a detached algorithm lecture?
 - **Job separation**: Are key establishment, digital signatures, and non-updatable verifiers kept distinct where their urgency or rollout differs?
 - **Honest sourcing**: Is every date, requirement, and authority recommendation attributed with its source, date, and target audience?
-- **Freshness**: Could a publication status, protocol profile, product capability, or recommendation have changed? If so, is the claim tied to a dated primary source and clearly framed as current at that date?
+- **Freshness**: Could a publication status, protocol profile, product capability, or recommendation have changed? If so, is the claim tied to a dated primary source and stated as it stands now, with no checked date, so the monthly review can keep it current?
 - **Actionable evidence**: Does the page show what concrete record or artifact demonstrates the work (rather than vague claims of being *"quantum safe"*)?
 - **Posts**: Does a news post that changes a date or obligation ship with the reference-page change, and does its teaser say whom the development applies to?
 - **Search result**: Read out of context, do the browser title and description tell the reader exactly what the page answers, accurately and without sales language?

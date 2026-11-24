@@ -15,8 +15,6 @@ Kerberos is a sign-in protocol used by many enterprise directory services, and i
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026.
-
 | Part | Position |
 | --- | --- |
 | Core Kerberos encryption | Symmetric, for example AES with HMAC-SHA2 ([RFC 8009](https://www.rfc-editor.org/info/rfc8009), Informational, October 2016). The UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, says existing symmetric algorithms with at least 128-bit keys can continue to be used, while [CNSA 2.0](/standards/national-algorithm-positions/cnsa-2-0/) names AES with 256-bit keys for US national security systems; check which applies under [Choosing an option](/technology-options/choosing/) |

@@ -12,7 +12,7 @@ Encrypted email and files protect content for named recipients: S/MIME, OpenPGP,
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026. All are Proposed Standards.
+All are Proposed Standards.
 
 | Format | Mechanism | Published |
 | --- | --- | --- |

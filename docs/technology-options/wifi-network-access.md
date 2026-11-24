@@ -15,8 +15,6 @@ Network access control decides which devices may join a wired or wireless networ
 
 ## Post-quantum options and status
 
-Status as checked on 21 November 2026.
-
 | Part | Position |
 | --- | --- |
 | EAP-TLS with TLS 1.3 | [RFC 9190](https://www.rfc-editor.org/info/rfc9190) (Proposed Standard, February 2022) uses a TLS 1.3 handshake, normally with certificate-based mutual authentication (the server has to present a certificate and the device should), so its key exchange follows [TLS and web services](/technology-options/tls/) where the device and server support the post-quantum groups |

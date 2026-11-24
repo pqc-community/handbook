@@ -24,7 +24,7 @@ IR 8545 is an informative report from the National Institute of Standards and Te
 | Date | Event |
 | --- | --- |
 | <time dateTime="2025-03-11">2025&#8209;03&#8209;11</time> | NIST published IR 8545, selecting HQC for standardisation. |
-| <time dateTime="2026-10-27">2026&#8209;10&#8209;27</time> | NIST published IR 8547 as final, stating that a FIPS specifying HQC-KEM is under development. As of 21 November 2026, no draft of that FIPS had been published on CSRC. |
+| <time dateTime="2026-10-27">2026&#8209;10&#8209;27</time> | NIST published IR 8547 as final, stating that a FIPS specifying HQC-KEM is under development. No draft of that FIPS has yet been published on CSRC. |
 
 ## Relationship with other standards
 

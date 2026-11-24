@@ -10,7 +10,7 @@ You do not need to understand how post-quantum algorithms work internally to pla
 
 ## The algorithms by job
 
-| Algorithm | Standard | Job | Basis | Status (20 November 2026) |
+| Algorithm | Standard | Job | Basis | Status (24 November 2026) |
 | --- | --- | --- | --- | --- |
 | **ML-KEM** | [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) | Key establishment (a key-encapsulation mechanism) | Module lattices | Final, 13 August 2024 |
 | **ML-DSA** | [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) | Digital signatures | Module lattices | Final, 13 August 2024 |

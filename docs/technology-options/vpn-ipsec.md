@@ -12,8 +12,6 @@ Virtual private networks join sites to each other and remote users to the networ
 
 ## Post-quantum options and status
 
-Status as checked on 23 November 2026.
-
 | Part | Mechanism | Status |
 | --- | --- | --- |
 | Adding a post-quantum exchange to IKEv2 | Multiple key exchanges in IKEv2, [RFC 9370](https://www.rfc-editor.org/info/rfc9370) | Proposed Standard, May 2023 |
@@ -68,8 +66,8 @@ A decision-ready record names the gateway model and release, the key exchange ne
 
 - IETF, Multiple Key Exchanges in the Internet Key Exchange Protocol Version 2 (IKEv2), RFC 9370, May 2023. [RFC 9370](https://www.rfc-editor.org/info/rfc9370)
 - IETF, Mixing Preshared Keys in the Internet Key Exchange Protocol Version 2 (IKEv2) for Post-quantum Security, RFC 8784, June 2020. [RFC 8784](https://www.rfc-editor.org/info/rfc8784)
-- IETF Datatracker, draft-ietf-ipsecme-ikev2-mlkem, checked 21 November 2026. [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/)
-- IETF Datatracker, Signature Authentication in IKEv2 using PQC, draft-ietf-ipsecme-ikev2-pqc-auth-12, and Use of Composite Signatures in IKEv2, draft-ietf-ipsecme-pq-hybrid-auth-01, checked 23 November 2026. [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) / [draft-ietf-ipsecme-pq-hybrid-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-pq-hybrid-auth/)
+- IETF Datatracker, draft-ietf-ipsecme-ikev2-mlkem. [draft-ietf-ipsecme-ikev2-mlkem](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/)
+- IETF Datatracker, Signature Authentication in IKEv2 using PQC, draft-ietf-ipsecme-ikev2-pqc-auth-12, and Use of Composite Signatures in IKEv2, draft-ietf-ipsecme-pq-hybrid-auth-01. [draft-ietf-ipsecme-ikev2-pqc-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-pqc-auth/) / [draft-ietf-ipsecme-pq-hybrid-auth](https://datatracker.ietf.org/doc/draft-ietf-ipsecme-pq-hybrid-auth/)
 - UK National Cyber Security Centre, Next steps in preparing for post-quantum cryptography, version 2.0, August 2024. [NCSC whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography)
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026. [NIST IR 8547 (PDF)](https://doi.org/10.6028/NIST.IR.8547)
 

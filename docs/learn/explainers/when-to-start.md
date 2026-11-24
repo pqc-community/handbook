@@ -50,7 +50,7 @@ In this illustration, X + Y is 16 years and Z is 14, so the last data protected 
 
 ## A worked example
 
-The fictional manufacturer in [Protect this first](/templates/examples/protect-this-first/) holds product designs in a supplier-hosted archive that its retention policy says must stay confidential for 15 years (X = 15). Suppose, as an illustration, that it had assumed migration would take four years (Y = 4). Then X + Y = 19 years — beyond even the later estimates for Z reported above, so the archive's key establishment heads the key-establishment order on the [register](/templates/records/register/), whatever the national completion date for the organisation as a whole. In the worked example the supplier's planned release with hybrid X25519MLKEM768 shortens Y considerably for the archive's connections, though not yet for its stored files, whose protection the supplier has not described. Shortening Y is exactly the lever the inequality points to: X is fixed by policy, Z is outside anyone's control, and Y is the only term the organisation can reduce.
+The fictional manufacturer in [Protect this first](/templates/examples/protect-this-first/) holds product designs in a supplier-hosted archive that its retention policy says must stay confidential for 15 years (X = 15). Suppose, as an illustration, that it had assumed migration would take four years (Y = 4). Then X + Y = 19 years — beyond even the later estimates for Z reported above, so the archive's key establishment heads the key-establishment order on the [register](/templates/records/register/), whatever the national completion date for the organisation as a whole. In the worked example the supplier's Workspace 4.2 release with hybrid X25519MLKEM768, which has passed a staging pilot and awaits production rollout, shortens Y considerably for the archive's connections, though not yet for its stored files, whose protection the supplier has not described. Shortening Y is exactly the lever the inequality points to: X is fixed by policy, Z is outside anyone's control, and Y is the only term the organisation can reduce.
 
 ## Limits of the model
 
@@ -61,7 +61,7 @@ The fictional manufacturer in [Protect this first](/templates/examples/protect-t
 ## Sources
 
 - NIST, Transition to Post-Quantum Cryptography Standards, NIST IR 8547, October 2026 (§1, §3). [NIST IR 8547](https://doi.org/10.6028/NIST.IR.8547)
-- EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025 (§4, §5). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
+- EU NIS Cooperation Group PQC work stream, A Coordinated Implementation Roadmap for the Transition to Post-Quantum Cryptography, version 1.1, 11 June 2025 (§2, §4, §5). [EU roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)
 - AIVD, CWI, and TNO, The PQC Migration Handbook, second edition, December 2024 (migration planning, estimating Z). [Handbook](https://english.aivd.nl/site/binaries/site-content/collections/documents/2024/12/3/the-pqc-migration-handbook/The+PQC+Migration+Handbook+.pdf)
 
 ## Related pages
