@@ -120,7 +120,10 @@ const config: Config = {
       links: [
         {
           title: 'Learn',
-          items: [{label: 'Learn the basics', to: '/learn/'}],
+          items: [
+            {label: 'Learn the basics', to: '/learn/'},
+            {label: 'Glossary', to: '/learn/glossary/'},
+          ],
         },
         {
           title: 'Plan your migration',

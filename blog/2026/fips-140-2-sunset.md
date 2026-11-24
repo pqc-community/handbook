@@ -42,4 +42,4 @@ If you do not rely on FIPS validation, this date changes nothing for you, althou
 - [Modules, protocols, and certificates](/standards/modules-protocols-certificates/)
 - [HSMs and key management](/technology-options/hsm-kms/)
 - [EO 14412](/standards/us-government-requirements/eo-14412/)
-- [Glossary](/templates/reference/glossary/)
+- [Glossary](/learn/glossary/)

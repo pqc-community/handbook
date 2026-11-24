@@ -21,13 +21,13 @@ Read these five root documents before changing structure, prose, or styling, and
 
 ### Handbook Content (`docs/`)
 
-- [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background and optional explainers
+- [Learn the Basics](./docs/learn/index.md) — Plain-English conceptual background, optional explainers, and the [Glossary](./docs/learn/glossary.md)
 - [Which plan you need](./docs/plan/index.md), [Core actions](./docs/plan/core-actions.md), and [Programme](./docs/plan/programme/index.md) — The reader journey: four questions, the core actions every organisation follows, and the programme with its first moves and practices in three phases (diagnose, order and schedule, execute)
 - [Standards](./docs/standards/index.md) — Reference summaries of NIST cryptographic standards, US federal directives, and national/international migration guides
 - [Programme practices](./docs/plan/programme/index.md) — Set up, inventory, prioritisation, dates, suppliers, implementation, cryptographic agility, and review, under `docs/plan/programme/`
 - [Technology options](./docs/technology-options/index.md) — Authority-backed option branches for key establishment, digital signatures, and long-lived roots of trust
 - [News and analysis](./blog/) — Dated posts on authority updates, standards and protocols, deployment milestones, and analysis, served at `/news/`; each links inline to the handbook pages that hold the lasting guidance
-- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the core actions and a full programme; and the [Glossary](./docs/templates/reference/glossary.md)
+- [Templates](./docs/templates/index.md) — What you fill in and keep: the five [migration records](./docs/templates/records/index.md) with a zip of every blank CSV; the [Stay on supplier updates](./docs/templates/examples/stay-on-supplier-updates.md) and [Protect this first](./docs/templates/examples/protect-this-first.md) worked examples, for the core actions and a full programme
 
 ## Getting Started
 

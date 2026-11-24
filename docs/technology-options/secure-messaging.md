@@ -10,7 +10,7 @@ description: What post-quantum readiness looks like for end-to-end encrypted cha
 
 Secure messaging and collaboration tools protect chat, calls, and shared content, often end to end between users' devices. They do two jobs:
 
-- **key establishment** for message keys, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later) for anything sensitive that is recorded today;
+- **key establishment** for message keys, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later) for anything sensitive that is recorded today;
 - **signatures** to authenticate users and devices.
 
 Messages kept in history or exports are also stored data; see [Backups, archives and storage](/technology-options/backups-archives/).

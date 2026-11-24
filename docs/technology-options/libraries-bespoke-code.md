@@ -10,7 +10,7 @@ description: Post-quantum readiness for software that calls cryptographic librar
 
 Some software calls cryptographic libraries directly instead of relying on a protocol a supplier configures: in-house applications, embedded software, custom file and message formats, and products you build. Such code can do any job:
 
-- **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later) for whatever it protects;
+- **key establishment** where it agrees, encapsulates, or wraps keys, exposed to [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later) for whatever it protects;
 - **signatures** where it signs or verifies, with timing that follows the parties relying on those signatures;
 - **verifiers that cannot be updated** where it checks signatures in devices that cannot be updated in the field, which follow [Firmware and secure boot](/technology-options/firmware-secure-boot/).
 

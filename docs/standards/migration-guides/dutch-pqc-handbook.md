@@ -42,4 +42,4 @@ Rather than rewriting its methodology, this handbook links to it alongside its o
 - [Post-quantum migration guides](/standards/migration-guides/)
 - [EU NIS roadmap](/standards/migration-guides/eu-nis-roadmap/)
 - [Which plan you need](/plan/)
-- [Glossary](/templates/reference/glossary/)
+- [Glossary](/learn/glossary/)

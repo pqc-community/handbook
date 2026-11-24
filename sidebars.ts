@@ -66,6 +66,7 @@ const sidebars: SidebarsConfig = {
         'learn/explainers/why-timelines-differ',
       ],
     },
+    'learn/glossary',
   ],
   standardsSidebar: [
     'standards/index',
@@ -338,18 +339,6 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: false,
       items: ['templates/examples/protect-this-first', 'templates/examples/stay-on-supplier-updates'],
-    },
-    {
-      type: 'category',
-      label: 'Reference',
-      link: {
-        type: 'generated-index',
-        title: 'Reference',
-        description: 'Plain-language definitions of the terms the records and pages use.',
-        slug: '/templates/reference/',
-      },
-      collapsed: false,
-      items: ['templates/reference/glossary'],
     },
   ],
 };

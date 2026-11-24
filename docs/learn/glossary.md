@@ -2,7 +2,7 @@
 title: Post-quantum glossary
 search_title: Post-quantum cryptography glossary
 sidebar_label: Glossary
-displayed_sidebar: templatesSidebar
+displayed_sidebar: learnSidebar
 description: Terms used across this handbook, from asymmetric cryptography and key encapsulation to hybrid constructions and harvest-now, decrypt-later.
 ---
 

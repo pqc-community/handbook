@@ -8,7 +8,7 @@ description: What a good post-quantum SSH deployment looks like for administrati
 
 ## What it is
 
-Secure Shell (SSH) is used to administer servers and network devices, to run automation, and to reach Git repositories. Its key exchange is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later) for anything sensitive sent over the session. Host keys and user keys are a **signatures** job.
+Secure Shell (SSH) is used to administer servers and network devices, to run automation, and to reach Git repositories. Its key exchange is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later) for anything sensitive sent over the session. Host keys and user keys are a **signatures** job.
 
 ## Post-quantum options and status
 

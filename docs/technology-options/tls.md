@@ -10,7 +10,7 @@ description: What good post-quantum TLS looks like for web servers, APIs, load b
 
 Transport Layer Security (TLS) protects web traffic, APIs, load balancers, content delivery networks, and most connections to cloud and SaaS services. It does two jobs:
 
-- **key establishment** in the handshake, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later);
+- **key establishment** in the handshake, which protects confidentiality and is exposed to [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later);
 - **signatures** in the server's certificate chain, which authenticate the server; that job runs on a different clock and is covered on [PKI and certificates](/technology-options/pki/).
 
 ## Post-quantum options and status

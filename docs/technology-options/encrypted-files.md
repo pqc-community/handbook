@@ -8,7 +8,7 @@ description: Post-quantum options for encrypted email and files sent to named re
 
 ## What it is
 
-Encrypted email and files protect content for named recipients: S/MIME, OpenPGP, and file-encryption tools that encrypt a data key to each recipient's public key. It is a **key-establishment** job for stored data, and exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later): [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that, as with other applications providing data confidentiality, email encryption is subject to it. Signing the same messages is a separate job, on [Documents and email signing](/technology-options/document-signing/).
+Encrypted email and files protect content for named recipients: S/MIME, OpenPGP, and file-encryption tools that encrypt a data key to each recipient's public key. It is a **key-establishment** job for stored data, and exposed to [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later): [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) notes that, as with other applications providing data confidentiality, email encryption is subject to it. Signing the same messages is a separate job, on [Documents and email signing](/technology-options/document-signing/).
 
 ## Post-quantum options and status
 

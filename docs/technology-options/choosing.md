@@ -60,9 +60,9 @@ Choose from the schemes every applicable authority accepts. This is the handbook
 
 | Use | Scheme | Why |
 | --- | --- | --- |
-| Certificates, documents, and other general signing | [ML-DSA](/templates/reference/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) ([FIPS 204](/standards/post-quantum/fips-204/)) | The NCSC whitepaper says hash-based signatures are not suitable for general-purpose use, because their signatures are large and the algorithms much slower |
+| Certificates, documents, and other general signing | [ML-DSA](/learn/glossary/#ml-dsa-module-lattice-based-digital-signature-algorithm) ([FIPS 204](/standards/post-quantum/fips-204/)) | The NCSC whitepaper says hash-based signatures are not suitable for general-purpose use, because their signatures are large and the algorithms much slower |
 | Code, software, and firmware signing | A hash-based scheme where an applicable authority requires one or every verifier supports only that; otherwise ML-DSA | NIST IR 8547 says stateful schemes are not intended for general use but may suit software and firmware signing; the NCSC whitepaper lists SLH-DSA, LMS, and XMSS for such uses |
-| Choosing among hash-based schemes | [SLH-DSA](/templates/reference/glossary/#slh-dsa-stateless-hash-based-digital-signature-algorithm) ([FIPS 205](/standards/post-quantum/fips-205/)) unless you can control signing state; Leighton-Micali Signatures (LMS) or the eXtended Merkle Signature Scheme (XMSS) ([SP 800-208](/standards/post-quantum/sp-800-208/)) only if you can show no one-time key will ever be reused | [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains the state problem |
+| Choosing among hash-based schemes | [SLH-DSA](/learn/glossary/#slh-dsa-stateless-hash-based-digital-signature-algorithm) ([FIPS 205](/standards/post-quantum/fips-205/)) unless you can control signing state; Leighton-Micali Signatures (LMS) or the eXtended Merkle Signature Scheme (XMSS) ([SP 800-208](/standards/post-quantum/sp-800-208/)) only if you can show no one-time key will ever be reused | [Hash-based signatures](/learn/explainers/hash-based-signatures/) explains the state problem |
 
 The authority check can change the answer:
 

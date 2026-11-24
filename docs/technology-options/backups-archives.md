@@ -11,7 +11,7 @@ description: How to tell whether stored data depends on public-key cryptography 
 Backups, archives, object storage, and encrypted databases hold data for years. Whether they need a post-quantum change depends on one question: **is any key protected by public-key cryptography?**
 
 - **Symmetric encryption only**, with keys held in a key management service rather than wrapped to a public key: the UK NCSC's [post-quantum whitepaper](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography) (version 2.0, August 2024), for system and risk owners, says existing symmetric algorithms with at least 128-bit keys, such as AES, can continue to be used. The data itself does not need a post-quantum change, though the way keys reach the key service may.
-- **Data keys wrapped or encrypted to a public key**, such as archive formats, backup tools, or SaaS storage that wrap keys for recipients or escrow: this is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/templates/reference/glossary/#harvest-now-decrypt-later) for as long as the data must stay confidential.
+- **Data keys wrapped or encrypted to a public key**, such as archive formats, backup tools, or SaaS storage that wrap keys for recipients or escrow: this is a **key-establishment** job, exposed to [harvest-now, decrypt-later](/learn/glossary/#harvest-now-decrypt-later) for as long as the data must stay confidential.
 
 ## Post-quantum options and status
 
@@ -27,7 +27,7 @@ The backup, archive, or storage supplier for products you buy; you for formats a
 2. **Keep stored data on its own register row.** Give it a `key establishment (stored data)` row, separate from the row for connections to the same system. A supplier's answer about connections says nothing about stored data, so ask about each in writing and judge each answer on its own row.
 3. **Treat a confidentiality period nobody can confirm as long.** Until the data owner confirms how long the data must stay secret, treat it as long-lived, as [Which plan you need](/plan/) does when the answer to its first question is uncertain, and name on the register who will confirm it and by when.
 4. **Decide what happens to data already encrypted** when its confidentiality period, counted from when the data was created, is long enough to meet the first of the four questions:
-   - if you still hold the only copies, [re-wrap](/templates/reference/glossary/#key-wrapping) the data keys under the new option where the format allows it without decrypting the data, and re-encrypt the data where it does not; record that work on the stored-data row;
+   - if you still hold the only copies, [re-wrap](/learn/glossary/#key-wrapping) the data keys under the new option where the format allows it without decrypting the data, and re-encrypt the data where it does not; record that work on the stored-data row;
    - if copies have already left your control, such as data sent out or held by a third party, re-wrapping your copy does not protect theirs; record the exposure on the [register](/templates/records/register/) for the sponsor, advised by legal or risk, to accept or act on;
    - delete data and keys you no longer need rather than migrating them.
 5. **Check what is actually in use** by inspecting a sample object and confirming which algorithm protects its key.
