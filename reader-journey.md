@@ -33,11 +33,11 @@ The reader learns three terms to act: **core actions**, **programme**, and **reg
 
 ## Which Plan You Need
 
-Which plan you need asks four questions about the organisation as a whole. A question applies if any system, service, or product the organisation runs fits it.
+Which plan you need asks four questions about the organisation as a whole. A question applies if any system, service, or product the organisation uses fits it.
 
 | # | Question | Why it is asked |
 | --- | --- | --- |
-| 1 | **Data that must stay secret for years.** Information that must stay confidential for many years and is protected in transit or at rest by public-key methods. Measured by how long it must stay secret, not how long it is kept. | Recorded traffic and wrapped keys can be decrypted later, so the exposure has already started. |
+| 1 | **Data that must stay secret for years.** Information that must stay confidential for many years and is protected in transit or at rest by public-key methods. Measured by how long it must stay secret, not how long it is kept. Data a supplier hosts for the organisation counts, as does data it holds for customers, judged by their confidentiality period. | Recorded traffic and wrapped keys can be decrypted later, so the exposure has already started. |
 | 2 | **Devices with a fixed key.** Products or devices, made or run, that check signatures with a key or method that cannot be changed after shipment, in hardware or software. A key a normal update can replace is not fixed. | The design freeze, then the device's service life, sets the deadline. |
 | 3 | **Signatures others rely on.** A certificate authority, public or internal, or code, firmware, or document signing that other people or devices check. Signing through a supplier's e-signature service is supplied IT. | Everyone who checks the signatures has to move with the signer. |
 | 4 | **Systems you build or configure.** Software or firmware the organisation builds, or cryptography it sets up on its own servers, load balancers, VPNs, or applications. Set-up an IT provider does and keeps updated counts as supplied. | Only the organisation can change it, on its own release cycle. |
@@ -74,7 +74,7 @@ The **first moves** are one row per question, naming the clock it runs on and th
 | Signatures others rely on | List who checks the signatures; verifiers must accept new signatures before signers switch. A verifier that can never change is treated as a device with a fixed key; one another party controls, such as an operating system, is recorded with that party's plan and date. |
 | Systems you build or configure | Record each system's cryptographic library, protocols, and versions. |
 
-The programme has two sizes. A system counts as one service or product with one owner, such as a portal and its servers, or one device model, not each server or site.
+The programme has two sizes. A system counts as one service or product with one owner, such as a portal and its servers, a hosted service a supplier runs for the organisation, or one device model, not each server or site.
 
 - **Small programme**: one or two systems, with no device that has a fixed key. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeps the register, and adds a change record for each change. No charter or progress report.
 - **Full programme**: anything larger, any device with a fixed key, or any organisation in the specialist outcome. A named sponsor and lead, a one-page programme charter, and a progress report at each review. Every programme reviews every six months, and every three months while a design freeze, contract renewal, or end of support falls within the next year; those reviews replace the core actions' own six-monthly review and include it.

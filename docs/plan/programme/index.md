@@ -25,7 +25,7 @@ If customers are asking about your post-quantum plans, answer from the register:
 
 ## Size
 
-Count a system as one service or product with one owner, such as a portal and its servers, or one device model, not each server or site.
+Count a system as one service or product with one owner, such as a portal and its servers, a hosted service a supplier runs for you, or one device model, not each server or site.
 
 - **Small programme**: one or two systems, with no device that has a fixed key, such as a single in-house portal. The owner runs it with the sign-off of a sponsor, such as a director or senior risk owner, keeping the register and a change record for each change, but needs no charter or progress report.
 - **Full programme**: anything larger, any device with a fixed key, or any organisation whose answers send it to a specialist and regulator first. It needs a named sponsor and migration lead, a one-page programme charter, and a progress report at each review.
@@ -36,7 +36,7 @@ The practices run in three phases, which overlap, because supplier questions sta
 
 **Diagnose**
 
-- [Set up the programme](/plan/programme/set-up/): sponsor, lead, scope, and a first budget line.
+- [Set up the programme](/plan/programme/set-up/): for a full programme, the sponsor, lead, scope, and a first budget line.
 - [Inventory the cryptography](/plan/programme/inventory/): find where public-key cryptography is used, starting with the systems the questions found.
 
 **Order and schedule**

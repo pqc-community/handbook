@@ -8,7 +8,7 @@ displayed_sidebar: templatesSidebar
 
 ## When to use it
 
-Use this record at the end of each review, as the charter's `reporting` field sets out and [Review and report](/plan/programme/subsequent-review/) describes, and whenever a report trigger named in the [programme charter](/templates/records/programme-charter/) fires. It is written from the records reviewed, chiefly the [register](/templates/records/register/), so it adds no new facts: every statement in it should be traceable to a row in those records.
+A full programme uses this record at the end of each review, as the charter's `reporting` field sets out and [Review and report](/plan/programme/subsequent-review/) describes, and whenever a report trigger named in the [programme charter](/templates/records/programme-charter/) fires; a small programme reports through the register instead. It is written from the records reviewed, chiefly the [register](/templates/records/register/), so it adds no new facts: every statement in it should be traceable to a row in those records.
 
 ## Minimum fields
 

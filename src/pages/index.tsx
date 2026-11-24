@@ -146,7 +146,7 @@ function Choices() {
                 set up and an hour or two at each review.
               </li>
               <li>
-                <strong>Add a programme</strong> if a question applied: small for one or two systems you run, full for
+                <strong>Add a programme</strong> if a question applied: small for one or two systems, full for
                 devices with fixed keys or a larger or regulated estate.
               </li>
             </ol>
