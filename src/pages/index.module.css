@@ -187,11 +187,18 @@
   font-size: 0.95rem;
 }
 
-/* Reference: three compact cards that name what each section holds */
+/* Reference and news: four compact cards that name what each section holds, in two
+   rows of two where four across would be too narrow */
 .refGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .refGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .ref .boxText {

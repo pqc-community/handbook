@@ -6,7 +6,7 @@ displayed_sidebar: standardsSidebar
 description: Summaries of post-quantum standards, government requirements, national algorithm positions and migration guides, each with its status, audience and dates.
 ---
 
-Use these reference summaries to find the official text of each standard, government requirement, and migration guide cited in this handbook. Each summary says what the document is for, who issued it, who it applies to, whether it binds that audience or only recommends, and how it relates to the other documents a migration team will meet. Status and dates were last checked against the official sources on 21 November 2026.
+Use these reference summaries to find the official text of each standard, government requirement, and migration guide cited in this handbook. Each summary says what the document is for, who issued it, who it applies to, whether it binds that audience or only recommends, and how it relates to the other documents a migration team will meet. Status and dates were last checked against the official sources on 21 November 2026. When a publication here is issued, revised or superseded, the handbook reports it in [News and analysis](/news/) and updates its summary in the same change.
 
 ## Start with your question
 

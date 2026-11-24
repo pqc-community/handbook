@@ -70,7 +70,7 @@ npm run build
 | --- | --- |
 | `docs/` | Public handbook Markdown content (`routeBasePath: '/'`) |
 | `blog/` | News and analysis posts at `blog/<year>/<slug>.md`, served at `/news/<year>/<slug>/` with RSS and Atom feeds at `/news/rss.xml` and `/news/atom.xml`; `tags.yml` and `authors.yml` hold the only tags and author a post may use |
-| `src/pages/` | Homepage: hero, two ways in (Learn the basics and Plan your migration), why you might be here, and reference cards (`index.tsx` and `index.module.css`) |
+| `src/pages/` | Homepage: hero, two ways in (Learn the basics and Plan your migration), why you might be here, and reference and news cards (`index.tsx` and `index.module.css`) |
 | `src/theme/` | Theme wrappers: `DocItem/Metadata` (a page's optional `search_title` becomes its browser title) the 404 page's wording and links back into the handbook, `noindex` for the 404 and search pages, and `BlogPostItem/Header/Info` (post dates in British day–month–year order) |
 | `src/css/custom.css` | Infima colour palette, typography, and responsive theme overrides |
 | `static/downloads/` | Header-only CSVs for the five migration records, and `pqc-handbook-records.zip` holding them all (rebuild with `npm run records-zip`) |

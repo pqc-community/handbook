@@ -57,7 +57,8 @@ const situations: {when: string; then: string; to: string; link: string}[] = [
 ];
 
 // Reference sections, each naming a few of the pages inside so a returning reader can
-// see where to go.
+// see where to go, then News and analysis for what has changed since their last visit.
+// The news card names no dates or posts, so it cannot go stale when the blog is quiet.
 const reference: Node[] = [
   {
     title: 'Technology options',
@@ -73,6 +74,11 @@ const reference: Node[] = [
     title: 'Templates',
     to: '/templates/',
     text: 'The register and the other migration records, two worked examples, and the glossary.',
+  },
+  {
+    title: 'News and analysis',
+    to: '/news/',
+    text: 'Dated authority updates, standards, and deployment milestones, each linked to the handbook pages it affects.',
   },
 ];
 
@@ -192,7 +198,7 @@ function Reference() {
     <section className={`${styles.section} ${styles.last}`} aria-labelledby="reference">
       <div className="container">
         <Heading as="h2" id="reference">
-          Reference
+          Reference and news
         </Heading>
         <div className={styles.refGrid}>
           {reference.map((node) => (

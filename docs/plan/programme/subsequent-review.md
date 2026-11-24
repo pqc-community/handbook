@@ -30,6 +30,8 @@ A next review date on the register has arrived, or something has happened that m
 - a new attack or implementation flaw is published for an algorithm or product you use;
 - a product design freeze or a contract renewal on the register is approaching.
 
+The handbook's [News and analysis](/news/) reports authority and standards changes as they happen, with the audience each applies to, so checking its [authority updates](/news/tags/authority-updates/) since your last review is a quick way to spot the second and third of these triggers.
+
 **At each review:**
 
 1. Open the register rows due for review, with the change records and purchase wording they name.

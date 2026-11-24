@@ -137,6 +137,9 @@ const config: Config = {
             {label: 'Standards', to: '/standards/'},
             {label: 'Templates', to: '/templates/'},
             {label: 'News and analysis', to: '/news/'},
+            // The feed is a file the blog plugin writes, not a page, so pathname:// skips
+            // client-side routing and the broken-link check.
+            {label: 'News feed (RSS)', to: 'pathname:///news/rss.xml'},
           ],
         },
       ],
