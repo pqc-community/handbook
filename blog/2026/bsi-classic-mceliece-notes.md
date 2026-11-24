@@ -1,7 +1,7 @@
 ---
 title: BSI advises against Classic McEliece for now
 description: The BSI's notes of 29 September 2026 advise against Classic McEliece in new developments after progress in cryptanalysis, pending a revised TR-02102-1.
-date: 2026-09-29
+date: 2026-10-01
 authors: [pqc_handbook]
 tags: [authority-updates, germany, key-establishment]
 ---
@@ -12,7 +12,7 @@ On 29 September 2026 Germany's Federal Office for Information Security (BSI) pub
 
 ## What the BSI said
 
-The notes, followed by a German notice on the BSI website dated 1 October 2026, say that cryptanalysis of Classic McEliece made clear progress in 2026. The BSI says the results so far do not allow a practical attack on the parameter sets the guideline recommends, but it expects further improvements and is monitoring them. For key agreement it advises FrodoKEM or ML-KEM instead, or HQC once its standard is published, and says those schemes rest on different mathematics and are not affected.
+The notes, followed by a German notice on the BSI website dated 1 October 2026, say that cryptanalysis of Classic McEliece made clear progress in 2026. The BSI says the results so far do not allow a practical attack on the parameter sets the guideline recommends, but it expects further improvements and is monitoring them. For key agreement it advises FrodoKEM or ML-KEM instead, or HQC once its standard is published, and says FrodoKEM and ML-KEM rest on different mathematics and are not affected.
 
 The advice is a recommendation addressed to the guideline's audience, mainly developers and planners of new cryptographic systems. TR-02102-1 Version 2026-01 still lists Classic McEliece; the BSI says it will revise that recommendation in the next version of the guideline, expected in early 2027. Because the BSI recommends post-quantum KEMs only in hybrid form, it notes that a hybrid with Classic McEliece still gives at least the security of the classical scheme, and its end-2031 date for completing the move to post-quantum key agreement is unchanged.
 

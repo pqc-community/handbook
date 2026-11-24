@@ -6,7 +6,7 @@ description: "The layers from a published post-quantum algorithm to a protected 
 displayed_sidebar: learnSidebar
 ---
 
-"NIST has standardised post-quantum cryptography" is true, and it is often read as "products now support it". The two statements are several layers apart. Each layer is produced by a different body, on a different schedule, and a system is protected only when every layer it depends on is in place. This lesson names the layers and shows where each stood on 24 November 2026.
+"NIST has standardised post-quantum cryptography" is true, and it is often read as "products now support it". The two statements are several layers apart. Each layer is produced by a different body, on a different schedule, and a system is protected only when every layer it depends on is in place. This lesson names the layers and shows where each stands.
 
 ## Five layers
 
@@ -26,7 +26,7 @@ flowchart TD
 
 A draft at any layer is not final, and a final standard at one layer does not imply anything about the next.
 
-## Status on 24 November 2026
+## Current status
 
 | Item | Layer | Status | Source |
 | --- | --- | --- | --- |

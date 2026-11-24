@@ -47,11 +47,19 @@ test('finds checked and accessed dates but not document dates', () => {
     '- CISA, NSA and NIST, fact sheet, as of 17 August 2023. [Fact sheet (PDF)](https://example.org/)',
     'NIST published the final version on 13 August 2024.',
     '- NCSC, Timelines, published and reviewed 20 March 2025. [Timelines](https://example.org/)',
+    '| Algorithm | Standard | Status (24 November 2026) |',
+    '## Status on 24 November 2026',
+    'This lesson shows where each stood on 24 November 2026.',
+    'The summary could not be verified for this page on 24 November 2026.',
+    '- PQCC heatmap, last checked: 3 March 2026. [Heatmap](https://example.org/)',
+    '- Datatracker, checked in November 2026. [Datatracker](https://example.org/)',
+    '- Datatracker, checked on 2026-11-24. [Datatracker](https://example.org/)',
+    'The guide was published in July 2026 and its status is final.',
     '```',
     'checked 24 November 2026',
     '```',
   ].join('\n');
-  assert.deepEqual(findCheckedDates(sample).map(({line}) => line), [4, 5, 6, 7]);
+  assert.deepEqual(findCheckedDates(sample).map(({line}) => line), [4, 5, 6, 7, 11, 12, 13, 14, 15, 16, 17]);
 });
 
 test('flags checked dates on doc pages only', () => {
@@ -59,6 +67,7 @@ test('flags checked dates on doc pages only', () => {
     {
       'docs/page.md': 'Status as checked on 24 November 2026.\n',
       'blog/2026/post.md': 'Checked 24 November 2026.\n',
+      'docs/templates/examples/example.md': 'The IT lead checked on 10 November 2026.\n',
     },
     (root) => findCheckedDateViolations(root),
   );

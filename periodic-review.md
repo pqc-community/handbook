@@ -2,7 +2,7 @@
 
 How the handbook is kept current: a full review of the whole site, run once a month from Claude Code with `/goal`, that finds new developments, rechecks every cited source and page, and leaves a dated report. Mission and news scope: [purpose-and-positioning.md](./purpose-and-positioning.md). Sourcing, freshness, and post rules: [style-guide.md](./style-guide.md). Placement and linking: [navigation-structure.md](./navigation-structure.md). Journey rules: [reader-journey.md](./reader-journey.md).
 
-**Status**: Proposed on 24 November 2026; not yet run.
+**Status**: Adopted on 24 November 2026; first run in November 2026 (see [reviews/2026-11.md](./reviews/2026-11.md)).
 
 ## Principles
 
@@ -79,17 +79,17 @@ Some publishers block automated requests, and which ones do varies by run and by
 ## Running the Review
 
 1. Start Claude Code in the repository on an up-to-date `main`, in auto mode so the run is not stopped for permission prompts.
-2. Paste the goal below, with `YYYY-MM` replaced by the year and month of the run.
+2. Paste the goal below. It takes `YYYY-MM` to be the current year and month, so it can be pasted unchanged.
 3. When the goal ends, read the closing summary and the report, then do the hand-check of could-not-verify sources and ask Claude to record the results in the report.
 4. Review the decisions in the report and the diff, and push the branch and open a pull request yourself. To undo a decision, ask Claude to revert it on the branch and note the reversal in the report.
 
 ### The goal
 
 ```text
-/goal The YYYY-MM periodic review in periodic-review.md is complete. Steps: (1) Create branch review/YYYY-MM from main before any edit. (2) Create reviews/YYYY-MM.md with the six sections in periodic-review.md and fill each section as you work, so the report is the record if the session compacts or resumes. (3) Build the source list with the command in periodic-review.md and give every listed source exactly one status (confirmed, updated, replaced, or could not verify with a reason), fetching politely and never bypassing bot protection. (4) Review every page under docs/, split by sidebar section across subagents if useful; fix what is wrong, out of date, or inconsistent, make the relevance changes you judge necessary under the guide that owns each, and record every decision with its reason. (5) Write any news posts and later-update notes that new developments need. (6) Apply dependency updates as periodic-review.md describes, reverting any that fail. Run npm test, npm run check, npm run typecheck and npm run build, and fix failures. (7) Confirm the current branch is review/YYYY-MM, then commit all changes. Do not push. Done when your final message, in one turn, shows: the branch name; the number of sources listed and the count for each status; doc pages reviewed out of the total; the number of new developments, page changes, posts, relevance decisions, and dependency updates kept and reverted; each of the four commands with exit code 0 from this session; and the commit hash. Stop and report what remains if not done after 40 turns.
+/goal The YYYY-MM periodic review in periodic-review.md is complete, where YYYY-MM is the current year and month. Steps: (1) Create branch review/YYYY-MM from main before any edit. (2) Create reviews/YYYY-MM.md with the six sections in periodic-review.md and fill each section as you work, so the report is the record if the session compacts or resumes. (3) Build the source list with the command in periodic-review.md and give every listed source exactly one status (confirmed, updated, replaced, or could not verify with a reason), fetching politely and never bypassing bot protection. (4) Review every page under docs/, split by sidebar section across subagents if useful; fix what is wrong, out of date, or inconsistent, make the relevance changes you judge necessary under the guide that owns each, and record every decision with its reason. (5) Write any news posts and later-update notes that new developments need. (6) Apply dependency updates as periodic-review.md describes, reverting any that fail. Run npm test, npm run check, npm run typecheck and npm run build, and fix failures. (7) Confirm the current branch is review/YYYY-MM, then commit all changes. Do not push. Done when your final message, in one turn, shows: the branch name; the number of sources listed and the count for each status; doc pages reviewed out of the total; the number of new developments, page changes, posts, relevance decisions, and dependency updates kept and reverted; each of the four commands with exit code 0 from this session; and the commit hash. Stop and report what remains if not done after 40 turns.
 ```
 
-The goal stays under the 4,000-character limit. The evaluator that decides whether a goal is met reads only the conversation, not files, so the final message must show the evidence itself. Until the first run, the goal is untested; adjust it here after that run.
+The goal stays under the 4,000-character limit. The evaluator that decides whether a goal is met reads only the conversation, not files, so the final message must show the evidence itself. The first run, in November 2026, completed under it; the hand-check, the escalation rule and the checked-dates rule were settled during that run and are reflected here.
 
 ## The Report
 

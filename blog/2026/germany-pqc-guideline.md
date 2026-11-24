@@ -18,7 +18,7 @@ Its deadlines are urgent recommendations rather than obligations. It asks bodies
 
 ## What it means for your plan
 
-For organisations in Germany, the EU roadmap's dates now come with a national authority's recommendation behind them, and could become binding through the bodies the guideline names. Record them on [Set dates and milestones](/plan/programme/dates/) as the guideline's dates for its audience, alongside any sector or contract dates, and watch for IT-Planungsrat or UP KRITIS decisions that make them binding. The end-2026 milestone for initial preparation and planning is close: a programme that has [set up](/plan/programme/set-up/) its charter and started its inventory is on track for it.
+For organisations in Germany, the EU roadmap's dates now come with a national authority's recommendation behind them, and could become binding through the bodies the guideline names. Record them on [Set dates and milestones](/plan/programme/dates/) as the guideline's dates for its audience, alongside any sector or contract dates, and watch for IT-Planungsrat or UP KRITIS decisions that make them binding. The end-2026 milestone for initial preparation and planning is close: a programme that has [set up](/plan/programme/set-up/) its charter and started its inventory is working towards it.
 
 Organisations outside Germany are not addressed, but the guideline shows how a Member State turns the EU roadmap into national guidance, and other Member States' national roadmaps are due under the same end-2026 milestone.
 

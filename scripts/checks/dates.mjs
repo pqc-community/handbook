@@ -67,23 +67,33 @@ export function findTimelineDateViolations(standardsDir) {
   return violations;
 }
 
-// Doc pages: a phrase saying when the handbook checked or accessed a source. Dates that are
-// facts about a document (published, revised, "as of" in the document's own dating) are fine.
-const CHECKED_DATE = new RegExp(
-  `\\b(?:checked|accessed)\\s+(?:on\\s+)?\\d{1,2}\\s+(?:${MONTHS.join('|')})\\s+\\d{4}\\b`,
-  'i',
-);
+// Doc pages: a phrase saying when the handbook checked, accessed or verified a source, or a
+// status line, heading or table heading pinned to a date ("Status (24 November 2026)",
+// "## Status on 24 November 2026", "where each stood on 24 November 2026"). Dates that are
+// facts about a document (published, revised, reviewed, "as of" in the document's own dating)
+// are fine. The worked examples and records are excepted: their dates are fictional events,
+// such as the date a record says something was checked.
+const MONTH = `(?:${MONTHS.join('|')})`;
+const ANY_DATE = `(?:\\d{1,2}\\s+${MONTH}\\s+\\d{4}|${MONTH}\\s+\\d{4}|\\d{4}-\\d{2}-\\d{2})`;
+const CHECKED_DATE_PATTERNS = [
+  new RegExp(`\\b(?:checked|accessed|verified)\\b[^.;|]{0,40}?\\b(?:on|in|at|:)?\\s*${ANY_DATE}`, 'i'),
+  new RegExp(`\\bstatus\\s*(?:\\(|on\\s+|as\\s+(?:of|at)\\s+|at\\s+)\\s*${ANY_DATE}`, 'i'),
+  new RegExp(`\\bstood\\s+(?:on|at|in)\\s+${ANY_DATE}`, 'i'),
+];
+export const CHECKED_DATE_EXCEPTED_DIRS = ['docs/templates/examples/', 'docs/templates/records/'];
 
 export function findCheckedDates(text) {
   return classifyLines(text)
     .filter((line) => line.kind !== 'fence' && line.kind !== 'front-matter')
-    .filter((line) => CHECKED_DATE.test(line.text))
+    .filter((line) => CHECKED_DATE_PATTERNS.some((pattern) => pattern.test(line.text)))
     .map((line) => ({line: line.number, text: line.text}));
 }
 
 export function findCheckedDateViolations(rootDir) {
-  return walkMarkdown(path.join(rootDir, 'docs')).flatMap((file) =>
-    findCheckedDates(fs.readFileSync(file, 'utf8')).map(
-      (hit) => `${relativePath(rootDir, file)}:${hit.line}: remove the checked date; the monthly review records when sources were checked`,
-    ));
+  return walkMarkdown(path.join(rootDir, 'docs'))
+    .filter((file) => !CHECKED_DATE_EXCEPTED_DIRS.some((dir) => relativePath(rootDir, file).startsWith(dir)))
+    .flatMap((file) =>
+      findCheckedDates(fs.readFileSync(file, 'utf8')).map(
+        (hit) => `${relativePath(rootDir, file)}:${hit.line}: remove the checked date; the monthly review records when sources were checked`,
+      ));
 }

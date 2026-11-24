@@ -21,7 +21,7 @@ Secure Shell (SSH) is used to administer servers and network devices, to run aut
 
 Both key-exchange methods are hybrids that keep a classical exchange alongside the post-quantum one. They are Informational RFCs, which document a method without making it an IETF standard. NTRU Prime is not one of NIST's standardised algorithms: [NIST IR 8547](/standards/transition-and-key-management/nist-ir-8547/) (October 2026) names ML-KEM as, at this time, NIST's only approved post-quantum key-establishment scheme. So check sntrup761x25519 against the authorities that apply to you, as [Choosing an option](/technology-options/choosing/) describes, before relying on it.
 
-No post-quantum signature method for SSH host or user keys is standardised: RFC 10042 and RFC 9941 define key exchange only, and the signature drafts are at an early stage. Implementations are moving ahead of the standards. According to its release notes, OpenSSH 10.6 (6 October 2026) enables a hybrid ML-DSA-44 and Ed25519 signature algorithm, ssh-mldsa44-ed25519, and OpenSSH 10.6p2 (5 November 2026) also allows it for signing certificates, while keys made with the project's earlier experimental version must be regenerated. That is the risk of building on a draft, so ask the SSH supplier what it ships, on which draft, and apply the protocol-mechanisms rule on the same page.
+No post-quantum signature method for SSH host or user keys is standardised: RFC 10042 and RFC 9941 define key exchange only, and the signature drafts are at an early stage, but implementations are moving ahead of the standards: according to its release notes, OpenSSH 10.6 (6 October 2026) enables a hybrid ML-DSA-44 and Ed25519 signature algorithm, ssh-mldsa44-ed25519, and OpenSSH 10.6p2 (5 November 2026) also allows it for signing certificates, while keys made with the project's earlier experimental version must be regenerated. That is the risk of building on a draft, so ask the SSH supplier what it ships, on which draft, and apply the protocol-mechanisms rule on the same page.
 
 ## Who usually chooses
 
@@ -36,7 +36,7 @@ The SSH implementation's supplier, usually the operating system or the network d
 ## What to ask or test
 
 - Which post-quantum key-exchange methods each SSH server and client supports and prefers, by version.
-- What a session actually negotiates; most clients show the key-exchange method in verbose output, and from OpenSSH 10.6 the server also logs, by default, any session whose key agreement is not post-quantum safe.
+- What a session actually negotiates; most clients show the key-exchange method in verbose output, and some servers, such as OpenSSH from version 10.6, also log by default any session whose key agreement is not post-quantum safe.
 - Which devices and automation tools use their own SSH library: network equipment, appliances, and scripts often lag the operating system.
 
 ## Traps
