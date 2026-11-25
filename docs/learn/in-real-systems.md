@@ -60,7 +60,7 @@ For most organizations, the work is not writing cryptography but getting it from
 - Why might a TLS migration be complete while a device's firmware signature migration has not started?
 - What is the difference between a product *supporting* ML-KEM and your system *using* it?
 
-Continue with [Timelines](/learn/timelines/). For the handshake in more detail, read [What changes in a TLS connection](/learn/explainers/tls/).
+Continue with [Timelines](/learn/timelines/). For the handshake in more detail, read [What changes in a TLS connection](/learn/explainers/tls/), and for what to check before adopting a library, [Choosing a post-quantum library](/learn/explainers/choosing-a-library/).
 
 ## Sources
 

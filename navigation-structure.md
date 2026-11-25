@@ -89,6 +89,7 @@ Homepage (/) — Learn the basics or Plan your migration, then why you might be 
 /learn/
 /learn/algorithms/
 /learn/crypto-agility/
+/learn/explainers/choosing-a-library/
 /learn/explainers/forward-secrecy/
 /learn/explainers/hash-based-signatures/
 /learn/explainers/kem/

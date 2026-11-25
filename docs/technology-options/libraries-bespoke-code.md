@@ -45,6 +45,7 @@ You do, as the developer or product owner, within what your libraries support, w
 - Whether message formats, database columns, packets, and storage can carry the larger keys, ciphertexts, and signatures.
 - Whether algorithm identifiers are negotiated or fixed in the format, and what an older peer or reader does with a new one, including whether an attacker can force the older algorithm.
 - Whether third-party components bundle or statically link their own cryptography.
+- Who maintains each library and for how long, what its license and support cover, and whether it is tested, including for side channels, on your compiler and platform, open-source or commercial alike, as [Choosing a post-quantum library](/learn/explainers/choosing-a-library/) explains.
 
 ## Traps
 
@@ -52,6 +53,8 @@ You do, as the developer or product owner, within what your libraries support, w
 - **Hard-coded algorithms** spread through the code, so every change becomes a rewrite.
 - **A home-made hybrid or protocol** where a specified mechanism exists.
 - **Hidden copies**: vendored or statically linked libraries that the register misses.
+- **Trusting the label**: assuming an open-source library has been reviewed, or a commercial one validated, without checking the project's own statement of production readiness or the certificate for the module you ship.
+- **A private fork with no maintenance plan**: local patches to a library, open-source or commercial, that leave you carrying every later security fix and post-quantum update yourself.
 - **Stateful signatures without state control**: LMS or XMSS signing code that can reuse a one-time key after a restart or restore, or across two signers.
 
 ## Record it fills
@@ -79,6 +82,7 @@ A decision-ready record lists each application with the library and release it u
 ## Related pages
 
 - [Choosing an option](/technology-options/choosing/)
+- [Choosing a post-quantum library](/learn/explainers/choosing-a-library/)
 - [Keep the ability to change again](/plan/program/changing-algorithms-again/)
 - [Inventory the cryptography](/plan/program/inventory/)
 - [HSMs and key management](/technology-options/hsm-kms/)

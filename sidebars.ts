@@ -63,6 +63,7 @@ const sidebars: SidebarsConfig = {
         'learn/explainers/tls',
         'learn/explainers/research-to-deployment',
         'learn/explainers/quantum-safe-claims',
+        'learn/explainers/choosing-a-library',
         'learn/explainers/why-timelines-differ',
       ],
     },

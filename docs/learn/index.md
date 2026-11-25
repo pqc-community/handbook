@@ -73,6 +73,7 @@ Optional explainers expand one distinction each. Read them when a lesson leaves 
 - [What changes in a TLS connection](/learn/explainers/tls/) — the handshake step by step, and why authentication lags key exchange.
 - [From research to deployment](/learn/explainers/research-to-deployment/) — the path from candidate algorithm to something running in your estate.
 - [Reading "quantum-safe" claims](/learn/explainers/quantum-safe-claims/) — turning a supplier statement into checkable facts.
+- [Choosing a post-quantum library](/learn/explainers/choosing-a-library/) — what to check about a library's testing, validation, maintenance, license, and support, whether open-source or commercial.
 - [Why migration timelines differ](/learn/explainers/why-timelines-differ/) — NIST, US federal, UK, EU, and Australian dates compared.
 
 Use the [glossary](/learn/glossary/) for definitions while reading.
